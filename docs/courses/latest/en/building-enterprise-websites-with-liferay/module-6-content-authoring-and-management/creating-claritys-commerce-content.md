@@ -70,7 +70,7 @@ Here you'll create a catalog for Clarity's products as Ian Miller.
 
 To do this,
 
-1. Sign in as the Ian Miller.
+1. Sign in as Ian Miller.
 
    * **Username**: `ian.miller@clarityvisionsolutions.com`
    * **Password**: `learn`
@@ -91,6 +91,8 @@ To do this,
 
 1. Click *Submit* to finish creating the catalog.
 
+![The catalog should appear in the Catalogs section after saving.](./creating-claritys-commerce-content/images/02.png)
+
 Great! Now that you've created the catalog, you can start adding products to it. But first, let's add specifications that you can add to Clarity's products when you create them.
 
 ## Exercise: Defining Product Specifications
@@ -98,7 +100,7 @@ Great! Now that you've created the catalog, you can start adding products to it.
 
 Product specifications store information about products, like size, material, and color. To improve organization, you can also save them into specification groups.
 
-Here you'll add specifications as Ian Miller, which you'll apply to Clarity's products in the next exercise.
+Here you'll add product specifications as Ian Miller.
 
 To do this,
 
@@ -160,7 +162,7 @@ To do this,
 
 1. Return to the *Specification Labels* page.
 
-![Create three Product specification labels.](./creating-claritys-commerce-content/images/02.png)
+![Create three Product specification labels.](./creating-claritys-commerce-content/images/03.png)
 
 Now that you've added some specifications, you can apply them to products as you create them.
 
@@ -177,8 +179,7 @@ To do this,
 
 1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *Simple*.
 
-   !!! note
-       A simple product is any physical product for which inventory is tracked.
+   **Note**: A simple product is any physical product for which inventory is tracked.
 
 1. Enter the following:
 
@@ -189,7 +190,27 @@ To do this,
 
 1. Click *Submit* to finish creating your product.
 
-   Now you can configure the product. First, add a category to it.
+   Now you can configure the product. First, add a product description using ChatGPT.
+
+1. In the Full Description field editor, click on the *AI Creator* button (![AI Creator Button](../../images/icon-ai-creator.png)).
+
+1. Enter a description, tone, and word count. 
+
+   For example,
+
+   | Field       | Value                                                                               |
+   |:------------|:------------------------------------------------------------------------------------|
+   | Description | A product description for a pair of classic aviator sunglasses made for sunny days. |
+   | Tone        | Friendly                                                                            |
+   | Word Count  | `200`                                                                                |
+
+1. Click *Create*. This generates your content.
+
+1. Click *Add* to copy the response into the Full Description field.
+
+   Alternatively, click *Try Again* to generate a new response.
+
+   Now that you've added a long description, let's categorize the product.
 
 1. In the Categorization section, click *Select* for Clarity Products.
 
@@ -197,7 +218,7 @@ To do this,
 
    Now that the product is categorized, add some specifications.
 
-1. In the Details tab, scroll down and type `Frame` in the Add Specifications field.
+1. Scroll down and type `Frame` in the Add Specifications field.
 
    This lists available specifications.
 
@@ -249,11 +270,11 @@ To do this,
 
 1. Click *Publish* to save the product image.
 
-   ![Add the image to the product's media.](./creating-claritys-commerce-content/images/03.png)
+   ![Add the image to the product's media.](./creating-claritys-commerce-content/images/04.png)
 
    <!--TASK: Add attachment-->
 
-1. Click the *Details* tab and click *Publish* to publish the product.
+1. Click *Publish* to finish creating the product.
 
 1. Repeat the above steps to create two more products: *AquaComfort Plus Dailies* and *Single Vision Lenses*. Tags should be typed directly into the Tags field in the Details screen.
 
@@ -262,7 +283,9 @@ To do this,
    | `AquaComfort Plus Dailies` | N/A            | Contacts   | daily | aquacomfort-plus-dailies |
    | `Single Vision Lenses`     | N/A            | Lenses     | daily | biofinity-toric-lenses   |
 
-   ![Create three Products.](./creating-claritys-commerce-content/images/04.png)
+   **Note**: To add the tag, type `daily` into the Tags field.
+
+   ![Create three Products.](./creating-claritys-commerce-content/images/05.png)
 
 Great! Now that you've added products, you can set up a channel to display them in Clarity's site.
 
@@ -289,14 +312,15 @@ To do this,
 
 1. Click *Add* to finish creating your channel.
 
-   !!! note
-       To use a channel to sell products, you must link it to a site.
+   **Note**: To display products in a site, you must link it to a channel.
 
 1. Go to the *Type* tab and click *Select Site*.
 
 1. Choose *Clarity Public Enterprise Website*.
 
 1. Click *Save*.
+
+![Create the Clarity Public commerce channel.](./creating-claritys-commerce-content/images/06.png)
 
 With the channel created, let's return to Clarity's site and finish setting up their product pages.
 
@@ -320,7 +344,7 @@ To implement this,
 
 1. Go to the *Products* page and begin editing it (![Edit Button](../../images/icon-edit.png)).
 
-1. Open the *Fragments and Widgets* tab (![Fragments and Widgets](../../images/icon-plus.png)) in the side panel.
+1. Open the *Fragments and Widgets* panel (![Fragments and Widgets](../../images/icon-plus.png)).
 
 1. Go to the *Widgets* tab.
 
@@ -330,12 +354,11 @@ To implement this,
 
 1. For Vocabulary, select *Clarity Products*.
 
-   !!! note
-       Do not enable the Use Root Category option.
+   **Note**: Do not enable the Use Root Category option.
 
-1. Click *Save* and close the window.
+1. Click *Save* and close the modal window.
 
-   ![The Clarity Products categories should appear after saving.](./creating-claritys-commerce-content/images/05.png)
+   ![The Clarity Products categories should appear after saving.](./creating-claritys-commerce-content/images/07.png)
 
 1. Click *Publish* to view the updated page.
 
@@ -349,7 +372,7 @@ To implement this,
 
 1. Enter `Clarity Category Cards` as the template name.
 
-1. From the downloaded course bundle, navigate to the `[repository-folder]/exercises/lesson-14/` folder and open the `commerce-category-navigation-cards.ftl` file on your machine.
+1. From the training workspace, go to the `[repository-folder]/exercises/lesson-14/` folder and open the `commerce-category-navigation-cards.ftl` file.
 
 1. Copy and paste the contents of this file into the editor.
 
@@ -365,7 +388,7 @@ To implement this,
 
 1. Click *Publish* to view the page.
 
-![Use a display template for the Clarity Category Cards widget.](./creating-claritys-commerce-content/images/06.png)
+![Use a display template for the Clarity Category Cards widget.](./creating-claritys-commerce-content/images/08.png)
 
 Great! You can see we are a lot closer to the final design requested by Clarity. Now that you've finished the Products page, let's complete the Product List page.
 
@@ -381,7 +404,7 @@ To fix this,
 
 1. Click *Edit* (![Edit Button](../../images/icon-edit.png)) to begin editing the page.
 
-1. From the *Fragments and Widgets* tab (![Fragments and Widgets](../../images/icon-plus.png)), drag and drop the *Category Content* widget just above the Search Results container.
+1. From the *Fragments and Widgets* panel (![Fragments and Widgets](../../images/icon-plus.png)), drag and drop the *Category Content* widget just above the Search Results container.
 
 1. Click *Publish*.
 
@@ -395,12 +418,11 @@ To fix this,
 
 1. Click *New* and select *Search Results Template*.
 
-   !!! important
-       There are two "Search Results Template" options. One is for general search results while the other one is for Commerce products. Try selecting the second option first. If it's the right one, you will see some commerce specific variables in the Elements menu (i.e., *Commerce Product Search Result Display Context* and *Commerce Product Catalog Entries*). If you do not see these variables, try using the other template.
+   **Important**: There are two "Search Results Template" options. One is for general search results while the other one is for Commerce products. Try selecting the second option first. If it's the right one, you will see some commerce specific variables in the Elements menu (i.e., *Commerce Product Search Result Display Context* and *Commerce Product Catalog Entries*). If you do not see these variables, try using the other template.
 
 1. Enter `Clarity Search Results Cards` as the template name.
 
-1. From the downloaded course bundle, navigate to the `[repository-folder]/exercises/lesson-14/` folder and open the `commerce-search-results-cards.ftl` file on your machine.
+1. From the training workspace, go to the `[repository-folder]/exercises/lesson-14/` folder and open the `commerce-search-results-cards.ftl` file.
 
 1. Copy and paste the contents of this file into the editor.
 
@@ -410,17 +432,15 @@ To fix this,
 
 1. Hover over the Search Results widget, click *Actions* (![Actions Button](../../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
 
-   !!! note
-       The Search Results widget should look blank, towards the bottom right side of the layout.
+   **Note**: The Search Results widget should look blank, towards the bottom right side of the layout.
 
-   ![The Search Results widget should look blank.](./creating-claritys-commerce-content/images/07.png)
+   ![The Search Results widget should look blank.](./creating-claritys-commerce-content/images/09.png)
 
 1. For Render Selection, select *Use Application Display Template*.
 
 1. For *Display Template*, select *Clarity Search Results Cards*.
 
-   !!! note
-       If you don’t see the template here, return to step 8 and try the other Search Results template.
+   **Note**: If you don’t see the template here, return to step 8 and try the other Search Results template.
 
 1. Click *Save* and close the window.
 
@@ -428,7 +448,7 @@ To fix this,
 
 1. Return to the *Products* page and click one of the category cards to confirm it is working properly and you are seeing your new template.
 
-   ![The Search Results widget should now display the products.](./creating-claritys-commerce-content/images/08.png)
+   ![The Search Results widget should now display the products.](./creating-claritys-commerce-content/images/10.png)
 
 ### Creating the Product Display Page
 
@@ -436,21 +456,81 @@ Finally, when you click a product in the Product List page, it doesn't work as e
 
 To fix this,
 
-1. Go to the *Product Detail* page.
+1. In the *Page Templates* application, go to the *Display Page Templates* tab, and click *New*.
 
-   This page already includes most of the necessary widgets for displaying products. We're just missing the Product Detail widget to make everything work.
+1. Select *Primary Master Page*.
 
-1. From the *Fragments and Widgets* tab (![Fragments and Widgets](../../images/icon-plus.png)), drag and drop the *Product Detail* widget above the provided Product Publisher widget.
+1. Enter these values and click *Save*:
 
-1. Publish the page.
+   | Field        | Value             |
+   |--------------|-------------------|
+   | Name         | `Product Details` |
+   | Content Type | *Product*         |
+
+   This creates a new display page template for products.
+
+1. Drag and drop the *Product Details Page* fragment composition into the drop area.
+
+   ![Drag and drop the Product Details Page fragment composition into the drop area.](./creating-claritys-commerce-content/images/11.png)
+
+1. In the Product Details container, map these fragments with their corresponding product fields.
+
+   | Fragment     | Fragment Sub-Element | Mapping                           |
+   |--------------|----------------------|-----------------------------------|
+   | Product Name | element-text         | *Name* (Basic Information)        |
+   | SKU          | element-text         | *SKU* (Basic Information)         |
+   | Description  | element-html         | *Description* (Basic Information) |
+
+1. Select the button's *link* sub-element and configure these settings:
+
+   | Tab     | Field | Value        |
+   |:--------|:------|:-------------|
+   | Link    | Link  | *Page*       |
+   | Link    | Page  | *Contact Us* |
+
+1. Double click the *Button* fragment and change its text to `Contact Sales`.
+
+1. In the Specifications container, double click the *Heading* fragment and change its text to `Specifications`.
+
+1. Map fragments in the Specifications container to their fields:
+
+   | Fragment            | Fragment Sub-Element | Mapping                     |
+   |---------------------|----------------------|-----------------------------|
+   | Specification Name  | element-text         | *Name* (Basic Information)  |
+   | Specification Value | element-text         | *Value* (Basic Information) |
+
+1. In the Attachments container, double click the *Heading* fragment and change its text to `Attachments`.
+
+1. Map fragments in the Attachments container to their fields:
+
+   | Fragment        | Fragment Sub-Element | Mapping                     |
+   |-----------------|----------------------|-----------------------------|
+   | Attachment Name | element-text         | *Title* (Basic Information) |
+
+1. Select the Download button and configure these settings in the configuration side panel:
+
+   | Tab     | Field | Value   |
+   |---------|-------|---------|
+   | General | Style | *Link*  |
+   | General | Size  | *Small* |
+
+1. Select the Download button's link sub-element and configure these settings:
+
+   | Tab  | Field | Value          |
+   |------|-------|----------------|
+   | Link | Link  | *Mapped URL*   |
+   | Link | Field | *Download URL* |
+
+1. Double click the *Download* button and change its text to *Download*.
+
+1. Click *Publish*.
+
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the Product Details template and select *Mark as Default*.
 
 1. Return to the *Category Display* page and select one of the products to confirm it is working.
 
-We're almost there, but just as before, the out-of-the-box widget doesn't align with our designs.
-
-**Bonus**: As a bonus exercise, repeat the steps from the previous exercise to create a Product Detail widget that matches the Clarity Vision Solutions design.
-
-<!--TASK: Change how the bonus exercise is incorporated-->
+   <!--TASK: Update Img once working,
+   ![Confirm the Product Detail page is working.]()-->
 
 ## Conclusion
 

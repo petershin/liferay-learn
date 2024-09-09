@@ -73,13 +73,19 @@ To do this,
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Publications*.
 
-1. Toggle *Enable Publications* and click *Save*. This redirects to the publications page.
+1. Toggle *Enable Publications* and click *Save*.
+
+   This redirects to the Publications application page.
 
 1. Click *Add* (![Add Button](../../images/icon-add.png)) to create a new publication.
 
    Alternatively, you can click the *Publications* drop-down menu at the top of the page and select *Create New Publication*.
 
-1. Enter the name `Article Publication` and click *Create*.
+1. For Name, enter `Article Publication`.
+
+1. Click *Create*.
+
+   <!--You can check the Publications drop-down menu to confirm you're working in the new publication.-->
 
 1. Return to *Clarity Public Enterprise Website*.
 
@@ -87,9 +93,11 @@ To do this,
 
 1. In the Web Content tab, click *Actions* (![Actions Button](../../images/icon-actions.png)) for the Articles folder and select *Edit*.
 
-1. Navigate to the Structure Restrictions and Workflow section and select *Set the default workflow for the folder’s content (Articles)*.
+1. Expand the *Structure Restrictions and Workflow* section and select *Set the default workflow for the folder’s content (Articles)*.
 
-1. Select the *Single Approver* option and click *Save*.
+1. Select *Single Approver* in the drop-down menu.
+
+1. Click *Save*.
 
    ![The Single Approver workflow will be assigned to the Articles folder.](./publishing-content-with-workflows/images/03.png)
 
@@ -101,29 +109,29 @@ Next, let's learn how to invite other users to work on the publication you creat
 
 The Publications application has an option to invite users to collaborate in a publication. These users can be invited even if they don't have Publications permissions assigned to them.
 
-Here you'll invite Christian Carter and Clara Murphy to work on the Article Publication process as Ian Miller.
+Here you'll invite Christian Carter and Clara Murphy to contribute to the Article Publication process as Ian Miller.
 
 To do this,
 
-1. Go to the *Publications* application in the Global Menu.
+1. Go to the *Publications* application click *Actions* (![Actions Button](../../images/icon-actions.png)) for Article Publication and select *Invite Users*.
 
-1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for Article Publication and select *Invite Users*.
+   Alternatively, you can click the *Publications* drop-down menu at the top of the page, select *Review Changes*, and click *Invite Users* (![Invite Users Button](../../images/icon-plus.png)).
 
-1. In the Invite Users panel, enter the email `christian.carter@clarityvisionsolutions.com`.
+1. Click the role drop-down menu and select *Editor*.
 
-1. Use the roles drop-down to add Christian Carter as an Editor.
+1. For People, enter `Christian Carter`.
 
 1. Repeat steps 3-4 to invite Clara Murphy using these values:
 
-   | Email                                     | Role      |
-   |-------------------------------------------|-----------|
-   | `clara.murphy@clarityvisionsolutions.com` | Publisher |
+   | Name         | Role      |
+   |--------------|-----------|
+   | Clara Murphy | Publisher |
 
    ![Invite Christian Carter and Clara Murphy to the Article Publication.](./publishing-content-with-workflows/images/04.png)
 
-1. Click *Send* and click *OK* when prompted.
+1. Click *Send* and click *OK* to confirm.
 
-Great! Now Christian Carter and Clara Murphy can contribute to the publication. Next, you'll impersonate them and go through the publishing workflow.
+Great! Now Christian Carter and Clara Murphy can contribute to the publication. Next, you'll go through the publishing workflow.
 
 ## Exercise: Managing Changes with a Content Publishing Workflow
 <!--Exercise 16b-->
@@ -151,20 +159,20 @@ To do this,
 
    ![The invitation notification appears in the notification queue.](./publishing-content-with-workflows/images/06.png)
 
-   This opens the details menu for the Article Publication.
+   This opens the details page for Article Publication.
 
-1. Click the *Publications* drop-down menu at the top of the page, click *Select a Publication*, and choose *Article Publication*.
+1. Click the *Publications* drop-down menu at the top of the page, click *Select a Publication*, and select *Article Publication*.
 
-1. Back in your Clarity website, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and click *Web Content*.
+1. Return to Clarity Public Enterprise Website, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and click *Web Content*.
 
-1. Click into the *Articles* folder and click *New* &rarr; *Article*.
+1. Go to the *Articles* folder, click *New*, and select *Article*.
 
 1. Enter these values:
 
    | Field    | Value                                                                                                                  |
    |:---------|:-----------------------------------------------------------------------------------------------------------------------|
    | Title    | Clarity x Warby Parker                                                                                                 |
-   | Image    | *Asset Library* &rarr; *Marketing Assets* &rarr; `revolutionizing_industry`                                            |
+   | Image    | `revolutionizing_industry` (from the *Marketing Assets* library)                                                       |
    | Headline | Summer 2024 Collaboration                                                                                              |
    | Content  | Eyewear enthusiasts rejoice! Fan favorites Clarity and Warby Parker have joined forces for a collaborative collection. |
 
@@ -189,27 +197,33 @@ To do this,
 
 1. Click the *Publications* drop-down menu at the top of the page, click *Select a Publication*, and choose *Article Publication*.
 
-1. Click the *Article Publication* menu at the top of the page and select *Review Changes*. You will be redirected to the publication page with a log of changes.
+1. Click the *Publications* drop-down menu again and select *Review Changes*. 
 
-   Alternatively, you can navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Applications* &rarr; *Publications*.
+   This directs to the publication details page with a list of changes.
 
-1. Click *Publish* to try and save the changes. This action will fail because the workflow that you implemented as Ian Miller requires an approval before publication.
+1. Click *Publish*.
+
+   This action will fail because the publication includes unapproved changes.
 
    ![The action will fail if any changes are pending.](./publishing-content-with-workflows/images/08.png)
 
 1. Click the user profile icon and go to *My Workflow Tasks*.
 
-1. Switch to the *Assigned to My Roles* tab to see the pending workflow task.
+1. Go to the *Assigned to My Roles* tab to see the pending workflow task.
 
-1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the workflow task and select *Assign to Me*. You may optionally add a message before confirming the approval.
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the workflow task and select *Assign to Me*.
 
-1. Click *Done* in the pop-up window to assign the task to yourself. This redirects you to the *Assigned to Me* tab.
+1. Enter a comment and click *Done*.
 
-1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) again and select *Approve*. You can also add a message before confirming.
+   This assigns the task to Clara Murphy and redirects you to the *Assigned to Me* tab. Here she can review and approve or reject the Christian Carter's article.
 
-1. Click *Done* to approve the article.
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the task and select *Approve*. 
 
-1. Return to *Review Changes* for the publication. The status of the change is now `Approved`.
+1. Enter a comment and click *Done*.
+
+1. Click the *Publications* drop-down menu again and select *Review Changes*. 
+
+   The change's status is now `Approved`.
 
 1. Click *Publish*, verify there are no conflicts, and click *Publish* again to add the changes to production.
 

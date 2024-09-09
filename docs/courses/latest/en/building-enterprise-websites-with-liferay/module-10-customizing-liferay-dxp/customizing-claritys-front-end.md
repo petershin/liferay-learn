@@ -34,7 +34,7 @@ To do this,
 
    This file contains styling for overwriting the background color for the `.lfr-layout-structure-item-container` CSS class.
 
-1. Navigate to the `[repository-folder]/client-extensions/liferay-clarity-theme-css` folder, open the `src/css/_custom.scss` file, paste the copied CSS style into it, and save your changes.
+1. Navigate to the `[repository-folder]/client-extensions/liferay-clarity-theme-css` folder, open the `src/css/_custom.scss` file, add the copied CSS style to the end of the file, and save your changes.
 
 1. Open a new terminal window, navigate to the `[repository-folder]/client-extensions/liferay-clarity-theme-css` folder, and run this command to build and deploy the theme client extension:
 

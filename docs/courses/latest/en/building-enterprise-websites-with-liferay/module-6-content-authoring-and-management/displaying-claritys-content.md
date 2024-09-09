@@ -30,6 +30,11 @@ Here you'll add web content articles to a manual collection and map them to Clar
 
 To do this,
 
+1. Sign in as Walter Douglas.
+
+   * Email: `walter.douglas@clarityvisionsolutions.com`
+   * Password: `learn`
+
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and select *Collections*.
 
 1. Click *New* and select *Manual Collection*.
@@ -52,21 +57,25 @@ To do this,
 
 1. Click *Add*.
 
-   The manual collection is now populated with content and is ready to use in site pages.
+   ![Add the articles to the Helpful Articles collection.](./displaying-claritys-content/images/01.png)
 
-1. Open the page editor for Clarity's *Home* page.
+   The manual collection is now populated with content and ready to use in site pages.
+
+1. Go to the *Home* page and click *Edit* (![Edit Button](../../images/icon-edit.png)).
 
 1. Select the *Collection Display* fragment in the Helpful Articles container.
 
-1. In the configuration side panel, click the *Plus* button (![Plus Button](../../images/icon-plus.png)) for Collection and select the *Helpful Articles* collection.
+1. In the configuration side panel, click *Plus* (![Plus Button](../../images/icon-plus.png)) for Collection and select the *Helpful Articles* collection.
 
-   The fragment now sources its content from the Helpful Articles collection. The provided composition already applies the Clarity Card fragment to the collection display, so that it can be used to render each item. To display article content from the collection, you'll need to map this card's sub-elements to fields in the articles. But before mapping the card's sub-elements to content fields, let's change the collection display's pagination.
+   ![Select the Helpful Articles collection.](./displaying-claritys-content/images/02.png)
+
+   The fragment now sources its content from the Helpful Articles collection. The provided composition already applies the Clarity Card fragment to the collection display for rendering each item. To display article content from the collection, you'll need to map the card's sub-elements to fields in the articles. But before mapping the card's sub-elements to content fields, let's change the collection display's pagination.
 
 1. For Pagination, select *None*.
 
    Now let's map the card's sub-elements to their corresponding fields in the articles.
 
-1. Select the Clarity Card fragment and note the sub-elements included:
+1. Select the *Clarity Card* fragment and note the sub-elements included:
 
    * card-image
    * category
@@ -81,21 +90,23 @@ To do this,
    * card-title: *Title* under Basic Information
    * summary: *Headline* under Content (Article)
 
-1. Select the card-link sub-element, go to the *Link* tab.
+1. Select the *card-link* sub-element, go to the *Link* tab.
 
 1. For Link, select *Mapped URL*.
 
 1. For Field, select *Default*.
 
-1. Click *Publish* to save your changes to the home page.
+1. Click *Publish* to save your changes to the Home page.
 
-   The *Helpful Articles* section of the home page should now display web content from the collection you created. However, two elements aren't working as expected: category and card-link. This is because the articles do not have categories assigned to them and because the articles do not have a default DPT. Let's fix those issues.
+   The *Helpful Articles* section of the Home page should now display web content from the collection you created. However, two elements aren't working as expected: category and card-link. This is because the articles do not have categories assigned to them and because the articles do not have a default display page template. Let's fix these issues.
 
 1. Go to the *Web Content* application and assign one category to each article.
 
-1. Go to the *Page Templates* application and set the Article display page template as default.
+1. Go to the *Page Templates* application, go to the *Display Page Templates* tab, and set the *Article* display page template as the default for its type.
 
 1. Return to the Home page and verify all mappings work.
+
+![Go to the Home page and check if all mapped fields work.](./displaying-claritys-content/images/03.png)
 
 Great! You created a manual collection and displayed it in Clarity's Home page. Next, you'll learn how to create a dynamic collection.
 
@@ -116,11 +127,19 @@ To do this,
 
 1. For Item Subtype, select *FAQ*.
 
-   This limits the collection to FAQ web content articles. Next, you'll define a filter to limit which FAQs are included in the collection.
+   This limits the collection to FAQ web content articles. Next, you'll define the collection's scope and filter to limit which FAQs are included in the collection.
+
+1. Under Scope, click *Select* and select *Other Site or Asset Library*.
+
+1. Go to the *Asset Libraries* tab and click *Marketing Assets*.
+
+   This ensures the collection uses FAQ articles from the Marketing Assets library. 
 
 1. Under Filter, set the rule to `Contains *All* of the following Categories`.
 
 1. In the Categories field, search for `Retail Partners` and select it.
+
+   ![Set a rule to only include FAQ items with the Retail Partners category.](./displaying-claritys-content/images/04.png)
 
 1. Click *Save* to create the collection.
 
@@ -129,6 +148,8 @@ To do this,
    * `FAQ - Products & Services`
    * `FAQ - Pricing & Ordering`
    * `FAQ - Returns & Exchanges`
+
+   ![Create an FAQ collection for each category.](./displaying-claritys-content/images/05.png)
 
    For each collection, filter results using its corresponding category.
 
@@ -141,13 +162,17 @@ Using what you have learned in the previous exercises, let’s map content to th
 
 To do this,
 
-1. Begin editing the FAQ page.
+1. Begin editing the *FAQ* page.
 
 1. Double click the *Image* fragment to configure its image-square sub-element.
 
 1. Set the image to `glasses-vertical-banner-with-text-lg` from the Marketing Assets library.
 
+   <!--TASK: Revise the following steps.-->
+
 1. The block on the right contains a page title and four FAQ Section compositions. Each FAQ Section contains a heading and a Collection Display fragment. Each Collection Display contains a custom fragment called FAQ Question and Answer Pair. First map the collection displays to the FAQ collections you built earlier. Make sure each collection corresponds to the heading for that section.
+
+   ![Map each collection display according to its heading.](./displaying-claritys-content/images/06.png)
 
 1. For Pagination, select *None*.
 
@@ -155,9 +180,17 @@ To do this,
 
 1. Map the correct fields for each FAQ Question and Answer Pair so that the content renders properly in the collection displays.
 
-1. Map the collection display in Promoted Articles to the Helpful Articles collection.
+1. In the Promoted Articles container, map the collection display to the Helpful Articles collection.
+
+1. Configure this setting for the *FAQ Content* and *Promoted Articles* containers:
+
+   | Tab     | Setting         | Value         |
+   |:--------|:----------------|:--------------|
+   | General | Container Width | *Fixed Width* |
 
 1. Click *Publish* to save your changes to the FAQ page.
+
+![Publish the changes and check the finalized FAQ page.](./displaying-claritys-content/images/07.png)
 
 Using collection displays and custom fragments, you have rendered FAQ web content onto Clarity's FAQ page. Next, let's add content to the header announcement bar.
 
@@ -172,7 +205,9 @@ To do this,
 
 1. Create a new dynamic collection titled `Announcements`.
 
-1. In the collection configuration menu, set item type to *Web Content Article* and item subtype to *Announcements*.
+1. In the collection configuration menu, set Item Type to *Web Content Article* and Item Subtype to *Announcements*.
+
+1. For scope, select the *Marketing Assets* library.
 
 1. Click *Save* to publish the collection.
 
@@ -182,8 +217,7 @@ To do this,
 
 1. Begin editing the *Primary Master Page* template.
 
-   !!! note
-       You may notice the styles applied to the master page are different from those applied in site pages. This is because you've applied the theme and theme CSS client extension to site pages and not to master pages. If desired, you can apply the theme and client extension to the master page directly. Make sure you uncheck all theme properties (i.e. Show Footer, Show Header, etc.).
+   **Note**: You may notice the styles applied to the master page are different from those applied in site pages. This is because you've applied the theme and theme CSS client extension to site pages and not to master pages. If desired, you can apply the theme and client extension to the master page directly. Make sure you uncheck all theme properties (e.g., Show Footer, Show Header, etc.).
 
 1. Toggle the *visibility* (![Visibility](../../images/icon-preview.png)) of the *Header Announcement Bar* container.
 
@@ -193,6 +227,10 @@ To do this,
    |:-------|:-------------------|:----------------------|
    | Styles | Background > Color | *Color Brand Primary* |
 
+   ![Set the container's background color to 'Color Brand Primary' from the style book.](./displaying-claritys-content/images/08.png)
+
+   **Note**: Color options are defined by the theme's style book. Unless you've applies the theme CSS client extension to the master page template, the Color Brand Primary option appears purple. This value is overridden in site pages by the Theme CSS client extension.
+
 1. Add a *Collection Display* fragment to the container, select it, and configure these settings:
 
    | Tab     | Field                              | Value           |
@@ -201,7 +239,7 @@ To do this,
    | General | Pagination                         | *None*          |
    | General | Maximum Number of Items to Display | *1*             |
 
-1. Add a *Container* fragment to the collection display, rename it `Announcement` and configure these settings:
+1. Add a *Container* fragment to the collection display, rename it `Announcement`, and configure these settings:
 
    | Tab     | Field           | Value      |
    |:--------|:----------------|:-----------|
@@ -215,8 +253,7 @@ To do this,
    |:-------|:-------------|:------------------|
    | Styles | Text > Color | *Color Neutral 0* |
 
-   !!! note
-       Choosing *Color Neutral 0* selects a color value defined in the theme's style book.
+   ![Set the paragraphs's text color to 'Color Neutral 0' from the style book.](./displaying-claritys-content/images/09.png)
 
 1. Select the paragraph's *element-text* sub-element and configure this setting:
 
@@ -224,7 +261,7 @@ To do this,
    |:--------|:------|:----------|
    | Mapping | Field | *Message* |
 
-1. Add a *Clarity Button* fragment to Announcement container after the paragraph, select it, and configure these settings:
+1. Add a *Clarity Button* fragment to the Announcement container after the paragraph, select it, and configure these settings:
 
    | Tab     | Field    | Value        |
    |:--------|:---------|:-------------|
@@ -242,6 +279,8 @@ To do this,
    | Link    | Field | *Link to Page* |
 
 1. Adjust the margins and padding for the announcement bar elements until you are satisfied with it.
+
+   ![Make the final adjustments to the announcement bar.](./displaying-claritys-content/images/10.png)
 
 1. Click *Publish Master* to save your changes.
 

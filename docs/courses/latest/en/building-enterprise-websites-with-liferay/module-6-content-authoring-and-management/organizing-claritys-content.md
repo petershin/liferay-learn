@@ -22,7 +22,7 @@ Tags are keywords for organizing your assets. While categories provide broader c
 ## Exercise: Auto-Tagging Content
 <!--Exercise 11b-->
 
-You can manually tag most Liferay assets, but manually tagging content can be time consuming. Liferay provides auto tagging features and integrations to simplify this process. By default, auto tagging is disabled.
+You can manually tag most Liferay assets, but manually tagging content can be time consuming. Liferay also provides auto tagging features and integrations to simplify this process. By default, auto tagging is disabled.
 
 Here you'll enable text and image auto-tagging as the Clarity Admin user.
 
@@ -34,12 +34,14 @@ To do this,
 
 1. Click *Asset Auto Tagging* in the left menu.
 
-1. Check *Enable Auto Tagging of Assets*.
+1. Ensure these options are checked
+
+   * *Enable Auto Tagging of Assets*
+   * *Update Auto Tags*
 
 1. Set the max number of tags to `3`.
 
-   !!! note
-       Leaving the field blank disables auto-tagging. Setting the value to `0` removes any auto limit.
+   **Note**: Leaving the field blank disables auto-tagging. Setting the value to 0 removes any auto limit.
 
 1. Click *Update*.
 
@@ -51,8 +53,7 @@ To do this,
 
    If the drop-down menu does not appear, enter `com.liferay.journal.model.JournalArticle`.
 
-   !!! note
-       You can also click the plus button to enable OpenNLP auto tagging for additional types of text content (i.e., blog entries = `com.liferay.blogs.model.BlogsEntry`; documents = `com.liferay.document.library.kernel.model.DLFileEntry`).
+   **Note**: You can also click the plus button to enable OpenNLP auto tagging for additional types of text content (i.e., blog entries = `com.liferay.blogs.model.BlogsEntry`; documents = `com.liferay.document.library.kernel.model.DLFileEntry`).
 
 1. Click *Update*.
 
@@ -62,48 +63,61 @@ To do this,
 
 1. Click *Update*.
 
-   !!! tip
-       You can double check that all the settings are correct for the Clarity site by going to *Site Menu* &rarr; *Configuration* &rarr; *Site Settings* &rarr; *Assets* and validating that auto tagging is enabled.
+   **Tip**: You can double check that all the settings are correct for the Clarity site by going to *Site Menu* &rarr; *Configuration* &rarr; *Site Settings* &rarr; *Assets* and validating that auto tagging is enabled.
 
-1. Go to Clarity's enterprise website, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
+1. Go to the *Marketing Assets* library and select *Web Content*.
 
-1. Go to the *Articles* folder, click *New*, and select *Article*.
+1. Click *New* and select *Basic Web Content*.
 
-1. Enter some data. This data should be something real and not "Lorem Ipsum" because Open NLP needs to interpret it and provide some tags.
+1. Enter a *title* and use the *AI Creator* (![AI Creator Button](../../images/icon-ai-creator.png)) to generate article content with over 500 words. 
+
+   For example,
+
+   | Field       | Value                                                                                       |
+   |:------------|:--------------------------------------------------------------------------------------------|
+   | Description | Write a compelling article on the importance of annual eye exams is for ongoing eye health. |
+   | Tone        | Friendly                                                                                    |
+   | Word Count  | `2000`                                                                                      |
+
+   **Important**: The article's title and content must be meaningful for auto-tagging to work. Do not use "Lorem Ipsum."
 
 1. Click *Publish*.
 
-1. Begin editing the article. In the right side menu, you should see tags set for the content.
+1. Begin editing the article. In the right side panel, you should see tags set for the content.
+
+   **Note**: If you don't see any tags, add more content to the article and click *Update*.
 
 ## Exercise: Creating a Vocabulary
 <!--Exercise 12a-->
 
 Liferay provides vocabularies for categorizing content, making it easier to find and display the content you need.
 
-Here you'll define a vocabulary with categories for the FAQ web content as Walter Douglas.
+Here you'll define a vocabulary with categories for the FAQ web content as Christian Carter.
 
 To do this,
 
-1. Sign in as Walter Douglas.
+1. Sign in as Christian Carter.
 
-   * Email: `walter.douglas@clarityvisionsolutions.com`
+   * Username: `christian.carter@clarityvisionsolutions.com`
    * Password: `learn`
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Categorization*, and select *Categories*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Asset Libraries*.
+
+1. Select the *Marketing Assets* library and click *Categories*.
 
 1. Click *Add* (![Add](../../images/icon-plus.png)) next to *Vocabularies* to create a new vocabulary.
 
 1. Enter these details:
 
-   | Field                     | Value                        |
-   |:--------------------------|:-----------------------------|
-   | Name                      | FAQ                          |
-   | Description               | Categories for FAQ articles. |
-   | Allow Multiple Categories | Yes                          |
-   | Visibility                | Public                       |
-   | Asset Types               | Web Content Article          |
-   | Subtype                   | FAQ                          |
-   | Required                  | No                           |
+   | Field                     | Value                          |
+   |:--------------------------|:-------------------------------|
+   | Name                      | `FAQ`                          |
+   | Description               | `Categories for FAQ articles.` |
+   | Allow Multiple Categories | Yes                            |
+   | Visibility                | Public                         |
+   | Asset Types               | Web Content Article            |
+   | Subtype                   | FAQ                            |
+   | Required                  | Not Required                   |
 
    ![Choose which asset types the vocabulary will be associated with.](./organizing-claritys-content/images/01.png)
 
@@ -116,15 +130,13 @@ You now have a vocabulary to contain FAQ categories.
 
 After creating a vocabulary, you can add categories and subcategories to establish the desired organizational schema for your content.
 
-Here you'll add categories to the FAQ vocabulary you created in the previous exercise as Walter Douglas.
+Here you'll add categories to the FAQ vocabulary you created in the previous exercise as Christian Carter.
 
 To do this,
 
 1. In the Categories application, select the *FAQ* vocabulary in the Vocabularies sidebar.
 
-1. Click *New* to add a category.
-
-1. In the *Add New Category* page, enter `Retail Partners` as the name.
+1. Click *New* and enter `Retail Partners` for Name.
 
 1. Click *Save* to add the category.
 
@@ -136,11 +148,9 @@ To do this,
 
    ![Create and use categories according to your content.](./organizing-claritys-content/images/02.png)
 
-1. Challenge: Assign the correct category to each FAQ web content article. The FAQs are sorted into folders corresponding to their categories.
+1. **(Challenge)** Assign the correct category to each FAQ web content article. The FAQs are sorted into folders corresponding to their categories.
 
-   **Hint:** Look in the Properties sidebar for each FAQ.
-
-   <!--TASK: Reassess how the challenge is incorporated. -->
+   **Hint**: Look in the Properties sidebar for each FAQ.
 
 You have now defined and assigned categories to your FAQ web content.
 

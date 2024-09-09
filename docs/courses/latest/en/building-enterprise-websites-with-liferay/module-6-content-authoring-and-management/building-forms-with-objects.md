@@ -189,11 +189,11 @@ To do this,
 
 1. Select the form container and configure these settings:
 
-   | Tab     | Setting                                  | Value      |
-   |:--------|:-----------------------------------------|:-----------|
-   | General | Success Interaction                      | Go to Page |
-   | General | Page                                     | Home       |
-   | General | Show Notification when Form is Submitted | Yes        |
+   | Tab     | Setting                        | Value      |
+   |:--------|:-------------------------------|:-----------|
+   | General | Success Action                 | Go to Page |
+   | General | Page                           | Home       |
+   | General | Show Notification After Submit | Yes        |
 
    ![You can configure the form to redirect to another page when submitted.](./building-forms-with-objects/images/03.png)
 
@@ -230,7 +230,7 @@ To do this,
 
 1. Test out the form.
 
-Great! You've created a multi-step form using objects, form fragments, and display page templates.
+Great! Now you've created a multi-step form using objects, form fragments, and display page templates.
 
 ## Conclusion
 

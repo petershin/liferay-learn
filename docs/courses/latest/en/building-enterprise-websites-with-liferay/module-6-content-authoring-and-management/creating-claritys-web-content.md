@@ -254,7 +254,7 @@ Next, you'll learn about how you can use AI to assist in content creation and ta
 
 You may have noticed that web content articles include the *AI Creator* button for generating content using ChatGPT. Using this feature requires a valid API key.
 
-Here you'll add an API key to your instance as the Clarity Admin user so that you can generate content.
+Here you'll add a temporary API key to your instance as the Clarity Admin user.
 
 To do this,
 
@@ -267,20 +267,36 @@ To do this,
 
 1. Click *AI Creator*.
 
-1. Enter your API key.
+1. Enter the API key provided for this training.
 
-   !!! note
-       Bootcamp participants are provided a temporary key.
+   **Note**: This key is temporary.
 
-1. Ensure *Enable ChatGPT to Create Content* is checked.
+1. Ensure these options are checked:
+
+   * *Enable ChatGPT to Create Content*
+   * *Enable DALL-E to Create Images*
 
 1. Click *Save*.
 
-1. Return to Clarity's site, begin creating a web content article, and click the *AI Creator* button to generate content.
+1. Go to the *Marketing Assets* library and select *Web Content*.
 
-![Use the AI Creator tool to generate content.](./creating-claritys-web-content/images/11.png)
+1. Click *New* and select *Basic Web Content*.
 
-Great! You've used ChatGPT to generate web content articles.
+1. Click the *AI Creator* button (![AI Creator Button](../../images/icon-ai-creator.png)) to generate content.
+
+   ![Use the AI Creator tool to generate content.](./creating-claritys-web-content/images/04.png)
+
+1. Enter your desired description, tone, and word count.
+
+1. Click *Create*.
+
+   This generates a text response.
+
+1. Click *Add* to copy the response into your web content.
+
+   Alternatively, click *Try Again* to generate a new response.
+
+Great! You've used ChatGPT to generate web content.
 
 ## Conclusion
 

@@ -83,4 +83,4 @@ Here is each folder's purpose:
 - `[work]`: Exists only in 7.2 and earlier. It holds module Jasper work files.
 
 !!! note
-    If DXP cannot create resources in the Liferay Home folder or when DXP runs on certain application servers, it creates a folder called `liferay` in the home folder of the operating system user that is running DXP. In this case, that `liferay` folder becomes the Liferay Home. For example, if your operating system user name is *jbloggs*, the `liferay` folder path is `/home/jbloggs/liferay` or `C:\Users\jbloggs\liferay`.
+    If DXP cannot create resources in the Liferay Home folder or when DXP runs on certain application servers, it creates a folder called `liferay` in the home folder of the operating system user that is running DXP. In this case, that `liferay` folder becomes Liferay Home. For example, if your operating system user name is *jbloggs*, the `liferay` folder path is `/home/jbloggs/liferay` or `C:\Users\jbloggs\liferay`.

@@ -20,9 +20,11 @@ The first step towards personalization is identifying your user segments. Once i
 - Session Properties
 - Custom Fields
 
-<!--IMAGE: screenshots of rule builder UI-->
+![Define segments using Liferay's rule builder.](./personalizing-experiences-for-users/images/01.png)
 
 This rule builder uses semantic building blocks, meaning you can define segments by constructing sentences that describe the criteria. There are several predefined segmentation rules that you can use, and Liferay also supports the creation of custom fields that you can build rules around. You can also build new segments by combining existing segments, enabling more specific, focused user experiences.
+
+![Use predefined or custom criteria to create your own segments.](./personalizing-experiences-for-users/images/02.png)
 
 Segmentation integrates with Liferay Analytics Cloud, which adds support for long-time behavior and third party data (e.g., Salesforce). In addition to the visual user interface, you can also use headless APIs to create custom properties for segmentation.
 
@@ -34,11 +36,15 @@ When designing pages, you can create page variations for different segments. In 
 
 Creating experiences out of segments is an intuitive, non-intrusive part of the site building and content management interfaces that Liferay provides.
 
+![You can create page variations for different user segments.](./personalizing-experiences-for-users/images/03.png)
+
 Sometimes, we have more than one idea on how to engage a certain audience, but we aren't sure which option is best. This is where A/B testing comes into play.
 
 ## A/B Testing
 
 With A/B testing, you can make two variants of a site page and compare the click rate or bounce rate of the two pages. Some visitors see one version, while another group sees the alternative. You can test the performance of the two variants and determine which is better for your customers.
+
+![You can run A/B tests to identify the most effective page variant.](./personalizing-experiences-for-users/images/04.png)
 
 The tight integration between Liferay DXP and Analytics Cloud means setting up A/B tests, tracking results, and publishing variants is simple. Liferay provides a UI for non-technical users to administer A/B tests with granular control over the test configuration and criteria. The tests are automatically synchronized with Liferay Analytics Cloud, which provides you with test history, statistics, variant performance benchmarks, and more.
 
@@ -97,7 +103,7 @@ To do this,
 
    We cover both scenarios here: users in the user group and those with the directly assigned Distributor role.
 
-   ![Set the regular role to Distributor and the user group to Distributors.](./personalizing-experiences-for-users/images/01.png)
+   ![Set the regular role to Distributor and the user group to Distributors.](./personalizing-experiences-for-users/images/05.png)
 
 1. Click *View Members* to validate Terrence Wheatley meets the segment condition.
 

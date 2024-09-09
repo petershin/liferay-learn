@@ -12,7 +12,7 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay DXP 7.3 U30+`
 
-The steps to connect Liferay DXP 7.3 to Analytics Cloud differ slightly from [the steps to connect Liferay DXP 7.4](./connecting-liferay-dxp-to-analytics-cloud.md).
+The steps to connect Liferay DXP 7.3 to Analytics Cloud differ slightly from [the steps to connect Liferay DXP 7.4](./connecting-liferay-dxp-to-analytics-cloud.md). Liferay DXP 7.3 requires a hotfix to be compatible with Analytics Cloud.
 
 ## Connection Token
 

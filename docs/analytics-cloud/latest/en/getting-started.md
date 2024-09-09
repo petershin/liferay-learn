@@ -104,4 +104,4 @@ Analytics Cloud shows you these things about known individuals:
 
 Now that you've seen some of the capabilities of Analytics Cloud, it's time to get your workspace set up. The first step is to connect your Liferay DXP instance to Analytics Cloud. This is, in essence, giving Analytics Cloud permission to view what's happening on your Liferay instance.
 
-See [Connecting Liferay DXP to Analytics Cloud](./getting-started/connecting-liferay-dxp-to-analytics-cloud.md) to follow the steps.
+See [Connecting Liferay DXP to Analytics Cloud](./getting-started/connecting-liferay-dxp-to-analytics-cloud.md) to follow the steps. If you're on Liferay 7.3, see [Connecting Liferay DXP 7.3 to Analytics Cloud](./getting-started/connecting-liferay-dxp-7-3-to-analytics-cloud.md) instead.

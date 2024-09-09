@@ -11,6 +11,8 @@ Liferay provides native support for OpenID Connect. OpenID Connect is a standard
 
 OpenID Connect is typically used in commerce scenarios, where you’re allowing users to connect to Liferay using well-known providers like Google, Facebook, Microsoft, Apple, and GitHub. As long as a provider supports OIDC, you can use it for authentication with a simple configuration on the Liferay DXP side and does not require custom development. Additionally, OIDC automatically creates accounts in Liferay when users first authenticate to the platform using their OIDC credentials.
 
+![Liferay provides native support for OpenID Connect.](./using-third-party-services-for-authentication-and-sso/images/01.png)
+
 That said, OIDC is generally best for lightweight applications or ones that need minimum verification. From a security standpoint, you should use a more mature and feature rich authentication standard like SAML.
 
 ## SAML, SSO, and Identity Management Systems
@@ -21,7 +23,7 @@ Security Assertion Markup Language (SAML) is an alternative standard to OpenID C
 
 * **Service Provider**: The service provider is any application or website that relies on the IdP to verify user identities for access control.
 
-![SAML exchanges authentication and authorization data between identity providers and service providers.](./using-third-party-services-for-authentication-and-sso/images/01.png)
+![SAML exchanges authentication and authorization data between identity providers and service providers.](./using-third-party-services-for-authentication-and-sso/images/02.png)
 
 In this scenario, a third-party identity provider is configured to work with Liferay as the service provider. With this configuration, passwords are not maintained in Liferay, but user accounts are still created so that permissions can be assigned. This is a good example of the separation between Authentication and Authorization: Users are Authenticated against their credentials in the IDM, but are authorized by their permissions that are defined in Liferay.
 
@@ -41,7 +43,7 @@ Throughout this course, we'll use basic authentication for training purposes. Fo
 
 Clarity Vision Solutions already uses Okta's cloud-based identity management to manage employee information and authentication. They also have established efficient HR processes for onboarding and data management within Okta. Therefore, it is critical for Clarity to leverage these systems and processes. Fortunately, Liferay integrates seamlessly with Okta, enabling single sign-on (SSO) and eliminating the need for separate logins for the new website. This aligns with Clarity's desire to streamline access for content managers and system administrators.
 
-![Okta logo](./using-third-party-services-for-authentication-and-sso/images/02.png)
+![Clarity Vision Solutions uses Okta as its identity provider.](./using-third-party-services-for-authentication-and-sso/images/03.png)
 
 Overall, using Okta for authentication and SSO provides these benefits:
 

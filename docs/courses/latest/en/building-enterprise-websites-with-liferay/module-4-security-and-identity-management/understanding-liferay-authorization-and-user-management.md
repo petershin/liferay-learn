@@ -16,6 +16,8 @@ At Clarity, each user has different responsibilities in developing the enterpris
 
 The cornerstone of Liferay's user management is the user entity. Every person who accesses and interacts with the Liferay platform is considered a user. Users can be either authenticated (with credentials) or unauthenticated (guests). Authenticated users can be created manually in Liferay or imported and managed from existing data stores or identity providers. 
 
+![Create users in the Users and Organizations application.](./understanding-liferay-authorization-and-user-management/images/01.png)
+
 !!! tip
     While manually creating users in Liferay is possible, importing them from existing data stores or identity providers is far more efficient. 
 

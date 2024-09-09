@@ -38,6 +38,8 @@ In addition to workflows, you can use picklists to define custom state fields wi
 
 ![The application states are related to one another.](./implementing-business-logic/images/03.png)
 
+<!-- TASK: Update and replace the above diagram, since it was created during the MVP phase. We should request a Liferay-styled diagram to the design team. -->
+
 After setting this up, Clarity can use the field with validations and actions to add business logic for different states. They also can use the field alongside workflow statuses to define more complex review and approval processes. In a later exercise, you'll finish setting up Clarity's workflow for Distributor Applications.
 
 ## Automating Notifications
@@ -46,7 +48,7 @@ After setting this up, Clarity can use the field with validations and actions to
 
 Notifications improve visibility in your application by providing real-time updates to users and system administrators for object events. This involves creating notification templates and then using those templates with object actions. The template provides the notification content and design, while the object action determines the trigger and conditions for sending the notification (e.g., at object creation, at object update).
 
-<!--TASK: ![]()-->
+![Send real-time updates to users with notification templates and object actions.](./implementing-business-logic/images/04.png)
 
 Currently, Clarity's onboarding solution includes three automated notifications that inform applicants when their applications are received, approved, or rejected. In a later exercise, you'll add another notification for informing Clarity's business development team of new submissions.
 

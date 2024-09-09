@@ -29,6 +29,8 @@ You can model each of these data entities as *object definitions*. An object def
 
 ![Object entries are individual instances of an object definition.](./modeling-and-managing-data-structures/images/01.png)
 
+<!-- TASK: Update and replace the above diagram, since it was created during the MVP phase. We should request a Liferay-styled diagram to the design team. -->
+
 After determining the types of entities required for their solution, Clarity can start adding attributes to the object definitions.
 
 ## Adding Attributes
@@ -81,7 +83,7 @@ Once you've defined the relationship between object definitions, you can relate 
 
 Managing access to data with account membership and role permissions is critical for data privacy and security. Since Liferay Objects are integrated with the permissions framework, you can use roles and permissions to manage access to Distributor Applications and Application Evaluations. This helps Clarity ensure that only authenticated users can submit applications and a limited number of employees can review submissions.
 
-<!--TASK: ![]() -->
+![Manage access to individual object definitions with roles and permissions.](./modeling-and-managing-data-structures/images/05.png)
 
 User roles do not come with objects permissions by default, so you must manually grant access to objects and their entries. When you deploy Clarity's distributor onboarding solution in a later exercise, you will also assign the appropriate permissions to the business role for reviewing applications.
 
@@ -99,11 +101,11 @@ If you want to migrate custom data structures between environments, you can expo
 
 Liferay provides the model builder UI for designing complex object structures. This graphical tool displays each object definition as a card and visualizes relationships between object definitions. With it, you can create, manage, and extend data models in the Objects application and quickly configure definitions, fields, and relationships.
 
-![Use the model builder UI to design complex object structures.](./modeling-and-managing-data-structures/images/05.png)
+![Use the model builder UI to design complex object structures.](./modeling-and-managing-data-structures/images/06.png)
 
 To access the Model Builder view, open the Objects application and click *View in Model Builder*.
 
-![Go to the desired object folder and click View in Model Builder.](./modeling-and-managing-data-structures/images/06.png)
+![Go to the desired object folder and click View in Model Builder.](./modeling-and-managing-data-structures/images/07.png)
 
 Streamline your object management with this visual editor. Create, edit, and organize object definitions with ease. It is especially helpful for visualizing and managing intricate object relationships.
 

@@ -1,6 +1,5 @@
 ---
 toc:
-  - ./order-management/commerce-order-engine-overview.md
   - ./order-management/implementing-a-custom-order-status.md
   - ./order-management/implementing-a-custom-notification-type.md
   - ./order-management/implementing-a-custom-order-rule.md
@@ -14,4 +13,4 @@ taxonomy-category-names:
 ---
 # Order Management
 
-
+Liferay's order engine contains several components that you can customize to fit your needs. You can add custom notification types, order statuses, order rules, and more.

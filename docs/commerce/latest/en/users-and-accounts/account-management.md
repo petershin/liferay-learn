@@ -18,28 +18,25 @@ taxonomy-category-names:
 ---
 # Account Management
 
-In Liferay Commerce, Accounts are used to store customer information, such as billing and shipping addresses, order details, and VAT number. Once created, Accounts can be sorted into groups based on shared criteria (e.g., geographic region). These Account Groups can be used to target customers with specific Price Lists, Promotions, and Discounts.
+{bdg-secondary}`Available Liferay 7.3 and Below`
+
+In Liferay, accounts store customer information, such as billing and shipping addresses, order details, and VAT number. Once created, accounts can be sorted into groups based on shared criteria (e.g., geographic region). These account groups can be used to target customers with specific price lists, promotions, and discounts.
+
+!!! important
+    Starting from Liferay 7.4, accounts are a part of DXP. See [Accounts](https://learn.liferay.com/w/dxp/users-and-permissions/accounts) for more information.
 
 ## Account Types
 
-Commerce provides two Account types: Business and Personal. Each one is used for the different [Site Type](../starting-a-store/sites-and-site-types.md) (i.e., B2B, or B2C).
+Liferay provides three account types: Business, Personal, and Guest. Business and personal accounts are used based on the [site type](../starting-a-store/sites-and-site-types.md) (i.e., B2B, or B2C). Guest accounts are used in B2C or B2X sites.
 
-* **Business Accounts**: Business Accounts can have multiple users associated with it. These users can be assigned [Account roles](./account-management/account-roles.md) to delegate responsibilities on behalf of the Account. In a B2B Site, customers must be associated with a Business Account to make purchases.
+* **Business Accounts**: Business accounts can have multiple users associated with it. You can assign these users [account roles](./account-management/account-roles.md) to delegate responsibilities on behalf of the account. In a B2B site, customers must be associated with a business account to make purchases.
 
-* **Personal Accounts**: Personal Accounts can only be associated with a single user. In a B2C Site, authenticated customers are automatically assigned a Personal Account and are able to make purchases individually.
+* **Personal Accounts**: Personal accounts can only be associated with a single user. In a B2C site, authenticated customers are automatically assigned a personal account and can make purchases individually.
 
-  ```{note}
-  Liferay User Account Profile information is imported to the Personal Account at the time of creation. Any additional updates to a Liferay User Account Profile are not automatically propagated to the Personal Account.
-  ```
-<!-- TASK: Add the Guest Account type; also note that B2X Sites recognize both Business and Personal Accounts-->
-## Common Account Management Actions
+  !!! note
+       The profile information on a Liferay user account is imported to the personal account at the time of creation. Any additional updates to the Liferay user account are not automatically propagated to the personal account.
 
-See the following articles to learn more about common Account Management actions:
-
-* [Creating a New Account](./account-management/creating-a-new-account.md)
-* [Inviting Users to an Account](./account-management/inviting-users-to-an-account.md)
-* [Adding Addresses to an Account](./account-management/adding-addresses-to-an-account.md)
-* [Creating a New Account Group](./account-management/creating-a-new-account-group.md)
+* **Guest Accounts**: For customers that want to make purchases without creating an account on your site, they can use a guest account. This is created during guest checkout. See [Guest Checkout](../store-management/guest-checkout.md) for more information.
 
 ## Related Topics
 

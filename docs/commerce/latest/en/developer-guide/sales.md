@@ -14,3 +14,5 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Sales
+
+Liferay provides several extension points that you can use to improve the sales in your storefront. From adding a new checkout step to a new tax engine and more, the possibilities are endless.

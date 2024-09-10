@@ -10,3 +10,5 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Promotions
+
+There are three discount rules available out-of-the-box with Liferay. But you can also use the extension point to add your own custom rules.

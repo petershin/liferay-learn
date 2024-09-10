@@ -10,3 +10,5 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Catalog
+
+Liferay comes with [four product types](../product-management/creating-and-managing-products/product-types.md) out-of-the-box. But you can leverage the extension point to add a new product type of your own.

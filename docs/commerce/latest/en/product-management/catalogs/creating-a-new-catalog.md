@@ -9,47 +9,33 @@ taxonomy-category-names:
 ---
 # Creating a New Catalog
 
-A catalog is the complete list of related products that can be displayed on a store site. Store administrators can create multiple catalogs (each with their own corresponding currencies) on a single Liferay Commerce instance.
+1. Open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Catalogs_.
 
-To create a new catalog:
+    ![Navigate to the Catalogs application.](./creating-a-new-catalog/images/01.png)
 
-1. Click the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) button then _Commerce_.
-1. Click _Catalogs_.
-
-    ![Navigate to the Catalogs in the Commerce section.](./creating-a-new-catalog/images/03.png)
-
-1. Click the Add (![Add icon](../../images/icon-add.png)) button to add a new catalog.
-1. Enter the following:
+1. Click _Add_ (![Add icon](../../images/icon-add.png)) and enter the following:
 
     * **Name**: Medical Supplies
-    * **Default Catalog Language**: (your Language) (for example, _English (United States)_)
-    * **Currency**: (your store's currency) (_US Dollar_)
+    * **Default Catalog Language**: English (United States)
+    * **Currency**: US Dollar
 
-    ![Add a new blank Catalog.](./creating-a-new-catalog/images/04.png)
+    ![Add a new catalog.](./creating-a-new-catalog/images/02.png)
 
-1. Click _Submit_ when finished.
-
-The new catalog has been created.
+1. Click _Submit_.
 
 ## Liferay Commerce 2.1 and Below
 
-To create a new catalog:
+1. Navigate to _Control Panel_ &rarr; _Commerce_ &rarr; _Catalogs_.
 
-1. Navigate to _Control Panel_ → _Commerce_ → _Catalogs_.
-1. Click the Add (![Add icon](../../images/icon-add.png)) button to add a new catalog.
-1. Enter the following:
+1. Click _Add_ (![Add icon](../../images/icon-add.png)) and enter the following:
 
     * **Name**: Medical Supplies
-    * **Default Catalog Language**: (your Language) (for example, _English (United States)_)
-    * **Currency**: (your store's currency) (_US Dollar_)
+    * **Default Catalog Language**: English (United States)
+    * **Currency**: US Dollar
 
-    ![New Catalog](./creating-a-new-catalog/images/01.png)
+    ![Add a new catalog.](./creating-a-new-catalog/images/03.png)
 
 1. Click _Save_.
-
-The new catalog has been created and will be selectable when adding a new product.
-
-![Catalog and Products](./creating-a-new-catalog/images/02.png)
 
 ## Related Topics
 

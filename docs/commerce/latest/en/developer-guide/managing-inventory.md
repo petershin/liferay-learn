@@ -10,3 +10,5 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Managing Inventory
+
+Liferay's inventory engine comes with one low stock activity out-of-the-box. But you can use the extension point to add custom ones.

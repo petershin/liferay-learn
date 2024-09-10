@@ -11,3 +11,5 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Content
+
+Learn how to customize the way products are displayed in your storefront or add new data sources to the product publisher widget.

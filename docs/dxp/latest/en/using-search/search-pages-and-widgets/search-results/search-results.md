@@ -25,6 +25,12 @@ Keep in mind though, almost everything you do when [configuring search](../../se
 
 The concepts below are essential to understand before you begin changing any settings.
 
+## Customizing the Search Results UI
+
+The default UI for the Search Results widget is provided by the List Layout. You can [choose a different widget template](../using-search-widget-display-templates.md#search-results) or create a [completely custom one](../using-search-widget-display-templates/search-results-widget-template-reference.md) to override the out-of-the-box display.
+
+![You can customize the search results display.](./search-results/images/08.png)
+
 ## Filtering Results with Facets
 
 Results are filtered using *facets*. Most users have encountered similar filtering capabilities in other applications, particularly during commerce activities. Users enter a search term, are presented with a list of results, and selecting search facets refines the results. You can think of a facet as a bucket of results with a shared characteristics.

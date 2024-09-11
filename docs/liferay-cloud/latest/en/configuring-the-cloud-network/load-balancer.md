@@ -178,11 +178,11 @@ To encode the contents of these files and use them, perform the following steps:
 1. Run the following commands (or use any other preferred encoding method) to convert the files into new files with base64 encoding:
 
    ```bash
-   openssl base64 -in originalkeyfile.key -out base64keyfile.key
+   openssl base64 -A -in originalkeyfile.key -out base64keyfile.key
    ```
 
    ```bash
-   openssl base64 -in originalcertfile.crt -out base64certfile.crt
+   openssl base64 -A -in originalcertfile.crt -out base64certfile.crt
    ```
 
 1. Copy all of the contents from the new, encoded `key` file (in this example, `base64keyfile.key`) and paste them into the `key` variable in your `webserver` service's `LCP.json` file.

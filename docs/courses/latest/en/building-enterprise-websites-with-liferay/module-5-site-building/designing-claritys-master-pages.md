@@ -109,7 +109,7 @@ To do this,
    !!! tip
        To duplicate a page element while editing, press CTRL + D.
 
-   ![Add two containers in the Page Header container.](./pdf-images/day1/lesson6/07.png)
+   ![Add two containers in the Page Header container.](./designing-claritys-master-pages/images/07.png)
 
 1. Select the *Header Announcement Bar* and configure these settings in the configuration side panel:
 

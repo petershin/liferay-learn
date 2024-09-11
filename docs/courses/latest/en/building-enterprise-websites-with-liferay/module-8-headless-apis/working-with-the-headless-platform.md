@@ -51,12 +51,12 @@ Client URL (cURL) is a simple command line tool for transferring data, most comm
 
 ### Third Party API Services
 
-There are a variety of third party applications you can use to test Liferay endpoints. These tools provide GUIs with which you can
+There are a variety of third party applications you can use to test Liferay endpoints (e.g., Postman). These tools provide GUIs for
 
-* Create and save various API calls
-* Organize API tests with workspaces and folders
-* Collaborate on tests with other users
-* Store request and response artifacts for future testing
+* Creating and saving API calls
+* Organizing API tests with workspaces and folders
+* Collaborating on tests with other users
+* Storing request and response artifacts for future testing
 
 Liferay's headless APIs conform to standard REST requirements, so they are compatible with any widely used third party API testing service.
 
@@ -72,7 +72,7 @@ However, since REST Builder requires deploying OSGi modules, this method is not 
 
 ### Liferay Object APIs
 
-In Module 6, you learned about using Liferay Objects to build business forms. There we highlighted that one of the strengths of Objects is their integration with Liferay's core frameworks and features. One of these features is the headless platform: when you publish an Object, Liferay automatically generates standard REST endpoints for interacting with the object and its data. While the object is active, you can use these APIs to perform basic CRUD operations, run complex queries with aggregation terms and nested fields, trigger standalone actions, and manage object relationships.
+In Module 6, you learned about using Liferay Objects to build business forms. There we highlighted that one of the strengths of Objects is their integration with Liferay's core frameworks and features. prime example of this integration is with the headless platform: when you publish an Object, Liferay automatically generates standard REST endpoints for interacting with the object and its data. While the object is active, you can use these APIs to perform basic CRUD operations, run complex queries with aggregation terms and nested fields, trigger standalone actions, and manage object relationships.
 
 ### API Builder
 

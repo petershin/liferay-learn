@@ -16,7 +16,7 @@ uuid: a0a8f5b4-c8ff-4008-9cd8-0fcd6417f269
 
 In the previous modules, you learned about building site pages and creating site content with Liferay in the context of Clarity's enterprise marketing website. Because creating new content requires significant effort, Clarity wants to import some of the existing content from their previous portal application so they can get up and running faster. Migrating legacy content is one of many use cases solved by Liferay's Headless APIs.
 
-In this module, you will learn how to:
+By the end of this module, you'll understand how to
 
 * Use Headless APIs to migrate data between Liferay and external systems
 * Create custom APIs with Liferay Objects using features like REST Builder and API Builder

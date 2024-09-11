@@ -171,9 +171,9 @@ To encode the contents of these files and use them, perform the following steps:
    touch originalcertfile.crt
    ```
 
-1. Open the `key` file and copy all of the contents **between and including the begin and end key tags**, and then copy them into the new file created for it (in this example, `originalkeyfile.key`). Save the file.
+1. Open the `key` file and copy all of the contents **including the begin and end key tags**, and then copy them into the new file created for it (in this example, `originalkeyfile.key`). Save the file.
 
-1. Open the `cert` file and copy all of the contents **between and including the begin and end cert tags**, and then copy them into the new file created for it (in this example, `originalcertfile.crt`). Save the file.
+1. Open the `cert` file and copy all of the contents **including the begin and end cert tags**, and then copy them into the new file created for it (in this example, `originalcertfile.crt`). Save the file.
 
 1. Run the following commands (or use any other preferred encoding method) to convert the files into new files with base64 encoding:
 

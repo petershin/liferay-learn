@@ -15,12 +15,12 @@ As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Porta
 
 ## Recommended JVM Settings
 
-| Type             | Setting/Default                           | Required | Description |
-| :--------------- | :---------------------------------------- | :------- | :---------- |
-| File Encoding    | `-Dfile.encoding=UTF8`                    | Yes      | DXP requires UTF-8 file encoding to support internationalization. |
-| Timezone         | `-Duser.timezone=GMT`                     | Yes      | DXP uses the GMT timezone for all dates. |
-| Heap Size        | `-Xms2560m -Xmx2560m`                     | No       | The default minimum and maximum size can be adjusted to suit your needs, but you should set the same minimum (`-Xms`) and maximum (`-Xmx`) size to prevent the JVM from making dynamic adjustments. |
-| Log4j            | `-Dlog4j2.formatMsgNoLookups=true`        | Yes*     | Log4j versions prior to 2.15.0 are subject to a remote code execution (RCE) vulnerability via the LDAP JNDI parser. See [LPS-143663](https://issues.liferay.com/browse/LPS-143663) for details. \*Liferay DXP 7.4 GA1 and Liferay PORTAL 7.4 GA1 - GA3 require this setting to resolve the security vulnerability. |
+| Type          | Setting/Default                    | Required | Description                                                                                                                                                                                                                                                                                                      |
+| :------------ | :--------------------------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| File Encoding | `-Dfile.encoding=UTF8`             | Yes      | DXP requires UTF-8 file encoding to support internationalization.                                                                                                                                                                                                                                                |
+| Timezone      | `-Duser.timezone=GMT`              | Yes      | DXP uses the GMT timezone for all dates.                                                                                                                                                                                                                                                                         |
+| Heap Size     | `-Xms2560m -Xmx2560m`              | No       | The default minimum and maximum size can be adjusted to suit your needs, but you should set the same minimum (`-Xms`) and maximum (`-Xmx`) size to prevent the JVM from making dynamic adjustments.                                                                                                              |
+| Log4j         | `-Dlog4j2.formatMsgNoLookups=true` | Yes*     | Log4j versions before 2.15.0 are subject to a remote code execution (RCE) vulnerability via the LDAP JNDI parser. See [LPS-143663](https://issues.liferay.com/browse/LPS-143663) for details. \*Liferay DXP 7.4 GA1 and Liferay PORTAL 7.4 GA1 - GA3 require this setting to resolve the security vulnerability. |
 
 The Liferay installation articles for supported application servers explain where to apply these settings. Here are the article links:
 

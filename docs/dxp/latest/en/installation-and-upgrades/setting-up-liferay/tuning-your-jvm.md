@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Tuning Your JVM
 
-Java Virtual Machine (JVM) tuning primarily focuses on adjusting Java heap and non-heap settings and configuring garbage collection. Finding settings that perform well for you depend on your system's load and your hardware. The settings discussed here can be used as a starting point for tuning your JVM. 
+Java Virtual Machine (JVM) tuning primarily focuses on adjusting Java heap and non-heap settings and configuring garbage collection. Finding settings that perform well for you depend on your system's load and your hardware. The settings discussed here can be used as a starting point for tuning your JVM.
 
 You can adapt the example Oracle JVM settings to settings for your JVM. Please consult [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for compatible JVMs.
 
@@ -18,33 +18,31 @@ The JVM's memory comprises heap and non-heap spaces. The heap contains a space f
 
 **Memory Settings Example**
 
-``` 
--Xms2560m -Xmx2560m 
--XX:NewSize=1536m -XX:MaxNewSize=1536m 
--XX:MetaspaceSize=768m -XX:MaxMetaspaceSize=768m 
--XX:InitialCodeCacheSize=64m -XX:ReservedCodeCacheSize=96m 
+```
+-Xms2560m -Xmx2560m
+-XX:NewSize=1536m -XX:MaxNewSize=1536m
+-XX:MetaspaceSize=768m -XX:MaxMetaspaceSize=768m
+-XX:InitialCodeCacheSize=64m -XX:ReservedCodeCacheSize=96m
 ```
 
 **Memory Settings Explained**
 
-| Memory Setting | Explanation |
-| :------ | :---------- |
-| `-Xms2560m` | Initial space for heap. |
-| `-Xmx2560m` | Maximum space for heap. |
-| `-XX:NewSize=1536m`| Initial new space. Setting the new size to half of the total heap typically provides better performance than using a smaller new size. |
-| `-XX:MaxNewSize=1536m` | Maximum new space. |
-| `-XX:MetaspaceSize=768m` | Initial space for static content. |
-| `-XX:MaxMetaspaceSize=768m` | Maximum space for static content. |
-| `-XX:InitialCodeCacheSize=64m` | Initial space for JIT-compiled code. Too small a code cache (`48m` is the default) reduces performance, as the JIT isn't able to optimize high frequency methods. |
-| `-XX:ReservedCodeCacheSize=96m` | Maximum space for JIT-compiled code. |
+| Memory Setting                  | Explanation                                                                                                                                                       |
+| :------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-Xms2560m`                     | Initial space for heap.                                                                                                                                           |
+| `-Xmx2560m`                     | Maximum space for heap.                                                                                                                                           |
+| `-XX:NewSize=1536m`             | Initial new space. Setting the new size to half of the total heap typically provides better performance than using a smaller new size.                            |
+| `-XX:MaxNewSize=1536m`          | Maximum new space.                                                                                                                                                |
+| `-XX:MetaspaceSize=768m`        | Initial space for static content.                                                                                                                                 |
+| `-XX:MaxMetaspaceSize=768m`     | Maximum space for static content.                                                                                                                                 |
+| `-XX:InitialCodeCacheSize=64m`  | Initial space for JIT-compiled code. Too small a code cache (`48m` is the default) reduces performance, as the JIT isn't able to optimize high frequency methods. |
+| `-XX:ReservedCodeCacheSize=96m` | Maximum space for JIT-compiled code.                                                                                                                              |
 
-```{Note}
-Set the minimum (`-Xms`) and maximum (`-Xmx`) heap size to the same value to prevent the JVM from making dynamic adjustments.
-```
+!!! note
+	Set the minimum (`-Xms`) and maximum (`-Xmx`) heap size to the same value to prevent the JVM from making dynamic adjustments.
 
-```{warning}
-Avoid allocating more than 32g to your JVM heap. Your heap size should be commensurate with the speed and quantity of available CPU resources.
-```
+!!! warning
+	Avoid allocating more than 32g to your JVM heap. Your heap size should be commensurate with the speed and quantity of available CPU resources.
 
 ## Set Survivor Space
 
@@ -58,10 +56,10 @@ In the old generation space (in the heap), large garbage collections can cause n
 
 **Survivor Settings Explained**
 
-| Survivor Setting | Explanation |
-| :------ | :---------- |
-| `-XX:SurvivorRatio=16` | Makes the survivor space 1/16 of the new space (the initial new space is `1536m`). |
-| `-XX:TargetSurvivorRatio=50` | Instructs the JVM to use 50% of the survivor space after each Eden garbage collection. |
+| Survivor Setting              | Explanation                                                                                                          |
+| :---------------------------- | :------------------------------------------------------------------------------------------------------------------- |
+| `-XX:SurvivorRatio=16`        | Makes the survivor space 1/16 of the new space (the initial new space is `1536m`).                                   |
+| `-XX:TargetSurvivorRatio=50`  | Instructs the JVM to use 50% of the survivor space after each Eden garbage collection.                               |
 | `-XX:MaxTenuringThreshold=15` | Keeps survivors in the survivor space for up to 15 garbage collections before promotion to the old generation space. |
 
 ## Configure Garbage Collection
@@ -83,25 +81,24 @@ Start tuning using parallel throughput collectors in the new generation (ParNew)
 
 **GC Settings Explained**
 
-| GC Setting | Explanation |
-| :--------- | :---------- |
-| `-XX:+UseParNewGC` | Enables parallel collectors for the new generation. |
-| `-XX:ParallelGCThreads=16` | Allocates 16 threads for parallel garbage collection. Set the number of threads based on the CPU threads available, which you can get on Linux by running `cat /proc/cpuinfo`. The threads use memory from the old generation space. |
-| `-XX:+UseConcMarkSweepGC` | Enables the concurrent mark sweep GC algorithm for the old generation. |
-| `-XX:+CMSParallelRemarkEnabled` | Enables remarking during program execution. |
-| `-XX:+CMSCompactWhenClearAllSoftRefs` | Move memory blocks closer together when using CMS with the `ClearAllSoftRefs` setting. |
-| `-XX:CMSInitiatingOccupancyFraction=85` | Initiates CMS when this percent of old generation space is occupied. |
-| `-XX:+CMSScavengeBeforeRemark` | Execute Eden GCs before re-marking objects of CMS. |
+| GC Setting                              | Explanation |
+| :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-XX:+UseParNewGC`                      | Enables parallel collectors for the new generation.                                                                                                                                                                                  |
+| `-XX:ParallelGCThreads=16`              | Allocates 16 threads for parallel garbage collection. Set the number of threads based on the CPU threads available, which you can get on Linux by running `cat /proc/cpuinfo`. The threads use memory from the old generation space. |
+| `-XX:+UseConcMarkSweepGC`               | Enables the concurrent mark sweep GC algorithm for the old generation.                                                                                                                                                               |
+| `-XX:+CMSParallelRemarkEnabled`         | Enables remarking during program execution.                                                                                                                                                                                          |
+| `-XX:+CMSCompactWhenClearAllSoftRefs`   | Move memory blocks closer together when using CMS with the `ClearAllSoftRefs` setting.                                                                                                                                               |
+| `-XX:CMSInitiatingOccupancyFraction=85` | Initiates CMS when this percent of old generation space is occupied.                                                                                                                                                                 |
+| `-XX:+CMSScavengeBeforeRemark`          | Execute Eden GCs before re-marking objects of CMS.                                                                                                                                                                                   |
 
-```{note}
-There are additional "new" algorithms like Garbage-First (G1), but Liferay Engineering's tests for G1 indicated that it does not improve performance. Since your application performance may vary, you should add G1 to your testing and tuning plans.
-```
+!!! note
+	There are additional "new" algorithms like Garbage-First (G1), but Liferay Engineering's tests for G1 indicated that it does not improve performance. Since your application performance may vary, you should add G1 to your testing and tuning plans.
 
 ### Garbage Collection on Java 11
 
 Since CMS and ParNew algorithms are deprecated in Java 11, use the Garbage-First (G1) algorithm. It's enabled by default. Start testing with G1's default settings.
 
-## Consider Using Large Pages 
+## Consider Using Large Pages
 
 On systems that require large heap sizes (e.g., above 4GB), it may be beneficial to use large page sizes.
 
@@ -111,30 +108,30 @@ Here's how to configure large pages (aka "huge pages") on Linux:
 
 1. Determine the number of pages to use based on your hardware specification and application profile. On Linux, report your page size by executing this command:
 
-    ```bash
-	cat /proc/meminfo | grep Hugepagesize
-	```
+   ```bash
+   cat /proc/meminfo | grep Hugepagesize
+   ```
 
-    Result:
+   Result:
 
-    ```properties
-	Hugepagesize = 2048 kB
-	```
+   ```properties
+   Hugepagesize = 2048 kB
+   ```
 
 1. Set the number of pages to enable. On Linux, edit your `/etc/sysctl.conf` file and set `vm.nr_hugepages` to the number of pages. For example,
 
-	```properties
-	vm.nr_hugepages = 10
-	```
+   ```properties
+   vm.nr_hugepages = 10
+   ```
 1. Enable the pages. On Linux, execute this:
 
-    ```bash
-	sysctl -p
-	```
+   ```bash
+   sysctl -p
+   ```
 
 1. Restart your machine.
 
-### Configure Large Pages in Your JVM 
+### Configure Large Pages in Your JVM
 
 Here's how to configure your JVM to use large pages:
 
@@ -146,13 +143,13 @@ Here's how to configure your JVM to use large pages:
 
 **Large Page Settings Explained**
 
-| Large Page Setting | Explanation |
-| :------ | :---------- |
-| `-XX:+UseLargePages` | Enables large pages. |
+| Large Page Setting              | Explanation                                                                                                                                            |
+| :------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-XX:+UseLargePages`            | Enables large pages.                                                                                                                                   |
 | `-XX:LargePageSizeInBytes=256m` | Make sure the total large page size (from `cat /proc/meminfo`, calculate `HugePages_Total * Hugepagesize`) can contain all of your JVM's memory usage. |
 
 Adjust page sizes based on your hardware specification and application profile.
 
-## Conclusion 
+## Conclusion
 
 Now that you're familiar with the common JVM options and example configurations, start experimenting with them in your testing environment. Monitor the garbage collection statistics to ensure your environment has sufficient memory allocations. Tune your settings to minimize garbage collection effects on performance and maximize processing speed. With proper testing and tuning, you'll optimize the JVM for your Liferay instance.

@@ -24,11 +24,11 @@ If the [portal properties documentation](https://docs.liferay.com/dxp/portal/7.3
 
 Environment variables overriding portal properties:
 
-* Must not start with a digit.
+- Must not start with a digit.
 
-* Must have the prefix `LIFERAY_` added in front of them.
+- Must have the prefix `LIFERAY_` added in front of them.
 
-* Must only consist of uppercase letters, digits, and the underscore (`_`) character. Any character that does not fit this constraint must be converted to its corresponding [`CharPool`](https://docs.liferay.com/dxp/portal/7.3-latest/javadocs/modules/core/petra/com.liferay.petra.string/) or [Unicode](https://unicode-table.com/en/) endpoint (converted to decimal).
+- Must only consist of uppercase letters, digits, and the underscore (`_`) character. Any character that does not fit this constraint must be converted to its corresponding [`CharPool`](https://docs.liferay.com/dxp/portal/7.3-latest/javadocs/modules/core/petra/com.liferay.petra.string/) or [Unicode](https://unicode-table.com/en/) endpoint (converted to decimal).
 
 To meet these requirements, you must convert any portal properties to this format. This allows Liferay Cloud to properly recognize the full name and match it to its corresponding portal property.
 
@@ -36,7 +36,7 @@ Use these steps to convert a portal property name to an environment variable nam
 
 1. Convert any characters contained in the name that are not a letter, digit or underscore (including periods) to a corresponding [`CharPool`](https://docs.liferay.com/dxp/portal/7.3-latest/javadocs/modules/core/petra/com.liferay.petra.string/) or Unicode endpoint, and surround them in underscores.
 
-    For example, convert the period character (`.`) to `_PERIOD_`, or `_46_` (if using Unicode).
+   For example, convert the period character (`.`) to `_PERIOD_`, or `_46_` (if using Unicode).
 
 1. Add the prefix `LIFERAY_` to the start of the variable name.
 
@@ -62,18 +62,18 @@ The following environment variables may be set through the environment variables
 **Default `LCP_LIFERAY_JDBC_CONNECTION_URL_QUERY_STRING` value** (only for MySQL): `characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&permitMysqlScheme=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true`
 
 **Default `LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_URL` values**:
-    * **For PostgreSQL**: `jdbc:postgresql://database--route/lportal`
-    * **For MySQL**: `jdbc:mysql://database--route/lportal?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&permitMysqlScheme=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true`
+    - **For PostgreSQL**: `jdbc:postgresql://database--route/lportal`
+    - **For MySQL**: `jdbc:mysql://database--route/lportal?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&permitMysqlScheme=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true`
 
 ### Secrets
 
 These variables must instead be [defined as Secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) for the Liferay service:
 
-Name                                  | Default Value | Description  |
-:--- | :--- | :--- |
-`LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` |  | A string of characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
-`LCP_SECRET_DATABASE_NAME` |   | The database name used for database connections (jdbc, jdbc ping, and read-only user connections). |
-`LCP_SECRET_DATABASE_PASSWORD` |  |  The database password used only for the jdbc (and jdbc ping) configurations. |
-`LCP_SECRET_DATABASE_READONLY_USER` |  | The read-only user's username. |
-`LCP_SECRET_DATABASE_READONLY_USER_PASSWORD` |  | The read-only user's password. |
-`LCP_SECRET_DATABASE_USER` |  | The primary database user's user name. Used for the jdbc and jdbc ping connections. |
+| Name                                         | Description                                                                                                                                                                       |
+| :------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`        | A string of characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
+| `LCP_SECRET_DATABASE_NAME`                   | The database name used for database connections (jdbc, jdbc ping, and read-only user connections).                                                                                |
+| `LCP_SECRET_DATABASE_PASSWORD`               | The database password used only for the jdbc (and jdbc ping) configurations.                                                                                                      |
+| `LCP_SECRET_DATABASE_READONLY_USER`          | The read-only user's username.                                                                                                                                                    |
+| `LCP_SECRET_DATABASE_READONLY_USER_PASSWORD` | The read-only user's password.                                                                                                                                                    |
+| `LCP_SECRET_DATABASE_USER`                   | The primary database user's user name. Used for the jdbc and jdbc ping connections.                                                                                               |

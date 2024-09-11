@@ -14,6 +14,904 @@ Breaking changes break or significantly alter existing functionality or code str
 
 Read about 7.4 breaking changes from before 2023 Q3 in the [Liferay source code](https://github.com/liferay/liferay-portal/blob/master/readme/BREAKING_CHANGES.markdown).
 
+## 2024 Q3 Release
+
+### Changes in Liferay DXP
+
+Here is a list of changes that break or significantly alter existing functionality within Liferay.
+
+| **Breaking Change**                             | **Description**                                                                                                                                                        | **References**                                              |
+| :---------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
+| **Web Content Filters**                         | The "Mine" and "Recent" filters for web content now displays the creation date instead of the modified.                                                                | [LPD-11218](https://liferay.atlassian.net/browse/LPD-11218) |
+| **Custom User Attributes with Asset Publisher** | The Asset Publisher widget's Custom User Attributes functionality is now deprecated, because the behavior can be confusing. Instead, use content sets and experiences. | [LPD-11037](https://liferay.atlassian.net/browse/LPD-11037) |
+
+### Changes in Module Source Code
+
+**FragmentCollectionLocalServiceImpl.java**
+`modules/apps/fragment/fragment-service/src/main/java/com/liferay/fragment/service/impl/FragmentCollectionLocalServiceImpl.java`
+
+- **Date**: May 3, 2024
+- **Ticket**: [LPD-24491](https://liferay.atlassian.net/browse/LPD-24491)
+- **What Changed**: The overloaded `addFragmentCollection` methods have a new `String` parameter for an external reference code.
+- **Reason**: This change adds support for handling fragment collections with an external reference code.
+
+**FragmentCollectionServiceImpl.java**
+`modules/apps/fragment/fragment-service/src/main/java/com/liferay/fragment/service/impl/FragmentCollectionServiceImpl.java`
+
+- **Date**: May 3, 2024
+- **Ticket**: [LPD-24491](https://liferay.atlassian.net/browse/LPD-24491)
+- **What Changed**: The overloaded `addFragmentCollection` methods have a new `String` parameter for an external reference code.
+- **Reason**: This change adds support for handling fragment collections with an external reference code.
+
+**FragmentEntryProcessorHelper.java**
+`modules/apps/fragment/fragment-entry-processor/fragment-entry-processor-api/src/main/java/com/liferay/fragment/entry/processor/helper/FragmentEntryProcessorHelper.java`
+
+- **Date**: May 4, 2024
+- **Ticket**: [LPD-24494](https://liferay.atlassian.net/browse/LPD-24494)
+- **What Changed**: The `getMappedInfoItemFieldValue(JSONObject, String, InfoItemFieldValues, Locale)` method has a new `FragmentEntryProcessorContext` parameter.
+- **Reason**: This change adds necessary information from the `FragmentEntryProcessorContext` for checking permissions.
+
+**SegmentsExperienceLocalServiceImpl.java**
+`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperienceLocalServiceImpl.java`
+
+- **Date**: May 6, 2024
+- **Ticket**: [LPD-25044](https://liferay.atlassian.net/browse/LPD-25044)
+- **What Changed**: The `addSegmentsExperience` and `addDefaultSegmentsExperience` methods now have a new `String` parameter for an external reference code.
+- **Reason**: This change adds support for handling `SegmentsExperience` objects with an external reference code.
+
+**SegmentsExperienceServiceImpl.java**
+`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperienceServiceImpl.java`
+
+- **Date**: May 6, 2024
+- **Ticket**: [LPD-25044](https://liferay.atlassian.net/browse/LPD-25044)
+- **What Changed**: The `addSegmentsExperience` method has a new `String` parameter for an external reference code.
+- **Reason**: This change adds support for handling `SegmentsExperience` objects with an external reference code.
+
+**KBArticleLocalService.java**
+`modules/apps/knowledge-base/knowledge-base-api/src/main/java/com/liferay/knowledge/base/service/KBArticleLocalService.java`
+
+- **Date**: May 8, 2024
+- **Ticket**: [LPD-25047](https://liferay.atlassian.net/browse/LPD-25047)
+- **What Changed**: The `unlockKBArticle(long)` method is removed. Instead, use the new `unlockKBArticle(long, long)` and `unlockKBArticle(long, long, boolean)` methods by supplying a user ID.
+- **Reason**: A user ID is needed to check for a lock's ownership, so this change prevents issues when unlocking KB articles.
+
+**CartItemResource.java**
+`modules/apps/commerce/headless/headless-commerce/headless-commerce-delivery-cart-api/src/main/java/com/liferay/headless/commerce/delivery/cart/resource/v1_0/CartItemResource.java`
+
+- **Date**: May 9, 2024
+- **Ticket**: [LPD-19824](https://liferay.atlassian.net/browse/LPD-19824)
+- **What Changed**: The `deleteCartItem` method's return type is now `void` instead of `Response`.
+- **Reason**: This change fixes the definition to be consistent with the other removal methods, as it was incorrectly defined previously.
+
+**SiteNavigationMenuItemLocalService**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuItemLocalService.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenuItem(long, long, long, long, String, int, String, ServiceContext)` and `addSiteNavigationMenuItem(long, long, long, long, String, String, ServiceContext)` methods add a new `String` parameter for an external reference code. The new `deleteSiteNavigationMenuItem(String, long)` method is also added.
+- **Reason**: These changes add support for handling site navigation menu items with external reference codes.
+
+**SiteNavigationMenuItemLocalServiceUtil.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuItemLocalServiceUtil.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenuItem(long, long, long, long, String, int, String, SiteNavigationMenuItem)` and `addSiteNavigationMenuItem(long, long, long, long, String, String, ServiceContext)` methods have a new `String` parameter for an external reference code. Additionally, the new `deleteSiteNavigationMenuItem(String, long)` method is added.
+- **Reason**: These changes add support for handling site navigation menu items with external reference codes.
+
+**SiteNavigationMenuItemLocalServiceWrapper.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuItemLocalServiceWrapper.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenuItem(long, long, long, long, String, int, String, ServiceContext)` and `addSiteNavigationMenuItem(long, long, long, long, String, String, ServiceContext)` methods have a new `String` parameter for an external reference code. Additionally, the new `deleteSiteNavigationMenuItem(String, long)` method is added.
+- **Reason**: These changes add support for handling site navigation menu items with external reference codes.
+
+**SiteNavigationMenuItemService.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuItemService.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenuItem(long, long, long, String, String, ServiceContext)` method has a new `String` parameter for an external reference code. Additionally, the new `deleteSiteNavigationMenuItem(String, long)` and `getSiteNavigationMenuItemByExternalReferenceCode(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menu items with external reference codes.
+
+**SiteNavigationMenuItemServiceUtil.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuItemServiceUtil.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenuItem(long, long, long, String, String, ServiceContext)` method has a new `String` parameter for an external reference code. Additionally, the new `deleteSiteNavigationMenuItem(String, long)` and `getSiteNavigationMenuItemByExternalReferenceCode(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menu items with external reference codes.
+
+**SiteNavigationMenuItemServiceUtil.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuItemServiceUtil.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenuItem(long, long, long, String, String, ServiceContext)` method has a new `String` parameter for an external reference code. Additionally, the new `deleteSiteNavigationMenuItem(String, long)` and `getSiteNavigationMenuItemByExternalReferenceCode(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menu items with external reference codes.
+
+**SiteNavigationMenuItemServiceWrapper.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuItemServiceWrapper.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenuItem(long, long, long, String, String, ServiceContext)` method has a new `String` parameter for an external reference code. Additionally, the new `deleteSiteNavigationMenuItem(String, long)` and `getSiteNavigationMenuItemByExternalReferenceCode(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menu items with external reference codes.
+
+**SiteNavigationMenuLocalService.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuLocalService.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenu(long, long, String, int, boolean, ServiceContext)`, `addSiteNavigationMenu(long, long, String, int, ServiceContext)`, and `addSiteNavigationMenu(long, long, String, ServiceContext)` methods have a new `String` parameter for an external reference code. Additionally, the new `deleteSiteNavigationMenu(String, long)`, `fetchSiteNavigationMenuByExternalReferenceCode(String, long)`, and `getSiteNavigationMenuByExternalReferenceCode(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menus with external reference codes.
+
+**SiteNavigationMenuLocalServiceUtil.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuLocalServiceUtil.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenu(long, long, String, int, boolean, ServiceContext)`, `addSiteNavigationMenu(long, long, String, int, ServiceContext)`, and `addSiteNavigationMenu(long, long, String, ServiceContext)` methods have a new `String` parameter for an external reference code. Additionally, the new `addSiteNavigationMenu(String, long, long, String, ServiceContext)`, `deleteSiteNavigationMenu(String, long)`, `fetchSiteNavigationMenuByExternalReferenceCode(String, long)`, and `getSiteNavigationMenuByExternalReferenceCode(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menus with external reference codes.
+
+**SiteNavigationMenuLocalServiceWrapper.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuLocalServiceWrapper.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenu(long, long, String, int, boolean, ServiceContext)`, `addSiteNavigationMenu(long, long, String, int, ServiceContext)`, and `addSiteNavigationMenu(long, long, String, ServiceContext)` methods have a new `String` parameter for an external reference code. Additionally, the new `addSiteNavigationMenu(String, long, long, ServiceContext)`, `deleteSiteNavigationMenu(String, long)`, `fetchSiteNavigationMenuByExternalReferenceCode(String, long)`, `getSiteNavigationMenuByExternalReferenceCode(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menus with external reference codes.
+
+**SiteNavigationMenuService.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuService.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenu(long, String, int, boolean, ServiceContext)`, `addSiteNavigationMenu(long, String, int, ServiceContext)`, and `addSiteNavigationMenu(long, String, ServiceContext)` methods have a new `String` parameter for an external reference code. Additionally, the new `deleteSiteNavigationMenu(String, long)` and `getSiteNavigationMenuByExternalReferenceCode(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menus with external reference codes.
+
+**SiteNavigationMenuServiceUtil.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuServiceUtil.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenu(long, String, int, boolean, ServiceContext)`, `addSiteNavigationMenu(long, String, int, ServiceContext)`, and `addSiteNavigationMenu(long, String, ServiceContext)` methods have a new `String` parameter for an external reference code. Additionally, the new `deleteSiteNavigationMenu(String, long)` and `getSiteNavigationMenuByExternalReferenceCode(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menus with external reference codes.
+
+**SiteNavigationMenuServiceWrapper.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/SiteNavigationMenuServiceWrapper.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The `addSiteNavigationMenu(long, String, int, boolean, ServiceContext)`, `addSiteNavigationMenu(long, String, int, ServiceContext)`, and `addSiteNavigationMenu(long, String, ServiceContext)` methods have a new `String` parameter for an external reference code. Additionally, the new `deleteSiteNavigationMenu(String, long)` and `getSiteNavigationMenuByExternalReferenceCode(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menus with external reference codes.
+
+**SiteNavigationMenuPersistence.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/persistence/SiteNavigationMenuPersistence.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The new `findByERC_G(String, long)`, `fetchByERC_G(String, long)`, `fetchByERC_G(String, long, boolean)`, `removeByERC_G(String, long)`, and `countByERC_G(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menus with external reference codes.
+
+**SiteNavigationMenuUtil.java**
+`modules/apps/site-navigation/site-navigation-api/src/main/java/com/liferay/site/navigation/service/persistence/SiteNavigationMenuUtil.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-24944](https://liferay.atlassian.net/browse/LPD-24944)
+- **What Changed**: The new `findByERC_G(String, long)`, `fetchByERC_G(String, long)`, `fetchByERC_G(String, long, boolean)`, `removeByERC_G(String, long)`, and `countByERC_G(String, long)` methods are added.
+- **Reason**: These changes add support for handling site navigation menus with external reference codes.
+
+**CommerceTierPriceEntryLocalService.java**
+`modules/apps/commerce/commerce-price-list-api/src/main/java/com/liferay/commerce/price/list/service/CommerceTierPriceEntryLocalService.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-3481](https://liferay.atlassian.net/browse/LPD-3481)
+- **What Changed**: The `fetchCommerceTierPriceEntries` method is removed. The `findClosestCommerceTierPriceEntry` method is also renamed to `fetchClosestCommerceTierPriceEntry`, and the `findCommerceTierPriceEntries` method is renamed to `getCommerceTierPriceEntries`.
+- **Reason**: This change enforces consistency with method names.
+
+**CommerceTierPriceEntryService.java**
+`modules/apps/commerce/commerce-price-list-api/src/main/java/com/liferay/commerce/price/list/service/CommerceTierPriceEntryService.java`
+
+- **Date**: May 10, 2024
+- **Ticket**: [LPD-3481](https://liferay.atlassian.net/browse/LPD-3481)
+- **What Changed**: The `fetchCommerceTierPriceEntries` method is removed.
+- **Reason**: The `fetchCommerceTierPriceEntries` method was deprecated and no longer used.
+
+**rest-config.yaml**
+`modules/apps/portal-search/portal-search-rest-impl/rest-config.yaml`
+
+- **Date**: May 14, 2024
+- **Ticket**: [LPD-24803](https://liferay.atlassian.net/browse/LPD-24803)
+- **What Changed**: The new `/search` base URI is added.
+- **Reason**: This change simplifies the headless portal search base URI.
+
+**DefaultAccountGroupException.java**
+`modules/apps/account/account-api/src/main/java/com/liferay/account/exception/DefaultAccountGroupException.java`
+
+- **Date**: May 16, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The constructors are no longer publicly accessible.
+- **Reason**: The inner class should be instantiated instead.
+
+**ResolveTask.java**
+`modules/sdk/gradle-plugins-target-platform/src/main/java/com/liferay/gradle/plugins/target/platform/task/ResolveTask.java`
+
+- **Date**: May 16, 2024
+- **Ticket**: [LPD-21814](https://liferay.atlassian.net/browse/LPD-21814)
+- **What Changed**: The `ResolveTask` class now extends the `aQute.bnd.gradle.AbstractBndrun` class. The `isOffline`, `setOffline`, `resolve`, `getBndrunFile`, and `setBndrunFile(Object)` methods are also deprecated. Use the `worker` and `getProperties` methods instead of the `resolve` method. Use the `bndrun` property instead of the `getBndrunFile` and `setBndrunFile(Object)` methods. 
+- **Reason**: This change allows for upgrading the `biz.aQute.bnd.*` dependencies to support Gradle 8.
+
+**TargetPlatformPlugin.java**
+`modules/sdk/gradle-plugins-target-platform/src/main/java/com/liferay/gradle/plugins/target/platform/TargetPlatformPlugin.java`
+
+- **Date**: May 16, 2024
+- **Ticket**: [LPD-21814](https://liferay.atlassian.net/browse/LPD-21814)
+- **What Changed**: The `compileClasspath`, `runtimeClasspath`, `testCompileClasspath`, and `testRuntimeClasspath` configurations are no longer targeted for platform dependencies.
+- **Reason**: This change is necessary to support Gradle 8.
+
+**AMImageConfigurationException.java**
+`modules/apps/adaptive-media/adaptive-media-api/src/main/java/com/liferay/adaptive/media/exception/AMImageConfigurationException.java`
+
+- **Date**: May 16, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The constructors are no longer publicly accessible.
+- **Reason**: The inner class should be instantiated instead.
+
+**LayoutPageTemplateServiceUpgradeStepRegistrator.java**
+`modules/apps/layout/layout-page-template-service/src/main/java/com/liferay/layout/page/template/internal/upgrade/registry/LayoutPageTemplateServiceUpgradeStepRegistrator.java`
+
+- **Date**: May 16, 2024
+- **Ticket**: [LPD-25467](https://liferay.atlassian.net/browse/LPD-25467)
+- **What Changed**: The new `BaseExternalReferenceCodeUpgradeProcess` is added, for the addition of external reference codes to layout page template entries.
+- **Reason**: The upgrade process handles existing layout page template entries without external reference codes.
+
+**LayoutPageTemplateEntryLocalServiceImpl.java**
+`modules/apps/layout/layout-page-template-service/src/main/java/com/liferay/layout/page/template/service/impl/LayoutPageTemplateEntryLocalServiceImpl.java`
+
+- **Date**: May 16, 2024
+- **Ticket**: [LPD-25467](https://liferay.atlassian.net/browse/LPD-25467)
+- **What Changed**: Each overloaded `addLayoutPageTemplateEntry` method has a new `String` parameter for an external reference code.
+- **Reason**: This change adds support for external reference codes for `LayoutPageTemplateEntry` entities.
+
+**LayoutPageTemplateEntryServiceImpl.java**
+`modules/apps/layout/layout-page-template-service/src/main/java/com/liferay/layout/page/template/service/impl/LayoutPageTemplateEntryServiceImpl.java`
+
+- **Date**: May 16, 2024
+- **Ticket**: [LPD-25467](https://liferay.atlassian.net/browse/LPD-25467)
+- **What Changed**: Each overloaded `addLayoutPageTemplateEntry` method has a new `String` parameter for an external reference code.
+- **Reason**: This change adds support for external reference codes for `LayoutPageTemplateEntry` entities.
+
+**CommercePaymentEngineException.java**
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/exception/CommercePaymentEngineException.java`
+
+- **Date**: May 17, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The inner `MustSetPrimaryCurrency` class is removed.
+- **Reason**: The public constructors should be used for `CommercePaymentEngineException` instead.
+
+**CommerceShippingEngineException.java**
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/exception/CommerceShippingEngineException.java`
+
+- **Date**: May 17, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The constructors are no longer publicly accessible.
+- **Reason**: The inner class should be instantiated instead.
+
+**SearchPermissionFilterContributor.java**
+`modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/model/permission/SearchPermissionFilterContributor.java`
+
+- **Date**: May 19, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `SearchPermissionFilterContributor` class's location is moved (to `modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/model/permission/contributor/SearchPermissionFilterContributor.java`).
+- **Reason**: The contributor class should be located in a `contributor/` package.
+
+**SearchPermissionFieldContributor.java**
+`modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/model/permission/SearchPermissionFieldContributor.java`
+
+- **Date**: May 19, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `SearchPermissionFieldContributor` class's location is moved (to `modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/model/permission/contributor/SearchPermissionFieldContributor.java`).
+- **Reason**: The contributor class should be located in a `contributor/` package.
+
+**IndexContributor.java**
+`modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/model/index/contributor/IndexContributor.java`
+
+- **Date**: May 19, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `IndexContributor` class is renamed and moved to `modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/index/listener/CompanyIndexListener.java`. Additionally, the `onBeforeRemove` method is renamed to `onBeforeDelete`.
+- **Reason**: The "Listener" code pattern is well known and provides better context as to when the implemented code should be executed. In this case the code executes either after a company index is created, or before a company index is deleted. The method renaming change enforces consistency with other methods in the same execution scope.
+
+**CPOptionKeyException.java**
+`modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/exception/CPOptionKeyException.java`
+
+- **Date**: May 22, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The inner `MustNotBeDuplicate` class is removed.
+- **Reason**: The public constructors should be used for `CPOptionKeyException` instead.
+
+**CPSpecificationOptionKeyException.java**
+`modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/exception/CPSpecificationOptionKeyException.java`
+
+- **Date**: May 22, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The constructors are no longer publicly accessible.
+- **Reason**: The inner class should be instantiated instead.
+
+**IndexConfigurationContributor.java**
+`modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/index/configuration/contributor/IndexConfigurationContributor.java`
+
+- **Date**: May 22, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `contributeMappings` method's `indexName` parameter is removed.
+- **Reason**: The framework that calls `IndexConfigurationContributor` would have already determined the index to apply mappings to.
+
+**IndexSettingsContributor.java**
+`modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/settings/IndexSettingsContributor.java`
+
+- **Date**: May 22, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `IndexSettingsContributor` class is removed. The `contribute` method is renamed to `contributeMappings` and the `populate` method is renamed to `contributeSettings`, both methods moved to `IndexConfigurationContributor.java`.
+- **Reason**: This change improves clarity because the methods in this interface contribute to both mappings and settings.
+
+**TypeMappingsHelper.java**
+`modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/settings/TypeMappingsHelper.java`
+
+- **Date**: May 22, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `TypeMappingsHelper` class's location is changed (to `modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/index/configuration/contributor/helper/TypeMappingsHelper.java
+`). Additionally, the `addTypeMappings` method is renamed to `putTypeMappings`, and the `indexName` parameter is removed.
+- **Reason**: The class's new package location is more aligned with the interface's functionality. For the `indexName` parameter removal, the framework that calls `IndexConfigurationContributor` would have already determined the index to put mappings into.
+
+**ClientSettingsHelper.java**
+`modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-api/src/main/java/com/liferay/portal/search/elasticsearch7/settings/ClientSettingsHelper.java`
+
+- **Date**: May 22, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `ClientSettingsHelper` class is removed.
+- **Reason**: This class is no longer used.
+
+**IndexSettingsHelper.java**
+`modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-api/src/main/java/com/liferay/portal/search/elasticsearch7/settings/IndexSettingsHelper.java`
+
+- **Date**: May 22, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `IndexSettingsHelper` class is removed.
+- **Reason**: This class is no longer used.
+
+**TypeMappingsHelper.java**
+`modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-api/src/main/java/com/liferay/portal/search/elasticsearch7/settings/TypeMappingsHelper.java`
+
+- **Date**: May 22, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `TypeMappingsHelper` class is removed.
+- **Reason**: This class is no longer used.
+
+**XPackSecuritySettings.java**
+`modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-api/src/main/java/com/liferay/portal/search/elasticsearch7/settings/XPackSecuritySettings.java`
+
+- **Date**: May 22, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `XPackSecuritySettings` class is removed.
+- **Reason**: The class is no longer used.
+
+**IndexSettingsHelper.java**
+`modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/settings/IndexSettingsHelper.java`
+
+- **Date**: May 22, 2024
+- **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
+- **What Changed**: The `IndexSettingsHelper` class's location is changed (to `modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/index/configuration/contributor/helper/IndexSettingsHelper.java`).
+- **Reason**: The new package location is more aligned with the interface's functionality.
+
+**OpenIdConnectServiceException.java**
+`modules/apps/portal-security-sso/portal-security-sso-openid-connect-api/src/main/java/com/liferay/portal/security/sso/openid/connect/OpenIdConnectServiceException.java`
+
+- **Date**: May 26, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The `OpenIdConnectServiceException` class's constructor methods are now private.
+- **Reason**: The inner class should be instantiated instead.
+
+**RequiredTemplateException.java**
+`modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/exception/RequiredTemplateException.java`
+
+- **Date**: May 26, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The `RequiredTemplateException` class's constructor methods are now private.
+- **Reason**: The inner class should be instantiated instead.
+
+**DepotEntryGroupRelToGroupException.java**
+`modules/apps/depot/depot-api/src/main/java/com/liferay/depot/exception/DepotEntryGroupRelToGroupException.java`
+
+- **Date**: May 26, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The `DepotEntryGroupRelToGroupException` class's constructor methods are now private.
+- **Reason**: The inner class should be instantiated instead.
+
+**CircularRedirectEntryException.java**
+`modules/apps/redirect/redirect-api/src/main/java/com/liferay/redirect/exception/CircularRedirectEntryException.java`
+
+- **Date**: May 26, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The `CircularRedirectEntryException` class's constructor methods are now private.
+- **Reason**: The inner class should be instantiated instead.
+
+**DefaultSegmentsEntryException.java**
+`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/exception/DefaultSegmentsEntryException.java`
+
+- **Date**: May 26, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The `DefaultSegmentsEntryException` class's constructor methods are now private.
+- **Reason**: The inner class should be instantiated instead.
+
+**RequiredSegmentsEntryException.java**
+`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/exception/RequiredSegmentsEntryException.java`
+
+- **Date**: May 26, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The `RequiredSegmentsEntryException` class's constructor methods are now private.
+- **Reason**: The inner class should be instantiated instead.
+
+**RequiredSegmentsExperienceException.java**
+`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/exception/RequiredSegmentsExperienceException.java`
+
+- **Date**: May 26, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The `RequiredSegmentsExperienceException` class's constructor methods are now private.
+- **Reason**: The inner class should be instantiated instead.
+
+**FormInstanceFieldSettingsException.java**
+`modules/apps/dynamic-data-mapping/dynamic-data-mapping-form-web/src/main/java/com/liferay/dynamic/data/mapping/form/web/internal/FormInstanceFieldSettingsException.java`
+
+- **Date**: May 26, 2024
+- **Ticket**: [LPD-25246](https://liferay.atlassian.net/browse/LPD-25246)
+- **What Changed**: The `FormInstanceFieldSettingsException` class's constructor methods are now private.
+- **Reason**: The inner class should be instantiated instead.
+
+**client_serdes.ftl**
+`modules/util/portal-tools-rest-builder/src/main/resources/com/liferay/portal/tools/rest/builder/dependencies/client_serdes.ftl`
+
+- **Date**: May 27, 2024
+- **Ticket**: [LPD-23771](https://liferay.atlassian.net/browse/LPD-23771)
+- **What Changed**: The serialization behavior for the `toJSON` function now properly handles arrays.
+- **Reason**: This change is necessary to correctly represent array fields in JSON.
+
+**WarehouseResourceImpl.java**
+`modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-inventory-impl/src/main/java/com/liferay/headless/commerce/admin/inventory/internal/resource/v1_0/WarehouseResourceImpl.java`
+
+- **Date**: May 27, 2024
+- **Ticket**: [LPD-25885](https://liferay.atlassian.net/browse/LPD-25885)
+- **What Changed**: The `getWarehousesPage(Filter, Pagination, Sort[])` method adds a new `String` parameter for a search string.
+- **Reason**: This parameter is necessary for this API to work with data sets.
+
+**DropdownGroupItem.java**
+`modules/apps/frontend-taglib/frontend-taglib-clay/src/main/java/com/liferay/frontend/taglib/clay/servlet/taglib/util/DropdownGroupItem.java`
+
+- **Date**: May 28, 2024
+- **Ticket**: [LPD-25954](https://liferay.atlassian.net/browse/LPD-25954)
+- **What Changed**: The new `setDropdownItems(List<DropdownItem>)` method is added.
+- **Reason**: The new method implementation adds more flexibility when using the Clay Dropdown taglib.
+
+**DropdownItem.java**
+`modules/apps/frontend-taglib/frontend-taglib-clay/src/main/java/com/liferay/frontend/taglib/clay/servlet/taglib/util/DropdownItem.java`
+
+- **Date**: May 28, 2024
+- **Ticket**: [LPD-25954](https://liferay.atlassian.net/browse/LPD-25954)
+- **What Changed**: The new `setDropdownItems(List<DropdownItem>)` method is added.
+- **Reason**: The new method implementation adds more flexibility when using the Clay Dropdown taglib.
+
+**DropdownItemBuilder.java**
+`modules/apps/frontend-taglib/frontend-taglib-clay/src/main/java/com/liferay/frontend/taglib/clay/servlet/taglib/util/DropdownItemBuilder.java`
+
+- **Date**: May 28, 2024
+- **Ticket**: [LPD-25954](https://liferay.atlassian.net/browse/LPD-25954)
+- **What Changed**: The new `setDropdownItems(List<DropdownItem>)` method is added.
+- **Reason**: The new method implementation adds more flexibility when using the Clay Dropdown taglib.
+
+**LayoutPageTemplateCollectionLocalServiceImpl.java**
+`modules/apps/layout/layout-page-template-service/src/main/java/com/liferay/layout/page/template/service/impl/LayoutPageTemplateCollectionLocalServiceImpl.java`
+
+- **Date**: May 28, 2024
+- **Ticket**: [LPD-20993](https://liferay.atlassian.net/browse/LPD-20993)
+- **What Changed**: The `fetchLayoutPageTemplateCollectionByName` is removed, and the new `fetchLayoutPageTemplateCollection(long, String, long, int)` method is added instead. The `getUniqueLayoutPageTemplateCollectionName` method also has a new `long` parameter for `parentLayoutPageTemplateCollectionId`.
+- **Reason**: This change is required to ensure that these methods return unique elements.
+
+**LayoutPageTemplateEntryLocalServiceImpl.java**
+`modules/apps/layout/layout-page-template-service/src/main/java/com/liferay/layout/page/template/service/impl/LayoutPageTemplateEntryLocalServiceImpl.java`
+
+- **Date**: May 28, 2024
+- **Ticket**: [LPD-20993](https://liferay.atlassian.net/browse/LPD-20993)
+- **What Changed**: The `fetchLayoutPageTemplateEntry(long, String)` and `fetchLayoutPageTemplateEntry(long, String, int)` overloaded methods are replaced with the `fetchLayoutPageTemplateEntry(long, long, String, int)` and `fetchLayoutPageTemplateEntry(long, String)` overloaded methods. The `getUniqueLayoutPageTemplateEntryNanem(long, String, int)` method is also replaced with the `getUniqueLayoutPageTemplateEntryName(long, long, String, int)` method.
+- **Reason**: This change is required to ensure that these methods return unique elements.
+
+**CommercePaymentEntryLocalServiceImpl.java**
+`modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentEntryLocalServiceImpl.java`
+
+- **Date**: Jun. 3, 2024
+- **Ticket**: [LPD-22281](https://liferay.atlassian.net/browse/LPD-22281)
+- **What Changed**: The `addCommercePaymentEntry`, `addOrUpdateCommercePaymentEntry`, and `updateCommercePaymentEntry` methods have a new `String` parameter for a payload.
+- **Reason**: This change is necessary to support the new payload field.
+
+**RelatedInfoItemProvider.java**
+`modules/apps/info/info-api/src/main/java/com/liferay/info/item/provider/RelatedInfoItemProvider.java`
+
+- **Date**: Jun. 7, 2024
+- **Ticket**: [LPD-27648](https://liferay.atlassian.net/browse/LPD-27648)
+- **What Changed**: The `getRelatedItemClassNames` method is removed. A new `getRelatedInfoItems` method is added in its place (which returns a `List<RelatedInfoItem>`).
+- **Reason**: This change is necessary to manage relationships in the content page editor.
+
+**AccountEntryEmailAddressValidator.java**
+`modules/apps/account/account-api/src/main/java/com/liferay/account/validator/AccountEntryEmailAddressValidator.java`
+
+- **Date**: Jun. 11, 2024
+- **Ticket**: [LPD-3478](https://liferay.atlassian.net/browse/LPD-3478)
+- **What Changed**: The new `isEmailAddressAlreadyUsed` is added.
+- **Reason**: The new method allows for identifying if an email is already present in the system.
+
+**QuantityInputTag.java**
+`modules/apps/commerce/commerce-taglib/src/main/java/com/liferay/commerce/taglib/servlet/taglib/QuantityInputTag.java`
+
+- **Date**: Jun. 13, 2024
+- **Ticket**: [LPD-27036](https://liferay.atlassian.net/browse/LPD-27036)
+- **What Changed**: The `setValue` method now uses a `BigDecimal` parameter instead of an `int` parameter, and the `getValue` method now returns a `BigDecimal` value instead of an `int` value.
+- **Reason**: Decimal values are now supported, so the internal value must update to reflect this.
+
+**FragmentCompositionLocalServiceImpl.java**
+`modules/apps/fragment/fragment-service/src/main/java/com/liferay/fragment/service/impl/FragmentCompositionLocalServiceImpl.java`
+
+- **Date**: Jun. 14, 2024
+- **Ticket**: [LPD-25303](https://liferay.atlassian.net/browse/LPD-25303)
+- **What Changed**: The `addFragmentComposition` method has a new `String` method for an external reference code.
+- **Reason**: This change is necessary to support adding fragment compositions with an external reference code.
+
+**FragmentCompositionServiceImpl.java**
+`modules/apps/fragment/fragment-service/src/main/java/com/liferay/fragment/service/impl/FragmentCompositionServiceImpl.java`
+
+- **Date**: Jun. 14, 2024
+- **Ticket**: [LPD-25303](https://liferay.atlassian.net/browse/LPD-25303)
+- **What Changed**: The `addFragmentComposition` method has a new `String` method for an external reference code.
+- **Reason**: This change is necessary to support adding fragment compositions with an external reference code.
+
+**FragmentEntryServiceImpl.java**
+`modules/apps/fragment/fragment-service/src/main/java/com/liferay/fragment/service/impl/FragmentEntryServiceImpl.java`
+
+- **Date**: Jun. 14, 2024
+- **Ticket**: [LPD-25303](https://liferay.atlassian.net/browse/LPD-25303)
+- **What Changed**: The `addFragmentEntry` method has a new `String` method for an external reference code.
+- **Reason**: This change is necessary to support adding fragment entries with an external reference code.
+
+**FragmentEntryLocalServiceImpl.java**
+`modules/apps/fragment/fragment-service/src/main/java/com/liferay/fragment/service/impl/FragmentEntryLocalServiceImpl.java`
+
+- **Date**: Jun. 14, 2024
+- **Ticket**: [LPD-25303](https://liferay.atlassian.net/browse/LPD-25303)
+- **What Changed**: The `addFragmentEntry` method has a new `String` method for an external reference code.
+- **Reason**: This change is necessary to support adding fragment entries with an external reference code.
+
+**CPSpecificationOptionLocalServiceImpl.java**
+`modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/service/impl/CPSpecificationOptionLocalServiceImpl.java`
+
+- **Date**: Jun. 17, 2024
+- **Ticket**: [LPD-22571](https://liferay.atlassian.net/browse/LPD-22571)
+- **What Changed**: The `addCPSpecificationOption` and `updateCPSpecificationOption` methods have a new `long` parameter for `listTypeDefinitionId`. A new `countCPSpecificationOptionByListTypeDefinitionId(long)` method is also added.
+- **Reason**: This change is necessary to relate a `SpecificationOption` to its corresponding `ListTypeDefinition`.
+
+**StyleBookEntryLocalServiceImpl.java**
+`modules/apps/style-book/style-book-service/src/main/java/com/liferay/style/book/service/impl/StyleBookEntryLocalServiceImpl.java`
+
+- **Date**: Jun. 17, 2024
+- **Ticket**: [LPD-25325](https://liferay.atlassian.net/browse/LPD-25325)
+- **What Changed**: The `addStyleBookEntry` method has a new `String` parameter for an external reference code.
+- **Reason**: This change is needed to support adding a template with an external reference code.
+
+**StyleBookEntryServiceImpl.java**
+`modules/apps/style-book/style-book-service/src/main/java/com/liferay/style/book/service/impl/StyleBookEntryServiceImpl.java`
+
+- **Date**: Jun. 17, 2024
+- **Ticket**: [LPD-25325](https://liferay.atlassian.net/browse/LPD-25325)
+- **What Changed**: The `addStyleBookEntry` methods have a new `String` parameter for an external reference code.
+- **Reason**: This change is needed to support adding a template with an external reference code.
+
+**KBArticleLocalServiceImpl.java**
+`modules/apps/knowledge-base/knowledge-base-service/src/main/java/com/liferay/knowledge/base/service/impl/KBArticleLocalServiceImpl.java`
+
+- **Date**: Jun. 21, 2024
+- **Ticket**: [LPD-28764](https://liferay.atlassian.net/browse/LPD-28764)
+- **What Changed**: The new `getLatestKBArticle(long, int[])` method is added. The overloaded `findByR_S` method implementations also replace their `int` parameter (for the article status) with an `int[]` parameter for multiple statuses.
+- **Reason**: This change allows for retrieving a knowledge base article using multiple statuses.
+
+**DDMTemplateServiceImpl.java**
+`modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/service/impl/DDMTemplateServiceImpl.java`
+
+- **Date**: Jun. 23, 2024
+- **Ticket**: [LPD-25303](https://liferay.atlassian.net/browse/LPD-25303)
+- **What Changed**: The `addTemplate` methods add a new `String` parameter for an external reference code.
+- **Reason**: This change is needed to support adding a template with an external reference code.
+
+**DDMTemplateLocalServiceImpl.java**
+`modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/service/impl/DDMTemplateLocalServiceImpl.java`
+
+- **Date**: Jun. 23, 2024
+- **Ticket**: [LPD-25303](https://liferay.atlassian.net/browse/LPD-25303)
+- **What Changed**: The `addTemplate` methods add a new `String` parameter for an external reference code.
+- **Reason**: This change is needed to support adding a template with an external reference code.
+
+**Context.java**
+`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/context/Context.java`
+
+- **Date**: Jun. 27, 2024
+- **Ticket**: [LPD-28576](https://liferay.atlassian.net/browse/LPD-28576)
+- **What Changed**: The `DEVICE_MODEL`, `DEVICE_BRAND`, `DEVICE_SCREEN_RESOLUTION_WIDTH` and `DEVICE_SCREEN_RESOLUTION_HEIGHT` constant fields are removed.
+- **Reason**: These constants relied on a third-party library that is no longer used.
+
+**AssetListEntryCreateDateComparator.java**
+`modules/apps/asset/asset-list-api/src/main/java/com/liferay/asset/list/util/comparator/AssetListEntryCreateDateComparator.java`
+
+- **Date**: Jun. 28, 2024
+- **Ticket**: [LPD-26157](https://liferay.atlassian.net/browse/LPD-26157)
+- **What Changed**: The constructor methods are no longer publicly accessible. A new `getInstance(boolean)` method is also added. Use `AssetListEntryCreateDateComparator.getInstance(boolean)` to get a new instance.
+- **Reason**: This change applies the singleton pattern to improve the code's organization.
+
+**AssetTagCountComparator.java**
+`modules/apps/asset/asset-api/src/main/java/com/liferay/asset/util/comparator/AssetTagCountComparator.java`
+
+- **Date**: Jun. 28, 2024
+- **Ticket**: [LPD-26157](https://liferay.atlassian.net/browse/LPD-26157)
+- **What Changed**: The constructor methods are no longer publicly accessible. A new `getInstance(boolean)` method is also added. Use `AssetTagCountComparator.getInstance(boolean)` to get a new instance.
+- **Reason**: This change applies the singleton pattern to improve the code's organization.
+
+**StructureStructureKeyComparator.java**
+`modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/util/comparator/StructureStructureKeyComparator.java`
+
+- **Date**: Jun. 28, 2024
+- **Ticket**: [LPD-26157](https://liferay.atlassian.net/browse/LPD-26157)
+- **What Changed**: The `INSTANCE_ASCENDING` and `INSTANCE_DESCENDING` constant fields are removed.
+- **Reason**: This change applies the default singleton pattern to improve the code's organization.
+
+**NestedFieldsContext.java**
+`/modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/fields/NestedFieldsContext.java`
+
+- **Date**: Jul. 3, 2024
+- **Ticket**: [LPD-17027](https://liferay.atlassian.net/browse/LPD-17027)
+- **What Changed**: The `NestedFieldsContext` class now implements the `Cloneable` interface (and the `clone` method).
+- **Reason**: When the code executed with lazy loading, the registered depth of the data was not being properly incremented or decremented, causing issues. This change fixes those issues by ensuring the supplier always runs with the same context as when it was created.
+
+**ColumnDescriptorProvider.java**
+`/modules/apps/batch-engine/batch-engine-api/src/main/java/com/liferay/batch/engine/csv/ColumnDescriptorProvider.java`
+
+- **Date**: Jul. 3, 2024
+- **Ticket**: [LPD-17027](https://liferay.atlassian.net/browse/LPD-17027)
+- **What Changed**: The `getColumnDescriptors` method has a new `Map<String, ObjectValuePair<Field, Method>>` parameter replacing the `Map<Field, Method>` parameter.
+- **Reason**: This change improves the abstraction between the batch engine and object layers in the code.
+
+**CommerceTierPriceEntryMinQuantityComparator.java**
+`modules/apps/commerce/commerce-price-list-api/src/main/java/com/liferay/commerce/price/list/util/comparator/CommerceTierPriceEntryMinQuantityComparator.java`
+
+- **Date**: Jul. 4, 2024
+- **Ticket**: [LPD-28067](https://liferay.atlassian.net/browse/LPD-28067)
+- **What Changed**: The constructor methods are now private. A new static `getInstance(boolean)` method is also added. Use `CommerceTierPriceEntryMinQuantityComparator.getInstance(boolean)` to create a new instance.
+- **Reason**: This change applies the singleton pattern to improve the code's organization.
+
+**CommercePricingClassCreateDateComparator.java**
+`modules/apps/commerce/commerce-pricing-api/src/main/java/com/liferay/commerce/pricing/util/comparator/CommercePricingClassCreateDateComparator.java`
+
+- **Date**: Jul. 4, 2024
+- **Ticket**: [LPD-28067](https://liferay.atlassian.net/browse/LPD-28067)
+- **What Changed**: The constructor methods are now private. A new static `getInstance(boolean)` method is also added. Use `CommercePricingClassCreateDateComparator.getInstance(boolean)` to create a new instance.
+- **Reason**: This change applies the singleton pattern to improve the code's organization.
+
+**CommercePriceListPriorityComparator.java**
+`modules/apps/commerce/commerce-price-list-api/src/main/java/com/liferay/commerce/price/list/util/comparator/CommercePriceListPriorityComparator.java`
+
+- **Date**: Jul. 4, 2024
+- **Ticket**: [LPD-28067](https://liferay.atlassian.net/browse/LPD-28067)
+- **What Changed**: The constructor methods are now private. A new static `getInstance(boolean)` method is also added. Use `CommercePriceListPriorityComparator.getInstance(boolean)` to create a new instance.
+- **Reason**: This change applies the singleton pattern to improve the code's organization.
+
+**CommercePriceListDisplayDateComparator.java**
+`modules/apps/commerce/commerce-price-list-api/src/main/java/com/liferay/commerce/price/list/util/comparator/CommercePriceListDisplayDateComparator.java`
+
+- **Date**: Jul. 4, 2024
+- **Ticket**: [LPD-28067](https://liferay.atlassian.net/browse/LPD-28067)
+- **What Changed**: The constructor methods are now private. A new static `getInstance(boolean)` method is also added. Use `CommercePriceListDisplayDateComparator.getInstance(boolean)` to create a new instance.
+- **Reason**: This change applies the singleton pattern to improve the code's organization.
+
+**CommercePriceListCreateDateComparator.java**
+`modules/apps/commerce/commerce-price-list-api/src/main/java/com/liferay/commerce/price/list/util/comparator/CommercePriceListCreateDateComparator.java`
+
+- **Date**: Jul. 4, 2024
+- **Ticket**: [LPD-28067](https://liferay.atlassian.net/browse/LPD-28067)
+- **What Changed**: The constructor methods are now private. A new static `getInstance(boolean)` method is also added. Use `CommercePriceListCreateDateComparator.getInstance(boolean)` to create a new instance.
+- **Reason**: This change applies the singleton pattern to improve the code's organization.
+
+**CommercePriceEntryUOMCreateDateComparator.java**
+`modules/apps/commerce/commerce-price-list-api/src/main/java/com/liferay/commerce/price/list/util/comparator/CommercePriceEntryUOMCreateDateComparator.java`
+
+- **Date**: Jul. 4, 2024
+- **Ticket**: [LPD-28067](https://liferay.atlassian.net/browse/LPD-28067)
+- **What Changed**: The constructor methods are now private. A new static `getInstance(boolean)` method is also added. Use `CommercePriceEntryUOMCreateDateComparator.getInstance(boolean)` to create a new instance.
+- **Reason**: This change applies the singleton pattern to improve the code's organization.
+
+**ObjectEntryThreadLocal.java**
+`modules/apps/object/object-api/src/main/java/com/liferay/object/entry/util/ObjectEntryThreadLocal.java`
+
+- **Date**: Jul. 5, 2024
+- **Ticket**: [LPD-29830](https://liferay.atlassian.net/browse/LPD-29830)
+- **What Changed**: New `addValidatedObjectEntryId(long)` and `isValidatedObjectEntry(long)` methods are added.
+- **Reason**: The `ThreadLocal` object handling validated object entries is used in the object entry context.
+
+**ObjectValidationRuleThreadLocal.java**
+`modules/apps/object/object-api/src/main/java/com/liferay/object/validation/rule/util/ObjectValidationRuleThreadLocal.java`
+
+- **Date**: Jul. 5, 2024
+- **Ticket**: [LPD-29830](https://liferay.atlassian.net/browse/LPD-29830)
+- **What Changed**: The `ObjectValidationRuleThreadLocal` class is removed.
+- **Reason**: The `ThreadLocal` object handling validated object entries is used in the object entry context.
+
+**FragmentEntryLinkServiceImpl.java**
+`modules/apps/fragment/fragment-service/src/main/java/com/liferay/fragment/service/impl/FragmentEntryLinkServiceImpl.java`
+
+- **Date**: Jul. 10, 2024
+- **Ticket**: [LPD-30533](https://liferay.atlassian.net/browse/LPD-30533)
+- **What Changed**: The `addFragmentEntryLink` method has a new `String` parameter for an external reference code. New `deleteFragmentEntryLink(String, long)` and `getFragmentEntryLinkByExternalReferenceCode(String, long)` methods are also added.
+- **Reason**: These changes are needed to support using external reference codes to add and handle fragment entry links.
+
+**FragmentEntryLinkLocalServiceImpl.java**
+`modules/apps/fragment/fragment-service/src/main/java/com/liferay/fragment/service/impl/FragmentEntryLinkLocalServiceImpl.java`
+
+- **Date**: Jul. 10, 2024
+- **Ticket**: [LPD-30533](https://liferay.atlassian.net/browse/LPD-30533)
+- **What Changed**: The `addFragmentEntryLink` method has a new `String` parameter for an external reference code. New `deleteFragmentEntryLink(String, long)` and `getFragmentEntryLinkByExternalReferenceCode(String, long)` methods are also added.
+- **Reason**: These changes are needed to support using external reference codes to add and handle fragment entry links.
+
+**ContentPageEditorSidebarPanel.java**
+`modules/apps/layout/layout-content-page-editor-api/src/main/java/com/liferay/layout/content/page/editor/sidebar/panel/ContentPageEditorSidebarPanel.java`
+
+- **Date**: Jul. 16, 2024
+- **Ticket**: [LPD-31389](https://liferay.atlassian.net/browse/LPD-31389)
+- **What Changed**: The `getURL`, `includeSeparator`, and `isLink` methods are removed.
+- **Reason**: These methods are not used because links and separators are no longer needed.
+
+**SAPConfiguration.java**
+`modules/apps/portal-security/portal-security-service-access-policy-api/src/main/java/com/liferay/portal/security/service/access/policy/configuration/SAPConfiguration.java`
+
+- **Date**: Jul. 17, 2024
+- **Ticket**: [LPD-26931](https://liferay.atlassian.net/browse/LPD-26931)
+- **What Changed**: New configurations are added to create SAP entries.
+- **Reason**: This change allows for creating new SAP entries because they're required to allow `RESTClient` requests from templates.
+
+**ObjectFieldInfoFieldConverter.java**
+`modules/apps/object/object-info-api/src/main/java/com/liferay/object/info/field/converter/ObjectFieldInfoFieldConverter.java`
+
+- **Date**: Jul. 21, 2024
+- **Ticket**: [LPD-31592](https://liferay.atlassian.net/browse/LPD-31592)
+- **What Changed**: The `ObjectFieldInfoFieldConverter` constructor now has new `ObjectStateFlowLocalService` and `ObjectStateLocalService` parameters.
+- **Reason**: This change is required to fetch the next allowed object states for the current `ListTypeEntry`.
+
+### Changes in `portal-impl` Classes
+
+**PortalImpl.java**
+`portal-impl/src/com/liferay/portal/util/PortalImpl.java`
+
+- **Date**: Jun. 11, 2024
+- **Ticket**: [LPD-28051](https://liferay.atlassian.net/browse/LPD-28051)
+- **What Changed**: The `initCustomSQL` method is removed.
+- **Reason**: The class name IDs should be loaded from the company-aware `ClassName` cache, which is informed by `CompanyThreadLocal`. `initCustomSQL` is called in `CustomSQLImpl#activate` where `CompanyThreadLocal` is not yet initialized. Therefore, `transformCustomSQL` should load the class name IDs instead.
+
+**LayoutLocalServiceImpl.java**
+`portal-impl/src/com/liferay/portal/service/impl/LayoutLocalServiceImpl.java`
+
+- **Date**: Jun. 27, 2024
+- **Ticket**: [LPD-29128](https://liferay.atlassian.net/browse/LPD-29128)
+- **What Changed**: The overloaded `addLayout` methods have a new `String` parameter for an external reference code.
+- **Reason**: This change adds support for handling layouts with external reference codes.
+
+**LayoutServiceImpl.java**
+`portal-impl/src/com/liferay/portal/service/impl/LayoutServiceImpl.java`
+
+- **Date**: Jun. 27, 2024
+- **Ticket**: [LPD-29128](https://liferay.atlassian.net/browse/LPD-29128)
+- **What Changed**: The overloaded `addLayout` methods have a new `String` parameter for an external reference code.
+- **Reason**: This change adds support for handling layouts with external reference codes.
+
+**PortalPreferencesLocalServiceImpl.java**
+`portal-impl/src/com/liferay/portal/service/impl/PortalPreferencesLocalServiceImpl.java`
+
+- **Date**: Jul. 11, 2024
+- **Ticket**: [LPD-25552](https://liferay.atlassian.net/browse/LPD-25552)
+- **What Changed**: The `fetchCompanyPortalPreferences(long)` method is removed. Use `fetchPortalPreferences(companyId, PortletKeys.PREFS_OWNER_TYPE_COMPANY)` instead.
+- **Reason**: The removed method is no longer needed.
+
+### Changes in `portal-kernel` Classes
+
+**JSONWebServiceActionManagerUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionManagerUtil.java`
+
+- **Date**: May 19, 2024
+- **Ticket**: [LPD-24836](https://liferay.atlassian.net/browse/LPD-24836)
+- **What Changed**: The `JSONWebServiceActionManagerUtil` class is moved to the `portal-remote-json-web-service-web` module. Use a service reference or snapshot to get the JSONWebServiceActionManager service for other modules instead.
+- **Reason**: This change simplifies the code structure, because the class is only needed in `portal-remote-json-web-service-web`.
+
+**JSONWebServiceAction.java**
+`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceAction.java`
+
+- **Date**: May 19, 2024
+- **Ticket**: [LPD-24836](https://liferay.atlassian.net/browse/LPD-24836)
+- **What Changed**: The `JSONWebServiceAction` class is moved to the `portal-remote-json-web-service-api` module. Add `portal-remote-json-web-service-api` as a new dependency to continue using its public methods.
+- **Reason**: This change simplifies the code structure, because the class is only needed in `portal-remote-json-web-service-api`.
+
+**JSONWebServiceActionMapping.java**
+`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionMapping.java`
+
+- **Date**: May 19, 2024
+- **Ticket**: [LPD-24836](https://liferay.atlassian.net/browse/LPD-24836)
+- **What Changed**: The `JSONWebServiceActionMapping` class is moved to the `portal-remote-json-web-service-api` module. Add `portal-remote-json-web-service-api` as a new dependency to continue using its public methods.
+- **Reason**: This change simplifies the code structure, because the class is only needed in `portal-remote-json-web-service-api`.
+
+**JSONWebServiceActionsManager.java**
+`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManager.java`
+
+- **Date**: May 19, 2024
+- **Ticket**: [LPD-24836](https://liferay.atlassian.net/browse/LPD-24836)
+- **What Changed**: The `JSONWebServiceActionsManager` class is moved to the `portal-remote-json-web-service-api` module. Add `portal-remote-json-web-service-api` as a new dependency to continue using its public methods.
+- **Reason**: This change simplifies the code structure, because the class is only needed in `portal-remote-json-web-service-api`.
+
+**NoSuchJSONWebServiceException.java**
+`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/NoSuchJSONWebServiceException.java`
+
+- **Date**: May 19, 2024
+- **Ticket**: [LPD-24836](https://liferay.atlassian.net/browse/LPD-24836)
+- **What Changed**: The `NoSuchJSONWebServiceException` class is moved to the `portal-remote-json-web-service-api` module. Add `portal-remote-json-web-service-api` as a new dependency to continue using its public methods.
+- **Reason**: This change simplifies the code structure, because the class is only needed in `portal-remote-json-web-service-api`.
+
+**ClassLoaderRequestDispatcherWrapper.java**
+`portal-kernel/src/com/liferay/portal/kernel/servlet/ClassLoaderRequestDispatcherWrapper.java`
+
+- **Date**: May 29, 2024
+- **Ticket**: N/A
+- **What Changed**: The `ClassLoaderRequestDispatcherWrapper` class is removed.
+- **Reason**: This class is no longer needed because PACL has been removed.
+
+**Portal.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/Portal.java`
+
+- **Date**: Jun. 11, 2024
+- **Ticket**: [LPD-28051](https://liferay.atlassian.net/browse/LPD-28051)
+- **What Changed**: The `initCustomSQL` method is removed.
+- **Reason**: The class name IDs should be loaded from the company-aware `ClassName` cache, which is informed by `CompanyThreadLocal`. `initCustomSQL` is called in `CustomSQLImpl#activate` where `CompanyThreadLocal` is not yet initialized. Therefore, `transformCustomSQL` should load the class name IDs instead.
+
+**PortalUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/PortalUtil.java`
+
+- **Date**: Jun. 11, 2024
+- **Ticket**: [LPD-28051](https://liferay.atlassian.net/browse/LPD-28051)
+- **What Changed**: The `initCustomSQL` method is removed.
+- **Reason**: The class name IDs should be loaded from the company-aware `ClassName` cache, which is informed by `CompanyThreadLocal`. `initCustomSQL` is called in `CustomSQLImpl#activate` where `CompanyThreadLocal` is not yet initialized. Therefore, `transformCustomSQL` should load the class name IDs instead.
+
+**DestinationWrapper.java**
+`portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationWrapper.java`
+
+- **Date**: Jun. 16, 2024
+- **Ticket**: [LPD-28526](https://liferay.atlassian.net/browse/LPD-28526)
+- **What Changed**: The `DestinationWrapper` is removed.
+- **Reason**: This class is removed because MPI/SPI is no longer supported.
+
+**UserLocalService.java**
+`portal-kernel/src/com/liferay/portal/kernel/service/UserLocalService.java`
+
+- **Date**: Jul. 4, 2024
+- **Ticket**: [LPD-1909](https://liferay.atlassian.net/browse/LPD-1909)
+- **What Changed**: The `decryptUserId(long, String, String)` method is removed.
+- **Reason**: This change improves security when processing user credentials.
+
+**DLStoreUtil.java**
+`portal-kernel/src/com/liferay/document/library/kernel/store/DLStoreUtil.java`
+
+- **Date**: Jul. 17, 2024
+- **Ticket**: [LPD-1536](https://liferay.atlassian.net/browse/LPD-1536)
+- **What Changed**: The `setStore` method is removed. Use the new `setDLStore` method instead.
+- **Reason**: This change enforces naming consistency.
+
 ## 2024 Q2 Release
 
 ### Changes in Liferay DXP

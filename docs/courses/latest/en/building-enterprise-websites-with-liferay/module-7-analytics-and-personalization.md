@@ -11,6 +11,8 @@ So far you've learned how to manage users, build an enterprise website architect
 
 Analytics Cloud is a suite of tools for measuring user engagement data and assessing site performance, providing metrics at the site, page, asset, and user levels. By understanding how your content is performing, you can understand who your audience is and what they're looking for in a digital experience solution.
 
+![Use Analytics Cloud to continuously fine tune and improve your solution.](./module-7-analytics-and-personalization/images/01.png)
+
 Once you've identified and classified user personas with Analytics Cloud, you can build user segments in Liferay DXP that are based on user attributes, interests, and behaviors. Then you can deliver personalized site experiences to each segment. Better experiences lead to better engagement, customer retention, and brand loyalty. This type of personalization has the additional benefit of enabling A/B Testing, a powerful tool for improving site experiences in a dynamic, agile fashion.
 
 In this module, you'll learn about the following Liferay features:

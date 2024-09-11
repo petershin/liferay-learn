@@ -5,6 +5,8 @@ uuid: 2e3a3846-d0d9-4b6e-8a99-75af21d81318
 
 Like other enterprise public websites, Clarity relies on web analytics to measure their website's performance, target audiences, and areas for improvement. To present unique experiences to different groups of users, Clarity needs to collect comprehensive data to continually optimize their solution.
 
+![Use Analytics Capabilities to collect comprehensive data to optimize your solution.](./claritys-analytics-and-experiences-requirements/images/01.png)
+
 ## Requirements
 
 With this in mind, let's review Clarity's requirements for analytics and personalized experiences.

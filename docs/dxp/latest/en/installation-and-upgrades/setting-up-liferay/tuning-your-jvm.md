@@ -150,6 +150,16 @@ Here's how to configure your JVM to use large pages:
 
 Adjust page sizes based on your hardware specification and application profile.
 
+## JVM Options for Liferay PaaS
+
+If you're using Liferay PaaS, the following JVM option should be added to [export fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) smoothly.
+
+***JVM Options Example**
+
+**JVM Options Explained**
+| JVM Option Setting                                | Explanation                                                                                  |
+| `--add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED` | Allows the JVM to use `zipfs` which is necessary for exporting fragment sets as `.zip` files |
+
 ## Conclusion
 
 Now that you're familiar with the common JVM options and example configurations, start experimenting with them in your testing environment. Monitor the garbage collection statistics to ensure your environment has sufficient memory allocations. Tune your settings to minimize garbage collection effects on performance and maximize processing speed. With proper testing and tuning, you'll optimize the JVM for your Liferay instance.

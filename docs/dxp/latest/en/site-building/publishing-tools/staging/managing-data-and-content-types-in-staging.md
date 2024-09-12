@@ -74,7 +74,7 @@ By default, Version History is selected for publishing, so you must manually dis
 
 ### Previews and Thumbnails
 
-Previews and thumbnails are generated automatically for documents. However, if your site contains a large number of images or documents, it may be best to disable this feature to increase your publishing speed and limit the amount of disk space used.
+Previews and thumbnails are generated automatically for documents. However, if your site contains many images or documents, it may be best to disable this feature to increase your publishing speed and limit the amount of disk space used.
 
 Whether you want to publish file previews and thumbnails depends on your environment. Publishing them is a heavy operation, and if you're using remote staging, you must also transfer the LAR file over the network. If you decide to generate previews on the live site, understand that this could take some time, since it's a CPU-intensive operation.
 

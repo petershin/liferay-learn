@@ -122,13 +122,13 @@ You can also access new options in the Staging page: view publishing processes, 
 
 When you publish with Staging, it's captured as a *process* and stored for future reference. To view and manage these processes, go to *Site Menu* &rarr; *Publishing* &rarr; *Staging*.
 
-In the *Processes* tab is a list of staging processes that have been completed. From here, you can *relaunch*, *clear* or view a *summary* of any previous publications by clicking a process's *Actions* button (![Actions button](../../../images/icon-actions.png)).
+In the Processes tab is a list of staging processes that have been completed. From here, you can *relaunch*, *clear* or view a *summary* of any previous publications by clicking a process's Actions button (![Actions button](../../../images/icon-actions.png)).
 
 ![View and manage previous publishing processes from the Staging page.](./site-staging-ui-reference/images/13.png)
 
 You can also click *Add* (![Add button](../../../images/icon-add.png)) to create a new publish process using a custom configuration or pre-defined publishing template.
 
-In the *Scheduled* tab, you can view all scheduled publishing processes.
+In the Scheduled tab, you can view all scheduled publishing processes.
 
 ### Publish Templates
 
@@ -136,7 +136,7 @@ If you regularly create similar staging configurations, you can create your own 
 
 ![Click Actions in the Application bar of the Staging page.](./site-staging-ui-reference/images/14.png)
 
-From here, you can create and manage templates for frequent publishing configurations. You can then use a template by clicking its *Actions* button (![Actions button](../../../images/icon-actions.png)) and selecting *Publish*.
+From here, you can create and manage templates for frequent publishing configurations. You can then use a template by clicking its Actions button (![Actions button](../../../images/icon-actions.png)) and selecting *Publish*.
 
 ![Create and manage templates for frequent publishing configurations.](./site-staging-ui-reference/images/15.png)
 
@@ -144,11 +144,11 @@ You can use a template when publishing a page or content using the *Publish to L
 
 ### Staging Configuration
 
-After setting up Staging, you can access the Staging Configuration page by clicking *Actions* (![Actions button](../../../images/icon-actions.png)) in the *Application* bar of the *Staging* page. Then, select *Staging Configuration*.
+After setting up Staging, you can access the Staging Configuration page by clicking *Actions* (![Actions button](../../../images/icon-actions.png)) in the Application bar of the Staging page. Then, select *Staging Configuration*.
 
 ![Click Actions in the Application bar of the Staging page to access the Staging Configuration.](./site-staging-ui-reference/images/16.png)
 
-From here, you can disable Staging for your site, or modify your [page versioning](page-versioning.md) settings. However, *Staged Content* options cannot be modified after the initial setup.
+From here, you can disable Staging for your site, or modify your [page versioning](page-versioning.md) settings. However, Staged Content options cannot be modified after the initial setup.
 
 ## Related Topics
 

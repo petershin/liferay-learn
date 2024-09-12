@@ -21,7 +21,7 @@ When you begin the publishing process, Liferay performs a compatibility check to
 
 For some conflicts, Liferay can provide an automatic resolution. Essentially, an automatic resolution is a pre-configured solution to certain kinds of conflicts, so you can publish your changes without further action. These solutions may include adding, modifying, or removing content from the current publication, or replacing the version of content in production with your publication's version.
 
-When an automatic solution is available, you are notified during publishing. You can then click on *View* to review the solution's details. To implement an automatic solution, simply click on *Publish*.
+When an automatic solution is available, you're notified during publishing. You can then click on *View* to review the solution's details. To implement an automatic solution, click on *Publish*.
 
 ![To implement an automatic solution, click on Publish.](./resolving-conflicts/images/01.png)
 

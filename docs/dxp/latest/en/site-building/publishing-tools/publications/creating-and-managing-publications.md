@@ -78,7 +78,7 @@ From here, you can click a publication's Actions button ( ![Actions button](../.
 
 ## Managing Scheduled Publications
 
-In the *Schedule* tab, you can view a table of all scheduled publications that you have permission to view. By default, scheduled publications appear by *Name*, though you can order them by modified date or when each publication is scheduled for Publishing.
+In the Schedule tab, you can view a table of all scheduled publications that you have permission to view. By default, scheduled publications appear by `Name`, though you can order them by modified date or when each publication is scheduled for Publishing.
 
 ![The Schedule tab lists all scheduled publications for your instance.](./creating-and-managing-publications/images/04.png)
 

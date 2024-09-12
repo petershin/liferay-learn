@@ -35,14 +35,31 @@ The installation steps use these terms:
 
 1. Unzip the OSGi Dependencies ZIP file into the `[Liferay Home]/osgi` folder (create this folder if it doesn't exist). Liferay's OSGi runtime depends on these modules.
 
-1. The DXP 7.4+ WAR file includes drivers for MariaDB and PostgreSQL. Earlier WARs don't have them. If the 7.4+ WAR doesn't have the driver for the supported database you're using, download your database vendor's JDBC JAR file and place it in the `$WILDFLY_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib` folder.
+1. The DXP 7.4+ WAR file includes drivers for MariaDB and PostgreSQL. Earlier WARs don't have them. If the 7.4+ WAR doesn't have the driver for the supported database you're using, download your database vendor's JDBC JAR file and place it in the `$WILDFLY_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib` folder. This is the recommended method for adding dependencies that are only needed by Liferay on JBoss. Alternatively, you can [install dependencies using JBoss' global classpath location](#install-dependencies-using-wildflys-global-classpath-location).
 
    Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
 
 !!! note
     A Hypersonic database is bundled with DXP and is useful for testing purposes. **Do not** use HSQL for production DXP instances.
 
-### Installing Dependencies for Earlier Versions
+1. Create a file called `module.xml` in the `$JBOSS_HOME/modules/com/liferay/portal/main` folder. In the file, declare the portal module and all of its required dependencies:
+
+   ```xml
+   <?xml version="1.0"?>
+
+   <module xmlns="urn:jboss:module:1.0" name="com.liferay.portal">
+       <dependencies>
+           <module name="javax.api" />
+           <module name="javax.mail.api" />
+           <module name="javax.servlet.api" />
+           <module name="javax.servlet.jsp.api" />
+           <module name="javax.transaction.api" />
+       </dependencies>
+   </module>
+   ```
+
+
+### Installing Dependencies Using WildFly's Global Classpath Location
 
 For DXP 7.3 and earlier, follow these additional steps:
 
@@ -55,7 +72,6 @@ For DXP 7.3 and earlier, follow these additional steps:
 
    <module xmlns="urn:jboss:module:1.0" name="com.liferay.portal">
        <resources>
-           <resource-root path="[place your database vendor's JAR file name here]" />
            <resource-root path="[place a Liferay dependencies ZIP JAR file name here]" />
            <!-- Add a resource-root element for each Liferay dependencies ZIP JAR -->
        </resources>
@@ -182,22 +198,30 @@ Make the following edits to your `standalone.conf` script.
    JAVA_OPTS="-Djava.net.preferIPv4Stack=true"
    ```
 
-1. Add this Java options setting at the end of the file:
+1. Add these Java options setting at the end of the file:
 
    ```bash
-   JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Dlog4j2.formatMsgNoLookups=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:NewSize=1536m -XX:SurvivorRatio=7 --add-opens=java.base/java.net=ALL-UNNAMED"
+   JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Djboss.as.management.blocking.timeout=1800"
+
+   JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED"
+
+   export JDK_JAVA_OPTIONS
    ```
 
 The Java options and memory arguments are explained below.
 
 **JVM Options Explained**
 
-| Option                                    | Explanation                                                                                                                       |
-| :---------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| `-Dfile.encoding=UTF-8`                   | DXP requires UTF-8 file encoding.                                                                                                 |
-| `-Djava.net.preferIPv4Stack=true`         | Prefers an IPv4 stack over IPv6.                                                                                                  |
-| `-Dlog4j2.formatMsgNoLookups=true`        | Resolves a remote code execution (RCE) vulnerability. See [LPS-143663](https://issues.liferay.com/browse/LPS-143663) for details. |
-| `-Duser.timezone=GMT`                     | DXP requires the application server JVM to use the GMT time zone.                                                                 |
+| Option                                        | Explanation                                                       |
+| :-------------------------------------------- | :---------------------------------------------------------------- |
+| `-Dfile.encoding=UTF-8`                       | DXP requires UTF-8 file encoding.                                 |
+| `-Djava.locale.providers=JRE,COMPAT,CLDR`     | TODO |
+| `-Djava.net.preferIPv4Stack=true`             | Prefers an IPv4 stack over IPv6.                                  |
+| `-Djboss.as.management.blocking.timeout=1800` | TODO |
+| `-Duser.timezone=GMT`                         | DXP requires the application server JVM to use the GMT time zone. |
+
+!!! note
+    The deep reflection options are necessary for some components in Liferay to function.
 
 **Memory Arguments Explained**
 
@@ -256,23 +280,12 @@ If using WildFly to manage the data source, follow these steps:
 
 1. Get the JDBC JAR from your DXP WAR (7.4+) or from the database vendor and copy it to the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder.
 
-1. Create a file called `module.xml` in the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder. In the file, declare the portal module and the JDBC JAR.
+1. Update `module.xml` in the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder to declare the portal module and the JDBC JAR.
 
    ```xml
-   <?xml version="1.0"?>
-
-   <module xmlns="urn:jboss:module:1.0" name="com.liferay.portal">
-       <resources>
-           <resource-root path="[place your database vendor's JAR file name here]" />
-       </resources>
-       <dependencies>
-           <module name="javax.api" />
-           <module name="javax.mail.api" />
-           <module name="javax.servlet.api" />
-           <module name="javax.servlet.jsp.api" />
-           <module name="javax.transaction.api" />
-       </dependencies>
-   </module>
+   <resources>
+       <resource-root path="[place your database vendor's JAR file name here]" />
+   </resources>
    ```
 
 1. Add the data source inside the `$WILDFLY_HOME/standalone/configuration/standalone.xml` file's `<datasources>` element:

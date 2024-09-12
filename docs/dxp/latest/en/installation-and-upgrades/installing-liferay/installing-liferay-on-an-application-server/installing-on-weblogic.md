@@ -7,7 +7,7 @@ taxonomy-category-names:
 ---
 # Installing on WebLogic
 
-If you are using WebLogic as your application server, it is *highly recommended* to install DXP to a WebLogic Managed server. A managed server can start and stop DXP quickly and can be converted to a cluster configuration. 
+If you are using WebLogic as your application server, it is *highly recommended* to install DXP to a WebLogic Managed server. A managed server can start and stop DXP quickly and can be converted to a cluster configuration.
 
 ## Prerequisites
 

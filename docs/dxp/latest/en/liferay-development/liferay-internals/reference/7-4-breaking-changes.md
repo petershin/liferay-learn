@@ -10,7 +10,7 @@ taxonomy-category-names:
 
 # 7.4 Breaking Changes
 
-Breaking changes break or significantly alter existing functionality or code structure. Here are all of the breaking changes for Liferay 7.4, starting with the first quarterly release (2023 Q3). As the product changes and improves, we try our best to minimize these disruptions, but sometimes they are unavoidable.
+Breaking changes break or significantly alter existing functionality or code structure. Here are all of the breaking changes for Liferay 7.4, starting with the latest quarterly release (2023 Q3). As the product changes and improves, we try our best to minimize these disruptions, but sometimes they are unavoidable.
 
 Read about 7.4 breaking changes from before 2023 Q3 in the [Liferay source code](https://github.com/liferay/liferay-portal/blob/master/readme/BREAKING_CHANGES.markdown).
 
@@ -22,7 +22,7 @@ Here is a list of changes that break or significantly alter existing functionali
 
 | **Breaking Change**                             | **Description**                                                                                                                                                        | **References**                                              |
 | :---------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
-| **Web Content Filters**                         | The "Mine" and "Recent" filters for web content now displays the creation date instead of the modified.                                                                | [LPD-11218](https://liferay.atlassian.net/browse/LPD-11218) |
+| **Web Content Filters**                         | The *Mine* and *Recent* filters for web content now displays the creation date instead of the modified.                                                                | [LPD-11218](https://liferay.atlassian.net/browse/LPD-11218) |
 | **Custom User Attributes with Asset Publisher** | The Asset Publisher widget's Custom User Attributes functionality is now deprecated, because the behavior can be confusing. Instead, use content sets and experiences. | [LPD-11037](https://liferay.atlassian.net/browse/LPD-11037) |
 
 ### Changes in Module Source Code
@@ -321,7 +321,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: May 19, 2024
 - **Ticket**: [LPD-7822](https://liferay.atlassian.net/browse/LPD-7822)
 - **What Changed**: The `IndexContributor` class is renamed and moved to `modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/index/listener/CompanyIndexListener.java`. Additionally, the `onBeforeRemove` method is renamed to `onBeforeDelete`.
-- **Reason**: The "Listener" code pattern is well known and provides better context as to when the implemented code should be executed. In this case the code executes either after a company index is created, or before a company index is deleted. The method renaming change enforces consistency with other methods in the same execution scope.
+- **Reason**: The Listener code pattern is well known and provides better context as to when the implemented code should be executed. In this case the code executes either after a company index is created, or before a company index is deleted. The method renaming change enforces consistency with other methods in the same execution scope.
 
 **CPOptionKeyException.java**
 `modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/exception/CPOptionKeyException.java`
@@ -490,7 +490,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: May 28, 2024
 - **Ticket**: [LPD-25954](https://liferay.atlassian.net/browse/LPD-25954)
 - **What Changed**: The new `setDropdownItems(List<DropdownItem>)` method is added.
-- **Reason**: The new method implementation adds more flexibility when using the Clay Dropdown taglib.
+- **Reason**: The new method implementation adds more flexibility when using the Clay Drop-down taglib.
 
 **DropdownItem.java**
 `modules/apps/frontend-taglib/frontend-taglib-clay/src/main/java/com/liferay/frontend/taglib/clay/servlet/taglib/util/DropdownItem.java`
@@ -498,7 +498,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: May 28, 2024
 - **Ticket**: [LPD-25954](https://liferay.atlassian.net/browse/LPD-25954)
 - **What Changed**: The new `setDropdownItems(List<DropdownItem>)` method is added.
-- **Reason**: The new method implementation adds more flexibility when using the Clay Dropdown taglib.
+- **Reason**: The new method implementation adds more flexibility when using the Clay Drop-down taglib.
 
 **DropdownItemBuilder.java**
 `modules/apps/frontend-taglib/frontend-taglib-clay/src/main/java/com/liferay/frontend/taglib/clay/servlet/taglib/util/DropdownItemBuilder.java`
@@ -506,7 +506,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: May 28, 2024
 - **Ticket**: [LPD-25954](https://liferay.atlassian.net/browse/LPD-25954)
 - **What Changed**: The new `setDropdownItems(List<DropdownItem>)` method is added.
-- **Reason**: The new method implementation adds more flexibility when using the Clay Dropdown taglib.
+- **Reason**: The new method implementation adds more flexibility when using the Clay Drop-down taglib.
 
 **LayoutPageTemplateCollectionLocalServiceImpl.java**
 `modules/apps/layout/layout-page-template-service/src/main/java/com/liferay/layout/page/template/service/impl/LayoutPageTemplateCollectionLocalServiceImpl.java`

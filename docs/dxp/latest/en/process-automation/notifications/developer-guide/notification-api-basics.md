@@ -35,10 +35,10 @@ Then, follow these steps:
    unzip liferay-v3g2.zip
    ```
 
-1. Check which subscriptions are active under your user account by executing the `Subscriptions_GET_FromUserAccount.sh` script.
+1. Check which subscriptions are active under your user account by executing the `Subscriptions_GET_FromMyUserAccount.sh` script.
 
    ```bash
-   ./Subscriptions_GET_FromUserAccount.sh
+   ./Subscriptions_GET_FromMyUserAccount.sh
    ```
 
    The response should be empty since there are no active subscriptions:
@@ -72,7 +72,7 @@ Look for PUT methods that include "subscribe" or "unsubscribe" in their endpoint
 
 ### Using REST Services
 
-Use the REST API to subscribe to an application with the `./BlogPostingsSubscription_PUT_ById.sh` script. This script subscribes to notifications for blog postings on a site.
+Use the REST API to subscribe to an application with the `BlogPostings_PUT_Subscribe_ToSites.sh` script. This script subscribes to notifications for blog postings on a site.
 
 ```bash
 curl \
@@ -85,13 +85,13 @@ curl \
 !!! tip
     Modify the endpoint path to subscribe to other applications. For instance, to subscribe to notifications from a document folder, use `http://localhost:8080/o/headless-delivery/v1.0/document-folders/{documentFolderId}/subscribe`. The API Explorer provides additional details about available endpoints and their requirements.
 
-1. On the command line, navigate to the `curl` folder. Execute the `./BlogPostingsSubscription_PUT_ById.sh` with your site ID as a parameter.
+1. On the command line, navigate to the `curl` folder. Execute the `BlogPostings_PUT_Subscribe_ToSites.sh` with your site ID as a parameter.
 
    ```bash
-   ./BlogPostingsSubscription_PUT_ById.sh [site-ID]
+   BlogPostings_PUT_Subscribe_ToSites.sh [site-ID]
    ```
 
-1. This call returns no output. Verify the subscription by executing `Subscriptions_GET_FromUserAccount.sh`. The result should include the `contentType` and the `id` for the subscription:
+1. This call returns no output. Verify the subscription by executing `Subscriptions_GET_FromMyUserAccount.sh`. The result should include the `contentType` and the `id` for the subscription:
 
    ```json
    {
@@ -119,16 +119,16 @@ curl \
    javac -classpath .:* *.java
    ```
 
-1. Run the `BlogPostingsSubscription_PUT_ById` class. Replace the `siteId` value with your site ID:
+1. Run the `BlogPostings_PUT_Subscribe_ToSites` Java class. Replace the `siteId` value with your site ID:
 
 ```bash
-java -classpath .:* -DsiteId=1234 BlogPostingsSubscription_PUT_ById
+java -classpath .:* -DsiteId=1234 BlogPostings_PUT_Subscribe_ToSites
 ```
 
 !!! tip
     For subscribing to other applications, identify the corresponding class for the target application. For example, use `DocumentFolderResource` for document folders. Update the method call to match the correct subscription method for the new resource.
 
-1. Run the `Subscriptions_GET_FromUserAccount` class to verify the action was successful.
+1. Run the `Subscriptions_GET_FromMyUserAccount` class to verify the action was successful.
 
 ```json
 {"actions": {}, "items": [{"contentId": "20117", "contentType": "BlogPosting", "dateCreated": "2024-09-10T09:53:32-0300", "dateModified": "2024-09-10T09:53:32-0300", "frequency": "instant", "id": 32471, "siteId": 20117}], "page": 1, "pageSize": 10, "totalCount": 1}
@@ -136,7 +136,7 @@ java -classpath .:* -DsiteId=1234 BlogPostingsSubscription_PUT_ById
 
 #### Examine the cURL Command
 
-The `BlogPostingsSubscription_PUT_ById.sh` script subscribes to notifications for blog postings on a given site by calling a `headless-delivery` application REST service.
+The `BlogPostings_PUT_Subscribe_ToSites.sh` script subscribes to notifications for blog postings on a given site by calling a `headless-delivery` application REST service.
 
 Here are the command's arguments:
 
@@ -152,7 +152,7 @@ Here are the command's arguments:
 
 #### Examine the Java Class
 
-The `BlogPostingsSubscription_PUT_ById.java` class subscribes to notifications for blog postings on a given site.
+The `BlogPostings_PUT_Subscribe_ToSites.java` class subscribes to notifications for blog postings on a given site.
 
 | Line (abbreviated)                                                               | Description                                                                               |
 |:---------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------|
@@ -239,7 +239,7 @@ Unsubscribe from notifications for applications under the `headless-delivery` na
 
 ### Using REST Services
 
-To unsubscribe using the REST API, use the endpoint with the unsubscribe action. This is the counterpart to the subscribe endpoint used for notifications. In this example, the `./BlogPostingsUnsubscription_PUT_ById.sh` script unsubscribes from notifications for blog postings on a site.
+To unsubscribe using the REST API, use the endpoint with the unsubscribe action. This is the counterpart to the subscribe endpoint used for notifications. In this example, the `./BlogPostings_PUT_Unsubscribe_ToSites.sh` script unsubscribes from notifications for blog postings on a site.
 
 ```bash
 curl \
@@ -249,13 +249,13 @@ curl \
 	--user "test@liferay.com:learn"
 ```
 
-Replace `[site-ID]` with your site ID and run `BlogPostingsSubscription_PUT_ById.sh`.
+Replace `[site-ID]` with your site ID and run `BlogPostings_PUT_Unsubscribe_ToSites.sh`.
 
 ```bash
-./BlogPostingsSubscription_PUT_ById.sh [site-ID]
+BlogPostings_PUT_Unsubscribe_ToSites.sh [site-ID]
 ```
 
-This call returns no response. Verify the unsubscription by executing `Subscriptions_GET_FromUserAccount.sh`. The result should be empty:
+This call returns no response. Verify the unsubscription by executing `Subscriptions_GET_FromMyUserAccount.sh`. The result should be empty:
 
 ```json
 {
@@ -272,10 +272,10 @@ This call returns no response. Verify the unsubscription by executing `Subscript
 Alternatively, execute the corresponding Java class:
 
 ```bash
-java -classpath .:* -DsiteId=1234 BlogPostingsUnsubscription_PUT_ById
+java -classpath .:* -DsiteId=1234 BlogPostings_PUT_Unsubscribe_ToSites
 ```
 
-Run `Subscriptions_GET_FromUserAccount.java` to confirm the unsubscription was successful:
+Run `Subscriptions_GET_FromMyUserAccount.java` to confirm the unsubscription was successful:
 
 ```json
 {"actions": {}, "items": [], "page": 1, "pageSize": 10, "totalCount": 0}
@@ -309,25 +309,25 @@ Unsubscribe from notifications using GraphQL services. Access the Liferay API Ex
 
 ## Deleting a Subscription
 
-Delete a subscription using the `headless-admin-user` namespace using an endpoint similar to the one used for `Subscriptions_GET_FromUserAccount.sh`. Execute the `Subscription_DELETE_ById.sh` script, replacing [subscription-ID] with the specific subscription ID.
+Delete a subscription using the `headless-admin-user` namespace using an endpoint similar to the one used for `Subscriptions_GET_FromMyUserAccount.sh`. Execute the `Subscriptions_DELETE_FromMyUserAccount.sh` script, replacing [subscription-ID] with the specific subscription ID.
 
 If the operation is successful, the server returns a 204 No Content response with no body.
 
 Run the following command:
 
 ```bash
-./Subscription_DELETE_ById.sh [subscription-ID]
+./Subscriptions_DELETE_FromMyUserAccount.sh [subscription-ID]
 ```
 
-Verify the deletion by running `Subscriptions_GET_FromUserAccount.sh`.
+Verify the deletion by running `Subscriptions_GET_FromMyUserAccount.sh`.
 
-Alternatively, delete a subscription by executing the `Subscription_DELETE_ById` Java class, replacing `-DsubscriptionId` with the specific subscription ID:
+Alternatively, delete a subscription by executing the `Subscriptions_DELETE_FromMyUserAccount` Java class, replacing `-DsubscriptionId` with the specific subscription ID:
 
 ```bash
-java -classpath .:* -DsubscriptionId=1234 Subscription_DELETE_ById
+java -classpath .:* -DsubscriptionId=1234 Subscriptions_DELETE_FromMyUserAccount
 ```
 
-Verify the deletion by running `Subscriptions_GET_FromUserAccount.java`.
+Verify the deletion by running `Subscriptions_GET_FromMyUserAccount.java`.
 
 ### Using GraphQL Services
 

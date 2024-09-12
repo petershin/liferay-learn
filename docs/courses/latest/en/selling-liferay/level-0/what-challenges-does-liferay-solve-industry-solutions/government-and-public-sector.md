@@ -36,7 +36,7 @@ Common digital Public Sector solutions that improve citizen satisfaction include
 
 **Self Service Portals** : Build specialized, authenticated portals, so users can securely access appropriate, useful information and collaborate with others. Personalized portals, whether for citizens or government employees, can make it easier for users to find what they need, increasing trust and improving mission outcomes.
 
-**Modern Intranets** : Create protected, customized intranets that enable employees to find the information they need when they need it. Secure, modern intranets help employees better manage their benefits and career planning, allowing for higher satisfaction and better employee retention.
+**Intranets** : Create protected, customized intranets that enable employees to find the information they need when they need it. Secure, modern intranets help employees better manage their benefits and career planning, allowing for higher satisfaction and better employee retention.
 
 **Websites** : Design sites that appeal to citizens, improve user experience, and boost engagement. Create both appealing and efficient web experiences that solve users’ problems in a single location.
 

@@ -38,7 +38,7 @@ Liferay provides digital Insurance solutions necessary for success:
 
 **Agent Portal** : Enable agents, brokers, and partners to share and collect data to deliver personalized quotes and increased operational efficiency through a consolidated location.
 
-**Digital Workplace** : Create a unified intranet that enables agents, underwriters, adjusters, and brokers to collaborate, share information easily, and work more efficiently.
+**Intranets** : Create a unified intranet that enables agents, underwriters, adjusters, and brokers to collaborate, share information easily, and work more efficiently.
 
 **Integration Platform** : Connect legacy systems, new technologies, and data sources together to ensure optimal performance, eliminate paper processes, and prepare for continuous transformation.
 

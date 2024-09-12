@@ -42,7 +42,7 @@ The common Financial Services solutions are
 
 **Advisor Portal** : Enable advisors to build and maintain long-term relationships through superior service with a unified solution that provides a 360-degree view of their clients.
 
-**Digital Workplace** : Create a unified intranet that enables employees to collaborate, share information, and work more efficiently.
+**Intranets** : Create a unified intranet that enables employees to collaborate, share information, and work more efficiently.
 
 **Integration Platform** : Maximize operational margins by unifying legacy systems and digitizing manual and paper processes so relationship managers can focus on higher value tasks.
 

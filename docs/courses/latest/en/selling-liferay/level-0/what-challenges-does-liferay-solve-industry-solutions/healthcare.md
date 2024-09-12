@@ -38,7 +38,7 @@ Liferay helps healthcare companies leverage digital efficiencies to improve pati
 
 **Provider Portal** : Improve and maintain patient satisfaction through superior care with a solution that provides communication beyond the walls of an office or hospital.
 
-**Intranet** : Create meaningful employee experiences that engage and motivate your team with customizable user persona dashboards, career paths, and recognition boards.
+**Intranets** : Create meaningful employee experiences that engage and motivate your team with customizable user persona dashboards, career paths, and recognition boards.
 
 **Integration Platform** : Unify disjointed legacy systems and integrate new applications on a single platform that enables communication across all patient and provider touchpoints.
 

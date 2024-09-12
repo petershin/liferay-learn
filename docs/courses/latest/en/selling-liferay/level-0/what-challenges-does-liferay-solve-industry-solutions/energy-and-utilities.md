@@ -38,9 +38,9 @@ Liferay provides a variety of solutions to streamline customer experiences for e
 
 **Self-Service Customer Portal** : Increase customer loyalty and reduce cost-to-serve with a self-service portal that empowers customers to manage their own accounts, pay online, and solve problems without needing to contact a representative.
 
-**Digital Workplace** : Equip teams to better serve and engage customers with a consolidated location to collaborate, access critical information, and simplify day-to-day tasks.
+**Intranets** : Equip teams to better serve and engage customers with a consolidated location to collaborate, access critical information, and simplify day-to-day tasks.
 
-* **Integration Platform** : Connect all your data sources, machines, Internet-of-Things (IoT), and backend systems to provide a unified view of accurate, real-time data on one platform.
+**Integration Platform** : Connect all your data sources, machines, Internet-of-Things (IoT), and backend systems to provide a unified view of accurate, real-time data on one platform.
 
 ## What's Next
 

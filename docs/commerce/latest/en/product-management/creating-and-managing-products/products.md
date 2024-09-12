@@ -27,8 +27,9 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Products
 
-Liferay provides four product types out-of-the-box: [Simple](./product-types/creating-a-simple-product.md), [Grouped](./product-types/creating-a-simple-product.md), [Virtual](./product-types/creating-a-simple-product.md), and [Diagram](./product-types/shop-by-diagram.md). [Catalogs](../../catalogs/creating-a-new-catalog.md) hold products with a default SKU at creation time. By default, all products are visible in a catalog and across all channels. However, you can control product visibility by determining which channels or accounts are eligible for it. After creation, you can also assign multiple [SKUs](./products/creating-skus-for-product-variants.md) to each product to represent different variants.
+Liferay provides four product types out-of-the-box: [Simple](./product-types/creating-a-simple-product.md), [Grouped](./product-types/creating-a-simple-product.md), [Virtual](./product-types/creating-a-simple-product.md), and [Diagram](./product-types/shop-by-diagram.md). [Catalogs](../../catalogs/creating-a-new-catalog.md) hold products with a default SKU at creation time. By default, all products are visible in a catalog and across all channels. However, you can control product visibility by determining channel or account eligibility. After creation, you can also assign multiple [SKUs](./products/creating-skus-for-product-variants.md) to each product to represent different variants.
 
 See [Product Configuration Reference](./products/product-configuration-reference.md) for more information on how to configure a product.

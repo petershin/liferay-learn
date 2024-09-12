@@ -11,6 +11,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Catalogs
 
-A catalog contains all the information about the products you're selling and are scoped to an instance. Before starting a store, you must create at least one catalog and add products to it.
+A catalog contains all the information about the products you're selling. Before starting a store, you must create at least one catalog and add products to it. Catalogs are scoped to an instance. 

@@ -14,13 +14,14 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Product Types
 
-Commerce Catalogs provides four out-of-the-box product types: Simple, Grouped, Virtual, and Diagram.
+Commerce Catalogs provide four out-of-the-box product types: Simple, Grouped, Virtual, and Diagram.
 
 **[Simple product](./product-types/creating-a-simple-product.md)**: Any physical product for which inventory is tracked.
 
-**[Grouped product](./product-types/creating-a-grouped-product.md)**: Two or more products from the Catalog that are packaged together and sold as a single item. Grouped products are tracked in your inventory and can contain simple products, other grouped products, or virtual products.
+**[Grouped product](./product-types/creating-a-grouped-product.md)**: Two or more products from the catalog that are packaged together and sold as a single item. Grouped products are tracked in your inventory and can contain simple products, other grouped products, or virtual products.
 
 **[Virtual products](./product-types/creating-a-virtual-product.md)**: Any non-tangible product, such as music files, electronic publications, services, and warranties.
 

@@ -10,11 +10,12 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Guest Checkout
 
-You can enable guest checkout on a per-[channel](./channels.md) basis and allowing users to submit orders without a registered account on the site. See [Enabling Guest Checkout](./guest-checkout/enabling-guest-checkout.md) to learn more.
+Guest checkout allows users to submit orders without a registered account on the site. You can enable guest checkout on a per-[channel](./channels.md) basis. See [Enabling Guest Checkout](./guest-checkout/enabling-guest-checkout.md) to learn more.
 
-After enabling guest checkout, guest users can enter an email address during the checkout process. Then, users are prompted to log in, create an account, or continue as a guest. Guest users that add items to the cart and then later sign in before checking out, have their items automatically carried over to their account's cart.
+After enabling guest checkout, guest users must enter an email address during the checkout process. Then, users are prompted to log in, create an account, or continue as a guest. Guest users that add items to the cart and then later sign in before checking out, have their items automatically carried over to their account's cart.
 
 ## Processing a Guest Order
 

@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 23945a81-3dac-4a80-a0e3-a05b113bba7e
 ---
+
 # Creating Notification Templates
 
 {bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
@@ -22,7 +23,7 @@ If the out-of-the-box notification types don't meet your needs, you can create c
 
 ## Adding Email Notification Templates
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Notification Templates*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Templates* under Notification.
 
 1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *Email*.
 
@@ -57,9 +58,8 @@ If the out-of-the-box notification types don't meet your needs, you can create c
 
 1. (Optional) Select object attachment fields to include their assets in email notifications.
 
-   ```{important}
-   You can only attach assets from object entries involved in the notification action.
-   ```
+   !!! important
+       You can only attach assets from object entries involved in the notification action.
 
    ![Select attachment fields to include assets in email notifications.](./creating-notification-templates/images/06.png)
 
@@ -69,7 +69,7 @@ Once created, you can use notification templates with object actions. See [Defin
 
 ## Adding User Notification Templates
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Notification Templates*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Templates* under Notification.
 
 1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *User Notification*.
 
@@ -111,7 +111,7 @@ Consider a scenario with a custom Ticket object that is on the child side of a o
 Terms are available for both custom and default object fields.
 
 !!! important
-   You can only reference fields for entries and users directly involved in the event that triggers the notification action. 
+    You can only reference fields for entries and users directly involved in the notification-triggering action.
 
 ### Default Terms for Current Entry
 
@@ -146,9 +146,8 @@ Use these terms to access information about the current user triggering the noti
 | Current User ID            | `[%CURRENT_USER_ID%]`            |
 | Current User Suffix        | `[%CURRENT_USER_SUFFIX%]`        |
 
-
 ## Related Topics
 
-* [Configuring Mail](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
-* [Email Settings](../../system-administration/configuring-liferay/virtual-instances/email-settings.md)
-* [Notifications](../notifications.md)
+- [Configuring Mail](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
+- [Email Settings](../../system-administration/configuring-liferay/virtual-instances/email-settings.md)
+- [Notifications](../notifications.md)

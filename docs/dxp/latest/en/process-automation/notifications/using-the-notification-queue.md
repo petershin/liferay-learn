@@ -7,25 +7,26 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 355cd01a-1910-4066-8b7f-fff359cc14f5
 ---
+
 # Using the Notification Queue
 
 {bdg-secondary}`Liferay 7.4 U75+/GA75+`
 
-Liferay provides the Notification Queue application for reviewing email notifications triggered by an Object action. You can verify the status of notifications and resend them if needed.
+Liferay provides the Notification Queue application for reviewing email notifications triggered by an object action. You can verify the status of notifications and resend them if needed.
 
 ![Review email notifications in the Notification Queue application.](./using-the-notification-queue/images/01.png)
 
 The application lists the following details for each notification:
 
-| Column     | Description                                                                                                                                                                                 |
-|:-----------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Subject    | The notification's subject, which is set in the [notification template](./creating-notification-templates.md).                                                                              |
-| Trigger By | The Object responsible for triggering the [notification action](../../liferay-development/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions). |
-| From       | The notification's sender, which is set in the [notification template](./creating-notification-templates.md).                                                                               |
-| To         | The notification's recipients, which are set in the [notification template](./creating-notification-templates.md).                                                                          |
-| Status     | Indicates the notification status, whether it was sent (*Sent*) or is in the process of sending (*Unsent*).                                                                                 |
+| Column     | Description                                                                                                                                                                               |
+|:-----------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Subject    | The notification's subject, which is set in the [notification template](./creating-notification-templates.md).                                                                            |
+| Trigger By | The object responsible for triggering the [notification action](../../liferay-development/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions). |
+| From       | The notification's sender, which is set in the [notification template](./creating-notification-templates.md).                                                                             |
+| To         | The notification's recipients, which are set in the [notification template](./creating-notification-templates.md).                                                                        |
+| Status     | Indicates the notification status, whether it was sent (*Sent*) or is in the process of sending (*Unsent*).                                                                               |
 
-Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for an entry to *delete* it or *resend* the notification.
+Click *Actions* (![Actions Button](../../images/icon-actions.png)) for an entry to *delete* it or *resend* the notification.
 
 ![Delete entries or resend notifications.](./using-the-notification-queue/images/02.png)
 
@@ -49,5 +50,5 @@ To configure the deletion interval,
 
 ## Related Topics
 
-* [Creating Notification Templates](./creating-notification-templates.md)
-* [Configuring Personal Notifications](./configuring-personal-notifications.md)
+- [Creating Notification Templates](./creating-notification-templates.md)
+- [Configuring Personal Notifications](./configuring-personal-notifications.md)

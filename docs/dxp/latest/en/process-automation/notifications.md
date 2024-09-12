@@ -11,6 +11,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 40b42b3f-1d9b-4dd8-882d-a490ae43d603
 ---
+
 # Notifications
 
 Liferay provides integrated notification tools, so you can ensure users are alerted to platform events. For Liferay DXP, this includes email and website notifications for the following default applications:
@@ -35,5 +36,3 @@ Liferay provides integrated notification tools, so you can ensure users are aler
 To use email notifications, you must [configure a mail server](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) for your instance. Once configured, you can access additional [email notification settings](../system-administration/configuring-liferay/virtual-instances/email-settings.md) at the instance level. Beginning with Liferay 7.4 U33+/GA33+, you can also create [notification templates](./notifications/creating-notification-templates.md) to design and dynamically populate email notifications for Objects. See [Notification Actions](../liferay-development/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions) for more information.
 
 In the Commerce context, notifications are supported for Channel events. See [Sending Emails](https://learn.liferay.com/w/commerce/store-management/sending-emails) to learn more.
-
-

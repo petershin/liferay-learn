@@ -65,7 +65,7 @@ Use the [translation interface](#manually-translating-web-content-articles-using
     Currently, this feature is behind release feature flags (LPS-114700 and LPD-11253). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information. Other features may differ without these feature flags.
 
 !!! note
-    {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` 
+    {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` 
 
     (**Breaking Change**) Content is no longer classified as `Translated` based only on the title. Now, it's marked as `Translating` when any field is translated. It's considered translated only when all fields are translated.
 
@@ -79,7 +79,7 @@ Use the [translation interface](#manually-translating-web-content-articles-using
 
    ![The Translating status shows the number of translated fields and the total number of fields.](./translating-web-content/images/03.png)
 
-   {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` A "The Description will not count as a translatable field" message appears under the fields, distinguishing which fields are translatable. In the image below, the Title counts as translatable, but the Description and the Friendly URL do not.
+   {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` A "The Description will not count as a translatable field" message appears under the fields, distinguishing which fields are translatable. In the image below, the Title counts as translatable, but the Description and the Friendly URL do not.
 
    ![Distinguish which fields count as translatable.](./translating-web-content/images/04.png)
 
@@ -88,11 +88,11 @@ Use the [translation interface](#manually-translating-web-content-articles-using
 
 1. Choose a language and translate the fields.
 
-1. (Optional) {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` While translating fields, display only Translated, Untranslated, or All Fields by clicking on *All Fields* next to the flag icon in the upper left corner and selecting an option.
+1. (Optional) {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` While translating fields, display only Translated, Untranslated, or All Fields by clicking on *All Fields* next to the flag icon in the upper left corner and selecting an option.
 
    ![Display only translated, untranslated, or all fields.](./translating-web-content/images/05.png)
 
-1. (Optional) {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` If there are fields that don't need translating, but you want to change the translation status to Translated, click *Actions* (![Actions icon](../../images/icon-actions.png)) next to the flag icon in the upper left corner and select *Mark as Translated* (![Mark as Translated icon](../../images/icon-mark-as-translated.png)).
+1. (Optional) {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` If there are fields that don't need translating, but you want to change the translation status to Translated, click *Actions* (![Actions icon](../../images/icon-actions.png)) next to the flag icon in the upper left corner and select *Mark as Translated* (![Mark as Translated icon](../../images/icon-mark-as-translated.png)).
 
    !!! note
        Once marked as translated, the status is not reverted even if you undo changes. To reset the translation, click *Actions* (![Actions icon](../../images/icon-actions.png)) next to the flag icon in the upper left corner and select *Reset Translation* (![Reset Translation](../../images/icon-trash.png)).

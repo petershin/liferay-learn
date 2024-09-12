@@ -611,7 +611,7 @@ The JSON response:
 
 ### Sorting by Related Object Data
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 The Object API supports sorting entries using fields from related objects, enhancing flexibility in data retrieval.
 

@@ -46,7 +46,7 @@ APIs are divided into several categories. This example uses the `BlogPosting` se
 
 ## REST Context Paths for Root Models
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 When working with object definitions related to modifiable system objects, the REST context path includes the root model’s path. This reflects the hierarchical relationship between models and helps organize API endpoints efficiently.
 

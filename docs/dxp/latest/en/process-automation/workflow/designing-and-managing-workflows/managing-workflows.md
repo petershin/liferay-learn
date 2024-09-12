@@ -51,7 +51,7 @@ The newly added definition is ready to be used as a workflow process.
 
 ## Task Assignee Notifications and Site Membership
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 When workflow tasks are assigned to site roles and assignees are notified, role users in parent sites are notified along with child site role users. In some situations, this can lead to parent site members receiving notifications for workflow tasks they cannot resolve, because they are not members of the child site. You can make notifications follow Liferay's site permission inheritance and only notify site roles with explicit access to the content and site in question:
 

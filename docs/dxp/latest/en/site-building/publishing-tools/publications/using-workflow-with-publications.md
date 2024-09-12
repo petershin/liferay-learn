@@ -21,7 +21,7 @@ With Publications, changes are scoped to the environment where they are made (i.
 
 When contributors submit changes for approval, the workflow notification includes the environment where the changes were made. Reviewers must then switch to the appropriate environment before viewing and approving the changes.
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` Alternatively, the changes can be reviewed through the [Workflow tab while reviewing publication changes](#using-the-workflow-tab-while-reviewing-publication-changes).
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` Alternatively, the changes can be reviewed through the [Workflow tab while reviewing publication changes](#using-the-workflow-tab-while-reviewing-publication-changes).
 
 ![Workflow notifications indicate the environment where changes were made.](./using-workflow-with-publications/images/02.png)
 
@@ -34,7 +34,7 @@ Once changes are approved, additional edits to the same entities are tracked as 
 
 ## Using the Workflow Tab While Reviewing Publication Changes
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 !!! important
     Currently, this feature is behind a release feature flag (LPD-10703). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.

@@ -14,7 +14,7 @@ uuid: 5bd46464-470f-4431-af10-3ff5cbbe4206
 !!! important
     Currently, this feature is behind a release feature flag (LPD-11377). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 When creating fields on web content structures, you can make them [repeatable](../../../content-authoring-and-management/web-content/web-content-structures/configuring-structure-fields.md#configurable-settings). You can then map these fields to fragments and publish them on a page. This is a great way to publish structured content that follows a pattern, such as a FAQ, a job listing, or in the example below, an employee directory.
 

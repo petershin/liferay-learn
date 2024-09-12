@@ -20,7 +20,7 @@ Additionally, when a file expires, it is deactivated and cannot be used or edite
 
 By contrast, when a file requires review, it remains available for use. Reaching the file's review date only triggers user notifications and does not affect the file in any way.
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` You can also [schedule the digital asset's publication date and time](#scheduling-the-publication).
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` You can also [schedule the digital asset's publication date and time](#scheduling-the-publication).
 
 ## Enabling Expiration and Review Dates
 
@@ -75,7 +75,7 @@ When a file expires or requires review, a notification email is sent to the file
 
 ## Scheduling The Publication
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 !!! important
     Currently, this feature is behind a release feature flag (LPD-10701). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.

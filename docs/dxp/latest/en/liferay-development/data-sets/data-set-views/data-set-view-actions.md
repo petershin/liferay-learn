@@ -229,7 +229,7 @@ To create status messages for [async](#async-action) and [headless](#headless-ac
 
 ## Using Titles with Modal and Side Panel Actions
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 Side Panel and Modal actions open on top of the current page, so users can interact with the content without navigating away. When you add a `Title` field to these actions, a bar with the title and a close button appears at the top of the component. Users can close the modal/side panel and return to the original page.
 

@@ -138,7 +138,7 @@ curl \
 
 ## Posting Entries with a Draft Status
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 You can also post an object entry while setting its status. This example demonstrates how to add a new entry to the *Event Announcement* object with a draft status.
 
@@ -276,7 +276,7 @@ Paste this into the query area at the top left window of the client and click th
 
 ## Getting Localized Content
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 If you have localized content, you can retrieve it by using the `_i18n` parameters in your GraphQL queries.
 

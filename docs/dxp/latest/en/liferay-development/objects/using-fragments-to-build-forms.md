@@ -45,11 +45,11 @@ In addition, form fragments can only be used with [custom objects](../objects/cr
 
    ![Add the form container and map it to an object.](./using-fragments-to-build-forms/images/01.png)
 
-   {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` In the modal window that opens, select the fields and related fields to display in the form. See [Handling Object Relationships Within Form Container Fragments](#handling-object-relationships-within-form-container-fragments) to learn more about managing related fields in form fragments.
+   {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` In the modal window that opens, select the fields and related fields to display in the form. See [Handling Object Relationships Within Form Container Fragments](#handling-object-relationships-within-form-container-fragments) to learn more about managing related fields in form fragments.
 
 1. Remove non-mandatory fields that you don't want in the form.
 
-   {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` To manage available and related fields, click the *Form Container* fragment and use the *Manage Form Fields* button located in the General tab on the right under Content Type.
+   {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` To manage available and related fields, click the *Form Container* fragment and use the *Manage Form Fields* button located in the General tab on the right under Content Type.
 
    ![Use the Manage Form Fields button to manage available form fields and related fields.](./using-fragments-to-build-forms/images/02.png)
 
@@ -98,7 +98,7 @@ Each form fragment can support one or more object field types. The default form 
 
 ## Handling Object Relationships Within Form Container Fragments
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 !!! important
     Currently, this feature is behind a release feature flag (LPD-20213). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.

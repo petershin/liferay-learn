@@ -10,7 +10,7 @@ taxonomy-category-names:
 
 # Adyen
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 Liferay provides a client extension that integrates with [Adyen](https://www.adyen.com). It uses the payment integration client extension as a base. See [Configuring Payment Methods](../configuring-payment-methods.md) to read more about the payment methods available out-of-the-box with Liferay.
 

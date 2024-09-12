@@ -58,15 +58,15 @@ This is a useful tool to generate thread dumps on several cluster nodes if the f
 
 Here is a list of useful scripts that can be found inside the container:
 
-- **generate_database_report.sh**: Generates a database report HTML file which contains information about tables which can cause performance issues (e.g. templates) or about locks and the status of the database server.
+- `generate_database_report.sh`: Generates a database report HTML file containing information about tables which can cause performance issues (e.g. templates) or about locks and the status of the database server.
 
-- **generate_heap_dump.sh**: Generates a heap dump. Use `-h` to learn about the parameters.
+- `generate_heap_dump.sh`: Generates a heap dump. Use `-h` to learn about the parameters.
 
-- **generate_thread_dump.sh**: Generates thread dumps at the set interval. By default it creates 20 thread dumps with 3 second delays. Use `-h` to learn about the parameters.
+- `generate_thread_dump.sh`: Generates thread dumps at the set interval. By default it creates 20 thread dumps with three second delays. Use `-h` to learn about the parameters.
 
-- **inspect_document_library.sh**: Generates a report with information on the document library's storage. See [Help Center](https://help.liferay.com/hc/en-us/articles/16529765923085-How-to-find-out-what-s-using-the-space-in-our-Document-Library-on-Liferay-PaaS) to learn more.
+- `inspect_document_library.sh`: Generates a report that shows file types and their size in CSV format. 
 
-- **probe_container_lifecycle.sh**: Checks the status of the container quickly and without timeouts. The probe only returns true if the container status is live. If the status hasn't been updated for more than two minutes, it fails (this might happen if the monitoring thread's check fails).
+- `probe_container_lifecycle.sh`: Checks the status of the container quickly and without timeouts. The probe only returns true if the container status is live. If the status hasn't been updated for more than two minutes, it fails (this might happen if the monitoring thread's check fails).
 
   !!! tip
       The life cycle probe is recommended if you're using Kubernetes.

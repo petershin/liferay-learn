@@ -3795,6 +3795,14 @@ Here is a list of changes that break or significantly alter existing functionali
 
 ### Changes in Module Source Code
 
+**PermissionConverter.java**
+`modules/apps/portal-security/portal-security-permission-api/src/main/java/com/liferay/portal/security/permission/converter/PermissionConverter.java`
+
+- **Date**: Sep. 25, 2023
+- **Ticket**: [LPS-197267](https://liferay.atlassian.net/browse/LPS-197267)
+- **What Changed**: The `convertPermissions(long)` and `convertPermissions(long, PermissionConversionFilter)` methods are removed from PermissionConverter.
+- **Reason**: These methods are no longer used after refactoring the PermissionConverter APIs.
+
 **ExtRepository.java**
 `modules/apps/document-library/document-library-repository-external-api/src/main/java/com/liferay/document/library/repository/external/ExtRepository.java`
 
@@ -4078,6 +4086,14 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is moved into `portal-impl` to simplify the code structure.
 
 ### Changes in `portal-kernel` classes
+
+**PermissionConverterUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/security/permission/PermissionConverterUtil.java`
+
+- **Date**: Sep. 25, 2023
+- **Ticket**: [LPS-197267](https://liferay.atlassian.net/browse/LPS-197267)
+- **What Changed**: The `PermissionConverterUtil` class is removed. Instead, use an OSGi service to reference `PermissionConverter`.
+- **Reason**: The `PermissionConverter` APIs are now in `portal-security-permission-api`.
 
 **DLProcessorRegistry.java**
 `portal-kernel/src/com/liferay/document/library/kernel/util/DLProcessorRegistry.java`

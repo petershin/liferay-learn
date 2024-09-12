@@ -36,30 +36,7 @@ The installation steps use these terms:
 
 ## Installing Dependencies
 
-1. Unzip the OSGi Dependencies ZIP file into the `[Liferay Home]/osgi` folder (create this folder if it doesn't exist). Liferay's OSGi runtime depends on these modules.
-
-1. The DXP 7.4+ WAR file includes drivers for MariaDB and PostgreSQL. Earlier WARs don't have them. If the 7.4+ WAR doesn't have the driver for the supported database you're using, download your database vendor's JDBC JAR file and place it in the `$JBOSS_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib` folder. This is the recommended method for adding dependencies that are only needed by Liferay on JBoss. Alternatively, you can [install dependencies using JBoss' global classpath location](#install-dependencies-using-jboss-global-classpath-location).
-
-    See the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
-
-!!! note
-    DXP includes a Hypersonic database that is useful for testing purposes. **Do not** use HSQL for production instances.
-
-1. Create a file called `module.xml` in the `$JBOSS_HOME/modules/com/liferay/portal/main` folder. In the file, declare the portal module and all of its required dependencies:
-
-   ```xml
-   <?xml version="1.0"?>
-
-   <module xmlns="urn:jboss:module:1.0" name="com.liferay.portal">
-       <dependencies>
-           <module name="javax.api" />
-           <module name="javax.mail.api" />
-           <module name="javax.servlet.api" />
-           <module name="javax.servlet.jsp.api" />
-           <module name="javax.transaction.api" />
-       </dependencies>
-   </module>
-   ```
+Unzip the OSGi Dependencies ZIP file into the `[Liferay Home]/osgi` folder (create this folder if it doesn't exist). Liferay's OSGi runtime depends on these modules.
 
 ### Install Dependencies Using JBoss' Global Classpath Location
 
@@ -273,6 +250,29 @@ You can configure DXP's built-in data source with your database the first time y
 ## Data Source Configuration in JBoss EAP
 
 If you're using JBoss to manage the data source, follow these steps:
+
+1. The DXP 7.4+ WAR file includes drivers for MariaDB and PostgreSQL. Earlier WARs don't have them. If the 7.4+ WAR doesn't have the driver for the supported database you're using, download your database vendor's JDBC JAR file and place it in the `$JBOSS_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib` folder. This is the recommended method for adding dependencies that are only needed by Liferay on JBoss. Alternatively, you can [install dependencies using JBoss' global classpath location](#install-dependencies-using-jboss-global-classpath-location).
+
+    See the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
+
+!!! note
+    DXP includes a Hypersonic database that is useful for testing purposes. **Do not** use HSQL for production instances.
+
+1. If you haven't already, create a file called `module.xml` in the `$JBOSS_HOME/modules/com/liferay/portal/main` folder. In the file, declare the portal module and all of its required dependencies:
+
+   ```xml
+   <?xml version="1.0"?>
+
+   <module xmlns="urn:jboss:module:1.0" name="com.liferay.portal">
+       <dependencies>
+           <module name="javax.api" />
+           <module name="javax.mail.api" />
+           <module name="javax.servlet.api" />
+           <module name="javax.servlet.jsp.api" />
+           <module name="javax.transaction.api" />
+       </dependencies>
+   </module>
+   ```
 
 1. Get the JDBC JAR from your DXP WAR (7.4+) or from the database vendor, and copy it to the `$JBOSS_HOME/modules/com/liferay/portal/main` folder.
 

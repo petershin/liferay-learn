@@ -201,7 +201,7 @@ Make the following edits to your `standalone.conf` script.
 1. Add these Java options setting at the end of the file:
 
    ```bash
-   JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Djboss.as.management.blocking.timeout=1800"
+   JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Djboss.as.management.blocking.timeout=1800"
 
    JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED"
 
@@ -215,9 +215,8 @@ The Java options and memory arguments are explained below.
 | Option                                        | Explanation                                                       |
 | :-------------------------------------------- | :---------------------------------------------------------------- |
 | `-Dfile.encoding=UTF-8`                       | DXP requires UTF-8 file encoding.                                 |
-| `-Djava.locale.providers=JRE,COMPAT,CLDR`     | TODO |
 | `-Djava.net.preferIPv4Stack=true`             | Prefers an IPv4 stack over IPv6.                                  |
-| `-Djboss.as.management.blocking.timeout=1800` | TODO |
+| `-Djboss.as.management.blocking.timeout=1800` | Set timeout to retry in case WildFly fails to start.              |
 | `-Duser.timezone=GMT`                         | DXP requires the application server JVM to use the GMT time zone. |
 
 !!! note

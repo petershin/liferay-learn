@@ -4,6 +4,7 @@ toc:
 - ./module-6-content-authoring-and-management/managing-claritys-digital-assets.md
 - ./module-6-content-authoring-and-management/creating-claritys-web-content.md
 - ./module-6-content-authoring-and-management/organizing-claritys-content.md
+- ./module-6-content-authoring-and-management/displaying-claritys-content.md
 - ./module-6-content-authoring-and-management/creating-claritys-commerce-content.md
 - ./module-6-content-authoring-and-management/publishing-content-with-workflows.md
 - ./module-6-content-authoring-and-management/building-forms-with-objects.md

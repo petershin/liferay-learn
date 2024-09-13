@@ -59,7 +59,10 @@ These limitations apply to the [Liferay service](../customizing-liferay-dxp-in-t
 
 **Document Library Storage**: Your subscription plan determines the size of the `data` volume for the Liferay service; this includes storage used for Liferay's Document Library. The default volume size is 100 GB, but it can be increased as long as the size is below 4 TB. A private cluster is required if a project needs more than 4 TB of storage.
 
-**Session Replication**: Replicating sessions between multiple Liferay instances in Liferay Cloud may impact your instances' performance, and is not supported. This is because Liferay Cloud leverages pod evictions on Kubernetes as part of the resource management and high availability strategies. Pod evictions are a necessary mechanism to maintain the health of the system. They are triggered by scenarios such as updates to the underlying infrastructure or when nodes reach approach their resource limits. This results in the eviction of active user sessions from the affected pods, making session replication cause performance issues. Instead, use sticky sessions, or avoid using session storage entirely in your custom applications.
+**Session Replication**: Replicating sessions between multiple Liferay instances in Liferay Cloud may impact your instances' performance, and is not supported. This is because Liferay Cloud leverages pod evictions on Kubernetes as part of the resource management and high availability strategies. Pod evictions are a necessary mechanism to maintain the health of the system. They are triggered by scenarios such as updates to the underlying infrastructure or when nodes reach approach their resource limits. This results in the eviction of active user sessions from the affected pods, making session replication cause performance issues as sessions are lost. Instead, use sticky sessions, or avoid using session storage entirely in your custom applications.
+
+!!! note
+    Liferay mitigates the effects of session loss through various strategies such as utilizing cookies and database interactions. This ensures items like [Commerce carts](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/cart) are saved even when the session is lost.
 
 ### Dynatrace
 

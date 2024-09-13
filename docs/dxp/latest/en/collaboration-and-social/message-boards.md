@@ -13,27 +13,25 @@ taxonomy-category-names:
 
 # Message Boards
 
-Liferay DXP's Message Boards app is a forum application that can be added to any DXP site page. A [Message Board on DXP can be scoped](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope) to a site, including a regular site, an organization’s site, or a user's profile site or dashboard site.
+Liferay DXP's Message Boards application is a forum application that can be added to site pages.
 
-## Adding Message Boards to a Site
+You can organize topics by creating [categories](./message-boards/user-guide/creating-message-boards-categories.md) and [threads](./message-boards/user-guide/creating-message-boards-threads.md), making it easier to manage conversations. [Moderation](./message-boards/user-guide/moderating-message-boards.md) tools help maintain discussions, with options to set [permissions](./message-boards/user-guide/message-boards-permissions-reference.md) for different user roles.
 
-The fastest way to begin using the *Message Boards* app is to deploy the widget to a [Site Page](https://help.liferay.com/hc/articles/360029132211-Creating-Pages).
+The application also supports [configuring mailing lists for message board categories](./message-boards/user-guide/configuring-a-message-boards-category-mailing-list.md), so users can follow and respond to discussions via email.
 
-1. Navigate to the site and page desired (e.g. *Forum Page*).
+Each [message board can be scoped](./message-boards/user-guide/scoping-your-message-boards.md) to different sites, giving administrators flexibility in how forums are managed across various contexts.
 
-   ![New Forum Page](./message-boards/images/03.png)
+![The Message Boards application is a forum application that can be added to site pages.](./message-boards/images/01.png)
 
-1. Click the *Add* button.
+The fastest way to begin using the *Message Boards* application is to [add a Message Boards widget to a page](../site-building/creating-pages/using-content-pages/using-widgets-on-a-content-page.md):
 
-1. Click *Widgets* then *Collaboration* to expand the menu.
+1. Open the *Site Menu* (Site Menu), expand *Site Builder*, and go to *Pages*.
 
-   ![Adding the Message Boards Widget to using the Add Application menu.](./message-boards/images/06.png)
+1. Start editing the page where you want to place the Message Boards widget.
 
-1. Drag and drop the *Message Boards* widget to the desired location on the page.
+1. In the Fragments and Widgets sidebar, look for the *Message Boards* widget. Drag and drop it into the page and publish the page.
 
-   ![Deploying the Message Boards app to the forum page.](./message-boards/images/04.png)
-
-Site members are able to create forum posts using the *Message Boards* widget.
+Now, site members are able to create forum posts using the *Message Boards* widget.
 
 !!! note
     You can only add one *Message Boards* widget per page.

@@ -13,11 +13,14 @@ The import/export settings configure mappings between LDAP and Liferay to match 
 
 ## Finding Users in Your LDAP Directory
 
-**Authentication Search Filter:** Use this search filter box to determine the search criteria for user logins. By default, Liferay uses users' email addresses for their login names. The value here must use the [authentication type](../../installation-and-upgrades/securing-liferay/authentication-basics.md#authentication-types) you use. For example, if you changed Liferay's authentication method to use screen names instead of the email addresses, you would modify the search filter so it can match the entered log in name:
+**Authentication Search Filter:** Use this search filter box to determine the search criteria for user logins. By default, Liferay uses users' email addresses for their login names. The value here must use the [authentication type](../../installation-and-upgrades/securing-liferay/authentication-basics.md#authentication-types) you use.
 
 ```
-(cn=@screen_name@)
+(cn=@email_address@)
 ```
+
+!!! note
+    If you changed Liferay's authentication method to use screen names instead of the email addresses, you would modify the search filter so it can match the entered log in name: `(cn=@screen_name@)`
 
 **Import Search Filter:** Depending on the LDAP schema, there are different ways to identify the user. The default setting is usually fine:
 
@@ -37,9 +40,8 @@ Next, you can define mappings from LDAP attributes to Liferay fields. Though LDA
 * *First Name* (e.g., `name` or `givenName`)
 * *Last Name* (e.g., `sn`)
 
-```{note}
-If you intend to create or import users with no email addresses, you must set `users.email.address.required=false` in `portal-ext.properties`. With this set, Liferay auto-generates an email address combining the user ID plus the suffix defined in the property `users.email.address.auto.suffix=`. Finally, make sure to set Liferay and LDAP authentication to something other than email address.
-```
+!!! note
+    If you intend to create or import users with no email addresses, you must set `users.email.address.required=false` in `portal-ext.properties`. With this set, Liferay auto-generates an email address combining the user ID plus the suffix defined in the property `users.email.address.auto.suffix=`. Finally, make sure to set Liferay and LDAP authentication to something other than email address.
 
 If you want to import LDAP groups as Liferay user groups, make sure you define a mapping for the Liferay group field so that membership information is preserved:
 
@@ -85,8 +87,7 @@ This section contains settings for exporting Liferay user data to LDAP.
 
 When you've set all your options and tested your connection, click *Save*.
 
-```{note}
-If a user changes a value like a password in Liferay, that change is passed to the LDAP server, provided Liferay has enough schema access to make the change.
-```
+!!! note
+    If a user changes a value like a password in Liferay, that change is passed to the LDAP server, provided Liferay has enough schema access to make the change.
 
-Now you know how to connect an LDAP server to Liferay and how to configure user import behavior, export behavior, and other LDAP settings. There are other configurable options; [Configuring LDAP](./ldap-configuration-reference.md) describes those.
+Now you know how to connect an LDAP server to Liferay and how to configure user import behavior, export behavior, and other LDAP settings. See [Configuring LDAP](./ldap-configuration-reference.md) for more information on other configurable options.

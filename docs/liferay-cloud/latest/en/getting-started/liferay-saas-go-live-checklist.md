@@ -29,7 +29,7 @@ You can also find your project ID by navigating to your client extensions enviro
 
 ![You can find your project ID from the URL in your client extensions environment.](./liferay-saas-go-live-checklist/images/01.png)
 
-If your DNS provider does not offer CNAME records to base domain names, try using the *ALIAS* record. If an alias is also not available, try using an A record connected to the appropriate IP address. Then, update the virtual host name in the portal's site configuration. Ifyou run into problems, notify Support on the [ticket you created](#inform-liferay-cloud-support).
+If your DNS provider does not offer CNAME records to base domain names, try using the *ALIAS* record. If an alias is also not available, try using an A record connected to the appropriate IP address. Then, update the virtual host name in the portal's site configuration. If you run into problems, notify Support on the [ticket you created](#inform-liferay-cloud-support).
 
 !!! important
     Using a CNAME record is strongly recommended. A records are connected to a specific IP address. This might cause problems for [disaster recovery](../support-and-troubleshooting/troubleshooting-tools-and-resources/disaster-recovery-overview.md).

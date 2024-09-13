@@ -146,7 +146,7 @@ If you've configured a VPN, confirm that the connection is working as expected. 
 
 ### Database Maintenance Window
 
-Configure a database maintenance window and set it to off-peak hours. Database maintenance occus once every few months and may lead to database connectivity failures for up to two minutes. See [Database Maintenance Window Variables](../platform-services/database-service.md#database-maintenance-window-variables) for more information.
+Configure a database maintenance window and set it to off-peak hours. Database maintenance occurs once every few months and may lead to database connectivity failures for up to two minutes. See [Database Maintenance Window Variables](../platform-services/database-service.md#database-maintenance-window-variables) for more information.
 
 ## Additional Consideration
 

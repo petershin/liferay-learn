@@ -49,7 +49,7 @@ uuid: 7e5ff1c5-105e-4021-8b5f-98b7e12ae3f5
 :::{grid-item-card} Creating Store Content
 :link: ./creating-store-content.md
 
-[Creating Your Storefront](./creating-store-content/creating-your-storefront.md)
+[Commerce Storefront Pages](./creating-store-content/commerce-storefront-pages.md)
 [Checkout](./creating-store-content/commerce-storefront-pages/checkout.md)
 [Creating a Catalog Page](./creating-store-content/creating-a-catalog-page.md)
 :::

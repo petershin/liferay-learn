@@ -9,23 +9,23 @@ taxonomy-category-names:
 ---
 # Introduction to Liferay Commerce
 
-Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform built from the ground up to meet the challenging and complex needs of any B2B organization. Using the enterprise foundation of Liferay DXP, Liferay Commerce has the power and flexibility of fully integrated web content management and industry leading portal capabilities. Click [here](https://learn.liferay.com/w/dxp/getting-started) to learn more about Liferay DXP.
+Welcome to Liferay Commerce! Liferay Commerce is a digital commerce platform built from the ground up to meet the challenging and complex needs of any B2B organization. Using the enterprise foundation of Liferay DXP, Liferay Commerce has the power and flexibility of fully integrated web content management and industry leading portal capabilities. Click [here](https://learn.liferay.com/w/dxp/getting-started) to learn more about Liferay DXP.
 
 ## Overview
 
-* [Modern Storefront Pages and Content Management](#modern-storefront-pages-and-content-management)
-* [Multi-Channel Catalog and Product Information Management](#multi-channel-catalog-and-product-information-management)
-* [B2B Focused Account Management and Purchasing Workflow](#b2b-focused-account-management-and-purchasing-workflow)
-* [Order Management and Sales](#order-management-and-sales)
-* [ML Powered Recommendations and Alerts](#ml-powered-recommendations-and-alerts)
-* [APIs and Integrations](#apis-and-integrations)
-* [Next Steps](#next-steps)
+- [Modern Storefront Pages and Content Management](#modern-storefront-pages-and-content-management)
+- [Multi-Channel Catalog and Product Information Management](#multi-channel-catalog-and-product-information-management)
+- [B2B Focused Account Management and Purchasing Workflow](#b2b-focused-account-management-and-purchasing-workflow)
+- [Order Management and Sales](#order-management-and-sales)
+- [ML Powered Recommendations and Alerts](#ml-powered-recommendations-and-alerts)
+- [APIs and Integrations](#apis-and-integrations)
+- [Next Steps](#next-steps)
 
 Just want to get started? Launch Liferay Commerce _fast_ [using the Liferay Commerce Docker image](../installation-and-upgrades/installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md).
 
 ## Modern Storefront Pages and Content Management
 
-Liferay Commerce includes a wide range of tools for setting up a storefront. New search tools, for instance, are designed specifically for product catalogs, while customizable widgets make it easy to add common UI elements, such as Checkout and View Cart, to a page. Learn more about [Building a Storefront](../creating-store-content/creating-your-storefront.md).
+Liferay Commerce includes a wide range of tools for setting up a storefront. New search tools, for instance, are designed specifically for product catalogs, while customizable widgets make it easy to add common UI elements, such as Checkout and View Cart, to a page. Learn more about [building a storefront](../creating-store-content/commerce-storefront-pages.md).
 
 ![Liferay Commerce Dashboard](./introduction-to-liferay-commerce/images/01.png)
 
@@ -72,6 +72,6 @@ Integrate with other business systems through a Mulesoft connector, Talend compo
 
 ## Next Steps
 
-* [Installation Overview](../installation-and-upgrades/installation-overview.md)
-* [Using the Liferay Commerce Docker Image](../installation-and-upgrades/installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md)
-* [Setup a Complete B2B Site Using the Minium Accelerator](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)
+- [Installation Overview](../installation-and-upgrades/installation-overview.md)
+- [Using the Liferay Commerce Docker Image](../installation-and-upgrades/installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md)
+- [Setup a Complete B2B Site Using the Minium Accelerator](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)

@@ -35,11 +35,10 @@ You can view and manage all saved configurations via the Product Display Pages t
 
 ![View and manage all saved configurations via the Product Display Pages tab.](./creating-product-display-pages/images/04.png)
 
-```{note}
-When there are two layouts with the product details or category content widget on them, Liferay defaults to the first one listed in the layout list.
-```
+!!! note
+    When there are two layouts with the product details or category content widget on them, Liferay defaults to the first one listed in the layout list.
 
 ## Related Topics
 
-* [Creating Your Storefront](./creating-your-storefront.md)
-* [Creating a Catalog Page](./creating-a-catalog-page.md)
+- [Commerce Storefront Pages](./commerce-storefront-pages.md)
+- [Creating a Catalog Page](./creating-a-catalog-page.md)

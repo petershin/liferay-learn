@@ -14,13 +14,13 @@ Environment logs are crucial for diagnosing and resolving technical issues in a 
 
 Liferay Cloud provides three types of logs for environment services:
 
-- **Application Logs**: Runtime information generated after the application is running and accessed by users.
+- **Application Logs**: Shows runtime information generated after the application is running and accessed by users.
 
-- **Build Logs**: Build information generated as the application boots up. Examples include: when Docker images are pulled from the registry, when deploys are in progress, and when builds are successful.
+- **Build Logs**: Shows build information generated as the application boots up. Examples include: when Docker images are pulled from the registry, when deploys are in progress, and when builds are successful.
 
-- **Status Logs**: Orchestration layer information from the Kubernetes cluster. Examples include: when images are successfully pulled, when containers are created and started, and when readiness or liveness probes fail.
+- **Status Logs**: Shows orchestration layer information from the Kubernetes cluster. Examples include: when images are successfully pulled, when containers are created and started, and when readiness or liveness probes fail.
 
-- **VPN Logs**: VPN server information. Examples include: when a VPN connection fails, when a certificate is invalid or expired, and when the connection times out.
+- **VPN Logs**: Shows VPN server information. Examples include when a VPN connection fails, when a certificate is invalid or expired, and when the connection times out.
 
 ## Log Structure
 

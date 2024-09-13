@@ -71,6 +71,19 @@ Using SCIM, you can automate the exchange of user identity information between y
 
 1. Click *Save*.
 
+## Resetting a SCIM Client
+
+{bdg-secondary}`Liferay DXP 2024.Q3+`
+{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+
+To register a new SCIM client, you must reset the existing one to remove the SCIM client data and generated OAuth 2 token.
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SCIM*.
+
+1. Click *Reset* and then click *OK*.
+
+This clears the following fields: Access Token, Matcher Field, and OAuth 2 Application Name. It also deletes the OAuth 2 application associated with the SCIM client.
+
 ## Related Topics
 
 * [SCIM User API Basics](./developer-guide/scim-user-api-basics.md)

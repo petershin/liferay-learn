@@ -73,7 +73,7 @@ Using SCIM, you can automate the exchange of user identity information between y
 
 ## Resetting a SCIM Client
 
-{bdg-secondary}`Liferay DXP 2024.Q3+`
+{bdg-secondary}`Liferay DXP 2024.Q4+`
 {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 To register a new SCIM client, you must reset the existing one to remove the SCIM client data and generated OAuth 2 token.

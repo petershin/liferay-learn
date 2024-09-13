@@ -19,19 +19,19 @@ Optimizing animated GIFs using Adaptive Media requires three steps: installing G
 
 1. Navigate to the *Global Menu* &rarr; *Control Panel*.
 
-   ![Navigate to the Control Panel.](./enabling-optimization-of-animated-gifs/images/01.png)
-
 1. Click *System Settings*.
 
 1. Click *Adaptive Media*.
 
-   ![Access the Adaptive Media system settings.](./enabling-optimization-of-animated-gifs/images/02.png)
+   ![Access the Adaptive Media system settings.](./enabling-optimization-of-animated-gifs/images/01.png)
 
 1. Click *Images* in the left navigation under *System Scope*.
 
-1. Scroll down and and then click the box next to *Gifsicle Enabled*.
+1. Scroll down and then click the box next to *Gifsicle Enabled*.
 
-   ![Enable Gifsicle.](./enabling-optimization-of-animated-gifs/images/03.png)
+   ![Enable Gifsicle.](./enabling-optimization-of-animated-gifs/images/02.png)
+
+   <!-- If you tell people to click the box next to Gifsicle Enabled, your screenshot should show the box checked, and even possibly highlight that. -Rich -->
 
 1. Click *Save* when finished.
 

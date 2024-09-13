@@ -1,9 +1,6 @@
 ---
-#
-# https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc/.vale/gitlab
-#
 extends: existence
-message: 'Use a comma before the last "and" or "or" in a list.'
+message: 'Detected 2+ commas. If this is a series, use a comma before the last item.'
 link: https://learn.liferay.com/w/reference/style-guide/liferay-phraseology#oxford-commas
 level: warning
 raw:

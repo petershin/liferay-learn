@@ -105,7 +105,7 @@ The web content article is now tagged as scheduled, and you can see the selected
 
 Once the publication is scheduled, you can reschedule it by editing and setting a different time.
 
-When you reschedule the same publication multiple times, you can view all versions and their publication schedule by going to the Web Content application screen and clicking the article's *Actions* menu (![Actions menu icon](../../../images/icon-actions.png)) &rarr; *View History*.
+When you reschedule the same publication multiple times, you can view all versions and their publication schedule by navigating to the Web Content application screen and clicking the article's *Actions* menu (![Actions menu icon](../../../images/icon-actions.png)) &rarr; *View History*.
 
 !!! tip
     All rescheduled versions of the web content article are published. Note that versions scheduled later replace previous ones.

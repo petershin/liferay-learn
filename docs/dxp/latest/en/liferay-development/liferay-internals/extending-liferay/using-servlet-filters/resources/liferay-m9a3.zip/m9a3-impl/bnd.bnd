@@ -1,0 +1,3 @@
+Bundle-Name: Acme M9A3 Implementation
+Bundle-SymbolicName: com.acme.m9a3.impl
+Bundle-Version: 1.0.0

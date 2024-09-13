@@ -11,7 +11,7 @@ Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub rep
 
 1. Transfer the provisioned repository to their own private repository.
 
-The provisioned repository will be on GitHub, but you can transfer it to a GitLab repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the GitLab repository.
+The provisioned repository will be on GitHub, but you can transfer it to a Azure repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the Azure repository.
 
 !!! note
     The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
@@ -69,7 +69,7 @@ Next, create an access token that will be used by the Webhook to trigger Jenkins
 
 1. Navigate to the personal access tokens page.
 
-   ![Create a personal access token for GitLab, which cannot be accessed again later.](./configuring-your-azure-repository/images/04.png)
+   ![Create a personal access token for Azure, which cannot be accessed again later.](./configuring-your-azure-repository/images/04.png)
 
 1. Click *New Token*.
 

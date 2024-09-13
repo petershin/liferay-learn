@@ -7,12 +7,12 @@ uuid: 4cc9c375-56da-4f38-83d3-7f0c9a58840c
 ---
 # Configuring Your Bitbucket Repository
 
-Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private Liferay Cloud development repository and is typically removed after 10 business days. Users must:
+Your Liferay Cloud onboarding email contains a link to a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's private Liferay Cloud development repository and is typically removed after 10 business days. Users must
 
 1. Transfer the provisioned repository to their own private repository.
 1. Integrate their private repository with the Jenkins (CI) service in Liferay Cloud using a Webhook.
 
-The provisioned repository will be on GitHub, but you can transfer it to a BitBucket repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the BitBucket repository.
+The provisioned repository is on GitHub, but you can transfer it to a BitBucket repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the BitBucket repository.
 
 !!! note
     The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
@@ -49,18 +49,30 @@ Follow these steps to transfer the provisioned GitHub repository to your own Bit
 
 1. Clone the provisioned GitHub repository locally:
 
-   ```git clone git@github.com:dxpcloud/example.git```
+   ```bash
+
+   git clone git@github.com:dxpcloud/example.git
+
+   ```
 
    !!! note
        If you have already cloned the repository for work with another provider, then you can skip this step and work within the same clone.
 
 1. Add a new Git remote and point to Bitbucket:
 
-   ```git remote add bitbucket git@bitbucket.org:example/example.git```
+   ```bash
+
+   git remote add bitbucket git@bitbucket.org:example/example.git
+
+   ```
 
 1. Push the cloned repository to the new remote repository:
 
-   ```git push bitbucket master```
+   ```bash
+
+   git push bitbucket master
+
+   ```
 
 If you need help creating, cloning, and pushing repositories, see [Bitbucket's documentation](https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html).
 
@@ -87,7 +99,7 @@ Perform the following steps to generate an app password:
 
 1. Click *Create*.
 
-1. Copy the app password (you won't see it again otherwise). This is BitBucket's equivalent of a personal access token.
+1. Copy the app password (it does not appear again). This is BitBucket's equivalent of a personal access token.
 
 !!! important
     The user that generated the app password must use their username for the `LCP_CI_SCM_USERNAME` environment variable.
@@ -96,7 +108,7 @@ Perform the following steps to generate an app password:
 
 In order for Liferay Cloud to be able to properly link to your branches, you must provide it with a complete list of the branch prefixes in use in your repository. Each of the branch types used in your repository has its own prefix, which is defined in the repository's settings.
 
-On [the Bitbucket website](https://bitbucket.org), click *Repository settings* &rarr; *Branching model* from the menu on the left. This brings you to the *Branching model* page, where the prefix for each of your branches is listed. Take note of each of these prefixes to add them to the `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI environment variable.
+On [the Bitbucket website](https://bitbucket.org), click *Repository settings* &rarr; *Branching model* from the menu on the left. This brings you to the *Branching model* page, where the prefix for each of your branches appears. Take note of each of these prefixes to add them to the `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI environment variable.
 
 ![The default branch types (and prefixes) for a Bitbucket repository are bugfix/, feature/, hotfix/, and release/.](./configuring-your-bitbucket-repository/images/05.png)
 
@@ -121,7 +133,7 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 
 Define `LCP_CI_SCM_USERNAME` as the user that [generated the app password](#generating-app-password-for-bitbucket). Define `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` as a list of all [prefixes used in your repository's branches](#checking-branch-types-and-prefixes), separated by spaces.
 
-After updating these environment variables, the Jenkins service will restart. Any pushed branches and pull requests in your new repository should now trigger.
+After updating these environment variables, the Jenkins service restarts. Any pushed branches and pull requests in your new repository should now trigger.
 
 ## Connecting to a Private Bitbucket Server
 
@@ -135,7 +147,7 @@ Set the `LCP_CI_SCM_SERVER_HOST` variable to the base URL of your private Bitbuc
 
 ## Verifying Builds
 
-Pushed branches and pull requests trigger builds that you can see or deploy from the *Builds* tab in the Liferay Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
+Pushed branches and pull requests trigger builds that you can see or deploy from the Builds tab in the Liferay Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
 
 ### Verifying Builds from Pushed Branches
 
@@ -155,7 +167,7 @@ Verify that new Git pushes trigger Jenkins builds:
 
 1. Navigate to the *Builds* page in the Liferay Cloud Console.
 
-1. Verify that the build displays for the pushed branch on the *Builds* page.
+1. Verify that the build displays for the pushed branch on the Builds page.
 
 ### Verifying Builds from Pull Requests
 

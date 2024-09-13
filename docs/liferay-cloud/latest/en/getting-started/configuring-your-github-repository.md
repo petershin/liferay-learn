@@ -5,9 +5,10 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: 8e0d0a35-6a6a-4655-a4fd-d1b44821b4f5
 ---
+
 # Configuring Your GitHub Repository
 
-Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private Liferay Cloud development repository and is typically removed after 10 business days. Users must:
+Your Liferay Cloud onboarding email contains a link to a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private Liferay Cloud development repository and is typically removed after 10 business days. Users must
 
 1. Transfer the provisioned repository to their own private GitHub repository.
 
@@ -42,19 +43,19 @@ Now you must integrate your new repository with the Jenkins service in Liferay C
 
 1. Leave the *Secret* field blank and ensure that *Enable SSL verification* is selected.
 
-   ![Figure 1: Specify the payload URL and content type, and enable SSL verification.](./configuring-your-github-repository/images/01.png)
+   ![Specify the payload URL and content type, and enable SSL verification.](./configuring-your-github-repository/images/01.png)
 
 1. Under *Which events would you like to trigger this webhook?*, select *Let me select individual events*. A list of events then appears.
 
 1. Select *Pushes* and *Pull Requests* from the list of events.
 
-   ![Figure 2: You need to select individual events for this webhook.](./configuring-your-github-repository/images/02.png)
+   ![You must select individual events for this webhook.](./configuring-your-github-repository/images/02.png)
 
-   ![Figure 3: Select Pushes, and Pull Requests.](./configuring-your-github-repository/images/03.png)
+   ![Select Pushes, and Pull Requests.](./configuring-your-github-repository/images/03.png)
 
 1. Make sure *Active* is selected, then click *Add webhook*.
 
-   ![Figure 4: Set the webhook to Active and finish creating it.](./configuring-your-github-repository/images/04.png)
+   ![Set the webhook to Active and finish creating it.](./configuring-your-github-repository/images/04.png)
 
 ### Setting Environment Variables
 
@@ -82,21 +83,21 @@ The personal access token created must have all of the scope permissions under *
 !!! note
     If you are using an organization account with SAML single sign-on authentication, then you must take additional steps to authorize your access token. See [GitHub's official documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on) for more information.
 
-After updating these environment variables, the Jenkins service will restart. Any pushed branches and pull requests in the new repository now trigger builds.
+After updating these environment variables, the Jenkins service restarts. Any pushed branches and pull requests in the new repository now trigger builds.
 
 !!! note
-    Jenkins versions prior to `2.222.1-3.2.0` use the environment variables `GITHUB_REPOSITORY` and `GITHUB_TOKEN` instead. To use the `LCP_CI_SCM_*` environment variables, ensure you are running Jenkins `2.222.1-3.2.0` or higher.
+    Jenkins versions before `2.222.1-3.2.0` use the environment variables `GITHUB_REPOSITORY` and `GITHUB_TOKEN` instead. To use the `LCP_CI_SCM_*` environment variables, ensure you are running Jenkins `2.222.1-3.2.0` or higher.
 
 ### Personal Access Token Usage
 
 The personal access token referenced by the `LCP_CI_SCM_TOKEN` value is needed for Liferay Cloud to integrate with your repository.
 
 !!! warning
-    If the personal access token belongs to a personal user account and that user is removed from the organization, all builds will fail to complete. Instead, use an account specifically belonging to the organization. See [GitHub's official documentation](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#considering-cross-repository-access) for more information.
+    If the personal access token belongs to a personal user account and that user is removed from the organization, all builds fail to complete. Instead, use an account specifically belonging to the organization. See [GitHub's official documentation](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#considering-cross-repository-access) for more information.
 
 By default, the GitHub organization's [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) must also have the `admin:repo_hook` permissions in order for the CI service to successfully integrate using the default web hook.
 
-However, it is recommended to set the `LCP_CLI_SCM_MANAGE_HOOKS` [environment variable](../reference/defining-environment-variables.md) to `false` in your [CI service](../platform-services/continuous-integration.md). This disables automatic management of the web hook (which is no longer needed after you have finished setting up integration with your repository), and allows you to remove the (admin-level) `admin:repo_hook` permissions from the personal access token Liferay Cloud uses:
+However, you should set the `LCP_CLI_SCM_MANAGE_HOOKS` [environment variable](../reference/defining-environment-variables.md) to `false` in your [CI service](../platform-services/continuous-integration.md). This disables automatic management of the web hook (which is no longer needed after you have finished setting up integration with your repository), and you can remove the (admin-level) `admin:repo_hook` permissions from the personal access token Liferay Cloud uses.
 
 ![You can remove the admin:repo_hook permissions from the personal access token if you disable automatic web hook management.](./configuring-your-github-repository/images/06.png)
 

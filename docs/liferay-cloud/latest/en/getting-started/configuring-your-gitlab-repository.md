@@ -7,12 +7,12 @@ uuid: 7490962d-e315-41bc-8a39-1f93ea03d69e
 ---
 # Configuring Your GitLab Repository
 
-Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private Liferay Cloud development repository and is typically removed after 10 business days. Users must:
+Your Liferay Cloud onboarding email contains a link to a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's private Liferay Cloud development repository and is typically removed after 10 business days. Users must
 
 1. Transfer the provisioned repository to their own private repository.
 1. Integrate their private repository with the Jenkins (CI) service in Liferay Cloud using a Webhook.
 
-The provisioned repository will be on GitHub, but you can transfer it to a GitLab repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the GitLab repository.
+The provisioned repository is on GitHub, but you can transfer it to a GitLab repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the GitLab repository.
 
 !!! note
     The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
@@ -47,24 +47,36 @@ Follow these steps to transfer the provisioned GitHub repository to your own Git
 
 1. Clone the provisioned GitHub repository locally:
 
-   ```git clone git@github.com:dxpcloud/example.git```
+   ```bash
+
+   git clone git@github.com:dxpcloud/example.git
+
+   ```
 
    !!! note
-       If you have already cloned the repository for work with another provider, then you can skip this step and work within the same clone.
+       If you have already cloned the repository to work with another provider, you can skip this step and work within the same clone.
 
 1. Add a new Git remote and point to GitLab:
 
-   ```git remote add gitlab git@gitlab.com:USERNAME/REPOSITORYNAME.git```
+   ```bash 
+
+   git remote add gitlab git@gitlab.com:USERNAME/REPOSITORYNAME.git
+
+   ```
 
 1. Push the cloned repository to the new remote repository:
 
-   ```git push gitlab master```
+   ```bash 
+
+   git push gitlab master
+
+   ```
 
 If you need help creating, cloning, and pushing repositories, see [GitLab's documentation](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html).
 
 ## Generating Access Tokens for GitLab
 
-Next, create an access token that will be used by the Webhook to trigger Jenkins builds:
+Next, create an access token to be used by the Webhook to trigger Jenkins builds:
 
 1. Navigate to the [personal access tokens page](https://gitlab.com/profile/personal_access_tokens).
 
@@ -80,7 +92,7 @@ Next, create an access token that will be used by the Webhook to trigger Jenkins
 
 1. Click *Create personal access token*.
 
-1. Copy your access token and save it somewhere (you won't see it again otherwise).
+1. Copy your access token and save it somewhere (it doesn't appear again).
 
 ## Connecting GitLab to Your Jenkins service
 
@@ -95,9 +107,9 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 | Name                          | Value          |
 | :---------------------------- | :------------- |
 | `LCP_CI_SCM_PROVIDER`         | gitlab         |
-| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner]   |
-| `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]    |
-| `LCP_CI_SCM_TOKEN`            | [access_token] |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo owner]   |
+| `LCP_CI_SCM_REPOSITORY_NAME`  | [repo name]    |
+| `LCP_CI_SCM_TOKEN`            | [access token] |
 
 After updating these environment variables, the Jenkins service restarts. Any pushed branches and pull requests in your new repository trigger builds.
 
@@ -119,7 +131,7 @@ Liferay Cloud's Jenkins service creates a webhook for your selected git SCM prov
 
 1. Navigate to *Settings* and select *Webhooks*.
 
-1. Under *Project Hooks*, verify the created webhook is listed.
+1. Under *Project Hooks*, verify the created webhook appears.
 
 1. Click the *Edit* button for the CI webhook.
 
@@ -163,7 +175,7 @@ Verify that new merge requests trigger Jenkins builds:
 
 1. Verify that a new build is created for the merge request.
 
-1. Navigate to the *Builds* page in the Liferay Cloud Console.
+1. Navigate to the Builds page in the Liferay Cloud Console.
 
 1. Click the links for the branch and commit in the appropriate build.
 

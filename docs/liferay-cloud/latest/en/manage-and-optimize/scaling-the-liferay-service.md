@@ -61,6 +61,9 @@ Follow these steps to enable or disable auto-scaling in the Liferay Cloud Consol
 1. Navigate to *Services* &rarr; *Liferay* &rarr; *Scale*.
 1. Toggle the switch to enable or disable auto-scaling.
 
+!!! warning
+    Deleting and redeploying a service disables auto-scaling if it was previously enabled. However, removing auto-scaling properties from a service's `LCP.json` file (such as the `scale` or `autoscale` properties) from a service *does not* disable auto-scaling.
+
 With auto-scaling enabled, Liferay Cloud monitors your service and scales it automatically according to the threshold you define.
 
 ![Enable or disable auto-scaling from your service's Scale tab.](./scaling-the-liferay-service/images/01.png)
@@ -100,6 +103,11 @@ Once you have updated both of these configurations, auto-scaling adds additional
 System administrators can specify a *target average utilization*. This value is an average of memory and CPU usage across Liferay DXP services. That value threshold must be crossed before auto-scaling is triggered.
 
 For example, if three service instances utilize 70%, 90%, and 95% of memory, respectively, then the average memory utilization is 85%. If the target average utilization is set to 90, no upscaling is needed; upscaling in this situation only occurs when the average memory utilization exceeds the target.
+
+!!! note
+    The default target utilization is 80%. Services that use a high amount of memory (such as the `liferay` service) can surpass this target utilization value quickly, even immediately after deployment.
+
+A service *downscales* only when the service's memory usage has dropped *below half* of the target utilization value. With a default target utilization of 80%, a service only reduces the number of instances once the average memory utilization between the available instances drops below 40%.
 
 The total available memory is specified by the `memory` property in `LCP.json`, as referenced in [Configuration via LCP.json](../reference/configuration-via-lcp-json.md).
 

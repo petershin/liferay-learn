@@ -22,15 +22,17 @@ Default document types are generated when you first start a virtual instance or 
 
 1. Under Service, uncheck *Add Default Structures* and click *Save*.
 
-This setting only applies to new instances or companies created thereafter. To prevent the creation of default document types at startup,
+This setting only applies to new instances or companies created thereafter. 
+
+You can also use a configuration file to configure this setting: 
 
 1. Create a config file named `com.liferay.document.library.configuration.DLConfiguration.config`.
 
 1. Add `addDefaultStructures=B"false"` to the file and save it.
 
-1. Place the file in the `osgi/configs` directory within your Liferay bundle before starting the server.
+1. Place the file in the `osgi/configs` directory in your Liferay bundle before starting the server.
 
-If the process is successful, the *Add Default Structures* option should be unchecked upon startup and no default document types are created.
+When set, the *Add Default Structures* option is unchecked on startup, and no default document types are created.
 
 ## Defining a Custom Document Type
 
@@ -80,6 +82,8 @@ Once saved, the new Document Type can now be accessed in the Documents and Media
 When the Document Type is selected, users see your configured metadata fields. See [Uploading Files](../uploading-files.md) for more information.
 
 ## For Liferay 7.3.x and Earlier Versions
+
+<!-- Back in January, BChan defined a new standard for us when we have previous versions. Instead of adding the instructions to the bottom of the file, we are supposed to create a child article with the information. Please extract this into a child article. Thanks! -Rich -->
 
 1. Open the *Product Menu* (![Product Menu](../../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../../images/icon-compass.png)) on the *Site Administration* menu.
 

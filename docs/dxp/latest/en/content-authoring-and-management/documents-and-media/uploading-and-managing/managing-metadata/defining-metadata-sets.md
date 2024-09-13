@@ -44,6 +44,8 @@ Once saved, the new Metadata Set can be accessed and selected when creating or e
 
 ## For 7.3.x and Earlier Versions
 
+<!-- Same goes for this section. -Rich -->
+
 ### Creating Metadata Sets
 
 1. Open the *Product Menu* (![Product Menu](../../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../../images/icon-compass.png)) on the *Site Administration* menu.

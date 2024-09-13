@@ -1,7 +1,7 @@
 ---
 toc:
   - ./liferays-unique-selling-points/organic-innovation-and-open-source-leadership.md
-  - ./liferays-unique-selling-points/portal-heritage-and-tailoring-liferay.md
+  - ./liferays-unique-selling-points/portal-heritage-customizability-digitizing-processes.md
 uuid: 0ad4710c-53f7-476a-97e8-6ae14c13d2e2
 visibility: 
 - Employee
@@ -15,10 +15,12 @@ visibility:
 * Definitions for
   * Unique Sales Proposition (USP)
   * Value Proposition
-* Liferay has evolved organically with home grown technology
-* Liferay is an Open Source Leader with a Portal heritage
-* Liferay is easy to tailor and customize
-* Liferay excels at delivering experiences for many audiences and use cases
+* Liferay's five USPs are:
+  * Liferay has evolved organically with home grown technology
+  * Liferay is an Open Source Leader
+  * Liferay comes from a Horizontal Portal heritage
+  * Liferay is easy to tailor and customize
+  * Liferay is ideally suited for digitizing business processes
 
 ## Background
 
@@ -59,4 +61,12 @@ Recently, Liferay has focused on developing the platform with a wide range of ou
 
 Or in other words, to deliver solutions that customize the digital experience, not the platform. Liferay is well positioned to do that because of our organic innovation, open source portal heritage and our unparalleled ease of customization.
 
-[Let’s Go!](./liferays-unique-selling-points/organic-innovation-and-open-source-leadership.md)
+At a high level there are five key ways that make Liferay unique, which will be covered in the next sections:
+
+* Liferay has evolved organically with home grown technology
+* Liferay is an Open Source Leader
+* Liferay comes from a Horizontal Portal heritage
+* Liferay is easy to tailor and customize
+* Liferay is ideally suited for digitizing  business processes
+
+First, [Organic Innovation and Open Source Leadership](./liferays-unique-selling-points/organic-innovation-and-open-source-leadership.md)

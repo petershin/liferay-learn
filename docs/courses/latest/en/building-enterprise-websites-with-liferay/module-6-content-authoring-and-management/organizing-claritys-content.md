@@ -13,11 +13,15 @@ You can use categories to group assets with similar content or information. Cate
 
 Categories themselves are grouped into vocabularies, which can be public or private. A vocabulary defines the type of asset for the categories it contains. For example, Clarity's Blog Posts vocabulary contains four categories: Innovation, Fashion, Technology, and Health. Content creators can only apply these categories to blog posts. Liferay includes some basic vocabularies out of the box, but you can create your own.
 
+![You can use categories to group assets with similar content or information.](./organizing-claritys-content/images/01.png)
+
 Together, categories and vocabularies form a taxonomy, a structured classification system for content. Implementing a robust taxonomy is critical for effectively managing content in Liferay.
 
 ## Tags
 
 Tags are keywords for organizing your assets. While categories provide broader classification based on theme or topic, tags describe more specific information about individual content items. Tags are not hierarchical and cannot be nested within one another. However, because they are not constrained by a vocabulary, tags make it possible to find related assets even if they are different types. Both administrators and regular users can create tags for content.
+
+![Use tags to highlight key terms within individual content items.](./organizing-claritys-content/images/02.png)
 
 ## Exercise: Auto-Tagging Content
 <!--Exercise 11b-->
@@ -119,7 +123,7 @@ To do this,
    | Subtype                   | FAQ                            |
    | Required                  | Not Required                   |
 
-   ![Choose which asset types the vocabulary will be associated with.](./organizing-claritys-content/images/01.png)
+   ![Choose which asset types the vocabulary will be associated with.](./organizing-claritys-content/images/03.png)
 
 1. Click *Save* to create the vocabulary.
 
@@ -146,7 +150,7 @@ To do this,
    * `Pricing & Ordering`
    * `Returns & Exchanges`
 
-   ![Create and use categories according to your content.](./organizing-claritys-content/images/02.png)
+   ![Create and use categories according to your content.](./organizing-claritys-content/images/04.png)
 
 1. **(Challenge)** Assign the correct category to each FAQ web content article. The FAQs are sorted into folders corresponding to their categories.
 

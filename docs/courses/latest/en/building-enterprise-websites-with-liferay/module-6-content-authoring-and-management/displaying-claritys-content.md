@@ -15,11 +15,15 @@ Collections define sets of content for rendering in site pages. Once defined, yo
 
 * **Simplify Content Presentation**: You can easily embed collections into your Liferay pages using dedicated out-of-the-box fragments like *Collection Display*. This streamlines the process of showcasing curated content within website layouts. 
 
+![Use collections to group and filter content based on specific criteria.](./displaying-claritys-content/images/01.png)
+
 For most use cases, you should use fragments to render collection items, but you can use the asset publisher widget with FreeMarker templates for use cases that require complex templating.
 
 ## Asset Publishers and Collections
 
 In addition to fragments, you can use the Asset Publisher widget to render collections in site pages. Asset publishers are self-contained widgets, meaning each instance includes its selection criteria, display settings, and user interactive functionality. Though you can define an asset publisher's select criteria without collections, this approach creates overhead, requiring users to manage each widget's data source individually, even if they use the same selection criteria. For this reason, you should always use collections for asset selection. Doing this helps future-proof your solution while laying the groundwork for leveraging capabilities like segmented data.
+
+![Render collections with the Asset Publisher widget.](./displaying-claritys-content/images/02.png)
 
 ## Exercise: Creating a Manual Collection
 <!--Exercise 13a-->
@@ -57,7 +61,7 @@ To do this,
 
 1. Click *Add*.
 
-   ![Add the articles to the Helpful Articles collection.](./displaying-claritys-content/images/01.png)
+   ![Add the articles to the Helpful Articles collection.](./displaying-claritys-content/images/03.png)
 
    The manual collection is now populated with content and ready to use in site pages.
 
@@ -67,7 +71,7 @@ To do this,
 
 1. In the configuration side panel, click *Plus* (![Plus Button](../../images/icon-plus.png)) for Collection and select the *Helpful Articles* collection.
 
-   ![Select the Helpful Articles collection.](./displaying-claritys-content/images/02.png)
+   ![Select the Helpful Articles collection.](./displaying-claritys-content/images/04.png)
 
    The fragment now sources its content from the Helpful Articles collection. The provided composition already applies the Clarity Card fragment to the collection display for rendering each item. To display article content from the collection, you'll need to map the card's sub-elements to fields in the articles. But before mapping the card's sub-elements to content fields, let's change the collection display's pagination.
 
@@ -106,7 +110,7 @@ To do this,
 
 1. Return to the Home page and verify all mappings work.
 
-![Go to the Home page and check if all mapped fields work.](./displaying-claritys-content/images/03.png)
+![Go to the Home page and check if all mapped fields work.](./displaying-claritys-content/images/05.png)
 
 Great! You created a manual collection and displayed it in Clarity's Home page. Next, you'll learn how to create a dynamic collection.
 
@@ -139,7 +143,7 @@ To do this,
 
 1. In the Categories field, search for `Retail Partners` and select it.
 
-   ![Set a rule to only include FAQ items with the Retail Partners category.](./displaying-claritys-content/images/04.png)
+   ![Set a rule to only include FAQ items with the Retail Partners category.](./displaying-claritys-content/images/06.png)
 
 1. Click *Save* to create the collection.
 
@@ -149,7 +153,7 @@ To do this,
    * `FAQ - Pricing & Ordering`
    * `FAQ - Returns & Exchanges`
 
-   ![Create an FAQ collection for each category.](./displaying-claritys-content/images/05.png)
+   ![Create an FAQ collection for each category.](./displaying-claritys-content/images/07.png)
 
    For each collection, filter results using its corresponding category.
 
@@ -172,7 +176,7 @@ To do this,
 
 1. The block on the right contains a page title and four FAQ Section compositions. Each FAQ Section contains a heading and a Collection Display fragment. Each Collection Display contains a custom fragment called FAQ Question and Answer Pair. First map the collection displays to the FAQ collections you built earlier. Make sure each collection corresponds to the heading for that section.
 
-   ![Map each collection display according to its heading.](./displaying-claritys-content/images/06.png)
+   ![Map each collection display according to its heading.](./displaying-claritys-content/images/08.png)
 
 1. For Pagination, select *None*.
 
@@ -190,7 +194,7 @@ To do this,
 
 1. Click *Publish* to save your changes to the FAQ page.
 
-![Publish the changes and check the finalized FAQ page.](./displaying-claritys-content/images/07.png)
+![Publish the changes and check the finalized FAQ page.](./displaying-claritys-content/images/09.png)
 
 Using collection displays and custom fragments, you have rendered FAQ web content onto Clarity's FAQ page. Next, let's add content to the header announcement bar.
 
@@ -227,7 +231,7 @@ To do this,
    |:-------|:-------------------|:----------------------|
    | Styles | Background > Color | *Color Brand Primary* |
 
-   ![Set the container's background color to 'Color Brand Primary' from the style book.](./displaying-claritys-content/images/08.png)
+   ![Set the container's background color to 'Color Brand Primary' from the style book.](./displaying-claritys-content/images/10.png)
 
    **Note**: Color options are defined by the theme's style book. Unless you've applies the theme CSS client extension to the master page template, the Color Brand Primary option appears purple. This value is overridden in site pages by the Theme CSS client extension.
 
@@ -253,7 +257,7 @@ To do this,
    |:-------|:-------------|:------------------|
    | Styles | Text > Color | *Color Neutral 0* |
 
-   ![Set the paragraphs's text color to 'Color Neutral 0' from the style book.](./displaying-claritys-content/images/09.png)
+   ![Set the paragraphs's text color to 'Color Neutral 0' from the style book.](./displaying-claritys-content/images/11.png)
 
 1. Select the paragraph's *element-text* sub-element and configure this setting:
 
@@ -280,7 +284,7 @@ To do this,
 
 1. Adjust the margins and padding for the announcement bar elements until you are satisfied with it.
 
-   ![Make the final adjustments to the announcement bar.](./displaying-claritys-content/images/10.png)
+   ![Make the final adjustments to the announcement bar.](./displaying-claritys-content/images/12.png)
 
 1. Click *Publish Master* to save your changes.
 

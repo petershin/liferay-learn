@@ -39,6 +39,8 @@ By default, access to a publication is limited to its creator. However, creators
 
 Liferay Workflow defines approval processes for Liferay entities. These processes can help improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks. By default, Liferay includes a Single Approver workflow, but you can define your own workflows using a visual designer.
 
+![Liferay Workflow defines approval processes for Liferay entities.](./publishing-content-with-workflows/images/03.png)
+
 Once you’ve defined a workflow, you can associate it with different content types and folders. This flexibility enables you to fine-tune approval processes for different individuals or teams within your organization. For example, you may require multiple team members across multiple departments to approve new products, while only requiring a one approver single manager approval for blog posts.
 
 Workflows are supported by both Staging and Publications.
@@ -99,7 +101,7 @@ To do this,
 
 1. Click *Save*.
 
-   ![The Single Approver workflow will be assigned to the Articles folder.](./publishing-content-with-workflows/images/03.png)
+   ![The Single Approver workflow will be assigned to the Articles folder.](./publishing-content-with-workflows/images/04.png)
 
 You have set up a publication for tracking changes to Clarity's article web content, along with a workflow for approving new articles before they are published to the production site.
 
@@ -127,7 +129,7 @@ To do this,
    |--------------|-----------|
    | Clara Murphy | Publisher |
 
-   ![Invite Christian Carter and Clara Murphy to the Article Publication.](./publishing-content-with-workflows/images/04.png)
+   ![Invite Christian Carter and Clara Murphy to the Article Publication.](./publishing-content-with-workflows/images/05.png)
 
 1. Click *Send* and click *OK* to confirm.
 
@@ -153,11 +155,11 @@ To do this,
 
    Note that the publications menu now appears at the top of the page and a new notification for the publication invitation was received.
 
-   ![The publications menu appears and a new notification was received.](./publishing-content-with-workflows/images/05.png)
+   ![The publications menu appears and a new notification was received.](./publishing-content-with-workflows/images/06.png)
 
 1. Click the user profile icon, go to *Notifications*, and select the publications invitation.
 
-   ![The invitation notification appears in the notification queue.](./publishing-content-with-workflows/images/06.png)
+   ![The invitation notification appears in the notification queue.](./publishing-content-with-workflows/images/07.png)
 
    This opens the details page for Article Publication.
 
@@ -193,7 +195,7 @@ To do this,
 
    The publications menu now appears at the top of the page and two new notifications for the publication invitation and review request were received.
 
-   ![The invitation and review request notifications appear in the menu.](./publishing-content-with-workflows/images/07.png)
+   ![The invitation and review request notifications appear in the menu.](./publishing-content-with-workflows/images/08.png)
 
 1. Click the *Publications* drop-down menu at the top of the page, click *Select a Publication*, and choose *Article Publication*.
 
@@ -205,7 +207,7 @@ To do this,
 
    This action will fail because the publication includes unapproved changes.
 
-   ![The action will fail if any changes are pending.](./publishing-content-with-workflows/images/08.png)
+   ![The action will fail if any changes are pending.](./publishing-content-with-workflows/images/09.png)
 
 1. Click the user profile icon and go to *My Workflow Tasks*.
 
@@ -227,7 +229,7 @@ To do this,
 
 1. Click *Publish*, verify there are no conflicts, and click *Publish* again to add the changes to production.
 
-   ![You can publish the publication if there are no conflicts.](./publishing-content-with-workflows/images/09.png)
+   ![You can publish the publication if there are no conflicts.](./publishing-content-with-workflows/images/10.png)
 
 ## Conclusion
 

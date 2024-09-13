@@ -6,6 +6,8 @@ uuid: d304bf82-c70f-4470-ac61-8d41bf737851
 
 *Content Management* is a broad term that can apply to a range of feature sets in the data lifecycle. We're going to focus specifically on Liferay's Web Content application, a tool for creating and managing content. With it, users can define structures for different types of content and then design templates for rendering them in site pages. You can also render content items by mapping their fields directly to page fragments. 
 
+![You can build and display web content in your website.](./creating-claritys-web-content/images/01.png)
+
 !!! note
     While Liferay provides other applications for creating content, you can address most use cases for an enterprise website with the Web Content application.
 
@@ -14,6 +16,8 @@ Clarity can use Web Content for the flexibility of implementing custom structure
 ## Web Content Structures
 
 Web content structures define generic content types. Each structure determines the fields available to creators when creating content items (e.g., title, body, image). Liferay includes a Basic Web Content structure out of the box, but you can create your own.
+
+![Web content structures define generic content types.](./creating-claritys-web-content/images/02.png)
 
 Clarity Vision Solutions needs these types of web content for their enterprise website:
 
@@ -30,6 +34,8 @@ Using these custom structures, Clarity can enforce a consistent format for conte
 ## Web Content Templates
 
 Once you've defined a structure, you can create a template for it. Web content templates use FreeMarker (FTL) to determine how specific types of content items render in site pages. This means different types of web content can have different visual presentations, providing designers with an extra layer of configuration and customization.
+
+![Use web content templates to control how your content displays on a page.](./creating-claritys-web-content/images/03.png)
 
 !!! caution
    While FreeMarker is a powerful tool in the right hands, it can produce unexpected behavior if you aren't sure how to use it. Stick to rendering web content with fragments whenever possible, and if you must use FreeMarker, avoid adding your own logic.
@@ -94,7 +100,7 @@ To do this,
 
 1. Click *Save*.
 
-![Create the Announcements web content structure.](./creating-claritys-web-content/images/01.png)
+![Create the Announcements web content structure.](./creating-claritys-web-content/images/04.png)
 
 Users can now create web content articles using the Announcements structure. Next, you'll create some web content articles.
 
@@ -139,7 +145,7 @@ To do this,
    !!! note 
       When selecting the page, click the *Sites and Libraries* in the breadcrumb menu and select *Clarity Public Enterprise Website*.
 
-   ![Create the Product Innovations web content article.](./creating-claritys-web-content/images/02.png)
+   ![Create the Product Innovations web content article.](./creating-claritys-web-content/images/05.png)
 
 1. Click *Publish*.
 
@@ -157,7 +163,7 @@ To do this,
    | Do you have retail partners where I can try on your eyewear? | Yes, we have partnered with various optical shops where you can try on our eyewear. Please visit our website to find the nearest location.                                              |
    | What types of eyewear do you offer?                          | We offer a wide range of eyewear including prescription glasses, sunglasses, and contact lenses. We also have a collection of designer frames to suit different styles and preferences. |
 
-![Create three FAQ web content articles.](./creating-claritys-web-content/images/03.png)
+![Create three FAQ web content articles.](./creating-claritys-web-content/images/06.png)
 
 Great! You should have all the web content Clarity needs for their pages. Next, you'll map content to fragments on Clarity's pages.
 
@@ -191,7 +197,7 @@ To do this,
 
 1. Select the fragment's *image-square* sub-element to access its mapping options.
 
-   ![Select the image-square sub-element under the Banner's Image fragment.](./creating-claritys-web-content/images/04.png)
+   ![Select the image-square sub-element under the Banner's Image fragment.](./creating-claritys-web-content/images/07.png)
 
 1. For Source Selection, select *Mapping*.
 
@@ -199,13 +205,13 @@ To do this,
 
 1. Go to the *Documents and Media* tab and click *Sites and Libraries* in the breadcrumb menu.
 
-   ![Go to the Documents and Media tab and use the breadcrumb menu.](./creating-claritys-web-content/images/05.png)
+   ![Go to the Documents and Media tab and use the breadcrumb menu.](./creating-claritys-web-content/images/08.png)
 
 1. Go to the *Asset Library* tab, select *Marketing Assets*, and select the image named `home-banner-narrow-no-background`.
 
 1. For Field, select *File URL*. The image should appear in the Home page banner.
 
-   ![Map the image to display it in the fragment.](./creating-claritys-web-content/images/06.png)
+   ![Map the image to display it in the fragment.](./creating-claritys-web-content/images/09.png)
 
 1. Repeat steps 4-9 for the *Image* fragment in the Clarity Solutions Promo container and select the `sunglasses-on-shelves` image from the Marketing Assets asset library.
 
@@ -219,7 +225,7 @@ To do this,
 
 1. For Field, select *File URL*. The texture should overlay the gradient promotion.
 
-   ![Map the image to use it as the fragment's background.](./creating-claritys-web-content/images/07.png)
+   ![Map the image to use it as the fragment's background.](./creating-claritys-web-content/images/10.png)
 
 1. Repeat steps 12-14 for the *Distributor Promo* container and select the `home-promotion` image from the Marketing Assets asset library.
 
@@ -231,7 +237,7 @@ To do this,
    |:--------|:----------------|:------------|
    | General | Container Width | Fixed Width |
 
-   ![Set the Banner Content container's width setting to Fixed Width.](./creating-claritys-web-content/images/08.png)
+   ![Set the Banner Content container's width setting to Fixed Width.](./creating-claritys-web-content/images/11.png)
 
 1. Repeat the previous step for these containers
 
@@ -239,13 +245,13 @@ To do this,
    * *Content Container* (under See the Difference)
    * *Helpful Articles*
 
-   ![Set the containers' width setting to Fixed Width.](./creating-claritys-web-content/images/09.png)
+   ![Set the containers' width setting to Fixed Width.](./creating-claritys-web-content/images/12.png)
 
    Now the contents of these containers should be fixed and the dimensions should better resemble Clarity's designs.
 
 You have now mapped content from Clarity's asset libraries to the image fragments on their Home page. In later lessons, you'll map content fields to additional types of fragment sub-elements. But for now, you've completed all exercises for day one of Building Enterprise Websites!
 
-![Navigate to the home page, and confirm every field is mapped correctly.](./creating-claritys-web-content/images/10.png)
+![Navigate to the home page, and confirm every field is mapped correctly.](./creating-claritys-web-content/images/13.png)
 
 Next, you'll learn about how you can use AI to assist in content creation and tagging.
 
@@ -284,7 +290,7 @@ To do this,
 
 1. Click the *AI Creator* button (![AI Creator Button](../../images/icon-ai-creator.png)) to generate content.
 
-   ![Use the AI Creator tool to generate content.](./creating-claritys-web-content/images/04.png)
+   ![Use the AI Creator tool to generate content.](./creating-claritys-web-content/images/14.png)
 
 1. Enter your desired description, tone, and word count.
 

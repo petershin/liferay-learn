@@ -12,6 +12,8 @@ By effectively designing and implementing business forms, organizations can crea
 
 With Liferay Objects, you can define the schema of your data models with specific attributes, create relationships between objects, and implement business logic to determine how objects should behave. You can use objects to iterate rapidly without the need to write or deploy code, which translates directly to increased business agility. Because of this, objects are perfect for building business forms, whether they are simple or complex. You can define fields for the data you want to collect, enforce input validations for those fields, and automatically perform certain actions when a form is submitted.
 
+![You can use Liferay objects to define your data models.](./building-forms-with-objects/images/01.png)
+
 One of the true strengths of objects is their integration with Liferay's core frameworks and functionalities, such as permissions, security, workflows, analytics, and more. This creates a cohesive user experience where your business forms feel and act like native parts of the Liferay platform. Not only does this let you achieve faster time to value, but it also means that any Liferay practitioner can maintain your forms, eliminating the need for technical developer resources.
 
 <!--TASK: Add H2 on form fragments.-->
@@ -136,13 +138,13 @@ To do this,
 
 1. Click *Publish*.
 
-   ![You can fill out the Contact Us form after publishing the page.](./building-forms-with-objects/images/01.png)
+   ![You can fill out the Contact Us form after publishing the page.](./building-forms-with-objects/images/02.png)
 
 1. Test the form by submitting an entry.
 
 1. Go to *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and click *Contact Us*. The entry you created should appear here.
 
-   ![The Contact Us entry appears in the menu.](./building-forms-with-objects/images/02.png)
+   ![The Contact Us entry appears in the menu.](./building-forms-with-objects/images/03.png)
 
 Great! You've fully set up the Contact Us page and made it available for Clarity's users.
 
@@ -195,7 +197,7 @@ To do this,
    | General | Page                           | Home       |
    | General | Show Notification After Submit | Yes        |
 
-   ![You can configure the form to redirect to another page when submitted.](./building-forms-with-objects/images/03.png)
+   ![You can configure the form to redirect to another page when submitted.](./building-forms-with-objects/images/04.png)
 
 1. Click *Publish*.
 
@@ -226,7 +228,7 @@ To do this,
 
 1. Click *Publish*.
 
-   ![The form will redirect to its second step when clicking Next.](./building-forms-with-objects/images/04.png)
+   ![The form will redirect to its second step when clicking Next.](./building-forms-with-objects/images/05.png)
 
 1. Test out the form.
 

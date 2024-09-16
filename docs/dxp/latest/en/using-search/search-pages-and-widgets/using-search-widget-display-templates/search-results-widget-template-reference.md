@@ -14,7 +14,6 @@ The variables listed in the widget template editor hint at what's possible, but 
 
 - `SearchContainer`: Some of the getters in this class are variables in the search results widget template. See the list below for what's available.
 - `SearchResultsPortletDisplayContext`: All the getters in this class provide variables to the search results widget template (e.g., `getDisplayStyleGroupId()`).
-- `SearchResultFieldDisplayContext`: You can get the field display contexts to ...
 - `SearchResultSummaryDisplayContext`: All the getters in this class provide variables to the search results widget template (e.g., `getDisplayStyleGroupId()`).
 
 Here is an easier to digest list of the currently available variables:
@@ -67,10 +66,8 @@ There are variables you can use for each search result. Some are listed in the t
 | Creation Date | The entry creation date | `String` | `${entry.getCreationDateString()}` |  |
 | Created by User Name | The full name of the entry creator | `String` | `${entry.getCreatorUserName()}` | <!--See \*\*\*--> |
 | Created by User Portrait | The URL to to the entry creator's portrait/avatar | `String` | `${entry.getCreatorUserPortraitURLString()}` | <!--See \*\*--> |
-|  | The document fields in the document form display mode | `List<SearchResultFieldDisplayContext>` | `${entry.getDocumentFormFieldDisplayContexts()}` | <!--Expose in the editor panel. Name?--> |
 |  | The asset category ID request parameter name | `String` | `${entry.getFieldAssetCategoryIds()}` |  |
 |  | The asset tag name request parameter name | `String` | `${entry.getFieldAssetTagNames()}` |  |
-|  | The document fields for entries without a class name or primary key | `List<SearchResultFieldDisplayContext>`  | `${entry.getFieldDisplayContexts()}` |  |
 | Title | The highlighted title | `String` | `${entry.getHighlightedTitle()}` | <!--Rename the label in the editor panel to Highlighted Title?--> |
 |  | The CSS icon class for the represented model class/asset entry type | `String` | `${entry.getIconId()}` | <!--Expose in the editor panel. The method name is confusing. Consider deprecating in favor of a new, more descriptive name.--> |
 |  | The summary language ID, if different from the current display language | `String` | `${entry.getLocaleLanguageId()}` |  |

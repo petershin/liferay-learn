@@ -20,7 +20,8 @@ In addition to adding more MALUs or more APVs, there are other ways that custome
 * Storage
 * Project Workspaces
 * Extension Capacity
-* Dedicated Resources
+
+Customers who are on the Enterprise plan can also buy Dedicated Resources as an Add-on. Dedicated Resources provide a customer with their own Liferay server and database, which might be required if the Customer wants or needs to isolate their data. 
 
 ### Storage
 

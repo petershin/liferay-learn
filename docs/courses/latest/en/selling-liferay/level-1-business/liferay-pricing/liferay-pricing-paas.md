@@ -17,16 +17,16 @@ visibility:
 * Pre-packaged Bundles provides the most value
 * A new pricing model for Liferay PaaS is under review
 
+```{note}
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-2-liferay-pricing) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2-liferay-pricing-pdf) of the presentation used in the live workshop.
+```
+
 ## Background
 
 In the cases where, for a valid reason, Liferay SaaS offering is not appropriate for a prospect, but where Cloud is acceptable, Liferay PaaS could be the deployment option to offer.
 
 With Liferay PaaS, Liferay provides DXP with all of its capabilities included, and as of DXP 7.4 that also includes Commerce and Analytics capabilities. Liferay also provides and manages the Infrastructure, and the Platform Services, but the Customer is still responsible for most other activities such as Upgrades, Updates, Patches, Security Hotfixes, Software Troubleshooting And Application Delivery.
-
-```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/sa1-2b-liferay-pricing-paas) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2b-liferay-pricing-paas-pdf) of the presentation used in the live workshop.
-```
 
 ## Liferay PaaS Pricing Summary
 
@@ -89,9 +89,7 @@ The second bundle is much more capable for larger and/or mission critical applic
 * 1x High Availability UAT
 * 1x Standard Availability Non-production
 
-In addition the Business Bundle includes application performance monitoring.
-
-A basic Subject Matter Expertise package is included and the customer can choose either the Go-Live SME package or regular weekly SME guidance for 10 weeks.
+In addition the Business Bundle includes application performance monitoring and Technical Account Management Services.
 
 Like the Pro Bundle, it is possible to add further Capacity, additional Environments, Connectors, Enterprise Search as well as to buy Managed Services.
 
@@ -104,9 +102,17 @@ The third bundle is the Enterprise Bundle, which is designed for the most demand
 * 1x Standard Availability Non-production
 * 1x High Availability Disaster Recovery
 
-Like the Business Bundle, application performance monitoring and some Subject Matter Expertise is included, but the Enterprise Bundle includes 2 SME packages from a wider list of SME packages without extra cost.
+In addition the Enterprise Bundle includes application performance monitoring and Technical Account Management Services.
 
 As with all of the Bundles, it is possible to add further Capacity, additional Environments, Connectors, Enterprise Search as well as to buy Managed Services.  
+
+## Liferay PaaS Managed Services
+
+Managed Services for Liferay PaaS are optional services on top of Liferay PaaS to provide Customers with the management of some aspects of their PaaS environments. 
+
+```{note}
+* A Soft-Launch for Liferay PaaS Managed Services will be available soon 
+```
 
 ## Summary
 

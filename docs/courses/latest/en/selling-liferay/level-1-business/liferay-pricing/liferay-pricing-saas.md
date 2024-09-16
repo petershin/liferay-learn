@@ -18,8 +18,8 @@ visibility:
   * Enterprise
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) of the presentation used in the live workshop.
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-2-liferay-pricing) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2-liferay-pricing-pdf) of the presentation used in the live workshop.
 ```
 
 ## Updated Pricing for 2024

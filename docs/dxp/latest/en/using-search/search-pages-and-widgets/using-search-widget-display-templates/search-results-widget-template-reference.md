@@ -55,8 +55,8 @@ Here is an easier to digest list of the currently available variables:
 |  | Whether the widget is visible | `boolean` | `${searchResultsPortletDisplayContext.isRenderNothing()}` |
 |  | Whether the widget configuration enables showing an empty results message | `boolean` | `${searchResultsPortletDisplayContext.isShowEmptyResultMessage()}` |
 |  | Whether the configuration enables pagination | `boolean` | `${searchResultsPortletDisplayContext.isShowPagination()}` |
-|
-There are variables you can use for each search result. Some are listed in the template editor, but there are more:
+
+There are variables you can use for each search result. Some appear in the template editor, but there are more:
 
 | Editor Field Name | Description | Type | Usage Example |
 | :---------------- | :---------- | :--- | :------------ |
@@ -67,7 +67,7 @@ There are variables you can use for each search result. Some are listed in the t
 | Content | The highlighted search result summary content | `String` | `${entry.getContent()}` |
 | Creation Date | The entry creation date | `String` | `${entry.getCreationDateString()}` |
 | Created by User Name | The full name of the entry creator | `String` | `${entry.getCreatorUserName()}` |
-| Created by User Portrait | The URL to to the entry creator's portrait/avatar | `String` | `${entry.getCreatorUserPortraitURLString()}` |
+| Created by User Portrait | The URL to the entry creator's portrait/avatar | `String` | `${entry.getCreatorUserPortraitURLString()}` |
 |  | The asset category ID request parameter name | `String` | `${entry.getFieldAssetCategoryIds()}` |
 |  | The asset tag name request parameter name | `String` | `${entry.getFieldAssetTagNames()}` |
 | Title | The highlighted title | `String` | `${entry.getHighlightedTitle()}` |

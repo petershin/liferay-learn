@@ -59,7 +59,7 @@ The following metadata fields are available:
 | Text Box            | Enter multiple lines of text or separate paragraphs.                                                        |
 | Web Content         | Select a Web Content article.                                                                               |
 
-### Editing Metadata Sets
+## Editing Metadata Sets
 
 You can edit your fields to reflect their intended metadata. For example, a text field's default label is *Text*. If you want to use the text field as a title, for instance, then you should change the field's label to *Title*. Besides the Label field, you can also configure the default values, variable names, mouse-over tips, widths, and other settings. Some fields have a *Required* setting for specifying whether users must populate the field. If a field's *Repeatable* setting is *Yes*, users can add multiple consecutive instances of the field to the document's metadata.
 
@@ -71,7 +71,7 @@ You can edit your fields to reflect their intended metadata. For example, a text
 
 1. Click *Save* when finished.
 
-### Translating a Metadata Set
+## Translating a Metadata Set
 
 You can translate each of a metadata set's field values to any supported locales.
 

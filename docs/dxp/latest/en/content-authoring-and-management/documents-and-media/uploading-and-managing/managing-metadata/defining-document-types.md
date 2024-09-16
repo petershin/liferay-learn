@@ -1,4 +1,6 @@
 ---
+toc:
+  - ./defining-document-types/defining-document-types-for-liferay-73-and-earlier-versions.md
 taxonomy-category-names:
 - Digital Asset Management
 - Documents and Media
@@ -80,42 +82,6 @@ Once saved, the new Document Type can now be accessed in the Documents and Media
 ![Use the Document Type to start a new upload.](./defining-document-types/images/06.png)
 
 When the Document Type is selected, users see your configured metadata fields. See [Uploading Files](../uploading-files.md) for more information.
-
-## For Liferay 7.3.x and Earlier Versions
-
-<!-- Back in January, BChan defined a new standard for us when we have previous versions. Instead of adding the instructions to the bottom of the file, we are supposed to create a child article with the information. Please extract this into a child article. Thanks! -Rich -->
-
-1. Open the *Product Menu* (![Product Menu](../../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../../images/icon-compass.png)) on the *Site Administration* menu.
-
-1. Select the site where the form is created.
-
-1. Click *Content & Data*  &rarr; *Documents and Media*.
-
-1. Click the *Document Types* tab.
-
-1. Click the *Add button* (![Add](../../../../images/icon-add.png)). The *New Document Type* form appears.
-
-1. Enter a name and a description.
-
-1. Expand the *Main Metadata Fields* section.
-
-1. Drag and drop the metadata fields into the editor.
-
-   ![Drag and drop main metadata fields](./defining-document-types/images/07.png)
-
-1. Expand the *Additional Metadata Fields*.
-
-1. Select a metadata set to associate with the document type. To learn more, see [Defining Metadata Sets](./defining-metadata-sets.md).
-
-   ![Associate additional metadata sets.](./defining-document-types/images/08.png)
-
-1. Click *Save*.
-
-The new Document Type is now available when adding a document via the Documents and Media's *Add* menu.
-
-When users create new files of the document type, they're presented with metadata fields to describe the document.
-
-![The new Document Type is now available. Use it to create a new Picture Document](./defining-document-types/images/09.png)
 
 ## Related Topics
 

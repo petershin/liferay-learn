@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Creating a Catalog Page
 
-The [catalog](./commerce-storefront-pages/catalog.md) page is a customer's entrypoint to your company's product portfolio. On this page, they can browse, search, and select products. The following widgets are recommended for a catalog page:
+The [catalog](./commerce-storefront-pages/catalog.md) page is your customers' entry point to your company's product portfolio. On this page, they can browse, search, and select products. The following widgets are recommended for a catalog page:
 
 * Search Bar
 * Options Facets
@@ -22,7 +22,7 @@ The [catalog](./commerce-storefront-pages/catalog.md) page is a customer's entry
 
 To learn more about these widgets, see [Widget Reference](./liferay-commerce-widgets/widget-reference.md).
 
-![The catalog page is a customer's entrypoint to your company's product portfolio](./creating-a-catalog-page/images/01.png)
+![The catalog page is a customer's entry point to your company's product portfolio](./creating-a-catalog-page/images/01.png)
 
 ## Prerequisites
 
@@ -44,9 +44,9 @@ This opens the page in edit mode.
 
 ## Add Widgets and Fragments
 
-1. Drag and drop a container followed by a grid inside it.
+1. Drag and drop a container and then drop a grid inside it.
 
-1. Change the Number of Modules in the grid to 2 and adjust the size so that the first module is one-third the size of the second module.
+1. Change the *Number of Modules* in the grid to `2` and adjust the size so that the first module is one-third the size of the second module.
 
 1. Inside the first module, drag and drop the following widgets:
 
@@ -64,7 +64,7 @@ This opens the page in edit mode.
 
 ## Configure the _Search Options_ Widget
 
-Using the _Search Options_ widget, you can configure the _Search Results_ widget to display all products without requiring a search query. Your customers can then easily browse through all the products available in your channel.
+Using the Search Options widget, you can configure the Search Results widget to display all products without requiring a search query. Your customers can then easily browse through all the products available in your channel.
 
 1. In the Search Options widget, click _Actions_ (![Actions icon](../images/icon-actions.png)) &rarr; _Configuration_.
 
@@ -86,7 +86,7 @@ The _Search Bar_ widget must be configured to display data from the global site 
 
 1. Set the Scope to _Everything_.
 
-    ![Set the Scope to Everything.](./creating-a-catalog-page/images/04.png)
+   ![Set the Scope to Everything.](./creating-a-catalog-page/images/04.png)
 
 1. Click _Save_.
 
@@ -98,15 +98,15 @@ You can rearrange the order of specification labels in the specification facet u
 
 1. In the Specification Facet widget, click _Actions_ (![Actions Button](../images/icon-actions.png)) &rarr; _Configuration_.
 
-1. In the Order Specifications By field, choose one of the following:
+1. In the Order Specifications By field, choose an option: 
 
-   * Specification Group Priority Ascending
-   * Specification Group Priority Descending
+   - Specification Group Priority Ascending
+   - Specification Group Priority Descending
 
    {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-   * Specification Label Priority Ascending
-   * Specification Label Priority Descending
+   - Specification Label Priority Ascending
+   - Specification Label Priority Descending
 
 1. Click _Save_.
 

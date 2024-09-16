@@ -10,7 +10,9 @@ uuid: b1d411bc-c88e-4659-b779-91676fcf194f
 ---
 # Search Results Widget Template Reference
 
-The variables listed in the widget template editor hint at what's possible, but there are many more variables available in the search results widget template context. The source code specific to your version is authoritatively accurate and comprehensive. These Java classes provide the available template variables. You can find them by searching <https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]>:
+While [creating a search results widget template](../using-search-widget-display-templates.md#creating-a-search-widget-template), you can access pre-populated variables in the FreeMarker template editor. The variables listed in the editor hint at what's possible, but there are many more variables available in the search results widget template context. The source code specific to your version contains the authoritative list of variables that are injected into the template context. 
+
+These Java classes provide the available template variables for the Search Results widget. You can find them by searching <https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]>:
 
 - `SearchContainer`: Some of the getters in this class are variables in the search results widget template. See the list below for what's available.
 - `SearchResultsPortletDisplayContext`: All the getters in this class provide variables to the search results widget template (e.g., `getDisplayStyleGroupId()`).
@@ -101,13 +103,6 @@ There are variables you can use for each search result. Some are listed in the t
 |  | Whether the entry is unavailable because of an error | `boolean` | `${entry.isTemporarilyUnavailable()}` |
 |  | Whether a thumbnail is available for the asset | `boolean` | `${entry.isThumbnailVisible()}` |
 |  | Whether the portrait is available for the asset entry creator | `boolean` | `${entry.isUserPortraitVisible()}` |
-<!--
-\*) Matter of approach, but if widget templates are considered a developer option, it would be worth considering to make the method names to mirror 1-1 the API and model layer.
-
-\*\*) All the URL string variables should be named consistently. Now there's `${entry.getViewURL()} returning a String and then ${entry.getUserPortraitURLString()}`, also returning a String. Consider dropping the “String” from the or all the URL String having it in the end. To mix, there’s the getPortletURL() returning a PortletURL object. 
-
-\*\*\*) userName if used here as opposed to the API conventions to return the full name. Documentation should state this and maybe the field name in the editor panel could be more descriptive? Do we need the actual userName, too?
--->
 
 ## Using the Search Container
 

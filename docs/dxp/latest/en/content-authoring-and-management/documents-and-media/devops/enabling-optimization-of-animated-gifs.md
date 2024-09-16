@@ -31,8 +31,6 @@ Optimizing animated GIFs using Adaptive Media requires three steps: installing G
 
    ![Enable Gifsicle.](./enabling-optimization-of-animated-gifs/images/02.png)
 
-   <!-- If you tell people to click the box next to Gifsicle Enabled, your screenshot should show the box checked, and even possibly highlight that. -Rich -->
-
 1. Click *Save* when finished.
 
 ## Related Topics

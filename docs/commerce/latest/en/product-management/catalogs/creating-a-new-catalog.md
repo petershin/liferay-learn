@@ -11,13 +11,13 @@ taxonomy-category-names:
 
 1. Open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Catalogs_.
 
-    ![Navigate to the Catalogs application.](./creating-a-new-catalog/images/01.png)
+   ![Navigate to the Catalogs application.](./creating-a-new-catalog/images/01.png)
 
-1. Click _Add_ (![Add icon](../../images/icon-add.png)) and enter the following:
+1. Click _Add_ (![Add icon](../../images/icon-add.png)) and enter this data:
 
-    * **Name**: Medical Supplies
-    * **Default Catalog Language**: English (United States)
-    * **Currency**: US Dollar
+   - **Name**: Medical Supplies
+   - **Default Catalog Language**: English (United States)
+   - **Currency**: US Dollar
 
     ![Add a new catalog.](./creating-a-new-catalog/images/02.png)
 

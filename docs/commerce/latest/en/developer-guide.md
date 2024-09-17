@@ -17,6 +17,6 @@ taxonomy-category-names:
 ---
 # Developer Guide
 
-Welcome to the Liferay Commerce developer guide. These tutorials are meant to quickly demonstrate working examples of custom modules that extend the features of Liferay Commerce. Each tutorial comprises of the following sections: Building and deploying the sample, a review of the relevant implementation with code samples, and the final implementation of the sample itself. This shows you how to leverage various extension points to add to the base functionality however you see fit.
+Welcome to the Liferay Commerce Developer Guide! Here are demonstrations of working custom modules that extend the features of Liferay Commerce. This shows you how to leverage various extension points to add to the base functionality however you see fit.
 
-You can quickly delve into deploying sample modules for each of the available extension points and then walk through the steps to build it yourself with your own customizations.
+You can delve quickly into deploying sample modules for each of the available extension points and then walk through the steps to build them yourself with your own customizations.

@@ -12,4 +12,4 @@ taxonomy-category-names:
 ---
 # Content
 
-Learn how to customize the way products are displayed in your storefront or add new data sources to the product publisher widget.
+Learn how to customize the way products appear in your storefront or add new data sources to the product publisher widget.

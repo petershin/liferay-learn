@@ -1,4 +1,6 @@
 ---
+toc: 
+  - ./connecting-liferay-dxp-to-analytics-cloud/connecting-liferay-dxp-7-3-to-analytics-cloud.md
 uuid: c44fbb5a-5155-4b25-b97e-b574fb16f3d6
 taxonomy-category-names:
 - Cloud

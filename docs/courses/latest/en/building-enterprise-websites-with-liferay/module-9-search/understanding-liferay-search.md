@@ -11,10 +11,6 @@ Liferay search is a powerful tool that enables users to efficiently find informa
 
 By default, Liferay search leverages [Elasticsearch](https://www.elastic.co/elasticsearch), a powerful open-source search and analytics engine. This technology serves as the backbone for indexing, storing, and retrieving data efficiently at scale.
 
-<!-- Too strong and emphasis on this ability, versus reality? -->
-!!! note "Using Alternative Search Engines"
-  Liferay search is API driven, which means you can use alternative search engine implementations. While Elasticsearch provides the best search experience, some industries or use cases may require using an alternative search engine.
-
 Liferay stores its information in a database, but searching database tables directly can be resource-intensive. To optimize performance, Liferay indexes content, such as documents and web articles, converting everything into a searchable format. Additionally Liferay uses dedicated search indexes for many of its entities to store searchable fields relevant for each type (e.g., title, content, tags). This enables the search engine to efficiently and effectively process user queries, rank results, and return relevant information without directly querying the database.
 
 Key Liferay entities with indexed content include:
@@ -26,7 +22,7 @@ Key Liferay entities with indexed content include:
 * Objects
 * Web content articles
 
-Liferay search is ready to use right out of the box. However, you have the flexibility to fine-tune your search experience with extensive configuration options in the Liferay UI. <!-- not sure how meaningful this next sentence is--> You can apply these adjustments at the page, site, or instance level, providing granular control over how search functions across your platform. You can also perform administrative tasks, such as reindexing, search engine connections, and more.
+Liferay search is ready to use right out of the box. However, you have the flexibility to fine-tune your search experience with extensive configuration options in the Liferay UI. You can apply these adjustments at the page, site, or instance level, providing granular control over how search functions across your platform. You can also perform administrative tasks, such as reindexing, search engine connections, and more.
 
 Liferay also offers a rich set of tools for refining search results, including faceting, sorting, filtering, and autocomplete. Liferay Blueprints offer a low-code way to customize the search experience, empowering advanced customization without coding. Additionally, you can leverage blueprints with segmentation and search widgets to personalize search results, tailoring experiences to individual user preferences and behaviors.
 
@@ -38,7 +34,7 @@ Liferay search results can be refined using facets, sorting, or custom filters. 
 
 Sorting also refines search results by reordering items. By default, search results are sorted by relevance, a score calculated by Elasticsearch's algorithms, but you can also sort alphabetically, chronologically, or by other criteria.
 
-<!-- I don't think I'd call suggestions filtering--it's just searching -->The search bar itself also serves as a filter with its auto-suggestion functionality. As a user begins typing a search term, the search engine begins processing the query and suggests possible relevant results.
+The search bar supports suggestions to help users find what they are looking for more quickly and easily. As a user begins typing a search term, the search engine begins processing the query and suggests possible relevant results.
 
 Finally, custom filters are available for adding query clauses to Liferay's main search query. This can be useful for hiding specific content, boosting query matches, or filtering the results to return only those matching your query. For even more advanced customization, explore Search Blueprints, discussed below.
 
@@ -52,16 +48,18 @@ With Liferay's segmentation capabilities, you can create unique search experienc
 
 ## Search Blueprints
 
-<!-- I don't think this implicit search criteria thing is worthwhile. The regular search query triggered when a user searches, without blueprints, has criteria like this, and you can also work with the user's keywords in your blueprints-contributed query clauses. So it's not really a differentiating characteristic--> Blueprints enable the creation of targeted search results by applying implicit search criteria. That is, automatically adding search criteria to a search query that is not part of what the user entered. A simple example might be boosting search results based on geolocation and prioritizing certain results that are closer in proximity to the user's location.
+A search blueprint is a Swiss army knife for search experience customization in Liferay. From adding static filter criteria to the search query (like with custom filters) to adding new search request parameters that are consumed in the Blueprint to dynamically change something about the search, you can do it with a blueprint. You can even provide context-aware search: boost search results based on geolocation and prioritize results that are closer in proximity to the user's location.
 
 ![Use blueprints to boost the results based on proximity.](./understanding-liferay-search/images/03.png)
 
-Modifying the search query itself typically requires developing custom code, but search blueprints can be configured right from Liferay's UI without the need to deploy any code. This makes it simple enough for even non-technical users to utilize blueprints. Some ways blueprints might be leveraged are:
+Liferay has many out-of-the-box query elements you can use when building your blueprints, but you can craft your own with JSON for ultimate flexibility. Modifying the search query itself typically requires developing custom code, but search blueprints can be configured right from Liferay's UI without the need to deploy any code. This makes it simple enough for even non-technical users to utilize blueprints. Some ways blueprints might be leveraged are:
 
 * Boosting search results based on different criteria
 * Conditional search results based on certain keywords or categories
 * Limiting the search query based on different criteria
 * Hiding certain content and certain results
+
+<!--TASK: Mention collection providers in this list once out of Beta-->
 
 We'll see a specific example of Clarity utilizing search blueprints later in this module.
 

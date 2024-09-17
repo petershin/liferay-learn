@@ -29,14 +29,14 @@ In Liferay, accounts store customer information, such as billing and shipping ad
 
 Liferay provides three account types: Business, Personal, and Guest. Business and personal accounts are used based on the [site type](../starting-a-store/sites-and-site-types.md) (i.e., B2B, or B2C). Guest accounts are used in B2C or B2X sites.
 
-* **Business Accounts**: Business accounts can have multiple users associated with it. You can assign these users [account roles](./account-management/account-roles.md) to delegate responsibilities on behalf of the account. In a B2B site, customers must be associated with a business account to make purchases.
+* **Business Accounts**: Business accounts can have multiple users associated with them. You can assign these users [account roles](./account-management/account-roles.md) to delegate responsibilities on behalf of the account. In a B2B site, customers must be associated with a business account to make purchases.
 
-* **Personal Accounts**: Personal accounts can only be associated with a single user. In a B2C site, authenticated customers are automatically assigned a personal account and can make purchases individually.
+* **Personal Accounts**: Personal accounts can only be associated with a single user. In a B2C site, authenticated customers are assigned a personal account automatically and can make purchases individually.
 
   !!! note
-       The profile information on a Liferay user account is imported to the personal account at the time of creation. Any additional updates to the Liferay user account are not automatically propagated to the personal account.
+       The profile information on a Liferay user account is imported to the personal account at the time of creation. Any additional updates to the Liferay user account are not propagated automatically to the personal account.
 
-* **Guest Accounts**: For customers that want to make purchases without creating an account on your site, they can use a guest account. This is created during guest checkout. See [Guest Checkout](../store-management/guest-checkout.md) for more information.
+* **Guest Accounts**: Customers that want to make purchases without creating an account on your site can use a guest account. This is created during guest checkout. See [Guest Checkout](../store-management/guest-checkout.md) for more information.
 
 ## Related Topics
 

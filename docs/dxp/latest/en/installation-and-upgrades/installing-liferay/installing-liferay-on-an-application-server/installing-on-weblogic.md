@@ -134,7 +134,7 @@ DXP depends on OSGi modules (OSGi Dependencies ZIP) and a database driver.
 
 1. The DXP 7.4+ WAR file includes drivers for MariaDB and PostgreSQL. Earlier DXP WARs don't have them. If the 7.4+ WAR doesn't have the driver for the supported database you're using, download your database vendor's JDBC JAR file and place it in the exploded DXP WAR's `WEB-INF/shielded-container-lib` folder.
 
-    Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
+    See the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-Quarterly-Releases-Compatibility-) for a list of supported databases.
 
 !!! note
     A Hypersonic database is bundled with DXP and is useful for testing purposes. **Do not** use HSQL for production instances.

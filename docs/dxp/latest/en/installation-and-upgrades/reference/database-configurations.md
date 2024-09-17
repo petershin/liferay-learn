@@ -11,7 +11,7 @@ By default for demonstration purposes, Liferay DXP/Portal is configured to use a
 * PostgreSQL
 
 ```{note}
-The [Liferay DXP Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151) lists the supported databases and versions.
+The [Liferay DXP Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-Quarterly-Releases-Compatibility-) lists the supported databases and versions.
 ```
 
 Connecting to a database requires:

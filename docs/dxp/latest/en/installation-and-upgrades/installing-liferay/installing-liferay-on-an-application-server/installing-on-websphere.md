@@ -44,12 +44,12 @@ When the application server binaries have been installed, start the *Profile Man
 
 1. Click *Create...*, choose *Application Server*, and then click *Next*.
 
-1. Click the *Advanced* profile creation option and then click *Next*. Use the advanced profile to specify the values for settings such as 
-   - The location of the profile and names of the profile 
-   - Node and host 
-   - To assign specific ports 
-   - To choose whether to deploy the administrative console and sample application 
-   - To add web-server definitions for IBM HTTP Server 
+1. Click the *Advanced* profile creation option and then click *Next*. Use the advanced profile to specify the values for settings such as
+   - The location of the profile and names of the profile
+   - Node and host
+   - To assign specific ports
+   - To choose whether to deploy the administrative console and sample application
+   - To add web-server definitions for IBM HTTP Server
 
    See the WebSphere documentation for more information about these options.
 
@@ -182,7 +182,7 @@ By this point, the following steps should be completed:
 
 1. The DXP 7.4+ WAR file includes drivers for MariaDB and PostgreSQL. Earlier DXP WARs don't have them. If the 7.4+ WAR doesn't have the driver for the supported database you're using, unzip the DXP WAR to an arbitrary location, place your database vendor's JDBC JAR file in the exploded DXP WAR's `WEB-INF/shielded-container-lib` folder, and ZIP up the DXP WAR again.
 
-   Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
+   See the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-Quarterly-Releases-Compatibility-) for a list of supported databases.
 
 !!! note
     A Hypersonic database is bundled with DXP and is useful for testing purposes. **Do not** use HSQL for production instances.
@@ -262,6 +262,7 @@ If using WebSphere to manage the database connections, follow the instructions b
    ![Completed JDBC provider configurations.](./installing-on-websphere/images/04.png)
 
 1. Click the new provider configuration when it appears in the table.
+
 1. Click *Data Sources* under *Additional Properties*.
 
 1. Click *New*.

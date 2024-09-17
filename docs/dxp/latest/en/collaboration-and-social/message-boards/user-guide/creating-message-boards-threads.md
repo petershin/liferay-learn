@@ -10,108 +10,136 @@ taxonomy-category-names:
 
 # Creating Message Boards Threads
 
-By default, only authenticated users with the requisite permissions (at minimum, *Add Message*, *Reply to Message*, *Add File*,and *View*) can create threads. See the [Message Boards Permissions Reference](./message-boards-permissions-reference.md) for more information. Administrators can enable the feature to allow guests to post threads.
+A thread is a series of messages focused on a specific topic. It starts with an initial post, followed by replies that form a discussion.
 
-!!! note
-    Set `permissions.propagation.enabled` to `true` in the `portal-ext.properties` file to have Message Board threads inherit their parent category's permissions. This affects only Wiki pages and message board threads; other assets inherit the default resource permission.
+!!! important
+    Only authenticated users with at least the Add Message, Reply to Message, Add File, and View [permissions](./message-boards-permissions-reference.md) can create threads. Administrators can also enable a setting to allow guests to post threads.
+
+    Set `permissions.propagation.enabled` to `true` in the `portal-ext.properties` file to have message board threads inherit their parent category's permissions. This affects only Wiki pages and message board threads; other assets inherit the default resource permission.
 
 ## Posting a New Thread
 
-Threads can be created at the root level of the Message Board itself and within [categories that have been created](./creating-message-boards-categories.md).
+Threads can be created at the root level of the message board itself and within [categories that have been created](./creating-message-boards-categories.md), helping organize conversations and making it easier for users to follow and participate.
 
-To create a new thread:
+1. Access the page where the Message Boards widget is located.
 
-1. Click the Message Boards *New Thread* button. The *Add Message* form appears.
+1. On the Message Boards widget, click *New Thread*. The Add Message form appears.
 
-1. Enter a title in the **Subject** field.
+1. Enter a title in the *Subject* field.
 
-1. Create your thread's content in the **Body** field.
+1. Create your thread's content in the Body field.
 
-   !!! note
-       This field uses the same editor as the Blogs app, except that it uses BBCode instead of HTML. For further instructions, see the documentation on [using the editor](https://help.liferay.com/hc/articles/360018173051-Using-the-Blog-Entry-Editor-).
-
-   ![Creating the first post](./creating-message-boards-threads/images/01.png)
+![Post a new thread and adjust its settings.](./creating-message-boards-threads/images/01.png)
 
 ### Uploading Attachments
 
 Users can attach files to forum posts.
 
-1. To add attachments, expand the *Attachments* section.
+1. Expand the *Attachments* section.
 
 1. Drag and drop a file to upload or use the *Select Files* button to navigate to the file's location.
 
-   ![Uploading an attachment](./creating-message-boards-threads/images/03.png)
-
    !!! important
-       You can enable automatic antivirus scanning to scan files on upload. For details, see [Enabling Antivirus Scanning for Uploaded Files](https://learn.liferay.com/w/dxp/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files).
+       You can enable automatic antivirus scanning to scan files on upload. For details, see [Enabling Antivirus Scanning for Uploaded Files](../../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md).
 
-### Using Tags and Related Assets to Organize Threads
+### Using Topics, Tags, and Related Assets to Organize Threads
 
-Besides using categories to organize the threads, users can add a tag to a forum post. If searching for content using this tag (for example, *Toyota*), all posts with the *Toyota* are returned faster.
+In addition to organizing threads by categories, users can enhance their forum posts with topics, tags, or related assets. For instance, if you tag a post with an *exam* tag, searching for that tag quickly returns all posts associated with it. Read [Organizing Content with Categories and Tags](../../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md) to learn more.
+
+To add a topic,
 
 1. Expand the *Categorization* section.
 
-1. Click the *Select* button to select an existing tag. Alternately, create a new tag by entering the tag name in the *Tags* field and clicking *Add*. See [the documentation on tags](https://help.liferay.com/hc/articles/360028820472-Tagging-Content) for more information.
+1. Click the *Select* button to select an existing Topic. Click *Done* to save the topic.
 
-The message board post now has a tag.
+   Alternatively, type the topic’s name to see available matching options.
+
+The thread post now has a topic.
+
+To add a tag,
+
+1. Click the *Select* button to select an existing tag.
+
+   Alternately, create a new tag by entering the tag name in the *Tags* field and clicking *Add*.
+
+The thread post now has a tag.
 
 Message Boards threads can be linked to other existing assets in DXP.
 
-1. To select an existing asset in the portal (e.g., a media file, blog post, etc.) to relate to your thread, expand the *Related Assets* section and use the *Select* button to select that asset.
+To select an existing asset in the portal (e.g., a media file, blog post, etc.) to relate to your thread,
 
-   ![Adding a Tag and Related Asset](./creating-message-boards-threads/images/04.png)
+1. Expand the *Related Assets* section
 
-### Set the Thread's Priority
+1. Use the *Select* button to select an asset category.
 
-A Message Boards thread can be prioritized as *Urgent*, *Sticky*, or *Announcement*. By default, it is set to "None".
+1. Select one or more assets and click *Done*.
 
-1. Expand the *More Settings* section.
+   You can disconnect the asset from the thread by clicking *Remove* (![Remove icon](../../../images/icon-delete.png)) on the right.
 
-1. Select the thread's priority.
+The thread post is linked to an existing asset.
 
-1. Click *Publish*.
+### More Settings
 
-The new post has been created. Site administrators can move this post to another category at a later time.
-
-## Using Threads as Questions
-
-Message Boards Threads can be more than sharing ideas and opinions. Forum members can turn their post into a question for other site members. The reply that best answers the question can be marked as the answer.
-
-To make a thread post a question:
-
-1. Click the *New Thread* button.
+Message Boards Threads offer additional features beyond discussions. The More Settings section provides options to customize the functionality and visibility of your posts.
 
 1. Expand the *More Settings* section.
 
-1. Check the box for *Mark as a Question*.
+1. Check the boxes for the settings you want to activate.
 
-   ![Marking a thread as a question](./creating-message-boards-threads/images/05.png)
+   Under More Settings, you can find the Mark as a Question, Anonymous, Subscribe Me, Priority, and Allow Pingback settings.
 
-To select a reply as the answer:
+1. Activate the *Mark as a Question* setting to turn posts into questions for other site members.
 
-1. Click the 3-dot icon.
+   The reply that best answers the question can be marked as the answer.
 
-1. Click *Mark as an Answer*.
+   To select a reply as the answer, click *Actions* (![Actions](../../../images/icon-actions.png)) next to the answer and select *Mark as an Answer*.
 
-   ![Replies can be marked as an answer to a message board question.](./creating-message-boards-threads/images/02.png)
+   ![Mark the best answer to highlight it for all users.](./creating-message-boards-threads/images/02.png)
+
+1. Activate the *Anonymous* setting to post messages anonymously.
+
+   !!! note
+       An administrator or a GDPR report can still determine the author of the post.
+
+1. Activate the *Subscribe Me* setting to subscribe to the thread.
+
+1. Activate the *Priority* Setting to prioritized the thread as *Urgent*, *Sticky*, or *Announcement*.
+
+   By default, it is set to "None".
+
+1. Activate the *Allow Pingbacks* option to enable other sites to notify the message board when they link to the thread/post.
+
+   Ensure the post's Guest *View* permission is enabled to use pingbacks.
+
+### Modifying Permissions
+
+Select the roles that can view the thread post and the permissions for existing roles.
+
+1. Expand the *Permissions* section.
+
+1. Set the *Viewable by* option.
+
+1. Click *More Options* to show more permissions. To assign a permission, select the checkbox next to the desired permission and role. For more information about the different permissions available, see the [Message Boards Permissions Reference](./message-boards-permissions-reference.md).
 
 1. Click *Publish* to publish the thread.
 
+The new post has been created. Site administrators can move this post to another category at a later time.
+
 ## Message Board Thread Replies
 
-Click a thread to view it. Messages appear in a threaded view so that replies are aligned under their parent thread. This makes it easy to follow conversations. Thread replies are indented under their parent thread.
+Once the thread is posted, click on it to view it. Messages appear in a threaded view so that replies are aligned under their parent thread. This makes it easy to follow conversations. Thread replies are indented under their parent thread.
 
-![A thread's view displays author information and thread content, for the thread and all replies to the thread.](./creating-message-boards-threads/images/06.png)
+![A thread's view displays author information and thread content, for the thread and all replies to the thread.](./creating-message-boards-threads/images/03.png)
 
 To reply to a message in a thread:
 
-1. Click the *Reply* button. This opens the quick reply form, which only contains a text field for entering your reply.
+1. Click the *Reply* button to open the quick reply form, which only contains a text field for entering your reply.
 
-1. Enter your reply in the text field. To access more options for your reply, click the *Advanced Reply* link. This opens the full editor from the add/edit thread form.
+1. Enter your reply in the text field. To access more options for your reply, click the *Advanced Reply* link.
 
 1. Click *Publish*.
 
-In addition to replying to a message, you can rate it or flag it as objectionable. A message board moderator can evaluate flagged messages and decide how to handle the messages and their authors.
+In addition to replying to a message, you can rate it or report it. A message board moderator can evaluate reported messages and decide how to handle the messages and their authors.
 
 ## Related Topics
 

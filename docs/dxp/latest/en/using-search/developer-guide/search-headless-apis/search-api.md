@@ -7,15 +7,19 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: a40fe992-790a-45d0-a115-cac2e012e8cf
 ---
-
 # Search API
+
+{bdg-link-primary}`[Release Feature](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
+
+{bdg-secondary}`7.4 U88+ and GA88+`
 
 You can [search for content](../../getting-started/searching-for-content.md) from a Liferay search page, but you can also use the `search` API endpoint. If you're running Liferay locally, while logged in you can visit <http://localhost:8080/o/api?endpoint=http://localhost:8080/o/search/v1.0/openapi.json> to explore the API.
 
-!!! note
-    In the beta release of the headless search API, the endpoint was at `/portal-search-api`. Beginning in Liferay 2024.Q3/Portal 7.4 GA125, the endpoint is moved to `/search`. The endpoint is backwards compatible, so existing calls to `/portal-search-api` will continue to work.
-
 Follow these steps to generate and search for sample content. The commands below work with basic authentication and assume that you are running Liferay locally at <http://localhost:8080> and authenticating as an administrator with the email `test@liferay.com` and the password `learn`.
+
+!!! note 
+    - The search headless API's `/search` POST endpoint moved from [beta feature flag to release feature flag](#search-headless-api-availability) in Liferay 7.4 2024.Q3/GA125. The flag name is Search Headless API (LPS-179669). Enable it in Instance Settings &rarr; Feature Flags &rarr; Release.
+    - In the beta release of the headless search API, the endpoint was at `/portal-search-api`. Beginning in Liferay 2024.Q3/Portal 7.4 GA125, the endpoint is moved to `/search`. The endpoint is backwards compatible, so existing calls to `/portal-search-api` will continue to work.
 
 1. Locate your [site ID](../../../site-building/site-settings/site-settings-ui-reference.md#site-configuration) or retrieve it with the following command: 
 

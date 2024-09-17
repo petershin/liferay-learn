@@ -19,7 +19,9 @@ Objects are just as suitable for simpler use cases like forms, as they are for m
 
 ## Client Extensions
 
-Client extensions transform Liferay customization, whether Liferay SaaS, PaaS, or Self-Hosted. Unlike custom OSGi plugins that are woven into the Liferay portal fabric, client extensions operate independently, interacting with the platform via well-defined APIs. This decoupling ensures that custom solutions remain intact even as the platform undergoes updates, significantly reducing maintenance overhead. On the other hand, a buggy or broken client extension won't disrupt Liferay's core out-of-the-box functionality. Additionally, since client extensions are language and framework agnostic, they free developers to use their preferred technologies and follow their own development cycle. 
+Client extensions transform Liferay customization, whether Liferay SaaS, PaaS, or Self-Hosted. Unlike custom OSGi plugins that are woven into the Liferay portal fabric, client extensions operate independently, interacting with the platform via well-defined APIs. This decoupling ensures that custom solutions remain intact even as the platform undergoes updates, significantly reducing maintenance overhead. On the other hand, a buggy or broken client extension won't disrupt Liferay's core out-of-the-box functionality. Additionally, since client extensions are language and framework agnostic, they free developers to use their preferred technologies and follow their own development cycle.
+
+![Client extensions are made up of a mix of technologies and you can use them to build your custom solutions.](./understanding-liferay-customization/images/01.png)
 
 Beyond development efficiency, client extensions improve application performance and scalability. By selectively applying extensions to specific pages or components, organizations can optimize resource utilization and enhance user experience. Client extensions make customization more agile, adaptable, and future-proof. Their ability to coexist with out-of-the-box features solidifies client extensions as the preferred method for building custom solutions with Liferay.
 

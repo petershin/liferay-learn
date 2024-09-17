@@ -7,91 +7,96 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Creating Message Boards Categories
 
-Message Boards Categories organize threads by topic. Only authenticated users with the [requisite permissions](./message-boards-permissions-reference.md) (at minimum, _Add Category_, _Add Subcategory_) have the ability to create categories. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+Message Boards Categories organize threads into specific topics, making it easier for users to find and participate in discussions relevant to their interests.
+
+!!! important
+    Only authenticated users with at least the Add Category [permission](./message-boards-permissions-reference.md) can create categories.
 
 ## Adding Categories
 
-The most common way to add a new category is by directly using the _Message Boards_ widget.
+1. Access the page where the Message Boards widget is located.
 
-1. On the Message Boards widget, click the _Add Category_ button.
+1. On the Message Boards widget, click *Add Category*.
 
-    ![Add a Message Board category.](./creating-message-boards-categories/images/01.png)
+   ![Organize threads into specific topics using categories.](./creating-message-boards-categories/images/01.png)
 
-1. Enter a name for the category (for example, **Staff Introductions**).
+1. Enter a name for the category (for example, General Course Discussions).
+
 1. Enter a description.
-1. Select the category's _Display Style_. This controls how threads in the category appear. By default, you can choose these display styles:
 
-    * **Default:** Classic display style for general purpose discussions.
-    * **Question:** Threads appear in a question and answer style.
+1. Select the category's *Display Style*.
 
-    ![Select a display style.](./creating-message-boards-categories/images/04.png)
+   This setting determines how threads appear in the category. The default style uses a classic layout for general discussions. The question style displays threads in a question/answer format.
 
-1. In the _Mailing List_ section, leave the _Active_ toggle to _NO_ to disable a mailing list for the category. If switched to _YES_, fill in the mail server settings. For more information, see the [Setting up Mail](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail) article.
-1. Leave the _Allow Anonymous Emails_ toggle to _NO_ to prevent anonymous users from posting to the category. Otherwise, if you want to allow anonymous users to send emails and post to the category, toggle the switch to _YES_.
+1. Toggle the *Mailing List* option on to enable and [configure a mailing list for the category](./configuring-a-message-boards-category-mailing-list.md).
 
-    ![Configure the message board category.](./creating-message-boards-categories/images/02.png)
+1. Disable the *Allow Anonymous Emails* option.
 
-1. Leave the _Viewable by_ to **Anyone (Guest Role)** for now. For more information about the different permissions available, see the [Message Boards Permissions Reference](./message-boards-permissions-reference.md)
-1. Click _Save_.
+   When the option is enabled, anyone can send an email to the category’s mailing list, even without an account.
+
+1. Leave the *Viewable by* option set to **Anyone (Guest Role)** for now. For more information about the different permissions available, see the [Message Boards Permissions Reference](./message-boards-permissions-reference.md).
+
+1. Click *Save*.
 
 The new category now appears in the table.
 
-New categories appear on the message board's home screen. The list displays the category names and the numbers of subcategories, threads, and posts in each one.
+New categories appear on the message board's home screen. The list displays the category's names, along with the numbers of subcategories, threads, and posts.
 
 ## Modifying Permissions
 
-Follow these steps to configure permissions for a Message Board category:
-
-1. Click _Actions_ icon (![Actions](../../../images/icon-actions.png)) next to the _Category_.
-
-1. Click _Permissions_.
+1. Click *Actions* (![Actions](../../../images/icon-actions.png)) next to the *Category* and select *Permissions*.
 
 1. Check the boxes to grant permissions to the desired roles.
 
-    For more information about each permission, see [Message Boards Permissions Reference](./message-boards-permissions-reference.md#general-category-permissions).
+   For more information about each permission, see [Message Boards Permissions Reference](./message-boards-permissions-reference.md#general-category-permissions).
 
-    ![Modify permissions for a Message Board category.](./creating-message-boards-categories/images/06.png)
-
-1. Click _Save_ when finished.
+1. Click *Save* when finished.
 
 ## Adding Subcategories
 
 Categories can contain as many subcategories as you like.
 
-Follow these steps to add a subcategory to a category:
+1. Click the category's name in the list (continuing the example above: **General Course Discussions**).
 
-1. Click the category's name in the list (continuing the example above: **Staff Introductions**).
-1. Click the _Add_ icon (![Add](../../../images/icon-add.png)) and select _Category_.
-1. Enter a name for the subcategory.
-1. Enter a description for the subcategory.
-1. Although the subcategory inherits the parent category's settings, administrators and content creators can change the values for the subcategory's _Display Style_ and _Mailing List_ options.
-1. Click _Save_.
+1. Click *Add Category* and fill in the information for the category.
 
-The subcategory now appears in the table.
+1. The subcategory inherits the parent category's settings, but administrators and content creators can adjust the Display Style and Mailing List options.
 
-![Adding a subcategory](./creating-message-boards-categories/images/07.png)
+1. Click *Save*.
+
+The subcategory now appears on the board.
+
+![Adding a subcategory](./creating-message-boards-categories/images/02.png)
+
+!!! tip
+    Use the breadcrumbs in the top right of the Message Boards widget to navigate between category levels.
 
 ## Moving and Merging Categories
 
 Administrators can also move and merge categories.
 
-Follow these steps to move a category or merge it with another:
+1. Click *Actions* (![Actions](../../../images/icon-actions.png)) for the category you want to move and select *Move*.
 
-1. Click the category's _Actions_ icon (![Actions](../../../images/icon-actions.png)) and select _Move_. This brings up the Move Category form.
-1. Select a new parent category via the _Select_ button under the _Parent Category_ field. Note that this field is empty for top-level categories.
-1. If you want to merge the category with the selected parent category, select _Merge with Parent Category_.
-1. Click _Move_.
+   This brings up the Move Category form.
 
-    ![Move and merge categories.](./creating-message-boards-categories/images/03.png)
+1. Click *Select* to select a new parent category under the *Parent Category* field.
 
-Regardless of how many categories (and subcategories) there are, a category is just a container to organize a message board's threads. To start creating threads, see the [Creating Threads](./creating-message-boards-threads.md) article.
+   Note that this field is empty for top-level categories.
 
-## What's Next
+1. Click *Select This Category* at the bottom to move the category to the chosen parent category. To move it to a specific subcategory, click *Select* next to the desired subcategory.
 
-Once you have created categories and a few subcategories, you can learn how to create [Message Board Threads](./creating-message-boards-threads.md)
+1. If you want to merge the category with the selected parent category, select *Merge with Parent Category*.
+
+1. Click *Move*.
+
+   ![Move and merge categories.](./creating-message-boards-categories/images/03.png)
+
+Regardless of how many categories (and subcategories) there are, a category is just a container to organize a message board's threads. To start creating threads, see [Creating Threads](./creating-message-boards-threads.md).
 
 ## Related Topics
 
-* [Message Boards Configuration Reference](./message-boards-configuration-reference.md)
+- [Message Boards Configuration Reference](./message-boards-configuration-reference.md)
+- [Message Boards Permissions Reference](./message-boards-permissions-reference.md#general-category-permissions)

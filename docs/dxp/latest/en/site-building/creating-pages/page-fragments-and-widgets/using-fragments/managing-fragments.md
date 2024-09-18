@@ -39,7 +39,7 @@ Liferay DXP provides tools for managing fragments in the Liferay UI. With out-of
     To export multiple sets, click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment set you want to export and select *Export*. Then, check the sets you want to export and click *Export*. Each set is downloaded as a separate `.zip` file.
 
 !!! important
-    To export fragments in Liferay PaaS, you must be using the appropriate [JVM settings](../../../../installation-and-upgrades/setting-up-liferay/tuning-your-jvm.md#jvm-options-for-liferay-paas).
+    To export fragments in Liferay PaaS, use the appropriate [JVM settings](../../../../installation-and-upgrades/setting-up-liferay/tuning-your-jvm.md#jvm-options-for-liferay-paas).
 
 ## Managing Individual Page Fragments
 

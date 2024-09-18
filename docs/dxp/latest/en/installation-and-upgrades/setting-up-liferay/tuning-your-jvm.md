@@ -39,10 +39,10 @@ The JVM's memory comprises heap and non-heap spaces. The heap contains a space f
 | `-XX:ReservedCodeCacheSize=96m` | Maximum space for JIT-compiled code.                                                                                                                              |
 
 !!! note
-	Set the minimum (`-Xms`) and maximum (`-Xmx`) heap size to the same value to prevent the JVM from making dynamic adjustments.
+	  Set the minimum (`-Xms`) and maximum (`-Xmx`) heap size to the same value to prevent the JVM from making dynamic adjustments.
 
 !!! warning
-	Avoid allocating more than 32g to your JVM heap. Your heap size should be commensurate with the speed and quantity of available CPU resources.
+	  Avoid allocating more than 32g to your JVM heap. Your heap size should be commensurate with the speed and quantity of available CPU resources.
 
 ## Set Survivor Space
 
@@ -152,13 +152,13 @@ Adjust page sizes based on your hardware specification and application profile.
 
 ## JVM Options for Liferay PaaS
 
-If you're using Liferay PaaS, the following JVM option should be added to [export fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) smoothly.
+If you're using Liferay PaaS, add the JVM option below to [export fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) smoothly.
 
 ***JVM Options Example**
 
 **JVM Options Explained**
 | JVM Option Setting                                | Explanation                                                                                  |
-| `--add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED` | Allows the JVM to use `zipfs` which is necessary for exporting fragment sets as `.zip` files |
+| `--add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED` | Enables `zipfs` in the JVM, which is necessary for exporting fragment sets as `.zip` files |
 
 ## Conclusion
 

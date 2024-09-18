@@ -15,8 +15,6 @@ Stores in Liferay Commerce are comprised of an interrelated hierarchy of compone
 
 Liferay Commerce comes with Minium, a B2B site accelerator, out-of-the-box.
 
-To use an Accelerator:
-
 1. Go to *Control Panel* &rarr; *Sites* &rarr; *Sites*.
 
 1. Click the Add (![Add](../images/icon-add.png)) button to add a new site.

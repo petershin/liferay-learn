@@ -21,7 +21,7 @@ Welcome to Liferay Commerce! Liferay Commerce is a digital commerce platform bui
 - [APIs and Integrations](#apis-and-integrations)
 - [Next Steps](#next-steps)
 
-Just want to get started? Launch Liferay Commerce _fast_ [using the Liferay Commerce Docker image](../installation-and-upgrades/installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md).
+Want to get started fast? Launch Liferay Commerce _fast_ [using the Liferay Commerce Docker image](../installation-and-upgrades/installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md).
 
 ## Modern Storefront Pages and Content Management
 

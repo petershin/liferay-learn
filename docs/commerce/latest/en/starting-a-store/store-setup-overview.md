@@ -23,7 +23,7 @@ This article is intended to provide a walk through for users who are new to buil
 ## Store Setup
 
 !!! note
-    An [Accelerator](../starting-a-store/accelerators.md) may be used to create the store site. Using an Accelerator to create the store site will configure many of the settings mentioned in this section, see [Using the Minium Accelerator to Jump Start Your B2B Store](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) for further details.
+    An [Accelerator](../starting-a-store/accelerators.md) may be used to create the store site. Using an Accelerator to create the store site configures many of the settings mentioned here. See [Using the Minium Accelerator to Jump Start Your B2B Store](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) for further details.
 
 Initial store setup is done with the [Admin account](./introduction-to-the-admin-account.md). Read the [Liferay Commerce Configuration Overview](../store-management/liferay-commerce-configuration-overview.md) to become more familiar with the Liferay Commerce configuration layout and available options.
 
@@ -95,7 +95,7 @@ The Liferay Commerce Catalog supports storing and managing a wide variety of pro
 
 #### Product Pricing
 
-There are several ways to price products and these methods are related to one another in a pricing hierarchy: base price, price list, tiered price, promo price and discount. Pricing is managed per SKU.
+There are several ways to price products and these methods are related to one another in a pricing hierarchy: base price, price list, tiered price, promo price, and discount. Pricing is managed per SKU.
 
 - [Pricing](../pricing/introduction-to-pricing.md)
 - [Price Lists](../pricing/creating-a-price-list.md)
@@ -107,7 +107,7 @@ There are several ways to price products and these methods are related to one an
 
 ## Creating the Storefront
 
-Building a store in Liferay Commerce requires more than a complete catalog. Store administrators building a storefront from scratch will need to add a series of pages to display and sell their products.
+Building a store in Liferay Commerce requires more than a complete catalog. Store administrators building a storefront from scratch must add a series of pages to display and sell their products.
 
 See [Creating Store Content](../creating-store-content/creating-store-content.md) to learn more.
 

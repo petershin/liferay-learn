@@ -61,9 +61,9 @@ These terms are found in the other component parts of the agreement structure.
 
 Second, a set of Appendices cover each of Liferay’s Services offering types, respectively.
 
-For example, Appendix 1, the Enterprise Subscription Services Appendix, describes the service obligations, tools and benefits provided by Liferay’s Subscription Services offerings, such as Liferay DXP Subscriptions, and any related add-on Subscriptions. 
+For example, Appendix 1, the Liferay Self-Hosted Subscriptions Appendix, describes the service obligations, tools and benefits provided by Liferay’s Self-Hosted Subscription Services offerings, such as Liferay DXP Subscriptions, and any related add-on Subscriptions. 
 
-Similarly, Appendices 2 to 5 describe the terms and conditions applicable to Liferay Professional Services, Liferay Training Services, Liferay Cloud and related add-on services, and Liferay Developer Subscriptions, respectively. 
+Similarly, Appendices 2 through 6 describe the terms and conditions applicable to Liferay Professional Services, Liferay PaaS Subscriptions related add-on services, Liferay Developer Subscriptions, and Liferay SaaS Subscriptions related add-on services, respectively. 
 
 Where needed, contract addendums for specific compliance requirements, such as a data processing agreement (DPA), are attached either to an applicable Appendix or the Base Agreement. 
 
@@ -89,7 +89,7 @@ One important thing to note about the ESA is that it does not include software l
 
 Liferay does not have any commercial offerings based on charging a software license fee.
 
-Certain Services, such as the Enterprise Subscription Services, do provide for access to Liferay Software free of charge. Where such Liferay Software is made available, the applicable end user license agreement (EULA) is identified in the applicable Appendix for reference purposes. Note however the EULAs are entirely separate agreements that cover the licensing relationship.
+Certain Services, such as the Liferay Self-Hosted Subscription and the Liferay PaaS Subscription, do provide for access to Liferay Software free of charge. Where such Liferay Software is made available, the applicable end user license agreement (EULA) is identified in the applicable Appendix for reference purposes. Note however the EULAs are entirely separate agreements that cover the licensing relationship.
 
 Congratulations - you’ve now completed the Level 1 Selling Liferay learning path for Business Sales Roles!
 

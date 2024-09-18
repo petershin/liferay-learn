@@ -49,6 +49,16 @@ Being vocal and providing that feedback internally or for partners through the C
 
 New Battlecards are created throughout the year, with existing Battlecards updated on a Quarterly basis. The quarterly update information is located at the top of the Battlecard, and highlights anything new that the competitor has released or announced that may impact your conversations. 
 
+## Competition grouped by Category
+
+![Liferay's competitors fit into four categories: DXPs, Enterprise Suites, Composable Point Solutions, Low-Code Application Platforms](./battlecards/images/01.png)
+
+The graphic above shows the major vendors that Liferay competes against. Note that not all are pure plays, some suite vendors pushed into the Low-Code market in the last few years, and some DXP vendors added composability with Headless APIs.
+
+Liferay is uniquely positioned in the middle of all these categories. First, Liferay is a complete, integrated Digital Experience Platform. Liferay also has Low-Code capabilities, provides a market leading composable Content Management System (CMS), and can be easily integrated with suite vendors. 
+
+This gives Liferay's Partners and Customers the flexibility to use Liferay as the foundation of their digital experience transformatiomn in a way that is fully integrated with their enterprise architecture, and of course can be deployed as SaaS, PaaS, or Self-Hosted.
+
 ## Where to Access Battlecards
 
 How you can access the Battlecards varies depending on whether you are an Employee or a Partner.

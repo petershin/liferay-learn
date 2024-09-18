@@ -20,7 +20,7 @@ The import/export settings configure mappings between LDAP and Liferay to match 
 ```
 
 !!! note
-    If you changed Liferay's authentication method to use screen names instead of the email addresses, you would modify the search filter so it can match the entered log in name: `(cn=@screen_name@)`
+    If you changed Liferay's authentication method to use screen names instead of the email addresses, modify the search filter so it can match the entered log in name: `(cn=@screen_name@)`
 
 **Import Search Filter:** Depending on the LDAP schema, there are different ways to identify the user. The default setting is usually fine:
 

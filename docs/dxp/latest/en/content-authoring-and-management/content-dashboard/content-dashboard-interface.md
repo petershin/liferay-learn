@@ -90,15 +90,15 @@ The content list uses the *Page* icon (![Page Icon](../../images/icon-page.png))
 
 You can hover over content in the list to access these actions:
 
-   **View** (![View](../../images/icon-preview.png)): View the content's display page.
+- **View** (![View](../../images/icon-preview.png)): View the content's display page.
 
-   **Edit** (![Edit](../../images/icon-edit.png)): Open the content in edit mode.
+- **Edit** (![Edit](../../images/icon-edit.png)): Open the content in edit mode.
 
-   **Info** (![Information](../../images/icon-information.png)): Open the [content info](#content-info-sidebar) sidebar.
+- **Info** (![Information](../../images/icon-information.png)): Open the [content info](#content-info-sidebar) sidebar.
 
-   **View Metrics** (![View Metrics](../../images/icon-analytics.png)): Open the [content performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
+- **View Metrics** (![View Metrics](../../images/icon-analytics.png)): Open the [content performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
 
-   ![Access the content info sidebar and content performance panel from the Actions menu or the icons on each content row.](./content-dashboard-interface/images/06.png)
+  ![Access the content info sidebar and content performance panel from the Actions menu or the icons on each content row.](./content-dashboard-interface/images/06.png)
 
 ### Filtering and Sorting Content in the Contents List
 
@@ -157,19 +157,70 @@ The info sidebar provides access to actions and metadata for your selected asset
 
 ![Click the Info button to access the content info sidebar.](./content-dashboard-interface/images/09.png)
 
-This table lists available metadata and actions for different asset types.
+### Asset Details
 
-| Asset Type                                          | Metadata/Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Web Content                                         | <ul><li>Title</li><li> {bdg-secondary}`7.4 U44+/GA44+` Type </li><li>Subtype </li><li>Version (current active version)</li><li>Status</li><li>Author</li><li> {bdg-secondary}`7.4 U42+/GA42+` Preview Image </li><li>Languages Translated Into</li><li>Display Date</li><li>Creation Date</li><li>Modified Date</li><li>ID</li><li> {bdg-secondary}`7.4 U42+/GA42+` Subscribe </li><li> {bdg-secondary}`7.4 U53+/GA53+` Versions (Click to view the version history) </li></ul>                                                                                         |
-| {bdg-secondary}`7.4 U23+/GA23+` Documents and Media | <ul><li>Title</li><li>URL</li><li> {bdg-secondary}`7.4 U42+/GA42+` WebDAV URL </li><li>Filename</li><li> {bdg-secondary}`7.4 U44+/GA44+` Type </li><li>Subtype</li><li> {bdg-secondary}`7.4 U44+/GA44+` MIME Type </li><li>Version (current active version)</li><li>Status</li><li>Author</li><li>Preview Image</li><li>Download</li><li> {bdg-secondary}`7.4 U42+/GA42+` Share </li><li>{bdg-secondary}`7.4 U146+/GA146+` Resolution</li><li>{bdg-secondary}`7.4 U146+/GA146+` Aspect Ratio</li><li>Extension</li><li>Size</li><li>Creation Date</li><li>Modified Date</li><li>ID</li><li> {bdg-secondary}`7.4 U53+/GA53+` Versions (Click to view the version history) </li></ul> |
-| Blog Entries                                        | <ul><li>Title</li><li>Type</li><li>Version (current active version)</li><li>Status</li><li>Author</li><li> {bdg-secondary}`7.4 U42+/GA42+` Preview Image </li><li> {bdg-secondary}`7.4 U42+/GA42+` Share </li><li>Display Date</li><li>Creation Date</li><li>Modified Date</li><li>ID</li></ul>                                                                                                                                                                                                                                                                         |
+**Web Content**
+
+- Title
+- Type {bdg-secondary}`7.4 U44+/GA44+`
+- Subtype
+- Version (current active version)
+- Status
+- Author
+- Preview Image {bdg-secondary}`7.4 U42+/GA42+`
+- Languages Translated Into
+- Display Date
+- Creation Date
+- Modified Date
+- ID
+- Subscribe {bdg-secondary}`7.4 U42+/GA42+`
+
+**Blog Entries**
+
+- Title
+- Type
+- Version (current active version)
+- Status
+- Author
+- Preview Image {bdg-secondary}`7.4 U42+/GA42+`
+- Share {bdg-secondary}`7.4 U42+/GA42+`
+- Display Date
+- Creation Date
+- Modified Date
+- ID
+
+**Documents and Media** {bdg-secondary}`7.4 U23+/GA23+`
+
+- Title
+- URL
+- WebDAV URL {bdg-secondary}`7.4 U42+/GA42+`
+- Filename
+- Type {bdg-secondary}`7.4 U44+/GA44+`
+- Subtype
+- MIME Type {bdg-secondary}`7.4 U44+/GA44+`
+- Version (current active version)
+- Status
+- Author
+- Preview Image
+- Download
+- Share {bdg-secondary}`7.4 U42+/GA42+`
+- Extension
+- Size
+- Creation Date
+- Modified Date
+- ID
 
 ![The content info sidebar provides metadata and actions for your content.](./content-dashboard-interface/images/10.png)
 
+### Content Performance
+
+{bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA137+`
+
+### Categorizations
+
 ### Version History
 
-{bdg-secondary}`Available 7.4 U53+/GA53+`
+{bdg-secondary}`Liferay DXP 7.4 U53+/Portal 7.4 GA53+`
 
 The Content Info panel displays the version history for assets from Web Content and Documents and Media. To view the version history, click *Info* (![Info Button](../../images/icon-information.png)) for a content item and go to the *Versions* tab.
 

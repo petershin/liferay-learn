@@ -29,9 +29,9 @@ If you want to add a friendly URL for your site's home page, follow the addition
 
 ## Setting Your Instance's Home URL
 
-The home URL refers to the default URL or path to which users are redirected when they access the base URL of the Liferay instance, such as `http://localhost:8080`.
+The home URL refers to the default URL or path where users are sent when they access the base URL of the Liferay instance, such as `http://localhost:8080`.
 
-If you add a friendly URL for your instance's home page, you should update your instance's home URL field so that page requests to the home URL redirect properly. Failing to do so may cause inconsistencies between the URL paths, redirect problems, and broken links. To set your instance's home URL,
+If you add a friendly URL for your instance's home page, you should update your instance's home URL field so page requests to the home URL redirect properly. Failing to do so may cause inconsistencies between the URL paths, redirect problems, and broken links. 
 
 1. Open the [Global Menu](../../../getting-started/navigating-dxp.md) (![Global Menu icon](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Instance Settings*.
 

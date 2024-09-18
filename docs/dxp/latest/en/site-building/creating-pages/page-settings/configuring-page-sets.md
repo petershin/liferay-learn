@@ -119,7 +119,7 @@ In Liferay DXP 7.3, you can access the same settings from the *Page Tree* menu:
 
 1. Click the Gear (![Gear icon](../../../images/icon-settings.png)) icon.
 
-    ![You can access the same Page Sets options from the Page Tree menu.](./configuring-page-sets/images/07.png)
+   ![You can access the same Page Sets options from the Page Tree menu.](./configuring-page-sets/images/07.png)
 
 ## Related Topics
 

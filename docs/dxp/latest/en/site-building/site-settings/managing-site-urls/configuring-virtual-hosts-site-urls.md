@@ -10,7 +10,7 @@ uuid: 0c27b5b6-ea92-423e-8bbe-bd15918cc1e1
 
 # Configuring Virtual Hosts Site URLs
 
-A virtual host connects a domain name (e.g., `www.helloworld.com`) to a site. This can be a full domain or a subdomain (e.g. `developers.helloworld.com`). You can use this to host many websites as separate sites on one Liferay DXP server. To configure virtual hosts site URLs,
+A virtual host connects a domain name (e.g., `www.helloworld.com`) to a site. This can be a full domain or a subdomain (e.g. `developers.helloworld.com`). You can use this to host many websites as separate sites on one Liferay DXP server. 
 
 1. With your provider, set the DNS name to point to your Liferay DXP instance's IP address. You can refer to [a guide from a common provider on how to assign a domain](https://www.bluehost.com/help/article/how-to-assign-a-domain) as an example.
 

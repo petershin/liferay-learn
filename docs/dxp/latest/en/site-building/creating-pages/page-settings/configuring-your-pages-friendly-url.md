@@ -34,7 +34,7 @@ In the General tab, use the *Friendly URL* field to enter a new URL for the page
 The value entered in this field is appended to its [site URL](../../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md) and must be unique.
 
 !!! note
-    When setting a custom URL, you don't have to maintain the site's page hierarchy. This means a child page does not need to include its Parent as part of its friendly URL.
+    When setting a custom URL, you can ignore the site's page hierarchy. This means a child page need not include its parent as part of its friendly URL.
 
 ## Managing a Page's URL History
 

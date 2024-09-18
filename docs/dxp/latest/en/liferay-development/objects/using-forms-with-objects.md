@@ -14,9 +14,9 @@ taxonomy-category-names:
 Liferay objects are integrated with the Forms application, so you can design forms for receiving user input and creating object entries. To do this, first add a new form and configure it to use the objects storage type. Then select the desired object, design your form, and map its fields to the selected object's fields.
 
 !!! important
-    * You can use the Forms application's rules and validations with objects.
-    * You cannot use the Forms application's data providers with objects. 
-    * You cannot map object relationships to form fields. See [Designing Object Layouts](./creating-and-managing-objects/layouts/designing-object-layouts.md) for how to create custom layouts that include object relationships.
+    - You can use the Forms application's rules and validations with objects.
+    - You cannot use the Forms application's data providers with objects. 
+    - You cannot map object relationships to form fields. See [Designing Object Layouts](./creating-and-managing-objects/layouts/designing-object-layouts.md) for how to create custom layouts that include object relationships.
 
 ## Adding a Form for an Object
 

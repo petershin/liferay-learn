@@ -21,7 +21,7 @@ The first search headless endpoint, `/portal-search-rest`, was released behind a
 | API                                    | Liferay Version                            | Feature Status                                                                                            |
 | :------------------------------------- | :----------------------------------------- | :-------------------------------------------------------------------------------------------------------- | -------- |
 | /o/search/v1.0/search                  | DXP 2024.Q3+<br>Portal 7.4 GA125+          | [Release Feature](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) |
-| /o/search/v1.0/search/suggestions      | DXP 2024.Q3+<br>Portal 7.4 GA125+          | Generally Available                                                                                       |
+| /o/search/v1.0/suggestions      | DXP 2024.Q3+<br>Portal 7.4 GA125+          | Generally Available                                                                                       |
 | /o/portal-search-rest/v1.0/search      | DXP 7.4 U88-2024.Q2<br>Portal 7.4 GA88-124 | [Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)       | &#10004; |
 | /o/portal-search-rest/v1.0/suggestions | DXP 7.4 U36-2024.Q2<br>Portal 7.4 GA36-124 | Generally Available                                                                                       |
 

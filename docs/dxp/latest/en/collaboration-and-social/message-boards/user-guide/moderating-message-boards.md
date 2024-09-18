@@ -7,89 +7,104 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Moderating Message Boards
 
-_Message Boards_ includes features that enable effective forum moderation. This includes thread locking, thread moving and merging, user bans, and thread flagging. Users with the appropriately designated permissions are able to use these tools. See the [Message Boards Permissions Reference](./message-boards-permissions-reference.md) for more information on assigning _Message Boards_ permissions to a role. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+Message boards include features that enable effective forum moderation. This includes thread locking, thread moving and merging, user bans, and thread flagging. Users with [appropriate permissions](./message-boards-permissions-reference.md) can use these tools.
 
 ## Locking Threads
 
-Site administrators can halt activity on a thread by selecting _Lock_ from the thread's Actions menu. Once a thread is locked, additional responses are disallowed.
+Site administrators can lock a thread and prevent any further responses.
 
-To lock a thread:
+To lock a thread, click (![Actions](../../../images/icon-actions.png)) next to the thread to be locked and select *Lock*.
 
-1. Click (![Actions](../../../images/icon-actions.png)) next to the thread to be locked.
-1. Click _Lock_.
+Locked threads are marked as Locked and users can't reply to them anymore. To unlock a thread, click (![Actions](../../../images/icon-actions.png)) next to the thread and select *Unlock*.
 
-    ![Locking a Thread](./moderating-message-boards/images/02.png)
+![Use the actions menu to lock and unlock threads.](./moderating-message-boards/images/01.png)
 
-To unlock a thread:
+## Moving Categories and Threads
 
-1. Click (![Actions](../../../images/icon-actions.png)) next to the thread to be unlocked.
-1. Click _Unlock_.
+Moderators can move categories and threads to different locations including the root level, or merge categories with other categories.
 
-The thread is now unlocked.
+To move a category or thread,
 
-## Moving Threads
+1. Click *Actions* (![Actions](../../../images/icon-actions.png)) next to the category/thread you want to move and select *Move*. This opens the Move Category form.
 
-Moderators can move threads from one category to another. To move a thread, follow these steps:
+1. In the Parent Category field, click *Select* to choose a new location.
 
-1. Select _Move_ from the thread’s Actions menu (![Actions](../../../images/icon-actions.png)).
-1. Click the _Select_ button and select the new category.
-1. To add a post explaining the move, check _Add explanation post_.
+   ![Use the Move action to move categories and threads to different locations.](./moderating-message-boards/images/02.png)
 
-    ![Moving a Thread](./moderating-message-boards/images/03.png)
+1. Use the breadcrumbs at the top (1) to navigate through different category levels. Click on a category to select it (2).
 
-1. Click _Move_ to move the thread.
+   Click *Select This Category* at the bottom (3) to move the category/thread to the chosen location.
 
-The thread is now in the new category.
+   In this example, clicking Select This Category should move the content to the General Course Discussions category, identified by the last level of the breadcrumbs.
+
+   If you want to move it to a specific subcategory, click *Select* next to the desired subcategory (4).
+
+   ![Select a new location for the category/thread.](./moderating-message-boards/images/03.png)
+
+1. (For moving categories) If you want to merge the category with the selected parent category, select *Merge with Parent Category*.
+
+   When unchecked, the entire category moves into the new category without merging.
+
+!!! warning
+    When merging categories, only threads are moved. Subcategories are deleted, and any threads in those subcategories are also moved to the new category.
+
+1. (For moving threads) Check *Add explanation post* to add a post explaining the move.
+
+1. Click *Move*.
+
+The category/thread has been moved.
 
 ## Banning Users
 
-1. Click on the thread that contains the user to be banned.
-1. Click the post’s Actions menu (![Actions](../../../images/icon-actions.png)) and select _Ban this User_.
+Manage user access by banning users or reinstating those who have been previously banned.
 
-![Banning a user](./moderating-message-boards/images/04.png)
+1. Click the thread containing the user to be banned.
 
-The user is now banned.
+1. Click (![Actions](../../../images/icon-actions.png)) next to the user's post and select *Ban this User*.
 
-To reinstate a banned user:
+Banned users get an error message stating they were banned by the moderator if they try to access the message board.
 
-1. Navigate to the _Site Administration_.
-1. Click _Content & Data_ &rarr; _Message Boards_. (If there is a page scope, select the scope from the _scope selector_.)
-1. Click the _Banned Users_ tab.
-1. Click on Actions menu (Actions) next to the user and click _Unban This User_.
+![Ban users to restrict their access to the message board.](./moderating-message-boards/images/04.png)
 
-    ![Unbanning a user](./moderating-message-boards/images/05.png)
+To reinstate a banned user,
+
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Message Boards*.
+
+   If there is a page scope, select the scope from the *scope selector*.
+
+1. Select the *Banned Users* tab.
+
+1. Click Actions (![Actions](../../../images/icon-actions.png)) next to the user and select *Unban This User*.
+
+   ![Reinstate a banned user through the Message Boards app.](./moderating-message-boards/images/05.png)
 
 This user has been reinstated.
 
-## Reviewing Flagged Threads
+## Reviewing Flagged Posts
 
-When a thread has been reported for possible abuse, the _Message Boards_ app uses the _Notifications_ widget to notify a moderator to review the thread. A red number around their icon appears around their profile icon.
+When a post has been reported for possible abuse, the Message Boards app uses the Notifications widget to notify a moderator to review it. A red number appears around the moderator's User Profile Menu icon.
 
-![Notification icon](./moderating-message-boards/images/01.png)
+![Users can flag posts and bring them to the moderator's attention.](./moderating-message-boards/images/06.png)
 
-To review flagged threads:
+To review flagged threads,
 
-1. Click your _User Avatar_.
+1. Click your *User Profile Menu* and select *Notifications*.
 
-1. Click _Notifications_.
+1. Click on the post that has been reported. You are taken to the post.
 
-    ![Notifications widget displays message boards](./moderating-message-boards/images/06.png)
+   ![Users can flag posts and bring them to the moderator's attention.](./moderating-message-boards/images/07.png)
 
-1. Click on the reply that has been reported.
+Moderators have the option to delete the flagged reply.
 
-Moderators have the option to delete the flagged reply. To delete a flagged reply:
+1. Click *Actions* (![Actions](../../../images/icon-actions.png)) next to the reply to be deleted and select *Delete*.
 
-1. Click _Actions_ (![Actions](../../../images/icon-actions.png))
-
-    ![Deleting a flagged reply](./moderating-message-boards/images/07.png)
-
-1. Click _Delete_
-1. Click _OK_ to confirm the deletion.
+1. Click *OK* to confirm the deletion.
 
 The reply is now deleted.
 
 ## Related Topics
 
-* [Managing Notifications and Requests](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)
+- [Managing Notifications and Requests](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)

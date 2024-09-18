@@ -7,36 +7,44 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Message Boards Widget UI Reference
+
+Explore the user interface elements of the Message Boards widget, including the various tabs and their functionalities. Each tab provides access to different aspects of the message boards, helping users navigate and manage their posts and subscriptions effectively.
 
 ## Categories
 
-The _Categories_ tab is the default landing page when navigating to the _Message Boards_ widget. All the categories are displayed on this tab. In addition, all the threads created at the root level are displayed here.
+The Categories tab is the default landing page when navigating to the Message Boards widget. All the categories and threads created at the root level appear here.
 
-![Categories tab](./message-boards-widget-ui-reference/images/04.png)
+![All the categories and threads created at the root level appear in the Categories tab.](./message-boards-widget-ui-reference/images/01.png)
 
 ## Recent Posts tabs
 
-The _Recent Posts_ tab lists _all_ threads, starting with the most recent and irregardless of which category the thread is posted in.
+The Recent Posts tab lists all threads, starting with the most recent, regardless of the category in which the thread is posted.
 
-![Recent Posts tab](./message-boards-widget-ui-reference/images/03.png)
+![The Recent Posts tab lists all threads.](./message-boards-widget-ui-reference/images/02.png)
 
 ## My Posts
 
-The _My Posts_ tab tracks all the posts authored by the current user (for example, _Jane Doe_).
+The My Posts tab tracks all the posts authored by the current user (for example, Jane Doe).
 
-![My Posts tab](./message-boards-widget-ui-reference/images/02.png)
+![The My Posts tab tracks all the posts authored by the current user.](./message-boards-widget-ui-reference/images/03.png)
 
 ## My Subscriptions
 
-Subscribing to a thread causes Message Boards to send the user an email whenever a new message is posted to the thread. If you have enabled the mailing list feature for the thread's category, users can reply to these messages to post back to the thread without having to visit your site.
+Subscribing to a thread causes message boards to send the user an email whenever a new message is posted to the thread. If you have enabled the mailing list feature for the thread's category, users can reply to these messages to post back to the thread without having to visit your site.
 
-The _My Subscriptions_ tab displays all the categories and threads that the current user has subscribed to.
+The My Subscriptions tab shows all categories and threads to which the current user is subscribed.
 
-![My Subscriptions tab](./message-boards-widget-ui-reference/images/05.png)
+![The My Subscriptions tab shows all categories and threads to which the current user is subscribed.](./message-boards-widget-ui-reference/images/04.png)
 
 ## Statistics
 
-The _Statistics_ tab displays information about the number of categories, posts, and participants.
+The Statistics tab displays information about the number of categories, posts, and participants.
 
-![Statistics tab](./message-boards-widget-ui-reference/images/01.png)
+![The Statistics tab displays information about the number of categories, posts, and participants.](./message-boards-widget-ui-reference/images/05.png)
+
+## Related Topics
+
+- [Message Boards Configuration Reference](./message-boards-configuration-reference.md)
+- [Message Boards Permissions Reference](./message-boards-permissions-reference.md)

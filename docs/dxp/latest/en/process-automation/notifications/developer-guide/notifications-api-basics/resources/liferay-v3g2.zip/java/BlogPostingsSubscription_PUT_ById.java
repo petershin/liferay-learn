@@ -6,15 +6,14 @@ public class BlogPostingsSubscription_PUT_ById {
 	 * java -classpath .:* -DsiteId=1234 BlogPostingsSubscription_PUT_ById
 	 */
 	public static void main(String[] args) throws Exception {
-		BlogPostingResource.Builder builder =
-			BlogPostingResource.builder();
+		BlogPostingResource.Builder builder = BlogPostingResource.builder();
 
-		BlogPostingResource blogPostingResource =
-			builder.authentication(
-				"test@liferay.com", "learn"
-			).build();
+		BlogPostingResource blogPostingResource = builder.authentication(
+			"test@liferay.com", "learn"
+		).build();
 
-		blogPostingResource.putSiteBlogPostingSubscribe(Long.valueOf(System.getProperty("siteId")));
+		blogPostingResource.putSiteBlogPostingSubscribe(
+			Long.valueOf(System.getProperty("siteId")));
 	}
 
 }

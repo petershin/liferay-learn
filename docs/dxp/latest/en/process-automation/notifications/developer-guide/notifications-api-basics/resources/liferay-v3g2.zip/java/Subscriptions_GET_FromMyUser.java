@@ -1,7 +1,5 @@
-import com.liferay.headless.admin.user.client.resource.v1_0.SubscriptionResource;
-import com.liferay.headless.admin.user.client.dto.v1_0.Subscription;
-import com.liferay.headless.admin.user.client.pagination.Page;
 import com.liferay.headless.admin.user.client.pagination.Pagination;
+import com.liferay.headless.admin.user.client.resource.v1_0.SubscriptionResource;
 
 public class Subscriptions_GET_FromMyUser {
 
@@ -9,8 +7,7 @@ public class Subscriptions_GET_FromMyUser {
 	 * java -classpath .:* Subscriptions_GET_FromMyUser
 	 */
 	public static void main(String[] args) throws Exception {
-		SubscriptionResource.Builder builder =
-			SubscriptionResource.builder();
+		SubscriptionResource.Builder builder = SubscriptionResource.builder();
 
 		SubscriptionResource subscriptionResource = builder.authentication(
 			"test@liferay.com", "learn"
@@ -18,7 +15,7 @@ public class Subscriptions_GET_FromMyUser {
 
 		System.out.println(
 			subscriptionResource.getMyUserAccountSubscriptionsPage(
-				null, Pagination.of(1,10)));
+				null, Pagination.of(1, 10)));
 	}
 
 }

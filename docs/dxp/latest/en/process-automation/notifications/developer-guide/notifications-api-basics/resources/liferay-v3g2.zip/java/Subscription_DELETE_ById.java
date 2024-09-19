@@ -6,13 +6,11 @@ public class Subscription_DELETE_ById {
 	 * java -classpath .:* -DsubscriptionId=1234 Subscription_DELETE_ById
 	 */
 	public static void main(String[] args) throws Exception {
-		SubscriptionResource.Builder builder =
-			SubscriptionResource.builder();
+		SubscriptionResource.Builder builder = SubscriptionResource.builder();
 
-		SubscriptionResource subscriptionResource =
-			builder.authentication(
-				"test@liferay.com", "learn"
-			).build();
+		SubscriptionResource subscriptionResource = builder.authentication(
+			"test@liferay.com", "learn"
+		).build();
 
 		subscriptionResource.deleteMyUserAccountSubscription(
 			Long.valueOf(System.getProperty("subscriptionId")));

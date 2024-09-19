@@ -7,17 +7,17 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Message Boards API Basics
 
-Liferay's Headless Delivery application provides REST services for the [Message Boards](../../message-boards.md) application. With these services, you can add message board categories, threads, and messages, list their information, modify their content, or remove them altogether. Here you'll call those services using cURL commands and Java classes.
+Liferay's Headless Delivery application provides REST services for the [Message Boards](../../message-boards.md) application. With these services, you can add message board categories, threads, and messages, list their information, modify their content, or remove them altogether. Access these services using methods such as cURL commands and Java classes.
 
-```{note}
-Message board categories are named *sections* in the Liferay backend. These sections define topics for organizing threads.
-```
+!!! note
+    Message board categories are named *sections* in the Liferay backend. These sections define topics for organizing threads.
 
 ## Preparing Tutorial Resources
 
-Before proceeding with the tutorial, first set up a clean Liferay Docker container and prepare the provided tutorial code for use.
+Before proceeding with the tutorial, set up a clean Liferay Docker container and prepare the provided tutorial code for use.
 
 ### Liferay Docker Container
 
@@ -30,7 +30,7 @@ Once started, retrieve the site ID. To find your site ID, open the *Site Menu* (
 
 ### Tutorial Code
 
-Below is sample code to demonstrate the Headless API. This code includes both sample cURL and Java files.
+Below is the sample code to demonstrate the Headless API. This code includes both sample cURL and Java files.
 
 Run the following command to download and unzip the [sample code](https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip):
 
@@ -42,7 +42,7 @@ curl https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/
 unzip liferay-y3a6.zip
 ```
 
-While the cURL scripts come ready for use, you must compile the Java source files manually before you can run them. To do this, go to the project's `java` folder and run the `javac` command.
+While the cURL scripts come ready for use, you must compile the Java source files manually before you run them. To do this, go to the project's `java` folder and run the `javac` command.
 
 ```bash
 cd liferay-y3a6/java
@@ -56,9 +56,8 @@ Note that the project includes the `com.liferay.headless.delivery.client.jar` fi
 
 The provided code includes APIs for the `MessageBoardSection`, `MessageBoardThread` and `MessageBoardMessage` services. See [Tutorial Code Reference](#tutorial-code-reference) for a list of all included sample APIs.
 
-```{important}
-The provided code uses basic authentication for demonstration purposes. For production, you should authorize users with [OAuth2](../../../headless-delivery/using-oauth2.md).
-```
+!!! important
+    The provided code uses basic authentication for demonstration purposes. For production, you should authorize users with [OAuth2](../../../headless-delivery/using-oauth2.md).
 
 ## Calling the Sample APIs
 
@@ -98,12 +97,12 @@ In this exercise, you can use either the cURL commands or Java classes to call t
 
    ```json
    {
-     ...
-     "description" : "Foo",
-     "id" : 43925,
-     ...
-     "name" : "Able Section",
-     ...
+      ...
+      "description" : "Foo",
+      "id" : 43925,
+      ...
+      "name" : "Able Section",
+      ...
    }
    ```
 
@@ -167,15 +166,15 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    java -classpath .:* -DsiteId={site-id} MessageBoardThread_POST_ToSite
    ```
 
-   ```bash
+   ```json
    {
-     ...
-     "articleBody" : "Foo",
-     ...
-     "headline" : "Able Thread",
-     "id" : 43942,
-     ...
-     "messageBoardRootMessageId" : 43941,
+      ...
+      "articleBody" : "Foo",
+      ...
+      "headline" : "Able Thread",
+      "id" : 43942,
+      ...
+      "messageBoardRootMessageId" : 43941,
    }
    ```
 
@@ -197,17 +196,17 @@ In this exercise, you can use either the cURL commands or Java classes to call t
 
 1. Copy this thread's ID for use with the following GET, PATCH, and PUT methods.
 
-   ```bash
+   ```json
    {
-     ...
-     "articleBody" : "Foo",
-     ...
-     "headline" : "Baker Thread",
-     "id" : 43934,
-     ...
-     "messageBoardRootMessageId" : 43933,
-     "messageBoardSectionId" : 43925,
-     ...
+      ...
+      "articleBody" : "Foo",
+      ...
+      "headline" : "Baker Thread",
+      "id" : 43934,
+      ...
+      "messageBoardRootMessageId" : 43933,
+      "messageBoardSectionId" : 43925,
+      ...
    }
    ```
 
@@ -287,18 +286,18 @@ In this exercise, you can use either the cURL commands or Java classes to call t
 
 1. Copy the message's ID for use with the following PUT, PATCH, and POST commands.
 
-   ```bash
+   ```json
    {
-     ...
-     "articleBody" : "Foo",
-     ...
-     "headline" : "Able Message",
-     "id" : 43946,
-     ...
-     "messageBoardSectionId" : 43925,
-     "messageBoardThreadId" : 43934,
-     "parentMessageBoardMessageId" : 43933,
-     ...
+      ...
+      "articleBody" : "Foo",
+      ...
+      "headline" : "Able Message",
+      "id" : 43946,
+      ...
+      "messageBoardSectionId" : 43925,
+      "messageBoardThreadId" : 43934,
+      "parentMessageBoardMessageId" : 43933,
+      ...
    }
    ```
 
@@ -350,19 +349,19 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    java -classpath .:* -DparentMessageBoardMessageId={parent-message-board-message-id} MessageBoardMessage_POST_ToParent
    ```
 
-   ```bash
+   ```json
    {
-     ...
-     "articleBody" : "Foo",
-     ...
-     "headline" : "Charlie Message",
-     "id" : 43949,
-     ...
-     "messageBoardSectionId" : 43925,
-     "messageBoardThreadId" : 43934,
-     ...
-     "parentMessageBoardMessageId" : 43946,
-     ...
+      ...
+      "articleBody" : "Foo",
+      ...
+      "headline" : "Charlie Message",
+      "id" : 43949,
+      ...
+      "messageBoardSectionId" : 43925,
+      "messageBoardThreadId" : 43934,
+      ...
+      "parentMessageBoardMessageId" : 43946,
+      ...
    }
    ```
 
@@ -428,10 +427,10 @@ In this exercise, you can use either the cURL commands or Java classes to call t
 
    Since you deleted the section in the preceding step, it returns the following message.
 
-   ```bash
+   ```json
    {
-     "status" : "NOT_FOUND",
-     "title" : "No MessageBoardSection exists with the primary key 43925"
+      "status" : "NOT_FOUND",
+      "title" : "No MessageBoardSection exists with the primary key 43925"
    }
    ```
 
@@ -443,136 +442,37 @@ The provided sample code includes cURL scripts and Java classes for the followin
 
 The sample code includes cURL scripts and Java classes that call the following APIs.
 
-| Service | HTTP Method | HTTP Endpoint | Description |
-| :--- | :--- | :--- | :--- |
-| MessageBoardSection | `POST` | `/v1.0/sites/[siteId]/message-board-sections` | Creates a new category with the details provided in the API call |
-| MessageBoardSection | `GET` | `/v1.0/sites/[siteId]/message-board-sections` | Returns a complete list of all categories in the specified site; results can be paginated, filtered, searched, and sorted |
-| MessageBoardSection | `PATCH` | `/v1.0/message-board-sections/[messageBoardSectionId]` | Updates only the fields specified in the API call for a category |
-| MessageBoardSection | `PUT` | `/v1.0/message-board-sections/[messageBoardSectionId]` | Replaces all fields for the specified category with those provided in the API call |
-| MessageBoardSection | `DELETE` | `/v1.0/message-board-sections/[messageBoardSectionId]` | Deletes the specified category and returns a 204 if the operation succeeds |
+| Service             | HTTP Method | HTTP Endpoint                                          | Description                                                                                                               |
+|:--------------------|:------------|:-------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| MessageBoardSection | `POST`      | `/v1.0/sites/[siteId]/message-board-sections`          | Creates a new category with the details provided in the API call                                                          |
+| MessageBoardSection | `GET`       | `/v1.0/sites/[siteId]/message-board-sections`          | Returns a complete list of all categories in the specified site; results can be paginated, filtered, searched, and sorted |
+| MessageBoardSection | `PATCH`     | `/v1.0/message-board-sections/[messageBoardSectionId]` | Updates only the fields specified in the API call for a category                                                          |
+| MessageBoardSection | `PUT`       | `/v1.0/message-board-sections/[messageBoardSectionId]` | Replaces all fields for the specified category with those provided in the API call                                        |
+| MessageBoardSection | `DELETE`    | `/v1.0/message-board-sections/[messageBoardSectionId]` | Deletes the specified category and returns a 204 if the operation succeeds                                                |
 
 ### Sample MessageBoardThread APIs
 
-| Service | HTTP Method | HTTP Endpoint | Description |
-| :--- | :--- | :--- | :--- |
-| MessageBoardThread | `POST` | `/v1.0/sites/[siteId]/message-board-threads` | Creates a new thread with the details provided in the API call |
-| MessageBoardThread | `POST` | `/v1.0/message-board-sections/[messageBoardSectionId]/message-board-threads` | Creates a new thread within the specified category using the details provided in the API call |
-| MessageBoardThread | `GET` | `/v1.0/sites/[siteId]/message-board-threads` | Returns a complete list of all site threads that are not in a category; results can be paginated, filtered, searched, and sorted |
-| MessageBoardThread | `GET` | `/v1.0/message-board-sections/[messageBoardSectionId]/message-board-threads` | Returns a complete list of all threads in the specified category; results can be paginated, filtered, searched, and sorted |
-| MessageBoardThread | `PATCH` | `/v1.0/message-board-threads/[messageBoardThreadId]` | Updates only the fields specified in the API call for a thread |
-| MessageBoardThread | `PUT` | `/v1.0/message-board-threads/[messageBoardThreadId]` | Replaces all fields for the specified thread with those provided in the API call |
-| MessageBoardThread | `DELETE` | `/v1.0/message-board-threads/[messageBoardThreadId]` | Deletes the specified thread and returns a 204 if the operation succeeds |
+| Service            | HTTP Method | HTTP Endpoint                                                                | Description                                                                                                                      |
+|:-------------------|:------------|:-----------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
+| MessageBoardThread | `POST`      | `/v1.0/sites/[siteId]/message-board-threads`                                 | Creates a new thread with the details provided in the API call                                                                   |
+| MessageBoardThread | `POST`      | `/v1.0/message-board-sections/[messageBoardSectionId]/message-board-threads` | Creates a new thread within the specified category using the details provided in the API call                                    |
+| MessageBoardThread | `GET`       | `/v1.0/sites/[siteId]/message-board-threads`                                 | Returns a complete list of all site threads that are not in a category; results can be paginated, filtered, searched, and sorted |
+| MessageBoardThread | `GET`       | `/v1.0/message-board-sections/[messageBoardSectionId]/message-board-threads` | Returns a complete list of all threads in the specified category; results can be paginated, filtered, searched, and sorted       |
+| MessageBoardThread | `PATCH`     | `/v1.0/message-board-threads/[messageBoardThreadId]`                         | Updates only the fields specified in the API call for a thread                                                                   |
+| MessageBoardThread | `PUT`       | `/v1.0/message-board-threads/[messageBoardThreadId]`                         | Replaces all fields for the specified thread with those provided in the API call                                                 |
+| MessageBoardThread | `DELETE`    | `/v1.0/message-board-threads/[messageBoardThreadId]`                         | Deletes the specified thread and returns a 204 if the operation succeeds                                                         |
 
 ### Sample MessageBoardMessage APIs
 
-| Service | HTTP Method | HTTP Endpoint | Description |
-| :--- | :--- | :--- | :--- |
-| MessageBoardMessage | `POST` | `/v1.0/message-board-threads/[messageBoardThreadId]/message-board-messages` | Creates a new message in the specified thread with the detailed provided in the API call. |
-| MessageBoardMessage | `GET` | `/v1.0/message-board-threads/[messageBoardThreadId]/message-board-messages` | Returns a complete list of all messages in the specified thread; results can be paginated, filtered, searched, and sorted |
-| MessageBoardMessage | `PATCH` | `/v1.0/message-board-messages/[messageBoardMessageId]` | Updates only the fields specified in the API call for a message |
-| MessageBoardMessage | `PUT` | `/v1.0/message-board-messages/[messageBoardMessageId]` | Replaces all fields for the specified message with those provided in the API call |
-| MessageBoardMessage | `DELETE` | `/v1.0/message-board-messages/[messageBoardMessageId]` | Deletes the specified message and returns a 204 if the operation succeeds |
-
-## Examining the Sample cURL Scripts
-
-The following are representative examples of the tutorial's cURL commands.
-
-### MessageBoardSection_POST_ToSite.sh
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/curl/MessageBoardSection_POST_ToSite.sh
-   :language: bash
-```
-
-### MessageBoardSection_PUT_ById.sh
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/curl/MessageBoardSection_PUT_ById.sh
-   :language: bash
-```
-
-### MessageBoardSections_GET_FromSite.sh
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/curl/MessageBoardSections_GET_FromSite.sh
-   :language: bash
-```
-
-### MessageBoardSection_DELETE_ById.sh
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/curl/MessageBoardSection_DELETE_ById.sh
-   :language: bash
-```
-
-### MessageBoardThread_POST_ToSection.sh
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/curl/MessageBoardThread_POST_ToSection.sh
-   :language: bash
-```
-
-### MessageBoardMessage_POST_ToThread.sh
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/curl/MessageBoardMessage_POST_ToThread.sh
-   :language: bash
-```
-
-### MessageBoardMessage_POST_ToParent.sh
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/curl/MessageBoardMessage_POST_ToParent.sh
-   :language: bash
-```
-
-## Examining the Sample Java Classes
-
-The following are representative examples of the tutorial's Java commands.
-
-### MessageBoardSection_POST_ToSite.java
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/java/MessageBoardSection_POST_ToSite.java
-   :language: java
-   :lines: 4-31
-```
-
-### MessageBoardSection_PUT_ById.java
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/java/MessageBoardSection_PUT_ById.java
-   :language: java
-   :lines: 4-31
-```
-
-### MessageBoardSections_GET_FromSite.java
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/java/MessageBoardSections_GET_FromSite.java
-   :language: java
-   :lines: 6-28
-```
-
-### MessageBoardSection_DELETE_ById.java
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/java/MessageBoardSection_DELETE_ById.java
-   :language: java
-   :lines: 3-21
-```
-
-### MessageBoardThread_POST_ToSection.java
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/java/MessageBoardThread_POST_ToSection.java
-   :language: java
-   :lines: 4-32
-```
-
-### MessageBoardMessage_POST_ToThread.java
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/java/MessageBoardMessage_POST_ToThread.java
-   :language: java
-   :lines: 4-32
-```
-
-### MessageBoardMessage_POST_ToParent.java
-
-```{literalinclude} ./message-boards-api-basics/resources/liferay-y3a6.zip/java/MessageBoardMessage_POST_ToParent.java
-   :language: java
-   :lines: 4-33
-```
+| Service             | HTTP Method | HTTP Endpoint                                                               | Description                                                                                                               |
+|:--------------------|:------------|:----------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| MessageBoardMessage | `POST`      | `/v1.0/message-board-threads/[messageBoardThreadId]/message-board-messages` | Creates a new message in the specified thread with the detailed provided in the API call.                                 |
+| MessageBoardMessage | `GET`       | `/v1.0/message-board-threads/[messageBoardThreadId]/message-board-messages` | Returns a complete list of all messages in the specified thread; results can be paginated, filtered, searched, and sorted |
+| MessageBoardMessage | `PATCH`     | `/v1.0/message-board-messages/[messageBoardMessageId]`                      | Updates only the fields specified in the API call for a message                                                           |
+| MessageBoardMessage | `PUT`       | `/v1.0/message-board-messages/[messageBoardMessageId]`                      | Replaces all fields for the specified message with those provided in the API call                                         |
+| MessageBoardMessage | `DELETE`    | `/v1.0/message-board-messages/[messageBoardMessageId]`                      | Deletes the specified message and returns a 204 if the operation succeeds                                                 |
 
 ## Related Topics
 
-* [Message Boards](../../../collaboration-and-social/message-boards.md)
-* [Message Boards Configuration Reference](../user-guide/message-boards-configuration-reference.md)
+- [Message Boards](../../../collaboration-and-social/message-boards.md)
+- [Message Boards Configuration Reference](../user-guide/message-boards-configuration-reference.md)

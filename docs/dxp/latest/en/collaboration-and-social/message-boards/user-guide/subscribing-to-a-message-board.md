@@ -7,32 +7,32 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Subscribing to a Message Board
 
-Users can receive email updates and in-product notifications by subscribing to a Message Board. By default, users are automatically subscribed to any threads they create and can opt in to subscribe to categories or specific threads via email or RSS feed.
+Users can receive email updates and in-product notifications by subscribing to a message board. By default, users are subscribed automatically to any threads they create and can opt in to subscribe to categories or specific threads via email or RSS feed.
 
 ## Subscribing to a Category or Thread
 
-To subscribe to a thread or category:
+1. On the *Message Boards* widget (on a site page), click *Actions* (![Actions icon](../../../images/icon-actions.png)) next to a category/thread (in this example, *Category 1*).
 
-1. On the _Message Boards_ widget (on a site page), click the _Actions_ icon next to a Category or Thread (in this example, _Category 1_)
-1. Click _Subscribe_.
+1. Click *Subscribe*.
 
-    ![Subscribing to a Category](./subscribing-to-a-message-board/images/01.png)
+   ![Use the subscribe action to subscribe to a category/thread.](./subscribing-to-a-message-board/images/01.png)
 
-The user has now subscribed to _Category 1_. The user will be notified of any changes, such as new threads and subcategories being created under _Category 1_.
+The user has now subscribed to *Category 1*. The user is notified of any changes, such as new threads and subcategories being created under *Category 1*.
 
 To see which categories and threads you have subscribed to:
 
-1. On the _Message Boards_ widget (on a site page), click _My Subscriptions_.
+1. On the *Message Boards* widget, select the *My Subscriptions* tab.
 
-    ![Managing your subscriptions](./subscribing-to-a-message-board/images/03.png)
+   ![Managing your subscriptions](./subscribing-to-a-message-board/images/02.png)
 
 ## Subscribing using RSS Feeds
 
-Message Boards can be published as [RSS](https://en.wikipedia.org/wiki/RSS) feeds. RSS for _Message Boards_ are enabled by default and Liferay DXP supports RSS 1.0, RSS 2.0, or Atom 1.0.
+Message Boards can be published as [RSS](https://en.wikipedia.org/wiki/RSS) feeds. RSS for *Message Boards* are enabled by default and Liferay DXP supports RSS 1.0, RSS 2.0, or Atom 1.0.
 
 ## Related Topics
 
-* [Configuring a Message Boards Category Mailing List](./configuring-a-message-boards-category-mailing-list.md)
-* [Configuring Mail](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail)
+- [Configuring a Message Boards Category Mailing List](./configuring-a-message-boards-category-mailing-list.md)
+- [Configuring Mail](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)

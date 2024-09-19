@@ -11,10 +11,7 @@ Before beginning deployment in Liferay PaaS, developers planning to create modul
 
 To set up a local environment for development with Liferay Cloud, the following are required:
 
-- [JDK 1.8 or JDK 11](http://www.oracle.com/technetwork/java/javase/downloads/index.html): required for running Liferay instances locally
-
-  !!! important
-      JDK 9 and JDK 10 are unsupported. Please see the latest [Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for more information.
+- [Java (using a supported JDK version)](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-Quarterly-Releases-Compatibility-Matrix): required for running Liferay instances locally
 
 - [Gradle 4+](http://www.gradle.org/downloads): used to run any of various build commands for Liferay DXP and Liferay Cloud
 

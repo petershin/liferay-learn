@@ -11,9 +11,9 @@ taxonomy-category-names:
 
 ## Prerequisites
 
-1. Java JDK 8
+1. A [supported version of Java](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-Quarterly-Releases-Compatibility-Matrix).
 
-1. Google Chrome
+1. Google Chrome.
 
 1. [Gradle](https://gradle.org/install/) or [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html#sec:adding_wrapper) 6.6.1 or higher.
 

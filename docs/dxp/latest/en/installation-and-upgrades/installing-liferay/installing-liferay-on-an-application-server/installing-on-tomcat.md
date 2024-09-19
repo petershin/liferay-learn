@@ -24,10 +24,7 @@ No matter how you configure Tomcat, you must also download and install these fil
 - OSGi Dependencies ZIP file
 - Dependencies ZIP file (DXP 7.3 and earlier)
 
-As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Portal requires a Java JDK 11, 17, or 21 (prior versions support JDKs 8 and 11).
-
-!!! note
-    See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../reference/jvm-configuration.md) for recommended JVM settings.
+Liferay DXP/Portal requires a [supported Java version](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-Quarterly-Releases-Compatibility-Matrix) to run. See [JVM Configuration](../../reference/jvm-configuration.md) for recommended settings.
 
 The Tomcat server parent folder is [*Liferay Home*](../../reference/liferay-home.md). `$TOMCAT_HOME` refers to Tomcat server folder. It is usually named `tomcat-[version]` or `apache-tomcat-[version]`.
 

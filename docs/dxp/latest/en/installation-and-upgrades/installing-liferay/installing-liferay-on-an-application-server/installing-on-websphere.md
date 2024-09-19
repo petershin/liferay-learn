@@ -32,7 +32,7 @@ The following files are required to install Liferay DXP on the WebSphere applica
 - OSGi Dependencies ZIP file
 - Dependencies ZIP file (DXP 7.3 and earlier)
 
-Liferay DXP requires a Java JDK 8 or 11. See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) to choose a JDK. See [JVM Configuration](../../reference/jvm-configuration.md) for recommended settings.
+Liferay DXP requires a [supported Java version](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-Quarterly-Releases-Compatibility-Matrix). See [JVM Configuration](../../reference/jvm-configuration.md) for recommended settings.
 
 The [`[Liferay Home]`](../../reference/liferay-home.md) folder is where Liferay DXP stores and manages files and folders required to function. On WebSphere, the `[Liferay Home]` folder is typically `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`.
 

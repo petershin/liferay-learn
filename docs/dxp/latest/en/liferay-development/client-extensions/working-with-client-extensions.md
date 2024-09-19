@@ -24,7 +24,7 @@ Using client extensions, you can extend Liferay without deploying OSGi modules. 
 
 Install the three prerequisites for developing client extensions:
 
-1. Java 8 or JDK 11.
+1. A [supported version of Java](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-Quarterly-Releases-Compatibility-Matrix).
 
     ```{note}
     Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.

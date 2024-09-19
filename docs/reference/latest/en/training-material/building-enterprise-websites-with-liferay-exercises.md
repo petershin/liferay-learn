@@ -6,13 +6,9 @@ toc:
   - ./building-enterprise-websites-with-liferay-exercises/day-3-exercises-for-building-enterprise-websites-with-liferay.md
 ---
 
-# Building Enterprise Websites with Liferay exercises
+# Building Enterprise Websites with Liferay Exercises
 
-Unleash your Liferay DXP potential with our immersive course, Building Enterprise Websites with Liferay. Designed to equip you with the skills and knowledge needed to create robust and scalable web solutions, this course delves into a wide range of topics, from foundational concepts to advanced techniques. Through engaging exercises and real-world examples, you'll gain hands-on experience and learn best practices that will elevate your Liferay development journey.
-
-Dive into the exercises in this section to solidify your learnings from the Building Enterprise Websites with Liferay course.
-
-Check out the full course content here: [Building Enterprise Websites with Liferay](../../../../../docs/courses/latest/en/building-enterprise-websites-with-liferay.md).
+These exercises supplement the Building Enterprise Websites with Liferay video training and provide an opportunity to solidify your learning. Through hands-on experience and real-world examples, you'll gain the skills and knowledge needed to create robust and scalable Liferay solutions.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

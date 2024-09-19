@@ -1,9 +1,9 @@
 import com.liferay.headless.delivery.client.resource.v1_0.BlogPostingResource;
 
-public class BlogPostingsSubscription_PUT_ById {
+public class BlogPostings_PUT_Unsubscribe_BySiteId {
 
 	/**
-	 * java -classpath .:* -DsiteId=1234 BlogPostingsSubscription_PUT_ById
+	 * java -classpath .:* -DsiteId=1234 BlogPostings_PUT_Unsubscribe_BySiteId
 	 */
 	public static void main(String[] args) throws Exception {
 		BlogPostingResource.Builder builder = BlogPostingResource.builder();
@@ -12,7 +12,7 @@ public class BlogPostingsSubscription_PUT_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		blogPostingResource.putSiteBlogPostingSubscribe(
+		blogPostingResource.putSiteBlogPostingUnsubscribe(
 			Long.valueOf(System.getProperty("siteId")));
 	}
 

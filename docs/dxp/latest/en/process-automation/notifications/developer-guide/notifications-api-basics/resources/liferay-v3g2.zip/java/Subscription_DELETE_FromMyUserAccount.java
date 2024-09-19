@@ -1,10 +1,9 @@
-import com.liferay.headless.admin.user.client.pagination.Pagination;
 import com.liferay.headless.admin.user.client.resource.v1_0.SubscriptionResource;
 
-public class Subscriptions_GET_FromMyUser {
+public class Subscription_DELETE_FromMyUserAccount {
 
 	/**
-	 * java -classpath .:* Subscriptions_GET_FromMyUser
+	 * java -classpath .:* -DsubscriptionId=1234 Subscription_DELETE_FromMyUserAccount
 	 */
 	public static void main(String[] args) throws Exception {
 		SubscriptionResource.Builder builder = SubscriptionResource.builder();
@@ -13,9 +12,8 @@ public class Subscriptions_GET_FromMyUser {
 			"test@liferay.com", "learn"
 		).build();
 
-		System.out.println(
-			subscriptionResource.getMyUserAccountSubscriptionsPage(
-				null, Pagination.of(1, 10)));
+		subscriptionResource.deleteMyUserAccountSubscription(
+			Long.valueOf(System.getProperty("subscriptionId")));
 	}
 
 }

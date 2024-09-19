@@ -9,6 +9,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Developer Guide
 
-* [Message Boards API Basics](./developer-guide/message-boards-api-basics.md)
+Manage message board categories, threads, and messages programmatically through the Message Boards API. In the [Message Boards API Basics](./developer-guide/message-boards-api-basics.md) article, learn how to use the API, including sample cURL commands and Java classes to interact with the `MessageBoardSection`, `MessageBoardThread`, and `MessageBoardMessage` services.

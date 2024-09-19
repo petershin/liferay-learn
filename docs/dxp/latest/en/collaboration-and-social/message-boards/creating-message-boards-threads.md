@@ -76,7 +76,7 @@ To select an existing asset in the portal (e.g., a media file, blog post, etc.) 
 
 1. Select one or more assets and click *Done*.
 
-   You can disconnect the asset from the thread by clicking *Remove* (![Remove icon](../../../images/icon-delete.png)) on the right.
+   You can disconnect the asset from the thread by clicking *Remove* (![Remove icon](../../images/icon-delete.png)) on the right.
 
 The thread post is linked to an existing asset.
 
@@ -94,7 +94,7 @@ Message Boards Threads offer additional features beyond discussions. The More Se
 
    The reply that best answers the question can be marked as the answer.
 
-   To select a reply as the answer, click *Actions* (![Actions](../../../images/icon-actions.png)) next to the answer and select *Mark as an Answer*.
+   To select a reply as the answer, click *Actions* (![Actions](../../images/icon-actions.png)) next to the answer and select *Mark as an Answer*.
 
    ![Mark the best answer to highlight it for all users.](./creating-message-boards-threads/images/02.png)
 

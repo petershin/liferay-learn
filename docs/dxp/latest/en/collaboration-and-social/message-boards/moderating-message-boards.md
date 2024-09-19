@@ -16,7 +16,7 @@ Message boards include features that enable effective forum moderation. This inc
 
 Site administrators can lock a thread and prevent any further responses.
 
-To lock a thread, click (![Actions](../../../images/icon-actions.png)) next to the thread to be locked and select *Lock*.
+To lock a thread, click (![Actions](../../images/icon-actions.png)) next to the thread to be locked and select *Lock*.
 
 Locked threads are marked as Locked and users can't reply to them anymore. To unlock a thread, click (![Actions](../../../images/icon-actions.png)) next to the thread and select *Unlock*.
 
@@ -28,7 +28,7 @@ Moderators can move categories and threads to different locations including the 
 
 To move a category or thread,
 
-1. Click *Actions* (![Actions](../../../images/icon-actions.png)) next to the category/thread you want to move and select *Move*. This opens the Move Category form.
+1. Click *Actions* (![Actions](../../images/icon-actions.png)) next to the category/thread you want to move and select *Move*. This opens the Move Category form.
 
 1. In the Parent Category field, click *Select* to choose a new location.
 
@@ -63,7 +63,7 @@ Manage user access by banning users or reinstating those who have been previousl
 
 1. Click the thread containing the user to be banned.
 
-1. Click (![Actions](../../../images/icon-actions.png)) next to the user's post and select *Ban this User*.
+1. Click (![Actions](../../images/icon-actions.png)) next to the user's post and select *Ban this User*.
 
 Banned users get an error message stating they were banned by the moderator if they try to access the message board.
 
@@ -71,13 +71,13 @@ Banned users get an error message stating they were banned by the moderator if t
 
 To reinstate a banned user,
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Message Boards*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Message Boards*.
 
    If there is a page scope, select the scope from the *scope selector*.
 
 1. Select the *Banned Users* tab.
 
-1. Click Actions (![Actions](../../../images/icon-actions.png)) next to the user and select *Unban This User*.
+1. Click Actions (![Actions](../../images/icon-actions.png)) next to the user and select *Unban This User*.
 
    ![Reinstate a banned user through the Message Boards app.](./moderating-message-boards/images/05.png)
 
@@ -99,7 +99,7 @@ To review flagged threads,
 
 Moderators have the option to delete the flagged reply.
 
-1. Click *Actions* (![Actions](../../../images/icon-actions.png)) next to the reply to be deleted and select *Delete*.
+1. Click *Actions* (![Actions](../../images/icon-actions.png)) next to the reply to be deleted and select *Delete*.
 
 1. Click *OK* to confirm the deletion.
 

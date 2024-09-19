@@ -12,9 +12,9 @@ taxonomy-category-names:
 
 Configuration settings for the *Message Boards* app are divided in [Settings](#settings) and [Notifications](#notifications). To access the *Message Boards* app's configuration screen,
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Message Boards*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Message Boards*.
 
-1. Click *Options* (![Options icon](../../../images/icon-options.png)) in the top right corner &rarr; *Configuration*.
+1. Click *Options* (![Options icon](../../images/icon-options.png)) in the top right corner &rarr; *Configuration*.
 
    ![Access the configuration screen through the Message Boards application.](./message-boards-configuration-reference/images/01.png)
 

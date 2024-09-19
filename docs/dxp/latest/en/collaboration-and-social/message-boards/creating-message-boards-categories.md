@@ -49,7 +49,7 @@ New categories appear on the message board's home screen. The list displays the 
 
 ## Modifying Permissions
 
-1. Click *Actions* (![Actions](../../../images/icon-actions.png)) next to the *Category* and select *Permissions*.
+1. Click *Actions* (![Actions](../../images/icon-actions.png)) next to the *Category* and select *Permissions*.
 
 1. Check the boxes to grant permissions to the desired roles.
 
@@ -80,7 +80,7 @@ The subcategory now appears on the board.
 
 Administrators can also move and merge categories.
 
-1. Click *Actions* (![Actions](../../../images/icon-actions.png)) for the category you want to move and select *Move*.
+1. Click *Actions* (![Actions](../../images/icon-actions.png)) for the category you want to move and select *Move*.
 
    This brings up the Move Category form.
 

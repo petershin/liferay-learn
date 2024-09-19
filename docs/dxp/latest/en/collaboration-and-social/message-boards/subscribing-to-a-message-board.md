@@ -14,7 +14,7 @@ Users can receive email updates and in-product notifications by subscribing to a
 
 ## Subscribing to a Category or Thread
 
-1. On the *Message Boards* widget (on a site page), click *Actions* (![Actions icon](../../../images/icon-actions.png)) next to a category/thread (in this example, *Category 1*).
+1. On the *Message Boards* widget (on a site page), click *Actions* (![Actions icon](../../images/icon-actions.png)) next to a category/thread (in this example, *Category 1*).
 
 1. Click *Subscribe*.
 

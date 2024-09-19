@@ -22,7 +22,7 @@ Before configuring the Message Boards app's email lists, [configure a mail serve
 
    Alternatively, access the Message Boards application by opening the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expanding *Content & Data*, and selecting *Message Boards*.
 
-1. On the *Message Boards* widget, click *Actions* (![Actions](../../../images/icon-actions.png)) next to a [category](./creating-message-boards-categories.md) (in this example, *Assignment Help*).
+1. On the *Message Boards* widget, click *Actions* (![Actions](../../images/icon-actions.png)) next to a [category](./creating-message-boards-categories.md) (in this example, *Assignment Help*).
 
    ![Use the Edit action to configure the mailing list.](./configuring-a-message-boards-category-mailing-list/images/01.png)
 
@@ -38,18 +38,18 @@ Before configuring the Message Boards app's email lists, [configure a mail serve
 
 1. Enter the following information:
 
-| Field         | Example                   | Description                                                                                                                                            |
-|:--------------|:--------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Email Address | `discussions@course.com` | The email address or alias dedicated to the message board category. Users can send emails to this address, and it automatically posts to the category. |
-| Protocol      | `POP`                     | The email protocol used for receiving messages.                                                                                                        |
-| Server Name   | `mail.course.com`         | The hostname of the mail server responsible for handling incoming emails.                                                                              |
-Server Port | `110` | The port used by the mail server for the specified protocol (e.g., port 110 for POP). |
-| Use a Secure Network Connection | Check if applicable | If selected, this ensures that the connection to the mail server is encrypted. |
-| User Name | `discussions@course.com` | The email address used to authenticate to the mail server for receiving emails. |
-| Password | `*****` | The password for the email account used to access the mail server. |
-| Read Interval (minutes) | `5` | How frequently (in minutes) the system checks the mail server for new emails to post to the category. |
-| Email Address (Outgoing) | `discussions@course.com` | The email address used for sending outgoing emails from the message board category to users subscribed to it. This can be the same as the incoming email address. |
-| Use Custom Outgoing Server | Leave blank if using the global default mail server. | Specify a different mail server for outgoing emails if the default global server is not used. |
+| Field                           | Example                                              | Description                                                                                                                                                       |
+|:--------------------------------|:-----------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Email Address                   | `discussions@course.com`                             | The email address or alias dedicated to the message board category. Users can send emails to this address, and it automatically posts to the category.            |
+| Protocol                        | `POP`                                                | The email protocol used for receiving messages.                                                                                                                   |
+| Server Name                     | `mail.course.com`                                    | The hostname of the mail server responsible for handling incoming emails.                                                                                         |
+| Server Port                     | `110`                                                | The port used by the mail server for the specified protocol (e.g., port 110 for POP).                                                                             |
+| Use a Secure Network Connection | Check if applicable                                  | If selected, this ensures that the connection to the mail server is encrypted.                                                                                    |
+| User Name                       | `discussions@course.com`                             | The email address used to authenticate to the mail server for receiving emails.                                                                                   |
+| Password                        | `*****`                                              | The password for the email account used to access the mail server.                                                                                                |
+| Read Interval (minutes)         | `5`                                                  | How frequently (in minutes) the system checks the mail server for new emails to post to the category.                                                             |
+| Email Address (Outgoing)        | `discussions@course.com`                             | The email address used for sending outgoing emails from the message board category to users subscribed to it. This can be the same as the incoming email address. |
+| Use Custom Outgoing Server      | Leave blank if using the global default mail server. | Specify a different mail server for outgoing emails if the default global server is not used.                                                                     |
 
    ![Configuring a categories mailing list](./configuring-a-message-boards-category-mailing-list/images/02.png)
 

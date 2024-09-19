@@ -5,6 +5,7 @@ toc:
   - ./liferay-university.md
   - "[Faces](https://docs.liferay.com/faces/3.2/vdldoc)"
   - ./style-guide.md
+  - ./training-material.md
 uuid: d495472c-721f-4e98-8727-d7b928fb8832
 ---
 
@@ -43,5 +44,9 @@ uuid: d495472c-721f-4e98-8727-d7b928fb8832
 [Liferay Conventions](./style-guide/liferay-conventions.md)
 [Liferay Phraseology](./style-guide/liferay-phraseology.md)
 [Liferay Documentation Format](./style-guide/liferay-format.md)
+:::
+
+:::{grid-item-card} Training Material
+:link: ./training-material.md
 :::
 ::::

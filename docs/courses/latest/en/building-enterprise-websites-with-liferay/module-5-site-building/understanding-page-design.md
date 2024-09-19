@@ -63,7 +63,13 @@ In Liferay, designing page headers and footers involves creating master page tem
 
 Liferay provides a robust set of styling tools for both technical and non-technical users. Together, they can help ensure a consistent visual identity and user experience across all website elements, including fonts, colors, logos, and layouts. Streamline development and integrate existing styles for a faster, more efficient design process. Core Liferay concepts related to site styling include themes, style books, frontend client extensions, and page element configurations.
 
+<!--
+
 ![Liferay provides a robust set of styling tools.](./understanding-page-design/images/09.png)
+
+^ Add diagram representing Liferay's styling tools (i.e., Themes, Styles Books, Frontend CX, and individual page element styling). The diagram could be something similar to the [Themes](https://learn.liferay.com/w/dxp/liferay-development/customizing-liferays-look-and-feel/themes) article in our official documentation, however it should fit Liferay's new "styling story". The diagram also doesn't necessarily need to be a pyramid.
+
+-->
 
 ### Themes
 

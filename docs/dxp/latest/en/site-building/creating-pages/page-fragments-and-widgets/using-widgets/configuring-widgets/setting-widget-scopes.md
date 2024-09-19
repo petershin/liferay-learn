@@ -48,4 +48,4 @@ You can only delete a scope by deleting its associated page.
 ## Related Topics
 
 * [Exporting/Importing Widget Data](./exporting-importing-widget-data.md)
-* [Scoping Your Message Boards](../../../../../collaboration-and-social/message-boards/user-guide/scoping-your-message-boards.md)
+* [Scoping Your Message Boards](../../../../../collaboration-and-social/message-boards/scoping-your-message-boards.md)

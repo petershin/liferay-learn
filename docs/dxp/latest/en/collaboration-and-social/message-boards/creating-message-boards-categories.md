@@ -13,11 +13,13 @@ taxonomy-category-names:
 Message Boards Categories organize threads into specific topics, making it easier for users to find and participate in discussions relevant to their interests.
 
 !!! important
-    Only authenticated users with at least the Add Category [permission](./message-boards-permissions-reference.md) can create categories.
+    Only authenticated users with at least the Add Category and Add Subcategory [permissions](./message-boards-permissions-reference.md) can create categories.
 
 ## Adding Categories
 
 1. Access the page where the Message Boards widget is located.
+
+   Alternatively, access the Message Boards application by opening the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expanding *Content & Data*, and selecting *Message Boards*. In the next step, click *New* &rarr; *Category*.
 
 1. On the Message Boards widget, click *Add Category*.
 

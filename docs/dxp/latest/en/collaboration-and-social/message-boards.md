@@ -1,6 +1,14 @@
 ---
 toc:
-  - ./message-boards/user-guide.md
+  - ./message-boards/creating-message-boards-categories.md
+  - ./message-boards/creating-message-boards-threads.md
+  - ./message-boards/moderating-message-boards.md
+  - ./message-boards/subscribing-to-a-message-board.md
+  - ./message-boards/configuring-a-message-boards-category-mailing-list.md
+  - ./message-boards/scoping-your-message-boards.md
+  - ./message-boards/message-boards-widget-ui-reference.md
+  - ./message-boards/message-boards-configuration-reference.md
+  - ./message-boards/message-boards-permissions-reference.md
   - ./message-boards/developer-guide.md
 uuid: fcdb1a27-c25a-417d-8a2c-bf4d2a15aa45
 taxonomy-category-names:
@@ -15,11 +23,11 @@ taxonomy-category-names:
 
 Liferay DXP's Message Boards application is a forum application that can be added to site pages.
 
-You can organize topics by creating [categories](./message-boards/user-guide/creating-message-boards-categories.md) and [threads](./message-boards/user-guide/creating-message-boards-threads.md), making it easier to manage conversations. [Moderation](./message-boards/user-guide/moderating-message-boards.md) tools help maintain discussions, with options to set [permissions](./message-boards/user-guide/message-boards-permissions-reference.md) for different user roles.
+You can organize topics by creating [categories](./message-boards/creating-message-boards-categories.md) and [threads](./message-boards/creating-message-boards-threads.md), making it easier to manage conversations. [Moderation](./message-boards/moderating-message-boards.md) tools help maintain discussions, with options to set [permissions](./message-boards/message-boards-permissions-reference.md) for different user roles.
 
-The application also supports [configuring mailing lists for message board categories](./message-boards/user-guide/configuring-a-message-boards-category-mailing-list.md), so users can follow and respond to discussions via email.
+The application also supports [configuring mailing lists for message board categories](./message-boards/configuring-a-message-boards-category-mailing-list.md), so users can follow and respond to discussions via email.
 
-Each [message board can be scoped](./message-boards/user-guide/scoping-your-message-boards.md) to different sites, giving administrators flexibility in how forums are managed across various contexts.
+Each [message board can be scoped](./message-boards/scoping-your-message-boards.md) to different sites, giving administrators flexibility in how forums are managed across various contexts.
 
 ![The Message Boards application is a forum application that can be added to site pages.](./message-boards/images/01.png)
 

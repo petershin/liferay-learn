@@ -23,6 +23,8 @@ Threads can be created at the root level of the message board itself and within 
 
 1. Access the page where the Message Boards widget is located.
 
+   Alternatively, access the Message Boards application by opening the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expanding *Content & Data*, and selecting *Message Boards*. In the next step, click *New* &rarr; *Thread*.
+
 1. On the Message Boards widget, click *New Thread*. The Add Message form appears.
 
 1. Enter a title in the *Subject* field.

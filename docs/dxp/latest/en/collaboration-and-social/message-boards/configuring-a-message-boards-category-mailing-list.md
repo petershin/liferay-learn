@@ -18,7 +18,9 @@ Before configuring the Message Boards app's email lists, [configure a mail serve
 
 ## Adding a Mailing List to a Message Boards Category
 
-1. Access the page where the Message Boards widget is.
+1. Access the page where the Message Boards widget is located.
+
+   Alternatively, access the Message Boards application by opening the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expanding *Content & Data*, and selecting *Message Boards*.
 
 1. On the *Message Boards* widget, click *Actions* (![Actions](../../../images/icon-actions.png)) next to a [category](./creating-message-boards-categories.md) (in this example, *Assignment Help*).
 

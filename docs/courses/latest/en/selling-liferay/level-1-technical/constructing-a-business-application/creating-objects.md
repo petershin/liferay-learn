@@ -67,9 +67,16 @@ This is really important because without the Objects feature all of these steps 
 
 ## Creating a UI for Objects
 
+Once the data model for the business application has been defined, the next step is to create a user interface so that the object can be deployed to a page to allow site users can create object entries. Possible methods for this include:
+
+* Using Liferay's Widget framework
+* Using the Form Container fragment
+
+### Creating a UI with Liferay's Widget Framework
+
 ![Once an object is published it can be deployed to any page exactly the same way as any Widget is.](./creating-objects/images/03.png)
 
-Once the data model for the business application has been defined, the next step is to create a user interface using Liferay's widget framework. This involves defining the widgets that will be used to display and manage the data in the application, as well as any custom user interface components that are needed for the implementation.
+One approach to create a user interface is to use Liferay's widget framework. This involves defining the widgets that will be used to display and manage the data in the application, as well as any custom user interface components that are needed for the implementation.
 
 **Adding the Widget to Pages**
 
@@ -81,9 +88,24 @@ Liferay objects are integrated with the Forms application, so forms can be desig
 
 Please see [Using Forms with Objects](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects#using-forms-with-objects) for more information.
 
+### Creating a UI with the Form Container Fragment
+
+![A newer approach for allowing site users to create object entries is to use the Form Container fragment.](./creating-objects/images/04.png)
+
+Liferay includes a series of dedicated Form Fragments that allow the creation of object forms in content pages. 
+The simplest way to build a form in this way is to add a Form Container fragment to a content page or page template and map it to a published object.
+
+Once deployed it is possible to use the form fragments to modify the look and feel of the form. The Form Container automatically populates fragments mapped to each object field, but these can also be organized, removed, or configured manually. 
+
+Once the page is published, end users can create Object Entries by interacting with the form.
+
+It is also possible to create multi-step applications where users can navigate through different steps, such as entering employee details, assigning a car, and confirming the entries.
+
+Please see [Using Fragments to Build Forms](https://learn.liferay.com/w/dxp/liferay-development/objects/using-fragments-to-build-forms) for more information.
+
 ## Headless Objects
 
-![Headless APIs for Objects are created automatically and can be browsed using the API Explorer.](./creating-objects/images/04.png)
+![Headless APIs for Objects are created automatically and can be browsed using the API Explorer.](./creating-objects/images/05.png)
 
 ```{note}
 Discussions about Headless APIs are best included in a demo only if the audience is suitably, and primarily, technical in nature. The primary benefit of Objects is the ability to build business applications without the need for development. Discussing Headless APIs with a mainly business audience can cause confusion and dilute this message.
@@ -100,7 +122,7 @@ For more information on Liferay’s headless APIs in general see [Consuming REST
 
 ## Advanced Features
 
-![State Manager provides a way to define workflows for Liferay Objects.](./creating-objects/images/05.png)
+![State Manager provides a way to define workflows for Liferay Objects.](./creating-objects/images/06.png)
 
 Even with the additional learning and potential deeper-dive demo steps outlined above, only the surface of what can be achieved with Objects has been scratched. Enough information has been included to provide an opportunity to create an Object for a demo. 
 

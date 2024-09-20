@@ -157,7 +157,16 @@ The info sidebar provides access to actions and metadata for your selected asset
 
 ![Click the Info button to access the content info sidebar.](./content-dashboard-interface/images/09.png)
 
+The Content Info sidebar is split into four tabs:
+
+- [Details](#asset-details)
+- [Performance](#content-performance)
+- [Categorizations](#categorizations)
+- [Versions](#version-history)
+
 ### Asset Details
+
+The Details tab is selected automatically when you open the Content Info sidebar. It contains a list of metadata for the selected asset. The data displayed depends on the type of asset.
 
 **Web Content**
 
@@ -209,12 +218,33 @@ The info sidebar provides access to actions and metadata for your selected asset
 - Creation Date
 - Modified Date
 - ID
+- Latest Version URL
 
 ![The content info sidebar provides metadata and actions for your content.](./content-dashboard-interface/images/10.png)
 
 ### Content Performance
 
 {bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA137+`
+
+The Performance tab contains various metrics for the selected asset. The data displayed depends on the type of asset.
+
+**Web Content**
+
+- Views: The number of times the selected web content was viewed through an asset publisher.
+
+**Blog Entries**
+
+- Views: The number of times the selected blog entry was viewed through an asset publisher.
+
+- Comments: The number of comments on the selected blog entry.
+
+**Documents and Media**
+
+- Downloads: The number of times the selected document was downloaded through an asset publisher.
+
+- Previews: The number of times the selected document was previewed through an asset publisher.
+
+- Comments: The number of comments on the selected document.
 
 ### Categorizations
 

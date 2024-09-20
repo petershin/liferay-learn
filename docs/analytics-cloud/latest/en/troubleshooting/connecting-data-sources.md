@@ -15,18 +15,16 @@ Misconfigured environments or data sources can prevent or disrupt access to Life
 
 Ensure that the DXP installation has internet access to our Analytic Cloud server by adding the following URLs to an allow list:
 
-* `https://analytics.liferay.com`
-* `https://osbasahpublisher-{regionKey}.lfr.cloud`
-* `https://osbasahbackend-{regionKey}.lfr.cloud`
-* `https://analytics-js-cdn.liferay.com`
+- `https://analytics.liferay.com`
+- `https://osbasahpublisher-{regionKey}.lfr.cloud`
+- `https://osbasahbackend-{regionKey}.lfr.cloud`
+- `https://analytics-js-cdn.liferay.com`
 
-```{note}
-Note, the {regionKey} is based on the initial selection during workspace setup (i.e. ac-southamericaeast1, ac-europewest2, ac-europewest3, or ac-uswest1).
-```
+!!! note
+    The {regionKey} is based on the initial selection during workspace setup (i.e. ac-southamericaeast1, ac-europewest2, ac-europewest3, ac-uswest1, or ac-asiasouth1).
 
-```{important}
-For some use cases, such as analyzing corporate intranet usage, your visitors’ browsers are also behind a firewall. In this scenario, you must ensure that the corporate office network also allows outbound access for the above URLs.
-```
+!!! important
+    For some use cases, such as analyzing corporate intranet usage, your visitors’ browsers are also behind a firewall. In this scenario, you must ensure that the corporate office network also allows outbound access for the above URLs.
 
 ## Validating the Connection to Analytics Cloud
 
@@ -44,11 +42,11 @@ Analytics events are sent directly from the client's browser. To validate data i
 
     ![Validating the connection to Analytics Cloud.](connecting-data-sources/images/01.png)
 
-    If you are able to see this request that means your website is sending analytics data to your Analytics Cloud workspace. Check the request payload and verify that there is a variable called `channelId`. 
+    If you are able to see this request that means your website is sending analytics data to your Analytics Cloud workspace. Check the request payload and verify that there is a variable called `channelId`.
 
 ### Contacts Data
 
-DXP will sends contact information of your logged in users to Analytics Cloud as individual profile data. This data is sent directly from the DXP server.
+DXP sends contact information of your logged in users to Analytics Cloud as individual profile data. This data is sent directly from the DXP server.
 
 To verify that contacts data are being sent, check the DXP server logs for the messages similar to the following:
 
@@ -72,7 +70,7 @@ For Analytics events, you should be able to see visitors metric in the 24 hours 
 
 ![Analytics Data coming in over a period of time.](connecting-data-sources/images/02.png)
 
-Other session-related data such as session duration, and bounce rate etc, will have to wait until the visitor session ends. Visitor sessions are considered over when there are 30 minutes of inactivity, or at 00:00:00 UTC -- whichever comes first.
+Other session-related data, such as session duration and bounce rate, must wait until the visitor session ends. Visitor sessions are considered over when there are 30 minutes of inactivity, or at 00:00:00 UTC -- whichever comes first.
 
 Individual Profiles take longer to process and become available over time.
 
@@ -80,19 +78,15 @@ Individual Profiles take longer to process and become available over time.
 
 **Error Message:** `Unsupported version. This method of connection does not support the data source Liferay version. Make sure you are connecting to Liferay 7.0/7.1 instance or try a different method of connection.`
 
-```{important}
-Your Liferay DXP installation must meet the following fix pack minimum requirements:
+!!! important
+    Your Liferay DXP installation must meet the following fix pack minimum requirements:
 
-  * 7.4+
-  * 7.3 Fix Pack 1
-  * 7.2 Fix Pack 11
-  * 7.1 Fix Pack 22
-  * 7.0 Fix Pack 98
-```
+    - 7.4 2024.Q1+
+    - 7.3 U30+ (hotfix required)
 
 **Resolution:**
 
-1. Make sure to [connect with a Liferay DXP 7.0 or 7.1 instance].
+1. Make sure to [connect with a Liferay DXP 7.3 or 7.4 instance].
 
 1. Follow the steps for [adding a Liferay DXP data source](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
@@ -104,18 +98,18 @@ When [Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-c
 
 ## Syncing Users Taking a Long Time
 
-Liferay DXP's batch engine is used for syncing users. Increase the batch size if syncing a very large number of users. In Liferay DXP, navigate to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_. Set the _Export Batch Size_ and _Import Batch Size_ to `1000`.
+Liferay DXP's batch engine is used for syncing users. Increase the batch size if syncing a large number of users. In Liferay DXP, navigate to *Global Menu* &rarr; *Instance Settings* &rarr; *Batch Engine*. Set the *Export Batch Size* and *Import Batch Size* to `1000`.
 
 ![Increase batch size in Liferay DXP.](./connecting-data-sources/images/03.png)
 
 ## Enabling Localized URLs for Site Pages
 
-By default, Liferay DXP uses the same URL for a site page regardless of the chosen language. Enable localized URLs for Analytics Cloud to track each language as a distinct site page. 
+By default, Liferay DXP uses the same URL for a site page regardless of the chosen language. Enable localized URLs for Analytics Cloud to track each language as a distinct site page.
 
-1. In Liferay DXP, navigate to _Control Panel_ &rarr; _Instance Settings_ &rarr; _Content & Data_ &rarr; _Pages_.
+1. In Liferay DXP, navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Content & Data* &rarr; *Pages*.
 
-1. Click _SEO_ in the left navigation. 
+1. Click *SEO* in the left navigation.
 
    ![Select use localized URL under the canonical URL selection.](./connecting-data-sources/images/04.png)
 
-1. Click the drop-down menu under canonical URL and select _Use Localized URL_. Click _Save_.
+1. Click the drop-down menu under canonical URL and select *Use Localized URL*. Click *Save*.

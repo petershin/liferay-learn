@@ -13,13 +13,13 @@ visibility:
 
 **At a Glance**
 
-* New Sales decks are aligned with brand messaging
-* Multiple decks are available for each vertical:
-  * Base Deck covers key industry challenges and Liferay overview
-  * Expansion decks cover specific industry challenges and/or target solutions
-* Decks for Manufacturing available now
-* Decks for Public Sector coming soon
-* Decks for Horizontal Solutions (e.g. Customer Portals) also coming soon
+* New Sales Foundation deck has been introduce with the following concepts:
+    * Consistent slides as a foundation and toolbox
+    * Unified look and feel aligned to Liferay design guidelines
+    * Flexibility for sales representatives to tailor as needed
+    * Local autonomy with global alignment
+    * Reducing time to prepare for pitches
+    * Single deck for Liferay and Partner sales teams
 
 ## Background
 
@@ -32,28 +32,24 @@ The information contained should be most useful for Account Executives and Custo
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) of the presentation used in the live workshop.
 ```
 
-## Challenges of the old Sales Decks
+## Challenges of the old Industry Sales Decks
 
-Liferay’s product has been constantly evolving since 2004. At the same time, Liferay’s Sales Approach has evolved as the product changed, and as the needs and demands of Customers have also evolved.
+Liferay’s product has been constantly evolving since 2004. At the same time, Liferay’s Sales Approach has evolved as the product changed, and as the needs and demands of Customers have also evolved 
 
-Industry-specific Sales Decks were introduced several years ago, to enable Liferay and Partner sales teams to target specific industries, however this iteration of decks had some challenges:
+Industry-specific Sales Decks were introduced several years ago, to enable Liferay and Partner sales teams to target specific industries. While providing valuable in-depth insights in specific industries and their most common challenges, ultimately they were not sufficient to meet the heterogeneous pitch requirements faced by Liferay and Partner sales teams during the various stages of an opportunity.
 
-* Too much content
-* Couldn’t be used without tailoring
-* Rework required for each opportunity
+Based on feedback from internal sales teams and partners, a new Sales Foundation deck has been compiled.
 
-### Subtractive Approach
+## Directive for the new Sales Foundation deck   
 
-The primary challenge with the sales decks was that they were too long. Each deck provided everything that might be needed for any use-case. It was up to the Account Executive to tailor the deck for the needs of the specific opportunity.  
+To cater to the wide-range of requirements, the concept behind the new Sales Foundation Deck is to provide:
 
-The time taken to remove content not needed for a given opportunity created two challenges of its own:
-
-* It took too much effort to get the deck ready
-* Or, if used unedited resulted in long and unfocused customer meetings
-
-Ultimately this created a problem because Account Executives were not able to drive the conversation with prospects in an effective way.
-
-Based on feedback from internal sales teams and partners, a new approach has been introduced, and is being applied to each industry first call desk in turn.
+* A consistent set of slides that act as the toolbox and a foundation for all top of funnel pitches.
+* A unified look and feel aligned with Liferay’s communication and design guidelines.
+* The flexibility for each sales representative to tailor the deck to the individual needs of each opportunity.
+* Local autonomy but with global alignment.
+* A goal of reducing preparation time for each individual pitch.
+* A presentation that can be used by Liferay and Partner sales teams.
 
 ## Positioning for Value
 
@@ -72,17 +68,17 @@ To be able to position for value, the first thing to understand is that each com
 
 ### Qualify Prospect Priorities
 
-Some prospects’ priority is on reducing costs. For others it might be about taking technical complexity or growing their market share.  
+Some prospects’ priority is on reducing costs, for others it might be about taking technical complexity or growing their market share.  
 
 It is important therefore to qualify and quantify these priorities, whether they are reducing operational costs, increasing revenue or margins, or improving the overall customer experience.
 
-### Aligning Capabilities with Business Value
+### Aligning capabilities with business value
 
-Liferay has so many capabilities that can be used to help solve so many different problems that talking about those capabilities without context doesn’t work. It is only possible to align Liferay’s capabilities with business values when those priorities and business outcomes are cataloged and prioritized.
+Liferay has so many capabilities that can be used to help solve so many different problems that talking about those capabilities without context doesn’t work. It is only possible to align Liferay’s capabilities with business values when those priorities and business outcomes are cataloged and prioritized. 
 
 For example, prospects are not evaluating Liferay because they need a message board, but some customers are suffering from problems related to effectively training and growing their workforce, or from an uneven distribution of knowledge, and Liferay’s message boards just might be part of the solution to those problems.
 
-### Identifying Influencers and the Project Owner
+### Identifying influencers and the project owner
 
 Within any organization, there will be many different perceptions of value and many different business outcomes desired. If all of the requirements and outcomes are treated equally, the risk is that they are only given surface-level attention.  
 
@@ -90,21 +86,21 @@ It’s much more effective to identify the key influencers on the project or the
 
 This is not to say that the other team members’ needs should be ignored, but there is always limited time and resources, and focusing on the key influencers and project owner makes the most of that limited time and resources to ensure the greatest chance of success.  
 
-### Quantifying Value
+### Quantifying value
 
-To ensure that it is possible to quantify the value of the solution, it must be in line with the customers' expectations and KPIs. The only way to discover expectations and KPIs is to ask during initial discovery and throughout all interactions with a prospect.
+To ensure that it is possible to quantify the value of the solution, it must be in line with the customers’ expectations and KPIs. The only way to discover expectations and KPIs is to ask during initial discovery and throughout all interactions with a prospect.
 
 Ultimately it is critical to understand what the prospect considers a successful outcome to be and how they plan to measure that the outcome is successful. Once this is understood all messages and demonstrations should show how Liferay can achieve the value the prospect is looking for, and how, with Liferay’s help, that value can be measured.
 
 ## Aligning Capabilities to Business Value
 
-![Three common client objectives are to improve customer satisfaction, grow customer acquisition, and increase revenue.](./liferay-sales-presentations/images/01.png)
+![Three common prospect objectives are: Improving customer satisfaction, growing customer acquisition, and increasing revenue and reducing cost.](./liferay-sales-presentations/images/01.png)
 
 As a deeper understanding of the business outcomes the client expects from the solution is gained, Liferay’s functionality can be aligned with those objectives. Three common objectives are:
 
 * Improving customer satisfaction
 * Growing customer acquisition
-* Increasing revenue
+* Increasing revenue and reducing cost
 
 ### Improving Customer Satisfaction
 
@@ -117,16 +113,16 @@ Where the customer is focused on improving customer satisfaction, the following 
 
 ### Growing Customer Acquisition
 
-Other prospects are more focused on growing their business through new customer acquisition.  In this case highlight features such as:
+Other prospects are more focused on growing their business through new customer acquisition.  In this case highlight features such as: 
 
 * Liferay’s powerful Content Management capabilities allow business users to create and maintain effective content to help attract and educate new prospects.  
-* Personalization can be highlighted as a way to engage and nurture those prospects. By delivering the right content at the right time, those prospects can be moved down the sales funnel and through their customer journey towards conversion.
-* Analytics is a very important part of ensuring content is working effectively, and determining which customer experiences are most effective. Analytics also plays a role when creating the right segments to provide personalized experiences.
+* Personalization can be highlighted as a way to engage and nurture those prospects. By delivering the right content at the right time, those prospects can be moved down the sales funnel and through their customer journey towards conversion.    
+* Analytics is a very important part of ensuring content is working effectively, and determining which customer experiences are most effective. Analytics also plays a role when creating the right segments to provide personalized experiences.  
 * One of the best ways to objectively determine which experiences are the best is through A/B Testing by comparing those experiences with each other; promoting the experience that proves to be the most effective.  
 
 ### Increasing Revenue
 
-For other prospects, the main focus might be on increasing revenue. In that case features to spend more time discussing are:
+For other prospects, the main focus might be on cutting costs and increasing revenue. In that case features to spend more time discussing are:
 
 * Liferay’s ability to use product relations such as Cross Sell / Up Sell  to grow the size of the basket or Average Order Volume.
 * AI/ML based Recommendations are provided to make meaningful suggestions based on past orders or similar customers.  
@@ -135,4 +131,4 @@ For other prospects, the main focus might be on increasing revenue. In that case
 
 While all of Liferay’s features and functionality are a critical part of building solutions, it is important to focus first on the business challenges that each prospect is facing, and on the desired business outcomes.  Once those challenges and outcomes are known, then attention can be turned to how to solve those challenges and achieve those outcomes.
 
-Next: Understand the [New Approach](./liferay-sales-presentations/sales-presentations-new-approach.md) to Liferay’s Sales Decks.
+Next: Understand the new [Sales Foundation Deck](./liferay-sales-presentations/sales-foundation-deck.md).

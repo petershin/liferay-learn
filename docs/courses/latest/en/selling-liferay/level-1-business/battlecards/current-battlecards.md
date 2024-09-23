@@ -25,7 +25,7 @@ This section contains a brief review of each of the currently available Battleca
 ### Acquia
 
 * Acquia is a SaaS company that provides enterprise products, services, and technical support for the open-source web content management platform Drupal.
-* Acquia Experience Platform is build around Drupal to allow companies to build, operate, and optimize their digital experiences.
+* Acquia Experience Platform is built around Drupal to allow companies to build, operate, and optimize their digital experiences.
 * Acquia's main focus and strengths are in CMS and B2C website solution use cases.
 * Liferay continues to be stronger in B2B and B2E Experience use cases, according to the latest report from Gartner.
 
@@ -33,7 +33,7 @@ This section contains a brief review of each of the currently available Battleca
 
 * Optimizely provides a SaaS DXP and is strong in B2C use cases.
 * Episerver acquired Optimizely in 2021, and chose Optimizely as the rebranded name for both companies.
-* Optimizely is one of the toughest vendors to compete against, however, with effective sales execution it is possible to win against Optimizely.
+* Optimizely is one of the toughest vendors to compete against. However, with effective sales execution it is possible to win against Optimizely.
 
 ### Sitecore
 

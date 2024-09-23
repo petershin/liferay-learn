@@ -4,8 +4,8 @@ toc:
 - ./module-4-security-and-identity-management/understanding-liferay-authentication.md
 - ./module-4-security-and-identity-management/using-third-party-services-for-authentication-and-sso.md
 - ./module-4-security-and-identity-management/understanding-liferay-authorization-and-user-management.md
-- ./module-4-security-and-identity-management/setting-up-claritys-users-and-groups.md
-- ./module-4-security-and-identity-management/creating-and-assigning-roles-to-claritys-users.md
+- ./module-4-security-and-identity-management/adding-claritys-users-and-groups.md
+- ./module-4-security-and-identity-management/defining-and-assigning-roles-to-claritys-users.md
 uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
 ---
 # Module 4: Security and Identity Management

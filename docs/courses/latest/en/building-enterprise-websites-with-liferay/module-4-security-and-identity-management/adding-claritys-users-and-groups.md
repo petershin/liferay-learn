@@ -1,7 +1,7 @@
 ---
 uuid: cbe102f7-9428-4d96-8d2f-eb9ac8007dfa
 ---
-# Setting Up Clarity's Users and Groups
+# Adding Clarity's Users and Groups
 
 Users are individuals who interact with the Liferay platform, whether authenticated or not. To organize authenticated users, you can also create user groups based on shared attributes to simplify role management. In this section, you'll set up users and user groups for Clarity's enterprise website.
 
@@ -19,7 +19,7 @@ While building the public enterprise website, we’ll follow these Clarity perso
 | ianmiller       | `ian.miller@clarityvisionsolutions.com`       | Ian        | Miller    | IT Manager                 |
 | walterdouglas   | `walter.douglas@clarityvisionsolutions.com`   | Walter     | Douglas   | Web Developer              |
 
-![This training follows five Clarity personas as they contribute to the enterprise website.](./setting-up-claritys-users-and-groups/images/01.png)
+![This training follows five Clarity personas as they contribute to the enterprise website.](./adding-claritys-users-and-groups/images/01.png)
 
 The training workspace already includes all of these users except for Christian Carter. Here you'll add him manually as the Clarity Admin user.
 
@@ -30,17 +30,17 @@ To do this,
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Users and Organizations*.
 
-   ![Open the Users and Organization application in the Global Menu.](./setting-up-claritys-users-and-groups/images/02.png)
+   ![Open the Users and Organization application in the Global Menu.](./adding-claritys-users-and-groups/images/02.png)
 
    Here you can view and manage all users for the current Liferay instance. This should include the Clarity Admin user along with Walter Douglas, Ian Miller, Clara Murphy, and Harper Roberts.
 
-   ![The menu displays all users in your instance.](./setting-up-claritys-users-and-groups/images/03.png)
+   ![The menu displays all users in your instance.](./adding-claritys-users-and-groups/images/03.png)
 
 1. Click *New*.
 
 1. To set the user's profile image, click the *Change Image* button (![Change Image Button](../../images/icon-change.png)), click *Select*, navigate to the `[repository-folder]/exercises/lesson-3/` folder in the training workspace, select `christian-carter.png`, and click *Done*.
 
-   ![Set Christian Carter's profile image.](./setting-up-claritys-users-and-groups/images/04.png)
+   ![Set Christian Carter's profile image.](./adding-claritys-users-and-groups/images/04.png)
 
 1. Enter these details for Christian Carter:
 
@@ -52,7 +52,7 @@ To do this,
    | First Name    | `Christian`                                   |
    | Last Name     | `Carter`                                      |
 
-   ![Enter these user details for Christian Carter.](./setting-up-claritys-users-and-groups/images/05.png)
+   ![Enter these user details for Christian Carter.](./adding-claritys-users-and-groups/images/05.png)
 
 1. Click *Save*.
 
@@ -62,7 +62,7 @@ To do this,
 
 1. Enter `learn` for his password.
 
-   ![Set Christian Carter's password to learn.](./setting-up-claritys-users-and-groups/images/06.png)
+   ![Set Christian Carter's password to learn.](./adding-claritys-users-and-groups/images/06.png)
 
 1. Click *Save*.
 
@@ -88,7 +88,7 @@ To do this,
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *User Groups*.
 
-   ![Go the User Groups application in the Global Menu.](./setting-up-claritys-users-and-groups/images/07.png)
+   ![Go the User Groups application in the Global Menu.](./adding-claritys-users-and-groups/images/07.png)
 
 1. Click *New*.
 
@@ -99,7 +99,7 @@ To do this,
    | Name        | `Marketing`                                       |
    | Description | `Members of the marketing department at Clarity.` |
 
-   ![Create the Marketing user group.](./setting-up-claritys-users-and-groups/images/08.png)
+   ![Create the Marketing user group.](./adding-claritys-users-and-groups/images/08.png)
 
 1. Click *Save*.
 
@@ -111,7 +111,7 @@ To do this,
 
 1. Select *Christian Carter* and *Clara Murphy*.
 
-   ![Select Christian Carter and Clara Murphy to add them to the user group.](./setting-up-claritys-users-and-groups/images/09.png)
+   ![Select Christian Carter and Clara Murphy to add them to the user group.](./adding-claritys-users-and-groups/images/09.png)
 
 1. Click *Add*.
 
@@ -121,7 +121,7 @@ To do this,
 
 Great! Now any roles assigned to the Marketing user group are automatically assigned to all team members. Next, you'll learn how to define and assign custom roles for Clarity.
 
-Next Up: [Creating and Assigning Roles to Clarity's Users](./creating-and-assigning-roles-to-claritys-users.md)
+Next Up: [Defining and Assigning Roles to Clarity's Users](./defining-and-assigning-roles-to-claritys-users.md)
 
 ## Additional Resources
 

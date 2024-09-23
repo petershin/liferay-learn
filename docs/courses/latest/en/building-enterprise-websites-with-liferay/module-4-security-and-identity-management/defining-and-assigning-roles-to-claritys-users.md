@@ -1,7 +1,7 @@
 ---
 uuid: f548210b-6113-4205-ac28-23451ed61e43
 ---
-# Creating and Assigning Roles to Clarity's Users
+# Defining and Assigning Roles to Clarity's Users
 
 Liferay employs a role-based access control (RBAC) model to manage user permissions. Roles and permissions are fundamental to Liferay's security architecture. Roles are collections of permissions granted to users or groups. Permissions are granular checks that determine how a user can interact with Liferay's applications and resources. This article guides you through creating roles, defining their permissions, and assigning these roles to Clarity's users.
 
@@ -38,7 +38,7 @@ To begin,
    | Description | `Clarity role for an individual contributor from the marketing team.` |
    | Key         | `Marketing Coordinator`                                               |
 
-   ![Create the Marketing Coordinator role.](./creating-and-assigning-roles-to-claritys-users/images/01.png)
+   ![Create the Marketing Coordinator role.](./defining-and-assigning-roles-to-claritys-users/images/01.png)
 
 1. Click *Save*.
 
@@ -46,13 +46,13 @@ To begin,
 
 1. Go to the *Assignees* tab and click *User Groups*
 
-   ![Go to the User Groups tab under Assignees.](./creating-and-assigning-roles-to-claritys-users/images/02.png)
+   ![Go to the User Groups tab under Assignees.](./defining-and-assigning-roles-to-claritys-users/images/02.png)
 
 1. Click *New*.
 
 1. Select *Marketing*.
 
-   ![Select the Marketing user group.](./creating-and-assigning-roles-to-claritys-users/images/03.png)
+   ![Select the Marketing user group.](./defining-and-assigning-roles-to-claritys-users/images/03.png)
 
 1. Click *Add*.
 
@@ -72,13 +72,13 @@ To do this,
 
 1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for Christian Carter and select *Impersonate User*.
 
-   ![Impersonate Christian Carter.](./creating-and-assigning-roles-to-claritys-users/images/04.png)
+   ![Impersonate Christian Carter.](./defining-and-assigning-roles-to-claritys-users/images/04.png)
 
    This opens a new tab where you can view the Liferay instance using Christian Carter's permissions.
 
    Notice how he doesn't have access to any of the applications or resources he needs as a marketing coordinator.
 
-   ![Christian Carter doesn't have access to any of the applications or resources he needs as a marketing coordinator.](./creating-and-assigning-roles-to-claritys-users/images/05.png)
+   ![Christian Carter doesn't have access to any of the applications or resources he needs as a marketing coordinator.](./defining-and-assigning-roles-to-claritys-users/images/05.png)
 
    Clarity needs all Marketing Coordinators to have access to assets in the team's asset library.
 
@@ -90,7 +90,7 @@ To do this,
 
    **Tip**: Enter "Asset Libraries" into the search bar to quickly locate this section.
 
-   ![Assign Asset Library permissions to the Marketing Coordinator role.](./creating-and-assigning-roles-to-claritys-users/images/06.png)
+   ![Assign Asset Library permissions to the Marketing Coordinator role.](./defining-and-assigning-roles-to-claritys-users/images/06.png)
 
 1. Select these permissions:
 
@@ -110,7 +110,7 @@ To do this,
 
    Now he can access the Asset Libraries application in the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).
 
-   ![Christian Carter can now access the Asset Libraries application in the Global Menu.](./creating-and-assigning-roles-to-claritys-users/images/07.png)
+   ![Christian Carter can now access the Asset Libraries application in the Global Menu.](./defining-and-assigning-roles-to-claritys-users/images/07.png)
 
 1. Go to the *Asset Libraries* application.
 
@@ -135,7 +135,7 @@ To do this,
 
 1. Select *Marketing* and click *Done*.
 
-   ![Select the Marketing user group in the Marketing Assets's membership application](./creating-and-assigning-roles-to-claritys-users/images/08.png)
+   ![Select the Marketing user group in the Marketing Assets's membership application](./defining-and-assigning-roles-to-claritys-users/images/08.png)
 
 1. Refresh the tab where you're impersonating Christian Carter.
 
@@ -147,7 +147,7 @@ To do this,
 
 1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the Marketing user group and select *Assign Roles*.
 
-   ![Click Actions for the Marketing user group and select Assign Roles.](./creating-and-assigning-roles-to-claritys-users/images/09.png)
+   ![Click Actions for the Marketing user group and select Assign Roles.](./defining-and-assigning-roles-to-claritys-users/images/09.png)
 
    Here you can select from available asset library roles. These roles grant permissions for individual libraries.
 
@@ -157,7 +157,7 @@ To do this,
 
    Now he can access the library's applications.
 
-   ![Now Christian Carter can access the library's applications.](./creating-and-assigning-roles-to-claritys-users/images/10.png)
+   ![Now Christian Carter can access the library's applications.](./defining-and-assigning-roles-to-claritys-users/images/10.png)
 
    Although Christian Carter can access the library's applications, he doesn't have the application permissions necessary for fulfilling his responsibilities (e.g., uploading documents, editing articles).
 
@@ -224,7 +224,7 @@ To do this,
 
 1. In the left menu, go to *Site and Asset Library Administration* &rarr; *Site Builder* &rarr; *Pages*. 
 
-   ![Assign Page permissions to the Marketing Coordinator role.](./creating-and-assigning-roles-to-claritys-users/images/11.png)
+   ![Assign Page permissions to the Marketing Coordinator role.](./defining-and-assigning-roles-to-claritys-users/images/11.png)
 
 1. Select this permission.
 
@@ -238,7 +238,7 @@ To do this,
 
    Notice that he can now access edit tools for site pages.
 
-   ![Christian Carter can now access edit tools for site pages.](./creating-and-assigning-roles-to-claritys-users/images/12.png)
+   ![Christian Carter can now access edit tools for site pages.](./defining-and-assigning-roles-to-claritys-users/images/12.png)
 
 Well done! Now all members of the Marketing user group have the correct base permissions. By assigning additional roles, Clarity can ensure they have access to the applications and data they need.
 
@@ -294,7 +294,7 @@ To do this,
 
 1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the Marketing user group and select *Permissions*.
 
-   ![Select Permissions in the Actions menu for the Marketing user group.](./creating-and-assigning-roles-to-claritys-users/images/13.png)          
+   ![Select Permissions in the Actions menu for the Marketing user group.](./defining-and-assigning-roles-to-claritys-users/images/13.png)          
 
 1. For the Marketing Manager role, select these permissions and click *Save*:
 
@@ -304,7 +304,7 @@ To do this,
    | Marketing Manager | View Members   |
    | Marketing Manager | View           |
 
-   ![Give view and add members permissions to the marketing manager role.](./creating-and-assigning-roles-to-claritys-users/images/14.png)
+   ![Give view and add members permissions to the marketing manager role.](./defining-and-assigning-roles-to-claritys-users/images/14.png)
 
 1. Go to the *Users and Organizations* application in the Global Menu.
 
@@ -312,7 +312,7 @@ To do this,
 
    Clara should see the Marketing user group. She should also be able to view members of the user group and add new members to the group.
 
-   ![Clara can add other Clarity users to the marketing user group.](./creating-and-assigning-roles-to-claritys-users/images/15.png)
+   ![Clara can add other Clarity users to the marketing user group.](./defining-and-assigning-roles-to-claritys-users/images/15.png)
 
    **Note**: This is just an example of the types of permissions you can assign to manager roles.
 

@@ -10,12 +10,12 @@ uuid: 1079119c-21f5-48e6-aebb-4a6dfc8262ea
 
 # Adding a Page to a Site
 
-Adding and customizing pages is a key part of managing your Liferay site. With pages, you can organize content, create a tailored user experience, and enhance site functionality. You can add pages using the [Pages application](#adding-a-new-page-from-the-pages-application) or through the [Page Tree menu](#adding-a-new-page-from-the-page-tree-menu).
+Adding and customizing pages is a key part of managing your Liferay site. With pages, you can organize content, create a tailored user experience, and enhance site functionality. You can add pages using the [Pages application](#adding-a-new-page-using-the-pages-application) or through the [Page Tree menu](#adding-a-new-page-using-the-page-tree-menu).
 
 !!! note
     For Liferay 7.4 U22+ and GA22+, private pages are disabled for new installations. To enable them, see [Enabling Private Pages](../understanding-pages.md#enabling-private-pages) for more information.
 
-## Adding a New Page from the Pages Application
+## Adding a New Page Using the Pages Application
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-menu.png)), expand *Site Builder*, and click *Pages* (1).
 
@@ -47,7 +47,7 @@ To learn how to configure the remaining page settings, see [Configuring Individu
 !!! tip
     By default, new pages are included in the navigation menu for the site. To configure this navigation menu, see [Using the Navigation Menus Application](../../site-navigation/configuring-menu-displays.md).
 
-## Adding a New Page from the Page Tree Menu
+## Adding a New Page Using the Page Tree Menu
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
 

@@ -15,7 +15,7 @@ Sometimes, it's easier to edit templates in a code editor. After you [create a p
 For more general information about the export/import framework, see [Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md).
 
 !!! warning
-    Widget pages can't be exported. Instead, use content pages.
+    For exporting purposes, content page templates are fully supported, while widget page templates can't be exported.
 
 ## Exporting a Page Template
 

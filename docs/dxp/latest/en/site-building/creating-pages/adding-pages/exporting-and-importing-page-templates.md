@@ -7,19 +7,19 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: b2f71d60-7c6b-4be7-94fd-d8ea048c6dbf
 ---
+
 # Exporting and Importing Page Templates
 
-Sometimes it's easier to edit templates in a code editor. Once you've [created a page template](./creating-a-page-template.md), you can [export](../../sites/exporting-importing-site-pages-and-content.md) it, edit it locally in the editor of your choice, and then import the template back into Liferay. You can import the template into any site on the system.
+Sometimes, it's easier to edit templates in a code editor. After you [create a page template](./creating-a-page-template.md), you can [export](#exporting-a-page-template) it for local editing. Once you've made the necessary changes, you can [import](#importing-a-page-template) the template back into Liferay and use it in any site in the system.
 
 For more general information about the export/import framework, see [Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md).
 
-```{note}
-For Liferay DXP 7.4+, Page Template Collections are called Page Template Sets in the Liferay UI.
-```
+!!! warning
+    Widget pages can't be exported. Instead, use content pages.
 
 ## Exporting a Page Template
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Design*, and go to *Page Templates*.
 
 1. Select the *Page Templates* tab.
 
@@ -31,26 +31,23 @@ For Liferay DXP 7.4+, Page Template Collections are called Page Template Sets in
 
 The content page template downloads as a ZIP file to your local machine.
 
-```{tip}
-You can export more than one content page template at once.
-```
+!!! tip
+    You can export more than one content page template at once.
 
-The last published version of the page template is always exported. If the page template has never been published, it cannot be exported.
+The last published version of the page template is always exported. If the page template has never been published, it can't be exported.
 
 The exported ZIP file contains these files:
 
-* `page-template-collection.json`: Includes the name of the set where the page template is saved and any other metadata.
-* An optional thumbnail file
-* `page-template.json`: Contains the page template name and any other metadata.
-* `page-definition.json`: specifies the structure and content of the Page Template.
+- `page-template-collection.json`: Includes the name of the set where the page template is saved and any other metadata.
+- An optional thumbnail file
+- `page-template.json`: Contains the page template name and any other metadata.
+- `page-definition.json`: Specifies the structure and content of the page template.
 
 The ZIP file may contain different types of page templates as well, like `display-page-template.json`, `master-page.json`, `page-template-collection.json` and `page-template.json`.
 
 ## Importing a Page Template
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Design* &rarr; *Page Templates*.
-
-1. Click *Options* (![Options icon](../../../images/icon-options.png)) in the Application Bar and select *Import*.
+1. In the Page Templates application, click *Options* (![Options icon](../../../images/icon-options.png)) in the Application Bar and select *Import*.
 
    ![The import function is located in the options menu in the Application Bar.](./exporting-and-importing-page-templates/images/02.png)
 
@@ -70,9 +67,8 @@ The ZIP file may contain different types of page templates as well, like `displa
 
 1. Click *Upload Another File* to import another file or *Done* to go back to the page templates page.
 
-```{Important}
-To transfer page templates between DXP environments, use the LAR export and import method.
-```
+!!! Important
+    To transfer page templates between DXP environments, use the LAR export and import method.
 
 ### Importing an Existing Page Template
 
@@ -98,6 +94,6 @@ On the import outcome page, users can see the successfully imported entries, war
 
 ## Related Topics
 
-* [Creating a Page Template](./creating-a-page-template.md)
-* [Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md)
-* [Creating Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)
+- [Creating a Page Template](./creating-a-page-template.md)
+- [Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md)
+- [Creating Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)

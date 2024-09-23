@@ -1,11 +1,11 @@
 ---
 uuid: 0ab3cf82-fa34-49e1-b885-ae22951e7747
 ---
-# Creating Navigation Menus for Clarity’s Master Pages
+# Creating Clarity's Navigation Menus
 
 Navigation is an integral part of designing a clear and intuitive user experience. In Liferay, setting up navigation involves creating menus and then adding them to pages using widgets or fragments. Each menu can include links to both internal and external pages or content. Since pages and navigation are decoupled, you can organize your pages and content without worrying about how it will affect navigation. You can also customize the look and feel of your menus and even tailor navigation based on user roles, preferences, or location, to deliver personalized experiences. In these ways, Liferay’s flexible navigation menus can help ensure users easily find what they need.
 
-![Clarity’s header and footer designs include multiple navigation menus.](./creating-navigation-menus-for-claritys-master-pages/images/01.png)
+![Clarity’s header and footer designs include multiple navigation menus.](./creating-claritys-navigation-menus/images/01.png)
 
 As seen in the previous exercises, Clarity’s header and footer designs include multiple navigation menus. When designing the master pages, you used the default menu, which includes all site content pages. Now it is time to create custom menus that only include the desired pages. Then you can update the master pages to use them instead of the default menu.
 
@@ -25,7 +25,7 @@ To do this,
 
 1. For Name, enter `Header Page Menu`.
 
-   ![Create a navigation menu for the page header.](./creating-navigation-menus-for-claritys-master-pages/images/02.png)
+   ![Create a navigation menu for the page header.](./creating-claritys-navigation-menus/images/02.png)
 
 1. Click *Save*.
 
@@ -35,7 +35,7 @@ To do this,
 
 1. Select the *Page* item type.
 
-   ![Select the Page item type.](./creating-navigation-menus-for-claritys-master-pages/images/03.png)
+   ![Select the Page item type.](./creating-claritys-navigation-menus/images/03.png)
 
 1. Check these pages:
 
@@ -46,13 +46,13 @@ To do this,
    * FAQ
    * Products
 
-   ![Select the pages to add them to the menu.](./creating-navigation-menus-for-claritys-master-pages/images/04.png)
+   ![Select the pages to add them to the menu.](./creating-claritys-navigation-menus/images/04.png)
 
 1. Click *Select*. This saves your changes to the menu.
 
 1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for one of the menu items and select *View Info*. This opens a side panel where you can update its display name if desired.
 
-   ![You can change a menu item's display name.](./creating-navigation-menus-for-claritys-master-pages/images/05.png)
+   ![You can change a menu item's display name.](./creating-claritys-navigation-menus/images/05.png)
 
 1. Drag and drop the pages into this order:
 
@@ -79,7 +79,7 @@ Now that the header page menu is defined, you can update the menu display fragme
 
 1. Click *Select*.
 
-![Select the FAQ page to add it to the Footer Resources Menu.](./creating-navigation-menus-for-claritys-master-pages/images/06.png)
+![Select the FAQ page to add it to the Footer Resources Menu.](./creating-claritys-navigation-menus/images/06.png)
 
 With Clarity's navigation menus complete, let's return to Clarity's master page templates and update their header menu displays to use the correct navigation menu.
 
@@ -99,7 +99,7 @@ To do this,
 
 1. Click *Header Page Menu* and click *Select This Level*.
 
-   ![Navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.](./creating-navigation-menus-for-claritys-master-pages/images/07.png)
+   ![Navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.](./creating-claritys-navigation-menus/images/07.png)
 
 1. Click *Publish Master*.
 
@@ -107,7 +107,7 @@ To do this,
 
 Once finished, navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.
 
-![Navigate to the Home page to see the changes on the template applied to the connected pages.](./creating-navigation-menus-for-claritys-master-pages/images/08.png)
+![Navigate to the Home page to see the changes on the template applied to the connected pages.](./creating-claritys-navigation-menus/images/08.png)
 
 ## Conclusion
 

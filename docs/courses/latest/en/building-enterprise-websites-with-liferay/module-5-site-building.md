@@ -2,11 +2,11 @@
 toc:
 - ./module-5-site-building/claritys-site-building-requirements.md
 - ./module-5-site-building/setting-up-claritys-site.md
-- ./module-5-site-building/configuring-the-clarity-site.md
+- ./module-5-site-building/configuring-claritys-site.md
 - ./module-5-site-building/adding-pages-to-claritys-site.md
 - ./module-5-site-building/understanding-page-design.md
 - ./module-5-site-building/designing-claritys-master-pages.md
-- ./module-5-site-building/creating-navigation-menus-for-claritys-master-pages.md
+- ./module-5-site-building/creating-claritys-navigation-menus.md
 - ./module-5-site-building/creating-custom-fragments-for-clarity.md
 - ./module-5-site-building/applying-claritys-brand-styling.md
 uuid: b46186fd-6e49-4418-9b6f-b04710b36e4d

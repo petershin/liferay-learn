@@ -309,7 +309,7 @@ Next, you’ll create custom navigation menus and use them for these master page
 
 Congratulations! You’ve started wireframing Clarity’s headers and footers. Next, you’ll create custom navigation menus and use them for these master page templates so they only include the desired pages.
 
-Next Up: [Creating Navigation Menus for Clarity’s Master Pages](./creating-navigation-menus-for-claritys-master-pages.md)
+Next Up: [Creating Clarity's Navigation Menus](./creating-claritys-navigation-menus.md)
 
 ## Additional Resources
 

@@ -1,8 +1,8 @@
 ---
 toc:
-- ./module-3-course-environment-setup/course-prerequisites.md
-- ./module-3-course-environment-setup/liferay-workspace.md
-- ./module-3-course-environment-setup/client-extensions.md
+- ./module-3-course-environment-setup/clarity-environment-prerequisites.md
+- ./module-3-course-environment-setup/setting-up-claritys-workspace.md
+- ./module-3-course-environment-setup/understanding-client-extensions.md
 uuid: 1564af7e-387f-4946-b382-fe824655f077
 ---
 # Module 3: Course Environment Setup
@@ -20,4 +20,4 @@ Liferay provides a variety of tools to streamline site and application developme
 
 Here you'll set up the local Liferay environment you'll use throughout the course to build Clarity's enterprise website. You'll also learn about Liferay workspaces and client extensions, two essential features for building custom Liferay solutions.
 
-Up First: [Course Prerequisites](./module-3-course-environment-setup/course-prerequisites.md)
+Up First: [Clarity Environment Prerequisites](./module-3-course-environment-setup/clarity-environment-prerequisites.md)

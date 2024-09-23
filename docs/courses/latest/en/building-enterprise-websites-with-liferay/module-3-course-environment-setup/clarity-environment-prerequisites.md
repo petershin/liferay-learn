@@ -1,7 +1,7 @@
 ---
 uuid: c098e6ef-1ddb-456e-ae41-ee4645f78334
 ---
-# Course Prerequisites
+# Clarity Environment Prerequisites
 
 Throughout this course, you'll use a local Liferay environment to implement Clarity's enterprise website. Before moving forward, complete these prerequisites to prepare your system for the following exercises:
 
@@ -96,6 +96,6 @@ If you’re on Liferay PaaS, this tool is not required for deployment, but it is
 
 ## Conclusion
 
-Great! With the prerequisites in place, let's explore Liferay Workspaces and set up your Liferay environment.
+Great! With the prerequisites in place, let's explore Liferay Workspaces and set up your Clarity environment.
 
-Next Up: [Liferay Workspace](./liferay-workspace.md)
+Next Up: [Setting Up Clarity's Workspace](./setting-up-claritys-workspace.md)

@@ -6,7 +6,7 @@ toc:
 
 # Training Material
 
-Use these training materials supplement trainings by providing you with opportunities to practice key skills, test your understanding, and gain confidence in applying what you've learned to real-world situations.
+These materials supplement some recorded and in-person trainings by providing you with opportunities to practice key skills, test your understanding, and gain confidence in applying what you've learned to real-world situations.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

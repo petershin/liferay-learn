@@ -12,7 +12,9 @@ uuid: db41d849-e555-4e28-a2fb-4337125b6b4a
 
 {bdg-secondary}`7.4 U86+ and GA86+`
 
-Utility pages serve specific operational tasks and actions and are usually essential for users to interact with a website or application effectively. Utility pages can be configured for a site's 500 and 404 error pages. In the future, this capability will expand to include other common pages (e.g. sign-in and terms of use pages).
+Utility pages serve specific operational tasks and actions and are usually essential for users to interact with a website or application effectively. Utility pages can be configured for a site's 500 and 404 error pages.
+
+<!-- In the future, this capability will expand to include other common pages (e.g. sign-in and terms of use pages). -->
 
 Liferay provides [out-of-the-box utility pages](#viewing-utility-pages) that are easily customizable. You can also [create utility pages](#creating-a-new-utility-page) from scratch.
 
@@ -22,7 +24,7 @@ Liferay provides [out-of-the-box utility pages](#viewing-utility-pages) that are
 
 You can edit, preview, or copy utility pages.
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Site Builder*, and go to *Pages*. Select the *Utility Pages* tab.
 
    The out-of-the-box pages are marked with a `PROVIDED BY LIFERAY` tag.
 
@@ -33,11 +35,7 @@ You can edit, preview, or copy utility pages.
 
 ## Creating a New Utility Page
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
-
-1. Select *Add* (![Actions Menu](../../../images/icon-add.png)).
-
-1. Choose the type of utility page you want to create.
+1. In the Pages application, under the Utility Pages tab, click *New* and choose the type of utility page you want to create.
 
 1. Select *Blank* for an empty content page or choose an available master page template.
 
@@ -49,9 +47,7 @@ You can edit the newly created utility page the same way you would edit a [conte
 
 Use the actions menu to perform certain actions with your utility page:
 
-1. Open the *Site Menu* (![Site Menu icon](../../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
-
-1. Select *Actions* (![Actions Menu](../../../images/icon-actions.png)) for the utility page you want and choose one of the available actions:
+1. In the Pages application, under the Utility Pages tab, select *Actions* (![Actions Menu](../../../images/icon-actions.png)) for the utility page you want and choose one of the available actions:
 
 | Action                                                                                                            | Description                                                                                                                                                                                                  |
 |:------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -74,11 +70,9 @@ Use the actions menu to perform certain actions with your utility page:
 
 ## Utility Pages Options Menu Reference
 
-Use the options menu to configure, import pages, or import translations for your utility page. 
+Use the options menu to configure, import pages, or import translations for your utility page.
 
-1. Open the *Site Menu* (![Site Menu icon](../../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
-
-1. In the top right corner, select *Options* (![Options Menu](../../../images/icon-options.png)) and choose an option:
+1. In the Pages application, under the Utility Pages tab, select *Options* (![Options Menu](../../../images/icon-options.png)) in the top right corner and choose an option:
 
 | Option                                                            | Description                                                                                                                                                                                   |
 |:------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

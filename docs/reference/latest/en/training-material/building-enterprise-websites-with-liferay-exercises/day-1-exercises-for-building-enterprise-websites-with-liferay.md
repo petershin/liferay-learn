@@ -2,7 +2,7 @@
 uuid: 7130b78a-602c-4f48-9b25-7d582b0e64a5
 ---
 
-![Introduction page for day 1](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/01.png)
+![Introduction page for day 1](./day-1-exercises-for-building-enterprise-websites-with-liferay/images/01.png)
 
 # Day 1 Exercises for Building Enterprise Websites with Liferay
 
@@ -164,7 +164,7 @@ While building the public enterprise website, we’ll follow these Clarity perso
 | ianmiller       | `ian.miller@clarityvisionsolutions.com`       | Ian        | Miller    | IT Manager                 |
 | walterdouglas   | `walter.douglas@clarityvisionsolutions.com`   | Walter     | Douglas   | Web Developer              |
 
-![This training follows five Clarity personas as they contribute to the enterprise website.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/01.png)
+![This training follows five Clarity personas as they contribute to the enterprise website.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/01.png)
 
 The training workspace already includes all of these users except for Christian Carter. Here you'll add him manually as the Clarity Admin user.
 
@@ -174,17 +174,17 @@ To do this,
 
 1. Open the *Global Menu* (![Global Menu](./../../../../../dxp/latest/en/images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Users and Organizations*.
 
-   ![Open the Users and Organization application in the Global Menu.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/02.png)
+   ![Open the Users and Organization application in the Global Menu.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/02.png)
 
    Here you can view and manage all users for the current Liferay instance. This should include the Clarity Admin user along with Walter Douglas, Ian Miller, Clara Murphy, and Harper Roberts.
 
-   ![The menu displays all users in your instance.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/03.png)
+   ![The menu displays all users in your instance.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/03.png)
 
 1. Click *New*.
 
 1. To set the user's profile image, click the *Change Image* button (![Change Image Button](./../../../../../dxp/latest/en/images/icon-change.png)), click *Select*, navigate to the `[repository-folder]/exercises/lesson-3/` folder in the training workspace, select `christian-carter.png`, and click *Done*.
 
-   ![Set Christian Carter's profile image.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/04.png)
+   ![Set Christian Carter's profile image.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/04.png)
 
 1. Enter these details for Christian Carter:
 
@@ -196,7 +196,7 @@ To do this,
    | First Name    | `Christian`                                   |
    | Last Name     | `Carter`                                      |
 
-   ![Enter these user details for Christian Carter.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/05.png)
+   ![Enter these user details for Christian Carter.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/05.png)
 
 1. Click *Save*.
 
@@ -206,7 +206,7 @@ To do this,
 
 1. Enter `learn` for his password.
 
-   ![Set Christian Carter's password to learn.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/06.png)
+   ![Set Christian Carter's password to learn.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/06.png)
 
 1. Click *Save*.
 
@@ -230,7 +230,7 @@ To do this,
 
 1. Open the *Global Menu* (![Global Menu](./../../../../../dxp/latest/en/images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *User Groups*.
 
-   ![Go the User Groups application in the Global Menu.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/07.png)
+   ![Go the User Groups application in the Global Menu.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/07.png)
 
 1. Click *New*.
 
@@ -241,7 +241,7 @@ To do this,
    | Name        | `Marketing`                                       |
    | Description | `Members of the marketing department at Clarity.` |
 
-   ![Create the Marketing user group.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/08.png)
+   ![Create the Marketing user group.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/08.png)
 
 1. Click *Save*.
 
@@ -253,7 +253,7 @@ To do this,
 
 1. Select *Christian Carter* and *Clara Murphy*.
 
-   ![Select Christian Carter and Clara Murphy to add them to the user group.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/09.png)
+   ![Select Christian Carter and Clara Murphy to add them to the user group.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/09.png)
 
 1. Click *Add*.
 
@@ -290,7 +290,7 @@ To begin,
    | Description | `Clarity role for an individual contributor from the marketing team.` |
    | Key         | `Marketing Coordinator`                                               |
 
-   ![Create the Marketing Coordinator role.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/10.png)
+   ![Create the Marketing Coordinator role.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/10.png)
 
 1. Click *Save*.
 
@@ -298,13 +298,13 @@ To begin,
 
 1. Go to the *Assignees* tab and click *User Groups*
 
-   ![Go to the User Groups tab under Assignees.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/11.png)
+   ![Go to the User Groups tab under Assignees.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/11.png)
 
 1. Click *New*.
 
 1. Select *Marketing*.
 
-   ![Select the Marketing user group.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/12.png)
+   ![Select the Marketing user group.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/12.png)
 
 1. Click *Add*.
 
@@ -322,13 +322,13 @@ To do this,
 
 1. Click *Actions* (![Actions Button](./../../../../../dxp/latest/en/images/icon-actions.png)) for Christian Carter and select *Impersonate User*.
 
-   ![Impersonate Christian Carter.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/13.png)
+   ![Impersonate Christian Carter.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/13.png)
 
    This opens a new tab where you can view the Liferay instance using Christian Carter's permissions.
 
    Notice how he doesn't have access to any of the applications or resources he needs as a marketing coordinator.
 
-   ![Christian Carter doesn't have access to any of the applications or resources he needs as a marketing coordinator.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/14.png)
+   ![Christian Carter doesn't have access to any of the applications or resources he needs as a marketing coordinator.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/14.png)
 
    Clarity needs all Marketing Coordinators to have access to assets in the team's asset library.
 
@@ -340,7 +340,7 @@ To do this,
 
    **Tip**: Enter "Asset Libraries" into the search bar to quickly locate this section.
 
-   ![Assign Asset Library permissions to the Marketing Coordinator role.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/15.png)
+   ![Assign Asset Library permissions to the Marketing Coordinator role.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/15.png)
 
 1. Select these permissions:
 
@@ -360,7 +360,7 @@ To do this,
 
    Now he can access the Asset Libraries application in the Global Menu (![Global Menu](./../../../../../dxp/latest/en/images/icon-applications-menu.png)).
 
-   ![Christian Carter can now access the Asset Libraries application in the Global Menu.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/16.png)
+   ![Christian Carter can now access the Asset Libraries application in the Global Menu.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/16.png)
 
 1. Go to the *Asset Libraries* application.
 
@@ -385,7 +385,7 @@ To do this,
 
 1. Select *Marketing* and click *Done*.
 
-   ![Select the Marketing user group in the Marketing Assets's membership application](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/17.png)
+   ![Select the Marketing user group in the Marketing Assets's membership application](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/17.png)
 
 1. Refresh the tab where you're impersonating Christian Carter.
 
@@ -397,7 +397,7 @@ To do this,
 
 1. Click *Actions* (![Actions Button](./../../../../../dxp/latest/en/images/icon-actions.png)) for the Marketing user group and select *Assign Roles*.
 
-   ![Click Actions for the Marketing user group and select Assign Roles.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/18.png)
+   ![Click Actions for the Marketing user group and select Assign Roles.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/18.png)
 
    Here you can select from available asset library roles. These roles grant permissions for individual libraries.
 
@@ -407,7 +407,7 @@ To do this,
 
    Now he can access the library's applications.
 
-   ![Now Christian Carter can access the library's applications.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/19.png)
+   ![Now Christian Carter can access the library's applications.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/19.png)
 
    Although Christian Carter can access the library's applications, he doesn't have the application permissions necessary for fulfilling his responsibilities (e.g., uploading documents, editing articles).
 
@@ -474,7 +474,7 @@ To do this,
 
 1. In the left menu, go to *Site and Asset Library Administration* &rarr; *Site Builder* &rarr; *Pages*. 
 
-   ![Assign Page permissions to the Marketing Coordinator role.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/20.png)
+   ![Assign Page permissions to the Marketing Coordinator role.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/20.png)
 
 1. Select this permission.
 
@@ -488,7 +488,7 @@ To do this,
 
    Notice that he can now access edit tools for site pages.
 
-   ![Christian Carter can now access edit tools for site pages.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/21.png)
+   ![Christian Carter can now access edit tools for site pages.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/21.png)
 
 Well done! Now all members of the Marketing user group have the correct base permissions. By assigning additional roles, Clarity can ensure they have access to the applications and data they need.
 
@@ -542,7 +542,7 @@ To do this,
 
 1. Click *Actions* (![Actions Button](./../../../../../dxp/latest/en/images/icon-actions.png)) for the Marketing user group and select *Permissions*.
 
-   ![Select Permissions in the Actions menu for the Marketing user group.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/22.png)
+   ![Select Permissions in the Actions menu for the Marketing user group.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/22.png)
 
 1. For the Marketing Manager role, select these permissions and click *Save*:
 
@@ -552,7 +552,7 @@ To do this,
    | Marketing Manager | View Members   |
    | Marketing Manager | View           |
 
-   ![Give view and add members permissions to the marketing manager role.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/23.png)
+   ![Give view and add members permissions to the marketing manager role.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/23.png)
 
 1. Go to the *Users and Organizations* application in the Global Menu.
 
@@ -560,7 +560,7 @@ To do this,
 
    Clara should see the Marketing user group. She should also be able to view members of the user group and add new members to the group.
 
-   ![Clara can add other Clarity users to the marketing user group.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/24.png)
+   ![Clara can add other Clarity users to the marketing user group.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson3/images/24.png)
 
    **Note**: This is just an example of the types of permissions you can assign to manager roles.
 
@@ -617,7 +617,7 @@ To do this,
 
    Great! Now both users are members of the site and you can assign site roles to them.
 
-   ![Now all 5 Clarity's personas are members of the site.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/01.png)
+   ![Now all 5 Clarity's personas are members of the site.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/images/01.png)
 
 1. Click *Actions* (![Actions Button](./../../../../../dxp/latest/en/images/icon-actions.png)) for Christian Carter and select *Assign Roles*.
 
@@ -646,7 +646,7 @@ To do this,
 
 1. Open the *Site Menu* (![Site Menu](./../../../../../dxp/latest/en/images/icon-product-menu.png)), expand *Configuration*, and select *Site Settings*.
 
-   ![Go to Site Settings to configure the site.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/02.png)
+   ![Go to Site Settings to configure the site.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/images/02.png)
 
 1. Go to *Site Configuration* &rarr; *Details*.
 
@@ -658,7 +658,7 @@ To do this,
 
    This allows guests to freely become site members and access the site's public pages and content.
 
-   ![Set the site’s membership type to Open.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/03.png)
+   ![Set the site’s membership type to Open.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/images/03.png)
 
 1. Click *Save*.
 
@@ -678,7 +678,7 @@ To do this,
 
    This way their Spanish speaking audience can access the site using a localized domain name.
 
-   ![Add a virtual host for Spanish.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/04.png)
+   ![Add a virtual host for Spanish.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/images/04.png)
 
 1. Click *Save*.
 
@@ -690,7 +690,7 @@ To do this,
 
    **Tip**: To select multiple languages at a time, hold the CTRL key.
 
-   ![Define a custom language configuration.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/05.png)
+   ![Define a custom language configuration.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/images/05.png)
 
 1. Click *Save*.
 
@@ -700,7 +700,7 @@ To do this,
 
    This means users can press Tab twice and hit Enter to access a menu for configuring their accessibility settings.
 
-   ![Enable the accessibility menu for the website.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/06.png)
+   ![Enable the accessibility menu for the website.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/images/06.png)
 
 1. Click *Save*.
 
@@ -735,7 +735,7 @@ To do this,
 
    This defines the default page to which users are redirected after signing out.
 
-   ![Configure the URLs for each navigation field.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/07.png)
+   ![Configure the URLs for each navigation field.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson4/images/07.png)
 
 1. Click *Save*.
 
@@ -755,7 +755,7 @@ Next, you'll finish implementing Clarity's enterprise website structure.
 
 As previously mentioned, Clarity wants to implement this page hierarchy for their enterprise website:
 
-![Clarity wants to implement this page hierarchy for their enterprise website.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/01.png)
+![Clarity wants to implement this page hierarchy for their enterprise website.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/01.png)
 
 Some parts of this structure should be implemented as content pages, while others should be display pages or utility pages. The training workspace includes most of these pages, though it is missing the *FAQ* content page and the *Leadership Profile* display page.
 
@@ -774,13 +774,13 @@ To add the FAQ content page,
 
 1. In the Static Pages tab, click *New* and select *Page*.
 
-   ![Add a page in the Clarity website.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/02.png)
+   ![Add a page in the Clarity website.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/02.png)
 
 1. Select the *Primary Master Page* template.
 
    **Note**: This applies an incomplete template provided by the training workspace. You'll complete this template in later exercises.
 
-   ![Select the Primary Master Page template to set the page's default layout.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/03.png)
+   ![Select the Primary Master Page template to set the page's default layout.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/03.png)
 
 1. For name, enter `FAQ` and click *Add*.
 
@@ -796,7 +796,7 @@ To add the FAQ content page,
 
    This creates a hierarchical relationship between these pages.
 
-   ![Create a hierarchical relationship between Clarity's product pages.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/04.png)
+   ![Create a hierarchical relationship between Clarity's product pages.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/04.png)
 
 1. Drag and drop *Open Positions* onto *Careers*.
 
@@ -826,7 +826,7 @@ To do this,
 
    **Note**: The Leadership Profile subtype was provided by the training workspace. You'll learn more about web content types in a later lesson.
 
-   ![Create a Leadership Profile display page template.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/05.png)
+   ![Create a Leadership Profile display page template.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/05.png)
 
 1. Click *Save*.
 
@@ -838,7 +838,7 @@ To do this,
 
    This ensures leadership profile articles use this template.
 
-   ![Mark the Leadership Profile display page template as default.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/06.png)
+   ![Mark the Leadership Profile display page template as default.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/06.png)
 
 For now, we'll leave this template blank, but we'll revisit it in a later exercise. With Clarity's page structure complete, let's finish designing the header for Clarity's pages.
 
@@ -874,7 +874,7 @@ To do this,
 
    **Tip**: To duplicate a page element while editing, press CTRL + D.
 
-   ![Add two containers in the Page Header container.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/07.png)
+   ![Add two containers in the Page Header container.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/07.png)
 
 1. Select the *Header Announcement Bar* and configure these settings in the configuration side panel:
 
@@ -885,7 +885,7 @@ To do this,
    | General | Justify Content   | Center                    |
    | Styles  | Spacing > Padding | Spacer 2 (top and bottom) |
 
-   ![Configure the container's settings in the configuration side panel.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/08.png)
+   ![Configure the container's settings in the configuration side panel.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/08.png)
 
    **Note**: Use the green boxes to add padding. This adds space between the container and its contents.
 
@@ -900,13 +900,13 @@ To do this,
    | General | Container Width   | Fixed Width                                              |
    | Styles  | Spacing > Padding | Spacer 3 (top and bottom) <br> Spacer 6 (left and right) |
 
-   ![Add padding to Header Navigation Bar.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/09.png)
+   ![Add padding to Header Navigation Bar.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/09.png)
 
 1. Add a *Grid* element to the Header Navigation Bar container.
 
 1. Widen the center module by dragging the dividers outward one space on each side.
 
-   ![Widen the center module by dragging the dividers outward one space on each side.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/10.png)
+   ![Widen the center module by dragging the dividers outward one space on each side.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/10.png)
 
 1. Select the grid and configure these settings:
 
@@ -923,7 +923,7 @@ To do this,
 
    * **Header User Actions**: This container is for the search bar and user login/menu.
 
-   ![Add a container to each grid area and name them Header Branding, Header Navigation, and Header User Actions.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/11.png)
+   ![Add a container to each grid area and name them Header Branding, Header Navigation, and Header User Actions.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/11.png)
 
 1. Select the *Header Branding* container and configure these settings:
 
@@ -959,7 +959,7 @@ To do this,
 
    **Note**: The "Login and User Menu" fragment is a custom fragment provided in the Clarity Components fragment set. In a later lesson, you'll create a custom fragment for the header's search button.
 
-![Add and configure these page elements to finish wireframing the master page's header.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/12.png)
+![Add and configure these page elements to finish wireframing the master page's header.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/12.png)
 
 For now, this completes the wireframing for the primary master page. You'll revisit it again in the following lessons to update its menus and add the search bar. Next, you'll configure the template's allowed fragments.
 
@@ -982,7 +982,7 @@ To do this,
    * Knowledge Base Navigation (fragment)
    * Add to Cart (fragment)
 
-   ![Uncheck these fragments to prevent users from adding them to pages that use this template.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/13.png)
+   ![Uncheck these fragments to prevent users from adding them to pages that use this template.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/13.png)
 
 1. Click *Save*.
 
@@ -1002,7 +1002,7 @@ To do this,
 
 1. While in the Masters tab of the Page Templates application, click *Actions* (![Actions Button](./../../../../../dxp/latest/en/images/icon-actions.png)) for the Primary Master Page and select *Make a Copy* &rarr; *Master Page*.
 
-   ![Make a copy of the Primary Master Page template.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/14.png)
+   ![Make a copy of the Primary Master Page template.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/14.png)
 
 1. Click *Actions* (![Actions Button](./../../../../../dxp/latest/en/images/icon-actions.png)) for the copy and select *Rename*.
 
@@ -1014,7 +1014,7 @@ To do this,
    * Footer Branding
    * Footer Navigation
 
-   ![Remove Header Announcement Bar, Footer Branding and Footer Navigation containers from the Primary Master Page template.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/15.png)
+   ![Remove Header Announcement Bar, Footer Branding and Footer Navigation containers from the Primary Master Page template.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/15.png)
 
 1. Click *Publish Master*.
 
@@ -1052,7 +1052,7 @@ To do this,
    <!-- * **404 Error**: Secondary Master Page
    * **500 Error**: Secondary Master Page -->
 
-   ![Apply the appropriate master page template.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/16.png)
+   ![Apply the appropriate master page template.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson6/images/16.png)
 
 1. Click *Publish*.
 
@@ -1078,7 +1078,7 @@ To do this,
 
 1. For Name, enter `Header Page Menu`.
 
-   ![Create a navigation menu for the page header.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/01.png)
+   ![Create a navigation menu for the page header.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/images/01.png)
 
 1. Click *Save*.
 
@@ -1088,7 +1088,7 @@ To do this,
 
 1. Select the *Page* item type.
 
-   ![Select the Page item type.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/02.png)
+   ![Select the Page item type.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/images/02.png)
 
 1. Check these pages:
 
@@ -1099,13 +1099,13 @@ To do this,
    * FAQ
    * Products
 
-   ![Select the pages to add them to the menu.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/03.png)
+   ![Select the pages to add them to the menu.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/images/03.png)
 
 1. Click *Select*. This saves your changes to the menu.
 
 1. Click *Actions* (![Actions Button](./../../../../../dxp/latest/en/images/icon-actions.png)) for one of the menu items and select *View Info*. This opens a side panel where you can update its display name if desired.
 
-   ![You can change a menu item's display name.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/04.png)
+   ![You can change a menu item's display name.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/images/04.png)
 
 1. Drag and drop the pages into this order:
 
@@ -1132,7 +1132,7 @@ Now that the header page menu is defined, you can update the menu display fragme
 
 1. Click *Select*.
 
-![Select the FAQ page to add it to the Footer Resources Menu.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/05.png)
+![Select the FAQ page to add it to the Footer Resources Menu.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/images/05.png)
 
 With Clarity's navigation menus complete, let's return to Clarity's master page templates and update their header menu displays to use the correct navigation menu.
 
@@ -1150,7 +1150,7 @@ To do this,
 
 1. Click *Header Page Menu* and click *Select This Level*.
 
-   ![Navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/06.png)
+   ![Navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/images/06.png)
 
 1. Click *Publish Master*.
 
@@ -1158,7 +1158,7 @@ To do this,
 
 Once finished, navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.
 
-![Navigate to the Home page to see the changes on the template applied to the connected pages.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/07.png)
+![Navigate to the Home page to see the changes on the template applied to the connected pages.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson7/images/07.png)
 
 Clarity's master pages are nearly done. Now they just need a custom Search Button fragment to add to the header.
 
@@ -1180,13 +1180,13 @@ To do this,
 
 1. Go to the *Configuration* tab and copy the contents of the `search-button-configuration.json` file into the editor. This file is in the `[repository-folder]/exercises/lesson-8/` folder.
 
-   ![Copy and paste the JSON configuration into the editor.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/01.png)
+   ![Copy and paste the JSON configuration into the editor.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/images/01.png)
 
    This defines two configuration options for the fragment: `iconName` and `iconSize`. You can reference these options in the fragment's code.
 
 1. Return to the *Code* tab and replace the contents of the HTML window with the contents of the `search-button.ftl` file. This file is also in the `[repository-folder]/exercises/lesson-8/` folder.
 
-   ![Replace the contents of the HTML window.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/02.png)
+   ![Replace the contents of the HTML window.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/images/02.png)
 
    Notice this includes references to the configuration options you defined in the previous step: `${configuration.iconSize}` and `${configuration.iconName}`. This way you can configure the icon's name and size when you add the fragment to a page.
 
@@ -1204,7 +1204,7 @@ While in the Fragments application,
 
 1. Click *Actions* (![Actions Button](./../../../../../dxp/latest/en/images/icon-actions.png)) for the fragment set and select *Import*.
 
-   ![Import the compositions to Clarity Page Compositions fragment set.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/03.png)
+   ![Import the compositions to Clarity Page Compositions fragment set.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/images/03.png)
 
 1. Click *Select File*, navigate to the `[repository-folder]/exercises/lesson-8/` folder in the training workspace, and select `page-composition-faq.zip` file.
 
@@ -1233,7 +1233,7 @@ To do this,
 
 1. Add the *Search Button* fragment to the Header User Actions container.
 
-   ![Add the Search Button fragment to the Header User Actions container.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/04.png)
+   ![Add the Search Button fragment to the Header User Actions container.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/images/04.png)
 
 1. In the Browser side panel (![Browser Tab](./../../../../../dxp/latest/en/images/icon-hierarchy.png)), select the *link* sub-element for the Search Button fragment.
 
@@ -1272,7 +1272,7 @@ To do this,
 
    **Note**: For the Home page, remove its default content before adding the fragment composition.
 
-   ![Drag and drop the corresponding fragment composition into the page's central content area.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/05.png)
+   ![Drag and drop the corresponding fragment composition into the page's central content area.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/images/05.png)
 
 1. Click *Publish*.
 
@@ -1294,7 +1294,7 @@ To do this,
 
 1. Click *Change Current Theme* and select *Dialect*.
 
-   ![Select the Dialect theme.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/06.png)
+   ![Select the Dialect theme.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/images/06.png)
 
    **Note**: Themes determine the baseline look and feel for your website, including color schemes, typography, spacing, and other styling options. They serve as the starting point for additional configurations that you can make using style books and frontend client extensions.
 
@@ -1306,7 +1306,7 @@ To do this,
 
    **Note**: The logo determines the image used to identify the site in the Liferay UI.
 
-   ![Update the favicon and logo.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/07.png)
+   ![Update the favicon and logo.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/images/07.png)
 
 1. Scroll down to the bottom and click *Save*.
 
@@ -1356,7 +1356,7 @@ To deploy Clarity's theme CSS client extension:
 
 1. Under Customization, click *Plus* (![Plus Button](./../../../../../dxp/latest/en/images/icon-plus.png)) for Theme CSS and select *Liferay Clarity Theme CSS*.
 
-   ![Apply the Liferay Clarity Theme CSS to site pages.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/08.png)
+   ![Apply the Liferay Clarity Theme CSS to site pages.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/images/08.png)
 
 1. Click *Save*.
 
@@ -1366,7 +1366,7 @@ To deploy Clarity's theme CSS client extension:
 
 You can now explore Clarity's site to see how applying the theme has updated the styling of page elements.
 
-![Navigate Clarity's site to see how applying the theme has updated the styling of page elements.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/09.png)
+![Navigate Clarity's site to see how applying the theme has updated the styling of page elements.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson8/images/09.png)
 
 Congratulations! You've finished setting up Clarity's site architecture and styling. Next, you'll begin adding content.
 
@@ -1390,7 +1390,7 @@ To do this,
 
 1. Click *Add* and select *Clarity Public Enterprise Website*.
 
-   ![Add Clarity Public Enterprise Website to Clarity Branding and Logo asset library.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson9/01.png)
+   ![Add Clarity Public Enterprise Website to Clarity Branding and Logo asset library.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson9/images/01.png)
 
    This enables users in the site to access content in the asset library. Next, add content to the library.
 
@@ -1416,7 +1416,7 @@ After completing this exercise, you should have seven asset libraries with image
 * Marketing Assets
 * Product Images
 
-![Go to the Asset Libraries overview page and confirm you have five asset libraries.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson9/02.png)
+![Go to the Asset Libraries overview page and confirm you have five asset libraries.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson9/images/02.png)
 
 Next, you'll return to Clarity's master pages and use the imported branding images.
 
@@ -1440,7 +1440,7 @@ To do this,
 
 1. Click *Sites and Libraries* in the breadcrumb menu.
 
-   ![Click Sites and Libraries in the breadcrumb menu.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson9/03.png)
+   ![Click Sites and Libraries in the breadcrumb menu.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson9/images/03.png)
 
 1. Go to the *Asset Library* tab.
 
@@ -1469,7 +1469,7 @@ To do this,
 
    **Important**: If the image does not update for you, you must clear the Liferay server's cache. To do this, sign in as the Clarity Admin user, open the *Global Menu* (![Global Menu](./../../../../../dxp/latest/en/images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Server Administration*. Then, click *Execute* for the "Clear content cached across the cluster" operation.
 
-   ![Select logo-name-vector to add the image to the header and logo-full-name-vector to the footer.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson9/04.png)
+   ![Select logo-name-vector to add the image to the header and logo-full-name-vector to the footer.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson9/images/04.png)
 
 1. Repeat steps 4-10 to update the header image in the *Secondary Master Page* template to use `logo-name-vector`.
 
@@ -1532,7 +1532,7 @@ To do this,
 
 1. Click *Save*.
 
-![Create the Announcements web content structure.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/01.png)
+![Create the Announcements web content structure.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/images/01.png)
 
 Users can now create web content articles using the Announcements structure. Next, you'll create some web content articles.
 
@@ -1574,7 +1574,7 @@ To do this,
 
    **Note**: When selecting the page, click the *Sites and Libraries* in the breadcrumb menu and select *Clarity Public Enterprise Website*.
 
-   ![Create the Product Innovations web content article.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/02.png)
+   ![Create the Product Innovations web content article.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/images/02.png)
 
 1. Click *Publish*.
 
@@ -1592,7 +1592,7 @@ To do this,
    | Do you have retail partners where I can try on your eyewear? | Yes, we have partnered with various optical shops where you can try on our eyewear. Please visit our website to find the nearest location.                                              |
    | What types of eyewear do you offer?                          | We offer a wide range of eyewear including prescription glasses, sunglasses, and contact lenses. We also have a collection of designer frames to suit different styles and preferences. |
 
-![Create three FAQ web content article.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/03.png)
+![Create three FAQ web content article.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/images/03.png)
 
 Great! You should have all the web content Clarity needs for their pages. Next, you'll map some content to fragments on Clarity's home page.
 
@@ -1625,7 +1625,7 @@ To do this,
 
 1. Select the fragment's *image-square* sub-element to access its mapping options.
 
-   ![Select the image-square sub-element under the Banner's Image fragment.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/04.png)
+   ![Select the image-square sub-element under the Banner's Image fragment.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/images/04.png)
 
 1. For Source Selection, select *Mapping*.
 
@@ -1633,13 +1633,13 @@ To do this,
 
 1. Go to the *Documents and Media* tab and click *Sites and Libraries* in the breadcrumb menu.
 
-   ![Go to the Documents and Media tab and use the breadcrumb menu.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/05.png)
+   ![Go to the Documents and Media tab and use the breadcrumb menu.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/images/05.png)
 
 1. Go to the *Asset Library* tab, select *Marketing Assets*, and select the image named `home-banner-narrow-no-background`.
 
 1. For Field, select *File URL*. The image should appear in the Home page banner.
 
-   ![Map the image to display it in the fragment.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/06.png)
+   ![Map the image to display it in the fragment.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/images/06.png)
 
 1. Repeat steps 4-9 for the *Image* fragment in the Clarity Solutions Promo container and select the `sunglasses-on-shelves` image from the Marketing Assets asset library.
 
@@ -1653,7 +1653,7 @@ To do this,
 
 1. For Field, select *File URL*. The texture should overlay the gradient promotion.
 
-   ![Map the image to use it as the fragment's background.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/07.png)
+   ![Map the image to use it as the fragment's background.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/images/07.png)
 
 1. Repeat steps 12-14 for the *Distributor Promo* container and select the `home-promotion` image from the Marketing Assets asset library.
 
@@ -1665,7 +1665,7 @@ To do this,
    |:--------|:----------------|:------------|
    | General | Container Width | Fixed Width |
 
-   ![Set the Banner Content container's width setting to Fixed Width.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/08.png)
+   ![Set the Banner Content container's width setting to Fixed Width.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/images/08.png)
 
 1. Repeat the previous step for these containers
 
@@ -1673,12 +1673,12 @@ To do this,
    * *Content Container* (under See the Difference)
    * *Helpful Articles*
 
-   ![Set the containers' width setting to Fixed Width.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/09.png)
+   ![Set the containers' width setting to Fixed Width.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/images/09.png)
 
    Now the contents of these containers should be fixed and the dimensions should better resemble Clarity's designs.
 
 You have now mapped content from Clarity's asset libraries to the image fragments on their Home page. In later lessons, you'll map content fields to additional types of fragment sub-elements. But for now, you've completed all exercises for day one of Building Enterprise Websites!
 
-![Navigate to the home page, and confirm every field is mapped correctly.](./images/day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/10.png)
+![Navigate to the home page, and confirm every field is mapped correctly.](./day-1-exercises-for-building-enterprise-websites-with-liferay/lesson10/images/10.png)
 
 Next, you'll learn about how you can use AI to assist in content creation and tagging.

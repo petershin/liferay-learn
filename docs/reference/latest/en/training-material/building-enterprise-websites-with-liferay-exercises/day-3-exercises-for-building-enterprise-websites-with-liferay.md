@@ -2,7 +2,7 @@
 uuid: fa59111a-df99-4fec-95d3-690485bf5fe6
 ---
 
-![Introduction page for day 3](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/01.png)
+![Introduction page for day 3](./day-3-exercises-for-building-enterprise-websites-with-liferay/images/01.png)
 
 # Day 3 Exercises for Building Enterprise Websites with Liferay
 
@@ -144,13 +144,13 @@ To do this,
 
 1. Click *Publish*.
 
-   ![You can fill out the Contact Us form after publishing the page.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson19/01.png)
+   ![You can fill out the Contact Us form after publishing the page.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson19/images/01.png)
 
 1. Test the form by submitting an entry.
 
 1. Go to *Site Menu* (![Site Menu](./../../../../../dxp/latest/en/images/icon-product-menu.png)), expand *Content & Data*, and click *Contact Us*. The entry you created should appear here.
 
-   ![The Contact Us entry appears in the menu.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson19/02.png)
+   ![The Contact Us entry appears in the menu.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson19/images/02.png)
 
 Great! You've fully set up the Contact Us page and made it available for Clarity's users.
 
@@ -202,7 +202,7 @@ To do this,
    | General | Page                           | Home       |
    | General | Show Notification After Submit | Yes        |
 
-   ![You can configure the form to redirect to another page when submitted.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson19/03.png)
+   ![You can configure the form to redirect to another page when submitted.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson19/images/03.png)
 
 1. Click *Publish*.
 
@@ -233,7 +233,7 @@ To do this,
 
 1. Click *Publish*.
 
-   ![The form will redirect to its second step when clicking Next.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson19/04.png)
+   ![The form will redirect to its second step when clicking Next.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson19/images/04.png)
 
 1. Test out the form.
 
@@ -254,7 +254,7 @@ To do this,
 
    Note that Clarity's "See the Difference" banner uses a beige background (i.e., `#FCFBF8`). Let's make a change to Clarity's theme CSS client extension to update it.
 
-   ![Clarity's "See the Difference" banner uses a beige background.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/02.png)
+   ![Clarity's "See the Difference" banner uses a beige background.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/02.png)
 
 1. Navigate to the `[repository-folder]/exercises/lesson-20/` folder, open the `layout-background-color.scss` file, and copy its contents.
 
@@ -280,7 +280,7 @@ To do this,
 
 1. Verify the background of the container is now gray:
 
-   ![New gray background](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/03.png)
+   ![New gray background](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/03.png)
 
    **Tip**: When making changes to theme CSS values, you may need to clear your browser's cache to see your changes.
 
@@ -322,7 +322,7 @@ To do this,
 
 1. Go to the Home page and verify the page's favicon was updated.
 
-   ![Go to the Home page and verify the page's favicon was updated.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/04.png)
+   ![Go to the Home page and verify the page's favicon was updated.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/04.png)
 
 ## Exercise 20c: Creating a New CSS Client Extension
 
@@ -338,7 +338,7 @@ To do this,
 
 1. For CSS URL, enter `https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css`.
 
-   ![Create a CSS Client Extension.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/05.png)
+   ![Create a CSS Client Extension.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/05.png)
 
 1. Click *Publish*.
 
@@ -350,7 +350,7 @@ To do this,
 
 1. Choose *Clarity Animation* and click *Add*.
 
-   ![Add the Clarity Animation CSS Client Extension to the Home page configuration.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/06.png)
+   ![Add the Clarity Animation CSS Client Extension to the Home page configuration.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/06.png)
 
 1. Scroll down and click *Save*.
 
@@ -368,7 +368,7 @@ To do this,
 
    This adds three CSS animation classes to the fragment from the from the `animate.css` library on [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css) (i.e., `animate__animated`, `animate__slower`, and `animate__fadeIn`).
 
-   ![Edit the Clarity Gradient Container's fragment HTML field.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/07.png)
+   ![Edit the Clarity Gradient Container's fragment HTML field.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/07.png)
 
 1. Click *Publish*.
 
@@ -378,7 +378,7 @@ To do this,
 
 1. Check all boxes and click *Propagate*.
 
-   ![Propagate the changes made to Clarity Gradient Container fragment.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/08.png)
+   ![Propagate the changes made to Clarity Gradient Container fragment.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/08.png)
 
    Now, all fragments used throughout the site are updated with the new CSS classes.
 
@@ -386,7 +386,7 @@ To do this,
 
    The animation now plays every time you refresh or navigate to the Home page.
 
-   ![Clarity Gradient Container](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/09.png)
+   ![Clarity Gradient Container](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/09.png)
 
 Next, let's explore how you can use client extensions with Objects to build custom solutions with complex business logic.
 
@@ -430,7 +430,7 @@ The training workspace includes a batch client extension for quickly setting up 
    * D4B8 Product Types
    * D4B8 Recommendations
 
-   ![Picklists for the object definitions.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/10.png)
+   ![Picklists for the object definitions.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/10.png)
 
 1. Open the *Global Menu* (![Global Menu](./../../../../../dxp/latest/en/images/icon-applications-menu.png)), go to *Control Panel*, and click *Objects*.
 
@@ -439,7 +439,7 @@ The training workspace includes a batch client extension for quickly setting up 
    * D4B8 Distributor Application
    * D4B8 Application Evaluation
 
-   ![Picklists for the object definitions.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/11.png)
+   ![Picklists for the object definitions.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/11.png)
 
    As we're adding more object definitions, let's add a folder for organizing our objects and place the D4B8 objects into it.
 
@@ -449,7 +449,7 @@ The training workspace includes a batch client extension for quickly setting up 
 
 1. Click *Create Folder*.
 
-   ![Create a new object folder.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/12.png)
+   ![Create a new object folder.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/12.png)
 
 1. Click *View in Model Builder*.
 
@@ -457,7 +457,7 @@ The training workspace includes a batch client extension for quickly setting up 
 
 1. In the left side panel, click *Actions* (![Actions menu](./../../../../../dxp/latest/en/images/icon-actions.png)) for D4B8 Distributor Application and select *Move to Current Folder*.
 
-   ![Move the D4B8 Distributor Application object definition to the new folder.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/13.png)
+   ![Move the D4B8 Distributor Application object definition to the new folder.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/13.png)
 
 1. Repeat this step for D4B8 Application Evaluation.
 
@@ -478,7 +478,7 @@ To do this,
 
 1. Open the *Global Menu* (![Global Menu](./../../../../../dxp/latest/en/images/icon-applications-menu.png)) and go to the *Control Panel* tab. Both D4B8 Application Evaluations and D4B8 Distributor Applications should appear in the Object category.
 
-   ![The Control Panel now shows the Application Evaluations and Distributor Applications menus.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/14.png)
+   ![The Control Panel now shows the Application Evaluations and Distributor Applications menus.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/14.png)
 
 1. Open *D4B8 Distributor Applications*.
 
@@ -490,7 +490,7 @@ To do this,
 
 1. Return to the Distributor Applications overview page and verify your entry appears in the table.
 
-   ![The created application entry is displayed in the Distributor Application menu.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/15.png)
+   ![The created application entry is displayed in the Distributor Application menu.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/15.png)
 
    Now you can create an evaluation for this entry.
 
@@ -508,11 +508,11 @@ To do this,
 
 1. Return to the Application Evaluations overview page and verify the entry appears in the table.
 
-   ![The evaluation entry appears in the Application Evaluations menu.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/16.png)
+   ![The evaluation entry appears in the Application Evaluations menu.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/16.png)
 
    This evaluation is automatically related to the selected application. You can confirm these entries are related by returning to *Distributor Applications* overview page, selecting the application, and going to the *Evaluation Notes* tab.
 
-   ![The Evaluation Notes tab displays evaluations related to the application.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/17.png)
+   ![The Evaluation Notes tab displays evaluations related to the application.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/17.png)
 
 ## Exercise 20f: Adding Fields to the Distributor Applications Object
 
@@ -540,7 +540,7 @@ To do this,
    | Enable Entry Translation | False                         |
    | Mandatory                | False                         |
 
-   ![Clicking Add opens a panel to create a new custom field.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/18.png)
+   ![Clicking Add opens a panel to create a new custom field.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/18.png)
 
 Each saved field is added immediately to the object and automatically appears in its default layout when creating entries. However, the Distributor Application object has a custom layout that must be modified to include the new field.
 
@@ -556,11 +556,11 @@ To add the field to the object's layout,
 
 1. Find the Business Details block and click *Add Field*.
 
-   ![The Business Details can be found under the Application tab.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/19.png)
+   ![The Business Details can be found under the Application tab.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/19.png)
 
 1. Select *Business Other Brands Offered* as an option, choose the single column box for the field size, and click *Save*.
 
-   ![Clicking Add Field opens a panel to include a field to the block.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/20.png)
+   ![Clicking Add Field opens a panel to include a field to the block.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/20.png)
 
 1. Click *Save* at the bottom of the panel.
 
@@ -598,7 +598,7 @@ To do this,
    | Contacts   | PRODUCT_TYPE_CONTACTS   |
    | Other      | PRODUCT_TYPE_OTHER      |
 
-   ![All picklists should appear after adding them.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/21.png)
+   ![All picklists should appear after adding them.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/21.png)
 
 1. Click *Save*.
 
@@ -632,13 +632,13 @@ To do this,
 
    <!--TASK: Confirm whether the delete and update permissions are necessary. I suspect they are not necessary, since entry creators are assigned the entry 'owner' role, which allows them to update for delete the entry.-->
 
-   ![The User role should be able to create, read, update, and delete applications.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/22.png)
+   ![The User role should be able to create, read, update, and delete applications.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/22.png)
 
 1. Click *Save*.
 
 1. Verify the User role has the desired permissions.
 
-   ![All permissions are assigned to the User role after configuration.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/23.png)
+   ![All permissions are assigned to the User role after configuration.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/23.png)
 
    Clarity also wants to allow members of their business development team to review all applications and fill out evaluations. To achieve this, let's grant the Business Development Manager role the necessary permissions.
 
@@ -673,7 +673,7 @@ To do this,
      | Resource Permissions > D4B8 Application Evaluation: Update Discussion |
      | Resource Permissions > D4B8 Application Evaluation: View              |
 
-   ![All permissions are assigned to the Business Development Manager Role after configuration.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/24.png)
+   ![All permissions are assigned to the Business Development Manager Role after configuration.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/24.png)
 
 1. For test purposes, go to the *Assignees* tab and assign this role to Harper Roberts.
 
@@ -721,7 +721,7 @@ To do this,
 
 1. In your Liferay instance, open the *Global Menu* (![Global Menu](./../../../../../dxp/latest/en/images/icon-applications-menu.png)), go to the *Applications* tab, and click *Process Builder*.
 
-   ![The Distribution Manager Approval workflow displays in the workflows menu.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/25.png)
+   ![The Distribution Manager Approval workflow displays in the workflows menu.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/25.png)
 
    The Distribution Manager Approval workflow is already fully configured. All you have to do is enable it for the Distributor Application object.
 
@@ -729,7 +729,7 @@ To do this,
 
 1. Click *Edit* for D4B8 Distributor Application, select *D4B8 Distribution Manager Approval*, and click *Save*.
 
-   ![The assigned workflow will be used by the object.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/26.png)
+   ![The assigned workflow will be used by the object.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/26.png)
 
 This enables the workflow. Now you can test it by editing an object entry and setting its state field to *Under Review*. This update should be approved automatically by the workflow action. Next, update the state field to `Approved`. The entry's status should be `Pending`. You can then impersonate Harper Roberts and check for a workflow notification. You can then assign the task to Roberts and approve it. Once finished, the entry's status should be `Approved`.
 
@@ -762,7 +762,7 @@ To do this,
 
 1. Click *Save*.
 
-   ![Create a new action called Set Up Account for D4B8 Distributor Application object.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/27.png)
+   ![Create a new action called Set Up Account for D4B8 Distributor Application object.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/27.png)
 
 1. Open the *Global Menu* (![Global Menu](./../../../../../dxp/latest/en/images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Roles*.
 
@@ -776,7 +776,7 @@ To do this,
 
 When saved, Liferay adds the Set Up Account action as an option in each object entry's *Actions* menu (![Actions Button](./../../../../../dxp/latest/en/images/icon-actions.png)), so you can trigger it manually. Now you can try it out!
 
-![Liferay adds the Set Up Account action as an option in each object entry's Actions menu.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/28.png)
+![Liferay adds the Set Up Account action as an option in each object entry's Actions menu.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/28.png)
 
 After triggering the action, open the *Global Menu* (![Global Menu](./../../../../../dxp/latest/en/images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Accounts*. If successful, the new account should appear and the Clarity Admin user should be assigned to it as the account manager.
 
@@ -798,7 +798,7 @@ To do this,
    * Application Denied
    * Application Received
 
-   ![The provided solution includes three notification templates.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/29.png)
+   ![The provided solution includes three notification templates.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/29.png)
 
 1. Click *Add* and select *User Notification*.
 
@@ -844,7 +844,7 @@ To do this,
    * Application Approved
    * Application Denied
 
-   ![The provided solution includes three notification actions.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/30.png)
+   ![The provided solution includes three notification actions.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/30.png)
 
 1. Click *Add* to create a new object action.
 
@@ -857,7 +857,7 @@ To do this,
    | Description  | On After Add, send notifications to administrative users. |
    | Active       | True                                                      |
 
-   ![Clicking Add opens a sidebar to create a new object action.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/31.png)
+   ![Clicking Add opens a sidebar to create a new object action.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/31.png)
 
 1. Go to the *Action Builder* tab and set these values:
 
@@ -868,13 +868,13 @@ To do this,
    | Action                | Notification                            |
    | Notification Template | D4B8 Application Submitted, Admin, User |
 
-   ![The Action Builder tab is used to set the trigger, condition, and action to be done.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/32.png)
+   ![The Action Builder tab is used to set the trigger, condition, and action to be done.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/32.png)
 
 1. Click *Save*.
 
 Now whenever users submit an application, employees with the Business Development Manager role are automatically notified. To test the notification, create another application entry and impersonate Harper Roberts. You should see a platform notification.
 
-![A notification is sent to the business manager when an application is submitted.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/33.png)
+![A notification is sent to the business manager when an application is submitted.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson20/images/33.png)
 
 ## Exercise 21a: Tailoring Experiences by User Group and Role
 
@@ -928,7 +928,7 @@ To do this,
 
    We cover both scenarios here: users in the user group and those with the directly assigned Distributor role.
 
-   ![Set the regular role to Distributor and the user group to Distributors.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson21/01.png)
+   ![Set the regular role to Distributor and the user group to Distributors.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson21/images/01.png)
 
 1. Click *View Members* to validate Terrence Wheatley meets the segment condition.
 
@@ -974,7 +974,7 @@ To do this,
 
 1. From the downloaded course bundle, navigate to the `[repository-folder]/exercises/lesson-22/` folder and select the `Clarity.jmx` file.
 
-   ![Open the Clarity.jmx file in JMeter.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson22/01.png)
+   ![Open the Clarity.jmx file in JMeter.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson22/images/01.png)
 
 1. From the *Run* menu, click *Start*.
 
@@ -984,7 +984,7 @@ To do this,
 
 1. Review the report to find any performance outliers.
 
-   ![Notice that the Summary Report highlights an issue with the blog page.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson22/02.png)
+   ![Notice that the Summary Report highlights an issue with the blog page.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson22/images/02.png)
 
 1. In the left menu, click *Response Time Graph*. Under the *Settings* tab, click *Display Graph*. This graph can also be used to identify any performance outliers.
 
@@ -1008,7 +1008,7 @@ While logged in as the Clarity Admin user, use the Page Audit Tool to investigat
 
    The Page Audit side panel displays a list of all page fragments sorted by the load time from longest to shortest.
 
-   ![The Page Audit side panel displays a list of all page fragments by load time.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson22/03.png)
+   ![The Page Audit side panel displays a list of all page fragments by load time.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson22/images/03.png)
 
 1. In the Performance tab, identify the fragments with the longest load time.
 
@@ -1028,7 +1028,7 @@ To do this,
 
 1. In the HTML window, delete the `[#assign x = sleeper.sleep(3) /]` line.
 
-   ![Delete the line causing the performance problem.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson22/04.png)
+   ![Delete the line causing the performance problem.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson22/images/04.png)
 
 1. Click *Publish*.
 
@@ -1050,7 +1050,7 @@ Run another performance test with JMeter to verify the fix.
 
 1. When finished, review the Summary Report and the Response Time Graph again. Notice that the page that previously had a performance issue no longer has a problem.
 
-   ![Notice that the page that previously had a performance issue no longer has a problem.](./images/day-3-exercises-for-building-enterprise-websites-with-liferay/lesson22/02.png)
+   ![Notice that the page that previously had a performance issue no longer has a problem.](./day-3-exercises-for-building-enterprise-websites-with-liferay/lesson22/images/02.png)
 
 While logged in as the Clarity Admin user, check the problem page again with the Page Audit Tool.
 

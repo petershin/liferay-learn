@@ -2,7 +2,7 @@
 uuid: e82adec1-994a-4bdc-98ef-8c3b0debc2ff
 ---
 
-![Introduction page for day 2](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/01.png)
+![Introduction page for day 2](./day-2-exercises-for-building-enterprise-websites-with-liferay/images/01.png)
 
 # Day 2 Exercises for Building Enterprise Websites with Liferay
 
@@ -66,7 +66,7 @@ To do this,
 
 1. Click the *AI Creator* button (![AI Creator Button](./../../../../../dxp/latest/en/images/icon-ai-creator.png)) to generate content.
 
-   ![Use the AI Creator tool to generate content.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson11/01.png)
+   ![Use the AI Creator tool to generate content.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson11/images/01.png)
 
 1. Enter your desired description, tone, and word count.
 
@@ -178,7 +178,7 @@ To do this,
    | Subtype                   | FAQ                            |
    | Required                  | Not Required                   |
 
-   ![Choose which asset types the vocabulary will be associated with.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson12/01.png)
+   ![Choose which asset types the vocabulary will be associated with.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson12/images/01.png)
 
 1. Click *Save* to create the vocabulary.
 
@@ -204,7 +204,7 @@ To do this,
    * `Pricing & Ordering`
    * `Returns & Exchanges`
 
-   ![Create and use categories according to your content.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson12/02.png)
+   ![Create and use categories according to your content.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson12/images/02.png)
 
 1. **(Challenge)** Assign the correct category to each FAQ web content article. The FAQs are sorted into folders corresponding to their categories.
 
@@ -247,7 +247,7 @@ To do this,
 
 1. Click *Add*.
 
-   ![Add the articles to the Helpful Articles collection.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/01.png)
+   ![Add the articles to the Helpful Articles collection.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/images/01.png)
 
    The manual collection is now populated with content and ready to use in site pages.
 
@@ -257,7 +257,7 @@ To do this,
 
 1. In the configuration side panel, click *Plus* (![Plus Button](./../../../../../dxp/latest/en/images/icon-plus.png)) for Collection and select the *Helpful Articles* collection.
 
-   ![Select the Helpful Articles collection.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/02.png)
+   ![Select the Helpful Articles collection.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/images/02.png)
 
    The fragment now sources its content from the Helpful Articles collection. The provided composition already applies the Clarity Card fragment to the collection display for rendering each item. To display article content from the collection, you'll need to map the card's sub-elements to fields in the articles. But before mapping the card's sub-elements to content fields, let's change the collection display's pagination.
 
@@ -296,7 +296,7 @@ To do this,
 
 1. Return to the Home page and verify all mappings work.
 
-![Go to the Home page and check if all mapped fields work.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/03.png)
+![Go to the Home page and check if all mapped fields work.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/images/03.png)
 
 Great! You created a manual collection and displayed it in Clarity's Home page. Next, you'll learn how to create a dynamic collection.
 
@@ -328,7 +328,7 @@ To do this,
 
 1. In the Categories field, search for `Retail Partners` and select it.
 
-   ![Set a rule to only include FAQ items with the Retail Partners category.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/04.png)
+   ![Set a rule to only include FAQ items with the Retail Partners category.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/images/04.png)
 
 1. Click *Save* to create the collection.
 
@@ -338,7 +338,7 @@ To do this,
    * `FAQ - Pricing & Ordering`
    * `FAQ - Returns & Exchanges`
 
-   ![Create an FAQ collection for each category.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/05.png)
+   ![Create an FAQ collection for each category.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/images/05.png)
 
    For each collection, filter results using its corresponding category.
 
@@ -360,7 +360,7 @@ To do this,
 
 1. The block on the right contains a page title and four FAQ Section compositions. Each FAQ Section contains a heading and a Collection Display fragment. Each Collection Display contains a custom fragment called FAQ Question and Answer Pair. First map the collection displays to the FAQ collections you built earlier. Make sure each collection corresponds to the heading for that section.
 
-   ![Map each collection display according to its heading.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/06.png)
+   ![Map each collection display according to its heading.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/images/06.png)
 
 1. For Pagination, select *None*.
 
@@ -380,7 +380,7 @@ To do this,
 
 1. Click *Publish* to save your changes to the FAQ page.
 
-![Publish the changes and check the finalized FAQ page.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/07.png)
+![Publish the changes and check the finalized FAQ page.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/images/07.png)
 
 Using collection displays and custom fragments, you have rendered FAQ web content onto Clarity's FAQ page. Next, let's add content to the header announcement bar.
 
@@ -416,7 +416,7 @@ To do this,
    |:-------|:-------------------|:----------------------|
    | Styles | Background > Color | *Color Brand Primary* |
 
-   ![Set the container's background color to 'Color Brand Primary' from the style book.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/08.png)
+   ![Set the container's background color to 'Color Brand Primary' from the style book.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/images/08.png)
 
    **Note**: Color options are defined by the theme's style book. Unless you've applies the theme CSS client extension to the master page template, the Color Brand Primary option appears purple. This value is overridden in site pages by the Theme CSS client extension.
 
@@ -442,7 +442,7 @@ To do this,
    |:-------|:-------------|:------------------|
    | Styles | Text > Color | *Color Neutral 0* |
 
-   ![Set the paragraphs's text color to 'Color Neutral 0' from the style book.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/09.png)
+   ![Set the paragraphs's text color to 'Color Neutral 0' from the style book.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/images/09.png)
 
 1. Select the paragraph's *element-text* sub-element and configure this setting:
 
@@ -469,7 +469,7 @@ To do this,
 
 1. Adjust the margins and padding for the announcement bar elements until you are satisfied with it.
 
-   ![Make the final adjustments to the announcement bar.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/10.png)
+   ![Make the final adjustments to the announcement bar.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson13/images/10.png)
 
 1. Click *Publish Master* to save your changes.
 
@@ -500,11 +500,11 @@ To do this,
    | Default Catalog Language | English (United States) |
    | Currency                 | US Dollar               |
 
-   ![Create a catalog to group related products together.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/01.png)
+   ![Create a catalog to group related products together.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/01.png)
 
 1. Click *Submit* to finish creating the catalog.
 
-![The catalog should appear in the Catalogs section after saving.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/02.png)
+![The catalog should appear in the Catalogs section after saving.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/02.png)
 
 Great! Now that you've created the catalog, you can start adding products to it. But first, let's add specifications that you can add to Clarity's products when you create them.
 
@@ -574,7 +574,7 @@ To do this,
 
 1. Return to the *Specification Labels* page.
 
-![Create three Product specification labels.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/03.png)
+![Create three Product specification labels.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/03.png)
 
 Now that you've added some specifications, you can apply them to products as you create them.
 
@@ -681,7 +681,7 @@ To do this,
 
 1. Click *Publish* to save the product image.
 
-   ![Add the image to the product's media.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/04.png)
+   ![Add the image to the product's media.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/04.png)
 
    <!--TASK: Add attachment-->
 
@@ -696,7 +696,7 @@ To do this,
 
    **Note**: To add the tag, type `daily` into the Tags field.
 
-   ![Create three Products.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/05.png)
+   ![Create three Products.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/05.png)
 
 Great! Now that you've added products, you can set up a channel to display them in Clarity's site.
 
@@ -730,7 +730,7 @@ To do this,
 
 1. Click *Save*.
 
-![Create the Clarity Public commerce channel.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/06.png)
+![Create the Clarity Public commerce channel.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/06.png)
 
 With the channel created, let's return to Clarity's site and finish setting up their product pages.
 
@@ -767,7 +767,7 @@ To implement this,
 
 1. Click *Save* and close the modal window.
 
-   ![The Clarity Products categories should appear after saving.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/07.png)
+   ![The Clarity Products categories should appear after saving.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/07.png)
 
 1. Click *Publish* to view the updated page.
 
@@ -797,7 +797,7 @@ To implement this,
 
 1. Click *Publish* to view the page.
 
-![Use a display template for the Clarity Category Cards widget.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/08.png)
+![Use a display template for the Clarity Category Cards widget.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/08.png)
 
 Great! You can see we are a lot closer to the final design requested by Clarity. Now that you've finished the Products page, let's complete the Product List page.
 
@@ -843,7 +843,7 @@ To fix this,
 
    **Note**: The Search Results widget should look blank, towards the bottom right side of the layout.
 
-   ![The Search Results widget should look blank.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/09.png)
+   ![The Search Results widget should look blank.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/09.png)
 
 1. For Render Selection, select *Use Application Display Template*.
 
@@ -857,7 +857,7 @@ To fix this,
 
 1. Return to the *Products* page and click one of the category cards to confirm it is working properly and you are seeing your new template.
 
-   ![The Search Results widget should now display the products.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/10.png)
+   ![The Search Results widget should now display the products.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/10.png)
 
 ### Creating the Product Display Page
 
@@ -880,7 +880,7 @@ To fix this,
 
 1. Drag and drop the *Product Details Page* fragment composition into the drop area.
 
-   ![Drag and drop the Product Details Page fragment composition into the drop area.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/11.png)
+   ![Drag and drop the Product Details Page fragment composition into the drop area.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson14/images/11.png)
 
 1. In the Product Details container, map these fragments with their corresponding product fields.
 
@@ -971,7 +971,7 @@ To do this,
 
    **Tip**: To quickly find the endpoint, search the browser page for `postSiteDocument`.
 
-   ![You can see all endpoints related to a section.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson15/01.png)
+   ![You can see all endpoints related to a section.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson15/images/01.png)
 
 1. For the siteId field, enter the site ID for Clarity Public Enterprise Website.
 
@@ -1016,7 +1016,7 @@ To do this,
 
 1. Confirm the `Things I Find Interesting in Eyewear` blog post appears.
 
-   ![Use Headless APIs to add a blog post.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson15/02.png)
+   ![Use Headless APIs to add a blog post.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson15/images/02.png)
 
 ## Exercise 15b: Using Headless APIs to Batch Import Web Content
 
@@ -1042,7 +1042,7 @@ To do this,
 
 1. Open the *Articles* folder and confirm all three articles appear.
 
-   ![The three web content articles should appear in the folder.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson15/03.png)
+   ![The three web content articles should appear in the folder.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson15/images/03.png)
 
 ## Exercise 15c: Using Headless APIs to Batch Import Products
 
@@ -1083,7 +1083,7 @@ To do this,
 
 1. Confirm eight new products appear.
 
-   ![Eight new products should appear.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson15/04.png)
+   ![Eight new products should appear.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson15/images/04.png)
 
 ## Exercise 15d: Using Headless to Import Taxonomy Categories
 
@@ -1122,7 +1122,7 @@ To do this,
 
 1. Copy the contents of `import-taxonomy-categories-batch.json` into the *Request Body* field.
 
-    ![You can post content to a vocabulary using its ID.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson15/05.png)
+    ![You can post content to a vocabulary using its ID.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson15/images/05.png)
 
 1. Click *Execute*.
 
@@ -1177,7 +1177,7 @@ To do this,
 
 1. Click *Save*.
 
-   ![The Single Approver workflow will be assigned to the Articles folder.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/01.png)
+   ![The Single Approver workflow will be assigned to the Articles folder.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/images/01.png)
 
 You have set up a publication for tracking changes to Clarity's article web content, along with a workflow for approving new articles before they are published to the production site.
 
@@ -1205,7 +1205,7 @@ To do this,
    |--------------|-----------|
    | Clara Murphy | Publisher |
 
-   ![Invite Christian Carter and Clara Murphy to the Article Publication.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/02.png)
+   ![Invite Christian Carter and Clara Murphy to the Article Publication.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/images/02.png)
 
 1. Click *Send* and click *OK* to confirm.
 
@@ -1230,11 +1230,11 @@ To do this,
 
    Note that the publications menu now appears at the top of the page and a new notification for the publication invitation was received.
 
-   ![The publications menu appears and a new notification was received.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/03.png)
+   ![The publications menu appears and a new notification was received.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/images/03.png)
 
 1. Click the user profile icon, go to *Notifications*, and select the publications invitation.
 
-   ![The invitation notification appears in the notification queue.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/04.png)
+   ![The invitation notification appears in the notification queue.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/images/04.png)
 
    This opens the details page for Article Publication.
 
@@ -1270,7 +1270,7 @@ To do this,
 
    The publications menu now appears at the top of the page and two new notifications for the publication invitation and review request were received.
 
-   ![The invitation and review request notifications appear in the menu.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/05.png)
+   ![The invitation and review request notifications appear in the menu.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/images/05.png)
 
 1. Click the *Publications* drop-down menu at the top of the page, click *Select a Publication*, and choose *Article Publication*.
 
@@ -1282,7 +1282,7 @@ To do this,
 
    This action will fail because the publication includes unapproved changes.
 
-   ![The action will fail if any changes are pending.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/06.png)
+   ![The action will fail if any changes are pending.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/images/06.png)
 
 1. Click the user profile icon and go to *My Workflow Tasks*.
 
@@ -1304,7 +1304,7 @@ To do this,
 
 1. Click *Publish*, verify there are no conflicts, and click *Publish* again to add the changes to production.
 
-   ![You can publish the publication if there are no conflicts.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/07.png)
+   ![You can publish the publication if there are no conflicts.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson16/images/07.png)
 
 Great! You've successfully used workflow with publications to review and publish a web content article. Next, you'll learn how to leverage Liferay's Search capabilities to improve user experience.
 
@@ -1345,7 +1345,7 @@ To do this,
 
 1. Use the right arrow button (![Right Arrow Button](./../../../../../dxp/latest/en/images/icon-angle-right.png)) to remove all asset types except for Web Content Article.
 
-   ![Configure the asset type to only include web content articles.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/01.png)
+   ![Configure the asset type to only include web content articles.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/images/01.png)
 
    This ensures that only web content articles appear in search results.
 
@@ -1357,7 +1357,7 @@ To do this,
 
 1. For Display Template, select the *Clarity Search Category* template.
 
-   ![You can select a display template for the category facet.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/02.png)
+   ![You can select a display template for the category facet.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/images/02.png)
 
 1. For Category Parameter Name, enter a unique value (e.g., `category-region`). 
 
@@ -1367,7 +1367,7 @@ To do this,
 
 1. Expand the *Clarity Enterprise Website* vocabularies and select the *Region* vocabulary.
 
-   ![The widget will only show the categories from the Region vocabulary.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/03.png)
+   ![The widget will only show the categories from the Region vocabulary.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/images/03.png)
 
 1. Click *Save* and close the configuration window.
 
@@ -1391,7 +1391,7 @@ To do this,
 
 1. Click *Publish*.
 
-   ![You can now search for open job positions.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/04.png)
+   ![You can now search for open job positions.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/images/04.png)
 
    Finally, let's update the *Explore Open Positions* button in the Careers page to link to the Open Positions page.
 
@@ -1420,7 +1420,7 @@ To do this,
 
 1. Go to Clarity's *Product List* page. Most of the page is already built with different search widgets.
 
-   ![The product list page is made up of different widgets.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/05.png)
+   ![The product list page is made up of different widgets.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/images/05.png)
 
    The left side module is made up of a search bar widget, a specification facet widget, and an option facet widget. The right side module is made up of a sort widget and a search results widget. Note that the search results widget under the commerce category of widgets is different from the search results widget under the search category of widgets. Only the commerce-related widget returns products.
 
@@ -1440,7 +1440,7 @@ To do this,
 
 1. Click *Publish*.
 
-   ![Use the category facet widget to filter by product category.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/06.png)
+   ![Use the category facet widget to filter by product category.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/images/06.png)
 
 Great! You've included a category facet widget on the Product List page, allowing customers to filter their search results by product category.
 
@@ -1489,7 +1489,7 @@ To do this,
 
    Only job listings should appear in the Search Results.
 
-   ![The Custom Filter widget limits search results to job listings.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/07.png)
+   ![The Custom Filter widget limits search results to job listings.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson17/images/07.png)
 
 Great! You've set a custom filter widget that limits the search results to only display Job Listings web content in the Open Positions page.
 
@@ -1532,7 +1532,7 @@ To do this,
 
 1. For Values, enter the Job Listing Structure Key.
 
-   ![Add the filter by exact terms match element to the search blueprint.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/01.png)
+   ![Add the filter by exact terms match element to the search blueprint.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/images/01.png)
 
 1. In the left navigation, click *Query Settings*.
 
@@ -1554,7 +1554,7 @@ To do this,
 
 1. Copy the contents of `filter-last-60d.json` into the Custom JSON Element.
 
-   ![Copy the provided JSON into the Custom JSON Element.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/02.png)
+   ![Copy the provided JSON into the Custom JSON Element.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/images/02.png)
 
 1. Click *Preview* and click *Refresh* to see the filter applied.
 
@@ -1626,7 +1626,7 @@ Here you'll implement this as Clarity Admin.
 
 1. Add one more event after Future Event 1 that is named `Future Event 2`.
 
-   ![The calendar has one past event and two future events.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/03.png)
+   ![The calendar has one past event and two future events.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/images/03.png)
 
 With the page and events set up, you can set up a search blueprint. But before you do that, enable the feature flag for the blueprint integration with collections  element for future events.
 
@@ -1678,7 +1678,7 @@ Now you can create a blueprint that uses this element to query future events.
 
 1. Click *Selected Types* and click *Select Asset Types*.
 
-   ![Change the asset type to calendar event.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/04.png)
+   ![Change the asset type to calendar event.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/images/04.png)
 
 1. Select *Calendar Event*.
 
@@ -1724,7 +1724,7 @@ With the blueprint defined, you can now use its collection provider in a site pa
 
 1. Click *Publish*.
 
-   ![The collection display shows the future events.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/05.png)
+   ![The collection display shows the future events.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/images/05.png)
 
    The search blueprint automatically provides a collection of future events that's rendered by the collection display.
 
@@ -1773,7 +1773,7 @@ To do this,
 
 1. For Values, enter `${keywords}`.
 
-   ![Set the field and value for the query element.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/06.png)
+   ![Set the field and value for the query element.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/images/06.png)
 
 1. Click *Save* and copy down the blueprint's ID.
 
@@ -1807,7 +1807,7 @@ To do this,
 
 1. Verify this returns Ian Miller's user information.
 
-   ![The API response returns Ian Miller's user account.](./images/day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/07.png)
+   ![The API response returns Ian Miller's user account.](./day-2-exercises-for-building-enterprise-websites-with-liferay/lesson18/images/07.png)
 
    This is one way you can use Liferay as a headless system that's utilized by a third-party service.
 

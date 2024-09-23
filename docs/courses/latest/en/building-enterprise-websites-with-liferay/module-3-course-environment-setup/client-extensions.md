@@ -76,7 +76,7 @@ Client extensions should be your first choice when extending or customizing Life
 
 ## Conclusion
 
-Congratulations! You've completed Module 3: Developer Setup. Throughout this module, you set up a Liferay developer environment and explored the benefits of Liferay workspaces and client extensions.
+Congratulations! You've completed Module 3: Course Environment Setup. Throughout this module, you set up a Liferay developer environment and explored the benefits of Liferay workspaces and client extensions.
 
 In the next module, you'll learn about Liferay's identity management features.
 

@@ -56,7 +56,7 @@ Congratulations! You've completed Module 2: Deploying Liferay. Throughout this m
 
 In the next module, you'll set up the developer environment you'll use throughout the course.
 
-Up Next: [Module 3: Developer Setup](../module-3-developer-setup.md)
+Up Next: [Module 3: Course Environment Setup](../module-3-course-environment-setup.md)
 
 ## Additional Resources
 

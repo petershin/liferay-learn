@@ -2,7 +2,7 @@
 toc:
 - ./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md
 - ./building-enterprise-websites-with-liferay/module-2-deploying-liferay.md
-- ./building-enterprise-websites-with-liferay/module-3-developer-setup.md
+- ./building-enterprise-websites-with-liferay/module-3-course-environment-setup.md
 - ./building-enterprise-websites-with-liferay/module-4-security-and-identity-management.md
 - ./building-enterprise-websites-with-liferay/module-5-site-building.md
 - ./building-enterprise-websites-with-liferay/module-6-content-authoring-and-management.md

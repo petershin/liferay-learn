@@ -68,7 +68,7 @@ With this deployment approach Liferay provides:
 
 Liferay takes care of the full tech stack including the web server running Liferay, the database, search, and file storage. Each Liferay SaaS account comes with a production (`PRD`) Liferay environment as well as a test (`UAT`) Liferay environment.
 
-Client extension environments are also provided for custom development and customizations. Custom development is done through the use of Liferay Workspace and Client Extensions, both topics that are covered briefly in [Module 3: Developer Setup](../module-3-developer-setup.md) and later applied in [Module 10: Customizing Liferay DXP](../module-10-customizing-liferay-dxp.md). A VPN client is also available in these extension environments to enable client extensions to integrate to systems within your own data center.
+Client extension environments are also provided for custom development and customizations. Custom development is done through the use of Liferay Workspace and Client Extensions, both topics that are covered briefly in [Module 3: Course Environment Setup](../module-3-course-environment-setup.md) and later applied in [Module 10: Customizing Liferay DXP](../module-10-customizing-liferay-dxp.md). A VPN client is also available in these extension environments to enable client extensions to integrate to systems within your own data center.
 
 With Liferay SaaS, backups and upgrades are fully managed and done for you. There is no need to update your environment or patch previous releases. You can rest assured that your Liferay application is always up-to-date with the latest releases.
 

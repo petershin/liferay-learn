@@ -75,7 +75,7 @@ Finally, you can create synonym sets in Liferay to add additional coverage for d
 
 Now that you have an understanding of Liferay's search functionality, let's dive into Clarity's specific use cases.
 
-Next Up: [Understanding and Customizing Search Results Pages](./understanding-and-customizing-search-results-pages.md)
+Next Up: [Setting Up Clarity's Search Pages](./setting-up-claritys-search-pages.md)
 
 ## Additional Resources
 

@@ -1,7 +1,7 @@
 ---
 uuid: 40f88570-abf4-44ab-af8c-1374bde0e20d
 ---
-# Understanding and Customizing Search Results Pages
+# Setting Up Clarity's Search Pages
 
 Clarity wants site visitors to be able to search for and find content quickly and easily. This is accomplished by creating good navigation and leveraging Liferay's search features. For example, a customer looking for a pair of eyeglasses or sunglasses should be able to navigate the site to find the type of product they are looking for. The user might search by keyword or use search categories to filter through the list of products. Navigating Clarity's site should match the visitor's expectation for good user experience.
 
@@ -54,7 +54,7 @@ To do this,
 
 1. Use the right arrow button (![Right Arrow Button](../../images/icon-angle-right.png)) to remove all asset types except for Web Content Article.
 
-   ![Configure the asset type to only include web content articles.](./understanding-and-customizing-search-results-pages/images/01.png)
+   ![Configure the asset type to only include web content articles.](./setting-up-claritys-search-pages/images/01.png)
 
    This ensures that only web content articles appear in search results.
 
@@ -66,7 +66,7 @@ To do this,
 
 1. For Display Template, select the *Clarity Search Category* template.
 
-   ![You can select a display template for the category facet.](./understanding-and-customizing-search-results-pages/images/02.png)
+   ![You can select a display template for the category facet.](./setting-up-claritys-search-pages/images/02.png)
 
 1. For Category Parameter Name, enter a unique value (e.g., `category-region`). 
 
@@ -76,7 +76,7 @@ To do this,
 
 1. Expand the *Clarity Enterprise Website* vocabularies and select the *Region* vocabulary.
 
-   ![The widget will only show the categories from the Region vocabulary.](./understanding-and-customizing-search-results-pages/images/03.png)
+   ![The widget will only show the categories from the Region vocabulary.](./setting-up-claritys-search-pages/images/03.png)
 
 1. Click *Save* and close the configuration window.
 
@@ -100,7 +100,7 @@ To do this,
 
 1. Click *Publish*.
 
-   ![You can now search for open job positions.](./understanding-and-customizing-search-results-pages/images/04.png)
+   ![You can now search for open job positions.](./setting-up-claritys-search-pages/images/04.png)
 
    Finally, let's update the *Explore Open Positions* button in the Careers page to link to the Open Positions page.
 
@@ -135,7 +135,7 @@ To do this,
 
 1. Go to Clarity's *Product List* page. Most of the page is already built with different search widgets.
 
-   ![The product list page is made up of different widgets.](./understanding-and-customizing-search-results-pages/images/05.png)
+   ![The product list page is made up of different widgets.](./setting-up-claritys-search-pages/images/05.png)
 
    The left side module is made up of a search bar widget, a specification facet widget, and an option facet widget. The right side module is made up of a sort widget and a search results widget. Note that the search results widget under the commerce category of widgets is different from the search results widget under the search category of widgets. Only the commerce-related widget returns products.
 
@@ -155,7 +155,7 @@ To do this,
 
 1. Click *Publish*.
 
-   ![Use the category facet widget to filter by product category.](./understanding-and-customizing-search-results-pages/images/06.png)
+   ![Use the category facet widget to filter by product category.](./setting-up-claritys-search-pages/images/06.png)
 
 Great! You've included a category facet widget on the Product List page, allowing customers to filter their search results by product category.
 
@@ -208,7 +208,7 @@ To do this,
 
    Only job listings should appear in the Search Results.
 
-   ![The Custom Filter widget limits search results to job listings.](./understanding-and-customizing-search-results-pages/images/07.png)
+   ![The Custom Filter widget limits search results to job listings.](./setting-up-claritys-search-pages/images/07.png)
 
 Great! You've set a custom filter widget that limits the search results to only display Job Listings web content in the Open Positions page.
 
@@ -216,7 +216,7 @@ Great! You've set a custom filter widget that limits the search results to only 
 
 Great job! Visitors to Clarity's site now have a clear and simple way to search for and filter through different products and content. Next, we'll turn our attention to Liferay blueprints to bring personalization and further customization to the search experience.
 
-Next Up: [Personalizing Search Experiences with Blueprints](./personalizing-search-experiences-with-blueprints.md)
+Next Up: [Personalizing Clarity's Search Experiences](./personalizing-claritys-search-experiences.md)
 
 ## Additional Resources
 

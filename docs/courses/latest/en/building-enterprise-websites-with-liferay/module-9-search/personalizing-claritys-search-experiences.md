@@ -1,7 +1,7 @@
 ---
 uuid: 85d7e066-677f-4616-aca4-56555601a228
 ---
-# Personalizing Search Experiences with Blueprints
+# Personalizing Clarity's Search Experiences
 
 As we saw in the previous lesson, using search facets is great in providing visitors a way to quickly filter search results. However, Clarity has some search use cases that they wish to further customize and personalize. Liferay's Search Blueprints provide the necessary tools to meet Clarity's customization needs.
 
@@ -48,7 +48,7 @@ To do this,
 
 1. For Values, enter the Job Listing Structure Key.
 
-   ![Add the filter by exact terms match element to the search blueprint.](./personalizing-search-experiences-with-blueprints/images/01.png)
+   ![Add the filter by exact terms match element to the search blueprint.](./personalizing-claritys-search-experiences/images/01.png)
 
 1. In the left navigation, click *Query Settings*.
 
@@ -70,7 +70,7 @@ To do this,
 
 1. Copy the contents of `filter-last-60d.json` into the Custom JSON Element.
 
-   ![Copy the provided JSON into the Custom JSON Element.](./personalizing-search-experiences-with-blueprints/images/02.png)
+   ![Copy the provided JSON into the Custom JSON Element.](./personalizing-claritys-search-experiences/images/02.png)
 
 1. Click *Preview* and click *Refresh* to see the filter applied.
 
@@ -144,7 +144,7 @@ Here you'll implement this as Clarity Admin.
 
 1. Add one more event after Future Event 1 that is named `Future Event 2`.
 
-   ![The calendar has one past event and two future events.](./personalizing-search-experiences-with-blueprints/images/03.png)
+   ![The calendar has one past event and two future events.](./personalizing-claritys-search-experiences/images/03.png)
 
 With the page and events set up, you can set up a search blueprint. But before you do that, enable the feature flag for the blueprint integration with collections  element for future events.
 
@@ -196,7 +196,7 @@ Now you can create a blueprint that uses this element to query future events.
 
 1. Click *Selected Types* and click *Select Asset Types*.
 
-   ![Change the asset type to calendar event.](./personalizing-search-experiences-with-blueprints/images/04.png)
+   ![Change the asset type to calendar event.](./personalizing-claritys-search-experiences/images/04.png)
 
 1. Select *Calendar Event*.
 
@@ -242,7 +242,7 @@ With the blueprint defined, you can now use its collection provider in a site pa
 
 1. Click *Publish*.
 
-   ![The collection display shows the future events.](./personalizing-search-experiences-with-blueprints/images/05.png)
+   ![The collection display shows the future events.](./personalizing-claritys-search-experiences/images/05.png)
 
    The search blueprint automatically provides a collection of future events that's rendered by the collection display.
 
@@ -293,7 +293,7 @@ To do this,
 
 1. For Values, enter `${keywords}`.
 
-   ![Set the field and value for the query element.](./personalizing-search-experiences-with-blueprints/images/06.png)
+   ![Set the field and value for the query element.](./personalizing-claritys-search-experiences/images/06.png)
 
 1. Click *Save* and copy down the blueprint's ID.
 
@@ -327,7 +327,7 @@ To do this,
 
 1. Verify this returns Ian Miller's user information.
 
-   ![The API response returns Ian Miller's user account.](./personalizing-search-experiences-with-blueprints/images/07.png)
+   ![The API response returns Ian Miller's user account.](./personalizing-claritys-search-experiences/images/07.png)
 
    This is one way you can use Liferay as a headless system that's utilized by a third-party service.
 

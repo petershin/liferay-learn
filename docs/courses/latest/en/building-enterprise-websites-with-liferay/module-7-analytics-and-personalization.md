@@ -1,8 +1,8 @@
 ---
 toc:
-- ./module-7-analytics-and-personalization/claritys-analytics-and-experiences-requirements.md
+- ./module-7-analytics-and-personalization/claritys-analytics-and-personalization-requirements.md
 - ./module-7-analytics-and-personalization/understanding-users-with-analytics-cloud.md
-- ./module-7-analytics-and-personalization/personalizing-experiences-for-users.md
+- ./module-7-analytics-and-personalization/personalizing-experiences-for-claritys-users.md
 uuid: b23dfac8-d7e6-4885-818d-d2936dea6b83
 ---
 # Module 7: Analytics and Personalization
@@ -24,4 +24,4 @@ In this module, you'll learn about the following Liferay features:
 
 <!--TASK: Turn this list into learning objectives.-->
 
-Up First: [Clarity’s Analytics and Experiences Requirements](./module-7-analytics-and-personalization/claritys-analytics-and-experiences-requirements.md)
+Up First: [Clarity's Analytics and Personalization Requirements](./module-7-analytics-and-personalization/claritys-analytics-and-personalization-requirements.md)

@@ -8,13 +8,14 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 7a0e16df-8768-499c-aa23-f033f973ee70
 ---
+
 # Configuring SEO and Open Graph
 
 {bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
 Display page templates are custom layouts that display individual content items at a dedicated URL. These layouts use both fragments and widgets and can be created for web content articles, documents, blog entries, and more. Each template has its own SEO and Open Graph settings that can be filled manually or dynamically.
 
-Follow these steps to configure SEO and Open Graph settings for a display page template:
+To configure SEO and Open Graph settings for a display page template,
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), navigate to *Design* &rarr; *Page Templates*, and click on the *Display Page Templates* tab.
 
@@ -82,7 +83,13 @@ Check the *Use Custom Canonical URL* field to customize and localize the canonic
 
 ### Robots
 
-The Robots field configures `robots.txt` rules for a display page. These rules provide instructions to search engines and other tools crawling and indexing your site, defining what paths should or should not be crawled. Note that web crawlers may or may not obey instructions in `robots.txt`.
+The Robots field configures the `<meta name="robots">` tag for a display page. This tag controls how search engines crawl and index the page. You can specify values such as `noindex` to prevent the page from being indexed, or `nofollow` to prevent search engines from following links on the page. Learn more about the robots meta tag in [Robots meta tag, data-nosnippet, and X-Robots-Tag specifications](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag).
+
+Here's how the robots field appears in the HTML code when you specify those values:
+
+```html
+<meta name="robots" content="noindex, nofollow">
+```
 
 You can also localize this field using the Language Flag.
 

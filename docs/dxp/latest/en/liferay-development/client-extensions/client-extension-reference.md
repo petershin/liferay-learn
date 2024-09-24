@@ -21,11 +21,11 @@ You can find code examples for all types of client extensions in [liferay-portal
 
 - [Theme Favicon Client Extension](../customizing-liferays-look-and-feel/using-a-theme-favicon-client-extension.md)
 
-- [Global CSS Client Extension](../customizing-liferays-look-and-feel/using-a-css-client-extension.md)
+- [CSS Client Extension](../customizing-liferays-look-and-feel/using-a-css-client-extension.md)
 
 - [Theme CSS Client Extension](../customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md)
 
-- [Global JavaScript Client Extension](../customizing-liferays-look-and-feel/using-a-javascript-client-extension.md)
+- [JavaScript Client Extension](../customizing-liferays-look-and-feel/using-a-javascript-client-extension.md)
 
 - [JavaScript Import Map Entry Client Extension](../customizing-liferays-look-and-feel/bundling-resources-in-a-javascript-import-map-entry-client-extension.md)
 

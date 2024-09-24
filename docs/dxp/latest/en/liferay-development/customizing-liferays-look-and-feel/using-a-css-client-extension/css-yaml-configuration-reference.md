@@ -16,7 +16,7 @@ This `client-extension.yaml` file defines a CSS client extension definition:
 
 ```yaml
 able-global-css:
-    name: Able Global CSS
+    name: Able CSS
     type: globalCSS
     url: global.css
 ```

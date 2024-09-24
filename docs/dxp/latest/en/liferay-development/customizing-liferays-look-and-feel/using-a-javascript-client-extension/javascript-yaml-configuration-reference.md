@@ -17,7 +17,7 @@ This `client-extension.yaml` file defines a JavaScript client extension:
 
 ```yaml
 able-global-js:
-   name: Able Global JS
+   name: Able JS
    scriptElementAttributes:
       async: true
       data-attribute: "value"

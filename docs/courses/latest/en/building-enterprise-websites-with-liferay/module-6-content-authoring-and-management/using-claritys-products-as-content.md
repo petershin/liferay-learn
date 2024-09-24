@@ -1,7 +1,7 @@
 ---
 uuid: e9801e49-14af-43d7-bd38-d90ad513f96c
 ---
-# Creating Clarity’s Commerce Content
+# Using Clarity's Products as Content
 
 Although they are not yet building an e-commerce storefront, Clarity wants to leverage some Liferay commerce capabilities to create product content. While it is feasible to build Clarity's product material using web content structures, Liferay’s commerce features provide an additional layer of future-proofing to the website. In this section, we'll cover the following commerce features:
 
@@ -15,7 +15,7 @@ Although they are not yet building an e-commerce storefront, Clarity wants to le
 
 A catalog is a group of related products. Liferay catalogs provide a highly flexible way to organize your product offerings in the most sensible way for your business. There is no limit to the number of catalogs you can create, although maintenance effort should be a factor in how many you choose to have. Catalogs also enable you to define permissions for the products they contain, so that different product teams can manage different product groupings.
 
-![Create catalogs to group related products for effective management.](./creating-claritys-commerce-content/images/01.png)
+![Create catalogs to group related products for effective management.](./using-claritys-products-as-content/images/01.png)
 
 In addition, catalogs capture important commerce attributes like language, currency, and price lists, along with a placeholder image for products without an associated image. As useful as catalogs are, they are just empty containers without the products to populate them. Let's take a look at products next.
 
@@ -31,7 +31,7 @@ Like any manufacturer, Clarity has variants of their products designed to achiev
 
 - **Shop by Diagram**: Component parts belonging to a Bill of Materials (BOM) diagram that references products in the store.
 
-![Define and manage your own products using Liferay commerce features.](./creating-claritys-commerce-content/images/02.png)
+![Define and manage your own products using Liferay commerce features.](./using-claritys-products-as-content/images/02.png)
 
 Products offer more than just a predefined type of content--they offer many additional features that together create a first-class commerce experience with minimal effort:
 
@@ -63,7 +63,7 @@ Once their products and catalogs are configured, Clarity needs to think about ho
 
 - For transactional sites, channels offer payment, shipping, and tax information
 
-![Channels are the storefront where you can display and sell your products.](./creating-claritys-commerce-content/images/03.png)
+![Channels are the storefront where you can display and sell your products.](./using-claritys-products-as-content/images/03.png)
 
 While e-commerce isn’t Clarity’s main focus right now, setting up these features will set them up for success in the future.
 
@@ -93,11 +93,11 @@ To do this,
    | Default Catalog Language | English (United States) |
    | Currency                 | US Dollar               |
 
-   ![Create a catalog to group related products together.](./creating-claritys-commerce-content/images/04.png)
+   ![Create a catalog to group related products together.](./using-claritys-products-as-content/images/04.png)
 
 1. Click *Submit* to finish creating the catalog.
 
-![The catalog should appear in the Catalogs section after saving.](./creating-claritys-commerce-content/images/05.png)
+![The catalog should appear in the Catalogs section after saving.](./using-claritys-products-as-content/images/05.png)
 
 Great! Now that you've created the catalog, you can start adding products to it. But first, let's add specifications that you can add to Clarity's products when you create them.
 
@@ -168,7 +168,7 @@ To do this,
 
 1. Return to the *Specification Labels* page.
 
-![Create three Product specification labels.](./creating-claritys-commerce-content/images/06.png)
+![Create three Product specification labels.](./using-claritys-products-as-content/images/06.png)
 
 Now that you've added some specifications, you can apply them to products as you create them.
 
@@ -276,7 +276,7 @@ To do this,
 
 1. Click *Publish* to save the product image.
 
-   ![Add the image to the product's media.](./creating-claritys-commerce-content/images/07.png)
+   ![Add the image to the product's media.](./using-claritys-products-as-content/images/07.png)
 
    <!--TASK: Add attachment-->
 
@@ -291,7 +291,7 @@ To do this,
 
    **Note**: To add the tag, type `daily` into the Tags field.
 
-   ![Create three Products.](./creating-claritys-commerce-content/images/08.png)
+   ![Create three Products.](./using-claritys-products-as-content/images/08.png)
 
 Great! Now that you've added products, you can set up a channel to display them in Clarity's site.
 
@@ -326,7 +326,7 @@ To do this,
 
 1. Click *Save*.
 
-![Create the Clarity Public commerce channel.](./creating-claritys-commerce-content/images/09.png)
+![Create the Clarity Public commerce channel.](./using-claritys-products-as-content/images/09.png)
 
 With the channel created, let's return to Clarity's site and finish setting up their product pages.
 
@@ -364,7 +364,7 @@ To implement this,
 
 1. Click *Save* and close the modal window.
 
-   ![The Clarity Products categories should appear after saving.](./creating-claritys-commerce-content/images/10.png)
+   ![The Clarity Products categories should appear after saving.](./using-claritys-products-as-content/images/10.png)
 
 1. Click *Publish* to view the updated page.
 
@@ -394,7 +394,7 @@ To implement this,
 
 1. Click *Publish* to view the page.
 
-![Use a display template for the Clarity Category Cards widget.](./creating-claritys-commerce-content/images/11.png)
+![Use a display template for the Clarity Category Cards widget.](./using-claritys-products-as-content/images/11.png)
 
 Great! You can see we are a lot closer to the final design requested by Clarity. Now that you've finished the Products page, let's complete the Product List page.
 
@@ -440,7 +440,7 @@ To fix this,
 
    **Note**: The Search Results widget should look blank, towards the bottom right side of the layout.
 
-   ![The Search Results widget should look blank.](./creating-claritys-commerce-content/images/12.png)
+   ![The Search Results widget should look blank.](./using-claritys-products-as-content/images/12.png)
 
 1. For Render Selection, select *Use Application Display Template*.
 
@@ -454,7 +454,7 @@ To fix this,
 
 1. Return to the *Products* page and click one of the category cards to confirm it is working properly and you are seeing your new template.
 
-   ![The Search Results widget should now display the products.](./creating-claritys-commerce-content/images/13.png)
+   ![The Search Results widget should now display the products.](./using-claritys-products-as-content/images/13.png)
 
 ### Creating the Product Display Page
 
@@ -477,7 +477,7 @@ To fix this,
 
 1. Drag and drop the *Product Details Page* fragment composition into the drop area.
 
-   ![Drag and drop the Product Details Page fragment composition into the drop area.](./creating-claritys-commerce-content/images/14.png)
+   ![Drag and drop the Product Details Page fragment composition into the drop area.](./using-claritys-products-as-content/images/14.png)
 
 1. In the Product Details container, map these fragments with their corresponding product fields.
 
@@ -542,7 +542,7 @@ To fix this,
 
 Congratulations! You've finished setting up Clarity's product pages. Next, lest's explore how Clarity can set up publishing workflows in Liferay DXP.
 
-Next Up: [Publishing Content with Workflows](./publishing-content-with-workflows.md)
+Next Up: [Implementing Clarity's Content Publishing Workflow](./implementing-claritys-content-publishing-workflow.md)
 
 ## Additional Resources
 

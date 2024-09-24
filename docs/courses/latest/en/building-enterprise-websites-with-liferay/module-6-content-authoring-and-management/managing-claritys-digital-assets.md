@@ -132,7 +132,7 @@ To do this,
 
 Great! So far you've learned how to create asset libraries, import content, and display it in pages. Next you'll learn about creating web content.
 
-Next Up: [Creating Clarity's Web Content](./creating-claritys-web-content.md)
+Next Up: [Creating and Mapping Clarity's Content](./creating-and-mapping-claritys-content.md)
 
 ## Additional Resources
 

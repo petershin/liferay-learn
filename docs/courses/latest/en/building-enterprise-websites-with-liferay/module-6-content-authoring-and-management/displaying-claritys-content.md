@@ -294,6 +294,6 @@ The Header Announcement Bar is now visible on all pages that use the Primary Mas
 
 Great! You've used both manual and dynamic collections to display content on Clarity's website. Next, let's explore how Clarity can leverage Liferay's Commerce features to create content for their products catalog.
 
-Next Up: [Creating Clarity’s Commerce Content](./creating-claritys-commerce-content.md)
+Next Up: [Using Clarity's Products as Content](./using-claritys-products-as-content.md)
 
 <!-- TODO: Add Additional Resources section. -->

@@ -1,8 +1,7 @@
 ---
 uuid: 72084c2f-05ad-459b-9b80-be97e89d5214
 ---
-# Clarity's Content Management Requirements
-<!--TASK: Reconsider article name.-->
+# Clarity's Content Requirements
 
 *Content Management* encompasses the lifecycle of managing data within a platform. In Liferay DXP, this includes features you use to
 

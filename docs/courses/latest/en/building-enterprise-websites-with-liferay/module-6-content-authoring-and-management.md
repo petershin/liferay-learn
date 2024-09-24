@@ -1,16 +1,16 @@
 ---
 toc:
-- ./module-6-content-authoring-and-management/claritys-content-management-requirements.md
+- ./module-6-content-authoring-and-management/claritys-content-requirements.md
 - ./module-6-content-authoring-and-management/managing-claritys-digital-assets.md
-- ./module-6-content-authoring-and-management/creating-claritys-web-content.md
+- ./module-6-content-authoring-and-management/creating-and-mapping-claritys-content.md
 - ./module-6-content-authoring-and-management/organizing-claritys-content.md
 - ./module-6-content-authoring-and-management/displaying-claritys-content.md
-- ./module-6-content-authoring-and-management/creating-claritys-commerce-content.md
-- ./module-6-content-authoring-and-management/publishing-content-with-workflows.md
-- ./module-6-content-authoring-and-management/building-forms-with-objects.md
+- ./module-6-content-authoring-and-management/using-claritys-products-as-content.md
+- ./module-6-content-authoring-and-management/implementing-claritys-content-publishing-workflow.md
+- ./module-6-content-authoring-and-management/building-claritys-contact-us-form.md
 uuid: 995cbe20-0caf-478b-ae3c-edea06211e7c
 ---
-# Module 6: Content Authoring & Management
+# Module 6: Content Authoring and Management
 
 !!! important "Webinar Note"
     This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
@@ -34,4 +34,4 @@ By the end of this module, you'll know how to:
 
 Throughout this module, you'll learn best practices for creating and managing content for enterprise websites. First, let's take a closer look at Clarity's content requirements.
 
-Up First: [Clarity’s Content Management Requirements](./module-6-content-authoring-and-management/claritys-content-management-requirements.md)
+Up First: [Clarity's Content Requirements](./module-6-content-authoring-and-management/claritys-content-requirements.md)

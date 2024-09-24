@@ -1,8 +1,7 @@
 ---
 uuid: 1f1df919-03ad-4743-a53f-120bdd93e56e
 ---
-# Publishing Content with Workflows
-<!-- TASK: Reconsider Title; maybe "Setting Up a Content Publishing Workflow" or "Collaborating with Publications and Workflow" would be more apt. -->
+# Implementing Clarity's Content Publishing Workflow
 
 In the previous sections, you learned about the tools Liferay provides for managing digital assets and web content, and you put some of them to use in enhancing Clarity's enterprise marketing website. However, content creation and management isn't a one person operation. In reality, this process usually involves multiple team members across departments. Each contributor is expected to collaborate, create content in parallel, and send content through a review process before publishing.
 
@@ -16,7 +15,7 @@ Liferay provides two publishing tools for content creation and site building: St
 
 Liferay Staging provides a shared working environment for making changes to individual sites and asset libraries before publishing these changes to your live environment. When enabled, Liferay creates a separate copy of the original site or library and hosts them on either the same server ([Local Live](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging/configuring-local-live-staging)) or on separate servers ([Remote Live](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging/configuring-remote-live-staging)).
 
-![Staging creates a copy of the current site or asset library.](./publishing-content-with-workflows/images/01.png)
+![Staging creates a copy of the current site or asset library.](./implementing-claritys-content-publishing-workflow/images/01.png)
 
 All editing is then restricted to the staged site or asset library. When ready, you can publish your changes manually or schedule them to publish at a later time. Then the staged changes are copied to the live environment. 
 
@@ -26,7 +25,7 @@ Like Staging, Publications is a change-tracking tool for editing sites and conte
 
 When enabled, contributors can create working environments called 'publications' where they make edits without affecting the production environment’s published site. Each publication is company-scoped and can group changes across multiple sites and asset libraries. Also, while Staging provides a single working environment for all team members, Publications users can create as many working environments as they need. And since these working environments are independent of each other, contributors can work on their own timelines and publish their changes without impacting other projects.
 
-![Each publication functions as a branch based on the production environment.](./publishing-content-with-workflows/images/02.png)
+![Each publication functions as a branch based on the production environment.](./implementing-claritys-content-publishing-workflow/images/02.png)
 
 During the publishing process, Liferay checks for conflicts with production and prompts the user to review and resolve them. Some conflicts can be resolved automatically, while others require manual resolution. In case you need to roll back your changes, Publications maintains a detailed history of published changes, so you can quickly revert changes if needed.
 
@@ -39,7 +38,7 @@ By default, access to a publication is limited to its creator. However, creators
 
 Liferay Workflow defines approval processes for Liferay entities. These processes can help improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks. By default, Liferay includes a Single Approver workflow, but you can define your own workflows using a visual designer.
 
-![Liferay Workflow defines approval processes for Liferay entities.](./publishing-content-with-workflows/images/03.png)
+![Liferay Workflow defines approval processes for Liferay entities.](./implementing-claritys-content-publishing-workflow/images/03.png)
 
 Once you’ve defined a workflow, you can associate it with different content types and folders. This flexibility enables you to fine-tune approval processes for different individuals or teams within your organization. For example, you may require multiple team members across multiple departments to approve new products, while only requiring a one approver single manager approval for blog posts.
 
@@ -101,7 +100,7 @@ To do this,
 
 1. Click *Save*.
 
-   ![The Single Approver workflow will be assigned to the Articles folder.](./publishing-content-with-workflows/images/04.png)
+   ![The Single Approver workflow will be assigned to the Articles folder.](./implementing-claritys-content-publishing-workflow/images/04.png)
 
 You have set up a publication for tracking changes to Clarity's article web content, along with a workflow for approving new articles before they are published to the production site.
 
@@ -129,7 +128,7 @@ To do this,
    |--------------|-----------|
    | Clara Murphy | Publisher |
 
-   ![Invite Christian Carter and Clara Murphy to the Article Publication.](./publishing-content-with-workflows/images/05.png)
+   ![Invite Christian Carter and Clara Murphy to the Article Publication.](./implementing-claritys-content-publishing-workflow/images/05.png)
 
 1. Click *Send* and click *OK* to confirm.
 
@@ -155,11 +154,11 @@ To do this,
 
    Note that the publications menu now appears at the top of the page and a new notification for the publication invitation was received.
 
-   ![The publications menu appears and a new notification was received.](./publishing-content-with-workflows/images/06.png)
+   ![The publications menu appears and a new notification was received.](./implementing-claritys-content-publishing-workflow/images/06.png)
 
 1. Click the user profile icon, go to *Notifications*, and select the publications invitation.
 
-   ![The invitation notification appears in the notification queue.](./publishing-content-with-workflows/images/07.png)
+   ![The invitation notification appears in the notification queue.](./implementing-claritys-content-publishing-workflow/images/07.png)
 
    This opens the details page for Article Publication.
 
@@ -195,7 +194,7 @@ To do this,
 
    The publications menu now appears at the top of the page and two new notifications for the publication invitation and review request were received.
 
-   ![The invitation and review request notifications appear in the menu.](./publishing-content-with-workflows/images/08.png)
+   ![The invitation and review request notifications appear in the menu.](./implementing-claritys-content-publishing-workflow/images/08.png)
 
 1. Click the *Publications* drop-down menu at the top of the page, click *Select a Publication*, and choose *Article Publication*.
 
@@ -207,7 +206,7 @@ To do this,
 
    This action will fail because the publication includes unapproved changes.
 
-   ![The action will fail if any changes are pending.](./publishing-content-with-workflows/images/09.png)
+   ![The action will fail if any changes are pending.](./implementing-claritys-content-publishing-workflow/images/09.png)
 
 1. Click the user profile icon and go to *My Workflow Tasks*.
 
@@ -229,13 +228,13 @@ To do this,
 
 1. Click *Publish*, verify there are no conflicts, and click *Publish* again to add the changes to production.
 
-   ![You can publish the publication if there are no conflicts.](./publishing-content-with-workflows/images/10.png)
+   ![You can publish the publication if there are no conflicts.](./implementing-claritys-content-publishing-workflow/images/10.png)
 
 ## Conclusion
 
 Great! You've successfully used workflow with publications to review and publish web content. Next, let's explore how you can create business forms in Liferay.
 
-Up Next: [Building Forms with Objects](./building-forms-with-objects.md)
+Up Next: [Building Clarity's Contact Us Form](./building-claritys-contact-us-form.md)
 
 ## Additional Resources
 

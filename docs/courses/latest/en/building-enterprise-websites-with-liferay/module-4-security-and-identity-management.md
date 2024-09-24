@@ -10,8 +10,6 @@ uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
 ---
 # Module 4: Security and Identity Management
 
-<!-- TASK: RENAME FILE, FOLDERS, AND LINKS -->
-
 !!! important "Webinar Note"
     This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
 

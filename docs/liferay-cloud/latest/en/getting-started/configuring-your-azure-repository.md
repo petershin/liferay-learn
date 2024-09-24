@@ -107,6 +107,9 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 | `LCP_CI_SCM_REPOSITORY_NAME`  | [repo name]    |
 | `LCP_CI_SCM_TOKEN`            | [access token] |
 
+!!! important
+    For added security, store the value of `LCP_SI_SCM_TOKEN` in a [secret variable](../tuning-security-settings/managing-secure-environment-variables-with-secrets#referencing-secrets-from-environment-variables).
+
 After updating these environment variables, the Jenkins service restarts. Jenkins checks the repository every 5 minutes and triggers builds for pushed branches.
 
 ## Verifying Builds

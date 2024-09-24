@@ -131,6 +131,9 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 | `LCP_CI_SCM_USERNAME`                  | [auth username]    |
 | `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` | [list of prefixes] |
 
+!!! important
+    For added security, store the value of `LCP_SI_SCM_TOKEN` in a [secret variable](../tuning-security-settings/managing-secure-environment-variables-with-secrets#referencing-secrets-from-environment-variables).
+
 Define `LCP_CI_SCM_USERNAME` as the user that [generated the app password](#generating-app-password-for-bitbucket). Define `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` as a list of all [prefixes used in your repository's branches](#checking-branch-types-and-prefixes), separated by spaces.
 
 After updating these environment variables, the Jenkins service restarts. Any pushed branches and pull requests in your new repository should now trigger.

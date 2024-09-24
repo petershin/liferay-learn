@@ -74,6 +74,9 @@ Set these environment variables in the Jenkins service to point to your new repo
 | `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]    |
 | `LCP_CI_SCM_TOKEN`            | [access_token] |
 
+!!! important
+    For added security, store the value of `LCP_SI_SCM_TOKEN` in a [secret variable](../tuning-security-settings/managing-secure-environment-variables-with-secrets#referencing-secrets-from-environment-variables).
+
 For the `LCP_CI_SCM_TOKEN` value, use the personal access token created for your GitHub organization. For instructions on creating and accessing this token, see [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line).
 
 The personal access token created must have all of the scope permissions under *repo* and *admin:repo_hook* checked. The *admin:repo_hook* scope permissions specifically can be removed later if you [disable automatic web hook management](#personal-access-token-usage) after your repository is successfully integrated with Liferay Cloud.

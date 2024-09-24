@@ -25,16 +25,16 @@ Throughout this module, you'll take on different Clarity personas and experience
 
 ![Build Clarity's enterprise website.](./module-5-site-building/images/01.png)
 
-In this module, you will learn how to:
+By the end of this module, you'll know how to
 
-* Create a public website from scratch and learn about the benefits of templates and initializers
-* Manage key site settings like membership, virtual hosting, and localization
-* Create and publish different types of site pages
-* Wireframe page designs
-* Leverage master pages to establish consistent layouts and structures for site pages
-* Implement user-friendly navigation experiences for users
-* Create custom page fragments
-* Apply custom styling to your site using Liferay's out-of-the-box features and client extensions
+* Create a public website from scratch and learn about the benefits of templates and initializers.
+* Manage key site settings like membership, virtual hosting, and localization.
+* Create and publish different types of site pages.
+* Wireframe page designs.
+* Leverage master pages to establish consistent layouts and structures for site pages.
+* Implement user-friendly navigation experiences for users.
+* Create custom page fragments.
+* Apply custom styling to your site using Liferay's out-of-the-box features and client extensions.
 
 Before you start working on the Clarity site, let's review some of their site building requirements to help focus and guide our lessons and exercises.
 

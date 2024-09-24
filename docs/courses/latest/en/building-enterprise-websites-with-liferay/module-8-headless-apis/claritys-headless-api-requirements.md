@@ -27,4 +27,4 @@ While the headless APIs offer convenient access to and from Liferay's database, 
 
 Great! You've learned about Clarity's headless API requirements. Now let's take a closer look at Liferay's headless platform.
 
-Up Next: [Working with the Headless Platform](./working-with-the-headless-platform.md)
+Up Next: [Understanding Liferay's Headless APIs](./understanding-liferays-headless-apis.md)

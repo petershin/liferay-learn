@@ -1,9 +1,9 @@
 ---
 toc:
 - ./module-8-headless-apis/claritys-headless-api-requirements.md
-- ./module-8-headless-apis/working-with-the-headless-platform.md
-- ./module-8-headless-apis/headless-security.md
-- ./module-8-headless-apis/using-headless-apis.md
+- ./module-8-headless-apis/understanding-liferays-headless-apis.md
+- ./module-8-headless-apis/securing-headless-apis.md
+- ./module-8-headless-apis/using-apis-to-import-claritys-content.md
 uuid: a0a8f5b4-c8ff-4008-9cd8-0fcd6417f269
 ---
 # Module 8: Headless APIs

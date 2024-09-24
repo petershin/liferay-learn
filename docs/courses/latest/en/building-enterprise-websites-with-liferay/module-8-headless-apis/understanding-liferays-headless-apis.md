@@ -1,9 +1,7 @@
 ---
 uuid: 4b93d54a-064d-4536-af1a-6d0e92876f5c
 ---
-# Working with the Headless Platform
-
-<!--TASK: Rename; Reconsider article's focus-->
+# Understanding Liferay's Headless APIs
 
 <!--TASk: Add Headless Diagram-->
 
@@ -26,7 +24,7 @@ Headless API endpoints are available for nearly every Liferay resource (e.g. blo
 
 The API Explorer is an integrated application inside Liferay that displays all available headless REST API endpoints and provides the ability to call them through the user interface. APIs are grouped by category into several drop-down menus containing sets of endpoints. For each of these endpoints, the API Explorer displays the request URL, the corresponding method in the application, the possible parameters for the API call (both required and optional), and schemas for the request and response bodies. 
 
-![View and execute Liferay's headless API endpoints in the API Explorer.](./working-with-the-headless-platform/images/01.png)
+![View and execute Liferay's headless API endpoints in the API Explorer.](./understanding-liferays-headless-apis/images/01.png)
 
 Once you've supplied the required parameters and data for an endpoint, you can click *Execute* to submit the request. The response code, headers, and body appear on the page in JSON or XML where you can copy or download the response. The API Explorer provides an intuitive way to explore APIs and understand how they work in a secure environment as you use them to implement your custom solutions.
 
@@ -86,7 +84,7 @@ Liferay's API Builder is a UI-based approach to API creation that simplifies the
 
 See [API Builder](https://learn.liferay.com/w/dxp/headless-delivery/api-builder) to learn more.
 
-![Use the API Builder to create custom APIs right from the UI.](./working-with-the-headless-platform/images/02.png)
+![Use the API Builder to create custom APIs right from the UI.](./understanding-liferays-headless-apis/images/02.png)
 
 Fortunately, Liferay's out-of-the-box APIs satisfy Clarity's business needs. Next, let's learn about how Clarity can leverage these APIs securely.
 
@@ -94,7 +92,7 @@ Fortunately, Liferay's out-of-the-box APIs satisfy Clarity's business needs. Nex
 
 Great! You've learned about using Liferay's headless platform to call, test, and create REST APIs. Next, let's understand how to secure headless API calls.
 
-Up Next: [Headless Security](./headless-security.md)
+Up Next: [Securing Headless APIs](./securing-headless-apis.md)
 
 ## Additional Resources
 

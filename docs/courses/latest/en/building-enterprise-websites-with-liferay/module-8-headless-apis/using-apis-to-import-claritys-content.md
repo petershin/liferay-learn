@@ -1,9 +1,9 @@
 ---
 uuid: 8ae1a56b-1c55-402f-b6b2-af4746bfeead
 ---
-# Using Headless APIs
+# Using APIs to Import Clarity's Content
 
-Clarity wants to use leverage Liferay's headless APIs to import content from their legacy systems. They also want to leverage headless APIs to import Clarity products from their Product Information Management system (PMI).
+Clarity wants to use leverage Liferay's headless APIs to import content from their legacy systems. They also want to leverage headless APIs to import Clarity products from their Product Information Management system (PIM).
 
 ## Exercise: Connecting to Headless APIs Using the API Explorer
 
@@ -35,7 +35,7 @@ To do this,
 
    **Tip**: To quickly find the endpoint, search the browser page for `postSiteDocument`.
 
-   ![You can see all endpoints related to a section.](./using-headless-apis/images/01.png)
+   ![You can see all endpoints related to a section.](./using-apis-to-import-claritys-content/images/01.png)
 
 1. For the siteId field, enter the site ID for Clarity Public Enterprise Website.
 
@@ -80,7 +80,7 @@ To do this,
 
 1. Confirm the `Things I Find Interesting in Eyewear` blog post appears.
 
-   ![Use Headless APIs to add a blog post.](./using-headless-apis/images/02.png)
+   ![Use Headless APIs to add a blog post.](./using-apis-to-import-claritys-content/images/02.png)
 
 ## Exercise: Using Headless APIs to Batch Import Web Content
 
@@ -108,7 +108,7 @@ To do this,
 
 1. Open the *Articles* folder and confirm all three articles appear.
 
-   ![The three web content articles should appear in the folder.](./using-headless-apis/images/03.png)
+   ![The three web content articles should appear in the folder.](./using-apis-to-import-claritys-content/images/03.png)
 
 ## Exercise: Using Headless APIs to Batch Import Products
 
@@ -151,7 +151,7 @@ To do this,
 
 1. Confirm eight new products appear.
 
-   ![Eight new products should appear.](./using-headless-apis/images/04.png)
+   ![Eight new products should appear.](./using-apis-to-import-claritys-content/images/04.png)
 
 ## Exercise: Using Headless to Import Taxonomy Categories
 
@@ -192,7 +192,7 @@ To do this,
 
 1. Copy the contents of `import-taxonomy-categories-batch.json` into the *Request Body* field.
 
-    ![You can post content to a vocabulary using its ID.](./using-headless-apis/images/05.png)
+    ![You can post content to a vocabulary using its ID.](./using-apis-to-import-claritys-content/images/05.png)
 
 1. Click *Execute*.
 

@@ -1,7 +1,7 @@
 ---
 uuid: 82f49b9c-27f7-461f-be8c-5acc6c693694
 ---
-# Headless Security
+# Securing Headless APIs
 
 Whether you're importing or exporting data, security is critical when working with Liferay's APIs. Liferay provides industry standard methods of authorization such as HTTPS and OAuth 2.0 out of the box to secure any transfer of sensitive data with external systems.
 
@@ -16,7 +16,7 @@ At a high level, there are three steps to configure and connect with OAuth 2.0 i
 
 First, you define an OAuth 2.0 application in Liferay. When setting up this application, you determine how you plan to connect and authorize to Liferay. Different authorization flows are available for selection including the authorization code flow. See [Authorizing Account Access with OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/authorizing-account-access-with-oauth2) to learn more.
 
-   ![Create an OAuth2 application from the UI.](./headless-security/images/01.png)
+   ![Create an OAuth2 application from the UI.](./securing-headless-apis/images/01.png)
 
 Second, you define the scopes for the application. These are the permissions granted for specific headless API endpoints and determine which operations the application can perform. For example, a remote application may need read and write access to blog posts.
 
@@ -29,7 +29,7 @@ By default, Liferay requires authentication for all APIs and does not grant publ
 !!! important
     Proceed with caution when setting guest access and making API endpoints public facing. Provide this type of access only when necessary.
 
-   ![Create a service access policy for guest access.](./headless-security/images/02.png)
+   ![Create a service access policy for guest access.](./securing-headless-apis/images/02.png)
 
 See [Setting Service Access Policies](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies) to learn more.
 
@@ -37,7 +37,7 @@ See [Setting Service Access Policies](https://learn.liferay.com/w/dxp/installati
 
 Security is paramount when using APIs to move data in or out of Liferay. Now that we've explored how Liferay's headless APIs are secured and authorized, let's take a look at how Clarity can use them to import content.
 
-Up Next: [Using Headless APIs](./using-headless-apis.md)
+Up Next: [Using APIs to Import Clarity's Content](./using-apis-to-import-claritys-content.md)
 
 ## Additional Resources
 

@@ -36,7 +36,7 @@ With Liferay, identity management is about providing users with the ability to a
 
 For the scope of this course, we won't cover every possible identity management scenario. Instead, this module focuses on key decision points relevant to enterprise websites, though many of these points are relevant to other solutions and scenarios.
 
-After completing this module, you will know how to
+By the end of this module, you'll have the knowledge and skills to
 
 * Decide which authentication approach is best for your Liferay projects.
 * Leverage Liferay with third-party authentication and SSO services.

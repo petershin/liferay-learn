@@ -1,5 +1,5 @@
 ---
-uuid: 839c4246-8c00-4632-8134-66ba9fa66492
+uuid: 05ac14aa-f2d4-4dee-9dea-acbe3ab3415b
 ---
 
 # Liferay's Cookies

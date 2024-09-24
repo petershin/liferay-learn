@@ -27,7 +27,7 @@ The concepts below are essential to understand before you begin changing any set
 
 ## Customizing the Search Results UI
 
-The default UI for the Search Results widget is provided by the List Layout. You can [choose a different widget template](../using-search-widget-display-templates.md#search-results) or create a [completely custom one](../using-search-widget-display-templates/search-results-widget-template-reference.md) to override the out-of-the-box display.
+The default UI for the Search Results widget is provided by the List Layout. You can [choose a different widget template](../using-search-widget-display-templates.md#search-results) or create a [completely custom template](../using-search-widget-display-templates/search-results-widget-template-reference.md) to override the out-of-the-box display.
 
 ![You can customize the search results display.](./search-results/images/08.png)
 

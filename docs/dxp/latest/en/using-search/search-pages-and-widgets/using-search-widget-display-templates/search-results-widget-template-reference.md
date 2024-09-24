@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: b1d411bc-c88e-4659-b779-91676fcf194f
 ---
+
 # Search Results Widget Template Reference
 
 While [creating a search results widget template](../using-search-widget-display-templates.md#creating-a-search-widget-template), you can access pre-populated variables in the FreeMarker template editor. The variables listed in the editor hint at what's possible, but there are many more variables available in the search results widget template context. The source code specific to your version contains the authoritative list of variables that are injected into the template context. 
@@ -44,7 +45,7 @@ Here is an easier to digest list of the currently available variables:
 |  | Whether the user can choose the number of items displayed per page | `boolean` | `${searchContainer.isDeltaConfigurable()}` |
 |  | Whether to use hover effects | `boolean` | `${searchContainer.isHover()}` |
 | Search Results Display Context | Information about the current search and widget configuration | `SearchResultsDisplayContext` |  |
-|  | The site ID where the widget template is located | `long` | `${searchResultsPortletDisplayContext.getDisplayStyleGroupId()}` |
+|  | The widget template's site ID | `long` | `${searchResultsPortletDisplayContext.getDisplayStyleGroupId()}` |
 |  | The retrieved search engine documents | `List<Document>` | `${searchResultsPortletDisplayContext.getDocuments()}` |
 |  | The current search keywords | `String` | `${searchResultsPortletDisplayContext.getKeywords()}` |
 |  | The search container | `SearchContainer` | `${searchResultsPortletDisplayContext.getSearchContainer()}` |
@@ -60,9 +61,9 @@ There are variables you can use for each search result. Some appear in the templ
 
 | Editor Field Name | Description | Type | Usage Example |
 | :---------------- | :---------- | :--- | :------------ |
-|  | The asset's user ID. If the entry is a user the value is that user's ID. | `long` | `${entry.getAssetEntryUserId()}` |
+|  | The asset's user ID. If the entry is a user, the value is that user's ID. | `long` | `${entry.getAssetEntryUserId()}` |
 |  | The asset's download URL | `String` | `${entry.getAssetRendererURLDownload()}` |
-|  | The model class name of the entry | `String` | `${entry.getClassName()}` |
+|  | The entry's model class name | `String` | `${entry.getClassName()}` |
 |  | The primary key of the entry's backing model | `long` | `${entry.getClassPK()}` |
 | Content | The highlighted search result summary content | `String` | `${entry.getContent()}` |
 | Creation Date | The entry creation date | `String` | `${entry.getCreationDateString()}` |
@@ -92,7 +93,7 @@ There are variables you can use for each search result. Some appear in the templ
 |  | Whether the creator's portrait is available | `boolean` | `${entry.isCreatorUserPortraitVisible()}` |
 |  | Whether the creator's name is available | `boolean` | `${entry.isCreatorVisible()}` |
 |  | Whether the document display mode is enabled | `boolean` | `${entry.isDocumentFormVisible()}` |
-|  | Whether the document fields for entries without class name or primary key available | `boolean` | `${entry.isFieldsVisible()}` |
+|  | Whether the document fields for entries without class name or primary key are available | `boolean` | `${entry.isFieldsVisible()}` |
 |  | Whether the CSS icon class for the represented model class/asset entry type is available | `boolean` | `${entry.isIconVisible()}` |
 |  | Whether the locale reminder text is available | `boolean` | `${entry.isLocaleReminderVisible()}` |
 |  | Whether the label for the model class represented by this entry is available | `boolean` | `${entry.isModelResourceVisible()}` |

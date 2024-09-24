@@ -22,7 +22,7 @@ visibility:
 
 ![Client Extensions are created, managed and evolved by Customers or Partners, while Liferay DXP itself is hosted, managed, and updated with new features quarterly by Liferay.](./client-extensions/images/01.png)
 
-Last but not least, with Liferay DXP, there is now a new exciting way to customize Liferay, via Client Extensions. Which is in fact, extending Liferay using code.
+Last but not least, with Liferay DXP, there is now a new exciting way to customize Liferay, via Client Extensions. Which, for the most part at least, is extending Liferay using code.
 
 Whenever the various methods of extending Liferay covered in the module so far do not meet a customer's business expectations, Client Extensions can be used to solve the customer’s business problems.
 
@@ -45,16 +45,16 @@ Loosely-coupling customizations from also results in less issues with the overal
 Partners will play a critical role in helping customers:
 
 - Create SDLC for extensions
-- Low code development
-- Code for backend services or frontend development
-- Performance of these custom solutions
-- Maintaining the customization, where required
+- Use the Low-Code / No-Code development tools
+- Wite code for backend services or frontend development
+- Tune the performance of these custom solutions
+- Maintain the customization, where required
 
 Another thing to note here is, Client Extensions can live anywhere. Customers or partners can choose to deploy Client Extensions in their own infrastructure, if they like.
 
 ## Increased Business Opportunities
 
-This new approach also creates additional business opportunities for Liferay partners. Whereas in the past, partners had to build new versions of their applications with every new version of Liferay.
+This new approach also creates additional business opportunities for Liferay partners. In the past, partners had to build new versions of their applications with every new version of Liferay.
 
 With Client Extensions clean separation can be established since APIs are consistent across updates. Partners can not only save time on updating existing solutions, but also accelerate time-to-market for new business opportunities like connectors, solutions, and more.
 
@@ -72,9 +72,9 @@ This also gives our Customers and Partners a competitive advantage because they 
 
 ## Additional Information
 
-- [Fragments](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments), [Publication](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications), [Themes](https://learn.liferay.com/w/dxp/site-building/site-appearance/themes) & [StyleBooks](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books)
-- [Forms](https://learn.liferay.com/w/analytics-cloud/touchpoints/assets/forms), [Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow), [Collections](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages), [Objects](https://learn.liferay.com/w/dxp/building-applications/objects)
-- [Open Office](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration), [O365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365), [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration), [DocuSign](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures), [Talend](https://learn.liferay.com/w/dxp/system-administration/data-integration/liferay-talend-components-overview), [Mulesoft](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/mulesoft), [SAP Connector](https://marketplace.liferay.com/p/sap-business-objects-connector), [Headless](https://learn.liferay.com/w/dxp/headless-delivery)
-- [Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions)
+* [Fragments](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments?p_l_back_url=%2Fsearch%3Fq%3Dfragments&highlight=fragments), [Publication](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications?p_l_back_url=%2Fsearch%3Fq%3Dpublication&highlight=publication), [StyleBooks](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books?p_l_back_url=https%3A%2F%2Flearn.liferay.com%2Fsearch%3Fq%3Dtheme)
+* [Objects](https://learn.liferay.com/w/dxp/building-applications/objects?p_l_back_url=%2Fsearch%3Fq%3DObjects&highlight=Objects), [Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow?p_l_back_url=%2Fsearch%3Fq%3Dworkflow&highlight=workflow), [Collections](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages)
+* [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration?p_l_back_url=%2Fsearch%3Fq%3Dgoogle%2Bdrive&highlight=google%20drive), [O365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365?p_l_back_url=%2Fsearch%3Fq%3DO365&highlight=O365), [Live Chat](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/livechat?p_l_back_url=%2Fsearch%3Fq%3Dlive%2Bchat&highlight=live%20chat), [DocuSign](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures?p_l_back_url=%2Fsearch%3Fq%3DDocuSign&highlight=DocuSign), [Talend](https://learn.liferay.com/w/dxp/system-administration/data-integration/liferay-talend-components-overview), [Mulesoft](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/mulesoft?p_l_back_url=https%3A%2F%2Flearn.liferay.com%2Fweb%2Fguest), [Headless](https://learn.liferay.com/w/dxp/headless-delivery?p_l_back_url=%2Fsearch%3Fq%3Dheadless&highlight=headless)
+* [Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions?p_l_back_url=%2Fsearch%3Fq%3DSAP%2Bconnector%26delta%3D60%26start%3D2&highlight=SAP%20connector)
 
 Congratulations, that’s the end of this module, next learn about [Deployment Strategies](../deployment-strategies.md) for Liferay.

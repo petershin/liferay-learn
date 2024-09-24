@@ -9,7 +9,7 @@ Here we'll explore how Clarity can implement custom designs for their internatio
 
 ## Form Pages
 
-Currently, Clarity’s distributor application solution uses object layouts for creating entries. While this display is serviceable for administrative users, they have limited customization options. To create forms for end-users, you should leverage Liferay's page builder features, including form fragments. These forms can be simple, single step forms or complex multi-step forms. 
+Currently, Clarity's distributor application solution uses object layouts for creating entries. While this display is serviceable for administrative users, they have limited customization options. To create forms for end-users, you should leverage Liferay's page builder features, including form fragments. These forms can be simple, single step forms or complex multi-step forms. 
 
 ![Build Clarity's multi-step form using display page templates and fragments.](./designing-user-interfaces/images/01.png)
 

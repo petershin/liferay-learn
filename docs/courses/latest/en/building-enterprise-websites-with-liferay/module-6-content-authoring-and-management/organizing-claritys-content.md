@@ -1,7 +1,7 @@
 ---
 uuid: bd7bafb9-bd0b-411b-9458-0cb507842c87
 ---
-# Organizing Clarity’s Content
+# Organizing Clarity's Content
 
 In the previous section, you learned about the different types of content that Clarity wants to employ for their enterprise marketing website. This section covers categories and tags, two vital tools for organizing content in Liferay.
 

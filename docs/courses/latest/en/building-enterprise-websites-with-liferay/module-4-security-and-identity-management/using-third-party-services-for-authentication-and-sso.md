@@ -9,7 +9,7 @@ As previously mentioned, using Liferay for authentication is not recommended for
 
 Liferay provides native support for OpenID Connect. OpenID Connect is a standards-based, decentralized authentication protocol that allows websites and applications to verify a user's identity based on existing login sessions with other services. It sits on top of OAuth 2.0, providing login and profile information in addition to the authorizations defined and handled by OAuth 2.0.
 
-OpenID Connect is typically used in commerce scenarios, where you’re allowing users to connect to Liferay using well-known providers like Google, Facebook, Microsoft, Apple, and GitHub. As long as a provider supports OIDC, you can use it for authentication with a simple configuration on the Liferay DXP side and does not require custom development. Additionally, OIDC automatically creates accounts in Liferay when users first authenticate to the platform using their OIDC credentials.
+OpenID Connect is typically used in commerce scenarios, where you're allowing users to connect to Liferay using well-known providers like Google, Facebook, Microsoft, Apple, and GitHub. As long as a provider supports OIDC, you can use it for authentication with a simple configuration on the Liferay DXP side and does not require custom development. Additionally, OIDC automatically creates accounts in Liferay when users first authenticate to the platform using their OIDC credentials.
 
 ![Liferay provides native support for OpenID Connect.](./using-third-party-services-for-authentication-and-sso/images/01.png)
 

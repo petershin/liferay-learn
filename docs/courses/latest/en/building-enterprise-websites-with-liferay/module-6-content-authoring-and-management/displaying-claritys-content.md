@@ -162,7 +162,7 @@ You now have four FAQ collections. Next, you'll use them to display content in C
 ## Exercise: Displaying Content on the FAQ Page
 <!--Exercise 13c-->
 
-Using what you have learned in the previous exercises, let’s map content to the FAQ page as Walter Douglas.
+Using what you have learned in the previous exercises, let's map content to the FAQ page as Walter Douglas.
 
 To do this,
 

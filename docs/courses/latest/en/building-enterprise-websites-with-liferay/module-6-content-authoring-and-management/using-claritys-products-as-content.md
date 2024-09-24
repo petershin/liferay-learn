@@ -3,7 +3,7 @@ uuid: e9801e49-14af-43d7-bd38-d90ad513f96c
 ---
 # Using Clarity's Products as Content
 
-Although they are not yet building an e-commerce storefront, Clarity wants to leverage some Liferay commerce capabilities to create product content. While it is feasible to build Clarity's product material using web content structures, Liferay’s commerce features provide an additional layer of future-proofing to the website. In this section, we'll cover the following commerce features:
+Although they are not yet building an e-commerce storefront, Clarity wants to leverage some Liferay commerce capabilities to create product content. While it is feasible to build Clarity's product material using web content structures, Liferay's commerce features provide an additional layer of future-proofing to the website. In this section, we'll cover the following commerce features:
 
 - Catalogs
 - Products
@@ -65,9 +65,9 @@ Once their products and catalogs are configured, Clarity needs to think about ho
 
 ![Channels are the storefront where you can display and sell your products.](./using-claritys-products-as-content/images/03.png)
 
-While e-commerce isn’t Clarity’s main focus right now, setting up these features will set them up for success in the future.
+While e-commerce isn't Clarity's main focus right now, setting up these features will set them up for success in the future.
 
-## Exercise: Creating Clarity’s Products Catalog
+## Exercise: Creating Clarity's Products Catalog
 <!--Exercise 14a-->
 
 A catalog is a group of related products. Liferay catalogs provide a highly flexible way to organize your product offerings in the most sensible way for your business.
@@ -400,7 +400,7 @@ Great! You can see we are a lot closer to the final design requested by Clarity.
 
 ### Creating the Product Listing Page (PLP)
 
-As you’ve probably noticed, while the Commerce Categories Navigation widget looks better and provides us links to each category, the links aren’t working. That’s because Liferay doesn’t know which page to display for each category. For Liferay to recognize a page as a category display page, we can either assign it in the Channel settings or add the Category Content widget to it.
+As you've probably noticed, while the Commerce Categories Navigation widget looks better and provides us links to each category, the links aren't working. That's because Liferay doesn't know which page to display for each category. For Liferay to recognize a page as a category display page, we can either assign it in the Channel settings or add the Category Content widget to it.
 
 Currently, the Product List page includes most of the necessary widgets to display lists of products, but it's not connected to Liferay's category display feature.
 
@@ -446,7 +446,7 @@ To fix this,
 
 1. For *Display Template*, select *Clarity Search Results Cards*.
 
-   **Note**: If you don’t see the template here, return to step 8 and try the other Search Results template.
+   **Note**: If you don't see the template here, return to step 8 and try the other Search Results template.
 
 1. Click *Save* and close the window.
 

@@ -1,17 +1,17 @@
 ---
 uuid: 22da9cce-2493-4a93-b184-6e8fe9d27879
 ---
-# Clarity’s Site Building Requirements
+# Clarity's Site Building Requirements
 
 Site building is the process of creating the structure, framework, and overall user experience of a website. It is the necessary foundation for any successful web based solution. Leveraging information architecture and user experience (UX) principles, site building goes beyond design to ensure a cohesive, user-centric platform that is both functional and engaging.
 
 Getting the website foundation right from the start facilitates future growth, scalability, and ongoing support for your business needs. This is especially crucial for a company like Clarity Vision Solutions, which operates in a dynamic industry and needs a website that can adapt to their evolving product lines, marketing strategies, and customer demands.
 
-Leveraging Liferay’s agile site building features, Clarity can streamline iterative development through reusable page elements, templates, and flexible content management. This empowers them to build a seamless and engaging user experience quickly and efficiently, minimizing resource requirements.
+Leveraging Liferay's agile site building features, Clarity can streamline iterative development through reusable page elements, templates, and flexible content management. This empowers them to build a seamless and engaging user experience quickly and efficiently, minimizing resource requirements.
 
 ## Requirements
 
-With this in mind, let's consider Clarity’s specific site building requirements, such as key functionalities, content needs, and target audience considerations. The following site building requirements prioritize streamlining development processes, minimizing ongoing maintenance efforts, and ensuring a consistent website experience across all pages:
+With this in mind, let's consider Clarity's specific site building requirements, such as key functionalities, content needs, and target audience considerations. The following site building requirements prioritize streamlining development processes, minimizing ongoing maintenance efforts, and ensuring a consistent website experience across all pages:
 
 ### Reduce development time and cost by leveraging site and page templates for common website structures and functionalities
 
@@ -58,6 +58,6 @@ Clarity can integrate analytics tools to provide insights into website traffic, 
 
 ## Conclusion
 
-Now that we've explored Clarity's site building requirements, we can use them to focus and guide our contributions to the Clarity website. In the next lesson, we’ll learn about creating sites and explore the Liferay DXP user interface.
+Now that we've explored Clarity's site building requirements, we can use them to focus and guide our contributions to the Clarity website. In the next lesson, we'll learn about creating sites and explore the Liferay DXP user interface.
 
-Next Up: [Setting Up Clarity’s Site](./setting-up-claritys-site.md)
+Next Up: [Setting Up Clarity's Site](./setting-up-claritys-site.md)

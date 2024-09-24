@@ -23,7 +23,7 @@ All editing is then restricted to the staged site or asset library. When ready, 
 
 Like Staging, Publications is a change-tracking tool for editing sites and content. However, under the hood, Publications is very different from Staging. Rather than duplicating all content and keeping two separate datasets in sync, Publications works with versioned records. Essentially, it uses a database column to keep track of changes and determine which version of the content is displayed.
 
-When enabled, contributors can create working environments called 'publications' where they make edits without affecting the production environment’s published site. Each publication is company-scoped and can group changes across multiple sites and asset libraries. Also, while Staging provides a single working environment for all team members, Publications users can create as many working environments as they need. And since these working environments are independent of each other, contributors can work on their own timelines and publish their changes without impacting other projects.
+When enabled, contributors can create working environments called 'publications' where they make edits without affecting the production environment's published site. Each publication is company-scoped and can group changes across multiple sites and asset libraries. Also, while Staging provides a single working environment for all team members, Publications users can create as many working environments as they need. And since these working environments are independent of each other, contributors can work on their own timelines and publish their changes without impacting other projects.
 
 ![Each publication functions as a branch based on the production environment.](./implementing-claritys-content-publishing-workflow/images/02.png)
 
@@ -40,7 +40,7 @@ Liferay Workflow defines approval processes for Liferay entities. These processe
 
 ![Liferay Workflow defines approval processes for Liferay entities.](./implementing-claritys-content-publishing-workflow/images/03.png)
 
-Once you’ve defined a workflow, you can associate it with different content types and folders. This flexibility enables you to fine-tune approval processes for different individuals or teams within your organization. For example, you may require multiple team members across multiple departments to approve new products, while only requiring a one approver single manager approval for blog posts.
+Once you've defined a workflow, you can associate it with different content types and folders. This flexibility enables you to fine-tune approval processes for different individuals or teams within your organization. For example, you may require multiple team members across multiple departments to approve new products, while only requiring a one approver single manager approval for blog posts.
 
 Workflows are supported by both Staging and Publications.
 
@@ -63,7 +63,7 @@ These are some of the features that make workflows a critical part of publishing
 ## Exercise: Configuring Publications and Workflow for Content
 <!--Exercise 16a-->
 
-You can leverage Publications with Workflow to implement robust publishing processes for site and content changes. Here you'll enable publications and configure a single approver workflow for any new articles published to Clarity’s website as Ian Miller.
+You can leverage Publications with Workflow to implement robust publishing processes for site and content changes. Here you'll enable publications and configure a single approver workflow for any new articles published to Clarity's website as Ian Miller.
 
 To do this,
 
@@ -94,7 +94,7 @@ To do this,
 
 1. In the Web Content tab, click *Actions* (![Actions Button](../../images/icon-actions.png)) for the Articles folder and select *Edit*.
 
-1. Expand the *Structure Restrictions and Workflow* section and select *Set the default workflow for the folder’s content (Articles)*.
+1. Expand the *Structure Restrictions and Workflow* section and select *Set the default workflow for the folder's content (Articles)*.
 
 1. Select *Single Approver* in the drop-down menu.
 
@@ -137,7 +137,7 @@ Great! Now Christian Carter and Clara Murphy can contribute to the publication. 
 ## Exercise: Managing Changes with a Content Publishing Workflow
 <!--Exercise 16b-->
 
-Publications provides a convenient way to manage changes to your Liferay instance. With it, you and your team can create and collaborate on blocks of changes called ‘publications’. You can then publish those changes to production when ready.
+Publications provides a convenient way to manage changes to your Liferay instance. With it, you and your team can create and collaborate on blocks of changes called ‘publications'. You can then publish those changes to production when ready.
 
 In this exercise you'll add a new article as Christian Carter, then review it with the single approver workflow and push the changes to production as Clara Murphy. These changes will be done in the Article Publication process.
 

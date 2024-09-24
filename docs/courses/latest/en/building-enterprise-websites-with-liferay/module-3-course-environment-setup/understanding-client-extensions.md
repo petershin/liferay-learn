@@ -11,7 +11,7 @@ You can deploy client extensions to any Liferay environment, including Liferay S
 
 <!--TASK: add diagram of how Client Extensions interface with Liferay-->
 
-Now let’s take a look at the kinds of client extensions that are currently available.
+Now let's take a look at the kinds of client extensions that are currently available.
 
 ## Types of Client Extensions
 
@@ -61,7 +61,7 @@ Traditionally, extending Liferay required creating and deploying custom OSGi plu
 
 Generally speaking, OSGi plugins should only be used if your requirements are not satisfied by out-of-the-box features or client extensions. Client extensions provide a far more flexible development model and avoid drawbacks associated with traditional OSGi plugins. By separating customizations from the Liferay core, client extensions simplify updates and free you to build solutions using your preferred technologies or deployment strategy. These are just some of the benefits of this development model.
 
-* **Simplified Upgrades and Maintenance**: Since client extension maintenance events are decoupled from Liferay, they won’t break when upgrading or updating Liferay and deployments can happen in any window. Also, since they are self-contained, one buggy extension won't effect the entire server.
+* **Simplified Upgrades and Maintenance**: Since client extension maintenance events are decoupled from Liferay, they won't break when upgrading or updating Liferay and deployments can happen in any window. Also, since they are self-contained, one buggy extension won't effect the entire server.
 
 * **Improved Stability**: Since they don't modify Liferay's core and us versioned headless APIs for integration, client extensions reduce the risk of breaking changes.
 

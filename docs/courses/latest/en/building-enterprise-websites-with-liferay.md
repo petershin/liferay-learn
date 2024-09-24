@@ -23,7 +23,7 @@ Liferay DXP provides a comprehensive environment for business teams and develope
 
 <!--TASK: Replace temp img.-->
 
-In this course you’ll learn how to build enterprise websites with Liferay following best practices. While this course primarily focuses on the needs of Enterprise Websites, many of the following capabilities and use cases also apply to other solutions. Programming knowledge is not needed, but an understanding of HTML, CSS, Javascript, and templating languages like FreeMarker would be helpful.
+In this course you'll learn how to build enterprise websites with Liferay following best practices. While this course primarily focuses on the needs of Enterprise Websites, many of the following capabilities and use cases also apply to other solutions. Programming knowledge is not needed, but an understanding of HTML, CSS, Javascript, and templating languages like FreeMarker would be helpful.
 
 This course provides the knowledge needed to
 

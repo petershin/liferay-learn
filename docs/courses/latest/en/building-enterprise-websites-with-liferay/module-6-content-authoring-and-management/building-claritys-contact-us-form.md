@@ -62,7 +62,7 @@ To do this,
 
 1. Click *Save*.
 
-   Now that you’ve configured the object definition, you can add custom fields to determine the type of information you want to gather with the form.
+   Now that you've configured the object definition, you can add custom fields to determine the type of information you want to gather with the form.
 
 1. Go to the *Fields* tab.
 
@@ -97,13 +97,13 @@ Next, you'll add the form to Clarity's Contact Us page.
 
 <!-- TASK: This exercise is using Clarity Admin due to Walter Douglas missing permissions in the baseline. Clarity Admin will be replaced by Walter Douglas after it's fixed. -->
 
-Liferay Objects generates a basic user interface automatically, but you can design and add forms to Clarity’s pages.
+Liferay Objects generates a basic user interface automatically, but you can design and add forms to Clarity's pages.
 
-Previously, you added and wireframed the Contact Us page. Here you’ll add the form to the page as the Clarity Admin user.
+Previously, you added and wireframed the Contact Us page. Here you'll add the form to the page as the Clarity Admin user.
 
 To do this,
 
-1. Go to Clarity’s public enterprise website and begin editing the *Contact Us* page.
+1. Go to Clarity's public enterprise website and begin editing the *Contact Us* page.
 
 1. Drag and drop a *form container* fragment into the Contact Form container.
 

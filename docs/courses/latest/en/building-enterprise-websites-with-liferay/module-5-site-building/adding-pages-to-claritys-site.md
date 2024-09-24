@@ -5,7 +5,7 @@ uuid: 981d3547-2524-4c8f-bb75-4d7306842509
 
 Pages are the fundamental building blocks of website structures. Each page is a canvas for designing engaging layouts with content (e.g., text, images, videos) and interactive elements (e.g., forms, widgets). Liferay's WYSIWYG editor and drag-and-drop elements provide an intuitive and user-friendly experience, so you can implement your vision without writing code. For advanced use cases, you can also create custom page elements using HTML, CSS, and JavaScript. To help you implement your solution, Liferay provides a variety of page types.
 
-In this lesson, you’ll use different page types to finish implementing Clarity’s site map:
+In this lesson, you'll use different page types to finish implementing Clarity's site map:
 
 ![Clarity's website development team has produced this site map for their initiative.](./adding-pages-to-claritys-site/images/01.png)
 
@@ -20,7 +20,7 @@ Content pages are used to create content-rich, visually engaging experiences. Wi
 <!--TASK: Update img -->
 
 !!! tip “Content Pages vs. Widget Pages”
-    Liferay also provides widget pages, but this course focuses on building user experiences with content pages. Content pages provide superior flexibility and integration with Liferay’s latest content and personalization features, including fragments, collections, segmentation, and client extensions. Widget pages do not support these features. If you're working on an existing site with widget pages, you can convert them to content pages. See [Converting Widget Pages to Content Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-widget-pages/converting-widget-pages-to-content-pages) for more information.
+    Liferay also provides widget pages, but this course focuses on building user experiences with content pages. Content pages provide superior flexibility and integration with Liferay's latest content and personalization features, including fragments, collections, segmentation, and client extensions. Widget pages do not support these features. If you're working on an existing site with widget pages, you can convert them to content pages. See [Converting Widget Pages to Content Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-widget-pages/converting-widget-pages-to-content-pages) for more information.
 
 <!--TASK:
 ### Parent and Child Pages
@@ -44,7 +44,7 @@ Explain how applying a display page works... we will need to mark the category a
 
 ## Utility Pages
 
-Utility pages handle specific functions within a site. Currently, you can use them to create your site’s default 404 and 500 error pages. They are designed using the same tools and features as content pages. With them, you can ensure that even the errors returned to users maintain corporate branding while being easily maintained. Each site includes out-of-the-box error pages, which you can use or modify as needed.
+Utility pages handle specific functions within a site. Currently, you can use them to create your site's default 404 and 500 error pages. They are designed using the same tools and features as content pages. With them, you can ensure that even the errors returned to users maintain corporate branding while being easily maintained. Each site includes out-of-the-box error pages, which you can use or modify as needed.
 
 ![Create these pages as utility pages.](./adding-pages-to-claritys-site/images/04.png)
 
@@ -87,7 +87,7 @@ To add the FAQ content page,
 
 1. For name, enter `FAQ` and click *Add*.
 
-   This creates a blank content page and directs you to Liferay’s page editor UI. Here you can access all page building tools and configuration options.
+   This creates a blank content page and directs you to Liferay's page editor UI. Here you can access all page building tools and configuration options.
 
    <!--TASK: Assess whether users should add the FAQ to the Resources navigation menu here instead of later.-->
 
@@ -136,7 +136,7 @@ To do this,
 
 1. Click *Save*.
 
-   This creates a blank display page template that’s linked to the selected content type. Each template has the same page building tools and configuration options as content pages.
+   This creates a blank display page template that's linked to the selected content type. Each template has the same page building tools and configuration options as content pages.
 
 1. For now, leave the template blank and click *Publish*.
 
@@ -150,7 +150,7 @@ For now, we'll leave this template blank, but we'll revisit it in a later exerci
 
 ## Conclusion
 
-Congratulations! You’ve finished the foundational page structure for Clarity’s site. Next, you’ll take these blank pages and start designing their layout. But before that, let's take a moment to review some core concepts for Liferay page design.
+Congratulations! You've finished the foundational page structure for Clarity's site. Next, you'll take these blank pages and start designing their layout. But before that, let's take a moment to review some core concepts for Liferay page design.
 
 Next Up: [Understanding Page Design](./understanding-page-design.md)
 

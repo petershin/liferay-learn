@@ -3,11 +3,11 @@ uuid: 0ab3cf82-fa34-49e1-b885-ae22951e7747
 ---
 # Creating Clarity's Navigation Menus
 
-Navigation is an integral part of designing a clear and intuitive user experience. In Liferay, setting up navigation involves creating menus and then adding them to pages using widgets or fragments. Each menu can include links to both internal and external pages or content. Since pages and navigation are decoupled, you can organize your pages and content without worrying about how it will affect navigation. You can also customize the look and feel of your menus and even tailor navigation based on user roles, preferences, or location, to deliver personalized experiences. In these ways, Liferay’s flexible navigation menus can help ensure users easily find what they need.
+Navigation is an integral part of designing a clear and intuitive user experience. In Liferay, setting up navigation involves creating menus and then adding them to pages using widgets or fragments. Each menu can include links to both internal and external pages or content. Since pages and navigation are decoupled, you can organize your pages and content without worrying about how it will affect navigation. You can also customize the look and feel of your menus and even tailor navigation based on user roles, preferences, or location, to deliver personalized experiences. In these ways, Liferay's flexible navigation menus can help ensure users easily find what they need.
 
-![Clarity’s header and footer designs include multiple navigation menus.](./creating-claritys-navigation-menus/images/01.png)
+![Clarity's header and footer designs include multiple navigation menus.](./creating-claritys-navigation-menus/images/01.png)
 
-As seen in the previous exercises, Clarity’s header and footer designs include multiple navigation menus. When designing the master pages, you used the default menu, which includes all site content pages. Now it is time to create custom menus that only include the desired pages. Then you can update the master pages to use them instead of the default menu.
+As seen in the previous exercises, Clarity's header and footer designs include multiple navigation menus. When designing the master pages, you used the default menu, which includes all site content pages. Now it is time to create custom menus that only include the desired pages. Then you can update the master pages to use them instead of the default menu.
 
 ## Exercise: Creating Navigation Menus
 
@@ -103,7 +103,7 @@ To do this,
 
 1. Click *Publish Master*.
 
-1. Repeat this process to update the Secondary Master Page’s menu display fragments.
+1. Repeat this process to update the Secondary Master Page's menu display fragments.
 
 Once finished, navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.
 
@@ -111,7 +111,7 @@ Once finished, navigate to the Home page to see how your changes to the template
 
 ## Conclusion
 
-Congratulations! You’ve finished setting up the navigation menus for Clarity’s master pages. Next you'll create custom fragments to finish Clarity's page headers.
+Congratulations! You've finished setting up the navigation menus for Clarity's master pages. Next you'll create custom fragments to finish Clarity's page headers.
 
 Next Up: [Creating Custom Fragments for Clarity](./creating-custom-fragments-for-clarity.md)
 

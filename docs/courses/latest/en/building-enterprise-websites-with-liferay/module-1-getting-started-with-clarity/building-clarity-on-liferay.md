@@ -24,9 +24,9 @@ To help us transform this blueprint into a vibrant and engaging online experienc
 
 ### Home
 
-The Homepage is the first impression and it has to count. Clarity’s products are innovative and beautiful, and they want this to be reflected in all that they do, including the new design. They have come up with a clean, minimalist look and feel.
+The Homepage is the first impression and it has to count. Clarity's products are innovative and beautiful, and they want this to be reflected in all that they do, including the new design. They have come up with a clean, minimalist look and feel.
 
-Their teams can leverage many of Liferay’s page builder features right out of the box to empower marketing and design teams to build and manage these pages themselves, on day one. This includes master pages, fragments, collections, stylebooks, and more.
+Their teams can leverage many of Liferay's page builder features right out of the box to empower marketing and design teams to build and manage these pages themselves, on day one. This includes master pages, fragments, collections, stylebooks, and more.
 
 <!--Q: Mention the Sign In page?-->
 
@@ -44,29 +44,29 @@ Clarity can build these pages using the same tools as their Home page while also
 
 <!--TASK: Condense-->
 
-Clarity wants to enable site visitors to easily browse their catalog of innovative products and quickly find what they’re looking for, whether that’s eyeglass frames, sunglasses, or contact lenses. The goal is to increase product visibility, focus the user’s attention, and avoid distractions from the buy-path.
+Clarity wants to enable site visitors to easily browse their catalog of innovative products and quickly find what they're looking for, whether that's eyeglass frames, sunglasses, or contact lenses. The goal is to increase product visibility, focus the user's attention, and avoid distractions from the buy-path.
 
-To achieve this, they want to implement a new set of product pages that leverage enterprise search capabilities to deliver the most relevant content to end users. Each catalog page has a clean, simple design that’s consistent with the rest of the site, as well as search facets for quickly filtering results. Users can then select individual products to view more information and related products.
+To achieve this, they want to implement a new set of product pages that leverage enterprise search capabilities to deliver the most relevant content to end users. Each catalog page has a clean, simple design that's consistent with the rest of the site, as well as search facets for quickly filtering results. Users can then select individual products to view more information and related products.
 
 Planning for the future, Clarity also wants a platform that includes robust commerce features for receiving and processing orders.
 
-Liferay DXP can bring Clarity's vision to life with a powerful suite of features. Combining enterprise search, categorization, and built-in commerce features, Liferay can empower Clarity to showcase their innovative products and streamline the user’s journey. They can also use features like Search Blueprints to implement advanced personalization, allowing Clarity to tailor experiences for different user segments.
+Liferay DXP can bring Clarity's vision to life with a powerful suite of features. Combining enterprise search, categorization, and built-in commerce features, Liferay can empower Clarity to showcase their innovative products and streamline the user's journey. They can also use features like Search Blueprints to implement advanced personalization, allowing Clarity to tailor experiences for different user segments.
 
 ### Blog
 
 Clarity, like many organizations, understands that in order to keep people coming back, increase engagement with visitors, and gain a higher SEO rank, they need to have regular updates. As such, the business wants a Blog section where they can create articles that check all three of these boxes.
 
-Liferay’s suite of content management tools includes the ability to create and manage all kinds of web content, including blogs. With a simple, straightforward editorial process, non-technical users can start contributing right away. Once created, they can then easily display this content in their pages.
+Liferay's suite of content management tools includes the ability to create and manage all kinds of web content, including blogs. With a simple, straightforward editorial process, non-technical users can start contributing right away. Once created, they can then easily display this content in their pages.
 
 ### Careers
 
-<!-- To keep up with their rapid growth, Clarity is always looking for talent who aligns with their company values and can deliver real-world results. Their current site doesn’t provide a mechanism for advertising open positions or allowing interested parties to submit resumes. Instead, they have had to work with a third party recruiter. This has proven to be a costly alternative, since Clarity has hired a new employee almost every week for more than 2 years. -->
+<!-- To keep up with their rapid growth, Clarity is always looking for talent who aligns with their company values and can deliver real-world results. Their current site doesn't provide a mechanism for advertising open positions or allowing interested parties to submit resumes. Instead, they have had to work with a third party recruiter. This has proven to be a costly alternative, since Clarity has hired a new employee almost every week for more than 2 years. -->
 
 To reduce recruitment costs, Clarity wants a dedicated Careers page where they can advertise open positions with the future goal of allowing candidates to submit resumes. This page should provide a simple “search” based experience with multiple filters so that interested parties can browse open positions without wading through irrelevant data. Additionally, they want to build a database of candidates that they can reference as needs arise.
 
 Finally, they want to include analytics for understanding how many users visit the page, what the engagement rate is, and which locations candidates are most interested in.
 
-Liferay has multiple features that allow Clarity to manage this with ease. With Liferay, there is even the possibility of leveraging features from the experience management and segmentation features to auto-detect a user’s location and start with a pre-filtered list based on where they are coming from.
+Liferay has multiple features that allow Clarity to manage this with ease. With Liferay, there is even the possibility of leveraging features from the experience management and segmentation features to auto-detect a user's location and start with a pre-filtered list based on where they are coming from.
 
 <!-- ### Search
 
@@ -74,9 +74,9 @@ Clarity understands that a powerful search function is critical for a user-frien
 
 ### FAQ
 
-Like many businesses, Clarity suffers from a hidden support cost: frequently asked questions (FAQs) that consume valuable customer service resources. To address these costs, Clarity plans to add a dedicated FAQ page to their new website as part of building up a self-service knowledge base. This page will be organized by popular topics drawn from support data analytics and use the clean, minimalist design of the rest of the site. Additionally, each FAQ will include a ‘call to action’ that directs users to related site content. Finally, Clarity wants the page to be easy to update, so non-technical team members can update the list of top FAQs based on current analytics, without relying on IT.
+Like many businesses, Clarity suffers from a hidden support cost: frequently asked questions (FAQs) that consume valuable customer service resources. To address these costs, Clarity plans to add a dedicated FAQ page to their new website as part of building up a self-service knowledge base. This page will be organized by popular topics drawn from support data analytics and use the clean, minimalist design of the rest of the site. Additionally, each FAQ will include a ‘call to action' that directs users to related site content. Finally, Clarity wants the page to be easy to update, so non-technical team members can update the list of top FAQs based on current analytics, without relying on IT.
 
-With Liferay, Clarity can easily achieve their requirements while also providing the ability to personalize FAQs for different user segments, whether they’re guests or distributors. They also add a workflow to guide the review process for each FAQ and or even leverage headless APIs to have content generated dynamically based on results from the support system queries.
+With Liferay, Clarity can easily achieve their requirements while also providing the ability to personalize FAQs for different user segments, whether they're guests or distributors. They also add a workflow to guide the review process for each FAQ and or even leverage headless APIs to have content generated dynamically based on results from the support system queries.
 
 <!-- ### Error Pages
 
@@ -84,7 +84,7 @@ Broken links and unexpected error pages can disrupt a user's website experience.
 
 <!-- ### Distributor Applications
 
-As mentioned previously, the next stage of Clarity’s strategy involves working with international distributors to expand their offering through a strong partner network.
+As mentioned previously, the next stage of Clarity's strategy involves working with international distributors to expand their offering through a strong partner network.
 
 To achieve this goal, Clarity needs a custom solution for receiving, vetting, and approving distributor applications in a B2B context. This solution should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practice and compliance with Anti-Money Laundering (AML) laws. Additionally, they must collect information that can help them assess the relative value of each prospective distributor.
 
@@ -92,7 +92,7 @@ They also want to implement complex business logic to streamline operations, imp
 
 Developing this custom solution from scratch could lead to significant time and resource investment. A low-code platform with robust extension points would empower Clarity to address these complexities while saving money; It does this by reducing development time, lowering the development barrier, improving solution flexibility, and simplifying maintenance.
 
-Liferay DXP’s low-code capabilities provide all of these benefits, so clarity can implement their data structures, business logic, and user interfaces without writing code. Clarity can also use client extensions to further extend the platform to their needs without incurring the overhead that usually comes with custom code. -->
+Liferay DXP's low-code capabilities provide all of these benefits, so clarity can implement their data structures, business logic, and user interfaces without writing code. Clarity can also use client extensions to further extend the platform to their needs without incurring the overhead that usually comes with custom code. -->
 
 ## Clarity Personas
 

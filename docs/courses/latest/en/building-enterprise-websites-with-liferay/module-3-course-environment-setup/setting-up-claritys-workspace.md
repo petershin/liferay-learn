@@ -27,7 +27,7 @@ Solution development is often complex and difficult to coordinate. Liferay works
 
 * **Simplified Testing**: Integration with Docker provides efficient setup for different environments (Development, UAT, Production) and helps facilitate thorough testing processes.
 
-To bring these benefits back to the Clarity story, workspaces introduce standards and processes to ensure that any customizations their developers create follow an expected pattern, enabling individual team members to pick up another’s work with no knowledge transfer required. Also, while workspaces are not for the non-technical user, the tools and automation found in workspaces means that Clarity developers can ramp up and be productive in a shorter period of time because they don’t have to be experts in Liferay to get something done.
+To bring these benefits back to the Clarity story, workspaces introduce standards and processes to ensure that any customizations their developers create follow an expected pattern, enabling individual team members to pick up another's work with no knowledge transfer required. Also, while workspaces are not for the non-technical user, the tools and automation found in workspaces means that Clarity developers can ramp up and be productive in a shorter period of time because they don't have to be experts in Liferay to get something done.
 
 ## Exercise: Setting Up the Clarity Workspace
 

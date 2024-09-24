@@ -175,4 +175,4 @@ Next Up: [Modeling and Managing Data Structures](./modeling-and-managing-data-st
 See official documentation to learn more about frontend client extensions:
 
 * [Client Extensions](https://learn.liferay.com/web/guest/w/dxp/liferay-development/client-extensions)
-* [Customizing Liferay’s Look and Feel](https://learn.liferay.com/web/guest/w/dxp/liferay-development/customizing-liferays-look-and-feel)
+* [Customizing Liferay's Look and Feel](https://learn.liferay.com/web/guest/w/dxp/liferay-development/customizing-liferays-look-and-feel)

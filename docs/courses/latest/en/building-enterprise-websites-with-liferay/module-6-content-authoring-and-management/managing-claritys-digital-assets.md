@@ -1,7 +1,7 @@
 ---
 uuid: 52ff56f2-e984-4800-b390-5abb125c6a5d
 ---
-# Managing Clarity’s Digital Assets
+# Managing Clarity's Digital Assets
 
 In the context of content management, digital assets are any files or media you can use to enrich your content. As a general requirement, enterprise websites need a comprehensive plan that outlines how the organization's staff users will store, manage, and use its digital assets. Without an asset management infrastructure, Clarity's web developers and content creators will struggle to maintain and leverage their digital assets effectively. This article focuses on Asset Libraries, a Liferay feature that Clarity can use to manage their digital assets with low technical effort.
 
@@ -9,7 +9,7 @@ In the context of content management, digital assets are any files or media you 
 
 ## Asset Libraries
 
-Asset libraries simplify digital asset management by providing a collaborative hub for adding, editing, and sharing assets among multiple sites and users. Permissions and version control ensure that assets are accessible by the right people and kept up to date with the latest changes, all while maintaining security and transparency across the organization. Asset libraries can be organized with folders, tags, and categories. They also integrate seamlessly with Liferay’s other content management features. For example, you can use asset libraries with workflows to create a custom publishing process.
+Asset libraries simplify digital asset management by providing a collaborative hub for adding, editing, and sharing assets among multiple sites and users. Permissions and version control ensure that assets are accessible by the right people and kept up to date with the latest changes, all while maintaining security and transparency across the organization. Asset libraries can be organized with folders, tags, and categories. They also integrate seamlessly with Liferay's other content management features. For example, you can use asset libraries with workflows to create a custom publishing process.
 
 <!--
 TASK: Improve content presentation. Points to make (though not necessarily in this order):
@@ -72,7 +72,7 @@ After completing this exercise, you should have seven asset libraries with image
 
 Next, you'll return to Clarity's master pages and use the imported branding images.
 
-## Exercise: Adding Clarity’s Logo to the Master Pages
+## Exercise: Adding Clarity's Logo to the Master Pages
 <!--Exercise 9b-->
 
 Clarity's master page templates are mostly complete. However, we still need to add Clarity's logo to the header and footer. Here you'll add these images as Walter Douglas.

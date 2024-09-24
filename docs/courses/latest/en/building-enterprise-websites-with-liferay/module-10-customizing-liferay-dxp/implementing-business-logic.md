@@ -15,7 +15,7 @@ When using validations, you can select from out-of-the-box options or define you
 
 ![Liferay uses validation rules to check field values upon entry submission.](./implementing-business-logic/images/01.png)
 
-Clarity’s Distributor Application object already includes the validations they need. To view them, open the Objects application, begin editing the Distributor Application object, and go to the Validations tab.
+Clarity's Distributor Application object already includes the validations they need. To view them, open the Objects application, begin editing the Distributor Application object, and go to the Validations tab.
 
 ## Defining Workflows
 

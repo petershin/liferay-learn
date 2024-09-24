@@ -58,7 +58,7 @@ You can now explore site pages to see how these configurations have affected the
 
 <!-- Exercise 8f -->
 
-Liferay offers frontend client extensions to provide a flexible and secure way to customize the appearance of your website. With them, you can inject design assets directly into your site pages, empowering you to achieve the desired look and feel without modifying Liferay’s core code.
+Liferay offers frontend client extensions to provide a flexible and secure way to customize the appearance of your website. With them, you can inject design assets directly into your site pages, empowering you to achieve the desired look and feel without modifying Liferay's core code.
 
 The training workspace includes a theme CSS client extension for overriding the current theme's CSS files. Here you'll deploy it as Walter Douglas.
 
@@ -124,6 +124,6 @@ Up Next: [Module 6: Content Authoring and Management](../module-6-content-author
 See official documentation to learn more about customizing site appearance:
 
 * [Site Appearance](https://learn.liferay.com/w/dxp/site-building/site-appearance)
-* [Changing Your Site’s Appearance](https://learn.liferay.com/web/guest/w/dxp/getting-started/changing-your-sites-appearance)
-* [Customizing Liferay’s Look and Feel](https://learn.liferay.com/w/dxp/liferay-development/customizing-liferays-look-and-feel)
+* [Changing Your Site's Appearance](https://learn.liferay.com/web/guest/w/dxp/getting-started/changing-your-sites-appearance)
+* [Customizing Liferay's Look and Feel](https://learn.liferay.com/w/dxp/liferay-development/customizing-liferays-look-and-feel)
 * [Using a Theme CSS Client Extension](https://learn.liferay.com/w/dxp/liferay-development/customizing-liferays-look-and-feel/using-a-theme-css-client-extension)

@@ -24,7 +24,7 @@ Clarity's decentralized IT infrastructure has also raised concerns about data se
 
 Clarity's current marketing website has also struggled to keep pace with their rapid growth. With a complex design interface, updating and maintaining the website requires extensive technical knowledge. This prevents non-technical team members with valuable company knowledge from contributing to the site.
 
-As a result, the website suffers from an outdated design and inconsistent brand identity that fails to reflect their innovative spirit and commitment to excellence. Furthermore, the lack of segmentation and other personalization capabilities has prevented them from connecting with visitors on a personal level and delivering engaging experiences. <!--ALT: They lack the tools to dynamically curate content, recommend relevant products, or offer individualized offers, preventing them from connecting with visitors on a personal level.--> This has led to an increase in bounce rates, hindering Clarity’s ability to convert online traffic.
+As a result, the website suffers from an outdated design and inconsistent brand identity that fails to reflect their innovative spirit and commitment to excellence. Furthermore, the lack of segmentation and other personalization capabilities has prevented them from connecting with visitors on a personal level and delivering engaging experiences. <!--ALT: They lack the tools to dynamically curate content, recommend relevant products, or offer individualized offers, preventing them from connecting with visitors on a personal level.--> This has led to an increase in bounce rates, hindering Clarity's ability to convert online traffic.
 
 ## Critical Success Factors
 

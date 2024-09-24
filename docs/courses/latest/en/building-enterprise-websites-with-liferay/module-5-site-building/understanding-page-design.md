@@ -3,17 +3,17 @@ uuid: 40a4dee9-cb08-46aa-939d-663d0d7ff85f
 ---
 # Understanding Page Design
 
-Site pages are canvases for designing rich content experiences with robust functionality. Each page’s structure consists of a header, footer, and central design area. The process and tooling for designing these page sections is essentially the same for content pages, display pages, and utility pages. You begin with selecting a master page template to define the page’s header and footer. This template is designed using page elements and navigation menus. After this, you can design the central content area of the page using the same page elements. Throughout this process, you can apply custom styling to align with your brand.
+Site pages are canvases for designing rich content experiences with robust functionality. Each page's structure consists of a header, footer, and central design area. The process and tooling for designing these page sections is essentially the same for content pages, display pages, and utility pages. You begin with selecting a master page template to define the page's header and footer. This template is designed using page elements and navigation menus. After this, you can design the central content area of the page using the same page elements. Throughout this process, you can apply custom styling to align with your brand.
 
 <!--TASK: ![]()-->
 
-Before continuing on to design Clarity’s pages, let's review Liferay’s page editor UI and the core concepts of Liferay page design.
+Before continuing on to design Clarity's pages, let's review Liferay's page editor UI and the core concepts of Liferay page design.
 
 ## Exploring the Page Editor UI
 
 <!--TASK: Convert to video-->
 
-Liferay’s page editor UI is organized into two main sections: the editing toolbar and side panels.
+Liferay's page editor UI is organized into two main sections: the editing toolbar and side panels.
 
 ![Liferay's page editor has an editing toolbar and sidebars.](./understanding-page-design/images/02.png)
 
@@ -25,7 +25,7 @@ The page side panels include all available page elements (fragments and widgets)
 
 ![The editing sidebars include page elements and configuration options.](./understanding-page-design/images/04.png)
 
-When you select a page element, you can access configuration options in the right side panel. Available options can vary, though some are common to all. These options are organized into three tabs: General, Styles, and Advanced. Additionally, you can select a fragment’s sub-elements (e.g., text, image) to access additional settings, like content mapping and links.
+When you select a page element, you can access configuration options in the right side panel. Available options can vary, though some are common to all. These options are organized into three tabs: General, Styles, and Advanced. Additionally, you can select a fragment's sub-elements (e.g., text, image) to access additional settings, like content mapping and links.
 
 ![Select a page element to access its configuration options in the right side panel.](./understanding-page-design/images/05.png)
 
@@ -45,17 +45,17 @@ Page widgets are web applications that you can drag and drop onto your page dire
 
 ### Client Extensions
 
-Liferay provides two types of frontend client extensions for creating page elements: IFrame and Custom Element. Both of these client extensions register applications with Liferay and render them as widgets on site pages. We’ll address these types of elements later in Module 10.
+Liferay provides two types of frontend client extensions for creating page elements: IFrame and Custom Element. Both of these client extensions register applications with Liferay and render them as widgets on site pages. We'll address these types of elements later in Module 10.
 
 ## Navigation Menus
 
-Navigation is a core part of website design. With Liferay navigation menus, you can create multiple menus for navigating both internal and external pages or content. For example, a menu could include a subset of content pages, or links to display pages and external resources. During creation, you can determine which elements are included in a menu and how they’re organized. Then, once created, you can add your menus to site pages using fragments or widgets.
+Navigation is a core part of website design. With Liferay navigation menus, you can create multiple menus for navigating both internal and external pages or content. For example, a menu could include a subset of content pages, or links to display pages and external resources. During creation, you can determine which elements are included in a menu and how they're organized. Then, once created, you can add your menus to site pages using fragments or widgets.
 
 ![Create menus for navigating both internal and external pages or content.](./understanding-page-design/images/07.png)
 
 ## Page Headers and Footers
 
-In Liferay, designing page headers and footers involves creating master page templates. These templates are designed using the same tools and elements as pages. In advanced cases, you can also add CSS styling and JavaScript to the page’s header or footer to ensure it loads at the beginning or end of page loads. Once defined, you can then use the master page to create new pages or apply it to existing pages. Each page using the template inherits the design and styling of the master page. Out of the box, Liferay provides the Blank master page template that you used in the previous lesson to create the site structure.
+In Liferay, designing page headers and footers involves creating master page templates. These templates are designed using the same tools and elements as pages. In advanced cases, you can also add CSS styling and JavaScript to the page's header or footer to ensure it loads at the beginning or end of page loads. Once defined, you can then use the master page to create new pages or apply it to existing pages. Each page using the template inherits the design and styling of the master page. Out of the box, Liferay provides the Blank master page template that you used in the previous lesson to create the site structure.
 
 ![Design page headers and footers with master page templates.](./understanding-page-design/images/08.png)
 
@@ -86,14 +86,14 @@ Style books provide a way for you to make changes to the look and feel of your s
 
 ### Frontend Client Extensions
 
-Liferay offers frontend client extensions to provide a flexible and secure way to customize the appearance of your website. With them, you can inject design assets directly into your site pages, empowering you to achieve the desired look and feel without modifying Liferay’s core code.
+Liferay offers frontend client extensions to provide a flexible and secure way to customize the appearance of your website. With them, you can inject design assets directly into your site pages, empowering you to achieve the desired look and feel without modifying Liferay's core code.
 
 Available frontend client extensions for styling site pages include:
 
 * JavaScript (JS): Add JavaScript to pages.
-* CSS: Add CSS resources to a page’s header.
-* Theme CSS: Override the current theme’s CSS files for pages (`main.css` and `clay.css`).
-* Theme Favicon: override the theme’s favicon for pages.
+* CSS: Add CSS resources to a page's header.
+* Theme CSS: Override the current theme's CSS files for pages (`main.css` and `clay.css`).
+* Theme Favicon: override the theme's favicon for pages.
 * Sprite Map: Override the default Clay sprite map used for page icons on a page.
 
 ![Create various types of frontend client extension for styling site pages.](./understanding-page-design/images/11.png)
@@ -107,15 +107,15 @@ Together, these client extensions can provide frontend resources to site pages f
 
 ### Individual Page Element Styles
 
-When configuring individual page elements, you can apply custom styling in the Styles tab. Here, you can enter values directly, or use available stylebook tokens. Additionally, you can apply custom CSS to individual page elements in the Advanced tab. Together, these configurations provide a convenient way to override styling for individual instances of an element without affecting others of the same type. Applying styles in this way is similar to inline styling, though with the convenience of Liferay’s visual page editor.
+When configuring individual page elements, you can apply custom styling in the Styles tab. Here, you can enter values directly, or use available stylebook tokens. Additionally, you can apply custom CSS to individual page elements in the Advanced tab. Together, these configurations provide a convenient way to override styling for individual instances of an element without affecting others of the same type. Applying styles in this way is similar to inline styling, though with the convenience of Liferay's visual page editor.
 
 ![You can apply custom styling in a page element's configuration side panel.](./understanding-page-design/images/12.png)
 
 ## Conclusion
 
-Congratulations! You’ve explored the different parts of Liferay page design. Next, let’s finish designing Clarity's custom master page templates.
+Congratulations! You've explored the different parts of Liferay page design. Next, let's finish designing Clarity's custom master page templates.
 
-Next Up: [Designing Clarity’s Master Pages](./designing-claritys-master-pages.md)
+Next Up: [Designing Clarity's Master Pages](./designing-claritys-master-pages.md)
 
 ## Additional Resources
 

@@ -70,7 +70,7 @@ With Liferay's flexible permissions system, you can assign permissions at two le
 
 * **Resource-Specific Permissions**: Grant specific resource-related actions for existing data items within an application.
 
-General permissions are assigned within the Roles application, granting overarching access to applications and their functionalities. These permissions are further classified into two main categories: application and resource permissions. Application permissions grant the ability to perform general application-related operations and do not include permissions to create, view, or manage the application’s resources. By contrast, resource permissions grant access to view, create, and act on all application resources. Some of these permissions are for creating data items while others are for acting on existing data items. For example, with these permissions, a role might grant access the Asset Libraries application and the ability to create new libraries or configure existing libraries. 
+General permissions are assigned within the Roles application, granting overarching access to applications and their functionalities. These permissions are further classified into two main categories: application and resource permissions. Application permissions grant the ability to perform general application-related operations and do not include permissions to create, view, or manage the application's resources. By contrast, resource permissions grant access to view, create, and act on all application resources. Some of these permissions are for creating data items while others are for acting on existing data items. For example, with these permissions, a role might grant access the Asset Libraries application and the ability to create new libraries or configure existing libraries. 
 
 ![General permissions are assigned within the Roles application and include both application and resource permissions.](./understanding-liferay-authorization-and-user-management/images/03.png)
 
@@ -111,7 +111,7 @@ Effectively designing a role architecture begins with a thorough understanding o
 
 After identifying user responsibilities, you can group related responsibilities and create corresponding roles. As part of this process, you'll want to consider the scope of each responsibility. For example, does it require users to have permissions across all sites or only one site? Then you can define the role's permissions.
 
-As you define permissions, follow the principle of least privilege. That is, ensure you only grant the role the permissions necessary for fulfilling its corresponding responsibility. If a responsibility doesn't need a particular privilege, then don’t grant it. And if a responsibility only requires permissions within a single site, then use a site role instead of a regular role.
+As you define permissions, follow the principle of least privilege. That is, ensure you only grant the role the permissions necessary for fulfilling its corresponding responsibility. If a responsibility doesn't need a particular privilege, then don't grant it. And if a responsibility only requires permissions within a single site, then use a site role instead of a regular role.
 
 ### Group Users for Efficient Role Assignment
 

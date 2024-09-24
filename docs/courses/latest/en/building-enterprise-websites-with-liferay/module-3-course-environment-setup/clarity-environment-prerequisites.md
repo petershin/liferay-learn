@@ -90,9 +90,9 @@ The Liferay Cloud CLI tool is for managing instances without using the Liferay C
 * Environment Management
 * Domain Management
 
-Using the Cloud CLI tool, you can do all this with just a few commands, which are tasks that would otherwise require navigating around the Cloud Administrator Console. To use it, you’ll have to log in when it first runs and set the URL for your Liferay environments, but after that you’re ready to go.
+Using the Cloud CLI tool, you can do all this with just a few commands, which are tasks that would otherwise require navigating around the Cloud Administrator Console. To use it, you'll have to log in when it first runs and set the URL for your Liferay environments, but after that you're ready to go.
 
-If you’re on Liferay PaaS, this tool is not required for deployment, but it is highly recommended. If you’re on Liferay SaaS, it is required for deploying client extensions. Please see [Liferay Cloud Command-Line Tool](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool) for installation instructions.
+If you're on Liferay PaaS, this tool is not required for deployment, but it is highly recommended. If you're on Liferay SaaS, it is required for deploying client extensions. Please see [Liferay Cloud Command-Line Tool](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool) for installation instructions.
 
 ## Conclusion
 

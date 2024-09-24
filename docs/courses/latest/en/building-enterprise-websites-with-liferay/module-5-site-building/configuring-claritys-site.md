@@ -3,7 +3,7 @@ uuid: bd76284b-3b05-4f26-93ca-8ae3eac7bb97
 ---
 # Configuring Clarity's Site
 
-With your local copy of Clarity's public enterprise website, it’s time to configure it! Clarity's website aims to be accessible by all, engaging the full spectrum of their global audiences. This lesson covers critical settings like membership types, localization, and accessibility. By configuring these elements, you'll ensure Clarity's website is inclusive and user-friendly for everyone who visits.
+With your local copy of Clarity's public enterprise website, it's time to configure it! Clarity's website aims to be accessible by all, engaging the full spectrum of their global audiences. This lesson covers critical settings like membership types, localization, and accessibility. By configuring these elements, you'll ensure Clarity's website is inclusive and user-friendly for everyone who visits.
 
 ![Configure the public enterprise website.](./configuring-claritys-site/images/01.png)
 
@@ -17,11 +17,11 @@ Liferay provides three different types of site membership: open, restricted, and
 
 * Private: Site administrators must explicitly invite and add users for them to join the site.
 
-![Determine the site’s membership type.](./configuring-claritys-site/images/02.png)
+![Determine the site's membership type.](./configuring-claritys-site/images/02.png)
 
 Should site membership be completely open, require review, or only allow users to join by the invitation of site administrators? Membership type provides the first level of security. With it, you can set a baseline for user access to site content, since you can restrict data access to only site members.
 
-Since Clarity's website is a public enterprise website, it should be open and accessible to a wide audience. This way guests can become members to remain updated on Clarity’s products, sign up for events, submit distributor applications, and more. Hence Clarity should select the Open membership type, allowing users to join and leave freely.
+Since Clarity's website is a public enterprise website, it should be open and accessible to a wide audience. This way guests can become members to remain updated on Clarity's products, sign up for events, submit distributor applications, and more. Hence Clarity should select the Open membership type, allowing users to join and leave freely.
 
 ## Localization
 
@@ -33,9 +33,9 @@ In addition to site membership, Clarity wants to explore how to reach their glob
 
 Setting the virtual host connects a domain name (e.g., `www.helloworld.com`) to a site. This can be a full domain or a subdomain (e.g., `partners.helloworld.com`), so you can differentiate between multiple sites on the same Liferay DXP server. Before setting the virtual host in Liferay, you must contact your provider and set the DNS name to point to the IP address for your Liferay DXP instance.
 
-![Set the site’s virtual hosts.](./configuring-claritys-site/images/04.png)
+![Set the site's virtual hosts.](./configuring-claritys-site/images/04.png)
 
-Clarity wants to set their site’s virtual host to `www.clarityvisionsolutions.com`. They also want to set a virtual host for Spanish (`www.solucionesdeclaridad.com`) to better engage their international audience.
+Clarity wants to set their site's virtual host to `www.clarityvisionsolutions.com`. They also want to set a virtual host for Spanish (`www.solucionesdeclaridad.com`) to better engage their international audience.
 
 ## Accessibility
 
@@ -120,7 +120,7 @@ To do this,
 
 1. Set membership type to *Open*. This allows guests to freely become site members and access the site's public pages and content.
 
-   ![Set the site’s membership type to Open.](./configuring-claritys-site/images/08.png)
+   ![Set the site's membership type to Open.](./configuring-claritys-site/images/08.png)
 
 1. Click *Save*.
 
@@ -130,7 +130,7 @@ To do this,
 
    This URL is used by site pages and is appended to `http://localhost:8080/web`.
 
-1. Set the site’s virtual host for the default language to `www.clarityvisionsolutions.com`.
+1. Set the site's virtual host for the default language to `www.clarityvisionsolutions.com`.
 
    Setting the virtual host connects a domain name (e.g., `www.helloworld.com`) to a site.
 
@@ -168,7 +168,7 @@ To do this,
 
 1. Click *Save*.
 
-Together, these configurations help Clarity’s enterprise website fulfill its intended purpose: promoting their products to their international audience. Liferay provides many other site configurations, including cookie handling, session timeouts, and SEO. For now, these configurations satisfy Clarity's basic needs.
+Together, these configurations help Clarity's enterprise website fulfill its intended purpose: promoting their products to their international audience. Liferay provides many other site configurations, including cookie handling, session timeouts, and SEO. For now, these configurations satisfy Clarity's basic needs.
 
 Before moving further, let's update the default home page and landing page for Clarity's instance.
 
@@ -207,7 +207,7 @@ Now when users visit `http://localhost:8080/` and log out or log in, they're dir
 
 ## Conclusion
 
-Congratulations! You’ve configured Clarity's enterprise website to ensure it is public and accessible to Clarity’s global audience. Next you’ll add some pages to Clarity’s site.
+Congratulations! You've configured Clarity's enterprise website to ensure it is public and accessible to Clarity's global audience. Next you'll add some pages to Clarity's site.
 
 Next Up: [Adding Pages to Clarity's Site](./adding-pages-to-claritys-site.md)
 

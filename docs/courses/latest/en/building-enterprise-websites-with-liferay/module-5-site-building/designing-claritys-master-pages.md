@@ -1,15 +1,15 @@
 ---
 uuid: a25d0376-c05f-4040-a2d5-3ecf7e79eb49
 ---
-# Designing Clarity’s Master Pages
+# Designing Clarity's Master Pages
 
 The first step in designing pages is to determine their fundamental structure. In Liferay, this means designing master page templates. Built with the same tools and elements as pages, these templates establish the fundamental layout inherited by all pages that use them. This includes a header, footer, and central content area. The content area determines the body of the page that users can edit when building pages from the template, while anything outside this central area cannot be edited, ensuring consistency across the site. Furthermore, edits made to the master template automatically propagate to connected pages, streamlining maintenance.
 
-Given their site designs, Clarity needs two master page templates: a primary template that includes a detailed header and footer, and a secondary template with a simplified header and footer. Before proceeding, let’s review Clarity’s designs.
+Given their site designs, Clarity needs two master page templates: a primary template that includes a detailed header and footer, and a secondary template with a simplified header and footer. Before proceeding, let's review Clarity's designs.
 
 ## Primary Master Page
 
-Clarity’s primary header and footer include navigation, branding, and search elements. Most pages in Clarity’s site map should use this master page.
+Clarity's primary header and footer include navigation, branding, and search elements. Most pages in Clarity's site map should use this master page.
 
 ### Primary Header
 
@@ -36,7 +36,7 @@ The primary footer consists of three rows, with the second row divided into four
 
 ## Secondary Master Page
 
-Clarity needs a simplified header and footer for unique pages where they don’t want to display their announcement banner or footer navigation, like their sign in page and error pages.
+Clarity needs a simplified header and footer for unique pages where they don't want to display their announcement banner or footer navigation, like their sign in page and error pages.
 
 ### Secondary Header
 
@@ -60,17 +60,17 @@ The secondary footer is the same as the third row of the primary footer and does
 
 ## Page Building Elements
 
-To build these designs, you’ll primarily use fragments. Liferay fragments are reusable building blocks for constructing pages. They are essentially flexible page elements made of HTML, CSS, and JavaScript that you can drag and drop into pages.
+To build these designs, you'll primarily use fragments. Liferay fragments are reusable building blocks for constructing pages. They are essentially flexible page elements made of HTML, CSS, and JavaScript that you can drag and drop into pages.
 
 Some fragments are layout elements that define drop zones within pages and templates. These include Containers, which define a single `<div>`, and Grids, which can define any number of `<div>`s in rows and columns. Other fragments are components that add text, images, buttons, menus, forms, and more to your page. You can go to [Default Fragments Reference](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) for a complete list of Liferay's out-of-the-box fragments.
 
 ![Access available pages elements in the Fragments and Widgets side panel.](./designing-claritys-master-pages/images/05.png)
 
-Once added to a page, you can configure each fragment’s styling and behavior. For example, when you add a container to a page, you can determine the container’s display behavior (`block`, `flex`), spacing (`margin`, `padding`), dimensions (`width`, `height`), background, and more. See [Configuring Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments) for a list of available configuration options.
+Once added to a page, you can configure each fragment's styling and behavior. For example, when you add a container to a page, you can determine the container's display behavior (`block`, `flex`), spacing (`margin`, `padding`), dimensions (`width`, `height`), background, and more. See [Configuring Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments) for a list of available configuration options.
 
 ![Access configuration and styling options in the Configurations side panel.](./designing-claritys-master-pages/images/06.png)
 
-We’ll revisit these configurations later in this module. But for now, let’s use these page elements to finish wireframing Clarity's primary and secondary master page templates.
+We'll revisit these configurations later in this module. But for now, let's use these page elements to finish wireframing Clarity's primary and secondary master page templates.
 
 ## Exercise: Designing Clarity's Master Pages
 
@@ -91,7 +91,7 @@ To do this,
 1. Drag and drop a *Container* fragment to the top of the template. This container is for the page header.
 
    !!! note
-       When designing a page, it’s recommended to always put elements into their own containers. This can help provide more control over styling.
+       When designing a page, it's recommended to always put elements into their own containers. This can help provide more control over styling.
 
 1. Go to the *Browser* tab in the side panel (![Browser Tab](../../images/icon-hierarchy.png)), double-click the name of the container and rename it `Page Header`.
 
@@ -102,7 +102,7 @@ To do this,
 
 1. Add two separate containers to the Page Header container and name them `Header Announcement Bar` and `Header Navigation Bar`.
 
-   * **Header Announcement Bar**: This container is for displaying Clarity’s announcements.
+   * **Header Announcement Bar**: This container is for displaying Clarity's announcements.
 
    * **Header Navigation Bar**: This container is for essential elements, including Clarity's logo, main navigation menu, search bar, and user menu.
 
@@ -127,7 +127,7 @@ To do this,
 
    You'll see these settings take effect when you add page elements to the container.
 
-   For now, leave this container empty and toggle its visibility (![Visibility Icon](../../images/icon-preview.png)); you’ll revisit it in a later exercise.
+   For now, leave this container empty and toggle its visibility (![Visibility Icon](../../images/icon-preview.png)); you'll revisit it in a later exercise.
 
 1. Select the *Header Navigation Bar* container and configure these settings:
 
@@ -153,7 +153,7 @@ To do this,
 
 1. Add a container to each grid area and name them Header Branding, Header Navigation, and Header User Actions.
 
-   * **Header Branding**: This container is for Clarity’s logo.
+   * **Header Branding**: This container is for Clarity's logo.
 
    * **Header Navigation**: This container is for the page navigation menu.
 
@@ -231,7 +231,7 @@ To do this,
 
    > Changes made to this master are going to be propagated to all page templates, display page templates, and pages using it. Are you sure you want to proceed?
 
-Now when the template is applied to a page, users can only add the allowed fragments to the page. But before we apply the template to any pages, let’s create the secondary master page that Clarity wants to use for their sign in and utility pages.
+Now when the template is applied to a page, users can only add the allowed fragments to the page. But before we apply the template to any pages, let's create the secondary master page that Clarity wants to use for their sign in and utility pages.
 
 ## Exercise: Creating a Secondary Master Page
 
@@ -303,11 +303,11 @@ To do this,
 
 Once finished, each page should be linked to the correct master page template. Now any changes made to the templates are automatically applied to each page using it.
 
-Next, you’ll create custom navigation menus and use them for these master page templates so they only include the desired pages.
+Next, you'll create custom navigation menus and use them for these master page templates so they only include the desired pages.
 
 ## Conclusion
 
-Congratulations! You’ve started wireframing Clarity’s headers and footers. Next, you’ll create custom navigation menus and use them for these master page templates so they only include the desired pages.
+Congratulations! You've started wireframing Clarity's headers and footers. Next, you'll create custom navigation menus and use them for these master page templates so they only include the desired pages.
 
 Next Up: [Creating Clarity's Navigation Menus](./creating-claritys-navigation-menus.md)
 

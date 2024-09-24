@@ -81,7 +81,7 @@ Also consider adding a reference to https://www.liferay.com/free-trial/pre-built
 Liferay SaaS empowers customer to rapidly deploy a secure digital platform with minimal IT resources, allowing customer to focus on core business initiatives.
 
 * **Faster Time to Value**: Get up and running with Liferay without managing hardware and software setup
-* **Reduced IT Burden**: Liferay handles infrastructure, security and maintenance freeing customer’s  IT team for more valuable tasks
+* **Reduced IT Burden**: Liferay handles infrastructure, security and maintenance freeing customer's  IT team for more valuable tasks
 * **Automatic Updates**: Benefit from continuous updates, latest capabilities and bug fixes without manual intervention
 * **Scalability**: Liferay SaaS scales automatically to meet customer needs, eliminating infrastructure headaches
 -->

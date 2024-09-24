@@ -169,7 +169,7 @@ Great! You should have all the web content Clarity needs for their pages. Next, 
 ## Exercise: Mapping Content to Fragments
 <!--Exercise 10c-->
 
-Many fragments include sub-elements with their own configuration options, which depend on the sub-element’s type. Available types include
+Many fragments include sub-elements with their own configuration options, which depend on the sub-element's type. Available types include
 
 * Simple Text Element
 * Rich Text Element
@@ -305,9 +305,9 @@ Great! You've used ChatGPT to generate web content.
 
 ## Conclusion
 
-Great! You've learned about creating structured content with Liferay's Web Content application and mapping content for display with fragments. Now let’s take a look at how you can organize your content in Liferay.
+Great! You've learned about creating structured content with Liferay's Web Content application and mapping content for display with fragments. Now let's take a look at how you can organize your content in Liferay.
 
-Next Up: [Organizing Clarity’s Content](./organizing-claritys-content.md)
+Next Up: [Organizing Clarity's Content](./organizing-claritys-content.md)
 
 ## Additional Resources
 

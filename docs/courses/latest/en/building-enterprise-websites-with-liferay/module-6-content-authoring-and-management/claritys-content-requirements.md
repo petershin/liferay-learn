@@ -9,7 +9,7 @@ uuid: 72084c2f-05ad-459b-9b80-be97e89d5214
 - Govern, publish, and deliver the data as content
 - Collaborate on managing the content with disparate groups across your enterprise
 
-An effective content management system ensures that information is easy to find, up-to-date, and accessible to the right people. It organizes data in logical structures that users can navigate efficiently. Because an organization’s content is often the first point of contact for potential and existing customers, employing a robust content management strategy is critical in building trust and brand loyalty.
+An effective content management system ensures that information is easy to find, up-to-date, and accessible to the right people. It organizes data in logical structures that users can navigate efficiently. Because an organization's content is often the first point of contact for potential and existing customers, employing a robust content management strategy is critical in building trust and brand loyalty.
 
 Behind the scenes, a content management system streamlines content creation with an intuitive user interface, saves time and resources with automated approval workflows, and facilitates collaboration with version control and transparent knowledge sharing. All of these features empower non-technical users to manage content efficiently and minimize dependence on IT.
 
@@ -29,11 +29,11 @@ Clarity understands the demands of authoring content efficiently for both writer
 
 ### Prepare product-specific content for B2C provisioning in the future
 
-While Clarity isn’t a business-to-consumer enterprise yet, they know they will eventually want to be one. Their ideal content management solution supports e-commerce features for product management and inventory tracking. It also integrates with other internal and external systems, such as shipping providers and online storefronts.
+While Clarity isn't a business-to-consumer enterprise yet, they know they will eventually want to be one. Their ideal content management solution supports e-commerce features for product management and inventory tracking. It also integrates with other internal and external systems, such as shipping providers and online storefronts.
 
 ### Improve collaboration and governance in the content publication process with version control and approval workflows
 
-As their enterprise continues to scale, Clarity’s ideal solution needs a robust system for versioning, approving, and collaborating on content. This system supports compliance with corporate governance models along with automated approval workflows for publishing content.
+As their enterprise continues to scale, Clarity's ideal solution needs a robust system for versioning, approving, and collaborating on content. This system supports compliance with corporate governance models along with automated approval workflows for publishing content.
 
 ### Increase user interaction with custom business forms
 
@@ -41,6 +41,6 @@ Clarity wants to build business forms (e.g., a Contact Us form) that users can f
 
 ## Conclusion
 
-Now let’s take a look at how Liferay’s content management features can satisfy Clarity’s business requirements.
+Now let's take a look at how Liferay's content management features can satisfy Clarity's business requirements.
 
-Next Up: [Managing Clarity’s Digital Assets](./managing-claritys-digital-assets.md)
+Next Up: [Managing Clarity's Digital Assets](./managing-claritys-digital-assets.md)

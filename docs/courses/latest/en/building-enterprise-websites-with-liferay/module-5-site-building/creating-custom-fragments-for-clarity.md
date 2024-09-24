@@ -160,7 +160,7 @@ Now Clarity's pages are wireframed and ready for content.
 
 Congratulations! You've created and imported custom fragments and compositions for Clarity's pages. You've also finished wireframing Clarity's master pages and added compositions to their blank pages.
 
-Next, you’ll apply Clarity's styling to finish setting up the site before moving on to managing and displaying Clarity's content in Module 7.
+Next, you'll apply Clarity's styling to finish setting up the site before moving on to managing and displaying Clarity's content in Module 7.
 
 Next Up: [Applying Clarity's Brand Styling](./applying-claritys-brand-styling.md)
 

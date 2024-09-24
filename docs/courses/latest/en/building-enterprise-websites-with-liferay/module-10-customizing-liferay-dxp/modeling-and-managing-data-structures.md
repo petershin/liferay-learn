@@ -91,7 +91,7 @@ User roles do not come with objects permissions by default, so you must manually
 
 ## Moving Data Structures between Environments
 
-If you want to migrate custom data structures between environments, you can export and import object definitions as JSON files. These files include the definition’s complete schema such as its configurations, fields, actions, and relationships. You can then use these files to create batch client extensions for importing the structure into Liferay instances.
+If you want to migrate custom data structures between environments, you can export and import object definitions as JSON files. These files include the definition's complete schema such as its configurations, fields, actions, and relationships. You can then use these files to create batch client extensions for importing the structure into Liferay instances.
 
 !!! note
     To use the batch client extension for object definitions, you must export the definition using Liferay's Data Migration Center as a JSONT file. This feature is currently in beta.

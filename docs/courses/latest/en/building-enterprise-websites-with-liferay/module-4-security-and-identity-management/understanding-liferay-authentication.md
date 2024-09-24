@@ -27,7 +27,7 @@ Liferay DXP offers a flexible approach to identity management and user authentic
 
 For organizations with a manageable internal user group, Liferay's internal authentication could satisfy the organization's security requirements. However, companies with diverse user groups like employees, partners, and customers can benefit from a hybrid approach. Since Liferay can seamlessly integrate with various third-party IdM and Single Sign-On (SSO) services, companies can implement a combination of authentication mechanisms to manage different user types effectively.
 
-One common pattern is to manage employees with an existing enterprise wide Identity Management system, while authenticating external users with Liferay’s built-in identity management and authentication capabilities. This way organizations can start small and evolve to an entirely external solution if the size of their external user base grows.
+One common pattern is to manage employees with an existing enterprise wide Identity Management system, while authenticating external users with Liferay's built-in identity management and authentication capabilities. This way organizations can start small and evolve to an entirely external solution if the size of their external user base grows.
 
 ### Performance Considerations
 
@@ -44,7 +44,7 @@ Beyond user base and performance, a company's existing infrastructure can signif
 
 By carefully considering user base, performance needs, and existing infrastructure, organizations can leverage Liferay DXP's flexible authentication options to create a secure and user-friendly login experience. Now let's apply these considerations to Clarity Vision Solutions.  
 
-Visitors to Clarity's website can be broadly categorized into three groups: Clarity employees, B2B partners, and anonymous guests. So far, Clarity has been using Okta as their identity management system for managing their employee’s identity and also as their SSO solution. Additionally, they have established processes with their HR department for onboarding new employees and adding their data to the system which requires integrations with their identity management provider. So it is critical to leverage these systems and processes. They also want to leverage Okta for external users who sign up to make inquiries or apply to become distributors.
+Visitors to Clarity's website can be broadly categorized into three groups: Clarity employees, B2B partners, and anonymous guests. So far, Clarity has been using Okta as their identity management system for managing their employee's identity and also as their SSO solution. Additionally, they have established processes with their HR department for onboarding new employees and adding their data to the system which requires integrations with their identity management provider. So it is critical to leverage these systems and processes. They also want to leverage Okta for external users who sign up to make inquiries or apply to become distributors.
 
 Before exploring how Clarity can set up Okta, let's cover Liferay DXP's default authentication experience.
 

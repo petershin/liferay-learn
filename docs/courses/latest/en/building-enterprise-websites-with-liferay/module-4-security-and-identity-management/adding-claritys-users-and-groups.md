@@ -9,7 +9,7 @@ Users are individuals who interact with the Liferay platform, whether authentica
 
 <!-- Exercise 3a -->
 
-While building the public enterprise website, we’ll follow these Clarity personas as they contribute to the final site:
+While building the public enterprise website, we'll follow these Clarity personas as they contribute to the final site:
 
 | Screen Name     | Email                                         | First Name | Last Name | Job Title                  |
 |:----------------|:----------------------------------------------|:-----------|:----------|:---------------------------|
@@ -24,7 +24,7 @@ While building the public enterprise website, we’ll follow these Clarity perso
 The training workspace already includes all of these users except for Christian Carter. Here you'll add him manually as the Clarity Admin user.
 
 !!! note
-    In real world scenarios, large organizations like Clarity would benefit from using an identity and access management system (e.g., Okta) to add users to their Liferay instance. For training purposes, you’ll create the missing user manually.
+    In real world scenarios, large organizations like Clarity would benefit from using an identity and access management system (e.g., Okta) to add users to their Liferay instance. For training purposes, you'll create the missing user manually.
 
 To do this,
 

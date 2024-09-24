@@ -14,7 +14,7 @@ uuid: e421b21c-2c47-4d72-84ec-c89b0f1c40ab
 You can return suggestions with the using the `/suggestions` headless API. This API is used by Liferay's [Search Bar Suggestions](../../search-pages-and-widgets/search-bar-suggestions.md) feature. There are two primary suggestions contributors available: the `basic` contributor for returning suggestions based on Liferay's standard indexer based search, and the `sxpBlueprint` contributor for returning suggestions based on a [search blueprint](../../search-pages-and-widgets/search-bar-suggestions/search-bar-suggestions-blueprints.md).
 
 !!! note 
-    - The suggestions API was released at the endpoint `/o/portal-search-rest/v1.0/suggestions` initially. Beginning in Liferay 2024.Q3/Portal 7.4 GA125, the endpoint is moved to `/o/search/v1.0/suggestions`. The endpoint is backwards compatible, so existing calls to the endpoint's APIs will continue to work.
+    The suggestions API was released at the endpoint `/o/portal-search-rest/v1.0/suggestions` initially. Beginning in Liferay 2024.Q3/Portal GA125, the endpoint is moved to `/o/search/v1.0/suggestions`. The endpoint is backwards compatible, so existing calls to the endpoint's APIs continue to work.
 
 Here's an example search request for the term _able_, made using cURL:
 

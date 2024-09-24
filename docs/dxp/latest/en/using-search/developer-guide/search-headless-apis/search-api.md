@@ -18,8 +18,8 @@ You can [search for content](../../getting-started/searching-for-content.md) fro
 Follow these steps to generate and search for sample content. The commands below work with basic authentication and assume that you are running Liferay locally at <http://localhost:8080> and authenticating as an administrator with the email `test@liferay.com` and the password `learn`.
 
 !!! note 
-    - The `/o/search/v1.0/search` POST API moved from [beta feature flag to release feature flag](#search-headless-api-availability) in Liferay 7.4 2024.Q3/GA125. The flag name is Search Headless API (LPS-179669). Enable it in Instance Settings &rarr; Feature Flags &rarr; Release.
-    - In the beta release of the search API, the endpoint was at `/o/portal-search-rest/v1.0/search`. Beginning in Liferay 2024.Q3/Portal 7.4 GA125, the endpoint is moved to `/o/search/v1.0/search`. The endpoint is backwards compatible, so existing calls to the endpoint's APIs will continue to work.
+    - The `/o/search/v1.0/search` POST API moved from [beta feature flag to release feature flag](#search-headless-api-availability) in Liferay 2024.Q3/GA125. The flag name is Search Headless API (LPS-179669). Enable it in Instance Settings &rarr; Feature Flags &rarr; Release.
+    - In the beta release of the search API, the endpoint was at `/o/portal-search-rest/v1.0/search`. Beginning in Liferay 2024.Q3/Portal GA125, the endpoint is moved to `/o/search/v1.0/search`. The endpoint is backwards compatible, so existing calls to the endpoint's APIs continue to work.
 
 1. Locate your [site ID](../../../site-building/site-settings/site-settings-ui-reference.md#site-configuration) or retrieve it with the following command: 
 

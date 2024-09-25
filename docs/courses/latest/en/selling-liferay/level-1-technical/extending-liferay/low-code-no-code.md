@@ -5,7 +5,7 @@ visibility:
 - Partner
 ---
 
-# Extending Liferay with Low-Code/No-Code and Integrations
+# Extending Liferay with Low-Code / No-Code and Integrations
 
 **At a Glance**
 
@@ -123,7 +123,7 @@ DocuSign is a service which manages documents to be signed electronically. This 
 
 ### ETL & ESB
 
-Liferay is able to integrate with ETL (Exchange-Transform-Load) tools and Enterprise Servivec Bus (ESB) systems. 
+Liferay is able to integrate with ETL (Exchange-Transform-Load) tools and Enterprise Servivec Bus (ESB) systems.
 
 With Liferay’s [Talend](https://learn.liferay.com/web/guest/w/dxp/system-administration/data-integration/liferay-talend-components-overview) Components, customers can import and export data to and from Liferay. For example, user data, web contents or products, can be imported from and exported to other systems such as a CRM, an ERP or database.
 
@@ -132,6 +132,7 @@ Similarly, Liferay provides a connector to the [MuleSoft](https://learn.liferay.
 ```{note}
 It is not possible to use Talend for import or export jobs when using Liferay SaaS.
 ```
+
 ### Headless APIs
 
 Liferay’s [Headless](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform) integration capabilities provide developers with a flexible and efficient way to incorporate Liferay's functionality into their own applications. Liferay’s Headless APIs provide CRUD (Create, Read, Update, Delete) functions for almost all Liferay functionality.

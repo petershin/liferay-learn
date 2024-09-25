@@ -9,20 +9,20 @@ visibility:
 
 **At a Glance**
 
-- Extending Liferay is a crucial aspect of leveraging the platform's full potential
-- By customizing Liferay with specific business needs in mind, digital experiences tailored to the needs of users can be created
-- Client Extensions provide a new way to extend Liferay that is loosely-coupled to the platform core
-- Loosely-coupling custom code ensures quicker and easier upgrades and frees developers to use the languages and frameworks they are familiar with
+* Extending Liferay is a crucial aspect of leveraging the platform's full potential
+* By customizing Liferay with specific business needs in mind, digital experiences tailored to the needs of users can be created
+* Client Extensions provide a new way to extend Liferay that is loosely-coupled to the platform core
+* Loosely-coupling custom code ensures quicker and easier upgrades and frees developers to use the languages and frameworks they are familiar with
 
 !!! note
-    - View the [recording](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) from the live workshop of this module.
-    - Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) of the presentation used in the live workshop.
+    * View the [recording](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) from the live workshop of this module.
+    * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) of the presentation used in the live workshop.
 
 ## Extending Liferay - Client Extensions (Code)
 
 ![Client Extensions are created, managed and evolved by Customers or Partners, while Liferay DXP itself is hosted, managed, and updated with new features quarterly by Liferay.](./client-extensions/images/01.png)
 
-Last but not least, with Liferay DXP, there is now a new exciting way to customize Liferay, via Client Extensions. Which, for the most part at least, is extending Liferay using code.
+Last but not least, with Liferay DXP, there is now a new exciting way to customize Liferay, via Client Extensions. Which, for the most part, is extending Liferay using code.
 
 Whenever the various methods of extending Liferay covered in the module so far do not meet a customer's business expectations, Client Extensions can be used to solve the customer’s business problems.
 
@@ -32,9 +32,9 @@ It is important to also mention that Liferay DXP is updated on a Quarterly basis
 
 Advantages of this loosely coupled approach include:
 
-- Loosely-coupling customizations, configurations, and extensions from Liferay DXP means that Liferay is able to release new updates much faster and streamline the delivery
-- Instead of waiting a year or more for new features and capabilities, Liferay provides quarterly releases of Liferay DXP
-- Not only does this accelerate time-to-market with new improvements and features, Partners and Liferay’s Customer Success teams can stay engaged with customers more frequently, promoting and incorporating new capabilities into their customers’ solutions
+* Loosely-coupling customizations, configurations, and extensions from Liferay DXP means that Liferay is able to release new updates much faster and streamline the delivery
+* Instead of waiting a year or more for new features and capabilities, Liferay provides quarterly releases of Liferay DXP
+* Not only does this accelerate time-to-market with new improvements and features, Partners and Liferay’s Customer Success teams can stay engaged with customers more frequently, promoting and incorporating new capabilities into their customers’ solutions
 
 **Loosely-coupled Customizations**
 
@@ -44,11 +44,11 @@ Loosely-coupling customizations from also results in less issues with the overal
 
 Partners will play a critical role in helping customers:
 
-- Create SDLC for extensions
-- Use the Low-Code / No-Code development tools
-- Wite code for backend services or frontend development
-- Tune the performance of these custom solutions
-- Maintain the customization, where required
+* Create a SDLC for extensions
+* Use the Low-Code / No-Code development tools
+* Write code for backend services or frontend development
+* Tune the performance of these custom solutions
+* Maintain the customization, where required
 
 Another thing to note here is, Client Extensions can live anywhere. Customers or partners can choose to deploy Client Extensions in their own infrastructure, if they like.
 

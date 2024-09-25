@@ -213,6 +213,8 @@ The Details tab is selected automatically when you open the Content Info sidebar
 - Preview Image
 - Download
 - Share {bdg-secondary}`7.4 U42+/GA42+`
+- Resolution {bdg-secondary}`7.4 U146+/GA146+`
+- Aspect Ratio {bdg-secondary}`7.4 U146+/GA146+`
 - Extension
 - Size
 - Creation Date

@@ -238,7 +238,7 @@ The Performance tab contains various metrics for the selected asset. The data di
 
 - Visitors Behavior: A graph showing the number of users who viewed this web content in a given time period.
 
-- Top Pages Asset Appears On: A graph showing the number of users who viewed this web content in a given time period through a specific page.
+- Top Pages Asset Appears On: A graph showing the top three pages with most visitors where this web content is used.
 
 - Views By Technology: A breakdown of the different kinds of devices users are viewing this web content from.
 
@@ -250,7 +250,7 @@ The Performance tab contains various metrics for the selected asset. The data di
 
 - Visitors Behavior: A graph showing the number of users who viewed this blog in a given time period.
 
-- Top Pages Asset Appears On: A graph showing the number of users who viewed this blog in a given time period through a specific page.
+- Top Pages Asset Appears On: A graph showing the top three pages with most visitors where this blog is used.
 
 - Views By Technology: A breakdown of the different kinds of devices users are viewing this blog from.
 
@@ -264,7 +264,7 @@ The Performance tab contains various metrics for the selected asset. The data di
 
 - Visitors Behavior: A graph showing the number of users who downloaded this document in a given time period.
 
-- Top Pages Asset Appears On: A graph showing the number of users who downloaded this document in a given time period through a specific page.
+- Top Pages Asset Appears On: A graph showing the top three pages with most visitors where this document is used.
 
 - Downloads By Technology: A breakdown of the different kinds of devices users are downloading this document from.
 

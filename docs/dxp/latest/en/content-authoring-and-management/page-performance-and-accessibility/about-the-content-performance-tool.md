@@ -9,7 +9,7 @@ uuid: e6b5ad05-44cf-43de-9b3c-d082683a47e0
 ---
 # About the Content Performance Tool
 
-> Available: Liferay DXP/Portal 7.3+. Some Content Performance options are only available starting with Liferay DXP/Portal 7.4.
+{bdg-secondary}`Liferay DXP/Portal 7.3+`
 
 The Content Performance tool is a global application for analyzing performance metrics of your content, like traffic acquisition channels or the number of views over time. Content teams can use the Content Performance tool to periodically assess and adapt their content strategy. The Content Performance tool is available for assets based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) and starting with Liferay DXP 7.4, for [Content](../../site-building/creating-pages/using-content-pages.md) and [Widget](../../site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.md) Pages.
 
@@ -21,7 +21,9 @@ To learn how to analyze your content performance quantitatively using the Conten
 You can access the Content Performance tool when the following conditions are met:
 
 - The Liferay DXP instance has an active [connection to Liferay Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) and your site is synchronized.
+
 - You have Edit permissions for the Page or content.
+
 - The content is in a Content Page, Widget Page, or is based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md).
 
 ## Accessing the Content Performance Tool
@@ -29,7 +31,9 @@ You can access the Content Performance tool when the following conditions are me
 You can open the Content Performance tool using the *Content Performance* (![Content Performance](../../images/icon-analytics.png)) button from
 
 - [Content based on a Display Page Template](#accessing-the-content-performance-tool-from-content-based-on-a-display-page-template), like Web Content, Documents and Media, or Blog entries.
+
 - [Content or Widget Pages](#accessing-the-content-performance-tool-from-content-or-widget-pages) (Liferay DXP 7.4+).
+
 - [The Content Dashboard](#accessing-the-content-performance-tool-from-the-content-dashboard).
 
 ### Accessing the Content Performance Tool from Content Based on a Display Page Template
@@ -37,7 +41,9 @@ You can open the Content Performance tool using the *Content Performance* (![Con
 Using a Display Page Template, you can display Web Content, Documents, or Blog entries in a Display Page using a unique URL. For more information, read [Displaying Content with Display Page Templates](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md).
 
 1. Go to *Site Administration* &rarr; *Content & Data* &rarr; *Web Content*.
+
 1. Click the *Web Content* tab.
+
 1. For the Web Content you want to review, click the *Actions* (![Actions](../../images/icon-actions.png)) menu and choose *View Content*.
 
    !!! note
@@ -50,7 +56,9 @@ Using a Display Page Template, you can display Web Content, Documents, or Blog e
 ### Accessing the Content Performance Tool from Content or Widget Pages
 
 1. Go to *Site Administration* &rarr; *Site Builder* &rarr; *Pages*.
+
 1. For the Page you want to review, click the *Actions* (![Actions](../../images/icon-actions.png)) menu and choose *View*.
+
 1. Click the *Content Performance* (![Content Performance](../../images/icon-analytics.png)) icon in the Application toolbar.
 
    ![Access the Content Performance metrics in Content or Widget Pages.](./about-the-content-performance-tool/images/03.png)
@@ -58,7 +66,9 @@ Using a Display Page Template, you can display Web Content, Documents, or Blog e
 ### Accessing the Content Performance Tool from the Content Dashboard
 
 1. Open the [Content Dashboard](../content-dashboard/content-dashboard-interface.md#accessing-the-content-dashboard).
+
 1. On the [Contents list](../content-dashboard/content-dashboard-interface.md#contents-list), click the *Actions* menu (![Actions Menu](../../images/icon-actions.png)) next to the content you want to review, and select *View Metrics*.
+
 1. Alternatively, hover over the content and click the *Content Performance* (![View Metrics](../../images/icon-analytics.png)) icon.
 
 ![Access the Content Performance metrics from the Content Dashboard.](./about-the-content-performance-tool/images/05.png)

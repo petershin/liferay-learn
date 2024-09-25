@@ -16,7 +16,7 @@ visibility:
 
 ## Learning about Liferay Objects
 
-Liferay Objects can be thought of as containers for data. They can be used to store and retrieve data from a variety of sources. Objects are highly configurable, users can define custom fields, relationships, and methods to meet the specific needs of their application. 
+Liferay Objects can be thought of as containers for data. They can be used to store and retrieve data from a variety of sources. Objects are highly configurable, users can define custom fields, relationships, and methods to meet the specific needs of their application.
 
 ## Creating an Object
 
@@ -92,16 +92,15 @@ Please see [Using Forms with Objects](https://learn.liferay.com/w/dxp/building-a
 
 ![A newer approach for allowing site users to create object entries is to use the Form Container fragment.](./creating-objects/images/04.png)
 
-Liferay includes a series of dedicated Form Fragments that allow the creation of object forms in content pages. 
-The simplest way to build a form in this way is to add a Form Container fragment to a content page or page template and map it to a published object.
+Liferay includes a series of dedicated Form Fragments that allow the creation of object forms in content pages. The simplest way to build a form in this way is to add a Form Container fragment to a content page or page template and map it to a published object.
 
-Once deployed it is possible to use the form fragments to modify the look and feel of the form. The Form Container automatically populates fragments mapped to each object field, but these can also be organized, removed, or configured manually. 
+Once deployed it is possible to use the form fragments to modify the look and feel of the form. The Form Container populates fragments mapped to each object field, but these can also be organized, removed, or configured manually.
 
 Once the page is published, end users can create Object Entries by interacting with the form.
 
 It is also possible to create multi-step applications where users can navigate through different steps, such as entering employee details, assigning a car, and confirming the entries.
 
-Please see [Using Fragments to Build Forms](https://learn.liferay.com/w/dxp/liferay-development/objects/using-fragments-to-build-forms) for more information.
+See [Using Fragments to Build Forms](https://learn.liferay.com/w/dxp/liferay-development/objects/using-fragments-to-build-forms) for more information.
 
 ## Headless Objects
 

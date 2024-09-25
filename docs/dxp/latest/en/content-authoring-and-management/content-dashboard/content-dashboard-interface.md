@@ -230,15 +230,29 @@ The Details tab is selected automatically when you open the Content Info sidebar
 
 The Performance tab contains various metrics for the selected asset. The data displayed depends on the type of asset.
 
+![](./content-dashboard-interface/images/11.png)
+
 **Web Content**
 
 - Views: The number of times the selected web content was viewed through an asset publisher.
+
+- Visitors Behavior: A graph showing the number of users who viewed this web content in a given time period.
+
+- Top Pages Asset Appears On: A graph showing the number of users who viewed this web content in a given time period through a specific page.
+
+- Views By Technology: A breakdown of the different kinds of devices users are viewing this web content from.
 
 **Blog Entries**
 
 - Views: The number of times the selected blog entry was viewed through an asset publisher.
 
 - Comments: The number of comments on the selected blog entry.
+
+- Visitors Behavior: A graph showing the number of users who viewed this blog in a given time period.
+
+- Top Pages Asset Appears On: A graph showing the number of users who viewed this blog in a given time period through a specific page.
+
+- Views By Technology: A breakdown of the different kinds of devices users are viewing this blog from.
 
 **Documents and Media**
 
@@ -247,6 +261,14 @@ The Performance tab contains various metrics for the selected asset. The data di
 - Previews: The number of times the selected document was previewed through an asset publisher.
 
 - Comments: The number of comments on the selected document.
+
+- Visitors Behavior: A graph showing the number of users who downloaded this document in a given time period.
+
+- Top Pages Asset Appears On: A graph showing the number of users who downloaded this document in a given time period through a specific page.
+
+- Downloads By Technology: A breakdown of the different kinds of devices users are downloading this document from.
+
+![The Performance tab shows different metrics for the selected document.](./content-dashboard-interface/images/12.png)
 
 ### Categorizations
 
@@ -266,7 +288,7 @@ Each version displays the author of the version, the time of its creation, and a
 
 **Expire:** Deactivate a version and activate the next available version. For instance, if there are two versions, 1.2 and 1.1, and you expire 1.2, 1.1 becomes the active version.
 
-![Click the Versions tab to view the version history for a content dashboard item.](./content-dashboard-interface/images/11.png)
+![Click the Versions tab to view the version history for a content dashboard item.](./content-dashboard-interface/images/13.png)
 
 ## Related Topics
 

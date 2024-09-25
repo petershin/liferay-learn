@@ -34,7 +34,7 @@ The purpose of leaving voicemails is not to receive a phone call back; rather, y
 
 The following example good voicemail to a prospect could sound like
 
-> "James, there's no need for you to call me back. I'm about to hit ‘send’ on an email to you with the subject line ‘Checking In’. You can respond with what day and time works best for you. Talk soon. This is Matt Wawro with Liferay."
+> "James, there's no need for you to call me back. I'm about to hit 'send’ on an email to you with the subject line 'Checking In’. You can respond with what day and time works best for you. Talk soon. This is Matt Wawro with Liferay."
 
 The structure of this message, and indeed emails that are sent, must necessarily vary in different countries due to cultural differences. For example, in many European countries people may not want to be addressed using their first names when the contact is from a stranger. A better alternative might be to say “Hi” or “Good Morning” or even be more formal and use the surname with appropriate salutation.
 

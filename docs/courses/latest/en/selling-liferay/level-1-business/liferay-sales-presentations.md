@@ -1,8 +1,7 @@
 ---
 toc:
-  - ./liferay-sales-presentations/sales-presentations-new-approach.md
-  - ./liferay-sales-presentations/sales-presentations-base-deck.md
-  - ./liferay-sales-presentations/sales-presentations-expansion-deck.md
+  - ./liferay-sales-presentations/sales-foundation-deck.md
+  - ./liferay-sales-presentations/mastering-the-sales-foundation-deck.md
 uuid: cda854ee-c766-4354-a093-fd498b936f69
 visibility: 
 - Employee
@@ -13,13 +12,13 @@ visibility:
 
 **At a Glance**
 
-* New Sales Foundation deck has been introduce with the following concepts:
-    * Consistent slides as a foundation and toolbox
-    * Unified look and feel aligned to Liferay design guidelines
-    * Flexibility for sales representatives to tailor as needed
-    * Local autonomy with global alignment
-    * Reducing time to prepare for pitches
-    * Single deck for Liferay and Partner sales teams
+* A Sales Foundation deck has been introduced with:
+  * Consistent slides as a foundation and toolbox
+  * Unified look and feel aligned to Liferay design guidelines
+  * Flexibility for sales representatives to tailor as needed
+  * Local autonomy with global alignment
+  * Reduced time to prepare for pitches
+  * Single deck for Liferay and Partner sales teams
 
 ## Background
 
@@ -34,17 +33,17 @@ The information contained should be most useful for Account Executives and Custo
 
 ## Challenges of the old Industry Sales Decks
 
-Liferay’s product has been constantly evolving since 2004. At the same time, Liferay’s Sales Approach has evolved as the product changed, and as the needs and demands of Customers have also evolved 
+Liferay’s product has been constantly evolving since 2004. At the same time, Liferay’s Sales Approach has evolved with the product, and with the needs and demands of Customers.
 
-Industry-specific Sales Decks were introduced several years ago, to enable Liferay and Partner sales teams to target specific industries. While providing valuable in-depth insights in specific industries and their most common challenges, ultimately they were not sufficient to meet the heterogeneous pitch requirements faced by Liferay and Partner sales teams during the various stages of an opportunity.
+Industry-specific Sales Decks were introduced several years ago, to enable Liferay and Partner sales teams to target specific industries. The decks provided valuable in-depth insights in specific industries and their most common challenges, but were ultimately not sufficient in meeting the diverse pitch requirements faced by Liferay and Partner sales teams during the various stages of an opportunity.
 
 Based on feedback from internal sales teams and partners, a new Sales Foundation deck has been compiled.
 
-## Directive for the new Sales Foundation deck   
+## Directive for the new Sales Foundation Deck
 
 To cater to the wide-range of requirements, the concept behind the new Sales Foundation Deck is to provide:
 
-* A consistent set of slides that act as the toolbox and a foundation for all top of funnel pitches.
+* A consistent set of slides that act as a toolbox and a foundation for all top-of-funnel pitches.
 * A unified look and feel aligned with Liferay’s communication and design guidelines.
 * The flexibility for each sales representative to tailor the deck to the individual needs of each opportunity.
 * Local autonomy but with global alignment.
@@ -68,13 +67,13 @@ To be able to position for value, the first thing to understand is that each com
 
 ### Qualify Prospect Priorities
 
-Some prospects’ priority is on reducing costs, for others it might be about taking technical complexity or growing their market share.  
+Some prospects’ priority is on reducing costs. For others it might be about taking technical complexity or growing their market share.
 
 It is important therefore to qualify and quantify these priorities, whether they are reducing operational costs, increasing revenue or margins, or improving the overall customer experience.
 
 ### Aligning capabilities with business value
 
-Liferay has so many capabilities that can be used to help solve so many different problems that talking about those capabilities without context doesn’t work. It is only possible to align Liferay’s capabilities with business values when those priorities and business outcomes are cataloged and prioritized. 
+Liferay has so many capabilities that can be used to help solve so many different problems that talking about those capabilities without context doesn’t work. It is only possible to align Liferay’s capabilities with business values when those priorities and business outcomes are cataloged and prioritized.
 
 For example, prospects are not evaluating Liferay because they need a message board, but some customers are suffering from problems related to effectively training and growing their workforce, or from an uneven distribution of knowledge, and Liferay’s message boards just might be part of the solution to those problems.
 
@@ -84,7 +83,7 @@ Within any organization, there will be many different perceptions of value and m
 
 It’s much more effective to identify the key influencers on the project or the project owner, and to focus primarily on their needs, and ensure that those needs are being addressed.  
 
-This is not to say that the other team members’ needs should be ignored, but there is always limited time and resources, and focusing on the key influencers and project owner makes the most of that limited time and resources to ensure the greatest chance of success.  
+This is not to say that the other team members’ needs should be ignored, but there is always limited time and resources, and focusing on the key influencers and project owner makes the most of that limited time and resources to ensure the greatest chance of success.
 
 ### Quantifying value
 
@@ -113,12 +112,12 @@ Where the customer is focused on improving customer satisfaction, the following 
 
 ### Growing Customer Acquisition
 
-Other prospects are more focused on growing their business through new customer acquisition.  In this case highlight features such as: 
+Other prospects are more focused on growing their business through new customer acquisition.  In this case highlight features such as:
 
 * Liferay’s powerful Content Management capabilities allow business users to create and maintain effective content to help attract and educate new prospects.  
-* Personalization can be highlighted as a way to engage and nurture those prospects. By delivering the right content at the right time, those prospects can be moved down the sales funnel and through their customer journey towards conversion.    
-* Analytics is a very important part of ensuring content is working effectively, and determining which customer experiences are most effective. Analytics also plays a role when creating the right segments to provide personalized experiences.  
-* One of the best ways to objectively determine which experiences are the best is through A/B Testing by comparing those experiences with each other; promoting the experience that proves to be the most effective.  
+* Personalization can be highlighted as a way to engage and nurture those prospects. By delivering the right content at the right time, those prospects can be moved down the sales funnel and through their customer journey towards conversion.
+* Analytics is a very important part of ensuring content is working effectively, and determining which customer experiences are most effective. Analytics also plays a role when creating the right segments to provide personalized experiences.
+* One of the best ways to objectively determine which experiences are the best is through A/B Testing by comparing those experiences with each other; promoting the experience that proves to be the most effective.
 
 ### Increasing Revenue
 

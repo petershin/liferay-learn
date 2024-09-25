@@ -71,7 +71,7 @@ An example of the OAuth communication process between Liferay and Client Extensi
 
 **Introduce Personalization**
 
-* Authorization provides an opportunity to introduce Personalization and ‘Experiences’.
+* Authorization provides an opportunity to introduce Personalization and 'Experiences’.
 * Sometimes it’s useful to restrict access to information - which you do by using permissions because that will lock out every possible access if you don't give it.
 * This is very binary - a user either has access or they don’t.
 * In many cases certain information might need to be presented at certain times, to guide a user to what you want them to see, but there might not be a requirement to block access entirely.

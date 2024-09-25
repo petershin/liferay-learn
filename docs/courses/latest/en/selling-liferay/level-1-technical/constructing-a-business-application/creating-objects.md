@@ -44,7 +44,7 @@ Follow these steps to edit the object draft:
 
 1. From the Objects admin page, click the newly created object draft to begin editing it. Object features and configuration options are organized into the following tabs: Details, Fields, Relationships, Layouts, Actions, Views, Validations, and State Manager.
 1. Click the **Fields** tab to add custom fields. Each field represents a database column for storing specific types of values. See [Adding Fields to Objects](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects). By default, all objects include these system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status.
-1. Select the object scope of ‘Company’. The object determines how the object’s data is stored.
+1. Select the object scope of 'Company’. The object determines how the object’s data is stored.
     * **Company** (default): When scoped by Company, the object’s data is stored per Liferay instance.
     * **Site**: When scoped by Site, the object’s data is stored per Site.
 1. Show the object’s page widget. While enabled, you can add the object’s widget to site pages. See [Deploying Object Widgets in Sites](https://learn.liferay.com/w/dxp/building-applications/objects/deploying-object-widgets-to-sites).

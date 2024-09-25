@@ -3,7 +3,6 @@ toc:
   - ./backup-service/downloading-and-uploading-backups.md
   - ./backup-service/restoring-data-from-a-backup.md
   - ./backup-service/creating-a-database-dump.md
-  - ./backup-service/understanding-transfer-strategies.md
 taxonomy-category-names:
 - Cloud
 - Cloud Platform Services
@@ -39,7 +38,9 @@ Follow these steps to access the Backups page:
 From here, you can perform the following tasks:
 
 - **View Backup Info**: You can quickly view backup service information for the chosen environment. This includes the frequency of automated backups, the backup retention period, and time stamp information for the next scheduled backup, the latest created backup, and the oldest retained backup.
+
 - **View Backup History**: You can view the full list of retained backups in the chosen environment. Each entry shows the backup's name, size, type (`Auto`, `Manual`, or `Uploaded`), and time of creation. A red backup icon indicates a backup has failed. Beside it is a *Backup failed* message and a link to contact Support.
+
 - **Create Manual Backups**: You can manually create a backup of the chosen environment. See [Creating a Manual Backup](#creating-a-manual-backup) for more information.
 
 !!! note
@@ -161,7 +162,9 @@ The backup service restarts, and the changes are applied when the service has fu
 Use these variables per environment to customize when backups are created and removed:
 
 - **Automated Backups**: Add the `LCP_BACKUP_CREATE_SCHEDULE` variable with a [cron scheduling](https://crontab.guru/) value to set the frequency of automated backups.
+
 - **Automated Cleanups**: Add the `LCP_BACKUP_CLEANUP_SCHEDULE` variable with a [cron scheduling](https://crontab.guru/) value to set the frequency of automated backup cleanups.
+
 - **Retention Period**: Add the `LCP_BACKUP_RETENTION_PERIOD` variable with a numerical value (between 0-30) to set the number of days backups are retained before being removed by automated cleanups.
 
 !!! note
@@ -185,6 +188,40 @@ This `backup/LCP.json` example creates backups every 12 hours (i.e., 00:00 and 1
 },
 ```
 
+## Improving Backup Service Performance
+
+You can configure the backup service to decrease the size of backups or accelerate their creation and restoration processes for better performance. This results in reduced charges and a better overall experience.
+
+### Excluding Adaptive Media from Backups
+
+{bdg-primary}`Liferay SaaS`
+{bdg-link-primary}`Liferay PaaS + [Google Cloud Storage](https://cloud.google.com/storage)`
+{bdg-secondary}`Liferay DXP 2024.Q3+`
+{bdg-secondary}`Backup Service 5.17.0+`
+
+When creating and restoring backups, you may choose to exclude adaptive media. Liferay can generate adaptive media as needed so it doesn't need to be backed up and restored. You can enable this feature by setting the values of `LCP_BACKUP_EXCLUDE_GENERATED_DL_FILES_ON_BACKUP_CREATE` and `LCP_BACKUP_EXCLUDE_GENERATED_DL_FILES_ON_BACKUP_RESTORE` to true.
+
+### Using `rclone` as the Transfer Strategy
+
+{bdg-link-primary}`[Google Cloud Storage](https://cloud.google.com/storage)`
+{bdg-secondary}`Liferay DXP 2024.Q1.6+`
+{bdg-secondary}`Backup Service 5.17.0+`
+
+When restoring a backup on GCS (Google Cloud Storage), you must choose a transfer strategy. The backup service supports two transfer strategies for the document library: `gsutil` and `rclone`. You can choose the desired transfer strategy using the `LCP_DOCUMENT_LIBRARY_GCS_TRANSFER_STRATEGY` environment variable. By default, the backup service uses `gsutil` to ensure backups run smoothly on Liferay DXP version that don't support `rclone`.
+
+!!! note
+    Rclone is faster, lighter, and less error-prone than `gsutil` as a backup transfer strategy. Always use `rclone` if your Liferay DXP version supports it.
+
+#### Discovering the Transfer Strategy
+
+You can verify if the backup service is using the desired transfer strategy through the backup service logs. After restoring a backup on GCS, you should see a similar message:
+
+```
+Spawning [TRANSFER_STRATEGY] process to transfer files from [SOURCE] to [DESTINATION]
+```
+
+The command written in `[TRANSFER_STRATEGY]` is either `gsutil` or `rclone`.
+
 ## Key Deployment Directories
 
 | **File Type** | **Path**                      | **Description**                                                          |
@@ -193,26 +230,26 @@ This `backup/LCP.json` example creates backups every 12 hours (i.e., 00:00 and 1
 
 ## Environment Variables Reference
 
-| Name                                                      | Default Value              | Description                                                                                                                                                                                                                                                                 |
-| :-------------------------------------------------------- | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `LCP_BACKUP_CLEANUP_SCHEDULE`                             | `0 1 * * *`                | Schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). Cleanups remove all backups that exceed the backup retention period. It must not conflict with `LCP_BACKUP_CREATE_SCHEDULE`.                                                            |
-| `LCP_BACKUP_CREATE_SCHEDULE`                              | `[5-55][0-1] * * *`        | Schedules automated backups using [cron scheduling syntax](https://crontab.guru/). It must not conflict with `LCP_BACKUP_CLEANUP_SCHEDULE`. In versions `3.2.1` and above of the backup service, if no value is specified, a random default is created.                     |
-| `LCP_BACKUP_EXCLUDE_GENERATED_DL_FILES_ON_BACKUP_CREATE`  | `false`                    | Excludes adaptive media from the document library when creating backups. Liferay is able to generate this adaptive media as needed. This is available in Liferay PaaS with GCS as the file storage and in Liferay Saas with any file storage solution.                      |
-| `LCP_BACKUP_EXCLUDE_GENERATED_DL_FILES_ON_BACKUP_RESTORE` | `false`                    | Excludes adaptive media from the document library when restoring backups. Liferay is able to generate this adaptive media as needed. This is available in Liferay PaaS with GCS as the file storage and in Liferay Saas with any file storage solution.                     |
-| `LCP_BACKUP_RESTORE_SCHEDULE`                             | N/A                        | Schedules automated restores using [cron scheduling syntax](https://crontab.guru/). Intended for use with [Disaster Recovery environments](../support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md).               |
-| `LCP_BACKUP_RESTORE_DL_DOWNLOAD_AND_EXTRACT_STRATEGY`     | `download-then-extract`    | Determines the download and extract strategy for the document library. Use `download-then-extract` for backups of static data that doesn't change frequently, or `stream-pipeline` for data pipelines with frequent changes that require fast recovery.                     |
-| `LCP_BACKUP_RETENTION_PERIOD`                             | `30`                       | Determines which backups are removed during scheduled cleanups. Select the number of days backups are retained before being removed by cleanups. Only values between 0 and 30 are allowed.                                                                                  |
-| `LCP_DATABASE_SERVICE`                                    | `database`                 | The database service's ID.                                                                                                                                                                                                                                                  |
-| `LCP_DBNAME`                                              | `lportal`                  | The database name.                                                                                                                                                                                                                                                          |
-| `LCP_DEBUG_LOG`                                           | `false`                    | Enables debug logging for the Backup service. Set to `true` or `false`.                                                                                                                                                                                                     |
-| `LCP_DOCUMENT_LIBRARY_GCS_TRANSFER_STRATEGY`              | `gsutil`                   | Determines the [document library transfer strategy](./backup-service/understanding-transfer-strategies.md). `gsutil` is useful when staying in the Google Cloud Platform, while `rclone` offers greater flexibility for dealing with data across different cloud platforms. |
-| `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`                      | `6`                        | The maximum amount of times to retry uploading a backup if it fails. After this limit, the upload is aborted and may start over completely (up to two times).                                                                                                               |
-| `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY`                  | `64`                       | The delay (in seconds) between each of the retries configured by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`.                                                                                                                                                                      |
-| `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER`           | `3`                        | Multiplies the delay set by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY` on each subsequent retry.                                                                                                                                                                              |
-| `LCP_GCP_STORAGE_UPLOAD_TIMEOUT`                          | `6000`                     | The maximum delay time (in seconds) between backup upload requests (or retries). This sets an upper limit to the amount that `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` can increase the delay time.                                                                   |
-| `LCP_MASTER_USER_NAME`                                    | `dxpcloud`                 | The master username.                                                                                                                                                                                                                                                        |
-| `LCP_MASTER_USER_PASSWORD`                                | `LCP_PROJECT_MASTER_TOKEN` | The master password.                                                                                                                                                                                                                                                        |
-| `LCP_SERVICE_LOG_LEVEL`                                   | `INFO`                     | The lowest priority level of log messages to display. Set to the log level's name or a numerical value. See [Log Levels](../support-and-troubleshooting/troubleshooting-tools-and-resources/reading-liferay-cloud-service-logs.md) for more information.                    |
+| Name                                                      | Default Value              | Description                                                                                                                                                                                                                                                   |
+| :-------------------------------------------------------- | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `LCP_BACKUP_CLEANUP_SCHEDULE`                             | `0 1 * * *`                | Schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). Cleanups remove all backups that exceed the backup retention period. It must not conflict with `LCP_BACKUP_CREATE_SCHEDULE`.                                              |
+| `LCP_BACKUP_CREATE_SCHEDULE`                              | `[5-55][0-1] * * *`        | Schedules automated backups using [cron scheduling syntax](https://crontab.guru/). It must not conflict with `LCP_BACKUP_CLEANUP_SCHEDULE`. In versions `3.2.1` and above of the backup service, if no value is specified, a random default is created.       |
+| `LCP_BACKUP_EXCLUDE_GENERATED_DL_FILES_ON_BACKUP_CREATE`  | `false`                    | Excludes adaptive media from the document library when creating backups. See [Excluding Adaptive Media from Backups](#excluding-adaptive-media-from-backups) for more information.                                                                            |
+| `LCP_BACKUP_EXCLUDE_GENERATED_DL_FILES_ON_BACKUP_RESTORE` | `false`                    | Excludes adaptive media from the document library when restoring backups. See [Excluding Adaptive Media from Backups](#excluding-adaptive-media-from-backups) for more information.                                                                           |
+| `LCP_BACKUP_RESTORE_SCHEDULE`                             | N/A                        | Schedules automated restores using [cron scheduling syntax](https://crontab.guru/). Intended for use with [Disaster Recovery environments](../support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md). |
+| `LCP_BACKUP_RESTORE_DL_DOWNLOAD_AND_EXTRACT_STRATEGY`     | `download-then-extract`    | Determines the download and extract strategy for the document library. Use `download-then-extract` for backups of static data that doesn't change frequently, or `stream-pipeline` for data pipelines with frequent changes that require fast recovery.       |
+| `LCP_BACKUP_RETENTION_PERIOD`                             | `30`                       | Determines which backups are removed during scheduled cleanups. Select the number of days backups are retained before being removed by cleanups. Only values between 0 and 30 are allowed.                                                                    |
+| `LCP_DATABASE_SERVICE`                                    | `database`                 | The database service's ID.                                                                                                                                                                                                                                    |
+| `LCP_DBNAME`                                              | `lportal`                  | The database name.                                                                                                                                                                                                                                            |
+| `LCP_DEBUG_LOG`                                           | `false`                    | Enables debug logging for the Backup service. Set to `true` or `false`.                                                                                                                                                                                       |
+| `LCP_DOCUMENT_LIBRARY_GCS_TRANSFER_STRATEGY`              | `gsutil`                   | Determines the document library transfer strategy. `rclone` requires a minimum Liferay version, but offers [improved performance](#using-rclone-as-the-transfer-strategy).                                                                                    |
+| `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`                      | `6`                        | The maximum amount of times to retry uploading a backup if it fails. After this limit, the upload is aborted and may start over completely (up to two times).                                                                                                 |
+| `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY`                  | `64`                       | The delay (in seconds) between each of the retries configured by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`.                                                                                                                                                        |
+| `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER`           | `3`                        | Multiplies the delay set by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY` on each subsequent retry.                                                                                                                                                                |
+| `LCP_GCP_STORAGE_UPLOAD_TIMEOUT`                          | `6000`                     | The maximum delay time (in seconds) between backup upload requests (or retries). This sets an upper limit to the amount that `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` can increase the delay time.                                                     |
+| `LCP_MASTER_USER_NAME`                                    | `dxpcloud`                 | The master username.                                                                                                                                                                                                                                          |
+| `LCP_MASTER_USER_PASSWORD`                                | `LCP_PROJECT_MASTER_TOKEN` | The master password.                                                                                                                                                                                                                                          |
+| `LCP_SERVICE_LOG_LEVEL`                                   | `INFO`                     | The lowest priority level of log messages to display. Set to the log level's name or a numerical value. See [Log Levels](../support-and-troubleshooting/troubleshooting-tools-and-resources/reading-liferay-cloud-service-logs.md) for more information.      |
 
 ## Related Topics
 

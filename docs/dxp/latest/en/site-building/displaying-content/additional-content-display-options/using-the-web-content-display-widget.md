@@ -36,9 +36,8 @@ After you create a [web content article](../../../content-authoring-and-manageme
 
    ![When you organize your web content using folders, view all available content by navigating throught the folders.](./using-the-web-content-display-widget/images/03.png)
 
-   ```{tip}
-   You can search for all content (*) using the search bar. This returns a list with all the available folders and web content on the site.
-   ```
+   !!! tip
+       You can search for all content (*) using the search bar. This returns a list with all the available folders and web content on the site.
 
 1. Set up optional [web content display options](#web-content-display-setup-options).
 
@@ -66,9 +65,8 @@ After adding a Web Content Display Widget to a page, you can set its scope to de
 
 The available content to be displayed is defined according to the selected scope.
 
-  ```{note}
-   For Liferay DXP 7.3 and earlier, selecting a scope for the Web Content Display Widget does not affect the available content to be displayed in the widget.
-   ```
+!!! note
+    For Liferay DXP 7.3 and earlier, selecting a scope for the Web Content Display Widget does not affect the available content to be displayed in the widget.
 
 ## Web Content Display Setup Options
 

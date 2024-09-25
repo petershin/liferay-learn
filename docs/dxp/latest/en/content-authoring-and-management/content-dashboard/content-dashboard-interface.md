@@ -228,9 +228,17 @@ The Details tab is selected automatically when you open the Content Info sidebar
 
 {bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA137+`
 
-The Performance tab contains various metrics for the selected asset. The data displayed depends on the type of asset.
+The Performance tab contains various metrics for the selected asset. To view metrics for the desired asset, you must sync the sites to which the asset belongs to Analytics Cloud.
 
-![](./content-dashboard-interface/images/11.png)
+![You must connect to Analytics Cloud to view metrics.](./content-dashboard-interface/images/11.png)
+
+You can use the buttons on the top-right corner to limit the results with these filters:
+
+- **Individual Type**: All individuals (default), known individuals, and anonymous individuals.
+
+- **Date Range**: Last 7 days, last 28 days, last 30 days (default), and last 90 days.
+
+The data displayed depends on the type of asset:
 
 **Web Content**
 

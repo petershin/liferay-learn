@@ -18,4 +18,6 @@ uuid: 2c8afbb5-41c6-4c50-9547-db152c5aef1f
 ---
 # Dynamic Data Lists
 
+!!! important
+    Dynamic Data Lists is deprecated as of Liferay DXP 7.3, and is planned for removal in 2024. It is replaced by [Objects](../../liferay-development/objects.md). Please [migrate](./dynamic-data-lists/migrating-to-liferay-objects.md) your Dynamic Data Lists to Objects as soon as possible.
 

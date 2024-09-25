@@ -9,6 +9,9 @@ uuid: cc85a9ff-2123-49db-8109-92dccf29975f
 ---
 # Creating Data Lists
 
+!!! important
+    Dynamic Data Lists is deprecated as of Liferay DXP 7.3, and is planned for removal in 2024. It is replaced by [Objects](../../../liferay-development/objects.md). Please [migrate](./migrating-to-liferay-objects.md) your Dynamic Data Lists to Objects as soon as possible.
+
 To create a data list:
 
 1. Navigate to *Content & Data* &rarr; *Dynamic Data Lists*. 

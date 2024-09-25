@@ -9,6 +9,9 @@ uuid: 6ed76ee8-6546-4f94-8cef-e4333e8ae4c7
 ---
 # Creating Display Templates
 
+!!! important
+    Dynamic Data Lists is deprecated as of Liferay DXP 7.3, and is planned for removal in 2024. It is replaced by [Objects](../../../liferay-development/objects.md). Please [migrate](./migrating-to-liferay-objects.md) your Dynamic Data Lists to Objects as soon as possible.
+
 For every data definition, you can create as many displays as you need. If you’ve created a Form Template that doesn’t show all the fields of a particular data definition in the data list’s form view, you probably don’t want to display those fields in the list view, either. Modify the list view using Display Templates.
 
 Note: If you’re familiar with [web content templates](../../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md), Display Templates customize the display of a list in the same way. Display Templates are written in FreeMarker or Velocity, pulling data from the data definition in the same way that web content templates pull data from their structures. Also similar to web content templates, Display Templates can be embedded in other Display Templates. This allows for reusable code, JavaScript library imports, or macros imported by Velocity or FreeMarker templates in the system. Embedding Display Templates provides a more efficient process when you have a multitude of similar data definitions. Just import an embedded Display template and work off of it for your new Display Template.

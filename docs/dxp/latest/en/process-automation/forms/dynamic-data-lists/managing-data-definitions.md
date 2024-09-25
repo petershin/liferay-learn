@@ -9,6 +9,9 @@ uuid: 614388d7-baa8-4f35-bc08-8f0917730fb9
 ---
 # Managing Data Definitions
 
+!!! important
+    Dynamic Data Lists is deprecated as of Liferay DXP 7.3, and is planned for removal in 2024. It is replaced by [Objects](../../../liferay-development/objects.md). Please [migrate](./migrating-to-liferay-objects.md) your Dynamic Data Lists to Objects as soon as possible.
+
 There are several ways to manage your data definitions: edit, manage templates, configure permissions, copy, or delete. To begin managing your data definitions,
 
 1. Navigate to *Content & Data* &rarr; *Dynamic Data Lists*. 

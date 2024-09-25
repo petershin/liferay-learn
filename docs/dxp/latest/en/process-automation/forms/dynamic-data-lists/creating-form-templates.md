@@ -9,6 +9,9 @@ uuid: 90269336-ec82-4a38-8c0e-0eaeccf73cb6
 ---
 # Creating Form Templates
 
+!!! important
+    Dynamic Data Lists is deprecated as of Liferay DXP 7.3, and is planned for removal in 2024. It is replaced by [Objects](../../../liferay-development/objects.md). Please [migrate](./migrating-to-liferay-objects.md) your Dynamic Data Lists to Objects as soon as possible.
+
 Form Templates control how the data entry form appears for a data definition. To create a new Form Template,
 
 1. Navigate to *Content & Data* &rarr; *Dynamic Data Lists*. 

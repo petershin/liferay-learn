@@ -9,6 +9,9 @@ uuid: 35292261-9563-4135-8524-0620448c9a2b
 ---
 # Using Templates to Display Forms and Lists
 
+!!! important
+    Dynamic Data Lists is deprecated as of Liferay DXP 7.3, and is planned for removal in 2024. It is replaced by [Objects](../../../liferay-development/objects.md). Please [migrate](./migrating-to-liferay-objects.md) your Dynamic Data Lists to Objects as soon as possible.
+
 After creating data definitions and lists, you can control how the form appears to users, and how the resulting list of records is displayed. This is done by creating templates for each view (Form Templates for displaying the form and Display Templates for displaying the list of records). For example, you might need to create a form with a subset of a data definition's fields. Rather than creating a new definition, you can create a template that displays only the fields you want from the existing definition. You could also use a template to arrange fields differently, and/or with different labels and configuration options.
 
 Data definitions can have as many Form Templates and Display Templates as you care to create. You then choose a list's template in the Dynamic Data Lists Display widget.

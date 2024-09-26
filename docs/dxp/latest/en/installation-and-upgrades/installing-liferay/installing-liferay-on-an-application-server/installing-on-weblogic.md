@@ -27,18 +27,21 @@ Download these files from the [Help Center](https://customer.liferay.com/downloa
 
 1. Create a file called [`portal-ext.properties`](../../reference/portal-properties.md) in the expanded WAR's `WEB-INF/classes` folder.
 
-1. In the `portal-ext.properties` file, set the `liferay.home` property to your [*Liferay Home*](../../reference/liferay-home.md) folder path. In WebLogic, [`[Liferay Home]`](../../reference/liferay-home.md) is typically set to the domain's folder, but you can use any local folder. For example,
+1. In the `portal-ext.properties` file, set the `liferay.home` property to your [*Liferay Home*](../../reference/liferay-home.md) folder path. In WebLogic, [`[Liferay Home]`](../../reference/liferay-home.md) is typically set to the domain's folder (`weblogic/domains`), but you can use any local folder. For example,
 
    ```properties
    liferay.home=/full/path/to/your/liferay/home/folder
    ```
+
+   !!! important
+       `The liferay.home` directory must contain the Portal/DXP `osgi/` directory.
 
 1. Package the `portal-ext.properties` in your DXP WAR file by expanding the DXP WAR file and copying the `portal-ext.properties` file into the `WEB-INF/classes` folder.
 
 1. Optionally, you can re-WAR the expanded DXP WAR. When you're ready to deploy DXP, you can deploy it as an expanded archive or WAR file. In both cases, DXP reads the property settings once it starts up.
 
 !!! note
-    If you need to update `portal-ext.properties` after DXP deploys, it is in the user domain's `autodeploy/ROOT/WEB-INF/classes` folder. Note that the `autodeploy/ROOT` folder contains the DXP deployment.
+    If you need to update `portal-ext.properties` after DXP deploys, it is in the current location of the installed Liferay WAR under `ROOT/WEB-INF/classes`. WebLogic may move the WAR during installation.
 
 ## Configuring WebLogic
 

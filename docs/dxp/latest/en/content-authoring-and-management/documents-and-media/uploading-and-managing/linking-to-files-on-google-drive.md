@@ -14,8 +14,6 @@ You can create files in your Document Library that link to files in Google Drive
 
 ## Creating Linked Files
 
-Follow these steps to create files in your Document Library that link to files in Google Drive&trade; or images in Google Photos&trade;:
-
 1. In your Document Library, click *New* and select *Google Drive Shortcut*. The *New Google Drive Shortcut* screen appears.
 
    ![Select New Google Drive Shortcut from the Add menu in your Document Library.](./linking-to-files-on-google-drive/images/01.png)
@@ -28,7 +26,9 @@ Follow these steps to create files in your Document Library that link to files i
 
    ![You can select files from Google Drive&trade; or your photos.](./linking-to-files-on-google-drive/images/02.png)
 
-A new file entry appears for the linked Google document. You can view the file entry as you would any file entry. The Google document's contents show in the file entry's preview pane. As with any file entry, the *Options* button (![Options](../../../images/icon-options.png)) contains the Download, Edit, Move, Permissions, Delete, and Checkin/Checkout/Cancel Checkout options.
+A new file entry appears for the linked Google document, which you can view like any other entry. The document's contents show in the file entry's preview pane.
+
+To access additional options, click *Options* (![Options](../../../images/icon-options.png)), which includes the Download, Edit, Move, Permissions, Delete, and Checkin/Checkout/Cancel Checkout options.
 
 !!! tip
     You can also use Google Docs&trade; for online file creation and editing. See [Creating and Editing Documents with Google Drive](./creating-documents/creating-and-editing-documents-with-google-drive.md).

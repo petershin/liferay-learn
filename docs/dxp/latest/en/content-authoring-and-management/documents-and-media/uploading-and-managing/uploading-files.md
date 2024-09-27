@@ -10,13 +10,13 @@ uuid: aff8d726-8efe-41e6-bef8-6d3831ea94b1
 
 # Uploading Files
 
-With Documents and Media, you can upload any type of file to your Liferay instance's [file store](../../../system-administration/file-storage.md) or connected repositories. Once uploaded, Users with the requisite [permissions](../publishing-and-sharing/managing-document-access/documents-and-media-permissions-reference.md) can view, edit, download, or share uploaded files.
+With Documents and Media, you can upload any type of file to your Liferay instance's [file store](../../../system-administration/file-storage.md) or connected repositories. Once uploaded, users with the requisite [permissions](../publishing-and-sharing/managing-document-access/documents-and-media-permissions-reference.md) can view, edit, download, or share uploaded files.
 
 !!! note
     Users can configure Liferay to tag supported assets automatically when uploaded. See [Configuring Asset Auto Tagging](../../tags-and-categories/auto-tagging/configuring-asset-auto-tagging.md) to learn more.
 
 !!! note
-    You can enable automatic antivirus scanning to scan files on upload. For details, please see [Enabling Antivirus Scanning for Uploaded Files](../../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md).
+    You can enable automatic antivirus scanning to scan files on upload. See [Enabling Antivirus Scanning for Uploaded Files](../../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md) to learn more.
 
 To upload files, first navigate to the Documents and Media application in a site or asset library.
 
@@ -32,7 +32,7 @@ Once you've opened the application, the quickest way to upload files is to drag 
 
 ![Drag and drop any number of files into the desired folder.](./uploading-files/images/03.png)
 
-However, if you would like to define file details before uploading them:
+However, you can define file details before uploading them:
 
 1. Click *New* and select either *File Upload*, or *Multiple Files Upload*.
 

@@ -12,7 +12,7 @@ uuid: e1939cff-f7e7-4ecd-bce2-6234a8ae0696
 
 {bdg-secondary}`Liferay DXP/Portal 7.4+`
 
-With the Documents and Media application, you can set expiration and review dates for files. This can help you manage any digital assets that are only valid for a limited period of time (e.g., due to licensing). When [enabled](#enabling-expiration-and-review-dates), the application checks for any files that have reached their expiration or review date. This check occurs at [configurable intervals](#configuring-the-check-interval), according to the Documents and Media system setting.
+With the Documents and Media application, you can set expiration and review dates for files. This helps manage digital assets that are valid for a limited time, such as those subject to licensing.. When [enabled](#enabling-expiration-and-review-dates), the application checks for any files that have reached their expiration or review date. This check occurs at [configurable intervals](#configuring-the-check-interval), according to the Documents and Media system setting.
 
 If a file has reached its expiration or review date, a [notification email](#configuring-notification-emails) is sent automatically to file owners and reviewers, as well as any users subscribed to the folder containing the file.
 
@@ -55,7 +55,7 @@ By default, the Documents and Media application is configured to check file expi
 Once saved, the system automatically checks for files that have reached their expiration or review date according to the set interval.
 
 !!! warning
-If you require this feature to be disabled, [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not enter zero or a negative number for the interval.
+    To disable this feature, [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not enter zero or a negative number for the interval.
 
 ## Configuring Notification Emails
 
@@ -65,7 +65,7 @@ When a file expires or requires review, a notification email is sent to the file
 
 1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) in the Application Bar, and select *Configuration*.
 
-1. In the modal window, click *Documents Needs Review Email* or *Document Expired Email* tabs.
+1. In the modal window, click the *Documents Needs Review Email* or the *Document Expired Email* tabs.
 
    ![Edit the notification emails in the Configuration modal window.](./using-file-expiration-and-review-dates/images/04.png)
 

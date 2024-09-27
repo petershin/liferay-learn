@@ -12,12 +12,12 @@ uuid: b538b1f3-7797-4185-8260-116135c69df4
 
 {bdg-secondary}`Liferay 7.4 2024.Q1`
 
-With Documents and Media, you can copy folders, files, and shortcuts between [sites](../../../site-building/sites.md) and connected [asset libraries](../../asset-libraries.md). This can help accelerate projects by quickly duplicating structures across contexts.
+With Documents and Media, you can copy folders, files, and shortcuts between [sites](../../../site-building/sites.md) and connected [asset libraries](../../asset-libraries.md). This can accelerate projects by quickly duplicating structures across contexts.
 
-Before copying your content, ensure the destination site or asset library has access to the copied files' tags, categories, or custom [document types](./managing-metadata/defining-document-types.md). Otherwise a file's tags and categories are removed, and Liferay uses the Basic Document type for it.
+Before copying your content, ensure the destination site or asset library has access to the copied files' tags, categories, or custom [document types](./managing-metadata/defining-document-types.md). Otherwise, tags and categories are removed, and Liferay uses the Basic Document type.
 
 !!! note
-    File metadata and related entities (e.g., comments, subscriptions) are not copied. To copy documents with their related entities, you must use the site's [export/import](../../../site-building/sites/exporting-importing-site-pages-and-content.md) feature.
+    File metadata and related entities (e.g., comments and subscriptions) are not copied. To copy documents with their related entities, you must use the site's [export/import](../../../site-building/sites/exporting-importing-site-pages-and-content.md) feature.
 
 Copying content within Documents and Media requires specific permissions: View permissions in the origin site or asset library and Add permissions in the destination.
 
@@ -29,15 +29,15 @@ See [Documents and Media Permissions Reference](../publishing-and-sharing/managi
 
 1. To copy a single folder, file, or shortcut, click its *Actions* (![Actions Button](../../../images/icon-actions.png)) and select *Copy To*.
 
-   ![Copy one folder or document.](./copying-folders-and-documents/images/01.png)
+   ![Use the Copy To action to copy one folder or document.](./copying-folders-and-documents/images/01.png)
 
    To copy in bulk, select multiple items and click *Copy To* in the document management toolbar.
 
-   ![Copy multiple folders and documents.](./copying-folders-and-documents/images/02.png)
+   ![You can also select and copy multiple folders and documents.](./copying-folders-and-documents/images/02.png)
 
 1. Determine a destination for the copied items. This destination can be any site or connected asset library that you can access.
 
-   ![Determine a destination for the copied items.](./copying-folders-and-documents/images/03.png)
+   ![After selecting the items, determine a destination for them.](./copying-folders-and-documents/images/03.png)
 
 1. Click *Copy* to execute the operation.
 

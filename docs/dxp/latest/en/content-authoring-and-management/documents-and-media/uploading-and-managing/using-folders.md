@@ -34,7 +34,7 @@ Once created, the folder appears in the Documents and Media application. You can
 
 ## Folder Options
 
-Once you have created a folder, you can click *Actions* (![Actions Button](../../../images/icon-actions.png)) next to the folder to access the following options.
+Once you have created a folder, click *Actions* (![Actions Button](../../../images/icon-actions.png)) next to the folder to access the following options.
 
 | Action              | Description                                                                                   |
 | :------------------ | :-------------------------------------------------------------------------------------------- |

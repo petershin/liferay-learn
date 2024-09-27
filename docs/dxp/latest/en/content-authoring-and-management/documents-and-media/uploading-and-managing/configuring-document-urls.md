@@ -7,6 +7,7 @@ taxonomy-category-names:
     - Liferay SaaS
 uuid: a266c23a-5c23-4de6-a818-21e83f79cb1e
 ---
+
 # Configuring Document URLs
 {bdg-secondary}`Liferay 7.4 U27+/GA27+`
 
@@ -22,7 +23,7 @@ You can configure a file's friendly URL manually during [file upload](./uploadin
 !!! note
     When uploading multiple files, each file's friendly URL is generated automatically using its name.
 
-Follow these steps to set a file's friendly URL:
+To set a file's friendly URL,
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Documents and Media*.
 
@@ -45,7 +46,7 @@ When you change a file's friendly URL, Liferay automatically stores its previous
 !!! note
     By default, friendly URL redirects are temporary (302), but you can set them to permanent (301) if needed. See [Configuring Friendly URL Redirects](../../../site-building/site-settings/managing-site-urls/configuring-friendly-url-redirects.md) for more information.
 
-Follow these steps to view and manage retained URLs for a file:
+To view and manage retained URLs for a file,
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Documents and Media*.
 

@@ -1,4 +1,4 @@
----
+[---](---.md)
 taxonomy-category-names:
 - Sites
 - Pages and Composition
@@ -10,7 +10,7 @@ uuid: 1079119c-21f5-48e6-aebb-4a6dfc8262ea
 
 # Adding a Page to a Site
 
-Adding and customizing pages is a key part of managing your Liferay site. With pages, you can organize content, create a tailored user experience, and enhance site functionality. You can add pages using the [Pages application](#adding-a-new-page-using-the-pages-application) or through the [Page Tree menu](#adding-a-new-page-using-the-page-tree-menu).
+Adding and customizing pages is a key part of managing your Liferay site. You can add pages using the [Pages application](#adding-a-new-page-using-the-pages-application) or through the [Page Tree menu](#adding-a-new-page-using-the-page-tree-menu).
 
 !!! note
     For Liferay 7.4 U22+ and GA22+, private pages are disabled for new installations. To enable them, see [Enabling Private Pages](../understanding-pages.md#enabling-private-pages) for more information.
@@ -40,12 +40,12 @@ Adding and customizing pages is a key part of managing your Liferay site. With p
 
 1. In the Add Page dialog, enter a name and click *Add*.
 
-If you created a content page, you're redirected to the page editor to add fragments and widgets; if you created a widget page, you're redirected to the page's configuration options.
+If you created a content page, the page editor appears for adding fragments and widgets; if you created a widget page, the page's configuration options appear.
 
 To learn how to configure the remaining page settings, see [Configuring Individual Pages](../page-settings/configuring-individual-pages.md) or see [Configuring Page Sets](../page-settings/configuring-page-sets.md) to configure options for a [page set](../understanding-pages.md#page-sets).
 
 !!! tip
-    By default, new pages are included in the navigation menu for the site. To configure this navigation menu, see [Using the Navigation Menus Application](../../site-navigation/configuring-menu-displays.md).
+    By default, new pages are added to the navigation menu for the site. To configure this navigation menu, see [Using the Navigation Menus Application](../../site-navigation/configuring-menu-displays.md).
 
 ## Adding a New Page Using the Page Tree Menu
 
@@ -64,11 +64,11 @@ To learn how to configure the remaining page settings, see [Configuring Individu
 1. Follow the standard steps for [adding a new page](#adding-a-new-page).
 
 !!! tip
-    Pages in the draft status have an asterisk (*) next to their name in the page tree.
+    Pages in draft status have an asterisk (*) next to their names in the page tree.
 
 ## Previewing Pages
 
-You can preview the created pages before making them live or to identify the ones you must work on:
+You can preview the created pages before making them live or to identify the ones that need work: 
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-menu.png)), expand *Site Builder*, and click *Pages*.
 

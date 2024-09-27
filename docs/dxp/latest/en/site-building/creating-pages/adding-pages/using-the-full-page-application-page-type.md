@@ -24,7 +24,7 @@ uuid: d3d3b087-cf75-4ab5-a288-06f4018e0ad4
 
 ## Scoping Full Page Application Data
 
-All applications supported by the full page application page type are non-instanceable, and the content of the application you choose is based on the instance for that site. Therefore, if you already had data in your application, such as Documents and Media, it appears on the page. If you want to configure a full page application to be scoped to a specific page, you can configure that through the application's settings. Below is an example for a Documents and Media application:
+All applications supported by the full page application page type are non-instanceable, so the content of the application you choose by default is based on the instance for that site. If you already have data in your application, such as Documents and Media, it appears on the page. If you want to configure a full page application to be scoped to a specific page, you can configure that through the application's settings. Below is an example for a Documents and Media application:
 
 1. From the page, click (![Options](../../../images/icon-app-options.png)) for the widget and select *Configuration*.
 

@@ -31,9 +31,9 @@ Liferay supports various page types, each suited for different needs:
 - Use [widget pages](./using-widget-pages.md) when you must display and manage functional widgets that require a fixed layout or significant customization.
 
 !!! tip
-    In older versions, widget pages provided exclusive features, such as custom layouts and customizable columns. Many of these exclusive features are available on content pages since 7.3. So, in most cases, you should opt for a content page.
+    In older versions, widget pages provided exclusive features, such as custom layouts and customizable columns. Many of these exclusive features are available on content pages since 7.3. In most cases, you should opt for a content page.
 
-- Use [full page application pages](./adding-pages/using-the-full-page-application-page-type.md) to host a complete, standalone web application within a single page.
+- Use [full page application pages](./adding-pages/using-the-full-page-application-page-type.md) to host a complete, standalone web application in a single page.
 
 - Use [display page templates](../displaying-content/using-display-page-templates.md) to showcase specific content, such as products or assets, through customizable templates.
 

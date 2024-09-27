@@ -52,7 +52,7 @@ To make a page template from a page,
 
    ![Click Convert to Page Template in the options menu to turn the page you are editing into a new page template.](./creating-a-page-template/images/03.png)
 
-1. In the modal that appears on the screen, select an existing page set or select *Save In New Set* to create a new page template set for the page template.
+1. Select an existing page set or select *Save In New Set* to create a new page template set for the page template.
 
    ![Set the basic information for your new page template before publishing it.](./creating-a-page-template/images/04.png)
 
@@ -75,7 +75,7 @@ By default, only the creator of the page template can use it. To give other user
 
    ![Allow other users to access newly created page templates while configuring permissions.](./creating-a-page-template/images/05.png)
 
-1. Enable the *View* permission for the roles that should access the page template. To allow all users who can create pages to use it, enable the View permission for the user role.
+1. Enable the *View* permission for the roles that should access the page template. For example, enable the View permission for the *user* role to allow all users to use the page template.
 
 1. Click *Save*.
 

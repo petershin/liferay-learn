@@ -27,11 +27,11 @@ As individuals visit and interact with your site, Analytics Cloud tracks these e
 
    Hover over a specific event in the drop-down list to see the event's description. Click the *Pencil* icon (![Pencil](../images/icon-edit.png)) to edit the description.
 
-1. In the Breakdown row, click the *Add* icon (![Add](../images/icon-plus.png)) and select breakdown attributes.
+1. In the Breakdown row, click *Add* (![Add](../images/icon-plus.png)) and select breakdown attributes.
 
    ![Select breakdowns for your event.](./events/images/02.png)
 
-1. In the Filter row, click the *Add* icon (![Add](../images/icon-plus.png)) and select attributes to further filter the event.
+1. In the Filter row, click *Add* (![Add](../images/icon-plus.png)) and select attributes to further filter the event.
 
 1. The default time period is set to Last 30 days. Click the drop-down arrow to change to a different time period. Place a check on *Compare to Previous* to compare the event data with a previous time period.
 
@@ -39,15 +39,15 @@ As individuals visit and interact with your site, Analytics Cloud tracks these e
 
    There are three tabs (Total, Unique, and Average) to view the breakdown of the event. The Total tab shows the total number of events triggered by all users. The Unique tab shows the total number of unique users who triggered the event. The Average tab shows the average number of events per user.
 
-1. To remove a filter, breakdown, or analysis, click the close icon (![Close](../images/icon-close.png)) next to the property you wish to change. Then make new selections.
+1. To remove a filter, breakdown, or analysis, click Close (![Close](../images/icon-close.png)) next to the property you wish to change. Then make new selections.
 
-1. To save the event analysis for future viewing, give it a name and click the *Save Analysis* button. The analysis is made available in the event analysis tool for future viewing.
+1. To save the event analysis for future viewing, give it a name and click *Save Analysis*. The analysis is made available in the event analysis tool for future viewing.
 
 ## Breakdowns and Filters
 
 You can select up to three attributes in the Breakdown row and as many as you need in the Filter row. There are two types of attributes to choose from: [event attributes](../workspace-data/definitions.md#event-attributes) and [individual attributes](../workspace-data/definitions.md#individuals). Each type of event is made of global attributes which are used for every type of event and attributes unique to itself. You can use the event's attributes and the attributes of the individuals that triggered the event for your analysis. The drop-down list shows all available attributes that can be used for filtering. The events analysis tool gives the flexibility to filter by attributes that are both related or unrelated to the events and breakdowns selected.
 
-Hover over a specific attribute in the drop-down list to see the attribute's description and data typecast. Click the *Pencil* icon (![Pencil](../images/icon-edit.png)) to edit the description or data typecast. Analytics Cloud automatically tries to detect and cast the datatype based on the first data collected for that attribute. Data is cast as boolean, date, duration, number, or string. The data typecast determines the parameters available for filtering the analysis. For example, selecting an attribute that has a date typecast has filtering options such as a before or after time period. Date, duration, and number typecasts also have a grouping feature to group the data by a set number. For example, a date typecast enables grouping the data by day, month, or year.
+Hover over a specific attribute in the drop-down list to see the attribute's description and data typecast. Click *Edit* (![Pencil](../images/icon-edit.png)) to edit the description or data typecast. Analytics Cloud automatically tries to detect and cast the datatype based on the first data collected for that attribute. Data is cast as boolean, date, duration, number, or string. The data typecast determines the parameters available for filtering the analysis. For example, selecting an attribute that has a date typecast has filtering options such as a before or after time period. Date, duration, and number typecasts also have a grouping feature to group the data by a set number. For example, a date typecast enables grouping the data by day, month, or year.
 
 ![For date, duration, and number, select how to group the data.](./events/images/04.png)
 

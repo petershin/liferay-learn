@@ -128,7 +128,7 @@ Here are two ways to upgrade your Liferay database:
 
 See these additional tools to assist you:
 
-- [Upgrade Report](./reference/upgrade-report.md) 
+- [Upgrade Report](./reference/upgrade-report.md)
 - [Upgrade Log Context](./reference/upgrade-log-context.md)
 - [Monitoring Upgrades with MBeans](./reference/monitoring-upgrades-with-mbeans.md)
 

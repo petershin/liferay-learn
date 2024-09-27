@@ -199,28 +199,28 @@ You can configure the backup service to decrease the size of backups or accelera
 {bdg-secondary}`Liferay DXP 2024.Q3+`
 {bdg-secondary}`Backup Service 5.17.0+`
 
-When creating and restoring backups, you may choose to exclude adaptive media. Liferay can generate adaptive media as needed so it doesn't need to be backed up and restored. You can enable this feature by setting the values of `LCP_BACKUP_EXCLUDE_GENERATED_DL_FILES_ON_BACKUP_CREATE` and `LCP_BACKUP_EXCLUDE_GENERATED_DL_FILES_ON_BACKUP_RESTORE` to true. By reducing the amount of data that gets backed up, backups become faster and lighter.
+When creating and restoring backups, you may choose to exclude adaptive media. Liferay can generate adaptive media as needed, so it need not be backed up. You can enable this feature by setting the values of `LCP_BACKUP_EXCLUDE_GENERATED_DL_FILES_ON_BACKUP_CREATE` and `LCP_BACKUP_EXCLUDE_GENERATED_DL_FILES_ON_BACKUP_RESTORE` to `true`. By reducing the amount of data that gets backed up, backups become faster and lighter.
 
-### Using `rclone` as the Transfer Strategy
+### Discovering the Transfer Strategy
 
 {bdg-link-primary}`[Google Cloud Storage](https://cloud.google.com/storage)`
 {bdg-secondary}`Liferay DXP 2024.Q1.6+`
 {bdg-secondary}`Backup Service 5.17.0+`
 
-When restoring a backup on GCS (Google Cloud Storage), the backup service must use a transfer strategy. Liferay Cloud supports two transfer strategies for the document library: `gsutil` and `rclone`. You can choose the desired transfer strategy with the `LCP_DOCUMENT_LIBRARY_GCS_TRANSFER_STRATEGY` environment variable. By default, the backup service uses `gsutil` to ensure backups run smoothly on Liferay DXP versions that don't support `rclone`.
+When restoring a backup on GCS (Google Cloud Storage), the backup service must use a transfer strategy. Liferay Cloud supports two transfer strategies for the document library: `gsutil` and `rclone`.
 
-!!! note
-    Rclone is faster, lighter, and less error-prone than `gsutil` as a backup transfer strategy. Always use `rclone` if your Liferay DXP version supports it.
-
-#### Discovering the Transfer Strategy
-
-You can verify if the backup service is using the desired transfer strategy through the backup service logs. After restoring a backup on GCS, you should see a similar message:
+You can verify which transfer strategy is in use through the backup service logs. After restoring a backup on GCS, you see a message like this:
 
 ```
 Spawning [TRANSFER_STRATEGY] process to transfer files from [SOURCE] to [DESTINATION]
 ```
 
 The command written in `[TRANSFER_STRATEGY]` is either `gsutil` or `rclone`.
+
+You can choose your transfer strategy with the `LCP_DOCUMENT_LIBRARY_GCS_TRANSFER_STRATEGY` environment variable. By default, the backup service uses `gsutil` to ensure backups run smoothly on Liferay DXP versions that don't support `rclone`.
+
+!!! note
+    Rclone is faster, lighter, and less error-prone than `gsutil` as a backup transfer strategy. Always use `rclone` if your Liferay DXP version supports it, as noted above.
 
 ## Key Deployment Directories
 

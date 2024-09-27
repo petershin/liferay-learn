@@ -9,8 +9,8 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay DXP 2024.Q1/Portal 7.4 GA112 or below`
 
-!!! important
-    WebSphere is not supported in more recent versions of Liferay.
+!!! warning
+    Compatibility with IBM WebSphere application server has been removed in 2024.Q2 and later releases.
 
 Installing Liferay DXP on WebSphere requires installing the DXP WAR, installing dependencies, configuring WebSphere, and starting DXP. You must also configure your database and mail server connections.
 

@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # JVM Configuration
 
-As of {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`, Liferay DXP/Portal requires a Java 17, or 21 (prior versions support JDKs 8 and 11) with specific JVM option settings. There are also recommended settings specific to JDK 11, 17, and 21, and recommended baseline memory settings. These settings are describe here and demonstrated in an example Tomcat script.
+As of {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`, Liferay DXP/Portal requires a Java JDK 17 or 21 (prior versions support JDKs 8 and 11) with specific JVM option settings. There are also recommended settings specific to JDK 11, 17, and 21, and recommended baseline memory settings. These settings are describe here and demonstrated in an example Tomcat script.
 
 !!! note
     See [the Liferay DXP compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-Quarterly-Releases-Compatibility-Matrix) to choose a JDK.

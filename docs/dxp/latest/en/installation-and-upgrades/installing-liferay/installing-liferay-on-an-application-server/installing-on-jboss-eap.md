@@ -274,7 +274,7 @@ If you're using JBoss to manage the data source, follow these steps:
    </module>
    ```
 
-1. Get the JDBC JAR from your DXP WAR (7.4+) or from the database vendor, and copy it to the `$JBOSS_HOME/modules/com/liferay/portal/main` folder.
+1. Get the JDBC JAR from your DXP WAR (7.4+) or from the database vendor and copy it to the `$JBOSS_HOME/modules/com/liferay/portal/main` folder.
 
 1. Update `module.xml` in the `$JBOSS_HOME/modules/com/liferay/portal/main` folder to declare the portal module and the JDBC JAR.
 

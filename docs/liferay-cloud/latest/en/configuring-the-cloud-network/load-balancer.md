@@ -8,7 +8,7 @@ uuid: 7f1f8167-714b-4e6f-a140-2af61f560a27
 ---
 # Load Balancer
 
-The Ingress Load Balancer gives internet access to your environment's services via proxied HTTP(S) connections using TLS (1.0 to 1.2) protocol. Each load balancer has a static IP that you can use to set up custom domains.
+The Ingress Load Balancer gives internet access to your environment's services via proxied HTTP(S) connections using TLS (1.2 or 1.3) protocol. Each load balancer has a static IP that you can use to set up custom domains.
 
 ![You can configure your environment's load balancer with a custom domain.](./load-balancer/images/01.png)
 

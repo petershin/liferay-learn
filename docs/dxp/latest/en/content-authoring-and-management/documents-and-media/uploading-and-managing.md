@@ -4,7 +4,6 @@ toc:
   - ./uploading-and-managing/using-folders.md
   - ./uploading-and-managing/managing-files.md
   - ./uploading-and-managing/copying-folders-and-documents.md
-  - ./uploading-and-managing/deleting-files.md
   - ./uploading-and-managing/editing-images.md
   - ./uploading-and-managing/using-file-expiration-and-review-dates.md
   - ./uploading-and-managing/configuring-document-urls.md

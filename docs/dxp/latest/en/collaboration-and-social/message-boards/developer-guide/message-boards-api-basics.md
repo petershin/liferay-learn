@@ -15,7 +15,7 @@ Liferay's Headless Delivery application provides REST services for the [Message 
 !!! note
     Message board categories are named *sections* in the Liferay backend. These sections define topics for organizing threads.
 
-## Preparing Tutorial Resources
+## Preparing Message Boards Resources
 
 Before proceeding with the tutorial, set up a clean Liferay Docker container and prepare the provided tutorial code for use.
 
@@ -30,7 +30,7 @@ Once started, retrieve the site ID. To find your site ID, open the *Site Menu* (
 
 ### Tutorial Code
 
-Below is the sample code to demonstrate the Headless API. This code includes both sample cURL and Java files.
+Below is the sample code to demonstrate the headless API. This code includes both sample cURL and Java files.
 
 Run the following command to download and unzip the [sample code](https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip):
 
@@ -59,7 +59,7 @@ The provided code includes APIs for the `MessageBoardSection`, `MessageBoardThre
 !!! important
     The provided code uses basic authentication for demonstration purposes. For production, you should authorize users with [OAuth2](../../../headless-delivery/using-oauth2.md).
 
-## Calling the Sample APIs
+## Calling the Message Boards APIs
 
 In this exercise, you can use either the cURL commands or Java classes to call the `MessageBoardSection`, `MessageBoardThread` and `MessageBoardMessage` APIs. The following output examples correspond to the cURL commands, which differ slightly from the output for the provided Java classes.
 

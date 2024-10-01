@@ -139,8 +139,6 @@ To create a link action,
 
    For example, use `replace` to modify an entry as an item action or use `create` to add a new entry as a creation action.
 
-   ![Use Headless Action Keys to link an action to a headless endpoint.](./data-set-view-actions/images/06.png)
-
 1. (Optional) If you are using the Link action as an item type, you can [set a *Confirmation Message*](#setting-confirmation-and-status-messages) for it.
 
 Once configured, users are directed to the designated URL upon clicking the action button or icon.

@@ -23,7 +23,7 @@ To update page permissions,
 
    Alternatively, while [editing a page](../using-content-pages/adding-elements-to-content-pages.md), at the top right corner of the page click *Options* (![Options icon](../../../images/icon-options.png)) &rarr; *Permissions* (2).
 
-   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Or select the checkbox next to the page(s) (see [permissions in bulk](#setting-pages-permissions-in-bulk)) and click *Permissions* at the top options bar (3).
+   {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` Or select the checkbox next to the page(s) (see [permissions in bulk](#setting-pages-permissions-in-bulk)) and click *Permissions* at the top options bar (3).
 
    ![The page permissions can be found in the Pages app or while editing a page.](./updating-page-permissions/images/01.png)
 
@@ -45,7 +45,7 @@ To copy a page with its permissions,
 
 ## Setting Pages Permissions in Bulk
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages*.
 

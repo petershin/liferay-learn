@@ -10,7 +10,7 @@ uuid: 42d221de-7c20-4e65-ba94-c7734e59e8c0
 
 # Configuring XML Sitemaps
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 XML sitemaps are XML-formatted documents listing the URLs of a website along with additional metadata (e.g. last update, change frequency, and importance relative to other URLs in the site). They streamline the process for search engine crawlers, enhancing their ability to uncover and index website content effectively.
 

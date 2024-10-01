@@ -10,7 +10,7 @@ uuid: 93b7a0b6-926f-47dd-a26a-c50f40de6fb4
 
 # Configuring Friendly URL Separators
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 !!! important
     Currently, this feature is behind a beta feature flag (LPD-11147). Read [Beta Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.

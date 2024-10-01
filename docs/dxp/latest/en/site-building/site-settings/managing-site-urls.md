@@ -44,6 +44,6 @@ Use the Redirection tool to track and manage site requests leading to 404 errors
 
 ## XML Sitemaps
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 [Configure the XML sitemap](./managing-site-urls/configuring-xml-sitemaps.md) to notify search engines of the website's structure, indicating which URLs are available for crawling. With this configuration, you can include or exclude sites, page URLs (e.g., widget, content, panel, collection, and embedded pages), web content URLs, and category URLs from your sitemap.

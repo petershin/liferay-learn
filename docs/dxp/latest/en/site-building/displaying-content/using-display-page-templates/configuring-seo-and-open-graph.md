@@ -72,7 +72,7 @@ The recommended length for a page's description is under 155 characters.
 
 ### Custom Canonical URL
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 Canonical pages identify the preferred version of a web page among multiple versions that have similar or identical content. By selecting a canonical page, you ensure that search engines understand which version of a page is the primary one to index and rank in search results. It also helps prevent dilution of search rankings due to duplicate content and helps users find the most relevant content.
 
@@ -99,7 +99,7 @@ You can also localize this field using the Language Flag.
 
 Determine whether to include a display page in your `sitemap.xml` file, as well as set its Priority and Change Frequency fields. They inform search engines whether to crawl and index the display page, how it should be prioritized relative to other site pages, and how frequently it is updated.
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Enable/disable indexing child pages on XML maps by checking/unchecking the Include Child Page URLs in the XML Sitemap box. Read [Configuring XML Sitemaps](../../site-settings/managing-site-urls/configuring-xml-sitemaps.md) to learn more.
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Enable/disable indexing child pages on XML maps by checking/unchecking the Include Child Page URLs in the XML Sitemap box. Read [Configuring XML Sitemaps](../../site-settings/managing-site-urls/configuring-xml-sitemaps.md) to learn more.
 
 ![Determine whether to include a display page in your sitemap.xml file, as well as set its priority and change frequency.](./configuring-seo-and-open-graph/images/06.png)
 

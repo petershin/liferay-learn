@@ -7,6 +7,7 @@ toc:
   - ./extending-liferay/customizing-localization.md
   - ./extending-liferay/overriding-osgi-services.md
   - ./extending-liferay/using-portlet-filters.md
+  - ./extending-liferay/using-servlet-filters.md
 uuid: 4c36320d-ae31-44e0-a334-1566b16dea02
 taxonomy-category-names:
 - Development and Tooling

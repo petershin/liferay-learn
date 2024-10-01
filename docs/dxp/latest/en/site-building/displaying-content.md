@@ -15,8 +15,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: c3605866-6611-43cb-85f3-0f2853f6b5f4
 ---
+
 # Displaying Content
 
 You can display content in various ways. The option you choose depends on the type of asset you want to display, how many assets you want to display at once, and how you want your content to be viewed. To learn more about displaying your content with Liferay read [Displaying Content](./displaying-content/displaying-content-intro.md).
-
-

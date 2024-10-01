@@ -10,8 +10,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: eba4e055-8176-45d6-bdb0-ffdc71d1fa05
 ---
+
 # Developer Guide
 
 This section includes Developer related articles for Site Building.
-
-

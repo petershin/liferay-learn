@@ -18,7 +18,7 @@ uuid: 7ce0d5f8-e933-4eb3-8fe4-7588d0b00244
 
 Liferay DXP provides powerful tools out-of-the-box for understanding and delivering personalized experiences to users.
 
-For example, you can create [user segments](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) and map them to different [experiences](./personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md). With experiences in place, [personalize collections](./personalizing-site-experience/experience-personalization/personalizing-collections.md) and customize the way the content or the [pages](./personalizing-site-experience/experience-personalization/content-page-personalization.md) that users see. 
+For example, you can create [user segments](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) and map them to different [experiences](./personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md). With experiences in place, [personalize collections](./personalizing-site-experience/experience-personalization/personalizing-collections.md) and customize the way the content or the [pages](./personalizing-site-experience/experience-personalization/content-page-personalization.md) that users see.
 
 !!! tip
     When a user belongs to multiple segments, you can [prioritize a certain personalized variation](./personalizing-site-experience/experience-personalization/personalizing-collections.md#creating-personalized-variations) or [combine collection entries from all segments](./personalizing-site-experience/experience-personalization/personalizing-collections.md#combining-collection-entries-from-all-segments).
@@ -39,7 +39,7 @@ See [Creating and Managing a Segment](./personalizing-site-experience/segmentati
 
 Supercharge your segments by integrating your Liferay DXP instance with Liferay Analytics Cloud. Analytics Cloud integrates DXP with Salesforce(tm) and other data sources to provide even more ways to understand your user base.
 
-Integration with Analytics Cloud provides in-depth, machine-learning powered, data analytics capabilities to help you understand user behavior and engagement for every page of your DXP site. Analytics Cloud enables you to see user behavior and interaction with both standard and targeted content. See [Getting Analytics for User Segments](./personalizing-site-experience/segmentation/getting-analytics-for-user-segments.md) for more information.
+Integration with Analytics Cloud provides in-depth, machine-learning powered, data analytics to understand user behavior and engagement on every page of your DXP site. Analytics Cloud enables you to see user behavior and interaction with both standard and targeted content. See [Getting Analytics for User Segments](./personalizing-site-experience/segmentation/getting-analytics-for-user-segments.md) for more information.
 
 ![Site metrics using Analytics Cloud.](./personalizing-site-experience/images/02.png)
 

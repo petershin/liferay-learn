@@ -50,14 +50,14 @@ Note how they tie into themes as well (depending on them for definitions), possi
 Fragments and widgets are the building blocks of your site. There are many ways to customize them to suit your site's appearance.
 
 - [Fragment customizations](developer-guide/developing-page-fragments/developing-fragments-intro.md) can be used to tailor the look and feel of your site's fragment pages.
--
+
 - Application Display Templates<!--Add link when available--> can customize the appearance and behavior of the widgets on your site.
 
 ## Themes
 
-[Themes](../liferay-development/customizing-liferays-look-and-feel/themes.md) are a front-end developer's tool for customizing the default look and feel of your site. They provide a foundation that your [Style Books](#style-books) and [Page Templates](creating-pages/adding-pages/creating-a-page-template.md) can extend. You can also embed widgets in a theme to ensure a particular arrangement.
+[Themes](../liferay-development/customizing-liferays-look-and-feel/themes.md) are a frontend developer's tool for customizing the default look and feel of your site. They provide a foundation that your [Style Books](#style-books) and [Page Templates](creating-pages/adding-pages/creating-a-page-template.md) can extend. You can also embed widgets in a theme to ensure a particular arrangement.
 
-!!! note 
-    Themes are not supported in Liferay SaaS. 
+!!! note
+    Themes are not supported in Liferay SaaS.
 
 ![Choosing a theme for your site's pages can significantly alter your site's look and feel.](./site-appearance/images/03.png)

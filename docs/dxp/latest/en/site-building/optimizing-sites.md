@@ -17,7 +17,7 @@ uuid: 47e6759b-9bcb-432b-9707-129c368e99c5
 
 # Optimizing Sites
 
-From having top-tier SEO, to understanding and acting on your site's content, to building a site that is accessible to all types of users, Liferay provides tools to help you understand site issues and take action.
+From having top-tier SEO, to understanding and acting on your site's content, to building a site that is accessible to all types of users, Liferay provides tools for identifying and addressing site issues.
 
 ## Search Engine Optimization
 
@@ -26,8 +26,6 @@ You can use Liferay's SEO tools to enhance your site's visibility in search engi
 ## Page Performance and Accessibility
 
 Ensuring your site performs well and is accessible to all users is crucial. Liferay provides tools to analyze [content performance](../content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md), [content metrics](../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md), [SEO and accessibility on pages](../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md), and [page performance](../content-authoring-and-management/page-performance-and-accessibility/about-the-page-audit-tool.md).
-
-
 
 ## A/B Testing
 

@@ -20,3 +20,5 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Configuring Liferay
+
+Liferay is a very adaptable tool. You can modify and configure it to suit the needs of your application.

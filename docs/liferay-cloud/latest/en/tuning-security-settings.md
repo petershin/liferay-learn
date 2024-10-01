@@ -32,14 +32,14 @@ Liferay DXP images are published on [Docker Hub](https://hub.docker.com/r/lifera
 
 ### Commits to Your Repository
 
-Make sure not to commit any sensitive information (including licenses, credentials, secrets, etc.) to your repository. Use Liferay Cloud [secrets](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) to manage credentials or other sensitive variables needed for your project.
+Make sure not to commit any sensitive information (including licenses, credentials, secrets, etc.) to your repository. Use Liferay Cloud [secrets](./tuning-security-settings/managing-secure-environment-variables-with-secrets.md) to manage credentials or other sensitive variables needed for your project.
 
 !!! note
     Your Liferay PaaS subscription includes an enterprise Liferay DXP license automatically deployed with your environment. You do not need to supply a license with your installation.
 
 ### Code Scans
 
-Liferay PaaS includes a [customizable CI pipeline](../platform-services/continuous-integration.md) for builds. Add code scans to your CI process to enforce and automate cleaner and safer code practices.
+Liferay PaaS includes a [customizable CI pipeline](./platform-services/continuous-integration.md) for builds. Add code scans to your CI process to enforce and automate cleaner and safer code practices.
 
 ### Elasticsearch Security
 
@@ -153,7 +153,7 @@ Only store secrets in safe, secure locations, and rotate them on fixed intervals
 
 ### Disaster Recovery Master Token
 
-Create your master token as a secret when [configuring your disaster recovery environment](../support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md).
+Create your master token as a secret when [configuring your disaster recovery environment](./support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md).
 
 ### Repository Access
 

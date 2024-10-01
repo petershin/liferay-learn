@@ -11,11 +11,10 @@ uuid: eae15fd7-7aca-42fc-9add-1382f30fb2c6
 
 {bdg-primary}`Subscription`
 
-```{note}
-This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
-```
+!!! note
+    This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
 
-A Synonym Set is a group of words or phrases with the same meaning. An administrative User creates the Synonym Set; when a search page end user searches for a keyword or phrase, the synonymous terms in the set are also searched. 
+A Synonym Set is a group of words or phrases with the same meaning. An administrative User creates the Synonym Set; when a search page end user searches for a keyword or phrase, the synonymous terms in the set are also searched.
 
 For example, a user might search for the word "US". Most likely, the user would want search results that also included synonyms such as *America*, *U.S.A*, *United States*, etc. By creating Synonym Sets, you can ensure your users get the most out of their searches.
 
@@ -29,7 +28,7 @@ The [`=>` format](https://www.elastic.co/guide/en/elasticsearch/guide/current/sy
 
 ## Creating and Managing Synonym Sets
 
-Create a synonym set by adding as many synonymous keywords to a set as you like. Once the synonym set is saved, searches in the same company scope (any site from the [Virtual Instance](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md) where the synonyms were configured) take effect.
+Create a synonym set by adding as many synonymous keywords to a set as you like. Once the synonym set is saved, searches in the same company scope (any site from the [Virtual Instance](../../system-administration/configuring-liferay/virtual-instances.md) where the synonyms were configured) take effect.
 
 To create a new synonym set,
 
@@ -66,8 +65,11 @@ In the example above, this blog article about a lunar rover does not contain the
 Out of the box, Synonyms Sets supports synonyms in [English and Spanish only](#requirements-and-limitations). To add support for other languages use the configuration steps below:
 
 - Create a [custom analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) by re-implementing the default [French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) analyzer with the necessary changes (including an extra [Synonym graph token filter](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/analysis-synonym-graph-tokenfilter.html) in the pipeline)
+
 - Add the custom analyzer definition to the index settings, using the Additional Index Configurations of the connector configuration.
+
 - Apply the custom analyzer on the desired fields by overriding Liferay DXP's default type mappings, using the Override Type Mappings setting of the connector configuration.
+
 - Reindex to apply the new settings.
 
 ### Prerequisite: Obtain the Default Mappings
@@ -77,12 +79,13 @@ You must obtain the Elasticsearch connector's default JSON mappings before custo
 To get the mappings from your running Liferay,
 
 1. Open the global menu (![Global Menu](../../images/icon-applications-menu.png)) and go to _Control Panel_ &rarr; _Search_.
+
 1. Click the _Field Mappings_ tab.
+
 1. Copy the mappings (![Copy](../../images/icon-copy.png)) and save them.
 
-```{warning}
-Index mappings and settings can change between versions, and sometimes within a minor version (via a Fix Pack or Service Pack). Customizations to the mappings and settings must be reviewed and adapted as necessary when upgrading or moving to a new patch level. In addition, Liferay's Search team plans to add support for more languages out-of-the-box in future verisons, making customizations unnecessary.
-```
+!!! warning
+    Index mappings and settings can change between versions, and sometimes within a minor version (via a Fix Pack or Service Pack). Customizations to the mappings and settings must be reviewed and adapted as necessary when upgrading or moving to a new patch level. In addition, Liferay's Search team plans to add support for more languages out-of-the-box in future verisons, making customizations unnecessary.
 
 ### Adding a Language
 
@@ -109,7 +112,7 @@ Now that you have the default mapping file, make the necessary changes to add th
            },
            "filter": {
                "my-synonym-filter-fr": {
-                   "lenient": true, 
+                   "lenient": true,
                    "synonyms": [],
                    "type": "synonym_graph"
                },
@@ -151,15 +154,13 @@ Now that you have the default mapping file, make the necessary changes to add th
    }
    ```
 
-   ```{note}
-   For Liferay 7.4 U80 or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file. For example, see the [Liferay 7.4 GA80 mappings](https://github.com/liferay/liferay-portal/blob/7.4.3.80-ga80/modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-impl/src/main/resources/META-INF/mappings/liferay-type-mappings.json)
-   ```
+   !!! note
+       For Liferay 7.4 U80 or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file. For example, see the [Liferay 7.4 GA80 mappings](https://github.com/liferay/liferay-portal/blob/7.4.3.80-ga80/modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-impl/src/main/resources/META-INF/mappings/liferay-type-mappings.json)
 
-1. Using  the Override Type Mappings field, change the analyzer for the `template_fr` dynamic field to use the custom analyzer (`custom_liferay_analyzer_fr`):
+1. Using the Override Type Mappings field, change the analyzer for the `template_fr` dynamic field to use the custom analyzer (`custom_liferay_analyzer_fr`):
 
-   ```{important}
-   This example is clipped for brevity. Override Type Mappings completely overrides and ignores Liferay's default type mappings, so you must provide a complete mappings file, not just the overridden portion.   
-   ```
+   !!! important
+       This example is clipped for brevity. Override Type Mappings completely overrides and ignores Liferay's default type mappings, so you must provide a complete mappings file, not just the overridden portion.
 
    ```json
     {
@@ -186,9 +187,8 @@ Now that you have the default mapping file, make the necessary changes to add th
 
 1. Save the changes to the configuration.
 
-   ```{tip}
-   If you're using the Sidecar Elasticsearch server, you may see an error in the console. Restart Liferay DXP to resolve the issue.
-   ```
+   !!! tip
+       If you're using the Sidecar Elasticsearch server, you may see an error in the console. Restart Liferay DXP to resolve the issue.
 
 1. Now go to System Settings &rarr; Search &rarr; Synonyms.
 
@@ -200,7 +200,7 @@ Now that you have the default mapping file, make the necessary changes to add th
 
    To verify that the additional index settings including your custom analyzer has also been added, make the following API call to Elasticsearch: `http://<host>:<port>/liferay-[company-id]/_settings` and look for your analyzer name in the response. For example, to see the index settings for the sidecar Elasticsearch server of a Liferay DXP server running at `localhost`, with a `20101`, visit <http://localhost:9201/liferay-20101/_settings>.
 
-To verify the new filter is working, 
+To verify the new filter is working,
 
 1. Go to the Synonyms application: from the Global menu's Applications tab, click _Synonyms_ (under Search Tuning).
 
@@ -211,4 +211,3 @@ To verify the new filter is working,
 1. Create another Web Content Article with English and French translations. Add _logement_ to the French title.
 
 1. Switch to the French locale and search for _maison_. Both articles are returned.
-

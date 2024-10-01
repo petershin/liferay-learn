@@ -8,7 +8,7 @@ uuid: 160b7d94-be20-4dfe-ba58-3eb11a34c47b
 ---
 # Search Administration
 
-In *Control Panel* &rarr; *Configuration* &rarr; *Search* there are three administrative UIs: Connections, Index Actions, and Field Mappings. Connections shows you the search engines your installation is connected to, Index Actions is an interface for reindexing, and Field Mappings display fields mapped from Liferay to your search index. 
+In *Control Panel* &rarr; *Configuration* &rarr; *Search* there are three administrative UIs: Connections, Index Actions, and Field Mappings. Connections shows you the search engines your installation is connected to, Index Actions is an interface for reindexing, and Field Mappings display fields mapped from Liferay to your search index.
 
 ![The Search Administration panel contains three management screens.](./search-administration/images/02.png)
 
@@ -16,16 +16,16 @@ In *Control Panel* &rarr; *Configuration* &rarr; *Search* there are three admini
 
 Information about the search engine connection(s) is displayed here. For example,
 
-* Search Engine Vendor: Elasticsearch
-* Client Version: 7.16.3
-* Active Connections: 1
-* Health: Green
-* Connection ID: \_REMOTE\_
-* Connection Type: Read/Write
-* Cluster Name: LiferayElasticsearchCluster
-* Nodes: 1
-* Node Name: lr-es
-* Node Version: 7.17.21
+- Search Engine Vendor: Elasticsearch
+- Client Version: 7.16.3
+- Active Connections: 1
+- Health: Green
+- Connection ID: \_REMOTE\_
+- Connection Type: Read/Write
+- Cluster Name: LiferayElasticsearchCluster
+- Nodes: 1
+- Node Name: lr-es
+- Node Version: 7.17.21
 
 ## Index Actions
 
@@ -36,6 +36,7 @@ In Index Actions you can reindex Liferay's data.
 You can reindex at one of these levels:
 
 **Global:** reindex all indexes and types, or all spell check dictionaries.
+
 **Individual Indexable Types:** reindex an indexable type individually.
 
 1. Open Global Menu &rarr; Control Panel &rarr; Search and click the Index Actions tab.
@@ -50,15 +51,14 @@ You can reindex at one of these levels:
 
    ![Select the instances to reindex.](./search-administration/images/03.png)
 
-   Beginning in Liferay 7.4, you can limit the scope of the reindex actions to specific [Virtual Instances](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md).
+   Beginning in Liferay 7.4, you can limit the scope of the reindex actions to specific [Virtual Instances](../../system-administration/configuring-liferay/virtual-instances.md).
 
 1. [Liferay 2023.Q4+/GA 102+] Click _Execute_ in the dialog to confirm the reindex.
 
    ![Confirm that you'd like to reindex.](./search-administration/images/04.png)
 
-```{note}
-[Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) are reindexed via the application's dedicated settings menu. In the Global Menu, click _Metrics_ in the Applications &rarr; Workflow section, then open the Settings window (![Options](../../images/icon-actions.png)). See [Reindexing Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#reindexing-workflow-metrics) for more information.
-```
+!!! note
+    [Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) are reindexed via the application's dedicated settings menu. In the Global Menu, click _Metrics_ in the Applications &rarr; Workflow section, then open the Settings window (![Options](../../images/icon-actions.png)). See [Reindexing Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#reindexing-workflow-metrics) for more information.
 
 ### Reindexing All Content
 
@@ -79,10 +79,10 @@ In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, Liferay's log reports when t
 
 For earlier updates and Liferay Portal 7.3, enable these [logging configurations](../../system-administration/using-the-server-administration-panel/configuring-logging.md) to see similar information:
 
-| Logger Category | Level |
-| :-------------- | :---- |
+| Logger Category                                                                   | Level |
+| :-------------------------------------------------------------------------------- | :---- |
 | com.liferay.portal.search.internal.background.task.ReindexStatusMessageSenderImpl | DEBUG |
-| com.liferay.portal.search.internal.SearchEngineInitializer | INFO |
+| com.liferay.portal.search.internal.SearchEngineInitializer                        | INFO  |
 
 ### Reindexing Individual Types
 
@@ -128,6 +128,6 @@ The Field Mappings tab shows you all field mappings that are effective in the sy
 
 ## Related Content
 
-* [Search Configuration Reference](../search-configuration-reference.md)
-* [Portal Properties](../../installation-and-upgrades/reference/portal-properties.md)
-* [Elasticsearch Connector Configuration Reference](../installing-and-upgrading-a-search-engine/elasticsearch/elasticsearch-connector-configuration-reference.md)
+- [Search Configuration Reference](../search-configuration-reference.md)
+- [Portal Properties](../../installation-and-upgrades/reference/portal-properties.md)
+- [Elasticsearch Connector Configuration Reference](../installing-and-upgrading-a-search-engine/elasticsearch/elasticsearch-connector-configuration-reference.md)

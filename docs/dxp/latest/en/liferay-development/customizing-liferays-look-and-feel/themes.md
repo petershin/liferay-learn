@@ -44,7 +44,7 @@ You can also configure a custom [Frontend Token Definition](../../site-building/
 
 Themes are also a complement to [Page Templates](../../site-building/creating-pages/adding-pages/creating-a-page-template.md) or [Master Page Templates](../../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) for designing a template for your Site's pages. It can be used in conjunction with these other methods, which add on top of the design from your theme.
 
-For example, you can [embed widgets in your theme](./themes/theme-development/working-with-templates/embedding-widgets-using-templates.md) to make them a permanent fixture of your Site's pages.
+For example, you can [embed widgets in your theme](./themes/embedding-widgets-using-templates.md) to make them a permanent fixture of your Site's pages.
 
 !!! note
     You can also create templates for your pages using [Master Pages](../../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) or [Page Templates](../../site-building/creating-pages/adding-pages/creating-a-page-template.md).
@@ -53,7 +53,7 @@ For example, you can [embed widgets in your theme](./themes/theme-development/wo
 
 Resources may be bundled into your theme or from other sources to bring together many sources of code at once so you can adapt your strategy depending on how you want to deploy different changes.
 
-- [Themelets](./themes/theme-development/bundling-resources/bundling-and-installing-resources-into-your-theme-via-themelets.md) allow the customization of a small number of files, in a modular way that can apply to many themes.
+- [Themelets](./themes/bundling-resources.md) allow the customization of a small number of files, in a modular way that can apply to many themes.
 
 - Theme contributors<!--Add link when available--> allow you to package UI resources and customizations that can be deployed independently of a theme.
 

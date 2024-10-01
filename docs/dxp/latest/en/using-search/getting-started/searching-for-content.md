@@ -68,9 +68,8 @@ With prefix searching, searching for the term *instrument* returns documents not
 
 ![Searching for "lever" also returns "leverage" and "leveraging".](./searching-for-content/images/03.png)
 
-```{note}
-Prefix searching is available for many fields out of the box, but it's more complicated under the hood. The details of the field mapping, including the analyzer used on the field and any transformations performed, determine the final behavior.
-```
+!!! note
+    Prefix searching is available for many fields out of the box, but it's more complicated under the hood. The details of the field mapping, including the analyzer used on the field and any transformations performed, determine the final behavior.
 
 Another way to ensure users see results is through [search suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md).
 
@@ -80,9 +79,8 @@ The Search Bar's behavior can be configured via its widget configuration screen.
 
 ![Configure the search bar behavior in its configuration screen.](./searching-for-content/images/05.png)
 
-```{note}
-When you configure the globally embedded Search Bar widget at the top of one page, it configures the page-top Search Bar widget on all pages in the site. It also overrides the [destination Search Page's](../search-pages-and-widgets/working-with-search-pages/search-pages.md) Search Bar widget, if they're configured differently. However, it does not override Search Bar widgets manually placed on other pages.
-```
+!!! note
+    When you configure the globally embedded Search Bar widget at the top of one page, it configures the page-top Search Bar widget on all pages in the site. It also overrides the [destination Search Page's](../search-pages-and-widgets/working-with-search-pages/search-pages.md) Search Bar widget, if they're configured differently. However, it does not override Search Bar widgets manually placed on other pages.
 
 #### Display Settings
 
@@ -130,7 +128,7 @@ If [Search Bar Suggestions](../search-pages-and-widgets/search-bar-suggestions.m
 
 ## Searching for Liferay Objects
 
-You can enable each [object definition](../../../liferay-development/objects.md) to be searchable by selecting Enable Indexed Search setting in its Details tab. If enabled, you can also configure [each field](../../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md) as searchable; object entries [can then be queried](../../getting-started/searching-for-content.md#searching-for-liferay-objects) and returned in the Search Results widget.
+You can enable each [object definition](../../liferay-development/objects.md) to be searchable by selecting Enable Indexed Search setting in its Details tab. If enabled, you can also configure [each field](../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md) as searchable; object entries [can then be queried](../getting-started/searching-for-content.md#searching-for-liferay-objects) and returned in the Search Results widget.
 
 !!! important
     The scope of the object determines how it must be searched:
@@ -140,13 +138,13 @@ You can enable each [object definition](../../../liferay-development/objects.md)
 
 The Type facet and the Search Results widget support searching for Liferay objects in the following manner:
 
-- The Type Facet automatically includes published Objects: 
+- The Type Facet automatically includes published Objects:
 
-   ![Published Objects are added to the Type Facet widget.](./searching-for-content/images/09.png)
+  ![Published Objects are added to the Type Facet widget.](./searching-for-content/images/09.png)
 
 - The Search Results widget automatically displays the Object Entry's title and a summary.
 
-   ![A title and a content summary are displayed for Object Entries.](./searching-for-content/images/10.png)
+  ![A title and a content summary are displayed for Object Entries.](./searching-for-content/images/10.png)
 
 For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects to the entry's [display page](../../liferay-development/objects/displaying-object-entries.md#creating-display-page-templates-for-objects), if one exists.
 
@@ -154,5 +152,5 @@ For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of [account rest
 
 ## Related Topics
 
-* [Understanding Search Results](../search-pages-and-widgets/search-results/search-results-behavior.md)
-* [Enabling Search Suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md)
+- [Understanding Search Results](../search-pages-and-widgets/search-results/search-results-behavior.md)
+- [Enabling Search Suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md)

@@ -27,13 +27,13 @@ The Sign-In utility page contains the Sign-In widget found under Widgets &rarr; 
 
 ![Create a sign-in utility page to override the one at the system-level.](./types-of-utility-pages/images/02.png)
 
-You can customize the look and feel of the sign-in page as you would for a content page. You can also create multiple sign-in utility pages per site, but you can use only one as the default. To create a new utility page, see [Creating a New Utility Page](../adding-pages/using-utility-pages.md#creating-a-new-utility-page). 
+You can customize the look and feel of the sign-in page as you would for a content page. You can also create multiple sign-in utility pages per site, but you can use only one as the default. To create a new utility page, see [Creating a New Utility Page](../adding-pages/using-utility-pages.md#creating-a-new-utility-page).
 
 !!! note
     Changes to the sign-in utility page do not affect the sign-in portlet.
 
 !!! important
-    Starting from Liferay DXP 2024.Q3/GA125, the *Email From* and *Password Reset Notification* settings were removed from the sign in widget through a [beta feature flag](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). They are now available at the instance level. To access these settings, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Instance Settings* &rarr; *Email*. You can find the *Email Sender* and *Password Reset Notification* settings here.
+    Starting from Liferay DXP 2024.Q3/GA125, the *Email From* and *Password Reset Notification* settings were removed from the sign in widget through a [beta feature flag](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). They are now available at the instance level. To access these settings, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Instance Settings* &rarr; *Email*. You can find the *Email Sender* and *Password Reset Notification* settings here.
 
 ## Create Account
 

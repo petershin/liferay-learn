@@ -31,7 +31,7 @@ Elasticsearch 7 is supported in Liferay 7.4. Check the [Search Engine Compatibil
 
 ### Reindex Virtual Instances Independently
 
-Beginning in Liferay 7.4, Server Administrators can limit the scope of the reindex actions to specific [Virtual Instances](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md). To choose which instances the index actions apply to,
+Beginning in Liferay 7.4, Server Administrators can limit the scope of the reindex actions to specific [Virtual Instances](../../system-administration/configuring-liferay/virtual-instances.md). To choose which instances the index actions apply to,
 
 1. Open Global Menu &rarr; Control Panel &rarr; Search and click the Index Actions tab.
 
@@ -89,6 +89,6 @@ Upgrading from a previous DXP version to 7.4 requires no special considerations 
 
 ## Related Topics
 
-* [Upgrading Search Infrastructure](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-search-infrastructure.md)
+- [Upgrading Search Infrastructure](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-search-infrastructure.md)
 
-* [7.4 Breaking Changes](../../liferay-development/liferay-internals/reference/7-4-breaking-changes.md)
+- [7.4 Breaking Changes](../../liferay-development/liferay-internals/reference/7-4-breaking-changes.md)

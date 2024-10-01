@@ -15,13 +15,15 @@ It's best practice to back up the indexes under all upgrade scenarios, even if t
 
 Here are some representative upgrade scenarios:
 
-* Upgrading the Elasticsearch cluster independently of Liferay: backing up all indexes is recommended. Restoring data from the snapshot is not needed, because all indexes remain in the system.
-* Upgrading Liferay and connecting to the same Elasticsearch cluster: backing up all indexes is recommended. Restoring data from the snapshot is not needed, because all indexes remain in the system.
-* Upgrading Liferay and connecting to a different Elasticsearch cluster: backing up all indexes is recommended. Restoring from snapshot is necessary for all primary storage indexes. If you're using either of Liferay's search tuning features (Result Ranking and Synonym Sets), you must also [import the indexed data into the Liferay database](upgrading-search-infrastructure.md#importing-the-search-tuning-indexes-in-7-4) after upgrading to Liferay DXP 7.4. 
+- Upgrading the Elasticsearch cluster independently of Liferay: backing up all indexes is recommended. Restoring data from the snapshot is not needed, because all indexes remain in the system.
+
+- Upgrading Liferay and connecting to the same Elasticsearch cluster: backing up all indexes is recommended. Restoring data from the snapshot is not needed, because all indexes remain in the system.
+
+- Upgrading Liferay and connecting to a different Elasticsearch cluster: backing up all indexes is recommended. Restoring from snapshot is necessary for all primary storage indexes. If you're using either of Liferay's search tuning features (Result Ranking and Synonym Sets), you must also [import the indexed data into the Liferay database](upgrading-search-infrastructure.md#importing-the-search-tuning-indexes-in-7-4) after upgrading to Liferay DXP 7.4.
 
 ## Creating Elasticsearch Cluster Backups
 
-Back up your Elasticsearch cluster and test restoring the backup in three steps: 
+Back up your Elasticsearch cluster and test restoring the backup in three steps:
 
 1. Create a repository
 
@@ -29,19 +31,18 @@ Back up your Elasticsearch cluster and test restoring the backup in three steps:
 
 1. Restore from the snapshot
 
-```{note}
-For more detailed information, refer to Elastic's [Elasticsearch administration guide](https://www.elastic.co/guide/en/elasticsearch/guide/master/administration.html), and in particular to the [Snapshot and Restore module](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshot-restore.html).
-```
+!!! note
+    For more detailed information, refer to Elastic's [Elasticsearch administration guide](https://www.elastic.co/guide/en/elasticsearch/guide/master/administration.html), and in particular to the [Snapshot and Restore module](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshot-restore.html).
 
 ### Create a Repository
 
 First [create a repository](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-register-repository.html) to store your snapshots. Elasticsearch allows several repository types, including
 
-* Shared file system, such as a Network File System or NAS
-* Amazon S3
-* HDFS (Hadoop Distributed File System)
-* Azure Cloud
-* Google Cloud Storage
+- Shared file system, such as a Network File System or NAS
+- Amazon S3
+- HDFS (Hadoop Distributed File System)
+- Azure Cloud
+- Google Cloud Storage
 
 If you want to store snapshots on a shared file system, first register the path to the shared file system in each node's `elasticsearch.yml` using the [`path.repo` setting](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-register-repository.html#snapshots-filesystem-repository). For example,
 
@@ -114,9 +115,8 @@ green  open   liferay-0                                          jPIEOfZhSCKZSWn
 green  open   liferay-20101-search-tuning-synonyms               pAUN8st1RmaV1NxXtj-Sig   1   0          1            0      4.1kb          4.1kb
 ```
 
-```{note}
-Elasticsearch uses a *smart snapshots* approach. To understand what that means, consider a single index. The first snapshot includes a copy of the entire index, while subsequent snapshots only include the delta between the first, complete index snapshot and the current state of the index.
-```
+!!! note
+    Elasticsearch uses a *smart snapshots* approach. To understand what that means, consider a single index. The first snapshot includes a copy of the entire index, while subsequent snapshots only include the delta between the first, complete index snapshot and the current state of the index.
 
 Eventually you'll end up with a lot of snapshots in your repository, and no matter how cleverly you name the snapshots, you may forget what some snapshots contain. You can get a description using the Elasticsearch API. For example,
 
@@ -144,7 +144,7 @@ returns
         "total":3,
         "failed":0,
         "successful":3
-        
+
         }
     }
 ]}
@@ -209,11 +209,11 @@ You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/
 
 1. Create a folder called `elasticsearch_local_backup` somewhere in the system. Make sure Elasticsearch has read and write access to the folder (e.g., `/path/to/elasticsearch_local_backup`).
 
-1. Add 
+1. Add
 
-    ```yaml
-    path.repo: [ "/path/to/elasticsearch_local_backup" ]
-    ```
+   ```yaml
+   path.repo: [ "/path/to/elasticsearch_local_backup" ]
+   ```
 
    to the `elasticsearch.yml` for [all master and data nodes](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-register-repository.html#snapshots-filesystem-repository) in the Elasticsearch cluster. If you're upgrading Elasticsearch, make sure the path to the snapshot repository is the same in the pre-upgrade and post-upgrade Elasticsearch configurations.
 
@@ -221,45 +221,45 @@ You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/
 
 1. [Register the snapshot repository](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-register-repository.html). You can run the following `snapshot` API request (for example through the Dev Tools console in Kibana):
 
-    ```json
-    PUT /_snapshot/elasticsearch_local_backup
-    {
-      "type": "fs",
-      "settings": {
-        "location": "/path/to/elasticsearch_local_backup"
-      }
-    }
+   ```json
+   PUT /_snapshot/elasticsearch_local_backup
+   {
+     "type": "fs",
+     "settings": {
+       "location": "/path/to/elasticsearch_local_backup"
+     }
+   }
 
-    ```
+   ```
 
    If you're upgrading to a new Elasticsearch version, you can use this same command on the post-upgrade Elasticsearch to register the snapshot repository.
 
 1. [Create a snapshot](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-take-snapshot.html):
 
-    ```json
-    PUT /_snapshot/elasticsearch_local_backup/snapshot1?wait_for_completion=true
-    {
-      "indices": "liferay-20101-search-tuning*",
-      "ignore_unavailable": true,
-      "include_global_state": false
-    }
-    ```
+   ```json
+   PUT /_snapshot/elasticsearch_local_backup/snapshot1?wait_for_completion=true
+   {
+     "indices": "liferay-20101-search-tuning*",
+     "ignore_unavailable": true,
+     "include_global_state": false
+   }
+   ```
 
    If you want to create a snapshot for all Liferay indexes, you can use `"indices": "liferay*,workflow-metrics*"` instead. If you're in an upgrade scenario, it can make sense to take a snapshot of just the indexes that can't be recreated from the database, like the Synonym Sets and Result Rankings indexes in Liferay DXP 7.2 and 7.3.
 
 1. To [restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-restore-snapshot.html) specific indexes from a snapshot using a different name, run a `restore` API call similar to this:
 
-    ```json
-    POST /_snapshot/elasticsearch_local_backup/snapshot1/_restore
-    {
-      "indices": "liferay-20101-search-tuning-synonyms,liferay-20101-search-tuning-rankings",
-      "ignore_unavailable": true,
-      "include_global_state": false,
-      "rename_pattern": "(.+)",
-      "rename_replacement": "restored_$1",
-      "include_aliases": false
-    }
-    ```
+   ```json
+   POST /_snapshot/elasticsearch_local_backup/snapshot1/_restore
+   {
+     "indices": "liferay-20101-search-tuning-synonyms,liferay-20101-search-tuning-rankings",
+     "ignore_unavailable": true,
+     "include_global_state": false,
+     "rename_pattern": "(.+)",
+     "rename_replacement": "restored_$1",
+     "include_aliases": false
+   }
+   ```
 
    where `indices` sets the snapshotted index names to restore from. The indexes from the above call would be restored as `restored_liferay-20101-search-tuning-rankings` and `restored_liferay-20101-search-tuning-synonyms`, following the `rename_pattern` and `rename_replacement` regular expressions.
 
@@ -285,18 +285,18 @@ Run the same command for the `liferay-20101-search-tuning-rankings` index. If yo
 
 The out-of-the-box Search Tuning index names depend on your Liferay version and patch level:
 
-| Liferay Version and Patch | Search Tuning Indexes |
-| :--- | :--- |
-| Liferay DXP 7.2 SP2/FP5 and below| `liferay-search-tuning-rankings`<br />`liferay-search-tuning-synonyms-liferay-<companyId>` |
+| Liferay Version and Patch         | Search Tuning Indexes                                                                          |
+| :-------------------------------- | :--------------------------------------------------------------------------------------------- |
+| Liferay DXP 7.2 SP2/FP5 and below | `liferay-search-tuning-rankings`<br />`liferay-search-tuning-synonyms-liferay-<companyId>`     |
 | Liferay DXP 7.2 SP3/FP8 and above | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
-| Liferay DXP 7.3 GA1+ and 7.4 GA1+  | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
+| Liferay DXP 7.3 GA1+ and 7.4 GA1+ | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
 
-The `<companyId>` (e.g., `20101`) belongs to a given `Company` record in the database. It is displayed as _Instance ID_ in the UI and represents a [Virtual Instance](../../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md).
+The `<companyId>` (e.g., `20101`) belongs to a given `Company` record in the database. It is displayed as _Instance ID_ in the UI and represents a [Virtual Instance](../../../../system-administration/configuring-liferay/virtual-instances.md).
 
 ## What's Next
 
-If you are [upgrading Elasticsearch](./upgrading-to-elasticsearch-7.md), you can do that now. 
+If you are [upgrading Elasticsearch](./upgrading-to-elasticsearch-7.md), you can do that now.
 
 ## Related Topics
 
-[Search Administration and Tuning](../../../search-administration-and-tuning.md)
+- [Search Administration and Tuning](../../../search-administration-and-tuning.md)

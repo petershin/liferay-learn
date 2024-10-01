@@ -56,7 +56,7 @@ Additionally, you can [integrate Liferay DXP with Analytics Cloud](https://learn
 
 Liferay offers numerous [settings](./site-settings/site-settings-ui-reference.md) to modify the appearance, behavior, and functionality of your site.
 
-Your site's look and feel can be [enhanced by using different themes](../getting-started/changing-your-sites-appearance.md), which can be downloaded and deployed from [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md). Alternatively, you can [create your own theme](../liferay-development/customizing-liferays-look-and-feel/themes/theme-development/setting-up-an-environment-and-creating-a-theme.md) to achieve a unique design.
+Your site's look and feel can be [enhanced by using different themes](../getting-started/changing-your-sites-appearance.md), which can be downloaded and deployed from [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md). Alternatively, you can [create your own theme](../liferay-development/customizing-liferays-look-and-feel/themes/setting-up-an-environment-and-creating-a-theme.md) to achieve a unique design.
 
 Themes define the overall aesthetic of a site, including CSS, JavaScript, and HTML through FreeMarker templates. FreeMarker enhances standard HTML elements with features like variables, conditional statements, and loops. See [Developing Themes](./developer-guide.md) for more information.
 

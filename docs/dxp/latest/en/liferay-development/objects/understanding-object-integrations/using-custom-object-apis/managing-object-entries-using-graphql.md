@@ -13,7 +13,7 @@ taxonomy-category-names:
 
 # Managing Object Entries Using GraphQL
 
-You can use GraphQL to manage custom object entries in Liferay efficiently. This API framework simplifies data interaction and serves as an alternative to [REST APIs]((./object-api-basics.md)). With GraphQL, you can query specific data, reduce network requests, and improve application performance.
+You can use GraphQL to manage custom object entries in Liferay efficiently. This API framework simplifies data interaction and serves as an alternative to [REST APIs](./object-api-basics.md). With GraphQL, you can query specific data, reduce network requests, and improve application performance.
 
 Read [Consuming GraphQL APIs](../../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) to learn more about GraphQL in Liferay.
 

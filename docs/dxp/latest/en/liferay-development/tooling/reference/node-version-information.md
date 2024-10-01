@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Node Version Information
 
-Liferay DXP uses [Node](https://nodejs.org/en/) (and [NPM](https://www.npmjs.com/)) for many different frontend components. Specifically, the [Liferay Theme Generator](../../customizing-liferays-look-and-feel/themes/theme-development/setting-up-an-environment-and-creating-a-theme.md) and Liferay's [JavaScript application tools](../../building-applications/developing-a-javascript-application.md) require the use of NPM commands to build and deploy.
+Liferay DXP uses [Node](https://nodejs.org/en/) (and [NPM](https://www.npmjs.com/)) for many different frontend components. Specifically, the [Liferay Theme Generator](../../customizing-liferays-look-and-feel/themes/setting-up-an-environment-and-creating-a-theme.md) and Liferay's [JavaScript application tools](../../building-applications/developing-a-javascript-application.md) require the use of NPM commands to build and deploy.
 
 These dependencies are designed to use specific versions of Node and NPM. Check the [Node version compatibility matrix](#version-compatibility-matrix) to ensure you have the correct versions installed when developing themes or JavaScript applications.
 
@@ -19,43 +19,43 @@ If you have an old or unsupported version of Node installed for your Liferay ins
 
 1. Remove your existing Node installation.
 
-	```bash
-	sudo apt-get remove node npm
-	```
+   ```bash
+   sudo apt-get remove node npm
+   ```
 
 1. Update your repositories.
 
-	```bash
-	sudo apt-get update
-	```
+   ```bash
+   sudo apt-get update
+   ```
 
 1. Retrieve the desired *major version* of Node. Check the [version compatibility matrix](#version-compatibility-matrix) for the major version of Node required for your Liferay DXP version.
 
-	```bash
-	curl -sL deb.nodesource.com/setup_##.x | sudo -E bash -
-	```
+   ```bash
+   curl -sL deb.nodesource.com/setup_##.x | sudo -E bash -
+   ```
 
-	For example, if you are using Liferay version 7.4, then run the following for version Node version `16.x`:
+   For example, if you are using Liferay version 7.4, then run the following for version Node version `16.x`:
 
-	```bash
-	curl -sL deb.nodesource.com/setup_16.x | sudo -E bash -
-	````
+   ```bash
+   curl -sL deb.nodesource.com/setup_16.x | sudo -E bash -
+   ````
 
 1. Install Node and NPM with a single command.
 
-	```bash
-	sudo apt-get install -y nodejs
-	````
+   ```bash
+   sudo apt-get install -y nodejs
+   ````
 
 1. Verify that you have the expected versions of Node and NPM.
 
-	```bash
-	node --version
-	```
+   ```bash
+   node --version
+   ```
 
-	```bash
-	npm --version
-	```
+   ```bash
+   npm --version
+   ```
 
 You should now have a supported version of Node and NPM for your Liferay installation (updated to the latest minor version that is supported). However, if your NPM version does not match the expected version, then you can install a specific version of NPM with this command:
 
@@ -77,9 +77,9 @@ node {
 ## Version Compatibility Matrix
 
 | **Liferay Version** | **Node Version** | **NPM Version** | **Theme Generator Version** | **Gulp Version** | **Yeoman Version** |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 7.0 | 6.6.0 | 6.4.1 | 8.x.x | 2.x | 2.x |
-| 7.1 | 8.15.0 | 6.4.1 | 8.x.x | 2.x | 3.x |
-| 7.2 | 10.15.3 | 6.4.1 | 9.x.x & 10.x.x | 3.x & 4.x | 3.x |
-| 7.3 | 10.15.3 | 6.4.1 | 9.x.x & 10.x.x | 3.x & 4.x | 3.x |
-| 7.4 | 16.13.0 | 8.1.0 | 10.2.x | 4.x | 4.x |
+| :------------------ | :--------------- | :-------------- | :-------------------------- | :--------------- | :----------------- |
+| 7.0                 |      6.6.0       |      6.4.1      |            8.x.x            |       2.x        |        2.x         |
+| 7.1                 |      8.15.0      |      6.4.1      |            8.x.x            |       2.x        |        3.x         |
+| 7.2                 |     10.15.3      |      6.4.1      |       9.x.x & 10.x.x        |    3.x & 4.x     |        3.x         |
+| 7.3                 |     10.15.3      |      6.4.1      |       9.x.x & 10.x.x        |    3.x & 4.x     |        3.x         |
+| 7.4                 |     16.13.0      |      8.1.0      |           10.2.x            |       4.x        |        4.x         |

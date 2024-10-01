@@ -28,7 +28,7 @@ Configure virtual hosts for your Liferay server to connect domain names (e.g., `
 Define friendly URLs to help users quickly access your sites. Each friendly URL on your Liferay server must be unique and is appended to `https://[server:port]/web` (e.g., `https://localhost:8080/web/hello-world/`). See [Configuring Your Site's Friendly URL](./managing-site-urls/configuring-your-sites-friendly-url.md) for more information.
 
 !!! note
-    You can also configure friendly URLs for [pages](../creating-pages/page-settings/configuring-your-pages-friendly-url.md), [URL separators](./managing-site-urls/configuring-friendly-url-separators.md), and [documents]((../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md)).
+    You can also configure friendly URLs for [pages](../creating-pages/page-settings/configuring-your-pages-friendly-url.md), [URL separators](./managing-site-urls/configuring-friendly-url-separators.md), and [documents](../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md).
 
 ## Site Redirects
 

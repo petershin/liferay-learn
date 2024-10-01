@@ -195,5 +195,5 @@ For more information on themes, see [Themes](../../../customizing-liferays-look-
 
 - [Site Localization](../../../../site-building/site-settings/site-localization.md)
 - [Using a Theme Sprite Map Client Extension](../../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md)
-- [Setting Up an Environment and Creating a Theme](../../../customizing-liferays-look-and-feel/themes/theme-development/setting-up-an-environment-and-creating-a-theme.md)
+- [Setting Up an Environment and Creating a Theme](../../../customizing-liferays-look-and-feel/themes/setting-up-an-environment-and-creating-a-theme.md)
 - [Upgrading Language Key Overrides](../../../../installation-and-upgrades/upgrading-liferay/upgrading-custom-development/upgrading-language-key-overrides.md)

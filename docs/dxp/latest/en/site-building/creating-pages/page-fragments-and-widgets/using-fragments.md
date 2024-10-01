@@ -5,7 +5,6 @@ toc:
   - ./using-fragments/configuring-fragments.md
   - ./using-fragments/mapping-and-linking-fragment-elements.md
   - ./using-fragments/configuring-fragment-visibility.md
-  - ./using-fragments/editing-fragment-elements.md
   - ./using-fragments/personalizing-custom-forms-using-form-fragments.md
   - ./using-fragments/creating-dropdown-menus-with-fragments.md
   - ./using-fragments/duplicating-fragments.md

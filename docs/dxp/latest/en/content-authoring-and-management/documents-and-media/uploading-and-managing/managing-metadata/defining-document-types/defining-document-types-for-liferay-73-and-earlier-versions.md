@@ -34,7 +34,7 @@ To define document types for Liferay 7.3 and earlier versions,
 
 1. Expand the *Additional Metadata Fields*.
 
-1. Select a metadata set to associate with the document type. To learn more, see [Defining Metadata Sets](./defining-metadata-sets.md).
+1. Select a metadata set to associate with the document type. To learn more, see [Defining Metadata Sets](../defining-metadata-sets.md).
 
    ![Associate additional metadata sets.](./defining-document-types-for-liferay-73-and-earlier-versions/images/02.png)
 
@@ -48,4 +48,4 @@ When users create new files of the document type, they're presented with metadat
 
 ## Related Topics
 
-- [Defining Document Types](../../defining-document-types.md)
+- [Defining Document Types](../defining-document-types.md)

@@ -14,6 +14,9 @@ uuid: 70d28ba5-ecfe-492f-aeaf-e50fc8c69645
 
 You can define a set of default permissions for Liferay pages. The default permissions setting is available at both instance and site scopes. Use the instance scope to configure defaults for all sites in your instance. To affect a single site, set defaults at the site scope.
 
+!!! important
+    Currently, this feature is behind a release feature flag (LPD-21265). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+
 To configure permissions at the instance level,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* *&rarr; *Instance Settings*.
@@ -48,9 +51,6 @@ To configure permissions at the instance level,
 ![Verify that the permissions configured at the instance level appear here.](./setting-default-permissions/images/03.png)
 
 ## Setting Default Permissions at the Site Level
-
-!!! important
-    Currently, this feature is behind a release feature flag (LPD-21265). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 Default permissions at the site level take precedence over default permissions at the instance level.
 

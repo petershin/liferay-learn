@@ -81,59 +81,9 @@ Then, follow these steps to download, build, and deploy the sample Portlet Filte
 
 The provided sample filter targets the Blogs portlet and audits its render phase using the `RenderFilter` interface.
 
-```java
-@Component(
-   property = {
-      "javax.portlet.name=com_liferay_blogs_web_portlet_BlogsPortlet",
-      "service.ranking:Integer=100"
-   },
-   service = PortletFilter.class
-)
-public class B4K8PortletFilter implements RenderFilter {
-
-   @Override
-   public void destroy() {
-   }
-
-   @Override
-   public void doFilter(
-         RenderRequest renderRequest, RenderResponse renderResponse,
-         FilterChain filterChain)
-      throws IOException, PortletException {
-
-      long startTime = System.currentTimeMillis();
-
-      filterChain.doFilter(renderRequest, renderResponse);
-
-      long renderTime = (System.currentTimeMillis() - startTime) / 1000;
-
-      _totalTime.add(renderTime);
-
-      _count.increment();
-
-      if (_log.isWarnEnabled()) {
-         long count = _count.longValue();
-
-         long averageRenderTime = _totalTime.longValue() / count;
-
-         _log.warn(
-            "Blogs portlet rendered in " + renderTime +
-               " ms with an average of " + averageRenderTime +
-                  " ms out of " + count + " renders.");
-      }
-   }
-
-   @Override
-   public void init(FilterConfig filterConfig) throws PortletException {
-   }
-
-   private static final Log _log = LogFactoryUtil.getLog(
-      B4K8PortletFilter.class);
-
-   private final LongAdder _count = new LongAdder();
-   private final LongAdder _totalTime = new LongAdder();
-
-}
+```{literalinclude} ./using-portlet-filters/resources/liferay-b4k8.zip/b4k8-impl/src/main/java/com/acme/b4k8/internal/portlet/filter/B4K8PortletFilter.java
+    :language: java
+    :lines: 20-71
 ```
 
 In this code, the filter is first declared an OSGi DS Component and identified as a `PortletFilter.class` service. As part of this declaration, it also sets two properties: the first property targets the `BlogsPortlet`, and the second property sets its priority to `100`.
@@ -180,17 +130,10 @@ The portlet filter proceeds to implement the [`RenderFilter`](http://docs.lifera
 
    1. Uses the `LongAdder` utility to store the portlet's average render time and total number of renders, and then uses the Log utility to display these values along with the portlet's current render time.
 
-      ```java
-      if (_log.isWarnEnabled()) {
-         long count = _count.longValue();
-
-         long averageRenderTime = _totalTime.longValue() / count;
-
-         _log.warn(
-            "Blogs portlet rendered in " + renderTime +
-               " ms with an average of " + averageRenderTime +
-                  " ms out of " + count + " renders.");
-      }
+      ```{literalinclude} ./using-portlet-filters/resources/liferay-b4k8.zip/b4k8-impl/src/main/java/com/acme/b4k8/internal/portlet/filter/B4K8PortletFilter.java
+          :dedent: 2
+          :language: java
+          :lines: 49-58
       ```
 
    Whenever a render request is made, this `doFilter` is called.

@@ -125,12 +125,15 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 
 1. Choose a CAPTCHA engine. By default, Simple CAPTCHA is enabled. You can also select Google's reCAPTCHA, which requires you configure the external service separately. If you select reCAPTCHA, supply your public and private key from Google.
 
-1. The other options allow developers to customize the Simple CAPTCHA engine.
+   1. For Simple CAPTCHA, you can configure the captcha's height and width. You can also configure [Background Producers](https://simplecaptcha.sourceforge.net/javadocs/nl/captcha/backgrounds/BackgroundProducer.html), [Gimpy Renderers](https://simplecaptcha.sourceforge.net/javadocs/nl/captcha/gimpy/GimpyRenderer.html), [Noise Producers](https://simplecaptcha.sourceforge.net/javadocs/nl/captcha/noise/NoiseProducer.html), [Text Producers](https://simplecaptcha.sourceforge.net/javadocs/nl/captcha/text/producer/TextProducer.html)], and [Word Renderers](https://simplecaptcha.sourceforge.net/javadocs/nl/captcha/text/renderer/WordRenderer.html).
 
 1. Click *Save* when finished.
 
+!!! note
+    The [`DictionaryWordTextProducer`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/captcha/captcha-api/src/main/java/com/liferay/captcha/simplecaptcha/DictionaryWordTextProducer.java) was removed from the Simple CAPTCHA Text Producers configuration as it has a higher probability of producing offensive words than completely randomized letter sequences.
+
 !!! important
-    Since {bdg-secondary}`Liferay DXP 2024.Q1.8/Portal 7.4 GA120`, the Gogo shell and server administration pages (for a site admin) enforce captchas, even if the **Maximum Challenges** field is set to a negative number. These pages are not available without selecting a captcha engine.
+    Since {bdg-secondary}`Liferay DXP 2024.Q1.8/Portal 7.4 GA120`, the Gogo shell and server administration pages (for a site admin) enforce captchas, even if the *Maximum Challenges* field is set to a negative number. These pages are not available without selecting a captcha engine.
 
     To disable captchas for these pages, add `captcha.enforce.disabled=true` to your `portal-ext.properties` file. You should only do this for testing with Continuous Integration (CI).
 

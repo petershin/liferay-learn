@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 122b1300-ebfc-4bb7-adea-b334e0dfd221
 ---
+
 # Using Custom Fields in Page Fragments
 
 If you've added [custom fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) to Liferay's users or pages, you can access them in fragments. To get the value of a page custom field, use
@@ -51,6 +52,5 @@ You can add FreeMarker code like this to check whether the value exists before u
 
 ## Related Topics
 
-* [Adding Custom Fields to Users](../../../system-administration/configuring-liferay/adding-custom-fields.md)
-
-* [Using the Fragments Editor](./using-the-fragments-editor.md)
+- [Adding Custom Fields to Users](../../../system-administration/configuring-liferay/adding-custom-fields.md)
+- [Using the Fragments Editor](./using-the-fragments-editor.md)

@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 5db29a70-07cb-44a5-be7d-a8c06ae94401
 ---
+
 # Fragment Configuration Types Reference
 
 This reference lists the available configuration types for fragments. See [Adding Configuration Options to Fragments](../../developing-page-fragments/adding-configuration-options-to-fragments.md) for more information on how to make a fragment configurable.

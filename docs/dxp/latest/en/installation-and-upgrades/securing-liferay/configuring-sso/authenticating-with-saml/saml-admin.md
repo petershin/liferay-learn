@@ -113,11 +113,10 @@ The Service Provider tab shows several configuration options:
 
 **Allow showing the login portlet:** Allow the login portlet to appear when no SAML IdP is matched to the login request. Users in this scenario log in locally to Liferay DXP. 
 
-```{Important}
-Individual assertions need not be signed as long as the SAML response itself is signed. The SP and IdP should always communicate over `https` to have encryption at the transport level. 
+!!! important
+    Individual assertions need not be signed as long as the SAML response itself is signed. The SP and IdP should always communicate over `https` to have encryption at the transport level. 
 
-Liferay DXP requires signed SAML responses. If you believe man-in-the-middle attacks are possible and the information in the assertions is sensitive, you can both sign and encrypt them. 
-```
+    Liferay DXP requires signed SAML responses. If you believe man-in-the-middle attacks are possible and the information in the assertions is sensitive, you can both sign and encrypt them. 
 
 You can add multiple IdP connections. To add another Identity Provider, click *Add Identity Provider* again and enter the details for the other provider. When users log in, they are asked to choose an identity provider, so be sure to name the providers so users can recognize them.
 
@@ -133,11 +132,11 @@ If using the Filesystem Keystore Manager (the default):
 
 1. Verify that the service provider metadata has been generated to be used either as a URL or an XML file. The metadata is the same for all nodes because of the same database backend. The IdP's request goes through the load balancer.
 
-1. At this point, all  nodes have the same SAML SP configuration and each of them can respond to web requests and handle the SAML protocol. To test your SSO solution, sign into Liferay via your load balancer, navigate to a few pages of a few different sites, and then log out.
+1. At this point, all nodes have the same SAML SP configuration and each of them can respond to web requests and handle the SAML protocol. To test your SSO solution, sign into Liferay via your load balancer, navigate to a few pages of a few different sites, and then log out.
 
 If using the Document Library Keystore Manager, skip step 2 because the keystore file is stored in the database shared by all the nodes.
 
-Now you know how to configure Liferay DXP either as a SAML identity provider or a service provider. You also know how to configure SAML in a clustered environment.
+Now you know how to configure Liferay DXP either as a SAML service provider. You also know how to configure SAML in a clustered environment.
 
 ## Identity Provider
 
@@ -157,7 +156,7 @@ If you chose a SAML role of Identity Provider (IdP), you can configure it here. 
 
 You can use this interface to configure one or more Service Provider connections. To get started click _Add Service Provider_. Fill out the form, and when done, click _Save_. 
 
-**Name:** Name the SP. This is just a descriptive name; it's not used in the configuration. 
+**Name:** Name the SP. This is only a descriptive name; it's not used in the configuration. 
 
 **Entity ID:** Enter the entity ID of the IdP this SP connects to here. It must match the entity ID declared in the Service Provider metadata. 
 
@@ -177,11 +176,15 @@ You can use this interface to configure one or more Service Provider connections
 
 **Attributes Namespace Enabled:** Check this box to namespace the attribute names like this:
 
-    urn:liferay:user:expando: urn:liferay:user: urn:liferay:groups: urn:liferay:organizationRole: urn:liferay:organization: urn:liferay:roles: urn:liferay:siteRole: urn:liferay:userGroupRole: urn:liferay:userGroups:
+   ```
+   urn:liferay:user:expando: urn:liferay:user: urn:liferay:groups: urn:liferay:organizationRole: urn:liferay:organization: urn:liferay:roles: urn:liferay:siteRole: urn:liferay:userGroupRole: urn:liferay:userGroups:
+   ```
 
 **Attributes:** Enter a list of attributes to include in the assertion, one per line. Each line is an expression that gets parsed. Examples:
 
-    organizations organizationRoles roles siteRoles userGroups static:[attributeName]=[attributeValue] expando:[userCustomFieldName]
+   ```
+   organizations organizationRoles roles siteRoles userGroups static:[attributeName]=[attributeValue] expando:[userCustomFieldName]
+   ```
 
 Note that the full namespace depends on the attribute name. Attribute namespaces can be useful. Use them when attribute names from different namespaces might conflict. For example, `expando:user` vs `urn:liferay:roles:user`.
 

@@ -586,7 +586,7 @@ These are the available variables for the navigation menu selector configuration
 | `rootLayoutLevel` | Defines the level in the hierarchy.                                                                         |
 | `rootLayoutType`  | Specifies how to interpret the root layout in relation to the current page (absolute, relative, or select). |
 
-To get a better look at the `navigationMenuSelector` type, download the [navigation-menu fragment](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/reference/fragments/liferay-r5q5.zip) and import it into a fragment set. See [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) to learn more about importing a fragment.
+To get a better look at the `navigationMenuSelector` type, download the [navigation-menu fragment](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments-reference/liferay-r5q5.zip) and import it into a fragment set. See [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) to learn more about importing a fragment.
 
 ## Related Topics
 

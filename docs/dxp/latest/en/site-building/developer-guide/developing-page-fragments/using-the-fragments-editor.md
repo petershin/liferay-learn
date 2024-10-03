@@ -10,7 +10,7 @@ uuid: 394bfac1-4f63-4799-bb0e-46e9c988512f
 
 # Using the Fragments Editor
 
-Liferay DXP includes a built-in [editor](../reference/fragments/page-fragment-editor-interface-reference.md) for developing content page fragments. To access the editor, open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*. From here, you can view, manage, and create fragments and fragment sets.
+Liferay DXP includes a built-in [editor](../developing-page-fragments-reference/page-fragment-editor-interface-reference.md) for developing content page fragments. To access the editor, open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*. From here, you can view, manage, and create fragments and fragment sets.
 
 !!! note
     For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Liferay UI.
@@ -55,7 +55,7 @@ Once saved, you can add fragments to the set.
 
    - Enter an open angle bracket (`<`) to access standard HTML tags and Liferay's fragment-specific tags.
 
-   - Start an element attribute with `data` to access Liferay's [editable fragment attributes](../reference/fragments/fragment-specific-tags-reference.md).
+   - Start an element attribute with `data` to access Liferay's [editable fragment attributes](../developing-page-fragments-reference/fragment-specific-tags-and-attributes-reference.md).
 
    The example below adds a card component with editable text:
 

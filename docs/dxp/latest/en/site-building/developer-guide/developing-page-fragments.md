@@ -53,7 +53,7 @@ Browser-based tools help you create fragments directly on your system, and CLI-b
 
 Fragments can be enhanced using the below resources, making them much more powerful than plain HTML, CSS, and JavaScript:
 
-- [Editable Elements](./reference/fragments/fragment-specific-tags-reference.md): make text, images, links, and "rich" text elements editable, so users can replace the content with custom text and images. This is the key feature of fragments that makes them reusable. You can also embed widgets.
+- [Editable Elements](./developing-page-fragments-reference/fragment-specific-tags-and-attributes-reference.md): make text, images, links, and "rich" text elements editable, so users can replace the content with custom text and images. This is the key feature of fragments that makes them reusable. You can also embed widgets.
 
 - [Drop Zones](./developing-page-fragments/defining-fragment-drop-zones.md): Add drop zones to Fragments using the `<lfr-drop-zone></lfr-drop-zone>` label. Once added, you can drag and drop fragments and widgets into the defined area.
 

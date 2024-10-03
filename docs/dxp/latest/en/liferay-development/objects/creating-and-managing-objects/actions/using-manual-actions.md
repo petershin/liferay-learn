@@ -57,7 +57,7 @@ Calling either API triggers the action for the specified entry.
 
 You can map standalone actions to buttons on pages ([content pages](#mapping-buttons-to-object-actions-in-content-pages) or [display page templates](#mapping-buttons-to-object-actions-in-display-page-templates)).
 
-If Liferay's out-of-the-box button fragment doesn't satisfy your use case, you can map actions to custom buttons by adding the attributes `data-lfr-editable-id="action"`  and `data-lfr-editable-type="action"` to their HTML tag. To learn more about adding attributes to fragments, see [Fragment Specific Tags and Attributes Reference](../../../../site-building/developer-guide/reference/fragments/fragment-specific-tags-reference.md).
+If Liferay's out-of-the-box button fragment doesn't satisfy your use case, you can map actions to custom buttons by adding the attributes `data-lfr-editable-id="action"`  and `data-lfr-editable-type="action"` to their HTML tag. To learn more about adding attributes to fragments, see [Fragment Specific Tags and Attributes Reference](../../../../site-building/developer-guide/developing-page-fragments-reference/fragment-specific-tags-and-attributes-reference.md).
 
 Here is an example of an action-ready custom button:
 

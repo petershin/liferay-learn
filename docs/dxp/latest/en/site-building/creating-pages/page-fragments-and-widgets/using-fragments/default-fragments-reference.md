@@ -166,7 +166,7 @@ Use navigation bar fragments to add a custom header to [master page templates](.
 
 Using the menu display fragment, you can add menus to your content pages. Once deployed, you can select from any predefined [navigation menu](../../../site-navigation/using-the-navigation-menus-application.md). To learn more about how to configure the menu display fragment for your site navigation, see Configuring the Menu Display Widget in [Configuring Menu Displays](../../../site-navigation/configuring-menu-displays.md).
 
-You can also create a custom menu display fragment with specific markup and desired behavior by using [the navigation menu selector configuration](../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md#navigation-menu-selector-configuration).
+You can also create a custom menu display fragment with specific markup and desired behavior by using [the navigation menu selector configuration](../../../developer-guide/developing-page-fragments-reference/fragment-configuration-types-reference.md#navigation-menu-selector-configuration).
 
 <!--## Product-->
 

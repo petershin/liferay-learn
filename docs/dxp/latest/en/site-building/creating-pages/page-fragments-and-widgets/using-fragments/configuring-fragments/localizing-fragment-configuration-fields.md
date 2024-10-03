@@ -17,7 +17,7 @@ When using Liferay Fragments, you can localize the following Fragment configurat
 - [Editable URLs](#localizing-editable-urls)
 <!-- * [Collection Filter Label Text](#localizing-collection-filter-label-text) -->
 
-During fragment development, you can use the `localizable` attribute to make a fragment's configuration field localizable. For more information, read the [Fragment Specific Tags and Attributes Reference](../../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md).
+During fragment development, you can use the `localizable` attribute to make a fragment's configuration field localizable. For more information, read the [Fragment Specific Tags and Attributes Reference](../../../../developer-guide/developing-page-fragments-reference/fragment-specific-tags-and-attributes-reference.md).
 
 ## Localizing Image Descriptions
 

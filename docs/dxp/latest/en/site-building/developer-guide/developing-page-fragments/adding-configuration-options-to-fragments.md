@@ -114,7 +114,7 @@ Open the configuration file.
 }
 ```
 
-The configuration file above, specifies a selector for applying a *dark* or *light* text style to the fragment. The configuration has a field named `c7f8TextStyle`. The field's `type` is `select`, which makes it a selector component. See [Fragment Configuration Types](../reference/fragments/fragment-configuration-types-reference.md) for details.
+The configuration file above, specifies a selector for applying a *dark* or *light* text style to the fragment. The configuration has a field named `c7f8TextStyle`. The field's `type` is `select`, which makes it a selector component. See [Fragment Configuration Types](../developing-page-fragments-reference/fragment-configuration-types-reference.md) for details.
 
 The selector's valid values are `dark` or `light`. The `"dataType": "string"` property means that the selector operates on string data. This selector is a part of a field set labeled *C7F8* (the label is optional).
 
@@ -167,7 +167,7 @@ The configuration values selected by the user are made available to the HTML thr
 </div>
 ```
 
-The example demonstrates a select configuration. See the [Configuration Types Reference](../reference/fragments/fragment-configuration-types-reference.md) for a complete list of the available fragment configuration types.
+The example demonstrates a select configuration. See the [Configuration Types Reference](../developing-page-fragments-reference/fragment-configuration-types-reference.md) for a complete list of the available fragment configuration types.
 
 ## Modify the Configuration
 
@@ -225,11 +225,11 @@ Now you can test the updates.
 
    ![You can have as many configuration options as you want for your fragments.](./adding-configuration-options-to-fragments/images/05.png)
 
-Great! Now you know how to add configuration options to your fragments. For more configuration examples, please see Please see [Fragment Configuration Types](../reference/fragments/fragment-configuration-types-reference.md).
+Great! Now you know how to add configuration options to your fragments. For more configuration examples, please see Please see [Fragment Configuration Types](../developing-page-fragments-reference/fragment-configuration-types-reference.md).
 
 ## Related Information
 
 - [Auto-deploying Fragments](./auto-deploying-fragments.md)
 - [Best Practices for Using Fragment Configurations](./best-practices-for-using-fragment-configurations.md)
 - [Including Default Resources with Fragments](./including-default-resources-with-fragments.md)
-- [Fragment Configuration Types Reference](../reference/fragments/fragment-configuration-types-reference.md)
+- [Fragment Configuration Types Reference](../developing-page-fragments-reference/fragment-configuration-types-reference.md)

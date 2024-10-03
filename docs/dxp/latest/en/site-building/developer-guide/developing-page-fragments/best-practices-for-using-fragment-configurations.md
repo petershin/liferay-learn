@@ -14,7 +14,7 @@ When you are creating page fragments for your site with your own [configurations
 
 ## Escape Configuration Text Values
 
-Malicious code can be inserted into [text field configurations](../reference/fragments/fragment-configuration-types-reference.md#text-configuration), wreaking havoc for other fragment users. You must escape fragment text values to guard against cross-site scripting (XSS) attacks.
+Malicious code can be inserted into [text field configurations](../developing-page-fragments-reference/fragment-configuration-types-reference.md#text-configuration), wreaking havoc for other fragment users. You must escape fragment text values to guard against cross-site scripting (XSS) attacks.
 
 For generic cases, an HTML `escape()` method is available. See the [`HtmlUtil`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) class for more information.
 
@@ -36,7 +36,7 @@ function (fragmentElement, configuration) {
 
 Avoid repeatedly writing the same HTML elements for your fragment by using FreeMarker lists. You can use the values from the configuration options you have implemented to implement your list's logic.
 
-For example, you can iterate over the lines defined in a configuration (like [this select configuration](../reference/fragments/fragment-configuration-types-reference.md#select-configuration) example) and use this HTML to list the specified number of lines:
+For example, you can iterate over the lines defined in a configuration (like [this select configuration](../developing-page-fragments-reference/fragment-configuration-types-reference.md#select-configuration) example) and use this HTML to list the specified number of lines:
 
 ```html
 <div class="fragment_1">
@@ -46,7 +46,7 @@ For example, you can iterate over the lines defined in a configuration (like [th
 </div>
 ```
 
-If you have implemented a [collection selector configuration](../reference/fragments/fragment-configuration-types-reference.md#collection-selector), you can also list all of the titles in the configured collection, like this example:
+If you have implemented a [collection selector configuration](../developing-page-fragments-reference/fragment-configuration-types-reference.md#collection-selector), you can also list all of the titles in the configured collection, like this example:
 
 ```html
 <div class="fragment_310">
@@ -68,4 +68,4 @@ See the [official FreeMarker documentation](https://freemarker.apache.org/docs/r
 ## Related Topics
 
 - [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
-- [Fragment Configuration Types](../reference/fragments/fragment-configuration-types-reference.md)
+- [Fragment Configuration Types](../developing-page-fragments-reference/fragment-configuration-types-reference.md)

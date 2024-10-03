@@ -58,7 +58,7 @@ Format the fragment's text.
 | Font Family ( ![Font Family](../../../../../images/icon-font-family.png) ) | Specifies the font for an element. |
 | Font Weight ( ![Font Weight](../../../../../images/icon-font-weight.png) ) | Sets how thick or thin characters in text should be displayed. |
 | Font Size ( ![Font Size](../../../../../images/icon-font-size.png) ) | Sets the size of a font. |
-| Text Color ( ![Font Color](../../../../../images/icon-color-circle.png) ) | Choose a color for the text. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. |
+| Text Color ( ![Font Color](../../../../../images/icon-color-circle.png) ) | Choose a color for the text. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/developing-page-fragments-reference/fragment-configuration-types-reference.md) for more information. |
 | Text Align ( ![Align Left](../../../../../images/icon-align-left.png) ![Align Center](../../../../../images/icon-align-center.png) ![Align Right](../../../../../images/icon-align-right.png) ![Justify](../../../../../images/icon-align-justify.png) ) | Specifies the horizontal alignment of text in an element. Choose from *Left*, *Center*, *Right*, or *Justify*. |
 
 ![Format the fragment's text.](./styles-reference/images/03.png)
@@ -69,7 +69,7 @@ Configure the fragment's background.
 
 | Field | Description |
 | :--- | :--- |
-| Background Color ( ![Background Color](../../../../../images/icon-color-circle.png) ) | Choose a background color from the palette. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. |
+| Background Color ( ![Background Color](../../../../../images/icon-color-circle.png) ) | Choose a background color from the palette. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/developing-page-fragments-reference/fragment-configuration-types-reference.md) for more information. |
 | Image Source | If set to *Direct*, users can upload a background image. If set to *Mapping*, users can choose from Documents and Media, Web Content, Blogs, or Categories. |
 | Background Image (*Direct*) | Select an image  from your library or enter an image URL. |
 | Item (*Mapping*) | Map the background to a specific item from Documents and Media, Web Content, Blogs, or Categories. Once selected, click the *Actions* button (![Actions button](../../../../../images/icon-actions.png)) to edit the item and its permissions, or view its usages. |
@@ -89,7 +89,7 @@ Determine the width, radius, and color of the fragment's border.
 | :--- | :--- |
 | Border Width ( ![Border Width](../../../../../images/icon-border-width.png) ) | Sets the width of an element's four borders. Click the *Units* button ( ![Units](../../../../../images/icon-code.png) ) to select border width unit (e.g., `px`, `rem`). Click the *Reset* button ( ![Reset](../../../../../images/icon-restore.png) ) to revert the field to its initial value. |
 | Border Radius ( ![Border Radius](../../../../../images/icon-corner-radius.png) ) | Defines the radius of the element's corners and allows you to add rounded corners. |
-| Border Color ( ![Border Color](../../../../../images/icon-color-circle.png) ) | Sets the color of an element's four borders. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. |
+| Border Color ( ![Border Color](../../../../../images/icon-color-circle.png) ) | Sets the color of an element's four borders. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/developing-page-fragments-reference/fragment-configuration-types-reference.md) for more information. |
 
 ![Determine the width, radius, and color of the fragment's border.](./styles-reference/images/05.png)
 

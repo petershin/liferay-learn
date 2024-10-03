@@ -43,7 +43,7 @@ To create form fragments,
 
        To create a button with [link settings](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) for redirection, add `type="button"` to the button fragment.
 
-1. (Optional) In the Configuration tab, use JSON to configure the fragment and add options to it. See [Fragment Configuration Types Reference](../reference/fragments/fragment-configuration-types-reference.md) to learn more about different fragment configuration types.
+1. (Optional) In the Configuration tab, use JSON to configure the fragment and add options to it. See [Fragment Configuration Types Reference](../developing-page-fragments-reference/fragment-configuration-types-reference.md) to learn more about different fragment configuration types.
 
    ![In the Configuration tab, use JSON to configure the fragment and add options to it](./creating-form-fragments/images/04.png)
 

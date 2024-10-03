@@ -287,7 +287,7 @@ Use the `add-fragment` command to add a new Fragment to the Set.
    ```
 
    !!! note
-       If you accepted using React in your fragment, the toolkit assumes you're on Liferay 7.3+ and configures the new editable element syntax. See [Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md) for more information on Liferay's editable data syntax.
+       If you accepted using React in your fragment, the toolkit assumes you're on Liferay 7.3+ and configures the new editable element syntax. See [Fragment-Specific Tags](../developing-page-fragments-reference/fragment-specific-tags-and-attributes-reference.md) for more information on Liferay's editable data syntax.
 
 1. Select the Fragment Set you just created (`My Set`).
 
@@ -366,7 +366,7 @@ For example, you can build off of the above HTML and use [Clay](https://clayui.c
 ```
 
 !!! note
-    If you are using Liferay 7.2 or below, remove the `data-lfr-editable-[id|type]` attributes and wrap the content elements in `lfr-editable` elements as described in [Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md).
+    If you are using Liferay 7.2 or below, remove the `data-lfr-editable-[id|type]` attributes and wrap the content elements in `lfr-editable` elements as described in [Fragment-Specific Tags](../developing-page-fragments-reference/fragment-specific-tags-and-attributes-reference.md).
 
 The first `div` element's `class="component-my-jumbotron"` attribute attempts to uniquely identify this Fragment on a page.
 
@@ -375,10 +375,10 @@ The first `div` element's `class="component-my-jumbotron"` attribute attempts to
 
 Next the `<div class="jumbotron"/>` element wraps the content, applying [Bootstrap](https://getbootstrap.com/)'s jumbotron component. This component makes the content stand out. Here are the content elements:
 
-- `<h1 class="display-4" ...>Editable Jumbotron ...` creates the Fragment's heading. It uses [Bootstrap](https://getbootstrap.com/)'s `display-4` size style. The `data-lfr-editable-` attributes make the heading text [editable](../reference/fragments/fragment-specific-tags-reference.md). The `data-lfr-editable-id="03-text"` attribute identifies the element and the `data-lfr-editable-type="rich-text"` attribute declares the content type.
+- `<h1 class="display-4" ...>Editable Jumbotron ...` creates the Fragment's heading. It uses [Bootstrap](https://getbootstrap.com/)'s `display-4` size style. The `data-lfr-editable-` attributes make the heading text [editable](../developing-page-fragments-reference/fragment-specific-tags-and-attributes-reference.md). The `data-lfr-editable-id="03-text"` attribute identifies the element and the `data-lfr-editable-type="rich-text"` attribute declares the content type.
 - `<p class="lead" ...>Edit this text ...` is the lead body text distinguished by Clay's [`lead`](https://clayui.com/docs/css/content/typography.html#css-lead) style component. The `data-lfr-editable-` attributes make the paragraph editable.
 - The `<hr/>` and next `<p ...` elements produce a horizontal rule and another editable paragraph, respectively.
-- `<a class="btn btn-primary btn-lg" ...` specifies a modifiable link. The `btn-primary` class styles it as a main button and `btn-lg` makes it large. The `href="#"` attribute takes the user to the top of the page when the link is clicked. The `data-lfr-editable-type="link"` attribute makes the link [editable](../reference/fragments/fragment-specific-tags-reference.md).
+- `<a class="btn btn-primary btn-lg" ...` specifies a modifiable link. The `btn-primary` class styles it as a main button and `btn-lg` makes it large. The `href="#"` attribute takes the user to the top of the page when the link is clicked. The `data-lfr-editable-type="link"` attribute makes the link [editable](../developing-page-fragments-reference/fragment-specific-tags-and-attributes-reference.md).
 
 You can also include resources in your Fragments. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
 
@@ -399,7 +399,7 @@ You can import your new Fragment as you did the original example Fragment:
 
 ![The Set is available.](./using-the-fragments-toolkit/images/02.png)
 
-Great! Now you know how to use the Fragments Toolkit to create and manage Fragments. See the [Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md) for more toolkit command information.
+Great! Now you know how to use the Fragments Toolkit to create and manage Fragments. See the [Fragments Toolkit Command Reference](../developing-page-fragments-reference/fragments-toolkit-command-reference.md) for more toolkit command information.
 
 ## Alternatives to the Fragments Toolkit
 
@@ -487,4 +487,4 @@ There are some alternatives you can use for developing fragments:
 
 - [Creating a Contributed Fragment Set](./creating-a-contributed-fragment-set.md)
 - [Using the Fragments Editor](./using-the-fragments-editor.md)
-- [Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md)
+- [Fragments Toolkit Command Reference](../developing-page-fragments-reference/fragments-toolkit-command-reference.md)

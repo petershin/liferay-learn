@@ -16,7 +16,7 @@ By default, [changes](../../../developer-guide/developing-page-fragments/using-t
 - [Automatically for all instances of a fragment](#automatically-propagating-changes)
 
 !!! important
-    To avoid overwriting data, changes made to editable fields cannot be propagated to the fragment directly. However, you can force propagation by changing the fragment's field ID. When propagated, the field's content is no longer displayed, though you can retrieve its content from the database using the old field ID. To learn more, see [Fragment Specific Tags and Attributes Reference](../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md) in the developer documentation.
+    To avoid overwriting data, changes made to editable fields cannot be propagated to the fragment directly. However, you can force propagation by changing the fragment's field ID. When propagated, the field's content is no longer displayed, though you can retrieve its content from the database using the old field ID. To learn more, see [Fragment Specific Tags and Attributes Reference](../../../developer-guide/developing-page-fragments-reference/fragment-specific-tags-and-attributes-reference.md) in the developer documentation.
 
 ## Manually Propagating Changes
 

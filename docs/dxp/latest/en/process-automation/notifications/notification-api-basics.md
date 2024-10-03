@@ -12,7 +12,7 @@ uuid: 8ccdf354-85e1-455a-9b5d-ea9449379595
 
 Liferay's headless delivery application provides REST and GraphQL services for subscribing to or unsubscribing from notifications for platform events across several default applications. Access these services using methods such as cURL commands and Java classes.
 
-Manage notifications for the following applications under the `headless-delivery` namespace: blogs, document folders, knowledge base articles, message board messages, message board sections, message board threads, structured content folders, structured content, wiki nodes, and wiki pages.
+You can manage notifications for these applications under the `headless-delivery` namespace: blogs, document folders, knowledge base articles, message board messages, message board sections, message board threads, structured content folders, structured content, wiki nodes, and wiki pages.
 
 Start by setting up the environment and gathering the necessary information.
 
@@ -66,7 +66,7 @@ To find which applications are available for subscription, use the Liferay API E
 
 In the API Explorer, click *REST Applications* and select the `headless-delivery/v1.0` option.
 
-Look for PUT methods that include "subscribe" or "unsubscribe" in their endpoint paths. For example, you can find endpoints like `/v1.0/sites/{siteId}/blog-postings/subscribe` for blog posting subscription actions.
+Look for PUT methods that include `subscribe` or `unsubscribe` in their endpoint paths. For example, you can find endpoints like `/v1.0/sites/{siteId}/blog-postings/subscribe` for blog posting subscription actions.
 
 ![Use the Liferay API Explorer to find the applications to which you can subscribe.](./notifications-api-basics/images/01.png)
 
@@ -167,7 +167,7 @@ Note that the project includes the `com.liferay.headless.delivery.client.jar` fi
 
 ### Using GraphQL Services
 
-Use GraphQL services to subscribe to notifications. Access the Liferay API Explorer to perform this action. Read [Consuming GraphQL APIs](../../headless-delivery/consuming-apis/consuming-graphql-apis.md) to learn more about GraphQL queries and mutations.
+GraphQL services for notifications work similarly to their REST counterparts. Access the Liferay API Explorer to perform this action. Read [Consuming GraphQL APIs](../../headless-delivery/consuming-apis/consuming-graphql-apis.md) to learn more about GraphQL queries and mutations.
 
 1. Click *GraphQL* in the top right corner, add the following mutation query to the left column, and replace `siteKey` with your site ID:
 
@@ -255,7 +255,7 @@ Replace `[site-ID]` with your site ID and run `BlogPostings_PUT_Unsubscribe_ToSi
 BlogPostings_PUT_Unsubscribe_ToSites.sh [site-ID]
 ```
 
-This call returns no response. Verify the unsubscription by executing `Subscriptions_GET_FromMyUserAccount.sh`. The result should be empty:
+This call returns no response. Verify the subscription is gone by executing `Subscriptions_GET_FromMyUserAccount.sh`. The result should be empty:
 
 ```json
 {

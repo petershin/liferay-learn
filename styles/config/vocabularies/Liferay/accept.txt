@@ -17,6 +17,7 @@ Talend
 [Pp]ortlet
 [Ss]ervlet
 hreflang
+namespace
 viewport
 widget's
 workspace's

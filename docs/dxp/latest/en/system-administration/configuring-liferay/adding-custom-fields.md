@@ -73,7 +73,7 @@ There are many reasons for using custom fields. Here's one example.
 1. Click *Save*
 
 !!! note
-      The Field Name is the identifier stored in your database and the name that is used by the developer to access the custom field.
+    The Field Name is the identifier stored in your database and the name that is used by the developer to access the custom field.
 
 After creating a custom field, you can find it in the UI of the resource you created it for. In this case, the *max-users* custom field is now visible for all roles.
 

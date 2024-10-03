@@ -12,7 +12,15 @@ taxonomy-category-names:
 
 The SAML Admin panel is the best place to configure your SAML instance. Use it instead of Instance Settings to streamline your SAML administration experience.
 
-You can configure an Identity Provider (IdP), a Service Provider, and Service Provider connections using SAML Admin. To access it, click the _Global Menu_ (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_.
+You can configure an Identity Provider (IdP), a Service Provider (SP), and Service Provider connections using SAML Admin. To access it, click the _Global Menu_ (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_.
+
+There are three tabs:
+
+**General**: Enables or disables the SAML SP or IdP and manages the required keystore.
+
+**Service/Identity Provider**: This tab manages basic and advanced configurations for the SP or IdP based on the selected SAML Role.
+
+**Identity/Service Provider Connection**: This tab manages connections to the SP (if SAML Role is Identity Provider) or IdP (if SAML Role is Service Provider). There can be multiple SP/IdP connections.
 
 ## General Tab
 
@@ -24,7 +32,7 @@ The General tab shows options that apply to SAML regardless of its role:
 
 **Entity ID:** The unique identifier for this SAML entity (IdP or SP). It can be up to 1024 characters long.
 
-The Certificate and Private Key section displays the key generated when you set up your key store here or in [system settings](./configuring-saml-at-the-system-level.md). Here, you can replace the certificate by generating a new certificate or importing one you created elsewhere, and you can also download the certificate to import elsewhere.
+The Certificate and Private Key section appears after the first save and displays the key generated when you set up your key store in [system settings](./configuring-saml-at-the-system-level.md). Here, you can replace the certificate by generating a new certificate or importing one you created elsewhere, and you can also download the certificate to import elsewhere.
 
 If you must replace the auto-generated certificate, it's easy:
 
@@ -65,30 +73,23 @@ Your key is now imported.
 
     Remember that the keystore has two storage options: file system storage (the default) and Documents and Media storage. By default, the certificate uses the `SHA256` algorithm for encryption and is fingerprinted and self-signed via `MD5` and `SHA256`. When you enter all the required information, click *Save*.
 
-1. After you clicked *Save*, check that you can view information about your certificate or download your certificate. If you can, you successfully created a keystore. After you create a keystore, additional options appear. There are three tabs:
-
-    **General**: Enables or disables SAML SP and manages the required keystore.
-
-    **Service Provider**: This tab manages basic and advanced configurations for the SP.
-
-    **Identity Provider Connection**: This tab manages connections to the IdP. There can be multiple IdP connections.
+1. After you clicked *Save*, check that you can view information about your certificate or download your certificate. If you can, you successfully created a keystore.
 
 1. You can also generate an encryption certificate. This is a separate key for encrypting assertions. If you want assertions encrypted, you must generate a key for this. The procedure is exactly the same as generating your certificate in step 2 above.
 
 1. Next, you must configure an Identity Provider connection. Click on the *Identity Provider Connections* tab. Enter a name for the Identity Provider, enter its entity ID, and enter its metadata URL. If you have already configured a separate Liferay DXP installation as an Identify provider, you'd enter the following information:
 
-    * Name: *Liferay IdP*
-    * Entity ID: [ID of IdP]
-    * Clock Skew: Set the tolerance in milliseconds between SP and IdP.
-    * Force Authn: Whether the IdP should force re-authentication regardless of context.
-    * Metadata URL: `http://localhost:8080/c/portal/saml/metadata` (test this URL first)
-    * Name Identifier Format: See [settings](./saml-settings.md).
-    * Attribute Mapping: See [settings](./saml-settings.md).
-    * Keep Alive URL: See [settings](./saml-settings.md).
+   * Name: *Liferay IdP*
+   * Entity ID: [ID of IdP]
+   * Clock Skew: Set the tolerance in milliseconds between SP and IdP.
+   * Force Authn: Whether the IdP should force re-authentication regardless of context.
+   * Metadata URL: `http://localhost:8080/c/portal/saml/metadata` (test this URL first)
+   * Name Identifier Format: See [settings](./saml-settings.md).
+   * Attribute Mapping: See [settings](./saml-settings.md).
+   * Keep Alive URL: See [settings](./saml-settings.md).
 
-    ```{important}
-    The Liferay Connector to SAML 2.0 app supports using *either* a URL to a SAML IdP metadata file *or* an actual (uploaded) SAML metadata XML file. The value entered in the *Metadata URL* field is persisted to the database only when there a metadata URL and there is no specified metadata XML file. Otherwise, Liferay DXP keeps the original metadata URL in its database. This behavior ensures that once a metadata URL has been specified, there is always a metadata URL saved in the database. This way, if you forget the previously entered metadata URL or its format, you can look at the displayed metadata URL and choose to modify the displayed metadata URL or overwrite the previously saved metadata URL by specifying a metadata XML file.
-    ```
+   !!! important
+       The Liferay Connector to SAML 2.0 app supports using *either* a URL to a SAML IdP metadata file *or* an actual (uploaded) SAML metadata XML file. The value entered in the *Metadata URL* field is persisted to the database only when there is a metadata URL and there is no specified metadata XML file. Otherwise, Liferay DXP keeps the original metadata URL in its database. This behavior ensures that once a metadata URL has been specified, there is always a metadata URL saved in the database. This way, if you forget the previously entered metadata URL or its format, you can look at the displayed metadata URL and choose to modify the displayed metadata URL or overwrite the previously saved metadata URL by specifying a metadata XML file.
 
 1. Finally, after you save your certificate and private key information and configure an Identity Provider connection, check the *Enabled* box at the top of the General tab and click *Save*. Liferay is now a SAML Service Provider!
 
@@ -122,7 +123,7 @@ You can add multiple IdP connections. To add another Identity Provider, click *A
 
 ## Setting Up Liferay DXP as a SAML Service Provider in a Clustered Environment
 
-You can use the Liferay Connector to SAML 2.0 app as an SSO solution for a clustered  environment. If your multi-node cluster is behind a load balancer, you must enable all the nodes as SPs, and they must share the same keystore manager.
+You can use the Liferay Connector to SAML 2.0 app as an SSO solution for a clustered environment. If your multi-node cluster is behind a load balancer, you must enable all the nodes as SPs, and they must share the same keystore manager.
 
 If using the Filesystem Keystore Manager (the default):
 

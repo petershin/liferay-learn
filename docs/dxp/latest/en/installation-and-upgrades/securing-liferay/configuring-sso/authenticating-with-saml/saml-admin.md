@@ -18,9 +18,9 @@ There are three tabs:
 
 **General**: Enables or disables the SAML SP or IdP and manages the required keystore.
 
-**Service/Identity Provider**: This tab manages basic and advanced configurations for the SP or IdP based on the selected SAML Role.
+**Service/Identity Provider**: Manages basic and advanced configurations for the SP or IdP based on the selected SAML role.
 
-**Identity/Service Provider Connection**: This tab manages connections to the SP (if SAML Role is Identity Provider) or IdP (if SAML Role is Service Provider). There can be multiple SP/IdP connections.
+**Identity/Service Provider Connection**: Manages connections to the SP (if SAML role is Identity Provider) or IdP (if SAML role is Service Provider). There can be multiple SP/IdP connections.
 
 ## General Tab
 
@@ -34,7 +34,7 @@ The General tab shows options that apply to SAML regardless of its role:
 
 The Certificate and Private Key section appears after the first save and displays the key generated when you set up your key store in [system settings](./configuring-saml-at-the-system-level.md). Here, you can replace the certificate by generating a new certificate or importing one you created elsewhere, and you can also download the certificate to import elsewhere.
 
-If you must replace the auto-generated certificate, it's easy:
+If you must replace the auto-generated certificate, you can:
 
 1. Click _Replace Certificate_.
 
@@ -79,14 +79,14 @@ Your key is now imported.
 
 1. Next, you must configure an Identity Provider connection. Click on the *Identity Provider Connections* tab. Enter a name for the Identity Provider, enter its entity ID, and enter its metadata URL. If you have already configured a separate Liferay DXP installation as an Identify provider, you'd enter the following information:
 
-   * Name: *Liferay IdP*
-   * Entity ID: [ID of IdP]
-   * Clock Skew: Set the tolerance in milliseconds between SP and IdP.
-   * Force Authn: Whether the IdP should force re-authentication regardless of context.
-   * Metadata URL: `http://localhost:8080/c/portal/saml/metadata` (test this URL first)
-   * Name Identifier Format: See [settings](./saml-settings.md).
-   * Attribute Mapping: See [settings](./saml-settings.md).
-   * Keep Alive URL: See [settings](./saml-settings.md).
+   - Name: *Liferay IdP*
+   - Entity ID: [ID of IdP]
+   - Clock Skew: Set the tolerance in milliseconds between SP and IdP.
+   - Force Authn: Whether the IdP should force re-authentication regardless of context.
+   - Metadata URL: `http://localhost:8080/c/portal/saml/metadata` (test this URL first)
+   - Name Identifier Format: See [settings](./saml-settings.md).
+   - Attribute Mapping: See [settings](./saml-settings.md).
+   - Keep Alive URL: See [settings](./saml-settings.md).
 
    !!! important
        The Liferay Connector to SAML 2.0 app supports using *either* a URL to a SAML IdP metadata file *or* an actual (uploaded) SAML metadata XML file. The value entered in the *Metadata URL* field is persisted to the database only when there is a metadata URL and there is no specified metadata XML file. Otherwise, Liferay DXP keeps the original metadata URL in its database. This behavior ensures that once a metadata URL has been specified, there is always a metadata URL saved in the database. This way, if you forget the previously entered metadata URL or its format, you can look at the displayed metadata URL and choose to modify the displayed metadata URL or overwrite the previously saved metadata URL by specifying a metadata XML file.

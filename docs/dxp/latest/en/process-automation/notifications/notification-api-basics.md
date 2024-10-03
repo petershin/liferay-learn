@@ -21,14 +21,14 @@ Start by setting up the environment and gathering the necessary information.
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-When signed in, [retrieve the site ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). Use this ID in several service calls. In this example, the ID is `20117`.
+When signed in, [retrieve the site ID](../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). Use this ID in several service calls. In this example, the ID is `20117`.
 
 Then, follow these steps:
 
-1. Download and unzip the [example project](https://resources.learn.liferay.com/dxp/latest/en/process-automation/notifications/developer-guide/liferay-v3g2.zip):
+1. Download and unzip the [example project](https://resources.learn.liferay.com/dxp/latest/en/process-automation/notifications/liferay-v3g2.zip):
 
    ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/notifications/developer-guide/liferay-v3g2.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/notifications/liferay-v3g2.zip -O
    ```
 
    ```bash
@@ -148,7 +148,7 @@ Here are the command's arguments:
 | `--user "test@liferay.com:learn"`                                                     | Basic authentication credentials.                                                                                  |
 
 !!! note
-    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth 2.0](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth 2.0](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 
 #### Examine the Java Class
 
@@ -167,7 +167,7 @@ Note that the project includes the `com.liferay.headless.delivery.client.jar` fi
 
 ### Using GraphQL Services
 
-Use GraphQL services to subscribe to notifications. Access the Liferay API Explorer to perform this action. Read [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) to learn more about GraphQL queries and mutations.
+Use GraphQL services to subscribe to notifications. Access the Liferay API Explorer to perform this action. Read [Consuming GraphQL APIs](../../headless-delivery/consuming-apis/consuming-graphql-apis.md) to learn more about GraphQL queries and mutations.
 
 1. Click *GraphQL* in the top right corner, add the following mutation query to the left column, and replace `siteKey` with your site ID:
 
@@ -357,6 +357,6 @@ Delete a subscription using GraphQL services. Access the Liferay API Explorer fo
 
 ## Related Topics
 
-- [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-- [API Headers Reference](../../../headless-delivery/consuming-apis/api-headers-reference.md)
-- [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md)
+- [Consuming REST Services](../../headless-delivery/consuming-apis/consuming-rest-services.md)
+- [API Headers Reference](../../headless-delivery/consuming-apis/api-headers-reference.md)
+- [Consuming GraphQL APIs](../../headless-delivery/consuming-apis/consuming-graphql-apis.md)

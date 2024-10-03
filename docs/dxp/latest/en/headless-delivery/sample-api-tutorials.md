@@ -75,7 +75,7 @@ Follow the links below for sample API tutorials that include example requests an
 * [SCIM User API Basics](../installation-and-upgrades/securing-liferay/developer-guide/scim-user-api-basics.md)
 
 ## Process Automation
-* [Notifications API Basics](../process-automation/notifications/developer-guide/notification-api-basics.md)
+* [Notifications API Basics](../process-automation/notifications/notification-api-basics.md)
 
 ## Site Building
 

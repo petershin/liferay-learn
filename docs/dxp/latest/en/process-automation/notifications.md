@@ -3,6 +3,7 @@ toc:
   - ./notifications/configuring-personal-notifications.md
   - ./notifications/creating-notification-templates.md
   - ./notifications/using-the-notification-queue.md
+  - ./notifications/notification-api-basics.md
 taxonomy-category-names:
 - Platform
 - Notifications and Notification Templates

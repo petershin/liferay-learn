@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: ba3f3663-f72e-4f18-b220-d9b2e127ef5e
 ---
+
 # Fragment Specific Tags and Attributes Reference
 
 Along with standard HTML, CSS, and JavaScript, you can use Liferay-specific tags and attributes to define editable sections, embed widgets, and more.
@@ -26,15 +27,13 @@ These Liferay-specific tags and attributes are available:
 
 Since Liferay Portal 7.3 GA3 and Liferay DXP 7.3, you can use `data-lfr-editable*` attributes to define elements as editable, rather than wrapping editable elements with `lfr-editable` tags.
 
-```{warning}
-Editable elements have a `data-lfr-editable-id` attribute, and it must be unique. Do not change the ID after the page fragment has been added to a page; you will lose changes made to the fragment.
-```
+!!! warning
+    Editable elements have a `data-lfr-editable-id` attribute, and it must be unique. Do not change the ID after the page fragment is added to a page; doing so causes you to lose changes made to the fragment.
 
 The old tags still work for backwards compatibility, but you should use the newer data attributes if you're running Portal 7.3 GA3+ or Liferay DXP 7.3+, as they are easier to write.
 
-```{tip}
-When you start typing the name of a tag, the [HTML editor](../../developing-page-fragments/using-the-fragments-editor.md) provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
-```
+!!! tip
+    When you start typing the name of a tag, the [HTML editor](../../developing-page-fragments/using-the-fragments-editor.md) provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
 
 This reference lists the available editable tags and attributes along with examples of how to use them in your fragments.
 
@@ -44,21 +43,19 @@ Create editable sections, dynamic and reusable fragments for building a site, or
 
 Provide text, images, links, and HTML code to these editable elements which become the default values for their fields. You may want to display the editable content in the final version of the page, or you may want filler content that should be replaced before publishing the page.
 
-```{warning}
-Freemarker code in editable fields is executed only once when the fragment is added to the page (to set its default value).
+!!! warning
+    Freemarker code in editable fields is executed only once when the fragment is added to the page (to set its default value).
 
-Avoid using it if you need the value re-evaluated. For example, if you localize a value using `${languageUtil.get(locale,'word')}`, the word is only localized when you add the fragment to the page. The code does not run again even if you change your portal's language.
-```
+    Avoid using it if you need the value re-evaluated. For example, if you localize a value using `${languageUtil.get(locale,'word')}`, the word is only localized when you add the fragment to the page. The code does not run again even if you change your portal's language.
 
 Editable elements have many uses. Imagine you need a title, a small text box, an image, and a link to provide a product description. Create a fragment containing editable filler text, space for an editable image, the appropriate formatting, and an editable link.
 
-You can then add the fragment to multiple pages and define the image, text, and link for each product you need to describe.
+You can then add the fragment to multiple pages and define the image, text, and link for each product you must describe.
 
-![You can use editable elements to create a fragment with an editable text, image, and link. This fragment can be edited and reused in different contexts.](./fragment-specific-tags-reference/images/01.png)
+![You can use editable elements to create a fragment with an editable text, image, and link. This fragment can be edited and reused in different contexts.](./fragment-specific-tags-and-attributes-reference/images/01.png)
 
-```{warning}
-Nesting editable elements inside other editable elements in a fragment is not supported.
-```
+!!! warning
+    Nesting editable elements inside other editable elements in a fragment is not supported.
 
 ## Making Text Editable
 
@@ -66,13 +63,12 @@ You can make fragment text editable by including the `data-lfr-editable-type="te
 
 ```html
 <p data-lfr-editable-id="text1" data-lfr-editable-type="text">
-  Placeholder
+   Placeholder
 </p>
 ```
 
-```{note}
-All block elements and inline elements are supported for editable text.
-```
+!!! note
+    All block elements and inline elements are supported for editable text.
 
 For Liferay Portal 7.3 GA2 and below, use the syntax below. A unique ID is required to render the element properly:
 
@@ -86,13 +82,12 @@ If you need formatting options like text or color styles, use `rich-text`:
 
 ```html
 <p data-lfr-editable-id="text1" data-lfr-editable-type="rich-text">
-  Placeholder
+   Placeholder
 </p>
 ```
 
-```{note}
-All block element tags are supported for editable Rich text.
-```
+!!! note
+    All block element tags are supported for editable Rich text.
 
 For Liferay Portal 7.3 GA2 and below, use the syntax below:
 
@@ -102,9 +97,8 @@ For Liferay Portal 7.3 GA2 and below, use the syntax below:
 </lfr-editable>
 ```
 
-```{note}
-If you want to make text inside an HTML element editable, you must use the `rich-text` type. The `text` type strips HTML formatting out of the text before rendering.
-```
+!!! note
+    If you want to make text inside an HTML element editable, you must use the `rich-text` type. The `text` type strips HTML formatting out of the text before rendering.
 
 ## Making Images Editable
 
@@ -112,10 +106,10 @@ Images use the same `data-lfr-editable-type` attribute as text, but with the `im
 
 ```html
 <img
-  src="placeholder.jpg"
-  alt="Placeholder"
-  data-lfr-editable-id="img1"
-  data-lfr-editable-type="image"
+   src="placeholder.jpg"
+   alt="Placeholder"
+   data-lfr-editable-id="img1"
+   data-lfr-editable-type="image"
 >
 ```
 
@@ -127,11 +121,11 @@ For Liferay Portal 7.3 GA2 and below, use this syntax:
 </lfr-editable>
 ```
 
-After you add the `lfr-editable` tag with the type `image` to a fragment, when you add that fragment to a page, you can then click on the editable image and configure the image source and other properties from the content page editor sidebar.
+After adding the `lfr-editable` tag with the `image` type to a fragment, you can then click on the editable image in the content page editor sidebar and configure its source and properties when the fragment is added to a page.
 
-![You have several options for defining an image on a content page.](./fragment-specific-tags-reference/images/02.png)
+![You have several options for defining an image on a content page.](./fragment-specific-tags-and-attributes-reference/images/02.png)
 
-Most images can be handled like this, but to add an editable background image you must add an additional property to set the background image ID, `data-lfr-background-image-id`. The background image ID is set in the main `div` for the fragment and is the same as your editable image ID.
+Most images can be handled like this, but to add an editable background image, you must set the `data-lfr-background-image-id` property. This ID is added to the fragment's main `div` and should match the editable image ID.
 
 ```html
 <div data-lfr-background-image-id="background-img-unique-id">
@@ -154,12 +148,12 @@ You can create editable link elements in different ways. Here are some examples:
 
 ```html
 <a
-  href="#placeholder"
-  target="_blank"
-  data-lfr-editable-id="link1"
-  data-lfr-editable-type="link"
+   href="#placeholder"
+   target="_blank"
+   data-lfr-editable-id="link1"
+   data-lfr-editable-type="link"
 >
-  Go to placeholder
+   Go to placeholder
 </a>
 ```
 
@@ -167,12 +161,12 @@ Use `mailto:` URI scheme to associate the link with an email:
 
 ```html
 <a
-  href="mailto:email@liferay.com"
-  target="_blank"
-  data-lfr-editable-id="link-to-email"
-  data-lfr-editable-type="link"
+   href="mailto:email@liferay.com"
+   target="_blank"
+   data-lfr-editable-id="link-to-email"
+   data-lfr-editable-type="link"
 >
-  Send a Message
+   Send a Message
 </a>
 ```
 
@@ -180,12 +174,12 @@ Use `tel:` URI scheme to associate the link with a telephone number:
 
 ```html
 <a
-  href="tel:555-2368"
-  target="_blank"
-  data-lfr-editable-id="link-to-phone"
-  data-lfr-editable-type="link"
+   href="tel:555-2368"
+   target="_blank"
+   data-lfr-editable-id="link-to-phone"
+   data-lfr-editable-type="link"
 >
-  Who You Gonna Call?
+   Who You Gonna Call?
 </a>
 ```
 
@@ -195,13 +189,13 @@ For Liferay Portal 7.3 GA2 and below, use this syntax:
 
 ```html
 <lfr-editable id="unique-id" type="link">
-    <a href="default-target-url-goes-here">Link text goes here</a>
+   <a href="default-target-url-goes-here">Link text goes here</a>
 </lfr-editable>
 ```
 
 You can edit the type of link, target URL, and link mapping from the content page editor sidebar.
 
-![You have several options for defining a link's appearance and behavior.](./fragment-specific-tags-reference/images/03.png)
+![You have several options for defining a link's appearance and behavior.](./fragment-specific-tags-and-attributes-reference/images/03.png)
 
 For more information on editable links, see [Editable Links](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings).
 
@@ -211,7 +205,7 @@ You can make general HTML elements editable as well by setting the `data-lfr-edi
 
 ```html
 <article data-lfr-editable-id="text1" data-lfr-editable-type="html">
-  <h1>Placeholder</h1>
+   <h1>Placeholder</h1>
 </article>
 ```
 
@@ -219,7 +213,7 @@ For Liferay Portal 7.3 GA2 and below, use this syntax:
 
 ```html
 <lfr-editable type="html" id="text1">
-  <h1>Placeholder</h1>
+   <h1>Placeholder</h1>
 </lfr-editable>
 ```
 
@@ -229,8 +223,8 @@ Each widget has a registered name and corresponding `lfr-widget-[name]` tag, whi
 
 ```html
 <div class="nav-widget">
-    <lfr-widget-nav>
-    </lfr-widget-nav>
+   <lfr-widget-nav>
+   </lfr-widget-nav>
 </div>
 ```
 
@@ -256,6 +250,8 @@ These are the widgets that can be embedded and their accompanying tags:
 | Iframe                     | `<lfr-widget-iframe>`            |
 
 ### Enabling Embedding for Your Widget
+
+{bdg-secondary}`Liferay DXP/Portal 7.4+ +U60`
 
 If you have a custom widget that you want to embed in a fragment, you can configure that widget to be embeddable. To embed your widget, it must be an OSGi Component. Inside the `@Component` annotation for the portlet class you want to embed, add this property:
 
@@ -294,7 +290,7 @@ When you deploy your widget, it's available to add. The name you specify in the 
 </lfr-widget-app-name>
 ```
 
-> Available: Liferay DXP/Portal 7.4+ before U60
+{bdg-secondary}`Liferay DXP/Portal 7.4+ before U60`
 
 For previous versions, if you have a custom widget that you want to embed in a fragment, you can configure that widget to be embeddable. To embed your widget, it must be an OSGi component. Inside the `@Component` annotation for the portlet class you want to embed, add this property:
 
@@ -309,19 +305,17 @@ When you deploy your widget, it's available to add. The name you specify in the 
 </lfr-widget-app-name>
 ```
 
-```{note}
-According to the W3C HTML standards, custom elements can't be self-closing. Therefore, even though you can't add anything between the opening and closing `<lfr-widget...>` tags, you can't use the self-closing notation for the tag.
-```
+!!! note
+    According to the W3C HTML standards, custom elements can't be self-closing. Therefore, even though you can't add anything between the opening and closing `<lfr-widget...>` tags, you can't use the self-closing notation for the tag.
 
 ## Localizing Fragment Configurations
 
-> Available: Liferay DXP/Portal 7.4+
+{bdg-secondary}`Liferay DXP/Portal 7.4+`
 
 You can localize fragment configuration for a page's target language. For example, on a button fragment you can define one button type when the page language is en-US, and a different button type when the page language is es-ES. To localize a fragment configuration field, use the `localizable` attribute.
 
-```{note}
-The `localizable` attribute is not available for fragment configuration fields where the `configurationRole` property is set to `style`.
-```
+!!! note
+    The `localizable` attribute is not available for fragment configuration fields where the `configurationRole` property is set to `style`.
 
 In the following code excerpt, the button fragment configuration sets the `localizable` attribute to `true` for the `fields` section under `fieldSets`. The `localizable` attribute is set at the field level. In the example, there is only one `buttonType` field. If you have a fragment with multiple fields, you can set the `localizable` attribute for each one:
 
@@ -361,13 +355,12 @@ In the following code excerpt, the button fragment configuration sets the `local
 ]
 ```
 
-You can use this sample code to change the button type depending on the page's target language. In the following example, the _Contact Us_/_Contacto_ button fragment sets the `localizable` attribute to `true` for the `buttonType` field. The example uses this attribute to configure the _Primary_ button type when the page uses the en-US language (A) and the _Outline Primary_ type when the page uses es-ES (B).
+You can use this sample code to change the button type depending on the page's target language. In the following example, the *Contact Us*/*Contacto* button fragment sets the `localizable` attribute to `true` for the `buttonType` field. The example uses this attribute to configure the *Primary* button type when the page uses the en-US language (A) and the *Outline Primary* type when the page uses es-ES (B).
 
-![Localizable elements in the fragment show the flag icon under the General tab and support different configurations for different languages.](./fragment-specific-tags-reference/images/04.png)
+![Localizable elements in the fragment show the flag icon under the General tab and support different configurations for different languages.](./fragment-specific-tags-and-attributes-reference/images/04.png)
 
-```{tip}
-The flag icon under the fragment's General settings indicates the configuration field as localizable.
-```
+!!! tip
+    The flag icon under the fragment's General settings indicates the configuration field as localizable.
 
 Fragments with the `localizable` attribute that do not specify a custom configuration for a language use the default page language's configuration.
 
@@ -377,7 +370,7 @@ Conforming date formats a locality can be a challenge in many contexts. You can 
 
 ```html
 <div data-lfr-editable-type="date-time" data-lfr-editable-id="date-time">
-    02/03/11 00:00 AM
+   02/03/11 00:00 AM
 </div>
 ```
 
@@ -388,27 +381,26 @@ You can choose the most common date formats out-of-the-box or customize your dat
 There are four out-of-the-box options available:
 
 | Date Format | How it looks |
-| :--- | :--- |
-| MM/DD/YY | 08/07/23  |
-| DD/MM/YY | 07/08/23  |
-| YY/MM/DD | 23/08/07  |
-| DD/MM/YYYY | 07/08/2023  |
+|:------------|:-------------|
+| MM/DD/YY    | 08/07/23     |
+| DD/MM/YY    | 07/08/23     |
+| YY/MM/DD    | 23/08/07     |
+| DD/MM/YYYY  | 07/08/2023   |
 
 If you customize your date format, you can include different date and time patterns (e.g. era designator, time zone, and day name in the week).
 
 Here are some examples:
 
-| Date Format | How it looks |
-| :--- | :--- |
-| MMMM dd, YYYY. hh:mm a | August 07, 2023. 11:57 AM  |
-| MM.dd.YY | 08.07.23  |
-| hh 'o''clock' a, zzzz | 11 o'clock AM, Greenwhich Mean Time |
-| KK:mm a, z| 11:57 AM, GMT  |
-| EEE, d MMM yyyy HH:mm:ss Z | Mon, 7 Aug 2023 11:57:00 +0000 |
+| Date Format                | How it looks                        |
+|:---------------------------|:------------------------------------|
+| MMMM dd, YYYY. hh:mm a     | August 07, 2023. 11:57 AM           |
+| MM.dd.YY                   | 08.07.23                            |
+| hh 'o''clock' a, zzzz      | 11 o'clock AM, Greenwhich Mean Time |
+| KK:mm a, z                 | 11:57 AM, GMT                       |
+| EEE, d MMM yyyy HH:mm:ss Z | Mon, 7 Aug 2023 11:57:00 +0000      |
 
-```{tip}
-You can localize the date format the same way you [localize fragment configuration fields](#localizing-fragment-configurations).
-```
+!!! tip
+    You can localize the date format the same way you [localize fragment configuration fields](#localizing-fragment-configurations).
 
 ## Making Buttons Action-ready
 
@@ -416,14 +408,12 @@ You can trigger [object actions](../../../../liferay-development/objects/creatin
 
 ```html
 <button class="btn btn-${configuration.buttonSize} btn-${configuration.buttonType}" data-lfr-editable-id="action" data-lfr-editable-type="action">
-    Go Somewhere
+   Go Somewhere
 </button>
 ```
 
 ## Related Topics
 
-[Fragments Toolkit Command Reference](./fragments-toolkit-command-reference.md)
-
-[Page Fragment Editor Interface Reference](./page-fragment-editor-interface-reference.md)
-
-[Fragment Configuration Types Reference](./fragment-configuration-types-reference.md)
+- [Fragments Toolkit Command Reference](./fragments-toolkit-command-reference.md)
+- [Page Fragment Editor Interface Reference](./page-fragment-editor-interface-reference.md)
+- [Fragment Configuration Types Reference](./fragment-configuration-types-reference.md)

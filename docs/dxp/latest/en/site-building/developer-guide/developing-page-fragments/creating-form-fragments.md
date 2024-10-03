@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: e1341d2b-d8f6-485d-b8c3-f8f781202d25
 ---
+
 # Creating Form Fragments
 
 {bdg-secondary}`Liferay 7.4 U45+/GA45+`
@@ -31,17 +32,16 @@ To create form fragments,
 
    ![Select the field types the fragment supports.](./creating-form-fragments/images/02.png)
 
-1. Click *Add*. This creates a draft fragment and directs you to the fragment edit page.
+1. Click *Add*. This creates a draft fragment and shows you to the fragment edit page.
 
 1. In the Code tab, add HTML, CSS, and JavaScript for your fragment.
 
    ![In the Code tab, add HTML, CSS, and JavaScript for your fragment.](./creating-form-fragments/images/03.png)
 
-   ```{note}
-   You can map the submit button fragment's text using [mapping settings](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings).
+   !!! note
+       You can map the submit button fragment's text using [mapping settings](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings).
 
-   To create a button with [link settings](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) for redirection, add `type="button"` to the button fragment.
-   ```
+       To create a button with [link settings](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) for redirection, add `type="button"` to the button fragment.
 
 1. (Optional) In the Configuration tab, use JSON to configure the fragment and add options to it. See [Fragment Configuration Types Reference](../reference/fragments/fragment-configuration-types-reference.md) to learn more about different fragment configuration types.
 
@@ -51,7 +51,9 @@ To create form fragments,
 
 Now use your form fragment to build forms in content pages. See [Using Fragments to Build Forms](../../../liferay-development/objects/using-fragments-to-build-forms.md) for more information.
 
-If using the Fragments Toolkit, you can select the fragment type when running `yarn run add-fragment`.
+<!-- As the fragments toolkit has been deprecated, I'm removing this reference. Eric. -->
+
+<!-- If using the Fragments Toolkit, you can select the fragment type when running `yarn run add-fragment`.
 
 ![Select the fragment type when using the Fragments Toolkit.](./creating-form-fragments/images/05.png)
 
@@ -71,7 +73,7 @@ To specify the supported field types, add the `fieldTypes` property to `typeOpti
 }
 ```
 
-After that, follow the same process as when creating a basic fragment. See [Using the Fragments Toolkit](./using-the-fragments-toolkit.md) for more information about creating and deploying basic fragments.
+After that, follow the same process as when creating a basic fragment. See [Using the Fragments Toolkit](./using-the-fragments-toolkit.md) for more information about creating and deploying basic fragments. -->
 
 ## Supported Field Types Reference
 
@@ -141,6 +143,5 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 
 ## Related Topics
 
-[Developing Page Fragments](../developing-page-fragments.md)
-
-[Using Fragments to Build Forms](../../../liferay-development/objects/using-fragments-to-build-forms.md)
+- [Developing Page Fragments](../developing-page-fragments.md)
+- [Using Fragments to Build Forms](../../../liferay-development/objects/using-fragments-to-build-forms.md)

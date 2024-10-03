@@ -7,12 +7,10 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 4daac6e1-ef15-4f09-988a-08fadc0cb841
 ---
+
 # Best Practices for Using Fragment Configurations
 
 When you are creating page fragments for your site with your own [configurations](./adding-configuration-options-to-fragments.md), it's your responsibility to use them in their HTML presentation safely and effectively. Here are some techniques that you can use to make your fragments more effective and robust.
-
-* [Escape Configuration Text Values](#escape-configuration-text-values)
-* [Use Lists for Repeated HTML Elements](#use-lists-for-repeated-html-elements)
 
 ## Escape Configuration Text Values
 
@@ -22,7 +20,7 @@ For generic cases, an HTML `escape()` method is available. See the [`HtmlUtil`](
 
 ```html
 <div class="fragment_38816">
-    "${htmlUtil.escape(configuration.text)}"
+   "${htmlUtil.escape(configuration.text)}"
 </div>
 ```
 
@@ -30,7 +28,7 @@ To prevent JavaScript attacks, such as setting an attribute or appending HTML ch
 
 ```javascript
 function (fragmentElement, configuration) {
-    const escapedValue = Liferay.Util.escapeHTML(configuration.text)
+   const escapedValue = Liferay.Util.escapeHTML(configuration.text)
 }
 ```
 
@@ -38,13 +36,13 @@ function (fragmentElement, configuration) {
 
 Avoid repeatedly writing the same HTML elements for your fragment by using FreeMarker lists. You can use the values from the configuration options you have implemented to implement your list's logic.
 
-For example, you can iterate over a number of lines that is defined in a configuration (like [this example select configuration](../reference/fragments/fragment-configuration-types-reference.md#select-configuration)), and then use this HTML to list the configured number of lines:
+For example, you can iterate over the lines defined in a configuration (like [this select configuration](../reference/fragments/fragment-configuration-types-reference.md#select-configuration) example) and use this HTML to list the specified number of lines:
 
 ```html
 <div class="fragment_1">
-    [#list 1..configuration.numberOfLines as index]
-        <li>Line number: ${index}</li>
-    [/#list]
+   [#list 1..configuration.numberOfLines as index]
+      <li>Line number: ${index}</li>
+   [/#list]
 </div>
 ```
 
@@ -52,16 +50,16 @@ If you have implemented a [collection selector configuration](../reference/fragm
 
 ```html
 <div class="fragment_310">
-    <h1>
-        List of Items:
-    </h1>
-    <ul>
-        [#if collectionObjectList??]
-            [#list collectionObjectList as item]
-                <li>${item.title}</li>
-            [/#list]
-        [/#if]
-    </ul>
+   <h1>
+      List of Items:
+   </h1>
+   <ul>
+      [#if collectionObjectList??]
+         [#list collectionObjectList as item]
+               <li>${item.title}</li>
+         [/#list]
+      [/#if]
+   </ul>
 </div>
 ```
 
@@ -69,5 +67,5 @@ See the [official FreeMarker documentation](https://freemarker.apache.org/docs/r
 
 ## Related Topics
 
-* [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
-* [Fragment Configuration Types](../reference/fragments/fragment-configuration-types-reference.md)
+- [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
+- [Fragment Configuration Types](../reference/fragments/fragment-configuration-types-reference.md)

@@ -91,7 +91,7 @@ Depending on your selected editing mode, you can access these panels in the edit
 
 In the Fragments and Widgets panel ( ![Fragments and Widgets icon](../../../images/icon-plus.png) ), you can access both out-of-the-box and custom page elements.
 
-**Fragments**: Fragments are extensible, reusable, drag-and-drop elements that serve as the primary building blocks for content pages. Examples include layout elements, videos, and banner images with text overlay. See [Using Fragments](../page-fragments-and-widgets/using-fragments.md) to learn more about the out-of-the-box fragments or [Developing Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn how to create your own.
+**Fragments**: Fragments are extensible, reusable, drag-and-drop elements that serve as the primary building blocks for content pages. Examples include layout elements, videos, and banner images with text overlay. See [Using Fragments](../page-fragments-and-widgets/using-fragments.md) to learn more about the out-of-the-box fragments or [Developing Fragments](../../developer-guide/developing-page-fragments.md) to learn how to create your own.
 
 **Widgets**: Widgets are [applications](../../../liferay-development/building-applications.md) that add dynamic functionality to a page. Examples include blogs, message boards, and calendars. See [Using Widgets on Content Pages](./using-widgets-on-a-content-page.md) for more information.
 

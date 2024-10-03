@@ -49,7 +49,7 @@ Note how they tie into themes as well (depending on them for definitions), possi
 
 Fragments and widgets are the building blocks of your site. There are many ways to customize them to suit your site's appearance.
 
-- [Fragment customizations](developer-guide/developing-page-fragments/developing-fragments-intro.md) can be used to tailor the look and feel of your site's fragment pages.
+- [Fragment customizations](./developer-guide/developing-page-fragments.md) can be used to tailor the look and feel of your site's fragment pages.
 
 - Application Display Templates<!--Add link when available--> can customize the appearance and behavior of the widgets on your site.
 

@@ -64,7 +64,7 @@ You can add the `data-lfr-styles` attribute using your preferred method for edit
 
 ## Related Topics
 
-- [Developing Fragments](./developing-fragments-intro.md)
+- [Developing Fragments](../developing-page-fragments.md)
 - [Using the Fragments Editor](./using-the-fragments-editor.md)
 - [Using the Fragments Toolkit](./using-the-fragments-toolkit.md)
 - [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)

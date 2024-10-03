@@ -53,7 +53,7 @@ Drop zone IDs are optional. Zones without IDs function in the specified order. A
 
 ## Related Topics
 
-- [Developing Fragments](./developing-fragments-intro.md)
+- [Developing Fragments](../developing-page-fragments.md)
 - [Using the Fragments Editor](./using-the-fragments-editor.md)
 - [Using the Fragments Toolkit](./using-the-fragments-toolkit.md)
 - [Setting the Order of Elements in a Fragment](./setting-the-order-of-elements-in-a-fragment.md)

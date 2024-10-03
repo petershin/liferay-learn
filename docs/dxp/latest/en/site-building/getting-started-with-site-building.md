@@ -36,7 +36,7 @@ To publish a mix of content types, use [Collections](../site-building/displaying
 
 You can also embed content from external websites with the [Iframe widget](./displaying-content/additional-content-display-options/using-the-iframe-widget.md) or by creating an [embedded page](./creating-pages/understanding-pages/other-page-types.md#embedded).
 
-For more dynamic content creation, use [Fragments](./creating-pages/page-fragments-and-widgets/using-fragments.md). Fragments are reusable pieces of code (CSS, HTML, and JavaScript) you can combine to build a page. Liferay provides many out-of-the-box fragments, and you can modify or [create your own fragments](./developer-guide/developing-page-fragments/developing-fragments-intro.md) as needed.
+For more dynamic content creation, use [Fragments](./creating-pages/page-fragments-and-widgets/using-fragments.md). Fragments are reusable pieces of code (CSS, HTML, and JavaScript) you can combine to build a page. Liferay provides many out-of-the-box fragments, and you can modify or [create your own fragments](./developer-guide/developing-page-fragments.md) as needed.
 
 Each piece of content has a default landing page, but you can customize its appearance by creating a [Display Page Template](./displaying-content/using-display-page-templates.md). With this template, you can map fields from a piece of content (such as title, main body, and image) to fragments, so you can create the look you want.
 

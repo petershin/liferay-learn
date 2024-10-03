@@ -171,6 +171,6 @@ When using backslashes to escape characters in regex values (e.g., `\d`), you mu
 
 ## Related Topics
 
-* [Developing Fragments](./developing-fragments-intro.md)
-* [Using the Fragments Editor](./using-the-fragments-editor.md)
-* [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
+- [Developing Fragments](../developing-page-fragments.md)
+- [Using the Fragments Editor](./using-the-fragments-editor.md)
+- [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)

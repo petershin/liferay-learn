@@ -14,7 +14,7 @@ The Page Fragment editor's interface is organized into two tabs:
 - [Code Editor](#code-editor)
 - [Configuration](#configuration)
 
-The sections below cover how to use these portions of the interface. See [Developing Page Fragments](../../developing-page-fragments/developing-fragments-intro.md) to learn how to develop Page Fragments.
+The sections below cover how to use these portions of the interface. See [Developing Page Fragments](../../developing-page-fragments.md) to learn how to develop Page Fragments.
 
 ## Code Editor
 
@@ -50,6 +50,6 @@ Configuration values are made available to the Page Fragment through the FreeMar
 
 ## Related Topics
 
-- [Developing Fragments](../../developing-page-fragments/developing-fragments-intro.md)
+- [Developing Fragments](../../developing-page-fragments.md)
 - [Adding Configuration Options to Fragments](../../developing-page-fragments/adding-configuration-options-to-fragments.md)
 - [Fragment Configuration Type Reference](./fragment-configuration-types-reference.md)

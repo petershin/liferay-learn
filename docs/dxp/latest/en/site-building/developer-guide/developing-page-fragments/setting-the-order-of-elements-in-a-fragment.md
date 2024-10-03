@@ -97,4 +97,4 @@ Starting with Liferay DXP 7.4, the Slider and Tab Fragments show their elements 
 
 - [Using the Fragments Toolkit](./using-the-fragments-toolkit.md)
 - [Using the Fragments Editor](./using-the-fragments-editor.md)
-- [Developing Fragments](./developing-fragments-intro.md)
+- [Developing Fragments](../developing-page-fragments.md)

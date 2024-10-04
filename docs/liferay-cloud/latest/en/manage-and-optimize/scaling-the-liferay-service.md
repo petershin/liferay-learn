@@ -10,7 +10,7 @@ uuid: f5e2b006-daf3-4775-9182-0d9455a63b38
 
 Liferay Cloud offers two modes of scaling. The auto-scaling feature automatically creates and destroys instances of the Liferay service as needed to optimize performance. By default, this feature is *disabled* in every Liferay Cloud account. Alternatively, you can create and destroy Liferay instances manually using manual scaling. This addresses sudden changes such as increased server traffic, memory leaks, or other issues.
 
-Using auto-scaling, a service can automatically increase (upscale) the number of Liferay DXP instances to a [defined maximum](#setting-the-maximum-number-of-additional-instances) (10 by default), or decrease (downscale) to the number specified in the `scale` property in [`LCP.json`](../reference/configuration-via-lcp-json.md). The `scale` property specifies the minimum number of instances to run:
+Using auto-scaling, a service can automatically increase (upscale) the number of Liferay DXP instances to a [defined maximum](#setting-the-maximum-number-of-additional-instances), or decrease (downscale) to the number specified in the `scale` property in [`LCP.json`](../reference/configuration-via-lcp-json.md). The `scale` property specifies the minimum number of instances to run:
 
 ```json
    "scale": 2,
@@ -22,7 +22,7 @@ Monitor your application's [resource usage](./quotas-and-resource-usage.md) (CPU
 
 Manual and auto-scaling is only available for the Liferay DXP service in production environments. Once scaling is enabled, each extra instance of the service incurs an hourly charge. This charge is independent of the normal Liferay PaaS subscription process.
 
-Liferay issues an invoice after each quarter that they use or deploy extra instances. You must pay this invoice in accordance with your agreement with Liferay.
+At the end of every quarter that you use or deploy additional instances, Liferay will issue you an invoice. You must pay this invoice in accordance with your agreement with Liferay.
 
 For each service instance added via manual or auto-scaling, the price depends on your subscription plan. The total charge is based on the number of clock hours that you used the scaled instances. For pricing purposes, the total usage during a calendar quarter is rounded up to the nearest full clock hour.
 
@@ -85,9 +85,9 @@ It is possible to use manual and auto-scaling together.
 
 ### Setting the Maximum Number of Additional Instances
 
-By default, you can increase the number of instances for the `liferay` service up to 10. You can, however, override this default to use more instances if necessary. You must make changes in two places to accomplish this.
+To define the maximum number of additional instances,
 
-1. Set the `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` [environment variable](../reference/defining-environment-variables.md) in your [web server service](../platform-services/web-server-service.md) to the highest *total* number needed. The `liferay` service may not scale beyond the maximum number of instances defined in `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` automatically or manually (10 by default).
+1. Set the `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` [environment variable](../reference/defining-environment-variables.md) in your [web server service](../platform-services/web-server-service.md) to the highest *total* number needed. The `liferay` service may not scale beyond the maximum number of instances defined in `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` automatically or manually (10 by default). The maximum possible number is 50 instances (1 base instance and 49 additional instances).
 
 1. On the Liferay service's *Scale* tab, update the number in *Max number of additional instances* to the desired value.
 
@@ -146,4 +146,4 @@ The [Plan and Usage page](./quotas-and-resource-usage.md) contains the project's
 !!! note
     The page only displays scaling events that finished before it loaded. Events that have started but haven't returned to the normal values don't appear on the page until they finish.
 
-You can also see a detailed report for the selected time period in *Auto-scaling Report* and *Manual Scaling Report*.
+You can also see a detailed report for the selected time period in *Scaling Report*.

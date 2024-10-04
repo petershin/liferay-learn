@@ -8,11 +8,9 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Widget Reference
+# Widgets Reference
 
-Widgets are building blocks you can use to add content and dynamic functionality to your Commerce Site. While Liferay DXP includes a wide variety of generic widgets, it also includes dedicated Commerce widgets that you can use to build the desired shopping experience for your customers.
-
-The following article documents all the Liferay Commerce Widgets and their functions.
+Widgets are building blocks you can use to add content and dynamic functionality to your site. While Liferay includes a wide variety of generic widgets, it also includes dedicated Commerce widgets that you can use to build the desired shopping experience for your customers.
 
 | Type                                                       | Description                                                                                                                                                                                                                                                             |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

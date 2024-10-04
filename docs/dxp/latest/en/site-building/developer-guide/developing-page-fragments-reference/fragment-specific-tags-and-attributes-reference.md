@@ -1,4 +1,6 @@
 ---
+toc:
+  - ./fragment-specific-tags-and-attributes-reference/fragment-specific-tags-and-attributes-reference-for-liferay-73-and-earlier-versions.md
 taxonomy-category-names:
 - Development and Tooling
 - Fragments
@@ -19,18 +21,14 @@ These Liferay-specific tags and attributes are available:
 - [Editable Text](#making-text-editable)
 - [Editable Images](#making-images-editable)
 - [Editable Links](#creating-editable-links)
-- [Editable HTML (Liferay Portal 7.3 GA3+ and DXP 7.3+)](#creating-editable-html)
+- [Editable HTML](#creating-editable-html)
 - [Embedded Widgets](#including-widgets-within-a-fragment)
 - [Localizable Fragment Fields](#localizing-fragment-configurations)
 - [Date Fragments](#using-date-fragments)
 - [Map Object Actions to Buttons](#making-buttons-action-ready)
 
-Since Liferay Portal 7.3 GA3 and Liferay DXP 7.3, you can use `data-lfr-editable*` attributes to define elements as editable, rather than wrapping editable elements with `lfr-editable` tags.
-
 !!! warning
-    Editable elements have a `data-lfr-editable-id` attribute, and it must be unique. Do not change the ID after the page fragment is added to a page; doing so causes you to lose changes made to the fragment.
-
-The old tags still work for backwards compatibility, but you should use the newer data attributes if you're running Portal 7.3 GA3+ or Liferay DXP 7.3+, as they are easier to write.
+    You can use `data-lfr-editable*` attributes to define elements as editable. Editable elements have a `data-lfr-editable-id` attribute, and it must be unique. Do not change the ID after the page fragment is added to a page; doing so causes you to lose changes made to the fragment.
 
 !!! tip
     When you start typing the name of a tag, the [HTML editor](../../developing-page-fragments/using-the-fragments-editor.md) provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
@@ -70,14 +68,6 @@ You can make fragment text editable by including the `data-lfr-editable-type="te
 !!! note
     All block elements and inline elements are supported for editable text.
 
-For Liferay Portal 7.3 GA2 and below, use the syntax below. A unique ID is required to render the element properly:
-
-```html
-<lfr-editable id="unique-id" type="text">
-   This is editable text!
-</lfr-editable>
-```
-
 If you need formatting options like text or color styles, use `rich-text`:
 
 ```html
@@ -87,18 +77,7 @@ If you need formatting options like text or color styles, use `rich-text`:
 ```
 
 !!! note
-    All block element tags are supported for editable Rich text.
-
-For Liferay Portal 7.3 GA2 and below, use the syntax below:
-
-```html
-<lfr-editable id="unique-id" type="rich-text">
-   This is editable text that I can make bold or italic!
-</lfr-editable>
-```
-
-!!! note
-    If you want to make text inside an HTML element editable, you must use the `rich-text` type. The `text` type strips HTML formatting out of the text before rendering.
+    All block element tags are supported for editable Rich text. If you want to make text inside an HTML element editable, you must use the `rich-text` type. The `text` type strips HTML formatting out of the text before rendering.
 
 ## Making Images Editable
 
@@ -113,15 +92,7 @@ Images use the same `data-lfr-editable-type` attribute as text, but with the `im
 >
 ```
 
-For Liferay Portal 7.3 GA2 and below, use this syntax:
-
-```html
-<lfr-editable id="unique-id" type="image">
-   <img src="...">
-</lfr-editable>
-```
-
-After adding the `lfr-editable` tag with the `image` type to a fragment, you can then click on the editable image in the content page editor sidebar and configure its source and properties when the fragment is added to a page.
+After adding the `data-lfr-editable-type` tag with the `image` type to a fragment, you can then click on the editable image in the content page editor sidebar and configure its source and properties when the fragment is added to a page.
 
 ![You have several options for defining an image on a content page.](./fragment-specific-tags-and-attributes-reference/images/02.png)
 
@@ -183,16 +154,6 @@ Use `tel:` URI scheme to associate the link with a telephone number:
 </a>
 ```
 
-### Creating Editable Links with Liferay Portal 7.3 GA2 and Below
-
-For Liferay Portal 7.3 GA2 and below, use this syntax:
-
-```html
-<lfr-editable id="unique-id" type="link">
-   <a href="default-target-url-goes-here">Link text goes here</a>
-</lfr-editable>
-```
-
 You can edit the type of link, target URL, and link mapping from the content page editor sidebar.
 
 ![You have several options for defining a link's appearance and behavior.](./fragment-specific-tags-and-attributes-reference/images/03.png)
@@ -207,14 +168,6 @@ You can make general HTML elements editable as well by setting the `data-lfr-edi
 <article data-lfr-editable-id="text1" data-lfr-editable-type="html">
    <h1>Placeholder</h1>
 </article>
-```
-
-For Liferay Portal 7.3 GA2 and below, use this syntax:
-
-```html
-<lfr-editable type="html" id="text1">
-   <h1>Placeholder</h1>
-</lfr-editable>
 ```
 
 ## Including Widgets Within A Fragment
@@ -290,27 +243,10 @@ When you deploy your widget, it's available to add. The name you specify in the 
 </lfr-widget-app-name>
 ```
 
-{bdg-secondary}`Liferay DXP/Portal 7.4+ before U60`
-
-For previous versions, if you have a custom widget that you want to embed in a fragment, you can configure that widget to be embeddable. To embed your widget, it must be an OSGi component. Inside the `@Component` annotation for the portlet class you want to embed, add this property:
-
-```properties
-com.liferay.fragment.entry.processor.portlet.alias=app-name
-```
-
-When you deploy your widget, it's available to add. The name you specify in the property must be appended to the `lfr-widget` tag like this:
-
-```markup
-<lfr-widget-app-name>
-</lfr-widget-app-name>
-```
-
 !!! note
     According to the W3C HTML standards, custom elements can't be self-closing. Therefore, even though you can't add anything between the opening and closing `<lfr-widget...>` tags, you can't use the self-closing notation for the tag.
 
 ## Localizing Fragment Configurations
-
-{bdg-secondary}`Liferay DXP/Portal 7.4+`
 
 You can localize fragment configuration for a page's target language. For example, on a button fragment you can define one button type when the page language is en-US, and a different button type when the page language is es-ES. To localize a fragment configuration field, use the `localizable` attribute.
 

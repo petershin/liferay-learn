@@ -1,7 +1,6 @@
 ---
 toc:
   - ./developing-page-fragments-reference/fragment-configuration-types-reference.md
-  - ./developing-page-fragments-reference/fragment-javascript-variables-reference.md
   - ./developing-page-fragments-reference/fragment-specific-tags-and-attributes-reference.md
   - ./developing-page-fragments-reference/fragments-toolkit-command-reference.md
   - ./developing-page-fragments-reference/page-fragment-editor-interface-reference.md

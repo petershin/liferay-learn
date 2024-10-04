@@ -25,9 +25,9 @@ uuid: 7e5ff1c5-105e-4021-8b5f-98b7e12ae3f5
 :::{grid-item-card} Installation and Upgrades
 :link: ./installation-and-upgrades.md
 
-[Installation Overview](./installation-and-upgrades/installation-overview.md)
 [Activating Liferay Commerce Enterprise](./installation-and-upgrades/activating-liferay-commerce-enterprise.md)
 [Upgrading Liferay Commerce](./installation-and-upgrades/upgrading-liferay-commerce.md)
+[4.0 Breaking Changes](./installation-and-upgrades/4-0-breaking-changes.md)
 :::
 
 :::{grid-item-card} Starting a Store

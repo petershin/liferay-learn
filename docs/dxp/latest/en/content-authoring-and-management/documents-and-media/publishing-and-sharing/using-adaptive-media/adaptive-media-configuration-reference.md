@@ -7,30 +7,29 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: aa109d64-1aae-4b1e-a0f9-f71442424b41
 ---
+
 # Adaptive Media Configuration Reference
 
 {bdg-secondary}`Liferay 7.3 U28+/GA28+ and 7.4 U78+/GA78+`
 
 With Adaptive Media, you can configure supported media types, determine the resolutions used for previews and thumbnails in the document library, and more. To access these settings,
 
-1. Open the *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *System Settings*.
+1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *System Settings*.
 
 1. Click *Adaptive Media* under Content and Data.
 
-    ![Access the System Settings](./adaptive-media-configuration-reference/images/01.png)
+   ![Access the System Settings](./adaptive-media-configuration-reference/images/01.png)
 
 Configuration options appear in four tabs:
 
-* System Images Resolutions: Configure resolutions used for document library thumbnails and previews.
-* Images: Configure which media types are supported by Adaptive Media.
-* ImageMagick: Configure which media types are generated using ImageMagick.
-* Processes: Configure asynchronous processing.
+- System Images Resolutions: Configure resolutions used for document library thumbnails and previews.
+- Images: Configure which media types are supported by Adaptive Media.
+- ImageMagick: Configure which media types are generated using ImageMagick.
+- Processes: Configure asynchronous processing.
 
 ## Systems Images Resolutions
 
-Here you can override Adaptive Media's default behavior for document library previews and thumbnails. By default, Adaptive Media chooses the best image resolution for previews and thumbnails based on the closest dimensions to the user's screen type and resolution. But you can enter resolution IDs to override this process (e.g., `Preview-1000x0`).
-
-![Access the System Settings](./adaptive-media-configuration-reference/images/02.png)
+Override Adaptive Media's default behavior for document library previews and thumbnails. By default, Adaptive Media chooses the best image resolution for previews and thumbnails based on the closest dimensions to the user's screen type and resolution. But you can enter resolution IDs to override this process (e.g., `Preview-1000x0`).
 
 | Field                            | Description                                                                                                    |
 |:---------------------------------|:---------------------------------------------------------------------------------------------------------------|
@@ -41,15 +40,13 @@ Here you can override Adaptive Media's default behavior for document library pre
 
 ## Images
 
-Here you can determine the media types processed by Adaptive Media and enable or disable [Gifsicle](https://www.lcdf.org/gifsicle/).
-
-![Determine supported media types.](./adaptive-media-configuration-reference/images/03.png)
+Determine the media types processed by Adaptive Media and enable or disable [Gifsicle](https://www.lcdf.org/gifsicle/).
 
 | Field               | Description                                                                                                                                                                                                                                                                                  |
 |:--------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Supported MIME Type | Determine the media types processed by Adaptive Media. If an image is uploaded and its media type is not listed, Adaptive Media ignores the image. By default, this list includes `bmp`, `gif`, `jpeg`, `pjpeg`, `png`, `svg+xml`, `x-citrix-jpeg`, `x-citrix-png`, `x-ms-bmp`, and `x-png`. |
 
-![Enable or disable Gifsicle.](./adaptive-media-configuration-reference/images/04.png)
+![Enable or disable Gifsicle.](./adaptive-media-configuration-reference/images/02.png)
 
 | Field    | Description                                                                                                                                                            |
 |:---------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,9 +54,7 @@ Here you can determine the media types processed by Adaptive Media and enable or
 
 ## ImageMagick
 
-Here you can determine which media types are processed using [ImageMagick](http://www.imagemagick.org). To use ImageMagick, you must first install it on your Liferay server. See [Enabling ImageMagick and Ghostscript](../../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-imagemagick-and-ghostscript) for more information.
-
-![Determine which media types are processed using ImageMagick.](./adaptive-media-configuration-reference/images/05.png)
+Determine which media types are processed using [ImageMagick](http://www.imagemagick.org). To use ImageMagick, you must first install it on your Liferay server. See [Enabling ImageMagick and Ghostscript](../../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-imagemagick-and-ghostscript) for more information.
 
 | Field               | Description                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -67,20 +62,19 @@ Here you can determine which media types are processed using [ImageMagick](http:
 
 ## Processes
 
-Here you can configure Adaptive Media's asynchronous processing. Modify these values to improve performance.
+Configure Adaptive Media's asynchronous processing. Modify these values to improve performance.
 
-![Configure Adaptive Media's image processing.](./adaptive-media-configuration-reference/images/06.png)
+![Configure Adaptive Media's image processing.](./adaptive-media-configuration-reference/images/03.png)
 
 | Field          | Description                                                                                                                                                    |
 |:---------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Max Processes  | Set the maximum number of processes for generating adapted media. The default value is `5`.                                                                    |
 | Core Processes | Set the number of processes always available for generating adapted media. The default value is `2`. This value cannot exceed the maximum number of processes. |
 
-```{warning}
-Larger values for Max Processes and Core Processes can consume large amounts of memory and result in out of memory errors. Out of memory errors can also occur if source images are large. You should run performance tests to optimize these settings for the amount of memory available on your system.
-```
+!!! warning
+    Larger values for Max Processes and Core Processes can consume large amounts of memory and result in out of memory errors. Out of memory errors can also occur if source images are large. You should run performance tests to optimize these settings for the amount of memory available on your system.
 
 ## Related Topics
 
-* [Adding Image Resolutions](./adding-image-resolutions.md)
-* [Managing Image Resolutions](./managing-image-resolutions.md)
+- [Adding Image Resolutions](./adding-image-resolutions.md)
+- [Managing Image Resolutions](./managing-image-resolutions.md)

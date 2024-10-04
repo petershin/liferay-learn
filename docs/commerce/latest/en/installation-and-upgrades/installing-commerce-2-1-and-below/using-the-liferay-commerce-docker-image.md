@@ -34,6 +34,6 @@ The latest version Liferay Commerce is available as a docker image. Follow these
 
 ## What's Next
 
-Doing more than just checking things out? See the [Installation Overview](../installation-overview.md) to learn more.
+Doing more than checking things out? See [Installation and Upgrades](../../installation-and-upgrades.md) to learn more.
 
 Want to get a store up and running in minutes? Learn about [Accelerators](../../starting-a-store/accelerators.md).

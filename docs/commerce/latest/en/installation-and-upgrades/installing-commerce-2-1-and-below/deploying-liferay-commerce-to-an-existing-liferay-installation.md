@@ -48,12 +48,9 @@ To begin using Liferay Commerce:
 1. On first startup, execute a reindex to populate the Liferay Commerce default content; navigate to the _Control Panel_ &rarr; _Configuration_ &rarr; _Search_.
 1. Click _Reindex_ next to _All search indexes_.
 
-Liferay Commerce has been deployed and is ready for use. Store administrators can begin building a storefront and populating their catalog.
+Liferay Commerce has been deployed and is ready for use. Store administrators can begin building a storefront and populating their catalog. Note that if the application server is restarted, Liferay Commerce will not execute the `VerifyProcess` commands a second time.
 
 ## Related Topics
 
-Note that if the application server is restarted, Liferay Commerce will not execute the `VerifyProcess` commands a second time.
-
 * [Liferay Commerce 3.0 Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151)
-* [Installation Overview](../installation-overview.md)
 * [Using the Liferay Commerce Tomcat Bundle](./using-the-liferay-commerce-tomcat-bundle.md)

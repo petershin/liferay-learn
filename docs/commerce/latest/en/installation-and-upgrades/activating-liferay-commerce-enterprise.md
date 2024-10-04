@@ -189,6 +189,6 @@ The Liferay Cloud team manages both DXP and Commerce licenses, and there is no n
 
 ## Related Topics
 
-* [Installation Overview](./installation-overview.md)
+* [Installation and Upgrades](../installation-and-upgrades.md)
 * [Upgrading Liferay Commerce](./upgrading-liferay-commerce.md)
 * [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)

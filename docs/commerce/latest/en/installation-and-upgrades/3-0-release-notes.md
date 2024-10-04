@@ -14,7 +14,7 @@ taxonomy-category-names:
 
 Liferay Commerce 3.0 is compatible with the latest version of Liferay DXP. Leverage the new experience management, content publication, and platform improvements that come with using the latest release from our flagship digital experience platform.
 
-See the [Installation Overview](./installation-overview.md) to learn how to get started.
+See [Installation and Upgrades](../installation-and-upgrades.md) to learn how to get started.
 
 ### Support for Advanced Pricing Strategies
 

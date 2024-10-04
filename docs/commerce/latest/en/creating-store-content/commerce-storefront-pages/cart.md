@@ -27,5 +27,5 @@ The *Mini Cart* widget supports Liferay's Adaptive Media out-of-the-box. See [Se
 
 ## Related Topics
 
-* [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
+* [Widgets Reference](../liferay-commerce-widgets/widgets-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)

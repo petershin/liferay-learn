@@ -25,6 +25,6 @@ Individual order summaries may be viewed by clicking the related Order ID link. 
 
 ## Related Topics
 
-* [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
+* [Widgets Reference](../liferay-commerce-widgets/widgets-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
 * [Minium Accelerator](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)

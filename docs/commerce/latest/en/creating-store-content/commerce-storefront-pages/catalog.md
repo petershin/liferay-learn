@@ -21,7 +21,7 @@ The catalog page is the primary way for users to browse, search, and select prod
 
 ![Catalog page in the Minium accelerator.](./catalog/images/01.png)
 
-To learn more about these widgets, see [Widget Reference](../liferay-commerce-widgets/widget-reference.md).
+To learn more about these widgets, see [Widgets Reference](../liferay-commerce-widgets/widgets-reference.md).
 
 !!! note
     Apart from the search bar on the catalog page, there's also a global search bar at the top of every page in accelerators like Minium and Speedwell. You can use it to search for products, orders, accounts, and even retrieve orders by the order creator's email address.
@@ -29,4 +29,4 @@ To learn more about these widgets, see [Widget Reference](../liferay-commerce-wi
 ## Related Topics
 
 * [Creating a Catalog Page](../creating-a-catalog-page.md)
-* [Widget Reference](../liferay-commerce-widgets/widget-reference.md)
+* [Widgets Reference](../liferay-commerce-widgets/widgets-reference.md)

@@ -27,6 +27,6 @@ If [Order Workflows](../../order-management/order-workflows/introduction-to-orde
 
 ## Related Topics
 
-* [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
+* [Widget Reference Guide](../liferay-commerce-widgets/widgets-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
 * [Order Workflows](../../order-management/order-workflows/introduction-to-order-workflows.md)

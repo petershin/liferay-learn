@@ -44,4 +44,4 @@ The Mini Cart widget supports Application Display Templates to change the look a
 
 ## Related Topics
 
-* [Liferay Commerce Widget Reference List](./widget-reference.md)
+* [Liferay Commerce Widget Reference List](./widgets-reference.md)

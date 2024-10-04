@@ -20,7 +20,7 @@ The [catalog](./commerce-storefront-pages/catalog.md) page is your customers' en
 * Sort
 * Search Results
 
-To learn more about these widgets, see [Widget Reference](./liferay-commerce-widgets/widget-reference.md).
+To learn more about these widgets, see [Widgets Reference](./liferay-commerce-widgets/widgets-reference.md).
 
 ![The catalog page is a customer's entry point to your company's product portfolio](./creating-a-catalog-page/images/01.png)
 

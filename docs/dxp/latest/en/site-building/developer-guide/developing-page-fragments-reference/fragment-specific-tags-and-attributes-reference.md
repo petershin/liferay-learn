@@ -26,6 +26,7 @@ These Liferay-specific tags and attributes are available:
 - [Localizable Fragment Fields](#localizing-fragment-configurations)
 - [Date Fragments](#using-date-fragments)
 - [Map Object Actions to Buttons](#making-buttons-action-ready)
+- [JavaScript Variables](#using-javascript-variables)
 
 !!! warning
     You can use `data-lfr-editable*` attributes to define elements as editable. Editable elements have a `data-lfr-editable-id` attribute, and it must be unique. Do not change the ID after the page fragment is added to a page; doing so causes you to lose changes made to the fragment.
@@ -347,6 +348,48 @@ You can trigger [object actions](../../../../liferay-development/objects/creatin
    Go Somewhere
 </button>
 ```
+
+## Using JavaScript Variables
+
+When adding JavaScript to a fragment, Liferay makes several pre-defined variables available for you to use, making it easier to manage your fragment’s behavior. Here’s some of the variables you can use:
+
+- `fragmentElement` is the root HTML element that contains your fragment. You can use it to access and manipulate the DOM elements within your fragment.
+
+   ```javascript
+   const button = fragmentElement.querySelector('.my-button');
+   button.addEventListener('click', () => {
+      console.log('Button clicked!');
+   });
+   ```
+
+- `configuration` is an object containing the fragment’s configuration options. If the fragment has configurable fields (like colors, text, or URLs), their values are stored here.
+
+   ```javascript
+   const textColor = configuration.textColor;
+   fragmentElement.style.color = textColor;
+   ```
+
+- `fragmentEntryLinkNamespace` is a unique string that can be used to identify the fragment within the page, even if there are multiple instances of the same fragment. It's useful when you need to create unique IDs or scopes in your JavaScript.
+
+   ```javascript
+   const uniqueId = `${fragmentEntryLinkNamespace}-button`;
+   const button = document.createElement('button');
+   button.id = uniqueId;
+   fragmentElement.appendChild(button);
+   ```
+
+   !!! note
+      `fragmentEntryLinkNamespace` was called `fragmentNamespace`, but `fragmentNamespace` has been deprecated. It's still available for compatibility, but you should use `fragmentEntryLinkNamespace` in new code.
+
+- `layoutMode` indicates whether the fragment is being edited or viewed. You can adjust the fragment's behavior based on whether the page is in edit mode (layoutMode === "edit") or being viewed live (layoutMode === "view").
+
+   ```javascript
+   if (layoutMode === 'edit') {
+      console.log('Page is in edit mode');
+   } else {
+      console.log('Page is being viewed');
+   }
+   ```
 
 ## Related Topics
 

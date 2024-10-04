@@ -17,6 +17,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay PaaS
 ---
+
 # Virtual Instances
 
 Liferay DXP can host multiple "portals" on one installation. These are called *virtual instances*. Each virtual instance has completely separate data and configurations. Each is accessed via a unique domain name and for all intents and purposes, is a separate Liferay-based implementation that shares an installation with additional instances.
@@ -24,7 +25,7 @@ Liferay DXP can host multiple "portals" on one installation. These are called *v
 Configuration of a Liferay DXP system happens at different [scopes](./understanding-configuration-scope.md). Configuration at the virtual instance scope is the next most broad scope after the system scope.
 
 !!! important
-    The system scope is the highest level configuration scope. All virtual instances are impacted by configuration done at this scope. The *instance* scope applies only to one particular virtual instance. If your installation contains only one virtual instance, there's no practical difference between a system scoped configuration and a virtual instance scoped configuration. Both types of configuration apply throughout your system.
+    The system scope is the highest level configuration scope. All virtual instances are impacted by configuration done at this scope. The *instance* scope applies only to one particular virtual instance. If your installation contains only one virtual instance, there's no practical difference between a system-scoped configuration and a virtual instance-scoped configuration. Both types of configuration apply throughout your system.
 
 Perhaps you already have a server hosting a Liferay DXP installation and a database. It has many [Users](../../users-and-permissions/users.md), [Sites](../../site-building.md), and specific [instance settings](./virtual-instances/instance-configuration.md). If you require a second similar installation, then adding a virtual instance might be right for you.
 
@@ -44,7 +45,7 @@ You can configure an instance in *Control Panel* &rarr; *Configuration* &rarr; *
 - Security
 - Content and Data
 
-This section of articles focuses on the *Platform* settings.
+Here you can learn about the Platform settings.
 
 ![Instance Settings has several Platform categories.](./virtual-instances/images/02.png)
 

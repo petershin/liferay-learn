@@ -13,7 +13,7 @@ Liferay DXP ships with a workflow engine that allows users to review and approve
 
 ## Activating Workflow
 
-When a workflow is activated for a particular asset, the *Publish* button is replaced by a *Submit for Workflow* button, and instead of instant publication, the asset's status is set as *Pending*. It must proceed through the workflow before publication.
+When a workflow is activated for a particular asset, the *Publish* button is replaced by a *Submit for Workflow* button. When pressed, the asset's status is set as *Pending*, and it must proceed through the workflow before publication.
 
 ![Instead of a Publish button, a Submit for Workflow button appears for workflow-enabled resources.](./introduction-to-workflow/images/01.png)
 
@@ -23,7 +23,7 @@ To learn more, see the [Activating Workflow](./using-workflows/activating-workfl
 
 ## Building a Workflow
 
-Workflow allows users to build more complex workflows that can have multiple reviewers and approvers. Learn how to build an effective workflow:
+You can build more complex workflows with multiple reviewers and approvers. Learn how to build an effective workflow:
 
 - [Crafting Review Processes in XML](./developer-guide/crafting-xml-workflow-definitions.md)
 - [Visually Designing Review Processes](./designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md) (Subscriber)
@@ -39,7 +39,7 @@ The *Metrics* function can be used to measure Service Level Agreements (SLAs) pe
 - Total time to resolution
 - Time to complete a specific workflow task
 
-Once an SLA is set, workflow submissions that trigger the SLA timer are automatically reported on by the workflow metrics framework, and given the status *on time* or *overdue*.
+Once an SLA is set, workflow submissions that trigger the SLA timer are reported by the workflow metrics framework automatically and given the status *on time* or *overdue*.
 
 ![See Workflow Reports generated based on your SLAs.](./introduction-to-workflow/images/02.png)
 
@@ -56,7 +56,7 @@ An asset in a workflow process always has a status. The status is used to determ
 
 ![Content can have a workflow status.](./introduction-to-workflow/images/03.png)
 
-See the source code's [WorkflowConstants class](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/workflow/WorkflowConstants.java) to view all the available statuses.
+See the source code's [`WorkflowConstants` class](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/workflow/WorkflowConstants.java) to view all the available statuses.
 
 ### Versioned Assets Can Have Multiple Statuses
 
@@ -64,7 +64,7 @@ Versioned assets can have two statuses.
 
 ![Versioned assets can have two statuses.](./introduction-to-workflow/images/04.png)
 
-Most asset's default to displaying the newest approved version. If an already approved asset is updated, a new version is created and sent through the workflow. While the new version is not yet approved in the workflow, a second status is displayed for the asset (e.g., *pending*). The last approved version will continue to be used until the new version is approved.
+Most assets default to displaying the newest approved version. If an already approved asset is updated, a new version is created and sent through the workflow. When the new version is not yet approved in the workflow, a second status appears for the asset (e.g., *pending*). The last approved version is used until the new version is approved.
 
 ## What's Next
 

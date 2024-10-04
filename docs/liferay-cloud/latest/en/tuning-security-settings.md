@@ -18,11 +18,13 @@ Here are a list of best practices for tightening and maintaining your Liferay Pa
 
 ## General Security Measures
 
+General security measures include proper maintenance of your repository and applying all security patches as needed. It also includes industry best practices such as keeping your commits free of sensitive information, scanning your code for security vulnerabilities, and making sure your search index doesn't leak sensitive information. 
+
 ### Project Repository
 
 The default GitHub repository is a template provided as a starting point to start managing your services. For privacy regulations, you should not commit your own organization's code to it.
 
-Migrate the default GitHub repository to your own organization's private repository (GitHub, GitLab, or Bitbucket) before committing code to it.
+Migrate the default GitHub repository to your own organization's private repository (GitHub, GitLab, Bitbucket, or Azure) before committing code to it.
 
 ### Security Patches
 
@@ -35,7 +37,7 @@ Liferay DXP images are published on [Docker Hub](https://hub.docker.com/r/lifera
 Make sure not to commit any sensitive information (including licenses, credentials, secrets, etc.) to your repository. Use Liferay Cloud [secrets](./tuning-security-settings/managing-secure-environment-variables-with-secrets.md) to manage credentials or other sensitive variables needed for your project.
 
 !!! note
-    Your Liferay PaaS subscription includes an enterprise Liferay DXP license automatically deployed with your environment. You do not need to supply a license with your installation.
+    Your Liferay PaaS subscription includes an enterprise Liferay DXP license automatically deployed with your environment. You need not supply a license with your installation.
 
 ### Code Scans
 
@@ -47,6 +49,8 @@ Enable Elasticsearch security features by setting the `ENABLE_XPACK_SECURITY` en
 
 ## Account Management
 
+Proper account management can mitigate many security concerns. Securing the default administrator account, enabling single sign-on and/or multi-factor authentication, and keeping your team members list up to date go a long way toward limiting who can access your system. Regular user activity audits can also reveal suspicious activity. 
+
 ### Single Sign-On
 
 Liferay PaaS can integrate with any SAML 2.0-compliant Single Sign-On (SSO) Identity Provider to authenticate users with Liferay Cloud. Set up multi-factor authentication for developers or IT team members using any identity provider that supports it. See [Using SSO with Liferay Cloud](./tuning-security-settings/using-sso-with-liferay-cloud.md) for more information.
@@ -57,13 +61,15 @@ If you deploy an out-of-the-box Liferay Portal build to your production environm
 
 ### User Activity Audits
 
-At least quarterly, perform a periodic audit of user activities in each Liferay PaaS environment and in Liferay DXP.
+On at least a quarterly basis, perform a periodic audit of user activities in each Liferay PaaS environment and in Liferay DXP.
 
 ### Team Members
 
-At least quarterly, audit team members and their permissions for each environment and delete inactive team members, for both members of your Liferay PaaS project and roles in Liferay DXP.
+On at least a quarterly basis, audit team members and their permissions for each environment and delete inactive team members, for both members of your Liferay PaaS project and roles in Liferay DXP.
 
 ## Network Controls
+
+You can also make changes to your network to enhance security. 
 
 ### Public Endpoints
 
@@ -83,6 +89,8 @@ You can enable Liferay Cloud's [web application firewall](./tuning-security-sett
 
 ## Backups
 
+Regular backups, and especially disaster recovery tests (i.e., testing to make sure your backup strategy succeeds) can give you peace of mind if disaster strikes.
+
 ### Backup Downloads
 
 Backups in Liferay PaaS are always encrypted at rest and in transit. However, if you download a backup to a local machine, ensure that you've mapped out your data flow to comply with any required security regulations.
@@ -92,6 +100,8 @@ Backups in Liferay PaaS are always encrypted at rest and in transit. However, if
 Using production data in non-production environments can help for debugging purposes but still poses risks. Implement scripts to perform PII data masking when restoring these backups into non-production environments.
 
 ## HTTP Layer
+
+Keeping your HTTP layer secure is one of the most important ways to avoid security issues. 
 
 ### Authentication Methods
 
@@ -103,7 +113,7 @@ Here is an example that uses token authentication with the upload API:
 
 ```bash
 curl -X POST /
-  http://<HOST-NAME>/backup/upload /
+  http://[HOST-NAME]/backup/upload /
   -H 'Content-Type: multipart/form-data' /
   -H 'dxpcloud-authorization: Bearer <USER_TOKEN>' /
   -F 'database=@/my-folder/database.tgz' /
@@ -111,7 +121,7 @@ curl -X POST /
 ```
 
 !!! note
-    Passing the user token in the header `dxpcloud-authorization` only works for versions `3.2.0` or greater of the backup service. Previous versions should be upgraded to at least `3.2.0`. Requests to earlier versions must use the header `Authorization: Bearer <PROJECT_MASTER_TOKEN>`. To find the project master token, run the command `env grep LCP_PROJECT_MASTER_TOKEN` in any shell on the Liferay Cloud Console.
+    Passing the user token in the header `dxpcloud-authorization` only works for versions `3.2.0` or greater of the backup service. Previous versions should be upgraded to at least `3.2.0`. Requests to earlier versions must use the header `Authorization: Bearer [PROJECT_MASTER_TOKEN]`. To find the project master token, run the command `env grep LCP_PROJECT_MASTER_TOKEN` in any shell on the Liferay Cloud Console.
 
 ### Ciphers
 
@@ -127,21 +137,21 @@ See [Setting Up CORS](https://learn.liferay.com/w/dxp/installation-and-upgrades/
 
 ### Content Security Policy
 
-The Content Security Policy (CSP) prevents web browsers from loading malicious resources. Configure the `Content-Security-Policy` header for security compliance in your Nginx configuration file.
+The Content Security Policy (CSP) prevents web browsers from loading malicious resources. Configure the `Content-Security-Policy` header for security compliance in your nginx configuration file.
 
 ### URL Redirects
 
 Ensure that HTTP-to-HTTPS redirects first direct to a secure version of the same original site, to prevent man-in-the-middle redirects to malicious sites. Ensure that redirects never point to HTTP addresses.
 
-Configure URL redirects via your environment's Nginx configuration file.
+Configure URL redirects via your environment's nginx configuration file.
 
 ### HSTS
 
-The HTTP Strict Transport Security (HSTS) header ensures that users are immediately connected to the HTTPS website after the initial visit. Configure the `Strict-Transport-Policy` header for security compliance via your environment's Nginx configuration file.
+The HTTP Strict Transport Security (HSTS) header ensures that users are immediately connected to the HTTPS website after the initial visit. Configure the `Strict-Transport-Policy` header for security compliance via your environment's nginx configuration file.
 
 ### Web Browsers
 
-Configure Nginx to verify the user agent header and block access to the site from outdated web browsers.
+Configure nginx to verify the user agent header and block access to the site from outdated web browsers.
 
 ## Secrets
 
@@ -169,4 +179,4 @@ When installing custom SSL certificates, create the key and certificate properti
 
 ### Development Environment Access
 
-The `dev` environment's Liferay DXP access is protected by default credentials, which are shared in your provisioning email. Customize the Nginx configuration and set your own credentials, and store them as secrets.
+The `dev` environment's Liferay DXP access is protected by default credentials, which are shared in your provisioning email. Customize the nginx configuration, set your own credentials, and store them as secrets.

@@ -18,6 +18,7 @@ Talend
 [Ss]ervlet
 hreflang
 namespace
+nginx
 viewport
 widget's
 workspace's

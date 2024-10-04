@@ -17,7 +17,7 @@ uuid: c5b4bb64-ded0-44e0-8a99-55abac245118
 
 # Updating Services in Liferay PaaS
 
-Liferay PaaS provides a robust framework for achieving a highly efficient CI/CD strategy. With Git and Jenkins integrations, you can automatically trigger CI builds that you can then deploy to project environments. Alternatively, you can skip the CI service's build process altogether and directly deploy local changes to project environments using the [Command Line Interface](./reference/command-line-tool.md) (CLI) tool.
+Liferay PaaS provides a robust framework for achieving a highly efficient Continuous Integration/Continuous Deployment (CI/CD) strategy. With Git and Jenkins integrations, you can automatically trigger CI builds that you can then deploy to project environments. Alternatively, you can skip the CI service's build process altogether and directly deploy local changes to project environments using the [Command Line Interface](./reference/command-line-tool.md) (CLI) tool.
 
 Although there are multiple paths for deployment, workflows generally follow these three stages:
 
@@ -36,7 +36,7 @@ Configure a service's [LCP.json file](./reference/configuration-via-lcp-json.md)
 - [Continuous Integration Service (Jenkins)](./platform-services/continuous-integration.md)
 - [Database Service](./platform-services/database-service.md)
 - [Search Service (Elasticsearch)](./platform-services/search-service.md)
-- [Web Server Service (Nginx)](./platform-services/web-server-service.md)
+- [Web Server Service (nginx)](./platform-services/web-server-service.md)
 
 ## Build and Test
 
@@ -58,12 +58,12 @@ To access a full history of deployments across all project environments, navigat
 
 Using the CLI tool is the quickest way to deploy local changes to a service. With it, you can deploy from your terminal and skip pushing your changes to a remote repository or triggering a Jenkins build altogether. Unlike other deployment methods, the CLI tool can also deploy local changes for one service at a time.
 
-To do this, log in to the CLI tool in your terminal, and navigate to the folder for the service you want to deploy (the folder must contain the service's `LCP.json` file). Then, initiate the deployment process by running `lcp deploy`, and select which project and environment to deploy to (e.g., `dev`, `uat`, `prd`). *Always deploy to a `dev` or `uat` environment to verify any changes before deploying to a production environment.*
+To do this, log into the CLI tool in your terminal, and navigate to the folder for the service you want to deploy (the folder must contain the service's `LCP.json` file). Then, initiate the deployment process by running `lcp deploy`, and select which project and environment to deploy to (e.g., `dev`, `uat`, `prd`). *Always deploy to a `dev` or `uat` environment to verify any changes before deploying to a production environment.*
 
 For the deployment to be successful, you must have permissions to deploy to the chosen environment. See [Deploying Changes via the CLI Tool](./updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md) for a walk through of this deployment workflow.
 
 !!! important
-    While you can directly deploy backup, CI, database, search, and webserver services, you must first create a gradle build of the Liferay service before running the `lcp deploy` command. See [Deploying to the Liferay Service](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) for more information.
+    While you can directly deploy backup, CI, database, search, and webserver services, you must first create a Gradle build of the Liferay service before running the `lcp deploy` command. See [Deploying to the Liferay Service](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) for more information.
 
 When you deploy with the CLI tool, you can either deploy all services at once (by running the command from the root directory of your project), or deploy only a single service (by running the command from the directory containing the service's `LCP.json` file). The `liferay` service in particular [requires extra steps](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) to deploy, so it can build and prepare the files from your project workspace.
 
@@ -77,7 +77,7 @@ See [Deploying Changes via the Liferay Cloud Console](./updating-services-in-lif
 
 ### Option 3: Automatically Deploying Builds to `dev` Environment
 
-If desired, you can set up your CI service to automatically deploy builds to your project's `dev` environment. Add an environment variable to the CI service that initiates automatic deployments for builds made from your specified branch. See [Setting Up Automatic Deployment](./updating-services-in-liferay-paas/automatically-deploying-ci-service-builds.md) for more information.
+If desired, you can set up your CI service to deploy builds automatically to your project's `dev` environment. Add an environment variable to the CI service that initiates automatic deployments for builds made from your specified branch. See [Setting Up Automatic Deployment](./updating-services-in-liferay-paas/automatically-deploying-ci-service-builds.md) for more information.
 
 ## Related Topics
 

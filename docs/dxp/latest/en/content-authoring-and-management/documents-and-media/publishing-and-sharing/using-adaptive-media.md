@@ -21,7 +21,7 @@ uuid: bd2ce0e7-dc9c-40c0-b323-d0a3ca2440d0
 Liferay Adaptive Media processes images stored in the document library to produce copies at different resolutions. Once generated, you can [use the adapted images](./using-adaptive-media/using-adapted-images-in-site-content.md) in the Documents and Media application, blogs, web content, and content pages to serve the optimal image resolution for the end user's device. In most cases, this reduces page size, improves load times, and saves bandwidth.
 
 !!! warning
-    Adaptive Media generally improves performance by adapting images to optimal sizes. However, when adapting certain formats like webP or AVIF, the adapted images may increase in size or be converted to PNG for broader browser compatibility. This may result in larger file sizes than the original images in some cases.
+    Adaptive Media improves performance by optimizing image sizes, but adapting formats like webP or AVIF may increase file sizes or convert them to PNG for better browser compatibility.
 
 By default, Adaptive Media includes preview (1000px auto) and thumbnail (300px/300px) resolutions, but you can [define additional resolutions](./using-adaptive-media/adding-image-resolutions.md). Adaptive Media then listens for when users upload [supported media types](./using-adaptive-media/adaptive-media-configuration-reference.md#images) and begins parallel, asynchronous processes for generating the alternative image sizes. The new images are linked to the original image and scaled to fit your set resolutions while maintaining the same aspect ratio.
 

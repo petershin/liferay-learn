@@ -72,10 +72,7 @@ For all scopes, you can set a maximum file upload size in bytes.
 
 For system, instance, and site scopes, you can set a maximum file size for specific MIME Types.
 
-!!! note
-    Currently, setting a MIME type limit for asset libraries is behind a developer feature flag (LPS-114786). Read [Developer Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) for more information.
-
-1. Use the instructions above to navigate to the relevant settings based on the scope.
+1. Use the instructions in ![Configuring the File Size](#configuring-the-file-size) to navigate to the relevant settings based on the scope.
 
 1. In the MIME Type field, add the MIME Type you want to restrict (e.g., `image/png`), and set the maximum file size for that MIME Type.
 
@@ -84,7 +81,7 @@ For system, instance, and site scopes, you can set a maximum file size for speci
    !!! important
        Ensure that the MIME Types are supported and configured under System Settings &rarr; Documents and Media &rarr; Service under System Scope.
 
-1. To add restrictions for additional MIME Types, click *Add* (![Add icon](../../../images/icon-add-setting.png)) next to the Maximum File Size field.
+1. To add restrictions for other MIME Types, click *Add* (![Add icon](../../../images/icon-add-setting.png)) next to the Maximum File Size field and repeat the previous step.
 
 ## Related Topics
 

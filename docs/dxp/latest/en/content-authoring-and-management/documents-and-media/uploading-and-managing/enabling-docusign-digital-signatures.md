@@ -60,7 +60,28 @@ Depending on what you chose for your Site Settings Strategy, add your digital ke
 
 1. Enter the *User ID*, *API Account ID*, *Account's Base URI*, *Integration Key*, and the *RSA Private Key* you previously retrieved from the DocuSign website.
 
+!!! important
+    Add the entire RSA Private Key including the key headers (i.e., `-----BEGIN RSA PRIVATE KEY-----` and `-----END RSA PRIVATE KEY-----`).
+
 1. Click *Save* to enable digital signatures.
+
+## Authorizing DocuSign and Obtaining Consent
+
+Before you can send or manage documents using DocuSign in Liferay, you must authorize the integration and grant individual consent, allowing Liferay to access DocuSign's services on your behalf.
+
+Learn more about obtaining individual consent in [How to obtain individual consent](https://developers.docusign.com/platform/auth/consent/obtaining-individual-consent/).
+
+1. Create the Authorization URL.
+
+   Use your integration key and redirect URI to construct the authorization URL. Replace the placeholders in the base URL below:
+
+   `https://account-d.docusign.com/oauth/auth?response_type=code&scope=signature%20impersonation&client_id=YOUR_INTEGRATION_KEY&redirect_uri=YOUR_REDIRECT_URI`
+
+   Example: `https://account-d.docusign.com/oauth/auth?response_type=code&scope=signature%20impersonation&client_id=7c2b8d7e-xxxx-xxxx-xxxx-cda8a50dd73f&redirect_uri=http://example.com/callback/`.
+
+1. Access the Authorization URL in your browser. When prompted, grant consent for Liferay to access your DocuSign account.
+
+After obtaining consent, you should be able to use the integration as intended.
 
 ## Collecting Document Signatures in Documents and Media
 

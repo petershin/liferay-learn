@@ -63,6 +63,9 @@ The following fields are available in the Builder tab on the right:
 | Link to Page       | Link to another page in the same site.                              |
 | Separator          | Add a separator to organize the content.                            |
 
+!!! note
+    Starting in Liferay 7.4, the Rich Text field in metadata sets uses CKEditor as the only WYSIWYG editor.
+
 Once saved, the new Metadata Set can be accessed and selected when creating or editing Document Types. See [Defining Document Types](./defining-document-types.md) or more information.
 
 ## Editing Metadata Sets

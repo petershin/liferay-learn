@@ -28,6 +28,12 @@ Field types have been added and improved as part of the move to Data Engine:
 !!! warning
     **Boolean field versus Multiple Selection field:** Data Engine did not initially include a Boolean field. Instead, Boolean fields in upgraded structures were migrated to use the Data Engine's Multiple Selection field, using the same label and just one option. Some issues can arise from this, for example if templates were built on structures with Boolean fields. In Liferay 7.4 Update/GA 23, the Boolean field type is added to Data Engine. Upgraded structures after Update 23 successfully convert 7.3 DDM Boolean fields to 7.4 DE Boolean fields in web content structures. If your installation was upgraded before this change, you must manually change these single-option Multiple Selection fields to Boolean fields by editing the affected structures.
 
+## Changes in Rich Text Field Behavior
+
+As part of the migration to the Data Engine framework in Liferay 7.4, the Rich Text field in web content structures has undergone significant changes. The new Rich Text field is configured to use CKEditor as the default WYSIWYG editor, replacing the previous Dynamic Data Mapping (DDM) Rich Text field.
+
+`Beginning with `Liferay DXP 2024.Q1+/Portal 7.4 GA112+`, you can customize CKEditor's configuration using [client extensions](../../../liferay-development/customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md)  offering flexibility to tailor the editor to your needs.
+
 ## Child Structures are Replaced by Structure Fieldsets
 
 Structures backed by DDM could include child structures that inherited all the parent's fields and settings. This relationship no longer exists in Liferay 7.4 because you can now create fieldsets, with which you can create reusable fieldsets for your structures. Fieldsets improve the editing experience since you can see what the structure looks like as you edit.

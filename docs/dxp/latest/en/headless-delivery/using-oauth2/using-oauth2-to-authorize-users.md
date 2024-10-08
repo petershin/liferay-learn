@@ -89,6 +89,9 @@ The authorization code flow requires users to log in with their credentials and 
 
 1. Enter `http://localhost:8080/o/oauth2/token` for the Liferay token URL. Paste the client ID and client secret from your clipboard. Click _Get Token_. Note the authorization token that can be used to make future REST API calls appears.
 
+   !!! note
+       If requesting a token on the same instance, Liferay produces no network traffic.
+
 1. Enter `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` for the Liferay get user URL. Click *Get Data*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
 
    ![A list of Liferay users appears.](./using-oauth2-to-authorize-users/images/04.png)

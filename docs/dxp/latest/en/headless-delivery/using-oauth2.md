@@ -37,6 +37,9 @@ Here's how OAuth 2.0 works:
 
 1. The application then requests a more permanent authorization token and sends the code with the request (along with the _PKCE_ code verifier).
 
+   !!! note
+       If requesting a token on the same instance, Liferay produces no network traffic.
+
 1. If the authorization code matches (and the transformed _PKCE_ code verifier matches the previously sent code challenge), Liferay cryptographically generates an authorization token for this user and application combination. It sends the token to the application over HTTPS. Initial authorization is now complete!
 
 1. When the application must retrieve data, it sends the token with the request to prove it's authorized to have that data.

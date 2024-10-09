@@ -42,15 +42,15 @@ Analytics events are sent directly from the client's browser. To validate data i
 
     ![Validating the connection to Analytics Cloud.](connecting-data-sources/images/01.png)
 
-    If you are able to see this request that means your website is sending analytics data to your Analytics Cloud workspace. Check the request payload and verify that there is a variable called `channelId`.
+    If you can see this request, your website is sending analytics data to your Analytics Cloud workspace. Check the request payload and verify that there is a variable called `channelId`.
 
 ### Contacts Data
 
 DXP sends contact information of your logged in users to Analytics Cloud as individual profile data. This data is sent directly from the DXP server.
 
-To verify that contacts data are being sent, check the DXP server logs for the messages similar to the following:
+To verify that contacts data are being sent, check the DXP server logs for the messages like these:
 
-```
+```log
 INFO  [liferay/analytics_messages_processor-1][AddAnalyticsMessagesMessageListener:70] Added 500 analytics messages
 
 INFO  [liferay/analytics_messages_processor-1][AddAnalyticsMessagesMessageListener:70] Added 500 analytics messages
@@ -70,7 +70,7 @@ For Analytics events, you should be able to see visitors metric in the 24 hours 
 
 ![Analytics Data coming in over a period of time.](connecting-data-sources/images/02.png)
 
-Other session-related data, such as session duration and bounce rate, must wait until the visitor session ends. Visitor sessions are considered over when there are 30 minutes of inactivity, or at 00:00:00 UTC -- whichever comes first.
+Other session-related data such as session duration and bounce rate must wait until the visitor session ends. Visitor sessions are considered over when there are 30 minutes of inactivity, or at 00:00:00 UTC -- whichever comes first.
 
 Individual Profiles take longer to process and become available over time.
 

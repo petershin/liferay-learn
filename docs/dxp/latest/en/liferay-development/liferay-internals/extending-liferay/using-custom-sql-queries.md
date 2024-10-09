@@ -68,7 +68,7 @@ This example uses custom SQL to retrieve only entries with a specified value in 
 1. Store your SQL query in a string, replacing any variable values with a `?`.
 
    ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9Z0EntryLocalServiceImpl.java
-      :dedent: 2
+      :dedent: 3
       :language: java
       :lines: 52
    ```
@@ -76,7 +76,7 @@ This example uses custom SQL to retrieve only entries with a specified value in 
 1. Create an `SQLQuery` object. Liferay uses this object to handle SQL queries. The session creates an `SQLQuery` object to avoid issues in a clustered environment. Use the `addEntity` method to define the class of the object your query returns.
 
    ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9Z0EntryLocalServiceImpl.java
-      :dedent: 2
+      :dedent: 3
       :language: java
       :lines: 54-56
    ```
@@ -84,7 +84,7 @@ This example uses custom SQL to retrieve only entries with a specified value in 
 1. If you used the `?` placeholder in the string, create a `QueryPos` object from the `SQLQuery`. Add the values to be replaced in the order they appear on the string. This example only uses one.
 
    ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9Z0EntryLocalServiceImpl.java
-      :dedent: 2
+      :dedent: 3
       :language: java
       :lines: 58-60
    ```
@@ -92,7 +92,7 @@ This example uses custom SQL to retrieve only entries with a specified value in 
 1. `QueryUtil` executes the query in the database. The `list` method is used to make `GET` calls and returns a list of the values in the response.
 
    ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9Z0EntryLocalServiceImpl.java
-      :dedent: 2
+      :dedent: 3
       :language: java
       :lines: 62-64
    ```

@@ -19,7 +19,7 @@ uuid: 978aa7cb-c3e3-4895-91bd-ff8a779cc230
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
 
-_Display page templates_ define structures for displaying content at a dedicated URL. When you create or upload content items, Liferay generates a unique friendly URL for accessing it. However, you can only use this URL to view the content if you first define a template for displaying it.
+*Display page templates* define structures for displaying content at a dedicated URL. When you create or upload content items, Liferay generates a unique friendly URL for accessing it. However, you can only use this URL to view the content if you first define a template for displaying it.
 
 ![Create display page templates for displaying content at a dedicated URL.](./using-display-page-templates/images/01.png)
 
@@ -29,12 +29,12 @@ After designing the template, you can make it the default template for displayin
 
 Display page templates currently support the following content types:
 
--   [Blog Entries](../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
--   [Categories](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`7.4+`
--   [Custom Objects](../../liferay-development/objects/displaying-object-entries.md) {bdg-secondary}`7.4+`
--   [Documents](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
--   [Web Content Articles](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
--   [Calendar Event Fields](../../collaboration-and-social/calendar/mapping-calendar-event-fields-to-display-page-templates.md)
+- [Blog Entries](../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
+- [Categories](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`7.4+`
+- [Custom Objects](../../liferay-development/objects/displaying-object-entries.md) {bdg-secondary}`7.4+`
+- [Documents](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
+- [Web Content Articles](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+- [Calendar Event Fields](../../collaboration-and-social/calendar/mapping-calendar-event-fields-to-display-page-templates.md)
 
 !!! tip
     Use display page templates for designing layouts that you want to reuse for multiple content items.
@@ -46,5 +46,3 @@ These templates are ideal for displaying a list of elements in a consistent way,
 To achieve this goal, you can create a single display page template that maps your web content article fields to fragments in your template. Each article can use the same template. Then, you can link each insurance option in your landing page to the corresponding article's friendly URL. When site visitors click an option, the display page is populated dynamically with information from your web content articles and rendered according to your template design.
 
 If a content type has multiple display page templates created for it, you can [map links to any of the available templates](./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md) for that asset type. When mapping a link to its display page, you can choose the default option or any of the other available display page templates, allowing for greater customization and flexibility in how your content is displayed.
-
-

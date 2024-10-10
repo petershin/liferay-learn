@@ -60,7 +60,7 @@ With Dynamic Content Sets, you can choose the *Source*, *Scope*, *Filter*, and *
 This will create a Content Set which will contain any items that are currently tagged as *trending* and any future items with the *trending* tag will be added to the Content Set automatically.
 
 Now that you have your Content Sets created, you can
-[display them on a page](../displaying-collections.md#displaying-content-sets).
+[display them on a page](../displaying-collections/displaying-collections-for-liferay-72-and-earlier-versions.md#displaying-content-sets).
 
 ## Converting Asset Publisher Configurations to Content Sets
 

@@ -141,7 +141,7 @@ Here's a list of calendar event fields that can be mapped to display page templa
 
 ## Related Topics
 
-- [Using Collections](../../site-building/displaying-content/using-collections.md)
+- [Using Collections](../../site-building/displaying-content/collections-and-collection-pages.md)
 - [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md)
 - [Using Multiple Display Page Templates to Create Multi-Step Applications](../../site-building/displaying-content/using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md)
 - [Using Widgets](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md)

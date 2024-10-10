@@ -37,10 +37,10 @@ The easiest way to configure an Asset Publisher to display the desired assets is
 
 ## Selecting Assets in the Asset Publisher Widget
 
-You can configure the Asset Publisher widget to select assets dynamically based on specific criteria, or manually, specifying exactly what assets to display. You can also display assets from [collections](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
+You can configure the Asset Publisher widget to select assets dynamically based on specific criteria, or manually, specifying exactly what assets to display. You can also display assets from [collections](../../../site-building/displaying-content/collections-and-collection-pages.md).
 
 !!! note
-    On Liferay 7.2 and below, collections are referred to as [content sets](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#liferay-dxp-7-2).
+    On Liferay 7.2 and below, collections are referred to as [content sets](../../../site-building/displaying-content/collections-and-collection-pages.md#liferay-dxp-7-2).
 
 1. Create a [new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) or [edit an existing one](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
 
@@ -77,7 +77,7 @@ The Asset Publisher widget uses one of these methods to select assets for displa
 
 ### Collection
 
-Choose from your previously saved collections or collection providers. To learn more about collections, see [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
+Choose from your previously saved collections or collection providers. To learn more about collections, see [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages.md).
 
 1. Under Select Collection, click *Select*.
 
@@ -121,7 +121,7 @@ Include assets in the Asset Publisher widget automatically based on your choice 
    !!! warning
        When selecting web content articles as the asset type and ordering by a localized web content structure field, all assets' field values should be localized when other languages are applied to the site. Only translated assets are ordered when another language is applied.
 
-1. (Optional) Click *Create a collection from this configuration*, enter a title, and click *Save* to save the configuration as a new [collection](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
+1. (Optional) Click *Create a collection from this configuration*, enter a title, and click *Save* to save the configuration as a new [collection](../../../site-building/displaying-content/collections-and-collection-pages.md).
 
 ### Manual
 
@@ -140,7 +140,7 @@ Set parameters and manually filter specific assets:
 
 1. Click *Add*.
 
-1. (Optional) Click *Create a collection from this configuration*, enter a title, and click *Save* to save the configuration as a new [collection](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
+1. (Optional) Click *Create a collection from this configuration*, enter a title, and click *Save* to save the configuration as a new [collection](../../../site-building/displaying-content/collections-and-collection-pages.md).
 
 ## Displaying Content Dynamically Using Experiences
 

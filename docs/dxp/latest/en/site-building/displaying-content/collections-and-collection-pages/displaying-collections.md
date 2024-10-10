@@ -13,9 +13,9 @@ uuid: 54108c82-b29d-4dcc-8734-ea3d941f4328
 
 {bdg-secondary}`Liferay Portal 7.4 GA6+, DXP 7.3 GA1+`
 
-You can display a collection by adding a collection page, or a collection display fragment. For more information about these display options, see [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections).
+You can display a collection by adding a collection page, or a collection display fragment. For more information about these display options, see [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages.md#displaying-collections).
 
-By default, any user can see a collection's content. However, you can [personalize how users see this content using segments](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#customizing-collections).
+By default, any user can see a collection's content. However, you can [personalize how users see this content using segments](../../../site-building/displaying-content/collections-and-collection-pages.md#customizing-collections).
 
 ```{note}
 You must [create a collection](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md) before displaying it on a page.
@@ -264,5 +264,5 @@ Content sets provide one place to define content and other assets to be displaye
 ## Related Topics
 
 [Creating Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)
-[About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
+[Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages.md)
 [Personalizing Collections](../../personalizing-site-experience/experience-personalization/personalizing-collections.md)

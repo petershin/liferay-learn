@@ -12,7 +12,7 @@ uuid: 651a3ecc-7ffe-48af-903e-29e46036c510
 !!! note
     This information applies to Liferay DXP 7.3+. For previous Liferay DXP versions, see [Liferay DXP 7.2](#liferay-dxp-7-2).
 
-You can create *Manual* or *Dynamic* Collections. For information about the different types of Collections, see [About Collections and Collection Pages](./about-collections-and-collection-pages.md).
+You can create *Manual* or *Dynamic* Collections. For information about the different types of Collections, see [About Collections and Collection Pages](../collections-and-collection-pages.md).
 
 ## Creating a Manual Collection
 
@@ -181,6 +181,6 @@ Great! You converted your Asset Publisher configuration to a Content Set.
 
 ## Related Information
 
-- [About Collections and Collection Pages](./about-collections-and-collection-pages.md)
+- [About Collections and Collection Pages](../collections-and-collection-pages.md)
 - [Displaying Collections](./displaying-collections.md)
 - [Personalizing Collections](../../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)

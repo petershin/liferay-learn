@@ -114,7 +114,7 @@ Open the *Page Design Options panel* (![Page Design Options](../../../images/ico
 
 ### Page Content
 
-In the Page Content panel ( ![Page Content](../../../images/icon-paperclip.png) ), you can view and edit content directly added to the page. This can include inline text, images, web content articles, and more. While viewing content, you can search for content items and filter by type. If the page includes a [collection](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md), you can view its items and add new items. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
+In the Page Content panel ( ![Page Content](../../../images/icon-paperclip.png) ), you can view and edit content directly added to the page. This can include inline text, images, web content articles, and more. While viewing content, you can search for content items and filter by type. If the page includes a [collection](../../../site-building/displaying-content/collections-and-collection-pages.md), you can view its items and add new items. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
 
 ```{note}
 Besides collections, mapped content is not listed in the Page Content panel. The panel only includes content added directly to the page.

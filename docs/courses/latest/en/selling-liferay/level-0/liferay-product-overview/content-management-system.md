@@ -24,7 +24,7 @@ With Liferay’s Content Management System (CMS), practitioners can create, orga
 
 ## Content Grouping
 
-* [Use Collections to group your created content](https://learn.liferay.com/w/dxp/site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages)
+* [Use Collections to group your created content](https://learn.liferay.com/w/dxp/site-building/displaying-content/collections-and-collection-pages)
 
 ## Multichannel
 

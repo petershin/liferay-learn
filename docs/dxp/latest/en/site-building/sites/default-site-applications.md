@@ -30,7 +30,7 @@ When you use an application in a site, the application's data is restricted to t
 | :--- | :--- |
 | [Pages](../creating-pages.md) | Add content pages or widget pages to a site and manage site hierarchies.  |
 | [Navigation Menus](../site-navigation/using-the-navigation-menus-application.md) | Create custom menus for site pages and content that you can display in site pages.  |
-| [Collections](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) | Create sets of content items that you can filter and display in site pages. |
+| [Collections](../../site-building/displaying-content/collections-and-collection-pages.md) | Create sets of content items that you can filter and display in site pages. |
 
 ## Content & Data
 

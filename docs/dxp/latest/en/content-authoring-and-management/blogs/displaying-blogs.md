@@ -19,7 +19,7 @@ Liferay provides two ways to display blog entries: [display page templates](#usi
 You can use [display page templates](../../site-building/displaying-content/using-display-page-templates.md) to create reusable, dynamic displays for blog entries. Once set up, users can access each blog entry at a dedicated URL composed of the display page's URL and the entry's friendly URL (i.e., `display-page-url/blog-friendly-url`). See [Publishing Content with Display Pages](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) for instructions on how to set up display page templates for blog entries.
 
 !!! tip
-    In content pages, you can use collections to link to groups of blog entry display pages. See [About Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
+    In content pages, you can use collections to link to groups of blog entry display pages. See [About Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages.md) for more information.
 
 <!-- It would be a good idea to include use cases here to exemplify what was said -->
 

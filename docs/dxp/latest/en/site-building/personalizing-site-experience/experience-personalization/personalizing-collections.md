@@ -131,6 +131,6 @@ Now anytime a member of the American Engineers segment views this content set be
 ## Related Information
 
 - [Content Page Personalization](./content-page-personalization.md)
-- [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
+- [Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages.md)
 - [Creating User Segments](../segmentation/creating-and-managing-user-segments.md)
 - [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md)

@@ -22,7 +22,7 @@ Collections, display pages and form containers offer the most flexibility and ar
 
 | Object Entry Display Feature | Description | Object Entry View |
 | :--------------------------- | :-------------------- | :---------- |
-| [Collections](../../site-building/displaying-content/using-collections.md) | You can create dynamic collections, manual collections, or automatic collections with the collection provider`*` [generated for every object](./displaying-object-entries/displaying-object-entries-with-collection-providers.md), and display them in the Collection Display fragment or on a Collection Page. This is the preferred method for displaying published object entries on pages. | List view |
+| [Collections](../../site-building/displaying-content/collections-and-collection-pages.md) | You can create dynamic collections, manual collections, or automatic collections with the collection provider`*` [generated for every object](./displaying-object-entries/displaying-object-entries-with-collection-providers.md), and display them in the Collection Display fragment or on a Collection Page. This is the preferred method for displaying published object entries on pages. | List view |
 | [Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md) | You can create a flexible page to display an object entry or its edit form using all the best [page creation tools](../../site-building/creating-pages/using-content-pages.md). | Detail view<br>Edit screen |
 | [Form Containers](using-fragments-to-build-forms.md)/<br>[Form Fragments](using-fragments-to-build-forms.md) | You can use form container fragments on any content or display page to display an object's add or edit form. | Creation screen<br>Edit screen |
 | [Data Sets](../data-sets.md) ![Beta](../../images/icon-beta-feature.png) | Display any data returned from a REST application registered in Liferay. |  List view<br>Detail view<br>Creation screen<br>Edit screen |
@@ -128,5 +128,5 @@ Since objects are integrated with the info framework, you can add object entries
 
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)
 * [Displaying Object Entries with Collections](./displaying-object-entries/displaying-object-entries-with-collection-providers.md)
-* [About Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [About Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages.md)
 * [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md)

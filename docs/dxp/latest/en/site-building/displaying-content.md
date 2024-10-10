@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./displaying-content/using-collections.md
+  - ./displaying-content/collections-and-collection-pages.md
   - ./displaying-content/using-the-asset-publisher-widget.md
   - ./displaying-content/defining-content-relationships.md
   - ./displaying-content/using-display-page-templates.md
@@ -31,7 +31,7 @@ You can display content in various ways. The option you choose depends on the ty
 
 ## Collection Display Fragment
 
-The Collection Display fragment displays a single [collection](./displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) of assets. This fragment gives you all the flexibility of collections, which can manually or dynamically include assets (from one or multiple asset types). Read [Displaying Collections](./displaying-content/collections-and-collection-pages/displaying-collections.md) to learn more.
+The Collection Display fragment displays a single [collection](./displaying-content/collections-and-collection-pages.md) of assets. This fragment gives you all the flexibility of collections, which can manually or dynamically include assets (from one or multiple asset types). Read [Displaying Collections](./displaying-content/collections-and-collection-pages/displaying-collections.md) to learn more.
 
 ## Web Content Display Widget
 

@@ -23,7 +23,7 @@ When you publish an object definition, Liferay creates a [collection provider](.
 1. Create a new [content page](../../../site-building/creating-pages/using-content-pages.md) or [display page template](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md). Alternatively, begin editing ( ![Edit Button](../../../images/icon-edit-pencil.png) ) an existing one.
 
    !!! note
-       You can also create a collection page using the collection provider. See [Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
+       You can also create a collection page using the collection provider. See [Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages.md) for more information.
 
 1. Drag and drop the *Collection Display* fragment into the page or template from the Fragments and Widgets (![Fragments and Widgets](../../../images/icon-plus.png)) sidebar.
 
@@ -98,6 +98,6 @@ Now you can embed fragments in the new collection display and map them to fields
 
 - [Creating Objects](../creating-and-managing-objects/creating-objects.md)
 - [Displaying Object Entries](../displaying-object-entries.md)
-- [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
+- [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages.md)
 - [Collection Providers](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md)
 - [Defining Object Relationships](../creating-and-managing-objects/relationships/defining-object-relationships.md)

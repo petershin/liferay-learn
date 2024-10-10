@@ -169,4 +169,4 @@ Next Up: [Displaying Clarity's Content](./displaying-claritys-content.md)
 See official documentation to learn more about Liferay's content organization features:
 
 * [Tags and Categories](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories)
-* [Using Collections](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-collections)
+* [Collections and Collection Pages](https://learn.liferay.com/w/dxp/site-building/displaying-content/collections-and-collection-pages)

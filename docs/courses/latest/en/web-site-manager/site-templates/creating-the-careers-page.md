@@ -64,6 +64,6 @@ Next: [create the menu navigation and use your site template to generate another
 ## Relevant Concepts
 
 - [Web Content](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content)
-- [Using Collections](https://learn.liferay.com/web/guest/w/dxp/site-building/displaying-content/using-collections)
+- [Collections and Collection Pages](https://learn.liferay.com/web/guest/w/dxp/site-building/displaying-content/collections-and-collection-pages)
 - [Using Display Page Templates](https://learn.liferay.com/web/guest/w/dxp/site-building/displaying-content/using-display-page-templates)
 - [Using Multiple Display Page Templates to Create Multi-Step Applications](https://learn.liferay.com/web/guest/w/dxp/site-building/displaying-content/using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications)

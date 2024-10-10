@@ -49,4 +49,4 @@ The Link to URL option adds a link to the provided URL. This can be an external 
 
 ## Collection Pages
 
-Collection pages are linked to a collection. These pages simplify the process of displaying and personalizing collections. See [Displaying Collections](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections) for more information.
+Collection pages are linked to a collection. These pages simplify the process of displaying and personalizing collections. See [Displaying Collections](../../../site-building/displaying-content/collections-and-collection-pages.md#displaying-collections) for more information.

@@ -40,7 +40,7 @@ The easiest way to configure an Asset Publisher to display the desired assets is
 You can configure the Asset Publisher widget to select assets dynamically based on specific criteria, or manually, specifying exactly what assets to display. You can also display assets from [collections](../../../site-building/displaying-content/collections-and-collection-pages.md).
 
 !!! note
-    On Liferay 7.2 and below, collections are referred to as [content sets](../../../site-building/displaying-content/collections-and-collection-pages.md#liferay-dxp-7-2).
+    On Liferay 7.2 and below, collections are referred to as [content sets](../collections-and-collection-pages/collections-and-collection-pages-for-liferay-72-and-earlier-versions.md).
 
 1. Create a [new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) or [edit an existing one](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
 

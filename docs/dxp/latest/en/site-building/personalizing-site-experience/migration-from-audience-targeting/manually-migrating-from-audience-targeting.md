@@ -39,7 +39,7 @@ With Audience Targeting, you could display personalized content using the User S
 | Asset Publisher Personalization | [Dynamic Content Sets](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection)              |
 
 !!! note
-    For users on Liferay 7.2, Collections are referred to as [Content Sets](../../../site-building/displaying-content/collections-and-collection-pages.md#liferay-dxp-7-2).
+    For users on Liferay 7.2, Collections are referred to as [Content Sets](../../displaying-content/collections-and-collection-pages/collections-and-collection-pages-for-liferay-72-and-earlier-versions.md).
 
 Whether you use Content Sets or Collections, you can personalize the content using [Personalized Variations](../experience-personalization/personalizing-collections.md).
 

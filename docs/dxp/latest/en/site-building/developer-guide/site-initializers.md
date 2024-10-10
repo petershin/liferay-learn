@@ -56,7 +56,7 @@ These asset types use more than a single JSON file when you include them:
 * *Segment experiences* can include a page (with a `page.json` file) and the page definition (in a `page-definition.json` file) in a folder with the same name as the segment experience's JSON file. You can also include child pages in subfolders.
 * *Style books* include a separate JSON file for the style book tokens (in a `frontend-tokens-values.json` file) and a separate image file for a thumbnail (e.g., `thumbnail.png`).
 * *Pages*, *page templates*, and *utility pages* all require a separate JSON file with the page definition (`page-definition.json`).
-* *Vocabularies* may include their contained categories and subcategories in the desired hierarchy (by adding the child categories in a folder named after the parent).
+* *Vocabularies* may include their contained categories and subcategories in the desired hierarchy (by adding the child categories in a folder named after the parent). Categories *must* be within their containing vocabularies.
 * *Web content (journal) articles* require a separate XML file (with the same name as the JSON file) with the article contents. You can also nest them in a desired hierarchy of web content folders, by including a JSON file with the folder's metadata alongside the folder (e.g., `[folder name].metadata.json`), instead of putting them in a folder for each article.
 * *Workflow definitions* require a separate XML file (with the same name as the JSON file) with the workflow definition itself, and a separate JSON file for any properties (`workflow-definition.properties.json`).
 
@@ -74,7 +74,7 @@ There are also these exceptions to the above rules:
 
 The most important information needed for most asset types is the JSON data. The quickest way to get the correct data is to create it in another Liferay instance, but the correct method to retrieve it depends on the asset type. You must examine Liferay's source code to determine how to get it for each type.
 
-1. For the type of asset or content you want to add, go to the [`liferay-portal` source code repository](https://github.com/liferay/liferay-portal/tree/master) and use the *Go to file* search field to determine the correct `Initializer` class for your asset type: `BundleSiteInitializer`, `CommerceSiteInitializer`, or `OSBSiteInitializer`.
+1. For the type of asset or content you want to add, go to the [`liferay-portal` source code repository](https://github.com/liferay/liferay-portal/tree/master) and search for the correct `Initializer` class for your asset type: `BundleSiteInitializer`, `CommerceSiteInitializer`, or `OSBSiteInitializer`.
 
     The `Initializer` class should have an `_add*` or `_addOrUpdate*` method with the name of your asset. Remember that the asset names in the code follow the names used in the database (e.g., "journal article" instead of "web content article", or "layout" instead of "page"). If none of these `Initializer` classes have the desired asset type, it is not supported as part of a site initializer.
 
@@ -82,7 +82,7 @@ The most important information needed for most asset types is the JSON data. The
 
     * `toDTO`: If the method includes a call to a `toDTO` method, find the corresponding REST API endpoint (at `[your domain]/o/api`) and download the asset using a `get` method there to get usable JSON data. You must identify the asset in its database table if the API requires fetching it by ID.
 
-    * If the method instead includes a call to `[AssetName]Importer.import*` (e.g., `layoutsImporter.importFile`), download the related data using the [export/import center](../../headless-delivery/consuming-apis/data-migration-center.md). You must enable the feature flag to enable the export/import center for this.
+    * If the method instead includes a call to `[AssetName]Importer.import*` (e.g., `layoutsImporter.importFile`), download the related data using the [export/import center](../../headless-delivery/consuming-apis/data-migration-center.md) or via the *Export* option on the content's page in the site menu. You must enable the feature flag to enable the export/import center.
 
 !!! warning
     The batch framework's export/import center is a [feature under development](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags). Never enable a dev feature flag in production.
@@ -100,6 +100,35 @@ Follow these steps to adjust the data:
 1. If one or more of the fields contains data that is required in a separate file (such as the body of an email notification), remove that field in favor of the other file.
 
 1. If the asset has an external reference code, change it to a new, unique value.
+
+### Replacement Tokens
+
+You can use replacement tokens to set field values for your assets that is specific to each deployment (such as the site ID). Use any of these token values as a substitute for values specific to your site:
+
+* `[$COMPANY_ID$]`
+* `[$GROUP_FRIENDLY_URL$]`
+* `[$GROUP_ID$]`
+* `[$GROUP_KEY$]`
+* `[$PORTAL_URL$]`
+
+These tokens convert into a string value (including quotation marks) in the JSON when the site initializer is deployed.
+
+!!! tip
+    You can also use any of these tokens with the `#` symbol instead (e.g., `[#GROUP_ID#]`) to represent the value without quotation marks (for example, when you need only the numeric value).
+
+You can also use replacement tokens to represent other asset IDs that are not generated until deployment. For example, you can use this JSON to set an `objectDefinitionId` field using the `ObjectDefinition1` asset's ID once it's generated:
+
+```
+"objectDefinitionId": "[$OBJECT_DEFINITION_ID:ObjectDefinition1$]"
+```
+
+!!! warning
+    Coordinating different asset types in your site requires knowledge of their relationships in Liferay's database. Thoroughly test any changes to your JSON data before deploying it to a production instance.
+
+Both of these formats are supported for this kind of replacement token:
+
+* `[$FIELD_NAME:AssetName$]`: This sets the given field's value to the ID for the asset with a matching `name` field.
+* `[$FIELD_NAME:path/to/file/filename$]`: This sets the given field's value to the ID for the asset at the provided file path. (The path should start at client extension's folder, with `/site-initializer/`). Use this format when the necessary asset may not have a unique `name`.
 
 ## Deploying a Site Initializer
 

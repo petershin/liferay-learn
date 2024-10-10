@@ -1,6 +1,7 @@
 ---
 toc:
   - ./developer-guide/developing-page-fragments.md
+  - ./developer-guide/site-initializers.md
   - ./developer-guide/reference.md
 taxonomy-category-names:
 - Development and Tooling

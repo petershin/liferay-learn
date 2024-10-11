@@ -16,13 +16,9 @@ In Liferay, you can manage orders and subscriptions under the Global Application
 
 1. Select an order.
 
-1. Click _Pending_. This moves the order into the pending status.
-
-    ![Open the Orders application.](./managing-subscriptions/images/07.png)
-
 1. Click _Accept Order_. This moves the order into the processing status.
 
-    ![Accept the order.](./managing-subscriptions/images/02.png)
+    ![Accept the order.](./managing-subscriptions/images/01.png)
 
 1. After accepting the subscription order, it appears in the [Subscriptions application](./subscription-administration-reference-guide.md).
 
@@ -34,13 +30,13 @@ In Liferay, you can manage orders and subscriptions under the Global Application
 
 1. You can make changes to either the payment or delivery options in the _General_ tab. For example, change the _Next Iteration Date_ under Delivery Subscription to an earlier date.
 
-    ![You can change the next delivery date.](./managing-subscriptions/images/04.png)
+    ![You can change the next delivery date.](./managing-subscriptions/images/02.png)
 
 1. Click _Save_.
 
 ## Suspending or Cancelling a Subscription Order
 
-1. On the _General_ tab, select _Suspended_ or _Cancelled_ from the _Status_ dropdown menu in the _Payment Subscription_ section.
+1. On the _General_ tab, select _Suspended_ or _Cancelled_ from the _Status_ drop-down menu in the _Payment Subscription_ section.
 
 1. Switch the _Never Ends_ toggle to _NO_.
 
@@ -48,9 +44,9 @@ In Liferay, you can manage orders and subscriptions under the Global Application
 
 1. Next, scroll down to the _Delivery Subscription_ section.
 
-1. Select _Suspended_ or _Cancelled_ from the _Status_ dropdown menu.
+1. Select _Suspended_ or _Cancelled_ from the _Status_ drop-down menu.
 
-    ![You can suspend or cancel a subscription order.](./managing-subscriptions/images/08.png)
+    ![You can suspend or cancel a subscription order.](./managing-subscriptions/images/03.png)
 
 1. Switch the _Never Ends_ toggle to _NO_.
 
@@ -62,13 +58,13 @@ In Liferay, you can manage orders and subscriptions under the Global Application
 
 1. Go to _Shipments_. From here, store managers can track the shipment status of a subscription.
 
-    ![You can track the shipment status of a subscription.](managing-subscriptions/images/05.png)
+    ![You can track the shipment status of a subscription.](managing-subscriptions/images/04.png)
 
 ## Tracking Payment History
 
 1. Go to _Payments_. From here, store managers can track the payment history of a subscription.
 
-    ![You can track the payment history.](managing-subscriptions/images/06.png)
+    ![You can track the payment history.](managing-subscriptions/images/05.png)
 
 ## Configuring Subscriptions
 
@@ -94,7 +90,7 @@ For Commerce 2.1 and below, orders and subscriptions appear in the _Control Pane
 
 1. Click on the _Open_ tab.
 
-    ![Orders Open tab](./managing-subscriptions/images/01.png)
+    ![Go to the Open tab](./managing-subscriptions/images/06.png)
 
 1. Click on the _Order ID_ to begin.
 
@@ -104,7 +100,7 @@ For Commerce 2.1 and below, orders and subscriptions appear in the _Control Pane
 
 1. Click the _Accept Order_ button. This moves the order into the Processing status.
 
-    ![Orders Accept Order](./managing-subscriptions/images/02.png)
+    ![Orders Accept Order](./managing-subscriptions/images/08.png)
 
 1. Once the subscription order has been accepted, follow the steps to create a shipment. See [Creating a Shipment](../shipments/creating-a-shipment.md) to learn more.
 

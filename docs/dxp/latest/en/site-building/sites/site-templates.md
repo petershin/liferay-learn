@@ -4,6 +4,7 @@ toc:
   - ./site-templates/propagating-template-changes.md
   - ./site-templates/configuring-site-template-propagation.md
   - ./site-templates/exporting-importing-site-templates.md
+  - ./site-templates/handling-friendly-url-conflicts-in-site-templates.md
 taxonomy-category-names:
 - Sites
 - Site Administration

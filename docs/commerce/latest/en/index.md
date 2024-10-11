@@ -57,6 +57,7 @@ uuid: 7e5ff1c5-105e-4021-8b5f-98b7e12ae3f5
 :::{grid-item-card} Pricing
 :link: ./pricing.md
 
+[Pricing Engine Overview](./pricing/pricing-engine-overview.md)
 [Introduction to Discounts](./pricing/promoting-products/introduction-to-discounts.md)
 [Creating a Discount](./pricing/promoting-products/creating-a-discount.md)
 :::

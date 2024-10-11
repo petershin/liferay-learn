@@ -9,46 +9,35 @@ taxonomy-category-names:
 ---
 # Store Setup Overview
 
-## Introduction
-
-This is a walk through for users who are new to building a store in Liferay Commerce. It assumes that Liferay Commerce (and Liferay DXP) have been appropriately installed and configured. For more information on installation, see the [Installation Overview](../installation-and-upgrades.md).
-
-## Road Map
-
-- [Store Setup](#store-setup)
-- [Creating the Storefront](#creating-the-storefront)
-- [Managing Customer Accounts](#managing-customer-accounts)
-- [Managing Orders and Shipments](#managing-orders-and-shipments)
+Initial store setup uses the [admin account](./introduction-to-the-admin-account.md). Read the [Liferay Commerce Configuration Overview](../store-management/liferay-commerce-configuration-overview.md) familiarize yourself with the Liferay Commerce configuration layout and available options.
 
 ## Store Setup
 
 !!! note
-    An [Accelerator](../starting-a-store/accelerators.md) may be used to create the store site. Using an Accelerator to create the store site configures many of the settings mentioned here. See [Using the Minium Accelerator to Jump Start Your B2B Store](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) for further details.
-
-Initial store setup is done with the [Admin account](./introduction-to-the-admin-account.md). Read the [Liferay Commerce Configuration Overview](../store-management/liferay-commerce-configuration-overview.md) to become more familiar with the Liferay Commerce configuration layout and available options.
+    You can use an [accelerator](../starting-a-store/accelerators.md) to create the storefront. Using an accelerator configures many of the settings mentioned here. See [Using the Minium Accelerator to Jump Start Your B2B Store](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) for further details.
 
 ### Configure Global Commerce Settings
 
-Global configurations for Liferay Commerce include setting the store timezone, available languages, adding regions and region specific measurement units, and more. Learn more from the following articles:
+Global commerce configurations for Liferay include setting the store timezone, available languages, adding regions and region specific measurement units, and more.
 
 - [Setting Locale Options](../store-management/locale-options.md)
 - [Adding Regions](../store-management/configuring-countries-and-regions.md#adding-regions)
 - [Setting up Warehouses](../inventory-management/warehouse-reference-guide.md)
 - [Creating Channels](../store-management/channels.md)
 
-### Create a Store Site
+### Create a Storefront
 
-Liferay Commerce supports B2B, B2C, and B2C-B2B stores. [Site Types](../starting-a-store/sites-and-site-types.md) designate a store's business model and will determine how the storefront works with Accounts.
+Liferay supports B2B, B2C, and B2C-B2B stores. [Site Types](../starting-a-store/sites-and-site-types.md) designate a store's business model and determines how the storefront works with accounts.
 
-Liferay Commerce is built on Liferay DXP; For more information about how Liferay DXP Sites work, see [Building a Site](https://learn.liferay.com/w/dxp/site-building/sites/adding-a-site).
+Liferay Commerce is built on Liferay DXP. For more information about how Liferay DXP sites work, see [Building a Site](https://learn.liferay.com/w/dxp/site-building/sites/adding-a-site).
 
-### Configure Store Site Commerce Settings
+### Configure Storefront Settings
 
-The following sections cover configurations that are store site specific.
+The following sections cover configurations that are storefront specific.
 
 #### Accepting Payment
 
-Liferay Commerce provides support for several third party payment processors and also allows for the use of money orders to accept payment. See:
+Liferay provides support for several third party payment processors and also allows for the use of money orders to accept payment. See:
 
 - [Payments](../store-management/configuring-payment-methods.md)
 - [Managing Payment Methods](../store-management/configuring-payment-methods/managing-payment-methods.md)
@@ -59,7 +48,7 @@ Liferay Commerce provides support for several third party payment processors and
 
 #### Collecting Applicable Taxes
 
-To collect the applicable taxes, Liferay Commerce has the ability to create tax categories and to set tax rates by address or by a fixed rate.
+To collect the applicable taxes, Liferay has the ability to create tax categories and to set tax rates by address or by a fixed rate.
 
 - [Creating Tax Categories](../pricing/configuring-taxes/creating-tax-categories.md)
 - [Setting Rates for Tax Calculations](../pricing/configuring-taxes/setting-rates-for-tax-calculations.md)
@@ -67,7 +56,7 @@ To collect the applicable taxes, Liferay Commerce has the ability to create tax 
 
 #### Shipping Products
 
-Liferay Commerce has several options to calculate shipping rates.
+Liferay has several options to calculate shipping rates.
 
 - [Shipping Methods](../store-management/configuring-shipping-methods.md)
 - [Variable Rate](../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
@@ -79,11 +68,11 @@ After setting up the store, begin [creating a new catalog](../product-management
 
 ### Adding Products to a Catalog
 
-When adding a product, there are three product types: **Simple**, **Grouped**, and **Virtual**. See the [Introduction to Product Types](../product-management/creating-and-managing-products/product-types.md) for more information.
+When adding a product, there are three product types: **Simple**, **Grouped**, and **Virtual**. See [Introduction to Product Types](../product-management/creating-and-managing-products/product-types.md) for more information.
 
 #### Adding Product Information
 
-The Liferay Commerce Catalog supports storing and managing a wide variety of product information. The following articles cover some of the available options:
+Liferay supports storing and managing a wide variety of product information using catalogs. See below to learn more about the product information management capabilities of Liferay.
 
 - [Product Options](../product-management/creating-and-managing-products/products/using-product-options.md)
 - [Product Specifications](../product-management/creating-and-managing-products/products/specifications.md)
@@ -107,13 +96,13 @@ There are several ways to price products and these methods are related to one an
 
 ## Creating the Storefront
 
-Building a store in Liferay Commerce requires more than a complete catalog. Store administrators building a storefront from scratch must add a series of pages to display and sell their products.
+Building a store in Liferay requires more than a complete catalog. You must add a series of pages to display and sell your products.
 
 See [Creating Store Content](../creating-store-content/creating-store-content.md) to learn more.
 
 ## Managing Customer Accounts
 
-To learn more about how accounts, inviting users accounts, account roles, and more, read the following articles:
+To learn more about how accounts, inviting users accounts, account roles, and more, see below:
 
 - [Introduction to Accounts](../users-and-accounts/account-management.md)
 - [Creating a New Account](../users-and-accounts/account-management/creating-a-new-account.md)
@@ -124,9 +113,9 @@ To learn more about how accounts, inviting users accounts, account roles, and mo
 
 ## Managing Orders and Shipments
 
-When an order has been received, the order may be transmitted to an ERP and optionally to a CRM. Once the requested goods are available for shipping, the store's inventory specialists may track the shipment. See the following articles to learn about the life cycle of an order and the shipment processes.
+After receiving an order, you can send it to an ERP and optionally to a CRM. Once the requested goods are available for shipping, your inventory manager may track the shipment. See below to learn about the life cycle of an order and a shipment.
 
 - [Order Life Cycle](../order-management/orders/order-life-cycle.md)
-- [Shipments](../order-management/shipments.md)
+- [Shipment Lifecycle Overview](../order-management/shipments/shipment-lifecycle-overview.md)
 - [Creating a shipment](../order-management/shipments/creating-a-shipment.md)
 - [Canceling a Shipment](../order-management/shipments/cancelling-a-shipment.md)

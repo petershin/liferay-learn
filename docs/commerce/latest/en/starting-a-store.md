@@ -14,3 +14,12 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Starting a Store
+
+You can use this road map as a starting point to build a storefront using Liferay Commerce.
+
+## Road Map
+
+- [Store Setup](./starting-a-store/store-setup-overview.md#store-setup)
+- [Creating the Storefront](./starting-a-store/store-setup-overview.md#creating-the-storefront)
+- [Managing Customer Accounts](./starting-a-store/store-setup-overview.md#managing-customer-accounts)
+- [Managing Orders and Shipments](./starting-a-store/store-setup-overview.md#managing-orders-and-shipments)

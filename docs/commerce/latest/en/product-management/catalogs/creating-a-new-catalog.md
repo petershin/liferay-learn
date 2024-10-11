@@ -40,4 +40,4 @@ taxonomy-category-names:
 ## Related Topics
 
 * [Locale Options](../../store-management/locale-options.md)
-* [Adding a New Currency](../../store-management/currencies/adding-a-new-currency.md)
+* [Currencies](../../store-management/currencies.md)

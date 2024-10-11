@@ -63,6 +63,6 @@ To use [subscriptions](../../order-management/subscriptions/managing-subscriptio
 
 ## Related Topics
 
-* [Adding a New Currency](../currencies/adding-a-new-currency.md)
+* [Currencies](../currencies.md)
 * [Authorize.net](./authorize-net.md)
 * [Mercanet](./mercanet.md)

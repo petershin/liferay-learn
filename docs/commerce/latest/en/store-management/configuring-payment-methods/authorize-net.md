@@ -80,6 +80,6 @@ Once finished, Authorize.Net is now enabled.
 
 ## Related Topics
 
-* [Adding a New Currency](../currencies/adding-a-new-currency.md)
+* [Currencies](../currencies.md)
 * [Mercanet](./mercanet.md)
 * [PayPal](./paypal.md)

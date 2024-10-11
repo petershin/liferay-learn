@@ -17,4 +17,16 @@ taxonomy-category-names:
 ---
 
 # Roles and Permissions
-<!--Introduction needed. It is recommended to use the already existing articles. Markdown removed, since children cards are automatically added.-->
+
+To get things done in Liferay DXP, [users](./users.md) must have the proper permissions. Roles join users with permissions. Most administrative work for roles and permissions is done in *Control Panel* &rarr; *Users* &rarr; *Roles*.
+
+![Manage roles from the Control Panel.](./roles-and-permissions/images/01.png)
+
+To skip straight to creating roles and assigning users, see
+
+- [Role Creation and Management](./roles-and-permissions/creating-and-managing-roles.md)
+- [Defining Role Permissions](./roles-and-permissions/defining-role-permissions.md)
+- [Assigning Users to Roles](./roles-and-permissions/assigning-users-to-roles.md)
+
+!!! note
+    [Site Teams](../site-building/sites/site-membership/creating-teams-for-sites.md) have a dedicated permissions management User Interface.

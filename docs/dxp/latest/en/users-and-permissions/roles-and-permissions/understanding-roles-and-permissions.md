@@ -9,22 +9,9 @@ taxonomy-category-names:
 ---
 # Understanding Roles and Permissions
 
-To get things done in Liferay DXP, [Users](../users.md) must have the proper permissions. Roles join users with permissions. Most administrative work for roles and permissions is done in *Control Panel* &rarr; *Users* &rarr; *Roles*.
-
-![Manage roles from the Control Panel.](./understanding-roles-and-permissions/images/03.png)
-
-To skip straight to creating roles and assigning users, see
-
-- [Role Creation and Management](./creating-and-managing-roles.md)
-- [Defining Role Permissions](./defining-role-permissions.md)
-- [Assigning Users to Roles](./assigning-users-to-roles.md)
-
-!!! note
-    [Site Teams](../../site-building/sites/site-membership/creating-teams-for-sites.md) have a dedicated permissions management User Interface.
+To give users the necessary permissions to perform their intended function within Liferay DXP, you must first associate the set of permissions with a role.
 
 ## Roles and Scope
-
-To give users the necessary permissions to perform their intended function within Liferay DXP, you must first associate the set of permissions with a role.
 
 Using a *Message Boards Admin* role and a user *Jane Slaughter* as an example, here are the steps you might follow:
 

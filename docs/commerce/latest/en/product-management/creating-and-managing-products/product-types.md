@@ -17,7 +17,7 @@ taxonomy-category-names:
 
 # Product Types
 
-Commerce Catalogs provide four out-of-the-box product types: Simple, Grouped, Virtual, and Diagram.
+Liferay provides four product types out-of-the-box: Simple, Grouped, Virtual, and Diagram.
 
 **[Simple product](./product-types/creating-a-simple-product.md)**: Any physical product for which inventory is tracked.
 

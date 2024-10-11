@@ -19,4 +19,4 @@ taxonomy-category-names:
 ---
 # Developer Guide
 
-
+You can invoke the services under [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) to perform various admin operations related to products. However, if you have a headless storefront, you must use the services under [headless-commerce-delivery-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-delivery-catalog/v1.0/openapi.json).

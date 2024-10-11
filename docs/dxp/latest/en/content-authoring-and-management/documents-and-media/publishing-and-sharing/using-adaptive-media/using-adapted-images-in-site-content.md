@@ -10,7 +10,7 @@ uuid: 949e8979-f069-4304-81d1-708d8b741e3d
 
 # Using Adapted Images in Site Content
 
-Adaptive Media operates in the background to create multiple resolutions for images uploaded to Liferay DXP. When used in Blogs, Web Content, or Content Pages, it automatically selects the best resolution based on the target screen size. Understanding how to include these adapted images in your content is essential for optimizing performance.
+Adaptive Media operates in the background to create multiple resolutions for images uploaded to Liferay DXP. When used in blogs, web content, or content pages, it automatically selects the best resolution based on the target screen size. Understanding how to include these adapted images in your content is essential for optimizing performance.
 
 Each adapted image is identified in the HTML with a `data-fileentryid` attribute, which updates to the latest adapted image upon viewing the content. This ensures that even previously created content displays the most current adapted images.
 
@@ -53,7 +53,7 @@ This example uses three different images, each with a different resolution. A `s
 
 To use adapted images in [structured web content](../../../web-content/web-content-structures/creating-structures.md), content creators must manually include an image field in the web content's structure. Then they can reference that image field in the matching template by selecting it on the left side of the editor. Here's an example snippet of an image field named `Imagecrrf` included in a template:
 
-```markup
+```html
 <#if Imagecrrf.getData()?? && Imagecrrf.getData() !="">
    <img data-fileentryid="${Imagecrrf.getAttribute("fileEntryId")}" alt="${Imagecrrf.getAttribute("alt")}" src="${Imagecrrf.getData()}" />
 </#if>

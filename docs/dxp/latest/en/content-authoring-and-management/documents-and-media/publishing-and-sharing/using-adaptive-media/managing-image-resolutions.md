@@ -22,7 +22,7 @@ If you've uploaded images before adding or enabling resolutions, you must manual
 
 ![The percentage of adapted images appears in the application table.](./managing-image-resolutions/images/01.png)
 
-To manually generate images for a resolution,
+To generate images for a resolution manually,
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Adaptive Media*.
 
@@ -54,7 +54,7 @@ If you upload images and later re-enable a resolution, you must [manually genera
 
 ## Deleting Image Resolutions
 
-If you must delete an Image Resolution, you must first disable it. You cannot delete enabled resolutions. This prevents the accidental deletion of image resolutions.
+If you must delete an image resolution, you must first disable it. You cannot delete enabled resolutions. This prevents the accidental deletion of image resolutions.
 
 !!! warning
     Be careful when deleting image resolutions. Once deleted, the resolution's adapted images are irretrievably lost and are not replaced automatically by new image resolutions you create.

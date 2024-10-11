@@ -7,61 +7,53 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Introduction to Pricing
-
-Liferay provides a robust pricing system to fine-tune product prices. You can define multiple price entries for a single product SKU and determine which accounts, account groups, and channels are eligible to receive each price. If multiple price entities exist for the same SKU, the Commerce pricing engine calculates which entities should be used for each channel customer.
-
-{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` If you have a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, you can define multiple price entries for each unit of measure and determine the same eligibility criteria as with regular SKUs.
-
-```{note}
-The following overview describes Commerce Pricing Engine v2.0+. This is the default pricing algorithm used for Commerce 3.0+ and Portal/DXP 7.3+. Commerce 2.1.x and earlier versions use [Pricing Engine v1.0](#pricing-engine-v1-0-reference) by default. If desired, you can [change the pricing engine version](#enabling-pricing-engine-v2-0-in-commerce-2-1-x) used for the instance.
-```
-
-## Components of Commerce's Pricing System
+# Pricing Engine Overview
 
 Catalogs contain products, and each catalog has its own default [base price list](#base-price-list) and [base promotion list](#base-promotion-list). These lists store base price entries for all product SKUs in the catalog and are available to all customers. You can also create custom [price lists](#price-lists) and [promotion lists](#promotion-lists) to define more targeted and configurable price entities. As part of each entry, you can also define [price tiers](#price-tiers) that set special prices for products based on quantity. Finally, [discounts](#discounts) are applied on top of price entries without overriding them.
 
+!!! note
+    The following overview describes Commerce Pricing Engine v2.0. This is the default pricing algorithm used for Commerce 3.0+ and Portal/DXP 7.3+. Commerce 2.1.x. Earlier versions use [Pricing Engine v1.0](#pricing-engine-v1-0-reference) by default. If desired, you can [change the pricing engine version](#enabling-pricing-engine-v20-in-commerce-21x) used for the instance.
+
 {bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` If you have a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, you have entries for each unit in the base price list, base promotion list, custom price lists, and custom promotion lists. 
 
-![The base price list also stores the starting price for every unit configured for an SKU.](./introduction-to-pricing/images/09.png)
+![The base price list also stores the starting price for every unit configured for an SKU.](./pricing-engine-overview/images/09.png)
 
-### Base Price List
+## Base Price List
 
 The base price list stores the starting price for every product SKU in a catalog. These entries set the standard currency and price used for each SKU when no overrides are applied to it. This list is automatically created for every catalog and is available to all accounts and channels. See [Setting a Product's Base Price](./setting-a-products-base-price.md) to learn more.
 
-![The base price list stores the starting price entry for every product SKU in a catalog.](./introduction-to-pricing/images/02.png)
+![The base price list stores the starting price entry for every product SKU in a catalog.](./pricing-engine-overview/images/02.png)
 
-### Base Promotion List
+## Base Promotion List
 
 The base promotion list stores base promotional price entries for all product SKUs in a catalog. When applied to an SKU, the base promotional price entry overrides its base price for all customers. This list is automatically created for every catalog and is available to all accounts and channels. See [Promotion Base List Reference](./promoting-products/promotions-reference.md) for more information.
 
-![The base promotion list stores base promotional price entries for all product SKUs in a catalog.](./introduction-to-pricing/images/03.png)
+![The base promotion list stores base promotional price entries for all product SKUs in a catalog.](./pricing-engine-overview/images/03.png)
 
-### Price Lists
+## Price Lists
 
 Custom price lists store price entries for specific products and are available only to eligible customers. These lists can use a different currency from the base price list and can include all or only some of a catalog's products. A custom price list entry override an SKU's base price for eligible customers. You can also define [Price Modifiers](./using-price-modifiers.md) to modify specific price entries. See [Creating a Price List](./creating-a-price-list.md) for more information.
 
-![Use custom price lists to store more targeted price entries.](./introduction-to-pricing/images/04.png)
+![Use custom price lists to store more targeted price entries.](./pricing-engine-overview/images/04.png)
 
-### Promotion Lists
+## Promotion Lists
 
 Custom promotion lists store promotion price entries for specific products and are available only to eligible customers. These lists can use a different currency from the base price list and include all or only some of a catalog's products. When applied, they override other price entries of an SKU (e.g., base prices, tiered prices) for eligible users. In these lists, you can also define [Price Modifiers](./using-price-modifiers.md) to modify specific price entries. While active, both the original price and promotional price appear together on the Product page so that buyers see the markdown. See [Creating a Promotion](./promoting-products/creating-a-promotion.md) for more information.
 
-![Use custom promotion lists to store targeted promotion price entries.](./introduction-to-pricing/images/05.png)
+![Use custom promotion lists to store targeted promotion price entries.](./pricing-engine-overview/images/05.png)
 
-```{note}
-Prior to Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
-```
+!!! note
+    Prior to Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
 
-### Price Tiers
+## Price Tiers
 
 Price tiers are set directly within a price entry and define specific prices for orders that meet minimum quantity requirements. These prices are displayed to customers as discounted order options. See [Using Price Tiers](./using-price-tiers.md) for more information.
 
-### Discounts
+## Discounts
 
 Discounts are applied on top of the price and modify it without superseding it. They can be defined within an existing price entry, or created as separate entities and used to target products, product groups, categories, shipping costs, subtotals, or totals. See [Introduction to Discounts](./promoting-products/introduction-to-discounts.md) to learn more.
 
-![Discounts are applied on top of the price and modify it without superseding it.](./introduction-to-pricing/images/06.png)
+![Discounts are applied on top of the price and modify it without superseding it.](./pricing-engine-overview/images/06.png)
 
 ## How the Pricing Engine Calculates Product Prices
 
@@ -79,17 +71,15 @@ When calculating an SKU's unit price, the pricing engine searches for eligible c
 
 * If no entry for the SKU exists, the engine uses the SKU's base price and applies modifiers from the highest priority price list. The total is the SKU's unit price.
 
-   ```{note}
-   The engine only searches the highest priority list and does not search for the SKU in lower priority lists. This is to avoid applying prices from different price lists to SKUs in the same catalog.
-   ```
+   !!! note
+       The engine only searches the highest priority list and does not search for the SKU in lower priority lists. This is to avoid applying prices from different price lists to SKUs in the same catalog.
 
 If no eligible custom price list exists, the engine uses the SKU's base price list entry for the unit price.
 
-![The engine searches eligible custom price lists for the SKU.](./introduction-to-pricing/images/07.png)
+![The engine searches eligible custom price lists for the SKU.](./pricing-engine-overview/images/07.png)
 
-```{note}
-During this process, the engine also checks for applicable tier prices. If one exists, its price is used in place of the default list price for specific quantities.
-```
+!!! note
+    During this process, the engine also checks for applicable tier prices. If one exists, its price is used in place of the default list price for specific quantities.
 
 ### Calculating an SKU's Promotion Price
 
@@ -111,23 +101,22 @@ Then, the engine determines the subtotal by adding the final prices of all SKUs 
 
 Finally, the pricing engine adds together the discounted shipping cost and discounted subtotal to get the order's total. Any discounts targeting the total are then applied.
 
-![The engine determines the order's shipping, subtotal, and total.](./introduction-to-pricing/images/08.png)
+![The engine determines the order's shipping, subtotal, and total.](./pricing-engine-overview/images/08.png)
 
 ## Pricing Engine v1.0 Reference
 
-| Pricing Method | Summary | Overrides the Base Price? | Where is it set? | Applies to who? | Applies to what? |
-| :--- | :--- | :---: | :--- | :--- | :---: |
-| Base Price | The base price | n/a | Product SKU | All buyers | Product SKU |
-| Base Promo | Marked down price | Yes | Product SKU | All buyers | Product SKU |
-| Price List (List Price, List Promo) | Special pricing (or currencies) per product and buyer | Yes | Price Lists | Selected buyers (Accounts & Account Groups) | Individual Product SKUs |
-| Tiered Price List (Tiered Price, Tiered Promo) | Special pricing (or currencies) per product and buyer *at bulk quantities* | Yes | Price Lists | Selected buyers (Accounts & Account Groups) | Individual Product SKUs |
-| Discount | Modifies price for a group of products or buyers (Can limit quantity and use coupon codes) | No | Discounts | Selected Buyers (Accounts & Account Groups or those who meet certain qualifications) | Groups of Products (or Individual Product SKUs) |
+| Pricing Method                                 | Summary                                                                                    | Overrides the Base Price? | Where is it set? | Applies to who?                                                                      |                Applies to what?                 |
+| :--------------------------------------------- | :----------------------------------------------------------------------------------------- | :-----------------------: | :--------------- | :----------------------------------------------------------------------------------- | :---------------------------------------------: |
+| Base Price                                     | The base price                                                                             |            n/a            | Product SKU      | All buyers                                                                           |                   Product SKU                   |
+| Base Promo                                     | Marked down price                                                                          |            Yes            | Product SKU      | All buyers                                                                           |                   Product SKU                   |
+| Price List (List Price, List Promo)            | Special pricing (or currencies) per product and buyer                                      |            Yes            | Price Lists      | Selected buyers (Accounts & Account Groups)                                          |             Individual Product SKUs             |
+| Tiered Price List (Tiered Price, Tiered Promo) | Special pricing (or currencies) per product and buyer *at bulk quantities*                 |            Yes            | Price Lists      | Selected buyers (Accounts & Account Groups)                                          |             Individual Product SKUs             |
+| Discount                                       | Modifies price for a group of products or buyers (Can limit quantity and use coupon codes) |            No             | Discounts        | Selected Buyers (Accounts & Account Groups or those who meet certain qualifications) | Groups of Products (or Individual Product SKUs) |
 
-```{note}
-In the Commerce Pricing Engine v1.0, price entries include three components: an SKU, a standard price, and a promotion price. In v2.0, each is a separate entity.
-```
+!!! note
+    In v1.0, price entries include three components: an SKU, a standard price, and a promotion price. In v2.0, each is a separate entity.
 
-![Pricing Hierarchy Diagram](./introduction-to-pricing/images/01.png)
+![Pricing hierarchy in v1.0 of the Commerce Pricing Engine.](./pricing-engine-overview/images/01.png)
 
 ## Enabling Pricing Engine v2.0 in Commerce 2.1.x
 
@@ -135,13 +124,13 @@ By default, Commerce 2.1.x and earlier versions use Commerce Pricing Engine v1.0
 
 1. Open the Control Panel, and go to *System Settings* &rarr; *Commerce* &rarr; *Pricing*.
 
-1. Click on *Commerce Pricing Configuration* in the left panel.
+1. Click *Commerce Pricing Configuration* in the left panel.
 
 1. Replace `v1.0` with `v2.0` in the *Pricing Calculation Key* field.
 
-1. Click on *Save*.
+1. Click *Save*.
 
-Once saved, your instance uses the Pricing Engine v2.0 for all price calculations.
+Your instance now uses Pricing Engine v2.0 for all price calculations.
 
 ## Related Topics
 

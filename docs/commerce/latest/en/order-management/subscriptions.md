@@ -12,3 +12,5 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Subscriptions
+
+Subscriptions are a special type of recurring order managed differently from [regular orders](./orders/processing-an-order.md). All orders, including subscriptions, are accepted and processed in the [Orders Menu](./orders/orders-menu-reference-guide.md). However, after accepting a *Subscription* order, it appears in the [Subscriptions menu](./subscriptions/subscription-administration-reference-guide.md).

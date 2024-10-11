@@ -29,7 +29,7 @@ In addition to these tables and fields, there are other user associated data tha
 
 ## Organizations
 
-Users can belong to different [Organizations](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/understanding-organizations) in Liferay. Organizations can have their own sites as well as their own roles and permissions. Organizations can have sub-organizations under a parent organization. The following organization fields are synced:
+Users can belong to different [Organizations](https://learn.liferay.com/w/dxp/users-and-permissions/organizations) in Liferay. Organizations can have their own sites as well as their own roles and permissions. Organizations can have sub-organizations under a parent organization. The following organization fields are synced:
 
 | Attribute                | Description                                                                       |
 | :----------------------- | :-------------------------------------------------------------------------------- |

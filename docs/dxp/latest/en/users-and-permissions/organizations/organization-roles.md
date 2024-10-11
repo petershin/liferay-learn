@@ -59,7 +59,7 @@ Follow these steps to assign an Organization role to existing Organization Users
 
 ## Related Topics
 
-* [Understanding Organizations](./understanding-organizations.md)
+* [Organizations](./organizations.md)
 * [Creating and Managing Organizations](./creating-and-managing-organizations.md)
 * [Adding Users to Organizations](./adding-users-to-organizations.md)
 * [Organization Sites](./organization-sites.md)

@@ -57,7 +57,7 @@ This creates a new portal User already assigned to the selected Organization and
 
 ## Related Topics
 
-* [Understanding Organizations](./understanding-organizations.md)
+* [Organizations](../organizations.md)
 * [Creating and Managing Organizations](./creating-and-managing-organizations.md)
 * [Organization Roles](./organization-roles.md)
 * [Organization Sites](organization-sites.md)

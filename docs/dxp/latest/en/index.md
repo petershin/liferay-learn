@@ -80,7 +80,7 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 
 [Users](./users-and-permissions/users.md)
 [Understanding Roles and Permissions](./users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
-[Understanding Organizations](./users-and-permissions/organizations/understanding-organizations.md)
+[Organizations](./users-and-permissions/organizations.md)
 :::
 
 :::{grid-item-card} System Administration

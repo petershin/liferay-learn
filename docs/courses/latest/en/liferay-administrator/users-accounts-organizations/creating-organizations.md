@@ -3,7 +3,7 @@ uuid: 471cbdd8-1672-430b-8871-91bebb0665ef
 ---
 # Creating Organizations
 
-Use Liferay to model Clarity Vision Solutions' organizational hierarchy. See [Understanding Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations) to learn more. 
+Use Liferay to model Clarity Vision Solutions' organizational hierarchy. See [Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations) to learn more. 
 
 ## Parent and Child Organizations
 
@@ -102,5 +102,5 @@ Next, you'll import users by [connecting to LDAP](./connecting-to-ldap.md).
 
 ## Relevant Concepts
 
-- [Understanding Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations)
+- [Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations)
 - [Organization Sites](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/organization-sites)

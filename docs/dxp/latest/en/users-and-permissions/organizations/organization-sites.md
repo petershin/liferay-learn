@@ -35,6 +35,6 @@ When you create an Organization Site, your Organization's Users are automaticall
 
 ## Related Topics
 
-* [Understanding Organizations](./understanding-organizations.md)
+* [Organizations](./organizations.md)
 * [Creating and Managing Organizations](./creating-and-managing-organizations.md)
 * [Organization Roles](./organization-roles.md)

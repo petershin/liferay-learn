@@ -43,7 +43,7 @@ Create editable sections, dynamic and reusable fragments for building a site, or
 Provide text, images, links, and HTML code to these editable elements which become the default values for their fields. You may want to display the editable content in the final version of the page, or you may want filler content that should be replaced before publishing the page.
 
 !!! warning
-    Freemarker code in editable fields is executed only once when the fragment is added to the page (to set its default value).
+    FreeMarker code in editable fields is executed only once when the fragment is added to the page (to set its default value).
 
     Avoid using it if you need the value re-evaluated. For example, if you localize a value using `${languageUtil.get(locale,'word')}`, the word is only localized when you add the fragment to the page. The code does not run again even if you change your portal's language.
 
@@ -203,7 +203,7 @@ These are the widgets that can be embedded and their accompanying tags:
 | RSS Publisher              | `<lfr-widget-rss>`               |
 | Iframe                     | `<lfr-widget-iframe>`            |
 
-### Enabling Embedding for Your Widget
+## Enabling Embedding for Your Widget
 
 {bdg-secondary}`Liferay DXP/Portal 7.4+ +U60`
 
@@ -256,7 +256,7 @@ You can localize fragment configuration for a page's target language. For exampl
 
 In the following code excerpt, the button fragment configuration sets the `localizable` attribute to `true` for the `fields` section under `fieldSets`. The `localizable` attribute is set at the field level. In the example, there is only one `buttonType` field. If you have a fragment with multiple fields, you can set the `localizable` attribute for each one:
 
-```markup
+```json
 "fieldSets": [
   {
     "fields": [
@@ -303,7 +303,7 @@ Fragments with the `localizable` attribute that do not specify a custom configur
 
 ## Using Date Fragments
 
-Conforming date formats a locality can be a challenge in many contexts. You can customize and localize date formats using date fragments by including the `data-lfr-editable-id="date-time"` and `data-lfr-editable-type="date-time"` attributes in the fragment. `data-lfr-editable-id` must be a unique ID, like this example:
+Conforming date formats to a locality can be a challenge in many contexts. You can customize and localize date formats using date fragments by including the `data-lfr-editable-id="date-time"` and `data-lfr-editable-type="date-time"` attributes in the fragment. `data-lfr-editable-id` must be a unique ID, like this example:
 
 ```html
 <div data-lfr-editable-type="date-time" data-lfr-editable-id="date-time">
@@ -311,7 +311,7 @@ Conforming date formats a locality can be a challenge in many contexts. You can 
 </div>
 ```
 
-### Date Formats
+## Date Formats
 
 You can choose the most common date formats out-of-the-box or customize your date format following [`SimpleDateFormat`](https://devdocs.io/openjdk~8/java/text/simpledateformat).
 
@@ -328,13 +328,13 @@ If you customize your date format, you can include different date and time patte
 
 Here are some examples:
 
-| Date Format                | How it looks                        |
-|:---------------------------|:------------------------------------|
-| MMMM dd, YYYY. hh:mm a     | August 07, 2023. 11:57 AM           |
-| MM.dd.YY                   | 08.07.23                            |
-| hh 'o''clock' a, zzzz      | 11 o'clock AM, Greenwhich Mean Time |
-| KK:mm a, z                 | 11:57 AM, GMT                       |
-| EEE, d MMM yyyy HH:mm:ss Z | Mon, 7 Aug 2023 11:57:00 +0000      |
+| Date Format                  | How it looks                       |
+|:-----------------------------|:-----------------------------------|
+| `MMMM dd, YYYY. hh:mm a`     | August 07, 2023. 11:57 AM          |
+| `MM.dd.YY`                   | 08.07.23                           |
+| `hh 'o''clock' a, zzzz`      | 11 o'clock AM, Greenwich Mean Time |
+| `KK:mm a, z`                 | 11:57 AM, GMT                      |
+| `EEE, d MMM yyyy HH:mm:ss Z` | Mon, 7 Aug 2023 11:57:00 +0000     |
 
 !!! tip
     You can localize the date format the same way you [localize fragment configuration fields](#localizing-fragment-configurations).
@@ -351,7 +351,7 @@ You can trigger [object actions](../../../../liferay-development/objects/creatin
 
 ## Using JavaScript Variables
 
-When adding JavaScript to a fragment, Liferay makes several pre-defined variables available for you to use, making it easier to manage your fragment’s behavior. Here’s some of the variables you can use:
+When adding JavaScript to a fragment, Liferay makes several pre-defined variables available for you to use, making it easier to manage your fragment’s behavior. Here are some of the variables you can use:
 
 - `fragmentElement` is the root HTML element that contains your fragment. You can use it to access and manipulate the DOM elements within your fragment.
 
@@ -369,7 +369,7 @@ When adding JavaScript to a fragment, Liferay makes several pre-defined variable
    fragmentElement.style.color = textColor;
    ```
 
-- `fragmentEntryLinkNamespace` is a unique string that can be used to identify the fragment within the page, even if there are multiple instances of the same fragment. It's useful when you need to create unique IDs or scopes in your JavaScript.
+- `fragmentEntryLinkNamespace` is a unique string that can be used to identify the fragment within the page, even if there are multiple instances of the same fragment. It's useful when you must create unique IDs or scopes in your JavaScript.
 
    ```javascript
    const uniqueId = `${fragmentEntryLinkNamespace}-button`;
@@ -381,7 +381,7 @@ When adding JavaScript to a fragment, Liferay makes several pre-defined variable
    !!! note
       `fragmentEntryLinkNamespace` was called `fragmentNamespace`, but `fragmentNamespace` has been deprecated. It's still available for compatibility, but you should use `fragmentEntryLinkNamespace` in new code.
 
-- `layoutMode` indicates whether the fragment is being edited or viewed. You can adjust the fragment's behavior based on whether the page is in edit mode (layoutMode === "edit") or being viewed live (layoutMode === "view").
+- `layoutMode` indicates whether the fragment is being edited or viewed. You can adjust the fragment's behavior based on whether the page is in edit mode (`layoutMode === "edit"`) or being viewed live (`layoutMode === "view"`).
 
    ```javascript
    if (layoutMode === 'edit') {

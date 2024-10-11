@@ -10,7 +10,7 @@ uuid: 5db29a70-07cb-44a5-be7d-a8c06ae94401
 
 # Fragment Configuration Types Reference
 
-This reference lists the available configuration types for fragments. See [Adding Configuration Options to Fragments](../../developing-page-fragments/adding-configuration-options-to-fragments.md) for more information on how to make a fragment configurable.
+Below are the available configuration types for fragments. See [Adding Configuration Options to Fragments](../../developing-page-fragments/adding-configuration-options-to-fragments.md) for more on how to make a fragment configurable.
 
 These are the configurable fragment types available to implement:
 
@@ -27,11 +27,11 @@ These are the configurable fragment types available to implement:
 - `navigationMenuSelector` (Available Liferay 7.4+)
 
 !!! note
-    Configuration values inserted into the FreeMarker context honor the defined `datatype` value specified in the JSON file. For example, if the `dataType` is String, `configuration.[name-value]?is_string` is `true`.
+    Configuration values inserted into the FreeMarker context honor the defined `datatype` value specified in the JSON file. For example, if the `dataType` is `String`, `configuration.[name-value]?is_string` is `true`.
 
 ## Text Configuration
 
-This JSON configuration creates an input text field you can implement for cases where you must enter a text option manually:
+This JSON configuration creates an input text field for adding text manually:
 
 ```json
 {
@@ -59,7 +59,7 @@ This JSON configuration creates an input text field you can implement for cases 
 
 ## Select Configuration
 
-This JSON configuration creates a selector you can implement for cases where you must select a predefined option:
+This JSON configuration creates a selector for selecting a predefined option:
 
 ```json
 {
@@ -91,7 +91,7 @@ This JSON configuration creates a selector you can implement for cases where you
 
 ## Checkbox Configuration
 
-This JSON configuration creates a checkbox you can implement for cases where a boolean value selection is necessary:
+This JSON configuration creates a checkbox for selecting Boolean values:
 
 ```json
 {
@@ -111,23 +111,23 @@ This JSON configuration creates a checkbox you can implement for cases where a b
 }
 ```
 
-![The checkbox configuration is useful when a boolean selection is necessary.](./fragment-configuration-types-reference/images/03.png)
+![The checkbox configuration is useful when a Boolean selection is necessary.](./fragment-configuration-types-reference/images/03.png)
 
 ## Color Picker Configuration
 
 {bdg-secondary}`Liferay 7.4+`
 
-The color picker JSON configuration creates a flexible color selector where any color can be selected. You can use any of these methods to select a color:
+The color picker JSON configuration creates a flexible color selector for selecting any color. You can use these methods to select a color:
 
-- Click the color on the left side to open a color picker to choose a color.
+- Click the color on the left side to choose a color from the color picker. 
 
 - Enter a color's hex code into the text box.
 
-- Click the *Value from Stylebook* button to open a menu of pre-defined colors to choose defined in your currently used [style book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). This links the field's value to the selected token, until you press the button again to unlink it. Unlinking the token value converts the chosen color to its equivalent hex code value again.
+- Click *Value from Stylebook* to open a menu of pre-defined colors defined in the current [style book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). This links the field's value to the selected token until you press the button again to unlink it. Unlinking the token value converts the chosen color to its equivalent hex code value again.
 
-- If the color picker has no default value defined, click the *Default* drop-down menu to select any color from your currently used style book. This works the same as the Value from Stylebook button when you select a value.
+- If the color picker has no default value defined, click the *Default* drop-down menu to select any color from the current style book. This works the same as the Value from Stylebook button when you select a value.
 
-![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/04.png)
+![The color picker configuration offers several ways to select colors.](./fragment-configuration-types-reference/images/04.png)
 
 !!! note
     If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/developer-guide/frontend-token-definitions.md), color picker configurations on the page are replaced with [color palette](#color-palette configuration) configurations.
@@ -152,7 +152,7 @@ This JSON configuration creates a color picker field called `headingColor`:
 }
 ```
 
-The `colorPicker` type stores an object holding the chosen color value with the configured name. You can reference this object in your fragment's HTML like this:
+The `colorPicker` type stores an object holding the chosen color value with the configured name. Here's how to reference this object in your fragment's HTML:
 
 ```html
 <div class="fragment_69">
@@ -162,7 +162,7 @@ The `colorPicker` type stores an object holding the chosen color value with the 
 </div>
 ```
 
-When the fragment is rendered, the token `${configuration.OBJECT_NAME}` is replaced with the chosen color. The type of value that it becomes depends on how the color is chosen:
+When the fragment is rendered, the chosen color replaces the token `${configuration.OBJECT_NAME}`. The type of value that it becomes depends on how the color is chosen:
 
 - If you chose a color directly, it is replaced with the corresponding hex code value.
 - If you chose a color from the current style book, it's replaced with a CSS variable for the linked token (for example, `var(--danger)`).
@@ -195,7 +195,7 @@ This JSON sample shows a field using the `length` configuration type. It include
 
 In the user interface, you can choose from the available units or specify a custom unit.
 
-![A field labeled 'Size' from a custom fragment uses the length configuration to show a drop-down of available units.](./fragment-configuration-types-reference/images/05.png)
+![A field labeled Size from a custom fragment uses the length configuration to show a drop-down of available units.](./fragment-configuration-types-reference/images/05.png)
 
 ## Item Selector Configuration
 
@@ -224,7 +224,7 @@ This configuration creates a selector for selecting one existing piece of conten
 
 ![The item selector configuration is useful when an option choice to display existing content is necessary.](./fragment-configuration-types-reference/images/06.png)
 
-You can provide a more advanced configuration that lets authors select only a specific type of content. The configuration below specifies that only web content articles can be selected. The optional `itemSubtype` property specifies that the selected web content article must use the structure `article-structure-key-15` to be selected:
+You can provide a more advanced configuration for selecting only a specific type of content. The configuration below specifies that only web content articles can be selected. The optional `itemSubtype` property requires the selected web content article to use the structure `article-structure-key-15` to be selected:
 
 ```json
 {
@@ -336,7 +336,7 @@ This configuration adds a field specifically for a URL to use in your fragment's
 }
 ```
 
-When you set a fragment with this configuration, you can choose from a drop-down menu to enter a URL manually (`URL`) or to select another page from the same site and use its complete URL (`Page`).
+When you set a fragment with this configuration, you can enter a URL manually (`URL`) or select another page from the same site and use its complete URL (`Page`).
 
 Here is an example of fragment HTML that uses the URL configuration in the above JSON to create a hyperlink:
 
@@ -424,6 +424,8 @@ Using the `collectionSelector` configuration type, you can develop a fragment th
 !!! note
     Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
 
+<!-- Please do not link to Help Center articles. If we need them, port them to Liferay Learn, and then link to them. The Help Center articles will be going away soon, as I am working on converting them to PDF. -Rich -->
+
 The following JSON configuration shows how to use the `collectionSelector`:
 
 ```json
@@ -442,9 +444,9 @@ The following JSON configuration shows how to use the `collectionSelector`:
 }
 ```
 
-You can use this fragment configuration with the following HTML code sample to list the collection items. The `collectionObjectList` represents the collection selected in the [content page editor](../../../creating-pages/using-content-pages/content-page-editor-ui-reference.md).
+You can use this fragment configuration with the FreeMarker code below to list the collection items. The `collectionObjectList` represents the collection selected in the [content page editor](../../../creating-pages/using-content-pages/content-page-editor-ui-reference.md).
 
-To reference this collection in the HTML, use the collection `name` in the JSON configuration and the `ObjectList` suffix. In the previous JSON code excerpt, the collection `name` is `collection` so the HTML references the collection using `collectionObjectList`.
+To reference this collection in the FreeMarker, use the collection `name` in the JSON configuration and the `ObjectList` suffix. In the previous JSON code excerpt, the collection `name` is `collection` so the FreeMarker references the collection using `collectionObjectList`.
 
 ```html
 <div class="fragment_310">
@@ -486,7 +488,7 @@ You can filter the collection selector using `itemType` in the `collectionSelect
 }
 ```
 
-Using this sample configuration, collections including both web content and blogs are filtered out of the collection selector because the collection type is asset.
+Using this sample configuration, collections including both web content and blogs are filtered out of the collection selector because the collection type is *asset*.
 
 ![A collection including web content and blog entries corresponds to the asset type.](./fragment-configuration-types-reference/images/09.png)
 
@@ -542,7 +544,7 @@ This configuration creates a color palette field called `textColor`:
 }
 ```
 
-The `colorPalette` type stores an object with the  value: `color`.
+The `colorPalette` type stores an object with the value: `color`.
 
 For example, if you implement the snippet above, you can use it in FreeMarker:
 
@@ -550,7 +552,7 @@ For example, if you implement the snippet above, you can use it in FreeMarker:
 <h3 class="text-${configuration.textColor.color}">Example</h3>
 ```
 
-If you were to choose the color white, the `h3` tag heading would have the class `text-white`.
+If you were to choose the color *white*, the `h3` tag heading would have the class `text-white`.
 
 ![The color palette configuration is useful when a color selection is necessary.](./fragment-configuration-types-reference/images/10.png)
 
@@ -576,7 +578,7 @@ To use FreeMarker variables in the fragment HTML editor, start by setting `navig
 ]
 ```
 
-Now you can access the FreeMarker variables, which can be found under `[name]Object`. In this example, `sourceObject.navItems` would return the `navItems` list located under `sourceObject`. The object is called `sourceObject` since `source` was the name used in the configuration.
+Now you can access the FreeMarker variables, which are found under `[name]Object`. In this example, `sourceObject.navItems` would return the `navItems` list located under `sourceObject`. The object is called `sourceObject` since `source` was the name used in the configuration.
 
 These are the available variables for the navigation menu selector configuration type:
 

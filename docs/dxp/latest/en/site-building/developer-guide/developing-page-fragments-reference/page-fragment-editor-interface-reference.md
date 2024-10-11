@@ -21,7 +21,7 @@ The sections below cover how to use these portions of the interface. See [Develo
 
 The code editor is split into four panes:
 
-**HTML:** Supports standard HTML, along with Liferay Portal specific tags and FreeMarker (using the [alternative (square bracket) syntax](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html)) that can be used to add dynamic behavior.
+**HTML:** Supports standard HTML, along with Liferay-specific tags and FreeMarker (using the [alternative (square bracket) syntax](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html)) that can be used to add dynamic behavior.
 
 !!! tip
     Type `$(` to begin using auto-completion to find variable names. Type `[@` to use auto-completion to find taglib names.
@@ -29,6 +29,10 @@ The code editor is split into four panes:
 **CSS:** Supports standard CSS.
 
 **JavaScript:** Supports standard JavaScript and JQuery. You can also access configuration values in the FreeMarker context in the JavaScript pane.
+
+<!-- Didn't we remove JQuery from the product? 
+https://liferay.atlassian.net/browse/LRDOCS-7850
+-Rich -->
 
 **Preview:** provides a live preview of the component that updates as you write code. You can switch between desktop, mobile, tablet, and expanded views.
 
@@ -39,10 +43,10 @@ The code editor is split into four panes:
 !!! note
     Defining configurations for Page Fragments is available in Liferay DXP 7.2 SP1+ and Liferay Portal GA2+.
 
-The Configuration tab provides input for adding configuration options to the fragment's Configuration Menu. For example, you can add a selector to your fragment's configuration options that lets users choose a color for the fragment's heading. Defining configuration options for a fragment gives it more flexibility, reducing the number of fragments you must maintain.
+The Configuration tab provides input for adding configuration options to the fragment's Configuration Menu. For example, you can add a selector to your fragment's configuration options to choose a color for the fragment's heading. Defining configuration options for a fragment gives it more flexibility, reducing the number of fragments you must maintain.
 
 !!! note
-    Changes to the configuration automatically reflect in the code editor. If your configuration is invalid, you can't publish your fragment. Always ensure the JSON configuration is valid before previewing or publishing fragments.
+    Changes to the configuration automatically appear in the code editor. If your configuration is invalid, you can't publish your fragment. Always ensure the JSON configuration is valid before previewing or publishing fragments.
 
 Configuration values are made available to the fragment through the FreeMarker context in the HTML pane. You can combine configuration options with conditional values in the HTML to create dynamic experiences for the user. You can also access these values via JavaScript. See [Making Page Fragments Configurable](../../developing-page-fragments/adding-configuration-options-to-fragments.md) for more information.
 

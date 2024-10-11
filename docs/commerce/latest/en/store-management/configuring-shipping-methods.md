@@ -23,4 +23,4 @@ For users interested in adding other shipping methods or carriers, see [Using th
 
 ## Related Topics
 
-* [Introduction to Shipments](../order-management/shipments/introduction-to-shipments.md)
+* [Shipments](../order-management/shipments.md)

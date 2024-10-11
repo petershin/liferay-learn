@@ -49,5 +49,5 @@ The _Emails_ tab contains all the [transactional emails](../../store-management/
 * [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
 * [Orders Menu Reference Guide](./orders-menu-reference-guide.md)
 * [Managing Payment Methods](../../store-management/configuring-payment-methods/managing-payment-methods.md)
-* [Introduction to Shipments](../shipments/introduction-to-shipments.md)
+* [Shipments](../shipments.md)
 * [Sending Emails](../../store-management/sending-emails.md)

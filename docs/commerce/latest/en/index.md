@@ -81,7 +81,7 @@ uuid: 7e5ff1c5-105e-4021-8b5f-98b7e12ae3f5
 :link: ./order-management.md
 
 [Processing an Order](./order-management/orders/processing-an-order.md)
-[Introduction to Shipments](./order-management/shipments/introduction-to-shipments.md)
+[Shipments](./order-management/shipments.md)
 [Introduction to Order Workflows](./order-management/order-workflows/introduction-to-order-workflows.md)
 :::
 

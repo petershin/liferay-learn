@@ -8,7 +8,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Introduction to Shipments
+# Shipment Lifecycle Overview
 
 There are four stages for a shipment.
 
@@ -26,9 +26,8 @@ Click *Finish Processing* after selecting the items in the shipment and quantiti
 
 ![You can finish processing after selecting the items in the order and their source warehouse.](./shipment-lifecycle-overview/images/01.png)
 
-```{note}
-Starting with Liferay DXP 7.4 U35/GA35, each item in the shipment also has an external reference code (ERC) associated with it. You can change this by clicking on the item and entering a value for the *External Reference Code* field.
-```
+!!! note
+    Starting with Liferay DXP 7.4 U35/GA35, each item in the shipment also has an external reference code (ERC) associated with it. You can change this by clicking on the item and entering a value for the *External Reference Code* field.
 
 ## Ready to Ship
 

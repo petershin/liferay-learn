@@ -24,5 +24,5 @@ You can activate the _Buyer Order Approval Workflow_, _Seller Order Acceptance W
 * [Enabling or Disabling Order Workflows](./order-workflows/enabling-or-disabling-order-workflows.md)
 * [Approving or Rejecting Orders in Order Workflows](./order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
 * [Processing an Order](./orders/processing-an-order.md)
-* [Introduction to Shipments](./shipments/introduction-to-shipments.md)
+* [Shipments](./shipments.md)
 * [Order Life Cycle](./orders/order-life-cycle.md)

@@ -41,5 +41,5 @@ The seller completes the remaining steps to deliver the ordered products to the 
 * [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
 * [Processing an Order](./processing-an-order.md)
 * [Orders Menu](./orders-menu-reference-guide.md)
-* [Introduction to Shipments](../shipments/introduction-to-shipments.md)
+* [Shipments](../shipments.md)
 * [Sending Emails](../../store-management/sending-emails.md)

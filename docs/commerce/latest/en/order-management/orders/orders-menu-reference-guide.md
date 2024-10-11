@@ -112,4 +112,4 @@ In this tab, the order activity is exclusively on the seller's side. The seller 
 * [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
 * [Processing an Order](./processing-an-order.md)
 * [Order Management Statuses Reference Guide](./order-management-statuses-reference-guide.md)
-* [Introduction to Shipments](../shipments/introduction-to-shipments.md)
+* [Shipments](../shipments.md)

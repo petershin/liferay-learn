@@ -66,6 +66,6 @@ Under *Channels*, you can view the available channels that the warehouse can ser
 
 ## Related Topics
 
-* [Introduction to Shipments](../order-management/shipments/introduction-to-shipments.md)
+* [Shipments](../order-management/shipments.md)
 * [Setting Up Commerce Warehouses](./setting-up-warehouses.md)
 * [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md)

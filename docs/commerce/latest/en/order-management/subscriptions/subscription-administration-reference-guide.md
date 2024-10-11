@@ -131,5 +131,5 @@ The _Payments_ tab tracks the order's payment history.
 * [Enabling a Subscription](../../product-management/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
 * [Managing Subscriptions](./managing-subscriptions.md)
 * [Processing an Order](../orders/processing-an-order.md)
-* [Introduction to Shipments](../shipments/introduction-to-shipments.md)
+* [Shipments](../shipments.md)
 * [Order Information](../orders/order-information.md)

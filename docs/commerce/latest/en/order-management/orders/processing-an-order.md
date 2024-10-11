@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Processing an Order
 
-Processing an order in Liferay Commerce consists of two stages: accepting an order and processing an order. Shipments are created while orders are processed. To begin processing all orders, including [Subscriptions](../subscriptions/managing-subscriptions.md) (recurring orders), navigate to the [_Orders_ menu](./orders-menu-reference-guide.md) in the _Global Applications_ &rarr; _Commerce_ menu.
+To process an order, you must first accept it. You can accept orders in the _Pending_ status. Shipments are created while orders are processed. To begin processing all orders, including [subscriptions](../subscriptions/managing-subscriptions.md) (recurring orders), open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Orders_.
 
 ## Accepting an Order
 

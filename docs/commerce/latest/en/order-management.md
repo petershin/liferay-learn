@@ -19,3 +19,5 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Order Management
+
+Use Liferay's order management capabilities to process orders of multiple types from different channels, set up workflows, create shipments for orders, and more.

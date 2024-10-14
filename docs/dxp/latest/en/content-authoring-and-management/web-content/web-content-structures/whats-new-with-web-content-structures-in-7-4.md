@@ -30,7 +30,7 @@ Field types have been added and improved as part of the move to Data Engine:
 
 ## Changes in Rich Text Field Behavior
 
-As part of the migration to the Data Engine framework in Liferay 7.4, the Rich Text field in web content structures has undergone significant changes. The new Rich Text field is configured to use CKEditor as the default WYSIWYG editor, replacing the previous Dynamic Data Mapping (DDM) Rich Text field.
+As part of the migration to the Data Engine framework in Liferay 7.4, the Rich Text field in web content structures has undergone significant changes. The new Rich Text field uses CKEditor as the default WYSIWYG editor, replacing the previous Dynamic Data Mapping (DDM) Rich Text field.
 
 `Beginning with `Liferay DXP 2024.Q1+/Portal 7.4 GA112+`, you can customize CKEditor's configuration using [client extensions](../../../liferay-development/customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md)  offering flexibility to tailor the editor to your needs.
 

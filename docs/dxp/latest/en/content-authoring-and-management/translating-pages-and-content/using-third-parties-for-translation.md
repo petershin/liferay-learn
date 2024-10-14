@@ -15,9 +15,9 @@ uuid: 1b4947c4-5862-41d9-87ff-4e8bb5c8837a
 Liferay can integrate with the following service APIs to generate automatic translations of content pages and web content.
 
 - [Amazon Translate](#enabling-amazon-translate)
-- [Microsoft Translator](#enabling-microsoft-translator)
 - [DeepL Translate](#enabling-deepl-translate)
 - [Google Cloud Translation](#enabling-google-cloud-translation)
+- [Microsoft Translator](#enabling-microsoft-translator)
 
 To use this feature, you must first set up the translation service you are using and then enable it in Liferay's system settings. Once enabled, you can use the service to [generate translations](#using-automatic-translation) for content pages and web content.
 
@@ -44,22 +44,6 @@ When ready, follow these steps:
 
 1. Click *Save*.
 
-## Enabling Microsoft Translator
-
-{bdg-secondary}`Available 7.4 U6+ and GA10+`
-
-Enabling Microsoft Translator requires an active Microsoft Azure account. See official [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/) documentation for more information.
-
-When ready, follow these steps:
-
-1. Open the *Global Menu*(![Global Menu](../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Translation* &rarr; *Translator Using Azure*.
-
-1. Check *Enabled*.
-
-1. Enter a valid *Subscription Key* and *Resource Location* (region).
-
-1. Click *Save*.
-
 ## Enabling DeepL Translate
 
 Enabling DeepL Translate requires an active DeepL account. See official DeepL [support](https://support.deepl.com/hc/en-us) and [API](https://developers.deepl.com/docs) documentation for more information.
@@ -70,7 +54,7 @@ When ready, follow these steps:
 
 1. Check *Enabled*.
 
-1. Enter a valid API token under the *Token* field.
+1. Enter a valid API token in the *Token* field.
 
 1. Enter the *API URL* and the *DeepL Validation API*.
 
@@ -87,6 +71,22 @@ When ready, follow these steps:
 1. Check *Enabled*.
 
 1. Enter a valid Google Cloud service account key in JSON format.
+
+1. Click *Save*.
+
+## Enabling Microsoft Translator
+
+{bdg-secondary}`Available 7.4 U6+ and GA10+`
+
+Enabling Microsoft Translator requires an active Microsoft Azure account. See official [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/) documentation for more information.
+
+When ready, follow these steps:
+
+1. Open the *Global Menu*(![Global Menu](../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Translation* &rarr; *Translator Using Azure*.
+
+1. Check *Enabled*.
+
+1. Enter a valid *Subscription Key* and *Resource Location* (region).
 
 1. Click *Save*.
 

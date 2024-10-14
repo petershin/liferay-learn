@@ -16,7 +16,7 @@ Before starting, you must first [connect your DXP installation with Microsoft Of
 
 ## Authentication
 
-The first time you create or edit a Documents and Media file via Office 365&trade;, you must authenticate with your Microsoft account. This links OneDrive&trade; to your DXP account, so you just do this once.
+The first time you create or edit a Documents and Media file via Office 365&trade;, you must authenticate with your Microsoft account. This links OneDrive&trade; to your DXP account, so you only do this once.
 
 To unlink your account,
 

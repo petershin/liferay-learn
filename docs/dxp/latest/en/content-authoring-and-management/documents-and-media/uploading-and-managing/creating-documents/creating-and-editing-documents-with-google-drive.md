@@ -14,7 +14,7 @@ You can use Google Docs&trade; to create and edit text documents, spreadsheets, 
 
 ## Authentication
 
-The first time you create or edit a Documents and Media file via Google Docs&trade;, you must authenticate to your Google account. This links Google Drive&trade; to your portal account, so you just do this once.
+The first time you create or edit a Documents and Media file via Google Docs&trade;, you must authenticate to your Google account. This links Google Drive&trade; to your portal account, so you only do this once.
 
 To unlink your account,
 

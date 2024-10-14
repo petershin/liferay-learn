@@ -10,7 +10,7 @@ uuid: b538b1f3-7797-4185-8260-116135c69df4
 
 # Copying Folders and Documents
 
-{bdg-secondary}`Liferay 7.4 2024.Q1`
+{bdg-secondary}`Liferay 2024.Q1`
 
 With Documents and Media, you can copy folders, files, and shortcuts between [sites](../../../site-building/sites.md) and connected [asset libraries](../../asset-libraries.md). This can accelerate projects by quickly duplicating structures across contexts.
 

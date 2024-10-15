@@ -34,7 +34,11 @@ To create Search Blueprints,
 
    - [Query Builder](#using-the-query-builder): in the Query Elements section, add new query clauses to the search by choosing or composing Elements for the Blueprint. In the Query Settings section, configure additional settings for the query (like which asset and object types to search).
 
+      ![Use the query builder to add and configure elements to the blueprint.](./creating-and-managing-search-blueprints/images/17.png)
+
    - [Configuration](#adding-configurations): Configure advanced settings (e.g., Sorts or Aggregations) in the search.
+
+      ![Use the configuration screen to configure the search request.](./creating-and-managing-search-blueprints/images/18.png)
 
 1. Test the Blueprint as you build and configure it. Click _Preview_ and enter a search keyword.
 

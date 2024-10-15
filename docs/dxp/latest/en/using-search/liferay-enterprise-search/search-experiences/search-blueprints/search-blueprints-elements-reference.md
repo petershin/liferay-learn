@@ -50,13 +50,19 @@ _External Reference_: See the Elasticsearch [Multi-match](https://www.elastic.co
 
 Boost the given asset type. Select the Asset Type (required) from a list of registered [Assets](../../../../liferay-development/building-applications/data-frameworks/asset-framework.md) and configure the boost value.
 
+![You can boost by asset type.](./search-blueprints-elements-reference/images/16.png)
+
 ### Boost Contents for the Current Language
 
 Boost Pages and Web Content having with a default language matching the current session language, as stored in the `context.language_id` field. Configure the boost value.
 
+![You can boost by current language.](./search-blueprints-elements-reference/images/17.png)
+
 ### Boost Contents in a Category by Keyword Match
 
 Boost contents in a category if the user's search keywords contain any of the configured keywords. The Keywords and Asset Category Name (ID) are required.
+
+![You can boost by category and keyword match.](./search-blueprints-elements-reference/images/18.png)
 
 ### Boost Contents in a Category for a Period of Time
 
@@ -73,6 +79,8 @@ Boost contents in a category for users belonging to the given [User Segments](..
 ### Boost Contents in a Category for Guest Users
 
 Boost contents in a category if a user is not logged in. The Asset Category Name (ID) is required. This is a conditional Element, in that its query is only executed and boosted if the `user.is_signed_in` parameter is `false`.
+
+![You can boost by a category for guest users.](./search-blueprints-elements-reference/images/19.png)
 
 ### Boost Contents in a Category for New User Accounts
 
@@ -95,9 +103,13 @@ Boost contents in a category based on the time of day. Select one of these time 
 
 Boost and promote contents in a given category. The Asset Category Name (ID) is required.
 
+![You can boost by a category.](./search-blueprints-elements-reference/images/20.png)
+
 ### Boost Contents on My Sites
 
 Boost contents on sites the user is a member of. There are no required fields in this Element; as with other boosting Elements, configure the Boost value as desired. The Search Context contains a parameter `user.group_ids` to track the current user's groups, and if the current site's ID is part of that list, the query matches and the boost is applied.
+
+![You can boost content in the user's sites.](./search-blueprints-elements-reference/images/21.png)
 
 ### Boost Contents With More Versions
 
@@ -158,9 +170,13 @@ A search document must have a [geopoint field](https://www.elastic.co/guide/en/e
 
 See [Personalizing the Search Experience](./personalizing-the-search-experience.md) for details on setting up the ipstack service, using a custom geolocation field, and adding the Boost Proximity element to a Blueprint.
 
+![You can boost by geographical proximity to the user.](./search-blueprints-elements-reference/images/22.png)
+
 ### Boost Tagged Contents
 
 Boost contents having at least one of the given tags. Enter multiple tag names using a comma-separated list.
+
+![You can boost tagged content.](./search-blueprints-elements-reference/images/23.png)
 
 ### Boost Tags Match
 
@@ -168,9 +184,13 @@ Boost contents with an exact keyword match to a tag. The search user's keywords 
 
 _External Reference:_ See the Elasticsearch [Term query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-term-query.html) documentation.
 
+![You can boost by exact tag match.](./search-blueprints-elements-reference/images/24.png)
+
 ### Boost Web Contents by Keyword Match
 
 Boost certain Web Content if the user's search keywords contain the given keywords. Configure the Article IDs and the Keywords to match.
+
+![You can boost web content articles by keyword match.](./search-blueprints-elements-reference/images/35.png)
 
 ## Filter Results
 
@@ -190,21 +210,31 @@ Filter results using a Range query. Configure the time range.
 
 _External Reference:_ See the [Elasticsearch Range query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-range-query.html) documentation.
 
+![Limit by the creation date range.](./search-blueprints-elements-reference/images/26.png)
+
 ### Limit Search to HEAD Version
 
 Limit the search to return only the latest version of Web Content articles. This Element duplicates the functionality of a Liferay Search Framework query clause and is most useful for advanced use cases. For example, if you've disabled Liferay's search framework from contributing its default search clauses, you can use this Element to restore part of the lost functionality.
+
+![Limit web content articles to their latest version.](./search-blueprints-elements-reference/images/27.png)
 
 ### Limit Search to My Contents
 
 Limit the search to contents the user is an owner of. This Element filters results by a Term query on the `userId` field, matching it to the `user.id` context parameter.
 
+![Limit to the user's content.](./search-blueprints-elements-reference/images/28.png)
+
 ### Limit Search to My Sites
 
 Limit the search scope to the sites that the user is a member of. This Element filters results by a Terms query on the `scopeGroupId` field, matching it to the `user.group_ids` context parameter.
 
+![Limit search by the user's site membership.](./search-blueprints-elements-reference/images/29.png)
+
 ### Limit Search to PDF files
 
 Limit the search to PDF files. This Element filters results by a Term query on the `mimeType` field, matching its value with the hardcoded query value `application_pdf`.
+
+![Limit search to just PDF files.](./search-blueprints-elements-reference/images/30.png)
 
 ### Limit Search to Published Contents
 
@@ -212,11 +242,15 @@ Limit the search to contents that are published. This Element duplicates the fun
 
 This Element filters results using a Term query on the `status` field, matching its value to the hardcoded value of `0`, which represents published contents in [Liferay's Workflow system](../../../../process-automation/workflow/introduction-to-workflow.md#understanding-workflow-status).
 
+![You can limit search to return only published content.](./search-blueprints-elements-reference/images/31.png)
+
 ### Limit Search to the Current Site
 
 Limit the search to the current site. This Element filters results using a Term query on the `scopeGroupId` field, matching its value with the context parameter `context.scope_groupId`.
 
 This Element's functionality overlaps with the [Search Bar's](../../../getting-started/searching-for-content.md#configuring-the-search-bar) Scope configuration option.
+
+![You can limit search to the current site.](./search-blueprints-elements-reference/images/32.png)
 
 ### Limit Search to These Sites
 
@@ -244,13 +278,19 @@ Hide contents with an exact term match on the given field. When you choose a loc
 
 Do not search for comments. This Element looks for documents with a `discussion` field. If the field exists and its content is anything but `false`, the document is not included in the search results.
 
+![You can hide comments.](./search-blueprints-elements-reference/images/33.png)
+
 ### Hide Contents in a Category for Guest Users
 
 Hide results in a category if the user is not logged in. This is a conditional Element: if the `user.is_signed_in` context parameter is `false`, results with the `assetCategoryIds` field matching the configured Asset Category Name (ID) are not returned.
 
+![You can hide content with the specified categories for guest users.](./search-blueprints-elements-reference/images/34.png)
+
 ### Hide Contents in a Category
 
 Hide results with the given category. A term query is executed on the `assetCategoryIds` field. If the configured Asset Category Name (ID) matches, the document is not returned in the search results.
+
+![You can hide content with the specified categories.](./search-blueprints-elements-reference/images/36.png)
 
 ### Hide Hidden Contents
 
@@ -258,9 +298,13 @@ Hide assets which are marked not searchable. This Element duplicates the functio
 
 This Element specifies that returned results must not have the field `hidden` or if they do, its value must be `false`.
 
+![You can hide content that's not intended for search.](./search-blueprints-elements-reference/images/37.png)
+
 ### Hide Tagged Contents
 
 Hide results with a given tag. A term query is executed on the `assetTagNames.raw` field (the raw field makes a keyword field out of the `assetTagNames` text field). If the configured Asset Tag matches, the document is not returned in the search results.
+
+![You can hide content with the specified tag.](./search-blueprints-elements-reference/images/38.png)
 
 ## Other Elements
 

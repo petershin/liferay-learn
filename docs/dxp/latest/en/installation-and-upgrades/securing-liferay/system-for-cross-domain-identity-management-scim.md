@@ -47,30 +47,6 @@ Using SCIM, you can automate the exchange of user identity information between y
 !!! note
     A scheduler runs daily to retrieve all OAuth 2 applications that start with the `SCIM_` prefix. If the access token's expiry is 30 days, 7 days, or 1 day, all administrators are notified in Liferay and by email.
 
-## Linking a User to a SCIM Client
-
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Users and Organizations*.
-
-1. Select a user from the Users tab.
-
-1. Scroll down to the CUSTOM FIELDS section and enter the SCIM client ID in the *Scimclientid* field.
-
-   ![Enter the SCIM client ID to link the user to the SCIM client.](./system-for-cross-domain-identity-management-scim/images/02.png)
-
-1. Click *Save*.
-
-## Linking a User Group to a SCIM Client
-
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Users Groups*.
-
-1. Select a user group, click *Actions* (![Global Menu](../../images/icon-actions.png)) and select *Edit*.
-
-1. Enter the SCIM client ID in the *Scimclientid* field.
-
-   ![Enter the SCIM client ID to link the user group to the SCIM client.](./system-for-cross-domain-identity-management-scim/images/03.png)
-
-1. Click *Save*.
-
 ## Resetting a SCIM Client
 
 {bdg-secondary}`Liferay DXP 2024.Q4+`

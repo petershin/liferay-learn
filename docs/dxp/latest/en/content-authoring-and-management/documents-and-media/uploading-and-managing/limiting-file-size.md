@@ -10,7 +10,7 @@ uuid: df97d97c-2c02-496a-b67b-754cd5bdf120
 
 # Limiting File Size
 
-You can configure file size limits in Documents and Media. Set a maximum file upload size or for more granularity, define file size limits based on [MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types). This can take effect across various scopes: system, instance, specific sites, and asset libraries. 
+You can configure file size limits in Documents and Media. Set a maximum file upload size or for more granularity, define file size limits based on [MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types). This can take effect across various scopes: system, instance, specific sites, and asset libraries.
 
 ## Limiting File Size at the System and Instance Levels
 
@@ -64,7 +64,7 @@ For all scopes, you can set a maximum file upload size in bytes.
    !!! important
        The portal has a maximum file size set by the Overall Maximum Upload Request Size property in the Upload Servlet Request. The default value is `104857600` bytes (100 MB).
 
-       <!-- We should link to how to set this. That's not that large in the day and age of uploading videos. -Rich -->
+       To change this value, open the *Global Menu*, go to the *Control Panel*, and click *System Settings*. Under Platform, select *Infrastructure*, then click *Upload Servlet Request*. Update the *Overall Maximum Upload Request Size* field and save the new value.
 
 ## Setting a MIME Type Limit
 

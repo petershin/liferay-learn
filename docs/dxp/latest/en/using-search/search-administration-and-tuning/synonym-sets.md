@@ -12,7 +12,8 @@ uuid: eae15fd7-7aca-42fc-9add-1382f30fb2c6
 {bdg-primary}`Subscription`
 
 !!! note
-    This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+    - This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+    - You can add a maximum of 10,000 synonym sets.
 
 A Synonym Set is a group of words or phrases with the same meaning. An administrative User creates the Synonym Set; when a search page end user searches for a keyword or phrase, the synonymous terms in the set are also searched.
 

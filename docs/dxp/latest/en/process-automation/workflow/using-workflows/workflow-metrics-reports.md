@@ -158,4 +158,4 @@ The Process Details section section of the modal was enhanced in 7.4. Click the 
 ## Related Topics
 
 * [Using Workflow Metrics](./using-workflow-metrics.md)
-* [Building Workflows](../designing-and-managing-workflows/building-workflows.md)
+* [Building Workflows](../designing-and-managing-workflows.md)

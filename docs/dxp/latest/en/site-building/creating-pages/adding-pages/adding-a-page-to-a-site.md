@@ -1,4 +1,4 @@
-[---](---.md)
+---
 taxonomy-category-names:
 - Sites
 - Pages and Composition

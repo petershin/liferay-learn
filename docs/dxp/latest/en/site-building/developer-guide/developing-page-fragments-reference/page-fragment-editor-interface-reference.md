@@ -28,11 +28,7 @@ The code editor is split into four panes:
 
 **CSS:** Supports standard CSS.
 
-**JavaScript:** Supports standard JavaScript and JQuery. You can also access configuration values in the FreeMarker context in the JavaScript pane.
-
-<!-- Didn't we remove JQuery from the product? 
-https://liferay.atlassian.net/browse/LRDOCS-7850
--Rich -->
+**JavaScript:** Supports standard JavaScript. You can also access configuration values in the FreeMarker context in the JavaScript pane.
 
 **Preview:** provides a live preview of the component that updates as you write code. You can switch between desktop, mobile, tablet, and expanded views.
 

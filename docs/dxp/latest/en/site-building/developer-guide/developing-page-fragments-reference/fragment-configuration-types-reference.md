@@ -422,9 +422,7 @@ This is useful when you want a fragment that has an embedded video by default. T
 Using the `collectionSelector` configuration type, you can develop a fragment that includes a [collection](../../../displaying-content/collections-and-collection-pages.md) or [collection provider](../../../displaying-content/collections-and-collection-pages/collection-providers.md). You can use the `collectionSelector` with both manual and dynamic collections.
 
 !!! note
-    Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
-
-<!-- Please do not link to Help Center articles. If we need them, port them to Liferay Learn, and then link to them. The Help Center articles will be going away soon, as I am working on converting them to PDF. -Rich -->
+    Developers can use collection providers to group items based on advanced criteria, such as recent content or most viewed items. Once grouped, you can use [Information Templates](../../displaying-content/using-information-templates.md) to customize how these items are rendered on a page.
 
 The following JSON configuration shows how to use the `collectionSelector`:
 

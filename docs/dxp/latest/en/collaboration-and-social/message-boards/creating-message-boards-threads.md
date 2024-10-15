@@ -42,11 +42,11 @@ Users can attach files to forum posts.
 1. Drag and drop a file to upload or use the *Select Files* button to navigate to the file's location.
 
    !!! important
-       You can enable automatic antivirus scanning to scan files on upload. For details, see [Enabling Antivirus Scanning for Uploaded Files](../../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md).
+       You can enable automatic antivirus scanning to scan files on upload. For details, see [Enabling Antivirus Scanning for Uploaded Files](../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md).
 
 ### Using Topics, Tags, and Related Assets to Organize Threads
 
-In addition to organizing threads by categories, users can enhance their forum posts with topics, tags, or related assets. For instance, if you tag a post with an *exam* tag, searching for that tag quickly returns all posts associated with it. Read [Organizing Content with Categories and Tags](../../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md) to learn more.
+In addition to organizing threads by categories, users can enhance their forum posts with topics, tags, or related assets. For instance, if you tag a post with an *exam* tag, searching for that tag quickly returns all posts associated with it. Read [Organizing Content with Categories and Tags](../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md) to learn more.
 
 To add a topic,
 

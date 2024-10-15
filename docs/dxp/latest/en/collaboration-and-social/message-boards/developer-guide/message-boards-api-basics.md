@@ -475,4 +475,4 @@ The sample code includes cURL scripts and Java classes that call the following A
 ## Related Topics
 
 - [Message Boards](../../../collaboration-and-social/message-boards.md)
-- [Message Boards Configuration Reference](../user-guide/message-boards-configuration-reference.md)
+- [Message Boards Configuration Reference](../message-boards-configuration-reference.md)

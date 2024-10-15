@@ -10,7 +10,7 @@ taxonomy-category-names:
 
 # Message Boards Permissions Reference
 
-Permissions settings for the Message Boards app include Home Category, Widget, General Category, and Thread permissions. Manage these settings to control user access and actions within your message boards. See [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) to learn more.
+Permissions settings for the Message Boards app include Home Category, Widget, General Category, and Thread permissions. Manage these settings to control user access and actions within your message boards. See [Understanding Roles and Permissions](../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) to learn more.
 
 ## Home Category Permissions
 

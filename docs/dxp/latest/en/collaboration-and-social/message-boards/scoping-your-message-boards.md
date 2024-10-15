@@ -10,7 +10,7 @@ taxonomy-category-names:
 
 # Scoping Your Message Boards
 
- Multiple message boards can be created and managed on the same DXP instance at the same time. This can be accomplished by scoping each message board to a particular scope. The [Global, Site, or Page Scope settings](../../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-scopes.md) are available. The following sections show administrators how to setup *Message Boards* in each of these scopes.
+ Multiple message boards can be created and managed on the same DXP instance at the same time. This can be accomplished by scoping each message board to a particular scope. The [Global, Site, or Page Scope settings](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-scopes.md) are available. The following sections show administrators how to setup *Message Boards* in each of these scopes.
 
 ## Global
 
@@ -18,7 +18,7 @@ Content created at the global site scope level is available on all other sites b
 
 ### Creating a Globally Scoped Message Board
 
-1. [Start editing](../../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) the page where a *Message Boards* widget has been deployed.
+1. [Start editing](../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) the page where a *Message Boards* widget has been deployed.
 
 1. Click *Options* (![widget options](../../images/icon-widget-options.png)) &rarr; *Configuration* and select the *Scope* tab.
 
@@ -52,7 +52,7 @@ Creating page scoped message boards allows forum members to view different messa
 
 ### Creating a Page Scoped Message Board
 
-1. [Start editing](../../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) the page to where you want to scope the message board.
+1. [Start editing](../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) the page to where you want to scope the message board.
 
 1. Click *Options* (![widget options](../../images/icon-widget-options.png)) &rarr; *Configuration* and select the *Scope* tab.
 
@@ -78,4 +78,4 @@ Note that administrators must still use the *Site Administration* menu to admini
 
 ## Related Information
 
-- [Setting Widget Scopes](../../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-scopes.md)
+- [Setting Widget Scopes](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-scopes.md)

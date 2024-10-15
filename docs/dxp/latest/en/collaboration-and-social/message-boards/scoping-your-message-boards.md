@@ -34,7 +34,7 @@ The *Message Boards* widget is now configured to display and create threads at t
 
 To centrally manage a globally scoped message board:
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and click the compass icon (![Compass](../../../images/icon-compass.png)) on the Site Administration menu. This opens the Select Site dialog.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and click the compass icon (![Compass](../../images/icon-compass.png)) on the Site Administration menu. This opens the Select Site dialog.
 
 1. Select the *All Sites* tab, then select *Global*.
 

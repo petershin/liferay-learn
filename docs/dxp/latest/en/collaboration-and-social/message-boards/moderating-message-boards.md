@@ -18,7 +18,7 @@ Site administrators can lock a thread and prevent any further responses.
 
 To lock a thread, click (![Actions](../../images/icon-actions.png)) next to the thread to be locked and select *Lock*.
 
-Locked threads are marked as Locked and users can't reply to them anymore. To unlock a thread, click (![Actions](../../../images/icon-actions.png)) next to the thread and select *Unlock*.
+Locked threads are marked as Locked and users can't reply to them anymore. To unlock a thread, click (![Actions](../../images/icon-actions.png)) next to the thread and select *Unlock*.
 
 ![Use the actions menu to lock and unlock threads.](./moderating-message-boards/images/01.png)
 

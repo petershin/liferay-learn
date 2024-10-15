@@ -51,19 +51,19 @@ You can preview results in their document form right from a sidebar in the Edit 
 
 Here you can access these features:
 
-- Click _View Raw Request_ to see the entire search request string. From the Raw Request modal, you can copy the request to the clipboard or download it as a JSON file. This is the same request seen in the [Search Insights](../../../search-pages-and-widgets/search-insights.md) widget on the search page.
+- Click _View Raw Request_ to see the entire search request string. From the Raw Request modal, you can copy the request to the clipboard or download it as a JSON file. This is the same request seen in the [Search Insights](./search-insights.md) widget on the search page.
 
-- Click _View Raw Response_ to see the entire search response string. Here you can copy the response to the clipboard or download it as a JSON file. This is the same string you see in the [Search Insights](../../../search-pages-and-widgets/search-insights.md) widget on the search page.
+- Click _View Raw Response_ to see the entire search response string. Here you can copy the response to the clipboard or download it as a JSON file. This is the same string you see in the [Search Insights](./search-insights.md) widget on the search page.
 
 - The score of each result appears to the left of the result title. Click the score to see the Score Explanation.
 
-[Some elements](./search-blueprints-elements-reference.md) read search context attributes that you can provide or override manually. Click the gear icon (![Gear](../../../../images/icon-cog3.png)) to add search context attributes to the Blueprint preview search, then enter the key/value pair for the attribute and click _Done_.
+[Some elements](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md) read search context attributes that you can provide or override manually. Click the gear icon (![Gear](../../images/icon-cog3.png)) to add search context attributes to the Blueprint preview search, then enter the key/value pair for the attribute and click _Done_.
 
 ## Inspecting the Mappings
 
 The field mappings for the search engine provide information on how the field should be indexed and searched. For example, if you know that you require a `keyword` field in the Sort widget, you can inspect the mappings for just such fields.
 
-To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you'll see numerous indexes. Liferay's main content is indexed into the [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named `liferay-[company id]` (e.g., `liferay-10819726314237`).
+To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you'll see numerous indexes. Liferay's main content is indexed into the [company index](../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named `liferay-[company id]` (e.g., `liferay-10819726314237`).
 
 When you find the field, note its type and if it has sub-fields. Some fields are mapped as `text` fields to enable full text search or as `icu_collation` fields to enable sorting, but are also given a sub-field of type `keyword` for using in aggregations (i.e., facets).
 
@@ -110,7 +110,7 @@ To use sub-fields in the Custom Facet, use dot notation (e.g., `fieldName.sub_fi
 
 ## Accessing Custom Fields 
 
-When you create a [Custom Field](./../../../system-administration/configuring-liferay/adding-custom-fields.md) with the setting _Searchable_ enabled, the custom field is indexed with the backing asset (Blogs Entries, for example). After reindexing it's also applied to existing entries. If you index the field as a keyword, the field itself is a text field, named like `expando__keyword__custom_fields__Enabled` (if you named the field _Enabled_ in the Custom Fields UI), but it contains a nested field mapping for creating a separate `raw` keyword field. 
+When you create a [Custom Field](../../system-administration/configuring-liferay/adding-custom-fields.md) with the setting _Searchable_ enabled, the custom field is indexed with the backing asset (Blogs Entries, for example). After reindexing it's also applied to existing entries. If you index the field as a keyword, the field itself is a text field, named like `expando__keyword__custom_fields__Enabled` (if you named the field _Enabled_ in the Custom Fields UI), but it contains a nested field mapping for creating a separate `raw` keyword field. 
 
 To use the raw keyword field in the Custom Facet, append `.raw` to the Custom Field name in the _Aggregation Field_:
 
@@ -175,7 +175,7 @@ ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_Str
 
 {bdg-secondary}`7.4 U72+/GA72+`
 
-To find [object definition](../../../liferay-development/objects.md) fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
+To find [object definition](../../liferay-development/objects.md) fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
 
 The document has a `nestedFieldArray` field with nested content:
 
@@ -205,7 +205,7 @@ For example, you can sort by the `lastAccessed` date field in the nested array a
 
 ### Using Web Content Structure Fields and Document Type Fields
 
-Fields from document types and web content structures are indexed the same way due to their shared backend framework. To find [nested web content structure (DDM) fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
+Fields from document types and web content structures are indexed the same way due to their shared backend framework. To find [nested web content structure (DDM) fields](../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
 
 The document has a `ddmFieldArray` field with nested content:
 
@@ -234,7 +234,7 @@ The document has a `ddmFieldArray` field with nested content:
 
 To use one of these fields in the search widgets, enter the `ddmFieldName` value (e.g., `ddm__keyword__40806__Testb5mx_en_US`) in the widget's Aggregation Field.
 
-Depending on your version, [nested field storage for DDM fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) may be enabled by default for Elasticsearch:
+Depending on your version, [nested field storage for DDM fields](../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) may be enabled by default for Elasticsearch:
 
 | Liferay Version  | Nested Field Enabled by Default |
 | :--------------- | :------- |
@@ -246,6 +246,6 @@ To change the behavior, use the _Enable Legacy Dynamic Data Mapping Index Fields
 
 ## Related Topics
 
-* [Searching for Content](../../getting-started/searching-for-content.md)
-* [Search Administration](../../search-administration-and-tuning/search-administration.md)
-* [Using the Custom Filter Widget](../search-results/using-the-custom-filter-widget.md)
+* [Searching for Content](../getting-started/searching-for-content.md)
+* [Search Administration](../search-administration-and-tuning/search-administration.md)
+* [Using the Custom Filter Widget](./search-results/using-the-custom-filter-widget.md)

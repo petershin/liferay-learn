@@ -13,6 +13,4 @@ taxonomy-category-names:
 ---
 # Connecting to a User Directory
 
-- [Connecting to an LDAP Directory](./connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)
-- [Configuring User Import and Export](./connecting-to-a-user-directory/configuring-user-import-and-export.md)
-- [LDAP Configuration Reference](./connecting-to-a-user-directory/ldap-configuration-reference.md)
+LDAP (Lightweight Directory Access Protocol) is a common user store for Liferay DXP. You can import user information from an LDAP server into Liferay or export Liferay user information to an LDAP server. If your organization already stores user information on an LDAP server, it’s convenient for both users and administrators to have this user information imported into Liferay.

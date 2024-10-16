@@ -63,20 +63,51 @@ You can customize the look and feel of the Forgot Password page as you would for
 !!! important
     Currently, the sign-in, create account, and forgot password utility pages are behind a beta feature flag. See [Beta Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.
 
-## Cookies List
+## Cookie Policy
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+{bdg-link-primary}`[Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
 
-The Cookies List utility page contains a list of all of Liferay's cookies. It aids in attaining [GDPR compliance](../../../users-and-permissions/managing-user-data/enabling-gdpr-compliance-for-cookies.md) by showing the user data that's tracked.
+The Cookie Policy utility page displays a list of all cookies your application uses. It aids in attaining [GDPR compliance](../../../users-and-permissions/managing-user-data/enabling-gdpr-compliance-for-cookies.md) by showing the user data that's tracked to your sites' visitors. To access the Cookie Policy page, click *Visit our Privacy Policy* in the cookie banner.
+
+![Click Visit our Privacy Policy in the cookie banner](./types-of-utility-pages/05.png)
 
 It consists of four sections:
 
 **Strictly Necessary Cookies:** These cookies are necessary for the website to function and cannot be disabled. They do not store information that could lead to identification of users.
 
-**Functional Cookies:** These cookies enable the website to provide enhanced functionality and personalization. They may be set by Liferay or by third-parties for integrated services. If disabled, some services may not function properly.
+**Functional Cookies (Preferences):** These cookies enable the website to provide enhanced functionality and personalization. They may be set by Liferay or by third-parties for integrated services. If disabled, some services may not function properly.
 
-**Performance Cookies:** These cookies provide data for [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index). All information these cookies collect is aggregated and therefore anonymous.
+**Performance Cookies (Statistics):** These cookies provide data for [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index). All information these cookies collect is aggregated and therefore anonymous.
 
-**Personalization Cookies:** These cookies may be set by Liferay's advertising partners. If they are turned off, users experience less targeted advertising.
+**Personalization Cookies (Marketing):** These cookies may be set by Liferay's advertising partners. If they are turned off, users experience less targeted advertising.
+
+![The Cookie Policy page displays a list of cookies.](./types-of-utility-pages/images/06.png)
 
 If your site uses cookies not listed in this page, click *Add* ![Add](../../../images/icon-add.png) to add it to the appropriate section.
+
+### Setting Up the Default Cookie Policy Page
+
+Before the Cookie Policy page can be viewed by visitors to your site, you must first enable and configure it.
+
+1. Enable the cookie banner in the settings. See [Enabling GDPR Compliance for Cookies](../../../users-and-permissions/managing-user-data/enabling-gdpr-compliance-for-cookies.md) for instructions.
+
+1. Go to *Site Administration* &rarr; *Site Builder* &rarr; *Pages*.
+
+1. Go to the Utility Pages tab and click *Cookie Policy*. This opens the page editor for the default page.
+
+1. Configure the permissions for each of the cookie list display widgets. By default, only the admin user can view these widgets. See [Setting Widget Permissions](../page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-permissions.md) for more information on setting permissions.
+
+1. Go to *Control Panel* &rarr; *Users* &rarr; *Roles*.
+
+1. For each role, grant users the **View** permission for *Functional Cookie Entry*, *Necessary Cookie Entry*, *Performance Cookie Entry*, and *Personalization Cookie Entry*. See [Defining Role Permissions](../../../users-and-permissions/roles-and-permissions/defining-role-permissions.md) for more information on setting permissions.
+
+### Creating a Cookie Policy Page
+
+1. Go to *Site Administration* &rarr; *Site Builder* &rarr; *Pages*.
+
+1. Click *New* ![Add icon](../../../images/icon-add.png), then *Cookie Policy*.
+
+1. When creating your custom Cookie Policy page, you can use the out-of-the-box widgets.
+
+![Use the out-of-the-box Cookie Entries widgets to display a list of cookies.](./types-of-utility-pages/images/07.png)

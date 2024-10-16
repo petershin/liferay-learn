@@ -63,7 +63,7 @@ You can find code examples for all types of client extensions in [liferay-portal
 
 - [Batch Client Extension](../importing-exporting-data.md)
 
-- Site Initializer Client Extension (see [example code](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-site-initializer))
+- [Site Initializer Client Extension](../importing-exporting-data/using-a-site-initializer-client-extension.md) 
 
 ## Custom Element Client Extensions
 

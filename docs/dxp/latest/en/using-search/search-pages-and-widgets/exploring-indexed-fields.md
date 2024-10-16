@@ -13,8 +13,6 @@ The field mappings provide a lower level view of how each field is treated at in
 
 ![This DDM field has a keyword sub-field that's only discoverable by looking at the field mappings.](./exploring-indexed-fields/images/04.png)
 
-<!--Would it be good to include a mash-up screenshot of mappings ui, document src, blueprints preview, maybe search insights -->
-
 | Widget | Relevant Configurations | Requirement | Where to Look |
 | :--- | :--- | :--- | :--- |
 | [Custom Facet](search-facets/custom-facet.md) | Aggregation Field | Finding `keyword` fields | [Document Source](#viewing-the-document-source)<br>[Field Mappings](#inspecting-the-mappings)
@@ -148,10 +146,13 @@ Setting a custom field to searchable means that the value of the field is indexe
 
 ## Accessing Nested Fields
 
-<!--Does "in Elasticsearch" actually add anything to this? -->
-[Object definition fields](../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md), [web content structure fields](../../content-authoring-and-management/web-content/web-content-structures/configuring-structure-fields.md), and [document type fields](../../content-authoring-and-management/documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md) are indexed as nested fields in Elasticsearch.
+[Object definition fields](../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md), [web content structure fields](../../content-authoring-and-management/web-content/web-content-structures/configuring-structure-fields.md), and [document type fields](../../content-authoring-and-management/documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md) are indexed as nested fields.
 
-You can query these nested fields in search blueprints, use them to sort results on the search page, and create custom filters or facets for these fields. To do this, enter these elements separated by periods:
+You can query these nested fields in search blueprints, use them to sort results on the search page, and create custom filters or facets for these fields. 
+
+### Accessing Nested Fields in the Search Widgets
+
+You can refer to nested fields using dot notation in the custom facet, custom filter, and sort widgets. Enter these elements separated by periods:
 
 * Parent field
 
@@ -171,7 +172,7 @@ This example references a web content structure field:
 ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_String_sortable.keyword_lowercase
 ```
 
-### Using Object Definition Fields
+#### Using Object Definition Fields
 
 {bdg-secondary}`7.4 U72+/GA72+`
 
@@ -203,7 +204,7 @@ To use an object field in the search widgets, specify the parent field (e.g., `n
 
 For example, you can sort by the `lastAccessed` date field in the nested array above by entering `nestedFieldArray.lastAccessed.value_date`.
 
-### Using Web Content Structure Fields and Document Type Fields
+#### Using Web Content Structure Fields and Document Type Fields
 
 Fields from document types and web content structures are indexed the same way due to their shared backend framework. To find [nested web content structure (DDM) fields](../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
 
@@ -233,6 +234,36 @@ The document has a `ddmFieldArray` field with nested content:
 ```
 
 To use one of these fields in the search widgets, enter the `ddmFieldName` value (e.g., `ddm__keyword__40806__Testb5mx_en_US`) in the widget's Aggregation Field.
+
+### Using Nested Fields in Blueprints
+
+To work with nested fields in [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md), you cannot use the dot notation described above. When constructing your query element for use with a blueprint, use the [nested query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-nested-query.html).
+
+Here's the Elasticsearch query syntax for a [Paste Any Elasticsearch Query](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md#paste-any-elasticsearch-query) element that searches in a web content field:
+
+```json
+{
+    "nested": {
+        "path": "ddmFieldArray",
+        "query": {
+            "bool": {
+                "filter": {
+                    "term": {
+                        "ddmFieldArray.ddmFieldName": "ddm__keyword__33542__Text74647933_en_US"
+                    }
+                },
+                "must": {
+                    "match": {
+                        "ddmFieldArray.ddmFieldValueKeyword_en_US": "${keywords}"
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+### Enable Legacy Indexing for DDM Fields
 
 Depending on your version, [nested field storage for DDM fields](../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) may be enabled by default for Elasticsearch:
 

@@ -38,9 +38,8 @@ Upon successful authentication, the IdP constructs a SAML Response. It includes 
 
 The IdP sends the response to the Assertion Consumer Service URL. The request contains two parameters: `SAMLResponse` and `RelayState`.
 
-```{note}
-The method for sending the SAML response (for example, HTTP-POST) and the Assertion Consumer Service URL are usually imported as part of the SAML metadata XML provided by the SP. In Liferay DXP, you import the SP's metadata in the SAML Adapter's Service Provider Connections tab.
-```
+!!! note
+    The method for sending the SAML response (for example, HTTP-POST) and the Assertion Consumer Service URL are usually imported as part of the SAML metadata XML provided by the SP. In Liferay DXP, you import the SP's metadata in the SAML Adapter's Service Provider Connections tab.
 
 ### The SP Processes the SSO Response
 
@@ -66,6 +65,9 @@ When the user's browser requests a protected resource or login URL on the SP, it
 The SP looks up the IdP's Single Sign On service URL and sends an `AuthnRequest`. When Liferay is the SP it looks up the configured SAML Identity Provider Connection and sends a SAML `AuthnRequest` to the IdP's Single Sign On service URL as defined in the SAML metadata XML document. Liferay supports sending and receiving the `AuthnRequest` using HTTP-POST or HTTP-Redirect binding. HTTP-POST is preferred.
 
 If the user doesn't have an active session or if `ForceAuthn` was requested by the SP, the user must authenticate by providing credentials. When Liferay is the IdP, authentication occurs in the Login Portlet. Liferay decodes and verifies the `AuthnRequest` before requesting the user to authenticate.
+
+!!! note
+    To configure the `ForceAuthn` option, open the *Global Menu* (![Applications Menu icon](../../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *SAML Admin* &rarr; *Identity Provider Connection details*.
 
 ### The SSO Response from the IdP
 
@@ -115,7 +117,7 @@ The second SP then delivers the `LogoutResponse` to the IdP. The process is repe
 
 In SP initiated SLO, the user's browser sends a logout request directly to the SP. When Liferay is configured as the SP, the SLO is initiated by requesting this logout URL:
 
-    /c/portal/logout
+   `/c/portal/logout`
 
 For other SPs, consult the vendor's documentation on initiating SLO.
 

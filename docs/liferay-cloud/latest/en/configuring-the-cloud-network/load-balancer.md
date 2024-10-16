@@ -117,6 +117,9 @@ To add a single SSL certificate to the `LCP.json` file:
 
 Using the `ssl` object in your `LCP.json` file creates a single custom SSL certificate that maps to all custom domains used in this environment.
 
+!!! note
+    When adding or updating an SSL certificate for custom domains, deploy a build to the web server service and restart it.
+
 ### Mapping Multiple SSL Certificates to Custom Domains
 
 You can also map different SSL certificates to multiple custom domains by using the `certs` property instead of the `ssl` object.

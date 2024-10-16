@@ -39,9 +39,8 @@ If you use [experiences](../../personalizing-site-experience/experience-personal
 
 Click the device icons to access Liferay's responsive layout editor. Here you can configure your page for different screen sizes. Available display options include desktop ( ![Desktop](../../../images/icon-display.png) ), tablet ( ![Tablet](../../../images/icon-tablet-portrait.png) ), landscape phone ( ![Landscape Phone](../../../images/icon-mobile-landscape.png) ), and portrait phone ( ![Portrait Phone](../../../images/icon-mobile-portrait.png) ). While editing the tablet and phone layouts, you can adjust the screen size manually using the resize handlebar. See [Building Responsive Layouts](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) for more information.
 
-```{note}
-The [fragments and widgets](#fragments-and-widgets) and [page design options](#page-design-options) panel are only available in the desktop layout.
-```
+!!! note
+    The [fragments and widgets](#fragments-and-widgets) and [page design options](#page-design-options) panel are only available in the desktop layout.
 
 ### Edit History
 
@@ -96,17 +95,15 @@ In the Fragments and Widgets panel ( ![Fragments and Widgets icon](../../../imag
 
 **Widgets**: Widgets are [applications](../../../liferay-development/building-applications.md) that add dynamic functionality to a page. Examples include blogs, message boards, and calendars. See [Using Widgets on Content Pages](./using-widgets-on-a-content-page.md) for more information.
 
-```{tip}
-Beginning with Liferay 7.4 U37/GA37, click the Order button (![Order Button](../../../images/icon-order.png)) to reorder sets of fragments and widgets. Click the Star button (![Star Button](../../../images/icon-star.png)) to add a fragment or widget to your list of favorite elements.
-```
+!!! tip
+    Beginning with Liferay 7.4 U37/GA37, click the Order button (![Order Button](../../../images/icon-order.png)) to reorder sets of fragments and widgets. Click the Star button (![Star Button](../../../images/icon-star.png)) to add a fragment or widget to your list of favorite elements.
 
 ### Browser
 
 Use the Browser panel ( ![Browser](../../../images/icon-hierarchy.png) ) to view, organize, and manage all elements in the page. Elements are displayed in a hierarchy. For Liferay 7.4 U37/GA37+, you can drag and drop elements in the Browser panel to reorganize them or double click elements to rename them. Selecting an element opens its settings in the configuration side panel. Select a fragment's sub-elements to access additional settings. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
-```{note}
-When editing a content page, header and footer elements are not included in the Browser panel. You can only edit these elements in [master page templates](../defining-headers-and-footers/master-page-templates.md).
-```
+!!! note
+    When editing a content page, header and footer elements are not included in the Browser panel. You can only edit these elements in [master page templates](../defining-headers-and-footers/master-page-templates.md).
 
 ### Page Design Options
 
@@ -114,11 +111,10 @@ Open the *Page Design Options panel* (![Page Design Options](../../../images/ico
 
 ### Page Content
 
-In the Page Content panel ( ![Page Content](../../../images/icon-paperclip.png) ), you can view and edit content directly added to the page. This can include inline text, images, web content articles, and more. While viewing content, you can search for content items and filter by type. If the page includes a [collection](../../../site-building/displaying-content/collections-and-collection-pages.md), you can view its items and add new items. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
+In the Page Content panel (![Page Content](../../../images/icon-paperclip.png)), you can view and edit content directly added to the page. This can include inline text, images, web content articles, and more. While viewing content, you can search for content items and filter by type. If the page includes a [collection](../../../site-building/displaying-content/collections-and-collection-pages.md), you can view its items and add new items. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
 
-```{note}
-Besides collections, mapped content is not listed in the Page Content panel. The panel only includes content added directly to the page.
-```
+!!! note
+    Besides collections, mapped content is not listed in the Page Content panel. The panel only includes content added directly to the page.
 
 ### Comments
 
@@ -132,9 +128,8 @@ In the Selection panel (![Selection](../../../images/icon-pages-tree.png)), you 
 
 ![Selection shows you a hierarchy of your page and contents.](./content-page-editor-ui-reference/images/06.png)
 
-```{note}
-A page's header and footer are not listed in the Selection panel hierarchy, because you can only modify them in the [master page template](../defining-headers-and-footers/master-page-templates.md).
-```
+!!! note
+    A page's header and footer are not listed in the Selection panel hierarchy, because you can only modify them in the [master page template](../defining-headers-and-footers/master-page-templates.md).
 
 ### Contents
 

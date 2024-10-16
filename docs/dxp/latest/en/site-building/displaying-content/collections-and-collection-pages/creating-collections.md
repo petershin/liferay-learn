@@ -95,7 +95,7 @@ You can create *Manual* or *Dynamic* Collections. For information about the diff
    ![Filter your dynamic collection by adding one or more rules.](./creating-collections/images/04.png)
 
    !!! tip
-      You can add multiple rules to your filter by clicking the Add button. The final content in the dynamic collection is the result of adding all the rules.
+       You can add multiple rules to your filter by clicking the Add button. The final content in the dynamic collection is the result of adding all the rules.
 
    **Ordering:** Items in the collection appear using the order criteria you define here.
 
@@ -123,7 +123,7 @@ You can create a new collection from an [Asset Publisher widget](../../../site-b
 
 1. Find your new collection in *Site Menu* &rarr; *Site Builder* &rarr; *Collections*.
 
-## Related Information
+## Related Topics
 
 - [About Collections and Collection Pages](../collections-and-collection-pages.md)
 - [Displaying Collections](./displaying-collections.md)

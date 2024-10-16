@@ -90,7 +90,7 @@ Any time a request is made to the chosen servlets, the servlet filter intercepts
 
    - `url-pattern`: URL patterns you want to filter requests and responses for (required)
 
-   - `dispatcher`: Dispatcher enumerated constants to constrain how the filter is applied to requests (optional)
+   - `dispatcher`: Dispatcher enumerated constants to constrain how the filter is applied to requests, `REQUEST` by default (optional)
 
    !!! note
        You can add many dispatchers to one filter.
@@ -102,7 +102,7 @@ Any time a request is made to the chosen servlets, the servlet filter intercepts
    !!! tip
        Whenever you alter the order of servlet filters, it's recommended to set the `after-filter` to `Absolute Redirects Filter`. This lowers the risk of various bugs.
 
-   - `servlet-context-name`: (required)
+   - `servlet-context-name`: This value must always be set to an empty string (required)
 
    ```{literalinclude} ./using-servlet-filters/resources/liferay-m9a3.zip/m9a3-impl/src/main/java/com/acme/m9a3/internal/servlet/filter/M9A3ServletFilter.java
        :dedent: 2

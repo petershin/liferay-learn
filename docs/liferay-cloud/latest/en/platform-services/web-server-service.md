@@ -41,7 +41,7 @@ You can define these environment variables in your web server service to adjust 
 
 - `LCP_LOGROTATE_SCHEDULE`: Defines the schedule for automatic rotation (using a Cron schedule syntax, in UTC±00).
 
-- `LCP_LOGROTATE_FILE_SIZE`: Defines a maximum size for log files before they are automatically rotated.
+- `LCP_LOGROTATE_FILE_SIZE`: Defines a maximum size for log files before they are rotated automatically.
 
 - `LCP_LOGROTATE_FILE_COUNT`: Defines the maximum number of rotated log files to keep in the container.
 

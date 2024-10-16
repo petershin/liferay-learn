@@ -47,11 +47,11 @@ Once the Liferay service has been deployed with the `scale` property set to `1`,
 
 ### Auto-Scaling
 
-Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-scaling is enabled, then the `scale` property will determine the initial number of instances. The number of instances will then increase according to demand. See [Scaling the Liferay Service](../../manage-and-optimize/scaling-the-liferay-service.md) for more information.
+Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-scaling is enabled, then the `scale` property determines the initial number of instances. The number of instances now increase according to demand. See [Scaling the Liferay Service](../../manage-and-optimize/scaling-the-liferay-service.md) for more information.
 
 ## Add Clustering Portal Properties
 
-By default, no additional portal properties are required to enable clustering in Liferay Cloud. The necessary configuration to set up clustering will already be copied to a `portal-clu.properties` and `unicast.xml` files in the Docker image when the Liferay DXP service starts up.
+By default, no additional portal properties are required to enable clustering in Liferay Cloud. The necessary configuration to set up clustering is copied to `portal-clu.properties` and `unicast.xml` files in the Docker image when the Liferay DXP service starts.
 
 However, if additional portal properties for clustering are desired, the properties may still be added to the repository. You can override the clustering-specific portal properties by adding them into the `portal-clu.properties` file within the `config` folder appropriate to the chosen environment. See [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md) for more about deploying configurations for the Liferay service.
 

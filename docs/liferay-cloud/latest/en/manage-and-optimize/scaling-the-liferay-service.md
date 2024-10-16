@@ -10,7 +10,7 @@ uuid: f5e2b006-daf3-4775-9182-0d9455a63b38
 
 Liferay Cloud offers two modes of scaling. The auto-scaling feature automatically creates and destroys instances of the Liferay service as needed to optimize performance. By default, this feature is *disabled* in every Liferay Cloud account. Alternatively, you can create and destroy Liferay instances manually using manual scaling. This addresses sudden changes such as increased server traffic, memory leaks, or other issues.
 
-Using auto-scaling, a service can automatically increase (upscale) the number of Liferay DXP instances to a [defined maximum](#setting-the-maximum-number-of-additional-instances), or decrease (downscale) to the number specified in the `scale` property in [`LCP.json`](../reference/configuration-via-lcp-json.md). The `scale` property specifies the minimum number of instances to run:
+Using auto-scaling, a service can increase (upscale) the number of Liferay DXP instances automatically to a [defined maximum](#setting-the-maximum-number-of-additional-instances), or decrease (downscale) to the number specified in the `scale` property in [`LCP.json`](../reference/configuration-via-lcp-json.md). The `scale` property specifies the minimum number of instances to run:
 
 ```json
    "scale": 2,
@@ -20,9 +20,9 @@ Monitor your application's [resource usage](./quotas-and-resource-usage.md) (CPU
 
 ## How Scaling is Charged
 
-Manual and auto-scaling is only available for the Liferay DXP service in production environments. Once scaling is enabled, each extra instance of the service incurs an hourly charge. This charge is independent of the normal Liferay PaaS subscription process.
+Manual and auto-scaling are only available for the Liferay DXP service in production environments. Once scaling is enabled, each extra instance of the service incurs an hourly charge. This charge is independent of the normal Liferay PaaS subscription process.
 
-At the end of every quarter that you use or deploy additional instances, Liferay will issue you an invoice. You must pay this invoice in accordance with your agreement with Liferay.
+At the end of every quarter that you use or deploy additional instances, Liferay sends you an invoice. You must pay this invoice in accordance with your agreement with Liferay.
 
 For each service instance added via manual or auto-scaling, the price depends on your subscription plan. The total charge is based on the number of clock hours that you used the scaled instances. For pricing purposes, the total usage during a calendar quarter is rounded up to the nearest full clock hour.
 
@@ -75,7 +75,7 @@ Follow these steps to enable or disable manual scaling in the Liferay Cloud Cons
 1. Choose the number of extra instances to be created.
 1. Toggle the switch to enable or disable manual scaling.
 
-With manual scaling enabled, Liferay Cloud creates the requested number of instances. This might take a couple minutes. The extra instances stay up as long as manual scaling remains enabled.
+With manual scaling enabled, Liferay Cloud creates the requested number of instances. This might take a few minutes. The extra instances stay up as long as manual scaling remains enabled.
 
 ![Enable or disable manual scaling from your service's Scale tab.](./scaling-the-liferay-service/images/02.png)
 

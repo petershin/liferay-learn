@@ -4,6 +4,7 @@ Glowroot
 Gradle
 HAProxy
 Hikari
+Initializer
 JBoss
 JDKs
 JavaScript

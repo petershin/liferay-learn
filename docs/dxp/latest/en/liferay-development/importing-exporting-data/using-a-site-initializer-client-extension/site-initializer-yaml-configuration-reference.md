@@ -15,7 +15,7 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay 7.4`
 
-Use a `client-extension.yaml` file to define a site initializer client extension.
+Use a `client-extension.yaml` file to define a Site Initializer client extension.
 
 ## Usage Details
 
@@ -40,15 +40,15 @@ liferay-sample-site-initializer-oauth-application-headless-server:
 
 The required `siteName` property defines the new site's name when it's deployed. The client extension also requires an [OAuth headless server client extension](../../configuration-as-code.md#oauth-headless-server-client-extensions) to authenticate.
 
-The [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-site-initializer) includes a complete site initializer client extension.
+The [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-site-initializer) includes a complete Site Initializer client extension.
 
 ## YAML Properties
 
-These properties are specific to site initializer client extensions:
+These properties are specific to Site Initializer client extensions:
 
 | **Name**                    | **Data Type** | **Description**                                                |
-| :-------------------------- | :------------ | :------------------------------------------------------------- |
-| `siteExternalReferenceCode` | String        | An external reference code used to uniquely identify the site. |
+|:----------------------------|:--------------|:---------------------------------------------------------------|
+| `siteExternalReferenceCode` | String        | An external reference code used to identify the site uniquely. |
 | `siteName`                  | String        | The site's name when it's deployed to a Liferay instance.      |
 
 ## Related Topics

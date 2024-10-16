@@ -22,9 +22,9 @@ If you want to import or export data from Liferay, you use batch client extensio
 
 ## Batch Client Extensions
 
-Batch client extensions work with Liferay's [batch engine framework](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) to provide data entities to your Liferay instance. Export one instance's data (e.g., via `curl` or the Export/Import Center). Then add it to a batch client extension and [deploy](./client-extensions/working-with-client-extensions.md#deploying-to-your-liferay-instance) it to bring the data into a different Liferay instance.
+Batch client extensions work with Liferay's [batch engine framework](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) to provide data entities to your Liferay instance. Export one instance's data (e.g., via `curl` or the Export/Import Center). Then add it to a batch client extension and [deploy](./client-extensions/working-with-client-extensions.md#deploying-to-your-liferay-instance) it to bring the data into another Liferay instance.
 
-To export data to use with batch client extensions, you can use the Export/Import Center via the Applications Menu ( ![Applications menu icon](../images/icon-applications-menu.png) ). To enable the Export/Import center, add this [portal property](../installation-and-upgrades/reference/portal-properties.md) before starting Liferay:
+To export data to use with batch client extensions, you can use the Export/Import Center via the Applications Menu (![Applications menu icon](../images/icon-applications-menu.png)). To enable the Export/Import center, add this [portal property](../installation-and-upgrades/reference/portal-properties.md) before starting Liferay:
 
 ```properties
 feature.flag.COMMERCE-8087=true
@@ -48,9 +48,9 @@ Once the `*.batch-engine-data.json` file is added to a [batch client extension](
 
 ## Site Initializer Client Extensions
 
-[Site initializers](../site-building/developer-guide/site-initializers.md) are a unique type of batch client extensions you can deploy to quickly start up a pre-built site. Deploying the client extension creates the new site along with any configurations or content provided with it.
+A [Site Initializer](../site-building/developer-guide/site-initializers.md) is a type of batch client extension you can deploy to create a pre-built site quickly. Deploying the client extension creates the new site along with any configurations or content provided with it.
 
-Specify the site initializer client extension in your `client-extension.yaml` file:
+Specify the Site Initializer client extension in your `client-extension.yaml` file:
 
 ```yaml
 type: siteInitializer

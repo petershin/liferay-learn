@@ -13,4 +13,4 @@ taxonomy-category-names:
 ---
 # Creating and Managing Products
 
-Learn how you can use the different product types available out-of-the-box with Liferay and enrich the storefront experience for customers. You can leverage built-in capabilities for product like options, attachments, specifications, AI-generated product descriptions, images, and more to get your store up and running in no time.
+Learn how you can use the different product types available out-of-the-box with Liferay and enrich the storefront experience for customers. You can leverage built-in capabilities for products like options, attachments, specifications, AI-generated product descriptions, images, and more. 

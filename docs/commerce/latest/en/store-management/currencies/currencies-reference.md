@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Currencies Reference
 
-Liferay comes with multiple currencies pre-configured for use out-of-the-box. Your store must have a primary currency enabled, to start processing orders.
+Liferay comes with multiple currencies pre-configured for use out-of-the-box. Your store must have a primary currency enabled to start processing orders.
 
 To manage currencies, open the _Global Menu_ (![Applications Menu icon](../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Currencies_.
 

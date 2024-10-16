@@ -16,6 +16,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Orders
 
 An order starts off in the _Open_ status. After the customer finishes checking out, it transitions into the _Pending_ status. To start processing an order, you must accept a pending order. You can view all your orders by opening the _Global Menu_ (![Applications Menu icon](../images/icon-applications-menu.png)) and navigating to _Commerce_ &rarr; _Orders_.

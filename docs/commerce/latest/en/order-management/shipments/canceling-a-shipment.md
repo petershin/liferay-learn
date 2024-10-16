@@ -17,18 +17,18 @@ To cancel a shipment:
 1. Navigate to the _Control Panel_ → _Commerce_ → _Shipments_.
 2. Click the _3-dot icon_ next to the shipment to be canceled (for example, _42498_).
 
-    ![Delete Button](./cancelling-a-shipment/images/01.png)
+    ![Delete Button](./canceling-a-shipment/images/01.png)
 
 3. Click _Delete_.
 4. Click _OK_ in the confirmation window.
 
 The shipment has been canceled.
 
-![Shipment has been deleted](./cancelling-a-shipment/images/02.png)
+![Shipment has been deleted](./canceling-a-shipment/images/02.png)
 
 Canceling a shipment changes the status in the _Transmitted_ tab in the [_Orders_ menu](../orders/orders-menu-reference-guide.md).
 
-![Updated Transmitted Tab](./cancelling-a-shipment/images/03.png)
+![Updated Transmitted Tab](./canceling-a-shipment/images/03.png)
 
 Note that if a new shipment is [created](./creating-a-shipment.md) from the same order, a new shipment number is generated (for example, _42888_).
 

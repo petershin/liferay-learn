@@ -12,7 +12,7 @@ taxonomy-category-names:
 Catalogs contain products, and each catalog has its own default [base price list](#base-price-list) and [base promotion list](#base-promotion-list). These lists store base price entries for all product SKUs in the catalog and are available to all customers. You can also create custom [price lists](#price-lists) and [promotion lists](#promotion-lists) to define more targeted and configurable price entities. As part of each entry, you can also define [price tiers](#price-tiers) that set special prices for products based on quantity. Finally, [discounts](#discounts) are applied on top of price entries without overriding them.
 
 !!! note
-    The following overview describes Commerce Pricing Engine v2.0. This is the default pricing algorithm used for Commerce 3.0+ and Portal/DXP 7.3+. Commerce 2.1.x. Earlier versions use [Pricing Engine v1.0](#pricing-engine-v1-0-reference) by default. If desired, you can [change the pricing engine version](#enabling-pricing-engine-v20-in-commerce-21x) used for the instance.
+    The following overview describes Commerce Pricing Engine v2.0. This is the default pricing algorithm used for Commerce 3.0+ and Portal/DXP 7.3+. Earlier versions (i.e., Commerce 2.1.x) use [Pricing Engine v1.0](#pricing-engine-v1-0-reference) by default. If desired, you can [change the pricing engine version](#enabling-pricing-engine-v20-in-commerce-21x) used for the instance.
 
 {bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` If you have a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, you have entries for each unit in the base price list, base promotion list, custom price lists, and custom promotion lists. 
 
@@ -20,13 +20,13 @@ Catalogs contain products, and each catalog has its own default [base price list
 
 ## Base Price List
 
-The base price list stores the starting price for every product SKU in a catalog. These entries set the standard currency and price used for each SKU when no overrides are applied to it. This list is automatically created for every catalog and is available to all accounts and channels. See [Setting a Product's Base Price](./setting-a-products-base-price.md) to learn more.
+The base price list stores the starting price for every product SKU in a catalog. These entries set the standard currency and price used for each SKU when no overrides are applied to it. This list is created automatically for every catalog and is available to all accounts and channels. See [Setting a Product's Base Price](./setting-a-products-base-price.md) to learn more.
 
 ![The base price list stores the starting price entry for every product SKU in a catalog.](./pricing-engine-overview/images/02.png)
 
 ## Base Promotion List
 
-The base promotion list stores base promotional price entries for all product SKUs in a catalog. When applied to an SKU, the base promotional price entry overrides its base price for all customers. This list is automatically created for every catalog and is available to all accounts and channels. See [Promotion Base List Reference](./promoting-products/promotions-reference.md) for more information.
+The base promotion list stores base promotional price entries for all product SKUs in a catalog. When applied to an SKU, the base promotional price entry overrides its base price for all customers. This list is created automatically for every catalog and is available to all accounts and channels. See [Promotion Base List Reference](./promoting-products/promotions-reference.md) for more information.
 
 ![The base promotion list stores base promotional price entries for all product SKUs in a catalog.](./pricing-engine-overview/images/03.png)
 
@@ -43,11 +43,11 @@ Custom promotion lists store promotion price entries for specific products and a
 ![Use custom promotion lists to store targeted promotion price entries.](./pricing-engine-overview/images/05.png)
 
 !!! note
-    Prior to Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
+    Before Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
 
 ## Price Tiers
 
-Price tiers are set directly within a price entry and define specific prices for orders that meet minimum quantity requirements. These prices are displayed to customers as discounted order options. See [Using Price Tiers](./using-price-tiers.md) for more information.
+Price tiers are set directly within a price entry and define specific prices for orders that meet minimum quantity requirements. These prices appear to customers as discounted order options. See [Using Price Tiers](./using-price-tiers.md) for more information.
 
 ## Discounts
 

@@ -2,7 +2,7 @@
 toc:
   - ./shipments/shipment-lifecycle-overview.md
   - ./shipments/creating-a-shipment.md
-  - ./shipments/cancelling-a-shipment.md
+  - ./shipments/canceling-a-shipment.md
   - ./shipments/shipments-management-reference-guide.md
 uuid: f16181cf-fbd3-44b0-98fc-9ad41ad1b6b2
 taxonomy-category-names:
@@ -13,6 +13,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Shipments
 
 You can create *Shipments* when an order is in the [processing](./orders/processing-an-order.md) stage.
@@ -30,4 +31,4 @@ To create a shipment,
 
    ![Click on Create Shipment for an order that is in the processing stage.](./shipments/images/01.png)
 
-Once you create a shipment, you are taken to the Shipments page where you can manage shipments and finish processing the order.
+Once you create a shipment the Shipments page appears, where you can manage shipments and finish processing the order.

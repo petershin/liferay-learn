@@ -29,4 +29,4 @@ To skip straight to creating roles and assigning users, see
 - [Assigning Users to Roles](./roles-and-permissions/assigning-users-to-roles.md)
 
 !!! note
-    [Site Teams](../site-building/sites/site-membership/creating-teams-for-sites.md) have a dedicated permissions management User Interface.
+    [Site Teams](../site-building/sites/site-membership/creating-teams-for-sites.md) have a dedicated permissions management user interface.

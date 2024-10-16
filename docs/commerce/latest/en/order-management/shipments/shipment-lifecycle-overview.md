@@ -8,7 +8,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Shipment Lifecycle Overview
+# Shipment Life Cycle Overview
 
 There are four stages for a shipment.
 
@@ -24,7 +24,7 @@ There are four stages for a shipment.
 
 Click *Finish Processing* after selecting the items in the shipment and quantities from their source warehouse. The order is ready to ship now. You can also view additional details such as the carrier, tracking number, shipping method, tracking URL, addresses, and estimated delivery and shipping dates here.
 
-![You can finish processing after selecting the items in the order and their source warehouse.](./shipment-lifecycle-overview/images/01.png)
+![You can finish processing after selecting the items in the order and their source warehouse.](./shipment-life-cycle-overview/images/01.png)
 
 !!! note
     Starting with Liferay DXP 7.4 U35/GA35, each item in the shipment also has an external reference code (ERC) associated with it. You can change this by clicking on the item and entering a value for the *External Reference Code* field.
@@ -33,23 +33,23 @@ Click *Finish Processing* after selecting the items in the shipment and quantiti
 
 Now you can confirm all the details of the shipment. Once confirmed, click *Ship* to ship the order. This also moves the order's status from *Processing* to *Shipped*.
 
-![You can confirm all the details of the shipment before shipping the order.](./shipment-lifecycle-overview/images/02.png)
+![You can confirm all the details of the shipment before shipping the order.](./shipment-life-cycle-overview/images/02.png)
 
 ## Shipped
 
 After shipping the order, both the order and the shipment move to the *Shipped* status. Upon delivery, you can click the *Deliver* button to mark the shipment as *Delivered*.
 
-![After shipping the order, the shipment moves to the Shipped status.](./shipment-lifecycle-overview/images/03.png)
+![After shipping the order, the shipment moves to the Shipped status.](./shipment-life-cycle-overview/images/03.png)
 
 ## Delivered
 
 All the stages of a shipment are complete upon confirmation of delivery.
 
-![When delivery is confirmed, all shipment stages are marked complete.](./shipment-lifecycle-overview/images/04.png)
+![When delivery is confirmed, all shipment stages are marked complete.](./shipment-life-cycle-overview/images/04.png)
 
 After delivery, the order moves to the *Completed* status. See the [Shipments Management Reference Guide](./shipments-management-reference-guide.md) to learn more about the specific features and fields.
 
-![The order moves to the Completed status after delivery.](./shipment-lifecycle-overview/images/05.png)
+![The order moves to the Completed status after delivery.](./shipment-life-cycle-overview/images/05.png)
 
 ## Liferay Commerce 2.1 and Below
 
@@ -63,7 +63,7 @@ Store managers use the Shipments menu to create and track a shipment after [rece
 
 Navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Shipments*.
 
-![You can create and track Shipments from the Shipments Menu.](./shipment-lifecycle-overview/images/06.png)
+![You can create and track Shipments from the Shipments Menu.](./shipment-life-cycle-overview/images/06.png)
 
 The Shipments menu displays all created shipments in all statuses. Click *Add* (![add-icon](../../images/icon-add.png)) to add a new shipment.
 
@@ -73,7 +73,7 @@ Clicking on a particular shipment number (for example, *41250*) displays the shi
 
 The *Shipment Details* tab contains the following information:
 
-![Shipment Details Menu](./shipment-lifecycle-overview/images/07.png)
+![Shipment Details Menu](./shipment-life-cycle-overview/images/07.png)
 
 | Field                  | Description                                                                                      |
 | :--------------------- | :----------------------------------------------------------------------------------------------- |
@@ -96,7 +96,7 @@ The *Shipment Details* tab contains the following information:
 
 The Shipment Items Tab contains the following information:
 
-![View all the items in the shipment under the Shipment Items Tab.](./shipment-lifecycle-overview/images/08.png)
+![View all the items in the shipment under the Shipment Items Tab.](./shipment-life-cycle-overview/images/08.png)
 
 | Field     | Description                                 |
 | :-------- | :------------------------------------------ |

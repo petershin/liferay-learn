@@ -7,9 +7,10 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Store Setup Overview
 
-Initial store setup uses the [admin account](./introduction-to-the-admin-account.md). Read the [Liferay Commerce Configuration Overview](../store-management/liferay-commerce-configuration-overview.md) familiarize yourself with the Liferay Commerce configuration layout and available options.
+Initial store setup uses the [admin account](./introduction-to-the-admin-account.md). Read the [Liferay Commerce Configuration Overview](../store-management/liferay-commerce-configuration-overview.md) to familiarize yourself with the Liferay Commerce configuration layout and available options.
 
 ## Store Setup
 
@@ -33,11 +34,11 @@ Liferay Commerce is built on Liferay DXP. For more information about how Liferay
 
 ### Configure Storefront Settings
 
-The following sections cover configurations that are storefront specific.
+Storefront settings include payment, taxes, and shipping. 
 
 #### Accepting Payment
 
-Liferay provides support for several third party payment processors and also allows for the use of money orders to accept payment. See:
+Liferay provides support for several third party payment processors along with the use of money orders to accept payment. 
 
 - [Payments](../store-management/configuring-payment-methods.md)
 - [Managing Payment Methods](../store-management/configuring-payment-methods/managing-payment-methods.md)
@@ -48,7 +49,7 @@ Liferay provides support for several third party payment processors and also all
 
 #### Collecting Applicable Taxes
 
-To collect the applicable taxes, Liferay has the ability to create tax categories and to set tax rates by address or by a fixed rate.
+To collect the applicable taxes, Liferay can create tax categories and set tax rates by address or by a fixed rate.
 
 - [Creating Tax Categories](../pricing/configuring-taxes/creating-tax-categories.md)
 - [Setting Rates for Tax Calculations](../pricing/configuring-taxes/setting-rates-for-tax-calculations.md)
@@ -56,7 +57,7 @@ To collect the applicable taxes, Liferay has the ability to create tax categorie
 
 #### Shipping Products
 
-Liferay has several options to calculate shipping rates.
+Liferay can calculate shipping rates in several ways.
 
 - [Shipping Methods](../store-management/configuring-shipping-methods.md)
 - [Variable Rate](../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
@@ -84,7 +85,7 @@ Liferay supports storing and managing a wide variety of product information usin
 
 #### Product Pricing
 
-There are several ways to price products and these methods are related to one another in a pricing hierarchy: base price, price list, tiered price, promo price, and discount. Pricing is managed per SKU.
+There are several ways to price products, and these methods are related to one another in a pricing hierarchy: base price, price list, tiered price, promo price, and discount. Pricing is managed per SKU.
 
 - [Pricing](../pricing/introduction-to-pricing.md)
 - [Price Lists](../pricing/creating-a-price-list.md)
@@ -102,7 +103,7 @@ See [Creating Store Content](../creating-store-content/creating-store-content.md
 
 ## Managing Customer Accounts
 
-To learn more about how accounts, inviting users accounts, account roles, and more, see below:
+To learn more about accounts, inviting users to accounts, account roles, and more, see below:
 
 - [Introduction to Accounts](../users-and-accounts/account-management.md)
 - [Creating a New Account](../users-and-accounts/account-management/creating-a-new-account.md)
@@ -113,9 +114,9 @@ To learn more about how accounts, inviting users accounts, account roles, and mo
 
 ## Managing Orders and Shipments
 
-After receiving an order, you can send it to an ERP and optionally to a CRM. Once the requested goods are available for shipping, your inventory manager may track the shipment. See below to learn about the life cycle of an order and a shipment.
+After receiving an order, you can send it to an ERP (Enterprise Resource Planning) and optionally to a CRM (Customer Relationship Management). Once the requested goods are available for shipping, your inventory manager may track the shipment. See below to learn about the life cycle of an order and a shipment.
 
 - [Order Life Cycle](../order-management/orders/order-life-cycle.md)
-- [Shipment Lifecycle Overview](../order-management/shipments/shipment-lifecycle-overview.md)
+- [Shipment Life Cycle Overview](../order-management/shipments/shipment-life-cycle-overview.md)
 - [Creating a shipment](../order-management/shipments/creating-a-shipment.md)
 - [Canceling a Shipment](../order-management/shipments/cancelling-a-shipment.md)

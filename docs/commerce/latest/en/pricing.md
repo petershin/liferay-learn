@@ -19,6 +19,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Pricing
 
 Liferay provides a robust pricing system to fine-tune product prices. You can define multiple price entries for a single product SKU and determine which accounts, account groups, and channels are eligible to receive each price. If multiple price entities exist for the same SKU, the pricing engine calculates which entities should be used for each customer in the channel.

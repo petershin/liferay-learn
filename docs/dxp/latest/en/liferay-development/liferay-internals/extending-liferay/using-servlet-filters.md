@@ -4,7 +4,7 @@ uuid: 077d03b0-b1fc-4d14-8180-8acc0300b522
 
 # Using Servlet Filters
 
-Servlet filters can both pre-process requests as they arrive and post-process responses before they go to the client browser. They let you apply functionality to requests and responses for multiple servlets, without the servlets knowing. Here are some common filter use cases:
+Servlet filters can both pre-process requests as they arrive and post-process responses before they go to the client browser. You can apply functionality to requests and responses for multiple servlets, without the servlets knowing. Here are some common filter use cases:
 
 - Logging
 - Auditing
@@ -40,15 +40,15 @@ Then, follow these steps to download, build, and deploy the sample Servlet Filte
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. Confirm the module was successfully deployed and started via the container console.
+1. Confirm the module was deployed successfully and started via the container console.
 
-   ```
+   ```log
    STARTED com.acme.m9a3.impl_1.0.0 [1630]
    ```
 
 1. Verify the portlet filter is working by visiting `localhost:8080`. Whenever a request is forwarded to the servlet, the container console shows a message stating that the method was successfully invoked.
 
-   ```
+   ```log
    INFO  [http-nio-8080-exec-6][M9A3ServletFilter:37] Invoking #processFilter(HttpServletRequest, HttpServletResponse, FilterChain)
    ```
 

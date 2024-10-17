@@ -32,7 +32,7 @@ While managing data set views, you can define pre-applied filters to be used in 
 
 {bdg-secondary}`Liferay DXP 2024.Q4+`
 
-For any type of filter, clicking *Select* under the *Filter By* field opens the *Select Field* pop-up, with a tree view that includes all of the selected entry type's fields. If the entry has other parent or related entries (such as a [related object](../../objects/creating-and-managing-objects/relationships/defining-object-relationships.md)), you can also expand the related entry's fields.
+For any type of filter, clicking *Select* under the *Filter By* field opens the *Select Field* pop-up, with a tree view that includes all of the selected entry type's fields. For object entry types, you can also expand parent or related entry fields (such as a [related object's fields](../../objects/creating-and-managing-objects/relationships/defining-object-relationships.md)).
 
 The chosen type of filter determines which fields in the tree are selectable:
 
@@ -44,10 +44,10 @@ The chosen type of filter determines which fields in the tree are selectable:
 
 ![You can see all fields for the chosen entry type, as well as related entry types.](./data-set-view-filters/images/01.png)
 
-Selecting a field that belongs to a related entry can be useful for more complex filters. For example, if you have a Student object with a relationship to a School object, you can filter a Student data set view by their related School's name or ID.
+Selecting a field that belongs to a related entry can be useful for more complex filters. For example, if you have a Student object with a relationship to a School object, you can filter a Student data set view by their related School's `schoolName` field. If the user selects the name *Standford University*, this filter expression automatically applies: `filter=(studentsAtSchool/schoolName+eq+'Stanford+University')`.
 
 !!! warning
-    Data set view filters are intended for object endpoints. The automatically generated filter syntax for other kinds of endpoints (such as `/o/headless-*` endpoints) may not work for filters using related entries' fields.
+    Only object endpoints support selecting related or parent entry fields. The automatically generated filter syntax for other kinds of endpoints (such as `/o/headless-*` endpoints) does not work for filters using related entries' fields.
 
 ## Client Extension Filter
 

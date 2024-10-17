@@ -13,7 +13,7 @@ uuid: fe400129-039c-4362-af69-bda679064baf
 
 Low level search doesn't go through the Search and Indexing Framework, which is infrastructure used for searching documents in a Liferay search index.
 
-A common use case for a low level search is to query an index other than the Liferay DXP index. By default, [Search Pages](../working-with-search-pages/search-pages.md) search the Liferay DXP index, but you can also search another index, as long as it's in the same Elasticsearch cluster.
+A common use case for a low level search is to query an index other than the Liferay DXP index. By default, [Search Pages](../working-with-search-pages/search-pages.md) search the Liferay DXP index, but you can also search another index, even if it's in a different Elasticsearch cluster.
 
 Add the Low Level Search Options widget to a search page and configure it to direct the search to the alternate index. To search multiple indexes from the same page, you can add multiple Low Level Search Options widgets and configure each one with its own Index Name and Federated Search Key.
 
@@ -33,7 +33,7 @@ To use the Low Level Search Options widget, add it to a Search Page:
 
 The widget has different options to configure:
 
-**[Liferay 7.3+] Connection ID:** Select the Connection ID of the connection to be used to perform the search.
+**[Liferay 7.3+] Connection ID:** Select the Connection ID of a search engine connection to use when searching. You can set any active connection configured in [System Settings](../../installing-and-upgrading-a-search-engine/elasticsearch/elasticsearch-connector-configuration-reference.md). This is only needed if you're searching in an index in a different cluster than the main Liferay search engine connection. Set the index name to search in the Federated Search Key setting.
 
 **Indexes:** Enter the comma-separated names of the alternative indexes to search. Usually, you shouldn't enter a Liferay company index name.
 
@@ -143,3 +143,5 @@ To test out the Low Level Search page functionality,
 ![Results from disparate indexes are best displayed in separate Search Results widgets.](./understanding-low-level-search-options/images/05.png)
 
 Now you're able to configure the out of the box search widgets to participate in searches against any Elasticsearch index in the cluster.
+
+<!-- Add later: ## Example 3: Searching an Index in a Different Elasticsearch Cluster -->

@@ -57,7 +57,7 @@ You can monitor the usage of these resources in the Plan and Usage page. It offe
 
    - Builds: Status of all builds generated in the present day.
 
-1. At the bottom of Plan Allocation and Consumption, is the **Storage** section. It contains two graphs:
+1. At the bottom of Plan Allocation and Consumption is the Storage section. It contains two graphs:
 
    - Document Library: Storage consumption in the document library for each environment.
 

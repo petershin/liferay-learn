@@ -57,7 +57,7 @@ Clients using Microsoft ADFS should pay attention to these settings (which are r
 | IdP Single Sign-On URL  | Default setting is `/adfs/ls`. Example: `http://adfs.example.com/adfs/ls/`                                                  |
 | IdP Signing Certificate | A DER encoded binary X.509 certificate file                                                                                 |
 
-Once the IdP metadata is generated, [open a ticket with the Liferay Cloud https://help.liferay.com/hc/. IdP metadata can be transmitted with either an XML file or a URL endpoint (for example, `https://[hostname]:[port]/c/saml/metadata`).
+Once the IdP metadata is generated, [open a ticket with the Liferay Cloud team](https://help.liferay.com/hc/). IdP metadata can be transmitted with either an XML file or a URL endpoint (for example, `https://[hostname]:[port]/c/saml/metadata`).
 
 ### Liferay Cloud Team Imports Provided IdP Data and Provides Service Provider Metadata
 

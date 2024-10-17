@@ -1735,7 +1735,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **What Changed**: The `PortalSessionDestroyer` class is removed.
 - **Reason**: The logic from `PortalSessionCreator` is moved into `DependencyManagerSyncUtil`'s `registerSyncCallable` method.
 
-## Changes in `portal-kernel` Classes
+### Changes in `portal-kernel` Classes
 
 **DLAppLocalService.java**
 `portal-kernel/src/com/liferay/document/library/kernel/service/DLAppLocalService.java`

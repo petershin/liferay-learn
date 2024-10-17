@@ -8,7 +8,7 @@ taxonomy-category-names:
 uuid: 7a2fa130-73d1-49b8-9dfd-17e5935c6d91
 ---
 
-## For Liferay 7.3.x and Earlier
+# For Liferay 7.3.x and Earlier
 
 The Documents and Media application comes with a built-in image editor. Edit images right from your browser and apply filters, adjust contrast, or crop.
 
@@ -20,13 +20,13 @@ The image editor offers a minimal, user-friendly UI with the following tools.
 
 ![There are different editing tools below the image.](editing-images-for-liferay-73-and-earlier-versions/images/02.png)
 
-### Effects Tool (Filters)
+## Effects Tool (Filters)
 
 Select from and apply predefined filters to your image.
 
 ![The Effects tool brings up predefined filters you can apply to your image.](editing-images-for-liferay-73-and-earlier-versions/images/03.png)
 
-### Transform Tools (Transform Option)
+## Transform Tools (Transform Option)
 
 **Rotate**: Rotates the image to the left or right, in 90 degree increments.
 
@@ -34,7 +34,7 @@ Select from and apply predefined filters to your image.
 
 **Crop**: Reframes the image by removing the outer portions.
 
-### Adjustment Tools (Color Adjustment)
+## Adjustment Tools (Color Adjustment)
 
 **Saturation**: Adjusts the color saturation in the image. The default value of 50 is the current saturation. The slider values range from 0 (completely desaturated) to 100 (completely saturated).
 

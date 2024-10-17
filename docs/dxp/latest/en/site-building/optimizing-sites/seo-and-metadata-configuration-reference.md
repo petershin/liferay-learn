@@ -3,13 +3,18 @@ toc:
    - ../site-settings/managing-site-urls/configuring-friendly-url-redirects.md
    - ../site-settings/managing-site-urls/configuring-friendly-url-separators.md
    - ../site-settings/configuring-hreflang-meta-data.md
-   - [Configuring Open Graph for Sites]() -> configuring open graph
+   - ../site-settings/configuring-open-graph-for-sites.md
    - ../site-settings/managing-site-urls/configuring-xml-sitemaps.md
    - ../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md
    - ../site-settings/managing-site-urls.md
    - ../optimizing-sites.md
    - ../site-settings/managing-site-urls/setting-up-redirects-and-404-tracking.md
    - ../site-settings/site-settings-ui-reference.md
+   - ../../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
+   - ../creating-pages/page-settings/page-settings-ui-reference.md
+   - ../displaying-content/using-display-page-templates/configuring-seo-and-open-graph-settings-for-display-page-templates.md
+   - ../creating-pages/page-settings/configuring-your-pages-friendly-url.md
+   - ../../content-authoring-and-management/page-performance-and-accessibility.md
 taxonomy-category-names:
 - Sites
 - Accessibility
@@ -17,7 +22,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS
-uuid: f8b1db1e-5d12-47a3-8a19-4d8b79864670
+uuid: b1233d23-e21d-404c-9e7d-06013b15c652
 ---
 
 # SEO and Metadata Configuration Reference
@@ -26,12 +31,12 @@ Optimizing SEO and metadata is essential for improving site visibility in search
 
 Refer to this guide for both site-wide and individual page SEO configurations to ensure your Liferay site meets modern SEO standards and provides a seamless user experience across devices and platforms.
 
-Site SEO
+## Site-wide SEO Configurations
 
 - [Configuring Friendly URL Redirects](../site-settings/managing-site-urls/configuring-friendly-url-redirects.md)
 - [Configuring Friendly URL Separators](../site-settings/managing-site-urls/configuring-friendly-url-separators.md)
 - [Configuring Hreflang Meta Data](../site-settings/configuring-hreflang-meta-data.md)
-- [Configuring Open Graph for Sites]() -> configuring open graph
+- [Configuring Open Graph for Sites](../site-settings/configuring-open-graph-for-sites.md)
 - [Configuring XML Sitemaps](../site-settings/managing-site-urls/configuring-xml-sitemaps.md)
 - [Configuring Your Site's Friendly URL](../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)
 - [Managing Site URLs](../site-settings/managing-site-urls.md)
@@ -39,10 +44,10 @@ Site SEO
 - [Setting up Redirects and 404 Tracking](../site-settings/managing-site-urls/setting-up-redirects-and-404-tracking.md)
 - [Site Settings UI Reference](../site-settings/site-settings-ui-reference.md)
 
-Page SEO
+## Page-specific SEO Configurations
 
 - [Analyze SEO and Accessibility on Pages](../../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md)
-- [Page Settings UI Reference](../creating-pages/page-settings/page-settings-ui-reference.md) -> page settings ui reference
+- [Page Settings UI Reference](../creating-pages/page-settings/page-settings-ui-reference.md)
 - [Configuring SEO and Open Graph Settings for Display Page Templates](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph-settings-for-display-page-templates.md)
 - [Configuring Your Page's Friendly URL](../creating-pages/page-settings/configuring-your-pages-friendly-url.md)
 - [Page Performance and Accessibility](../../content-authoring-and-management/page-performance-and-accessibility.md)

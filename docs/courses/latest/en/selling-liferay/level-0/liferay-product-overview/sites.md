@@ -45,7 +45,7 @@ Sites include Design Systems and Experience Management capabilities, which work 
 
 * [Ranking](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/learning-to-rank)
 * [Friendly URLs](https://learn.liferay.com/w/dxp/site-building/site-settings/managing-site-urls/configuring-your-sites-friendly-url)
-* [OpenGraph](https://learn.liferay.com/w/dxp/site-building/site-settings/configuring-open-graph)
+* [OpenGraph](https://learn.liferay.com/w/dxp/site-building/site-settings/configuring-open-graph-for-sites)
 
 ## Accessibility
 

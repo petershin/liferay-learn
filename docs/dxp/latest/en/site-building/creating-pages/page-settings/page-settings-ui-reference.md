@@ -205,7 +205,7 @@ Use the drop-down menu to inform tools crawling and indexing your site how frequ
 
 [Open Graph](https://ogp.me/) is an Internet protocol that standardizes previews of site content when shared in application contexts that support it, such as Twitter, Facebook, or LinkedIn. It does this by embedding structured data in page headers as `<meta>` tags, similar to [RDFa](https://en.wikipedia.org/wiki/RDFa).
 
-In the *Open Graph* tab, you can use Open Graph `<meta>` tags to define a page's metadata and create engaging representations of your content. Values defined here override default values defined at the [site](../../site-settings/configuring-open-graph.md) level.
+In the *Open Graph* tab, you can use Open Graph `<meta>` tags to define a page's metadata and create engaging representations of your content. Values defined here override default values defined at the [site](../../site-settings/configuring-open-graph-for-sites.md) level.
 
 !!! note
     Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.

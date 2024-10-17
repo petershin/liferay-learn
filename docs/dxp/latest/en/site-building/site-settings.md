@@ -5,7 +5,7 @@ toc:
   - ./site-settings/site-content-configurations.md
   - ./site-settings/site-localization.md
   - ./site-settings/adding-a-new-analytics-service.md
-  - ./site-settings/configuring-open-graph.md
+  - ./site-settings/configuring-open-graph-for-sites.md
   - ./site-settings/configuring-hreflang-meta-data.md
   - ./site-settings/site-settings-ui-reference.md
 taxonomy-category-names:

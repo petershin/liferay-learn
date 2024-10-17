@@ -98,7 +98,7 @@ Determine whether to include a display page in your `sitemap.xml` file, as well 
 
 [Open Graph](https://ogp.me/) is an internet protocol that standardizes previews of site content when shared in application contexts that support it, such as Facebook, Slack, and Twitter. It does this by embedding structured data in page headers as `<meta>` tags, similar to [RDFa](https://en.wikipedia.org/wiki/RDFa).
 
-With Liferay DXP, you can create display page templates that dynamically configure a page's Open Graph `<meta>` tags. Values defined here override default values defined at the [site](../../site-settings/configuring-open-graph.md) level.
+With Liferay DXP, you can create display page templates that dynamically configure a page's Open Graph `<meta>` tags. Values defined here override default values defined at the [site](../../site-settings/configuring-open-graph-for-sites.md) level.
 
 !!! note
     Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
@@ -152,4 +152,4 @@ By default, this field is unmapped in display page templates. This means the tem
 ## Related Topics
 
 - [Configuring Your Page's Friendly URL](../../creating-pages/page-settings/configuring-your-pages-friendly-url.md)
-- [Configuring Open Graph](../../site-settings/configuring-open-graph.md)
+- [Configuring Open Graph for Sites](../../site-settings/configuring-open-graph-for-sites.md)

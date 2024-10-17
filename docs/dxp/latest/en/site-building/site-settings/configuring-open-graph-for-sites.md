@@ -8,7 +8,7 @@ taxonomy-category-names:
 uuid: c85f3045-c786-448a-aef9-2388660b7397
 ---
 
-# Configuring Open Graph
+# Configuring Open Graph for Sites
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
 
@@ -27,19 +27,19 @@ To configure Open Graph for your site,
 
 1. Check/uncheck the *Enable Open Graph* setting to enable/disable Open Graph for your site.
 
-   ![Enable or disable embedded Open Graph tags in your site's pages.](./configuring-open-graph/images/01.png)
+   ![Enable or disable embedded Open Graph tags in your site's pages.](./configuring-open-graph-for-sites/images/01.png)
 
 1. (Optional) Use the *Image* and *Image Alt Description* fields to set default `og:image` properties for the site's pages.
 
    These values are overridden by [page](../creating-pages/page-settings/page-settings-ui-reference.md#open-graph) and [display page](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph-settings-for-display-page-templates.md) configurations.
 
-   ![Define the default og:image and og:image:alt properties used for your site.](./configuring-open-graph/images/02.png)
+   ![Define the default og:image and og:image:alt properties used for your site.](./configuring-open-graph-for-sites/images/02.png)
 
 1. Preview your default `og:image` configuration.
 
    Keep in mind the image's ratio may change depending on where its shared.
 
-   ![Preview your default Open Graph configuration.](./configuring-open-graph/images/03.png)
+   ![Preview your default Open Graph configuration.](./configuring-open-graph-for-sites/images/03.png)
 
 1. Click *Save*.
 

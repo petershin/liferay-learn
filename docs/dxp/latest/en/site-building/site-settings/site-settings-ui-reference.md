@@ -187,7 +187,7 @@ Using this option, you can enable automatic moderation of user messages on messa
 | Section                                      | Description                                                                                                                                                                                                                                                                                                                                                               |
 | :------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Google PageSpeed Insights (Liferay DXP 7.4+) | Enable the Google PageSpeed Insight integration in Liferay DXP. Using this option, you can audit your pages for accessibility issues and check suggestions for fixing them. See [Analyzing SEO and Accessibility on Pages](../../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md) for more information.     |
-| Open Graph                                   | These tags define page metadata to create engaging representations of your site's content when shared in applications that support the Open Graph protocol, such as Facebook, Slack, and Twitter. When enabled Open Graph `<meta>` tags are embedded in the `head` of the Site's pages. For more information, read [Configuring Open Graph](./configuring-open-graph.md). |
+| Open Graph                                   | These tags define page metadata to create engaging representations of your site's content when shared in applications that support the Open Graph protocol, such as Facebook, Slack, and Twitter. When enabled Open Graph `<meta>` tags are embedded in the `head` of the Site's pages. For more information, read [Configuring Open Graph for Sites](./configuring-open-graph-for-sites.md). |
 | Pages                                        | View the site's pages. On this section, you can also configure the propagation of changes from a site template, if one exists. See [Site Templates](../sites/site-templates.md) and [Propagating Template Changes](../sites/site-templates/propagating-template-changes.md) for more information.                                                                         |
 
 ### Recycle Bin
@@ -293,7 +293,7 @@ If you created your site using a *Site Template*, it's displayed here, along wit
 
 **Image Alt Description**: Use the Image Alt Description field to define the `og:image:alt` property for a page. You can also localize an image's alt description via the *Language Flag* button.
 
-See [Configuring Open Graph](./configuring-open-graph.md) to learn more.
+See [Configuring Open Graph for Sites](./configuring-open-graph-for-sites.md) to learn more.
 
 #### Sharing
 

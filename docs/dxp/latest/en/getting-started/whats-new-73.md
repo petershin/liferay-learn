@@ -108,7 +108,7 @@ If you use an external agency or freelancers for your translations, you can now 
 
 ![Open Graph support means you can configure and preview links for social media and search engines.](./whats-new-73/images/12.gif)
 
-You can now configure your Pages' previews on social media with built-in [Open Graph](../site-building/site-settings/configuring-open-graph.md) support. You also get a real time preview of how your pages appear on search engines and social networks.
+You can now configure your Pages' previews on social media with built-in [Open Graph](../site-building/creating-pages/page-settings/page-settings-ui-reference.md#open-graph) support. You also get a real time preview of how your pages appear on search engines and social networks.
 
 ### Redirection Management
 

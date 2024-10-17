@@ -64,6 +64,6 @@ You can also localize [sites and their content](./site-settings/site-localizatio
 
 ## Optimizing Sites
 
-Liferay DXP offers a range of tools to optimize your site, including improving your site's [search engine optimization (SEO) ranking](../site-building/displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md), [building a responsive site](./optimizing-sites/building-a-responsive-site.md) tailored for any device, and honing your messaging campaigns with [A/B testing](../site-building/optimizing-sites/ab-testing/ab-testing.md).
+Liferay DXP offers a range of tools to optimize your site, including improving your site's [search engine optimization (SEO) ranking](./site-settings/site-settings-ui-reference.md#seo), [building a responsive site](./optimizing-sites/building-a-responsive-site.md) tailored for any device, and honing your messaging campaigns with [A/B testing](../site-building/optimizing-sites/ab-testing/ab-testing.md).
 
 A/B testing compares the current default variation of a page with alternative variants to determine which performs better based on specific goals, such as bounce rate or click-throughs. With this data-driven approach, you can make informed decisions and improve your site's performance to better serve users and customers.

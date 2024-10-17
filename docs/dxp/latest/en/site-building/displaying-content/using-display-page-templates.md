@@ -5,7 +5,7 @@ toc:
     - ./using-display-page-templates/publishing-content-with-display-pages.md
     - ./using-display-page-templates/displaying-categories-using-display-pages.md
     - ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
-    - ./using-display-page-templates/configuring-seo-and-open-graph.md
+    - ./using-display-page-templates/configuring-seo-and-open-graph-settings-for-display-page-templates.md
 taxonomy-category-names:
 - Sites
 - Display Page Templates
@@ -23,7 +23,7 @@ uuid: 978aa7cb-c3e3-4895-91bd-ff8a779cc230
 
 ![Create display page templates for displaying content at a dedicated URL.](./using-display-page-templates/images/01.png)
 
-When creating a display page template, you begin by selecting a content type (e.g., web content article, document, blog entry). This determines which content items can use the template for rendering their display pages. You can then design the template using the same UI and design elements as content pages. This means you can use page [fragments](../creating-pages/page-fragments-and-widgets/using-fragments.md) and [widgets](../creating-pages/using-content-pages/using-widgets-on-a-content-page.md) to build dynamic displays that map to content fields and integrate additional functionality. Additionally, you can define [SEO settings](./using-display-page-templates/configuring-seo-and-open-graph.md) to improve your pages' search ranking.
+When creating a display page template, you begin by selecting a content type (e.g., web content article, document, blog entry). This determines which content items can use the template for rendering their display pages. You can then design the template using the same UI and design elements as content pages. This means you can use page [fragments](../creating-pages/page-fragments-and-widgets/using-fragments.md) and [widgets](../creating-pages/using-content-pages/using-widgets-on-a-content-page.md) to build dynamic displays that map to content fields and integrate additional functionality. Additionally, you can define [SEO settings](./using-display-page-templates/configuring-seo-and-open-graph-settings-for-display-page-templates.md) to improve your pages' search ranking.
 
 After designing the template, you can make it the default template for displaying its content type or manually configure only some of your content items to use it. Once set, users can view the content item's display page by visiting its friendly URL. The content is rendered dynamically according to your template design.
 

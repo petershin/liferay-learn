@@ -9,7 +9,7 @@ taxonomy-category-names:
 uuid: 7a0e16df-8768-499c-aa23-f033f973ee70
 ---
 
-# Configuring SEO and Open Graph
+# Configuring SEO and Open Graph Settings for Display Page Templates
 
 {bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
@@ -22,13 +22,13 @@ To configure SEO and Open Graph settings for a display page template,
    !!! note
       You can also configure SEO and Open Graph for other types of pages (e.g., content pages). To do that, navigate to *Site Builder* &rarr; *Pages* and click *Actions* (![Actions icon](../../../images/icon-actions.png)) next to the page you want to configure &rarr; *Configure*. Skip the next step and continue the tutorial normally.
 
-   ![Go to the display page templates tab.](./configuring-seo-and-open-graph/images/01.png)
+   ![Go to the display page templates tab.](./configuring-seo-and-open-graph-settings-for-display-page-templates/images/01.png)
 
 1. Click *Actions* (![Actions icon](../../../images/icon-actions.png)) for the desired template and select *Edit*. When editing the template, click *Options* (![Options icon](../../../images/icon-options.png)) on the application bar and click *Configure* (![Configure icon](../../../images/icon-cog.png)).
 
 1. Go to the [SEO](#seo-settings-reference) or [Open Graph](#open-graph-settings-reference) tab and enter the desired configuration.
 
-   ![Enter the desired configuration in the SEO and Open Graph tabs.](./configuring-seo-and-open-graph/images/02.png)
+   ![Enter the desired configuration in the SEO and Open Graph tabs.](./configuring-seo-and-open-graph-settings-for-display-page-templates/images/02.png)
 
 1. Click *Save*.
 
@@ -57,7 +57,7 @@ The recommended length for an *HTML title* is under 60 characters.
 !!! tip
     It is best practice to update the SEO and Open Graph titles together.
 
-![Combine multiple mapped fields to build your own HTML title.](./configuring-seo-and-open-graph/images/03.png)
+![Combine multiple mapped fields to build your own HTML title.](./configuring-seo-and-open-graph-settings-for-display-page-templates/images/03.png)
 
 ### Description
 
@@ -68,7 +68,7 @@ The recommended length for a page's description is under 155 characters.
 !!! tip
     It is best practice to update the SEO and Open Graph descriptions together.
 
-![Combine multiple mapped fields to create a custom HTML description.](./configuring-seo-and-open-graph/images/04.png)
+![Combine multiple mapped fields to create a custom HTML description.](./configuring-seo-and-open-graph-settings-for-display-page-templates/images/04.png)
 
 ### Robots
 
@@ -82,7 +82,7 @@ Here's how the robots field appears in the HTML code when you specify those valu
 
 You can also localize this field using the Language Flag.
 
-![The Robots field configures robots.txt rules for a display page.](./configuring-seo-and-open-graph/images/05.png)
+![The Robots field configures robots.txt rules for a display page.](./configuring-seo-and-open-graph-settings-for-display-page-templates/images/05.png)
 
 ### Sitemap
 
@@ -90,7 +90,7 @@ Determine whether to include a display page in your `sitemap.xml` file, as well 
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Enable/disable indexing child pages on XML maps by checking/unchecking the Include Child Page URLs in the XML Sitemap box. Read [Configuring XML Sitemaps](../../site-settings/managing-site-urls/configuring-xml-sitemaps.md) to learn more.
 
-![Determine whether to include a display page in your sitemap.xml file, as well as set its priority and change frequency.](./configuring-seo-and-open-graph/images/06.png)
+![Determine whether to include a display page in your sitemap.xml file, as well as set its priority and change frequency.](./configuring-seo-and-open-graph-settings-for-display-page-templates/images/06.png)
 
 ## Open Graph Settings Reference
 
@@ -110,7 +110,7 @@ The Title field defines a display page's `og:title` property, which defines the 
 !!! tip
     It is best practice to update the SEO and Open Graph titles together.
 
-![Combine multiple mapped fields to create a custom og:title value.](./configuring-seo-and-open-graph/images/07.png)
+![Combine multiple mapped fields to create a custom og:title value.](./configuring-seo-and-open-graph-settings-for-display-page-templates/images/07.png)
 
 ### Description
 
@@ -119,7 +119,7 @@ The Description field defines a display page's `og:description` property which d
 !!! tip
     It is best practice to update the SEO and Open Graph descriptions together.
 
-![Combine multiple mapped fields to create a custom og:description value.](./configuring-seo-and-open-graph/images/08.png)
+![Combine multiple mapped fields to create a custom og:description value.](./configuring-seo-and-open-graph-settings-for-display-page-templates/images/08.png)
 
 ### Image
 
@@ -135,7 +135,7 @@ The Image field defines a display page's `og:image` properties, which configures
 
 By default, this field is unmapped in display page templates. This means the template defaults to the image set at site level, unless you select a different image field.
 
-![The image field defines a display page's og:image property.](./configuring-seo-and-open-graph/images/09.png)
+![The image field defines a display page's og:image property.](./configuring-seo-and-open-graph-settings-for-display-page-templates/images/09.png)
 
 ### Image Alt Description
 
@@ -147,7 +147,7 @@ The Image Alt Description field defines a display page's `og:image:alt` property
 
 By default, this field is unmapped in display page templates. This means the template defaults to the alt text set at the site level, unless you select a different text field.
 
-![The image alt description field defines a display page's og:image:alt property](./configuring-seo-and-open-graph/images/10.png)
+![The image alt description field defines a display page's og:image:alt property](./configuring-seo-and-open-graph-settings-for-display-page-templates/images/10.png)
 
 ## Related Topics
 

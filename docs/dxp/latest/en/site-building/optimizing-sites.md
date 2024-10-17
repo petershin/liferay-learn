@@ -6,7 +6,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 toc:
-  - ./displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md
+  - ./displaying-content/using-display-page-templates/configuring-seo-and-open-graph-settings-for-display-page-templates.md
   - ./site-settings/configuring-open-graph.md
   - ./site-settings/managing-site-urls/configuring-xml-sitemaps.md
   - ../content-authoring-and-management/page-performance-and-accessibility.md
@@ -21,7 +21,7 @@ From having top-tier SEO, to understanding and acting on your site's content, to
 
 ## Search Engine Optimization
 
-You can use Liferay's SEO tools to enhance your site's visibility in search engine results. Configure [HTML titles, meta tags, and canonical URLs, manage robots.txt files](./displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md), configure [XML sitemaps](./site-settings/managing-site-urls/configuring-xml-sitemaps.md), and integrate social media meta tags like [Open Graph](./site-settings/configuring-open-graph.md).
+You can use Liferay's SEO tools to enhance your site's visibility in search engine results. Configure [HTML titles, meta tags, and canonical URLs, manage robots.txt files](./displaying-content/using-display-page-templates/configuring-seo-and-open-graph-settings-for-display-page-templates.md), configure [XML sitemaps](./site-settings/managing-site-urls/configuring-xml-sitemaps.md), and integrate social media meta tags like [Open Graph](./site-settings/configuring-open-graph.md).
 
 ## Page Performance and Accessibility
 

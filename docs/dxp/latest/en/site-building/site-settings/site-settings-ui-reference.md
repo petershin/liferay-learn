@@ -103,7 +103,7 @@ By default, the Users section includes the Default User Associations setting, wh
 
 ### SEO
 
-Configure whether instance and site names appear in the HTML title to control how your site information appears in browser tabs and search engine results. Read [Configuring SEO and OpenGraph](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) to learn more about other SEO configuration options.
+Configure whether instance and site names appear in the HTML title to control how your site information appears in browser tabs and search engine results. Read [SEO and Metadata Configuration Reference](../optimizing-sites/seo-and-metadata-configuration-reference.md) to learn more about other SEO configuration options.
 
 By default, the instance and site names are included in the HTML title. You can exclude the instance and/or the site names and display only the page name in the HTML title.
 

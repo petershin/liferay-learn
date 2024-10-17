@@ -40,7 +40,7 @@ To configure your XML sitemap,
 
 1. Select whether to include page (e.g., widget, content, panel, collection, and embedded) URLs in the XML sitemap.
 
-   You can add a page to the sitemap through the page's configuration. Read [Configuring SEO and Open Graph](../../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md#sitemap) to learn more.
+   You can add a page to the sitemap through the page's configuration. Read [Configuring Individual Pages](../../creating-pages/page-settings/configuring-individual-pages.md#sitemap) to learn more.
 
 1. Select whether to include web content URLs in the XML sitemap.
 

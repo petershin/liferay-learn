@@ -38,7 +38,7 @@ See [Using Display Page Templates](../using-display-page-templates.md) to learn 
 1. Once you've added page elements, you can [map](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) them to content structure fields (e.g., title, description) by double-clicking on an editable field. Mapped fields are outlined in purple.
 
    !!! tip
-       You can use mapped fields when configuring SEO and Open Graph settings for a display page template. See [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md) for more information.
+       You can use mapped fields when configuring SEO and Open Graph settings for a display page template. See [Configuring SEO and Open Graph Settings for Display Page Templates](./configuring-seo-and-open-graph-settings-for-display-page-templates.md) for more information.
 
    ![Map page elements to structure fields.](./creating-and-managing-display-page-templates/images/02.png)
 
@@ -180,6 +180,6 @@ The picture below shows the display page settings for a web content article with
 ## Related Topics
 
 - [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
-- [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
+- [Configuring SEO and Open Graph Settings for Display Page Templates](./configuring-seo-and-open-graph-settings-for-display-page-templates.md)
 - [Using Content Pages](../../creating-pages/using-content-pages.md)
 - [Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)

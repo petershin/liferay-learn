@@ -133,7 +133,7 @@ Access additional settings to customize a page’s content and features.
 
 ## SEO
 
-Search Engine Optimization (SEO) refers to the methods used to improve your page's ranking in Search Engine Results Pages (SERP). The SEO tab provides easy access to settings you can use to optimize your page's content. See [Configuring SEO and Open Graph](../../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) for more information about the following settings.
+Search Engine Optimization (SEO) refers to the methods used to improve your page's ranking in Search Engine Results Pages (SERP). The SEO tab provides easy access to settings you can use to optimize your page's content. See [SEO and Metadata Configuration Reference](../../optimizing-sites/seo-and-metadata-configuration-reference.md) to learn more.
 
 ### HTML Title
 

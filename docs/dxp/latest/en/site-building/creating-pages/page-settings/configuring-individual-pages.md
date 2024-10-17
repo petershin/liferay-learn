@@ -145,7 +145,14 @@ Use the description field to define a page's `<description>` tag. This descripti
 
 ### Custom Canonical URL
 
-Set a custom canonical URL for a page. Custom URLs configured in this manner take precedence over the System Settings configuration.
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+
+Canonical pages identify the preferred version of a web page among multiple versions that have similar or identical content. By selecting a canonical page, you ensure that search engines understand which version of a page is the primary one to index and rank in search results. It also helps prevent dilution of search rankings due to duplicate content and helps users find the most relevant content.
+
+Check the *Use Custom Canonical URL* field to customize and localize the canonical URL.
+
+!!! note
+    Custom canonical URL are excluded from the [sitemap](#sitemap).
 
 ### Keywords
 
@@ -164,13 +171,23 @@ Preview how a page appears in Search Engine Results Pages (SERP) based on your c
 
 ### Robots
 
-Configure `robots.txt` rules for a page. These rules provide instructions to search engines and other tools crawling and indexing your site, either blocking or granting a crawler access to a specified path.
+The Robots field configures the `<meta name="robots">` tag for a page. This tag controls how search engines crawl and index the page. You can specify values such as `noindex` to prevent the page from being indexed, or `nofollow` to prevent search engines from following links on the page. Learn more about the robots meta tag in [Robots meta tag, data-nosnippet, and X-Robots-Tag specifications](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag).
+
+Here's how the robots field appears in the HTML code when you specify those values:
+
+```html
+<meta name="robots" content="noindex, nofollow">
+```
+
+You can also localize this field using the Language Flag.
 
 ![Configure robots.txt rules for your page to provide instructions to search engines](./configuring-individual-pages/images/12.png)
 
 ### Sitemap
 
-Determine whether a page is included in the sitemap used by site crawlers. By excluding a page, you instruct site crawlers to skip it when crawling and indexing your site.
+Determine whether to include a display page in your `sitemap.xml` file, as well as set its Priority and Change Frequency fields. They inform search engines whether to crawl and index the display page, how it should be prioritized relative to other site pages, and how frequently it is updated.
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Enable/disable indexing child pages on XML maps by checking/unchecking the Include Child Page URLs in the XML Sitemap box. Read [Configuring XML Sitemaps](../../site-settings/managing-site-urls/configuring-xml-sitemaps.md) to learn more.
 
 ### Page Priority
 

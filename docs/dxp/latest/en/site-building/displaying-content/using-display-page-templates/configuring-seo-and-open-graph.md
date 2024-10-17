@@ -70,17 +70,6 @@ The recommended length for a page's description is under 155 characters.
 
 ![Combine multiple mapped fields to create a custom HTML description.](./configuring-seo-and-open-graph/images/04.png)
 
-### Custom Canonical URL
-
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
-
-Canonical pages identify the preferred version of a web page among multiple versions that have similar or identical content. By selecting a canonical page, you ensure that search engines understand which version of a page is the primary one to index and rank in search results. It also helps prevent dilution of search rankings due to duplicate content and helps users find the most relevant content.
-
-Check the *Use Custom Canonical URL* field to customize and localize the canonical URL.
-
-!!! note
-    Custom canonical URL are excluded from the [sitemap](#sitemap).
-
 ### Robots
 
 The Robots field configures the `<meta name="robots">` tag for a display page. This tag controls how search engines crawl and index the page. You can specify values such as `noindex` to prevent the page from being indexed, or `nofollow` to prevent search engines from following links on the page. Learn more about the robots meta tag in [Robots meta tag, data-nosnippet, and X-Robots-Tag specifications](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag).
@@ -134,7 +123,7 @@ The Description field defines a display page's `og:description` property which d
 
 ### Image
 
-The Image field defines a display page's `og:image` properties, which configures the image displayed for your content in rich previews. In addition to the basic image tag, DXP automatically adds many structured properties that determine how your selected image is displayed. The Image field defines the following `<meta>` tags.
+The Image field defines a display page's `og:image` properties, which configures the image displayed for your content in rich previews. In addition to the basic image tag, DXP automatically adds many structured properties that determine how your selected image appears. The Image field defines the following `<meta>` tags.
 
 ```html
 <meta property="og:image" content="http://example.com/ogp.jpg" />

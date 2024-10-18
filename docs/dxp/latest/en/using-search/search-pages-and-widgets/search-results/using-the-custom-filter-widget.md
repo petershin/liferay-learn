@@ -16,6 +16,9 @@ With Custom Filters, you can contribute queries to the main search query, filter
 
 ![Apply a custom filter to weed out certain search results.](./using-the-custom-filter-widget/images/03.png)
 
+!!! important
+    Exploring the fields in the index is important when using the Custom Filter widget. See [Exploring Indexed Fields](../exploring-indexed-fields.md) for more details.
+
 There are many use cases satisfied by incorporating Custom Filters into your search page.
 
 For now, consider these basic usages:

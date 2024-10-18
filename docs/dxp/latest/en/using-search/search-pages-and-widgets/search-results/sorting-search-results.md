@@ -24,7 +24,10 @@ Out of the box, you can order results in these ways as an alternative to relevan
 - by the Create date (newest first by default, or choose oldest first)
 - alphabetically by the User that created each matching asset
 
-Choose from one of the Sort widget's pre-configured sorting strategies or configure your own. 
+!!! important
+    Exploring the fields in the index is important when using the Sort widget. See [Exploring Indexed Fields](../exploring-indexed-fields.md) for more details.
+
+Choose from one of the Sort widget's pre-configured sorting strategies or configure your own. You can [explore the indexed fields](../exploring-indexed-fields.md) to discover additional sort options.
 
 You can also delete unwanted sort options from the widget.
 
@@ -97,7 +100,6 @@ To find the fields available for use in the Sort widget, Users with the proper p
 
 "type" : "long"
 ```
-
 If you really must sort by a `text` field, add a new version of the field to the index with the type `keyword`. From the field mappings screen mentioned above, look at the `firstName` field in the index called `liferay-[companyID]`: 
 
 ```
@@ -118,6 +120,8 @@ index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
 ```
 
 All the text fields listed here have a `fieldName_sortable` counterpart created automatically in the index. To add more, copy this property into a [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md) file into your Liferay Home folder, add any new field names you need to sort by, and restart the server.
+
+See [Exploring Indexed Fields](../exploring-indexed-fields.md) for more details.
 
 ## Adding New Sort Options
 
@@ -147,79 +151,6 @@ The `-` sign following the field name indicates that the order is *descending*. 
 **Field:** `createDate+`
 
 The `+` sign following the field name indicates that the order is *ascending*. Sorting this way brings the oldest (by creation date) results to the top of the list.
-
-## Sorting by Nested Fields
-
-### Sorting by Object Definition Fields
-
-{bdg-secondary}`7.4 U72+/GA72+`
-
-[Object definition](../../../liferay-development/objects.md) fields are indexed as nested fields in Elasticsearch. To find object fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
-
-```json
-"nestedFieldArray" : [
-  {
-    "fieldName" : "lastAcessed",
-    "valueFieldName" : "value_date",
-    "value_date" : "20230502000000"
-  },
-  {
-    "fieldName" : "immunityType",
-    "valueFieldName" : "value_keyword",
-    "value_keyword" : "diplomatic"
-  },
-  {
-    "fieldName" : "luckyNumber",
-    "valueFieldName" : "value_integer",
-    "value_integer" : "19"
-  }
-],
-```
-
-To sort by an object's field, a special notation is required, following the pattern `nestedFieldArray.[fieldName].[valueFieldName]`. For example, to sort by the `lastAccessed` date field in the nested array above, enter `nestedFieldArray.lastAccessed.value_date` as the Sort widget configuration's Indexed Field.
-
-### Sorting by Web Content Structure Fields
-
-{bdg-secondary}`7.2 FP12+, 7.3 FP2+, 7.4 (all updates)`
-
-The Sort widget works with keyword, date, and numeric fields. To find web content structure (DDM) fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
-
-The documents have a `ddmFieldArray` object with nested content:
-
-```json
-"ddmFieldArray" : [
-  {
-    "ddmFieldName" : "ddm__keyword__40806__Textb5mx_en_US",
-    "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-    "ddmFieldValueKeyword_en_US_String_sortable" : "some text has been entered",
-    "ddmFieldValueKeyword_en_US" : "some text has been entered"
-  },
-  {
-    "ddmFieldName" : "ddm__keyword__40806__Selectjdw0_en_US",
-    "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-    "ddmFieldValueKeyword_en_US_String_sortable" : "option 3",
-    "ddmFieldValueKeyword_en_US" : "value 3"
-  },
-  {
-    "ddmFieldName" : "ddm__keyword__40806__Boolean15cg_en_US",
-    "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-    "ddmFieldValueKeyword_en_US" : "true",
-    "ddmFieldValueKeyword_en_US_String_sortable" : "true"
-  }
-],
-```
-
-To use one of these fields in a Sort configuration, enter the `ddmFieldName` value (e.g., `ddm__keyword__40806__Testb5mx_en_US`) as the Indexed Field setting.
-
-Depending on your version, [nested field storage](../../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) may be enabled by default for Elasticsearch:
-
-| Liferay Version  | Nested Field Enabled by Default |
-| :--------------- | :------- |
-| 7.4 all updates  | &#10004; |
-| 7.3 all updates  | &#10004; |
-| DXP 7.2 SP3/FP8+ | &#10008; |
-
-To change the behavior, use the *Enable Legacy Dynamic Data Mapping Index Fields* setting in System Settings &rarr; Dynamic Data Mapping Indexer.
 
 ## Related Topics
 

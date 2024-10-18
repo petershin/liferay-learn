@@ -54,7 +54,7 @@ The simplest way to add the JavaScript code is to modify an individual page. Mak
 
 1. Click *Save* and now your page is ready to track events.
 
-To learn more, see [Configuring Individual Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages).
+To learn more, see [Page Settings UI Reference](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/page-settings-ui-reference).
 
 ## Add A Page Fragment
 
@@ -85,5 +85,5 @@ To learn more, see [Developing Fragments](https://learn.liferay.com/w/dxp/site-b
 
 - [Tracking Custom Assets](../assets/tracking-custom-assets.md)
 - [Definitions for Event Attributes](../../workspace-data/definitions.md)
-- [Configuring Individual Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages)
-- [Developing Fragments](https://learn.liferay.com/w/dxp/site-building/developer-guide/developing-page-fragments)
+- [Page Settings UI Reference](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/page-settings-ui-reference)
+- [Developing Fragments](https://learn.liferay.com/w/dxp/site-building/developer-guide/developing-page-fragments/developing-fragments-intro)

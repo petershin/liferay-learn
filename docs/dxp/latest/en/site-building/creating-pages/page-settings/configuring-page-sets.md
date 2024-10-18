@@ -13,7 +13,7 @@ uuid: 05b26b7e-47e6-4d5e-9814-5bc02a7691f7
 !!! important
     For Liferay 7.4 U22+ and GA22+, private pages are disabled for new installations. However, you can enable them if desired. See [Enabling Private Pages](../understanding-pages.md#enabling-private-pages) for more information.
 
-When private pages are enabled, site pages are divided into public and private [page sets](../understanding-pages.md#page-sets). These sets group pages so you can apply bulk configurations to each type of page. Settings configured for a page set apply to all grouped pages and override configurations at the site level. Page set configurations are overridden by [customizations to individual pages](./configuring-individual-pages.md).
+When private pages are enabled, site pages are divided into public and private [page sets](../understanding-pages.md#page-sets). These sets group pages so you can apply bulk configurations to each type of page. Settings configured for a page set apply to all grouped pages and override configurations at the site level. Page set configurations are overridden by [customizations to individual pages](./page-settings-ui-reference.md).
 
 If private pages are disabled for your Liferay system, follow these steps to access bulk configuration options for your pages:
 
@@ -51,7 +51,7 @@ To change the current theme,
 
 1. Click *Save* to apply the new theme to the page set.
 
-You can enter custom CSS in the *CSS* section for modifying your theme. You can apply themes to the entire site (described here) or to individual pages (described in [Configuring Pages](./configuring-individual-pages.md#look-and-feel)).
+You can enter custom CSS in the *CSS* section for modifying your theme. You can apply themes to the entire site (described here) or to individual pages (described in [Configuring Pages](./page-settings-ui-reference.md#look-and-feel)).
 
 ### Logo
 
@@ -123,4 +123,4 @@ In Liferay DXP 7.3, you can access the same settings from the *Page Tree* menu:
 
 ## Related Topics
 
-- [Configuring Individual Pages](./configuring-individual-pages.md)
+- [Page Settings UI Reference](./page-settings-ui-reference.md)

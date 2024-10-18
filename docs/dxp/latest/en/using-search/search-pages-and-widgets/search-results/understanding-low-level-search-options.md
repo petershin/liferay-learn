@@ -116,7 +116,7 @@ Set up a [Search Page](../working-with-search-pages/search-pages.md) that displa
    * One [Custom Filter](./using-the-custom-filter-widget.md)
 
    ```{tip}
-   The 1-2-1 Columns (50/50) [page layout](../../../site-building/creating-pages/page-settings/configuring-individual-pages.md#page-layout) is convenient for this example.
+   The 1-2-1 Columns (50/50) [page layout](../../../site-building/creating-pages/page-settings/page-settings-ui-reference.md#page-layout) is convenient for this example.
    ```
 
 1. Configure the widgets:

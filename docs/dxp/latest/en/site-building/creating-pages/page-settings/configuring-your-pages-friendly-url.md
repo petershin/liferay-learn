@@ -55,7 +55,7 @@ From here, you can hover over an old URL to reveal the following options:
 ## Related Topics
 
 - [Configuring Your Site's Friendly URL](../../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)
-- [Configuring Individual Pages](./configuring-individual-pages.md)
+- [Page Settings UI Reference](./page-settings-ui-reference.md)
 - [Configuring Friendly URL Separators](../../site-settings/managing-site-urls/configuring-friendly-url-separators.md)
 
 <!--Include Reference to SEO article when finished.-->

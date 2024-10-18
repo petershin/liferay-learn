@@ -8,13 +8,13 @@ taxonomy-category-names:
 uuid: f271b7fd-93dd-4692-acce-35d1d8ed2973
 ---
 
-# Configuring Individual Pages
+# Page Settings UI Reference
 
 You can configure individual pages to meet your needs. All changes made in this way are scoped to the selected page.
 
 To configure a specific page, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Site Builder* &rarr; *Pages*. Then click *Actions* (![Actions button](../../../images/icon-staging-bar-options.png)) for the page you want to customize and select *Configure*.
 
-![Click the Actions button for the page you want to customize, and select Configure](./configuring-individual-pages/images/01.png)
+![Click the Actions button for the page you want to customize, and select Configure](./page-settings-ui-reference/images/01.png)
 
 Alternatively, you can access general page settings by clicking *Actions* (![Actions button](../../../images/icon-staging-bar-options.png)) &rarr; *Configuration* (![Configuration button](../../../images/icon-cog.png)) at the top right of the Application Bar.
 
@@ -37,7 +37,7 @@ Here you can configure the basic information of a page, including its name, frie
 
 Use the name field to set a page's title used for site navigation and displayed in a browser's title bar. You can hide a page from menu display when it is configured to display the page hierarchy. When enabled, a hidden page still appears in other navigation menus if added to them. See [Managing Page Hierarchies](../../site-navigation/managing-page-hierarchies.md) for more information.
 
-![Use the name field to set the page's title and check the checkbox to hide it from menu display.](./configuring-individual-pages/images/02.png)
+![Use the name field to set the page's title and check the checkbox to hide it from menu display.](./page-settings-ui-reference/images/02.png)
 
 !!! note
     Child pages inherit the parent page’s visibility. Also, hidden pages are not displayed on the default navigation menu, but can be displayed on any other created navigation menu.
@@ -51,7 +51,7 @@ Use the Friendly URL field to set a new URL for a page, or click the *Restore* i
 
 Use *Query String* to set default parameters for a page when no other parameters are specified. Query strings offer significant advantages within web content templates. Additionally, you can control page link behavior by using the Target Type field, which has attributes like opening the link in a new tab or within a specific frame.
 
-![Use the Friendly URL field to set a page's custom URL.](./configuring-individual-pages/images/03.png)
+![Use the Friendly URL field to set a page's custom URL.](./page-settings-ui-reference/images/03.png)
 
 !!! tip
     While a page's name and friendly URL are initially defined together at page creation, they are configured independently afterwards. It is best practice to update them together so that they match.
@@ -60,19 +60,19 @@ Use *Query String* to set default parameters for a page when no other parameters
 
 Layout templates dictate where widgets can be placed on a widget page. For basic widget pages created using either a global template or custom page template, the user can determine whether the page *Inherits Changes* made to the chosen template. If the page does not inherit changes, select a custom layout to define row and column containers for its widgets.
 
-![Select a layout template to define row and column containers for widgets.](./configuring-individual-pages/images/04.png)
+![Select a layout template to define row and column containers for widgets.](./page-settings-ui-reference/images/04.png)
 
 ### Categorization
 
 Use *Topics* and *Tags* to categorize a page's content so users can more easily find it. For more information on using tags and categories, see [Organizing Content with Tags and Categories](../../../content-authoring-and-management/tags-and-categories.md).
 
-![Use Topics and Tags to categorize a page's content](./configuring-individual-pages/images/05.png)
+![Use Topics and Tags to categorize a page's content](./page-settings-ui-reference/images/05.png)
 
 ### Customization Settings
 
 Determine whether a widget page's columns are *Customizable* for users. If customization is enabled, specify the columns users can customize. See [Enabling User Personalization of Widget Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md) for more information.
 
-![Determine whether users can customize a widget page.](./configuring-individual-pages/images/06.png)
+![Determine whether users can customize a widget page.](./page-settings-ui-reference/images/06.png)
 
 ## Design
 
@@ -82,7 +82,7 @@ Here you can configure the theme of your page and customize its design, CSS and 
 
 Here you can use the page set's theme settings or define a custom theme for your page. When you choose to customize the page's theme, you can toggle various theme settings.
 
-![Determine whether to use the page set's theme settings or define a custom theme for your page.](./configuring-individual-pages/images/07.png)
+![Determine whether to use the page set's theme settings or define a custom theme for your page.](./page-settings-ui-reference/images/07.png)
 
 ### Basic Settings
 
@@ -96,7 +96,7 @@ Here you can quickly and easily change some areas of your page's design system a
 
 **Icon**: Choose an icon to display along with page's name in the site's navigation menus.
 
-![Determine the favicon, master page template, style book, and icon for your page.](./configuring-individual-pages/images/08.png)
+![Determine the favicon, master page template, style book, and icon for your page.](./page-settings-ui-reference/images/08.png)
 
 !!! note
     Content pages also include Master and Style Book settings in the Edit sidebar menu under Page Design Options (![Page Design Options icon](../../../images/icon-format.png)).
@@ -113,7 +113,7 @@ You can also access a CSS and JavaScript editors where you can add custom code t
 
 **JavaScript Client Extension and Custom JavaScript:** [JavaScript client extensions](../../../liferay-development/customizing-liferays-look-and-feel.md#javascript-client-extensions) can be added to have JavaScript run when the page using this master page template is visited. Custom JavaScript code can also be added and is executed at the bottom of the page.
 
-![Use CSS and JavaScript editors to add custom code to the page](./configuring-individual-pages/images/09.png)
+![Use CSS and JavaScript editors to add custom code to the page](./page-settings-ui-reference/images/09.png)
 
 !!! tip
     If your site's theme uses JavaScript, it's best to add custom JavaScript code to the theme rather than an individual page or page set. This ensures your site's JavaScript code remains in one place. If your theme does not use JavaScript, place all of your site's JavaScript code here.
@@ -161,13 +161,13 @@ List words that people are likely to use when searching for your page's content.
 !!! tip
     Use keywords often throughout your page's content, including titles, headings, descriptions, paragraphs, and image alt text.
 
-![Set the page's HTML title, description, custom canonical URL, and keywords to improve your page's ranking in Search Engine Results Pages (SERP)](./configuring-individual-pages/images/10.png)
+![Set the page's HTML title, description, custom canonical URL, and keywords to improve your page's ranking in Search Engine Results Pages (SERP)](./page-settings-ui-reference/images/10.png)
 
 ### Preview
 
 Preview how a page appears in Search Engine Results Pages (SERP) based on your configuration of its HTML title, description, and custom URL.
 
-![Preview how a page appears in search engine results.](./configuring-individual-pages/images/11.png)
+![Preview how a page appears in search engine results.](./page-settings-ui-reference/images/11.png)
 
 ### Robots
 
@@ -181,7 +181,7 @@ Here's how the robots field appears in the HTML code when you specify those valu
 
 You can also localize this field using the Language Flag.
 
-![Configure robots.txt rules for your page to provide instructions to search engines](./configuring-individual-pages/images/12.png)
+![Configure robots.txt rules for your page to provide instructions to search engines](./page-settings-ui-reference/images/12.png)
 
 ### Sitemap
 
@@ -197,7 +197,7 @@ Set a page's priority from 0.0 to 1.0. This informs tools crawling and indexing 
 
 Use the drop-down menu to inform tools crawling and indexing your site how frequently a page is updated.
 
-![Determine if the page is included in the sitemap, and set its page priority and change frequency](./configuring-individual-pages/images/13.png)
+![Determine if the page is included in the sitemap, and set its page priority and change frequency](./page-settings-ui-reference/images/13.png)
 
 ## Open Graph
 
@@ -234,7 +234,7 @@ Use the custom title and description fields to define the `og:title` and `og:des
 
 Preview your page's Open Graph configuration. This section displays how your page's content appears when its URL is shared in contexts supporting the protocol. Though an image's ratio may change depending on where the URL is posted.
 
-![Preview your Open Graph configuration.](./configuring-individual-pages/images/14.png)
+![Preview your Open Graph configuration.](./page-settings-ui-reference/images/14.png)
 
 ## Custom Meta Tags
 
@@ -243,7 +243,7 @@ Here you can add custom `<meta>` tags to the `<head>` of a page. These tags are 
 !!! note
     Custom `<meta>` tags are only included in page headers for unauthenticated users. They are not included when the user is logged in.
 
-![Add custom meta tags to a page's head using the Property and Content fields.](./configuring-individual-pages/images/15.png)
+![Add custom meta tags to a page's head using the Property and Content fields.](./page-settings-ui-reference/images/15.png)
 
 ## Related Topics
 

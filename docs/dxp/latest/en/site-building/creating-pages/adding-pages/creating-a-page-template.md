@@ -83,7 +83,7 @@ Users with the roles specified now have access to the page template.
 
 ## Propagating Changes for Widget Pages
 
-When creating a page from a widget page template, changes are inherited from the page template by default, so future changes are propagated automatically to the pages that use the page template. Site administrators can disable this behavior through the [settings for the individual page](../page-settings/configuring-individual-pages.md#general).
+When creating a page from a widget page template, changes are inherited from the page template by default, so future changes are propagated automatically to the pages that use the page template. Site administrators can disable this behavior through the [settings for the individual page](../page-settings/page-settings-ui-reference.md#general).
 
 ## Propagating Changes for Content Pages
 

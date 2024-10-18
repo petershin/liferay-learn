@@ -42,7 +42,7 @@ Adding and customizing pages is a key part of managing your Liferay site. You ca
 
 If you created a content page, the page editor appears for adding fragments and widgets; if you created a widget page, the page's configuration options appear.
 
-To learn how to configure the remaining page settings, see [Configuring Individual Pages](../page-settings/configuring-individual-pages.md) or see [Configuring Page Sets](../page-settings/configuring-page-sets.md) to configure options for a [page set](../understanding-pages.md#page-sets).
+To learn how to configure the remaining page settings, see [Page Settings UI Reference](../page-settings/page-settings-ui-reference.md) or see [Configuring Page Sets](../page-settings/configuring-page-sets.md) to configure options for a [page set](../understanding-pages.md#page-sets).
 
 !!! tip
     By default, new pages are added to the navigation menu for the site. To configure this navigation menu, see [Using the Navigation Menus Application](../../site-navigation/configuring-menu-displays.md).

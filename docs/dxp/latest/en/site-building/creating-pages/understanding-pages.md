@@ -56,7 +56,7 @@ See [Using Content Pages](./using-content-pages.md) for more information. To sta
 
 ### Widget Pages
 
-A widget page has a set [layout](../creating-pages/page-settings/configuring-individual-pages.md#page-layout) for displaying widgets (applications). Widgets can display content or add interactive and dynamic functionality to the page. See [Adding Widgets to a Page](./using-widget-pages/adding-widgets-to-a-page.md) for more information.
+A widget page has a set [layout](../creating-pages/page-settings/page-settings-ui-reference.md#page-layout) for displaying widgets (applications). Widgets can display content or add interactive and dynamic functionality to the page. See [Adding Widgets to a Page](./using-widget-pages/adding-widgets-to-a-page.md) for more information.
 
 ![Widget pages can provide a number of functions, such as a dedicated wiki page solution.](./understanding-pages/images/03.png)
 
@@ -118,5 +118,5 @@ By default, new Liferay installations include a release feature flag that preven
 ## Related Topics
 
 - [Adding a Page](./adding-pages/adding-a-page-to-a-site.md)
-- [Configuring Individual Pages](./page-settings/configuring-individual-pages.md)
+- [Page Settings UI Reference](./page-settings/page-settings-ui-reference.md)
 - [Enabling User Personalization of Widget Pages](./using-widget-pages/enabling-user-personalization-of-widget-pages.md)

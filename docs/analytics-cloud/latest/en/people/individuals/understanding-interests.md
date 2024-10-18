@@ -15,7 +15,7 @@ As individuals interact with the pages of a Liferay site, Analytics Cloud notes 
 Interests are based on multiple interactions and multiple sessions on a site. Interests data is presented after an individual has interacted with a site a minimum of five times (e.g. page views, page clicks, etc.). A page interaction is defined as an individual interacting with a page for a minimum of five seconds.
 ```
 
-Interest topics are generated based on a site page's title and description. Therefore, using page titles and descriptions that are well defined will lead to more specific interest topics. You can augment the interest topics by [adding keywords](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages#seo) to the configuration of a site page.
+Interest topics are generated based on a site page's title and description. Therefore, using page titles and descriptions that are well defined will lead to more specific interest topics. You can augment the interest topics by [adding keywords](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/page-settings-ui-reference#seo) to the configuration of a site page.
 
 ```{note}
 Generated interest topics are only supported in English. Non-English content is filtered out. However, non-English keywords can be added to a page's configuration as a workaround. For example, the Spanish word for sports (i.e. `deportes`) can be added as a keyword. As individuals interact with the page, Analytics Cloud will show `deportes` as an interest topic.

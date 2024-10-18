@@ -347,5 +347,5 @@ Determine whether child sites can display content from this site, including stru
 
 ## Related Topics
 
-- [Page Configuration UI Reference](../creating-pages/page-settings/configuring-individual-pages.md)
+- [Page Configuration UI Reference](../creating-pages/page-settings/page-settings-ui-reference.md)
 - [Configuring Page Sets](../creating-pages/page-settings/configuring-page-sets.md)

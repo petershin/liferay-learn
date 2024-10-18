@@ -1,7 +1,7 @@
 ---
 toc:
   - ./page-settings/configuring-page-sets.md
-  - ./page-settings/configuring-individual-pages.md
+  - ./page-settings/page-settings-ui-reference.md
   - ./page-settings/configuring-your-pages-friendly-url.md
   - ./page-settings/configuring-locked-pages.md
   - ./page-settings/setting-default-permissions.md
@@ -19,7 +19,7 @@ uuid: 24fc2c8c-9c5f-4658-b671-65e3f0697998
 
 In Liferay, effective page management is crucial for maintaining an organized and user-friendly site. Page settings go beyond the physical layout and content of your pages to help you make your site a cohesive whole: 
 
-- Learn how to set up and adjust the layout and settings for [page sets](./page-settings/configuring-page-sets.md) and [individual pages](./page-settings/configuring-individual-pages.md), including layout, visibility, and additional options tailored to your needs.
+- Learn how to set up and adjust the layout and settings for [page sets](./page-settings/configuring-page-sets.md) and [individual pages](./page-settings/page-settings-ui-reference.md), including layout, visibility, and additional options tailored to your needs.
 
 ![Configure individual pages and page sets to fit your needs.](./page-settings/images/01.png)
 

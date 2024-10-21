@@ -278,8 +278,6 @@ The data displayed depends on the type of asset:
 
 ![The Performance tab shows different metrics for the selected document.](./content-dashboard-interface/images/12.png)
 
-### Categorizations
-
 ### Version History
 
 {bdg-secondary}`Liferay DXP 7.4 U53+/Portal 7.4 GA53+`

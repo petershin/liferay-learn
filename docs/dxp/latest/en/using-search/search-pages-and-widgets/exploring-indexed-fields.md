@@ -3,22 +3,19 @@ uuid: 845f8b22-fb9a-4d64-981b-51d542224c47
 ---
 # Exploring Indexed Fields
 
-Some search features can be customized if you know how to explore the fields of search documents or inspect the field mappings of the search engine.
+Some search features can be configured if you know how to explore the fields of search documents or inspect the field mappings of the search engine.
 
 | Feature | Relevant Configurations | Use Case | Where to Look |
 | :--- | :--- | :--- | :--- |
-| [Custom Facet](search-facets/custom-facet.md) | Aggregation Field | Finding `keyword` fields | [Document Source](#viewing-the-document-source)<br>[Field Mappings](#inspecting-the-mappings)
-| [Sort Widget](search-results/sorting-search-results.md) | Field | Finding sortable fields<br>Discovering sortable variant fields or sub-fields | [Document Source](#viewing-the-document-source)<br>[Field Mappings](#inspecting-the-mappings) |
-| [Custom Filter](search-results/using-the-custom-filter-widget.md) | Field<br>Query | Finding the proper field types for a given query<br>Seeing result scores to tune boosting | [Document Source](#viewing-the-document-source)<br>[Field Mappings](#inspecting-the-mappings)<br>[Search Insights Response String](search-insights.md) |
-| [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md) | Various element and blueprint configurations | Finding the proper field types for a given query<br>Seeing result scores to tune boosting | [Blueprint Preview](../liferay-enterprise-search/search-experiences/search-blueprints/creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar)<br>[Field Mappings](#inspecting-the-mappings) |
-
-The [search APIs](../developer-guide/search-headless-apis/search-api.md) also require knowing about the fields and mappings of the search infrastructure.
+| [Custom Facet](search-facets/custom-facet.md) | Aggregation Field | Finding `keyword` and numeric fields (e.g., `integer`, `double`, or `long`) | [Document Source](#viewing-the-document-source)<br>[Field Mappings](#inspecting-the-mappings) |
+| [Custom Filter](search-results/using-the-custom-filter-widget.md) | Filter Field<br>Filter Query Type | Finding the proper field types for a given query<br>Seeing result scores to tune boosting | [Document Source](#viewing-the-document-source)<br>[Field Mappings](#inspecting-the-mappings)<br>[Search Insights Response String](search-insights.md) |
+| [Search API](../developer-guide/search-headless-apis/search-api.md) | Search request body | Setting the field in a facet configuration | [Document Source](#viewing-the-document-source)<br>[Field Mappings](#inspecting-the-mappings)|
+| [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md) | Various places, including the [aggregation and sort configurations](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-configuration-reference.md), and elements like [Hide by Exact Term Match](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md#hide-by-exact-term-match) or [Text Match Over Multiple Fields](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md#text-match-over-multiple-fields). | Finding the proper field types for a given query<br>Seeing result scores to tune boosting | [Blueprint Preview](../liferay-enterprise-search/search-experiences/search-blueprints/creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar)<br>[Field Mappings](#inspecting-the-mappings) |
+| [Sort Widget](search-results/sorting-search-results.md) | Indexed Field Name | Finding sortable fields<br>Discovering sortable variant fields or sub-fields | [Document Source](#viewing-the-document-source)<br>[Field Mappings](#inspecting-the-mappings) |
 
 ## Inspecting the Document Source
 
 The indexed search document source shows exactly how content and application fields were indexed, and how the mappings were applied to each field. For example, you can see how the mappings for nested object fields end up being stored in the index. The document source cannot show you the type of data and it does not contain mapped sub-fields. 
-
-![Objects fields are nested under a parent field called nestedFieldArray.](./exploring-indexed-fields/images/03.png)
 
 ### Viewing Search Results in Document Form
 
@@ -145,7 +142,7 @@ To use sub-fields in the Custom Facet, use dot notation (e.g., `fieldName.sub_fi
 !!! warning
     You can see sub-fields when you view the mappings in Liferay, but they are not present in the document source. This means that you cannot find these fields using the [Display Results in Document Form setting](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) in Search Results.
 
-## Working with Custom Fields 
+## Working with Custom Fields (Expando)
 
 When you create a [Custom Field](../../system-administration/configuring-liferay/adding-custom-fields.md) with the setting _Searchable_ enabled, the custom field is indexed with the backing asset (Blogs Entries, for example). After reindexing it's also applied to existing entries. If you index the field as a keyword, the field itself is a text field, named like `expando__keyword__custom_fields__Enabled` (if you named the field _Enabled_ in the Custom Fields UI), but it contains a nested field mapping for creating a separate `raw` keyword field. 
 
@@ -185,7 +182,7 @@ Setting a custom field to searchable means that the value of the field is indexe
 
 ## Working with Nested Fields
 
-[Object definition fields](../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md), [web content structure fields](../../content-authoring-and-management/web-content/web-content-structures/configuring-structure-fields.md), and [document type fields](../../content-authoring-and-management/documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md) are indexed as nested fields.
+[Object definition fields](../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md), [web content structure fields](../../content-authoring-and-management/web-content/web-content-structures/configuring-structure-fields.md), [document type fields](../../content-authoring-and-management/documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md), and [form fields](../../process-automation/forms/creating-and-managing-forms/creating-forms.md) are indexed as nested fields.
 
 You can query these nested fields in search blueprints, use them to sort results on the search page, and create custom filters or facets for these fields. 
 

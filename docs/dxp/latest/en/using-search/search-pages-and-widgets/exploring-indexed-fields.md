@@ -15,7 +15,7 @@ Some search features can be configured if you know how to explore the fields of 
 
 ## Inspecting the Document Source
 
-The indexed search document source shows exactly how content and application fields were indexed, and how the mappings were applied to each field. For example, you can see how the mappings for nested object fields end up being stored in the index. The document source cannot show you the type of data and it does not contain mapped sub-fields. 
+By inspecting the indexed search document source, you can see exactly how content and application fields were indexed, and how the mappings were applied to each field. For example, you can see how the mappings for nested object fields end up being stored in the index. However, the document source cannot show you the type of data and it does not contain mapped sub-fields. 
 
 ### Viewing Search Results in Document Form
 
@@ -52,7 +52,7 @@ Here you can access these features:
 
 ### Viewing the Document Source with Search Insights
 
-When placed on a search page, the Search Insights widget allows you to inspect the document source for each result returned by a search request. You can see the document source in the Response String.
+You can place the Search Insights widget onto a page to inspect the document source for each search result. The document source is returned in the Response String.
 
 ![You can see the document source in the Search Insight widget Response String.](./exploring-indexed-fields/images/06.png)
 
@@ -95,9 +95,9 @@ The field mappings provide a lower level view of how each field is treated at in
 
 ![This DDM field has a keyword sub-field that's only discoverable by looking at the field mappings.](./exploring-indexed-fields/images/04.png)
 
-The field mappings for the search engine provide information on how the field should be indexed and searched. For example, if you know that you require a `keyword` field in the Sort widget, you can inspect the mappings for just such fields.
+The field mappings for the search engine provide information on how the field should be indexed and searched. For example, if you know that you require a `keyword` field in the Sort widget, you can inspect the mappings for keyword fields.
 
-To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you'll see numerous indexes. Liferay's main content is indexed into the [company index](../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named `liferay-[company id]` (e.g., `liferay-10819726314237`).
+To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you can see numerous indexes. Liferay's main content is indexed into the [company index](../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named `liferay-[company id]` (e.g., `liferay-10819726314237`).
 
 When you find the field, note its type and if it has sub-fields. Some fields are mapped as `text` fields to enable full text search or as `icu_collation` fields to enable sorting, but are also given a sub-field of type `keyword` for using in aggregations (i.e., facets).
 
@@ -207,8 +207,6 @@ This example references a web content structure field:
 ```
 ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_String_sortable.keyword_lowercase
 ```
-
-<!-- Should we mention that you don't need dot notation int he custom facet? I believe you can just reference the nested field by itself. -->
 
 #### Object Fields
 

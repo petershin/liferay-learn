@@ -14,6 +14,8 @@ taxonomy-category-names:
 
 Liferay includes form fragments for building object forms in content pages. To build a form, add a form container to a content page or page template and map it to a published object. The container automatically populates fragments mapped to each object field. You can organize, remove, or add fragments manually. Once published, end users can create object entries using the form.
 
+You can also create forms with multiple steps by adding form fragments to different sections and using navigation buttons to guide users through each step. See [Using Fragments to Build Multi-Step Forms](./using-fragments-to-build-multi-step-forms.md).
+
 To build forms in content pages,
 
 * Place form fragments only in a mapped form container.
@@ -130,6 +132,7 @@ To manage object relationships within form fragments,
 
 ## Related Topics
 
+* [Using Fragments to Build Multi-Step Forms](./using-fragments-to-build-multi-step-forms.md)
 * [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components)
 * [Configuring Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)
 * [Form Fragment Options](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options)

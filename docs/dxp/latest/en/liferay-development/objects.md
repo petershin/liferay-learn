@@ -3,6 +3,7 @@ toc:
   - ./objects/creating-and-managing-objects.md
   - ./objects/using-forms-with-objects.md
   - ./objects/using-fragments-to-build-forms.md
+  - ./objects/using-fragments-to-build-multi-step-forms.md
   - ./objects/deploying-object-widgets-to-sites.md
   - ./objects/displaying-object-entries.md
   - ./objects/displaying-object-entries/displaying-object-entries-with-collection-providers.md
@@ -19,6 +20,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Objects
 
 {bdg-secondary}`Liferay 7.4+`

@@ -38,14 +38,14 @@ Using SCIM, you can automate the exchange of user identity information between y
 
    ![Enter a name and set the matcher field for the new SCIM client.](./system-for-cross-domain-identity-management-scim/images/01.png)
 
-1. The Access Token field is empty at first. Click *Generate* and click *OK* to populate the field with an access token. An access token expires after 1 year unless revoked. If this is not the first time you're generating an access token, it overwrites the existing token, but it remains valid for 10 more days. You can use this grace period to configure the new token in the client application.
+1. The Access Token field is empty at first. Click *Generate* and click *OK* to populate the field with an access token. An access token expires after 1 year unless revoked. If this is not the first time you're generating an access token, it overwrites the existing token, but it remains valid for at most 10 more days. You can use this grace period to configure the new token in the client application.
 
    You can invoke the SCIM APIs by setting the access token in the `Authorization` request header. To revoke all access tokens, click *Revoke* and click *OK*.
 
 1. Click *Save*.
 
 !!! note
-    A scheduler runs daily to retrieve all OAuth 2 applications that start with the `SCIM_` prefix. If the access token's expiry is 30 days, 7 days, or 1 day, all administrators are notified in Liferay and by email.
+    A scheduler runs daily to retrieve all OAuth 2 applications that start with the `SCIM_` prefix. If the access token's expiry is within 30 days, 10 days, or 1 day, all administrators are notified in Liferay. A warning message also appears in the above page, instructing administrators to generate a new token before the expiry date.
 
 ## Resetting a SCIM Client
 

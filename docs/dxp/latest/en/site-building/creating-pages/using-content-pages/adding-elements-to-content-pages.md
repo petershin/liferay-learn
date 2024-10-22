@@ -10,9 +10,9 @@ uuid: 9aab8116-9767-4d13-be15-d5457771e6e3
 
 # Adding Elements to Content Pages
 
-After you [create a content page](../adding-pages/adding-a-page-to-a-site.md), you can add widgets and fragments to define the page's content and structure.
+After [creating a content page](../adding-pages/adding-a-page-to-a-site.md), you can add widgets and fragments to build the page's content and structure.
 
-To add elements,
+To add elements to the page,
 
 1. Navigate to the content page and click *Edit* (![Edit Button](../../../images/icon-edit.png)). This opens the [content page editor](./content-page-editor-ui-reference.md).
 
@@ -28,7 +28,8 @@ To add elements,
 
    In Liferay 7.4 U37/GA37+, you can drag and drop elements in the browser panel to reorganize them or double click elements to rename them.
 
-   {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` In Liferay 2024.Q4+, you can select multiple elements by holding CTRL while clicking each element, or by holding SHIFT and clicking to select a range of elements. You can also copy, cut, and paste elements by clicking *Options* (![Options menu](../../../images/icon-options.png)) and choosing the desired option. Read [Content Page Editor UI Reference](./content-page-editor-ui-reference.md#browser) to learn more.
+   !!! note
+       {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` In Liferay 2024.Q4+, you can select multiple elements by holding CTRL while clicking each element, or by holding SHIFT and clicking to select a range of elements. You can also copy, cut, and paste elements by clicking *Options* (![Options menu](../../../images/icon-options.png)) and choosing the desired option or by using keyboard shortcuts. Read [Content Page Editor UI Reference](./content-page-editor-ui-reference.md#browser) to learn more.
 
 1. Select and configure each page element in the configuration sidebar. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 

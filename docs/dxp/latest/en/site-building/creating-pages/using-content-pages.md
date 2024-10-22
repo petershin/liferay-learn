@@ -13,6 +13,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 6f904c1b-7c0a-409d-b8aa-8f22d75fd8f9
 ---
+
 # Using Content Pages
 
 By default, Liferay DXP uses the content page type, which provides a convenient user interface for managing and editing page content and design. With content pages, you can use configurable drag-and-drop elements out-of-the-box or develop your own to create the desired user experience.
@@ -25,10 +26,8 @@ When editing content pages, changes are made through a *site builder* and are sa
 
 With content page fragments and widgets, you can display web content, documents, and more. You can also view, edit, and manage your content, including content mapped to page fields. See [Managing Content in Content Pages](./using-content-pages/managing-content-in-content-pages.md) for more information.
 
-Create personalized page [experiences](../personalizing-site-experience/experience-personalization/content-page-personalization.md) and manage localized translations to engage your target audiences. You can also further optimize user experience with the responsive layout editor. This tool adapts the page content, so you can view and configure how your content page is displayed on desktops, tablets, and smartphones.
+Create personalized page [experiences](../personalizing-site-experience/experience-personalization/content-page-personalization.md) and manage localized translations to engage your target audiences. You can also further optimize user experience with the responsive layout editor. This tool adapts the page content, so you can view and configure how your content page appears on desktops, tablets, and smartphones.
 
 Finally, with [A/B Testing](../optimizing-sites/ab-testing/ab-testing.md), you can create alternative versions of a content page to track visitor data (e.g., bounce rate, clicks, etc.). Using algorithms, you can analyze this data to determine which page version best achieves your goals and hone your message accordingly.
 
 See [Adding Elements to Content Pages](./using-content-pages/adding-elements-to-content-pages.md) to get started!
-
-

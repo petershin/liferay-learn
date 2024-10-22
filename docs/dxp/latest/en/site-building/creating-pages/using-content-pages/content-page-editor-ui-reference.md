@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 7546c519-0350-4811-9577-635d4d1cddec
 ---
+
 # Content Page Editor UI Reference
 
 {bdg-secondary}`For Liferay 7.4 U37+/GA37+`
@@ -37,14 +38,14 @@ If you use [experiences](../../personalizing-site-experience/experience-personal
 
 ### Device Display
 
-Click the device icons to access Liferay's responsive layout editor. Here you can configure your page for different screen sizes. Available display options include desktop ( ![Desktop](../../../images/icon-display.png) ), tablet ( ![Tablet](../../../images/icon-tablet-portrait.png) ), landscape phone ( ![Landscape Phone](../../../images/icon-mobile-landscape.png) ), and portrait phone ( ![Portrait Phone](../../../images/icon-mobile-portrait.png) ). While editing the tablet and phone layouts, you can adjust the screen size manually using the resize handlebar. See [Building Responsive Layouts](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) for more information.
+Click the device icons to access Liferay's responsive layout editor. Here you can configure your page for different screen sizes. Available display options include desktop (![Desktop](../../../images/icon-display.png)), tablet (![Tablet](../../../images/icon-tablet-portrait.png)), landscape phone (![Landscape Phone](../../../images/icon-mobile-landscape.png)), and portrait phone (![Portrait Phone](../../../images/icon-mobile-portrait.png)). While editing the tablet and phone layouts, you can adjust the screen size manually using the resize handlebar. See [Building Responsive Layouts](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) for more information.
 
 !!! note
     The [fragments and widgets](#fragments-and-widgets) and [page design options](#page-design-options) panel are only available in the desktop layout.
 
 ### Edit History
 
-Click *History* ( ![History Button](../../../images/icon-time.png) ) to view changes made during your current edit session. You can use this history to reserve or restore changes. Alternatively, you can click the Undo and Redo buttons.
+Click *History* (![History Button](../../../images/icon-time.png)) to view changes made during your current edit session. You can use this history to reserve or restore changes. Alternatively, you can click the Undo and Redo buttons.
 
 ![Revert your changes using the Undo, Redo, and History buttons.](./content-page-editor-ui-reference/images/03.png)
 
@@ -61,11 +62,11 @@ The editing options available in the content page sidebar depend on the editing 
 
 ### Toggle Sidebars
 
-Click *Toggle Sidebars* ( ![Toggle Sidebars](../../../images/icon-view.png) ) to hide the editing sidebars and preview your page. Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) in the application bar and select *Preview in a New Tab* to see the current page experience and language in a new tab.
+Click *Toggle Sidebars* (![Toggle Sidebars](../../../images/icon-view.png)) to hide the editing sidebars and preview your page. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) in the application bar and select *Preview in a New Tab* to see the current page experience and language in a new tab.
 
 ### Convert to Page Template
 
-Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) in the application bar and select *Convert to Page Template* (![Page Template](../../../images/icon-page-template.png)) to create a [page template](../adding-pages/creating-a-page-template.md) based on the current page design.
+Click *Actions* (![Actions Button](../../../images/icon-actions.png)) in the application bar and select *Convert to Page Template* (![Page Template](../../../images/icon-page-template.png)) to create a [page template](../adding-pages/creating-a-page-template.md) based on the current page design.
 
 ### Publish
 
@@ -89,7 +90,7 @@ Depending on your selected editing mode, you can access these panels in the edit
 
 ### Fragments and Widgets
 
-In the Fragments and Widgets panel ( ![Fragments and Widgets icon](../../../images/icon-plus.png) ), you can access both out-of-the-box and custom page elements.
+In the Fragments and Widgets panel (![Fragments and Widgets icon](../../../images/icon-plus.png)), you can access both out-of-the-box and custom page elements.
 
 **Fragments**: Fragments are extensible, reusable, drag-and-drop elements that serve as the primary building blocks for content pages. Examples include layout elements, videos, and banner images with text overlay. See [Using Fragments](../page-fragments-and-widgets/using-fragments.md) to learn more about the out-of-the-box fragments or [Developing Fragments](../../developer-guide/developing-page-fragments.md) to learn how to create your own.
 
@@ -100,10 +101,36 @@ In the Fragments and Widgets panel ( ![Fragments and Widgets icon](../../../imag
 
 ### Browser
 
-Use the Browser panel ( ![Browser](../../../images/icon-hierarchy.png) ) to view, organize, and manage all elements in the page. Elements are displayed in a hierarchy. For Liferay 7.4 U37/GA37+, you can drag and drop elements in the Browser panel to reorganize them or double click elements to rename them. Selecting an element opens its settings in the configuration side panel. Select a fragment's sub-elements to access additional settings. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
+Use the Browser panel (![Browser](../../../images/icon-hierarchy.png)) to view, organize, and manage all elements in the page. Elements appear in a hierarchy. In Liferay 7.4 U37/GA37+, you can drag and drop elements in the Browser panel to reorganize them or double click elements to rename them. Selecting an element opens its settings in the configuration side panel. Select a fragment's sub-elements to access additional settings. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
 !!! note
-    When editing a content page, header and footer elements are not included in the Browser panel. You can only edit these elements in [master page templates](../defining-headers-and-footers/master-page-templates.md).
+    When editing a content page, header and footer elements are not included in the Browser panel. You can only edit these elements in [master page templates](../defining-headers-and-footers/
+    master-page-templates.md).
+
+{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` In Liferay 2024.Q4+, you can select multiple elements by holding CTRL while clicking each element, or by holding SHIFT and clicking to select a range of elements. You can also copy, cut, and paste elements by clicking *Options* (![Options menu](../../../images/icon-options.png)) and choosing the desired option.
+
+!!! note
+    Press *ESC* to clear all selections or click outside the Browser side panel area.
+
+![The editing sidebar includes these panels.](content-page-editor-ui-reference/images/06.png)
+
+Here's a list of elements in the content page and their behaviors regarding copying and pasting:
+
+| Element             | Cut/Copy/Paste  | Observation                                                                              |
+|:--------------------|:---------------:|:-----------------------------------------------------------------------------------------|
+| Collection Item     |       ❌        | Cannot be copied or pasted.                                                              |
+| Collection          |       ✅        | When pasting, the content is inserted at the beginning of the collection item.           |
+| Column/Module       |       ❌        | Cannot be copied. Only allows pasting items inside, which are inserted at the beginning. |
+| Row/Grid            |       ✅        | Pasting inserts the content after the selected row or grid, not inside it.               |
+| Form Step           |       ❌        | Cannot be copied. Only allows pasting items inside, which are inserted at the beginning. |
+| Form Step Container |       ✅        | Pasting places the content after the form container, not inside it.                      |
+| Fragment            |       ✅        | When pasting, the content is added after the selected fragment.                          |
+| Drop Zone           |       ❌        | Cannot be copied. Only allows pasting items inside, which are inserted at the beginning. |
+| Fragment Drop Zone  |       ❌        | Cannot be copied. Only allows pasting items inside, which are inserted at the beginning. |
+| Container           |       ✅        | Pasting inserts the content at the beginning of the container.                           |
+| Form                |       ✅        | Pasting inserts the content at the beginning of the form.                                |
+<!-- | Root                |     ⚠️      | Only allows pasting using a keyboard shortcut.                                           | -->
+<!-- I think keyboard shortcuts are not working yet. Eric. -->
 
 ### Page Design Options
 
@@ -118,15 +145,15 @@ In the Page Content panel (![Page Content](../../../images/icon-paperclip.png)),
 
 ### Comments
 
-In the Comments panel ( ![Comments](../../../images/icon-message.png) ), you can comment on fragments and widgets to collaborate with page contributors. You can also view, edit, delete, or reply to open comments. If [mentions](../../../collaboration-and-social/notifications-and-requests/user-guide/mentioning-users.md) are enabled, you can tag users with page update permissions as part of your comment. To add a comment, open the Comments panel and select the desired page element.
+In the Comments panel (![Comments](../../../images/icon-message.png)), you can comment on fragments and widgets to collaborate with page contributors. You can also view, edit, delete, or reply to open comments. If [mentions](../../../collaboration-and-social/notifications-and-requests/user-guide/mentioning-users.md) are enabled, you can tag users with page update permissions as part of your comment. To add a comment, open the Comments panel and select the desired page element.
 
-### Browser
+<!-- ### Browser
 
 {bdg-secondary}`For Liferay 7.3`
 
 In the Selection panel (![Selection](../../../images/icon-pages-tree.png)), you can view a hierarchical outline of all page elements, as well as select, configure, or remove those elements. Similarly, clicking any element on the page while in the design mode opens the Selection panel and highlights the selected page element in the hierarchy. When an element is selected, you can access its general, styles, and link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
-![Selection shows you a hierarchy of your page and contents.](./content-page-editor-ui-reference/images/06.png)
+![Selection shows you a hierarchy of your page and contents.](./content-page-editor-ui-reference/images/07.png)
 
 !!! note
     A page's header and footer are not listed in the Selection panel hierarchy, because you can only modify them in the [master page template](../defining-headers-and-footers/master-page-templates.md).
@@ -135,12 +162,12 @@ In the Selection panel (![Selection](../../../images/icon-pages-tree.png)), you 
 
 {bdg-secondary}`For Liferay 7.3`
 
-In the Contents panel (![Contents](../../../images/icon-list-ul.png)), you can view, edit, and manage all web content on the page. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
+In the Contents panel (![Contents](../../../images/icon-list-ul.png)), you can view, edit, and manage all web content on the page. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information. -->
+
+<!-- I'll be commenting those sections for now as they refer to 7.3 and there's not enough information (I think) to create a separate article. Do I keep it as it is, delete it, or create a new article with just this piece of information? Eric. -->
 
 ## Related Topics
 
-[Using Content Pages](../using-content-pages.md)
-
-[Adding Elements to Content Pages](./adding-elements-to-content-pages.md)
-
-[Using Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md)
+- [Using Content Pages](../using-content-pages.md)
+- [Adding Elements to Content Pages](./adding-elements-to-content-pages.md)
+- [Using Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md)

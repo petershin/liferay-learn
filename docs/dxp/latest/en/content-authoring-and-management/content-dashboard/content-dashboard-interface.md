@@ -228,15 +228,15 @@ The Details tab is selected automatically when you open the Content Info sidebar
 
 {bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA137+`
 
-The Performance tab contains various metrics for the selected asset. To view metrics for the desired asset, you must sync the sites to which the asset belongs to Analytics Cloud.
+The Performance tab contains various metrics for the selected asset. To view metrics for the desired asset, you must sync the asset's sites to Analytics Cloud.
 
 ![You must connect to Analytics Cloud to view metrics.](./content-dashboard-interface/images/11.png)
 
 You can use the buttons on the top-right corner to limit the results with these filters:
 
-- **Individual Type**: All individuals (default), known individuals, and anonymous individuals.
+**Individual Type**: All individuals (default), known individuals, and anonymous individuals.
 
-- **Date Range**: Last 7 days, last 28 days, last 30 days (default), and last 90 days.
+**Date Range**: Last 7 days, last 28 days, last 30 days (default), and last 90 days.
 
 The data displayed depends on the type of asset:
 
@@ -248,7 +248,7 @@ The data displayed depends on the type of asset:
 
 - Top Pages Asset Appears On: A graph showing the top three pages with most visitors where this web content is used.
 
-- Views By Technology: A breakdown of the different kinds of devices users are viewing this web content from.
+- Views By Technology: A breakdown of the different kinds of devices loading this web content.
 
 **Blog Entries**
 
@@ -260,7 +260,7 @@ The data displayed depends on the type of asset:
 
 - Top Pages Asset Appears On: A graph showing the top three pages with most visitors where this blog is used.
 
-- Views By Technology: A breakdown of the different kinds of devices users are viewing this blog from.
+- Views By Technology: A breakdown of the different kinds of devices loading this blog.
 
 **Documents and Media**
 
@@ -274,7 +274,7 @@ The data displayed depends on the type of asset:
 
 - Top Pages Asset Appears On: A graph showing the top three pages with most visitors where this document is used.
 
-- Downloads By Technology: A breakdown of the different kinds of devices users are downloading this document from.
+- Downloads By Technology: A breakdown of the different kinds of devices downloading this document.
 
 ![The Performance tab shows different metrics for the selected document.](./content-dashboard-interface/images/12.png)
 

@@ -124,7 +124,7 @@ Access additional settings to customize a page’s content and features.
 
 **Custom Fields**: View and configure the Custom Fields you've defined for site pages. See [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) for more information.
 
-**Embedded Widgets**: Access widgets you've embedded in a page using [Web Content Templates](../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md), [Page Fragments](../../developer-guide/developing-page-fragments.md), or [Themes](../../../liferay-development/customizing-liferays-look-and-feel/themes.md).
+**Embedded Widgets**: Access widgets you've embedded in a page using [Web Content Templates](../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-web-content-templates.md), [Page Fragments](../../developer-guide/developing-page-fragments.md), or [Themes](../../../liferay-development/customizing-liferays-look-and-feel/themes.md).
 
 **Mobile Device Rules**: Determine whether a page uses its page set's [rules for mobile devices](../../../site-building/optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md) or is uniquely configured. These rules determine how a page's content renders for different types of mobile devices.
 

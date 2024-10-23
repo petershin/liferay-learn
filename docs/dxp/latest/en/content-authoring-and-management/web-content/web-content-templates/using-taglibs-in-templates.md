@@ -63,4 +63,4 @@ Here is a list of reserved variables you can find under Journal, what they retur
 
 ## Related Topics
 
-- [Embedding Widgets in Templates](./embedding-widgets-in-templates.md)
+- [Embedding Widgets in Web Content Templates](./embedding-widgets-in-web-content-templates.md)

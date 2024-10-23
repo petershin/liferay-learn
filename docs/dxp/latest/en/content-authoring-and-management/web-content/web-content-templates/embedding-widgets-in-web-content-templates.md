@@ -8,7 +8,8 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 639e26cd-ceb4-4590-a380-56777ab455a1
 ---
-# Embedding Widgets in Templates
+
+# Embedding Widgets in Web Content Templates
 
 You can embed widgets in web content templates: it doesn't matter whether they're core apps, custom apps, instanceable, or non-instanceable. Below is an example of embedding a Web Content widget in FreeMarker:
 
@@ -22,17 +23,17 @@ To begin embedding widgets in your web content templates, follow these steps:
 1. Click _Content & Data_ &rarr; _Web Content_.
 1. Click on the _Templates_ tab.
 
-    ![The Templates tab shows the templates in your Site.](./embedding-widgets-in-templates/images/01.png)
+    ![The Templates tab shows the templates in your Site.](./embedding-widgets-in-web-content-templates/images/01.png)
 
 1. Click the Add (![Add Icon](../../../images/icon-add.png)) icon.
 1. Enter a name for the template (for example, _Template 1_)
 1. Click _Select_ from the _Properties_ section to choose the structure (for example, _Structure 1_).
 
-    ![Select a structure.](./embedding-widgets-in-templates/images/02.png)
+    ![Select a structure.](./embedding-widgets-in-web-content-templates/images/02.png)
 
 1. Paste your macro (for example, `<@liferay_portlet["runtime"] portletName="com_liferay_journal_content_web_portlet_JournalContentPortlet" />`) in the Template Editor. Depending on whether your portlet is instanceable, you may need to enter the portlet ID.
 
-    ![Enter the portlet macro.](./embedding-widgets-in-templates/images/03.png)
+    ![Enter the portlet macro.](./embedding-widgets-in-web-content-templates/images/03.png)
 
 1. Click _Save_ when finished.
 
@@ -52,7 +53,7 @@ Below is an example of embedding a template in FreeMarker:
 
 You can find the *Template Key* when editing a previously published template.
 
-![You can find the Template Key when view the Edit page for a template.](./embedding-widgets-in-templates/images/04.png)
+![You can find the Template Key when view the Edit page for a template.](./embedding-widgets-in-web-content-templates/images/04.png)
 
 ## Related Topics
 

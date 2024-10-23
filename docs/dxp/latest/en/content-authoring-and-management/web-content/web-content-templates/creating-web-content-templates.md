@@ -9,7 +9,7 @@ uuid: 4963c6cc-80ff-4e9e-886a-863578e3a24a
 ---
 # Creating Web Content Templates
 
-Web Content Templates use the FreeMarker Template Language (FTL) to determine how content fields are rendered on a Page. Each Template can be associated with a Web Content [Structure](../web-content-structures/creating-web-content-structures.md), or even [embedded in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates).
+Web Content Templates use the FreeMarker Template Language (FTL) to determine how content fields are rendered on a Page. Each Template can be associated with a Web Content [Structure](../web-content-structures/creating-web-content-structures.md), or even [embedded in other Templates](./embedding-widgets-in-web-content-templates.md#embedding-other-templates).
 
 ```{important}
 Grant permission to Create or Edit templates in FreeMarker to trusted users only. See [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-web-content-structures-and-templates.md#security-considerations-for-web-content-templates) for information about Web Content Templates security.
@@ -45,7 +45,7 @@ Grant permission to Create or Edit templates in FreeMarker to trusted users only
 
    ![DXP automatically generates a DDM Template Key, URL, and WebDAV URL for your Template.](./creating-web-content-templates/images/03.png)
 
-Once you've created a Template, you can [use it for Web Content](../web-content-articles/creating-web-content-articles.md) created with its linked Structure or [embed it in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates), depending on its configuration. You can also edit your Template at any time.
+Once you've created a Template, you can [use it for Web Content](../web-content-articles/creating-web-content-articles.md) created with its linked Structure or [embed it in other Templates](./embedding-widgets-in-web-content-templates.md#embedding-other-templates), depending on its configuration. You can also edit your Template at any time.
 
 ```{note}
 Changes in a Structure may require changes in associated Templates. For example, if a Structure field name referenced in a Template is renamed or removed, the Template's reference must be updated manually.
@@ -67,4 +67,4 @@ While Creating a template, you can optionally determine the following Template s
 
 * [Creating Web Content Structures](../web-content-structures/creating-web-content-structures.md)
 * [Creating Web Content Articles](../web-content-articles/creating-web-content-articles.md)
-* [Embedding Widgets in Templates](./embedding-widgets-in-templates.md)
+* [Embedding Widgets in Web Content Templates](./embedding-widgets-in-web-content-templates.md)

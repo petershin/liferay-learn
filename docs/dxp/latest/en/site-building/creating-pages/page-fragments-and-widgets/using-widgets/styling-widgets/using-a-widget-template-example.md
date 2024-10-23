@@ -35,5 +35,5 @@ This example shows changing the default configuration of the Media Gallery widge
 
 ## Related Topics
 
-- [Embedding Widgets in Templates](../../../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md)
+- [Embedding Widgets in Web Content Templates](../../../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-web-content-templates.md)
 - [Styling Widgets with Widget Templates](../../../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)

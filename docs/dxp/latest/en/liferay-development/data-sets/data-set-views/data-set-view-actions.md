@@ -95,16 +95,24 @@ To create an async action,
 
 1. Under Action Behavior, select *Async* as the Type.
 
-1. Specify the *URL* for the REST endpoint where the selected method is implemented and select the *Method*: Delete, Get, Patch, or Post.
+1. Specify the *URL* for the REST endpoint where the selected method is implemented and select the *Method*: Delete, Get, Patch, Post, or  Put.
+
+1. {bdg-secondary}`Liferay DXP 2024.Q4+` Enter the *Request Body* if it applies to your chosen method. Enter all required values for your chosen endpoint (for a Patch method, only the fields you're changing).
+
+    The request body must be valid JSON. No input is interpreted as `{}`.
 
 1. (Optional) Enter a *Headless Action Key* to link an action with a headless endpoint and verify if users have the required permissions for the specific action method. Ensure the key matches or is compatible with the selected method.
 
    !!! important
-       If no key is defined, the action still works, but becomes visible to all users, as there are no validation or restrictions in place.
+       If no key is defined, the action still works, but becomes visible to all users, as there are no validations or restrictions in place.
 
 1. (Optional) [Set *Confirmation* and *Status Messages*](#setting-confirmation-and-status-messages) for your async action.
 
 Once configured, use the async action to invoke and execute the selected method.
+
+This example async action configuration deactivates a user with a background process via a Patch method:
+
+![Use a headless endpoint such as a Patch method in an async action to change data in the background.](./data-set-view-actions/images/02.png)
 
 ### Headless Action
 
@@ -114,11 +122,19 @@ To create a headless action,
 
 1. Under Action Behavior, select *Headless* as the Type.
 
-1. Enter a *Headless Action Key*. With the key, administrators can associate an action to a headless endpoint.
+1. {bdg-secondary}`Liferay DXP 2024.Q4+` Enter the *Request Body* if it applies to your chosen method. Enter all required values for your chosen endpoint (for a Patch method, only the fields you're changing).
+
+    The request body must be valid JSON. No input is interpreted as `{}`.
+
+1. Enter a *Headless Action Key* to associate the action with a headless endpoint.
 
 1. (Optional) [Set *Confirmation* and *Status Messages*](#setting-confirmation-and-status-messages) for your headless action.
 
-Once configured, use the headless action to initiate and manage the associated API call.
+Once configured, use the headless action to initiate and manage the associated API call
+
+This example headless action configuration deactivates a user via a Patch method:
+
+![Use a headless endpoint such as a Patch method to change data in your data set.](./data-set-view-actions/images/03.png)
 
 ### Link Action
 
@@ -143,7 +159,7 @@ To create a link action,
 
 Once configured, users are directed to the designated URL upon clicking the action button or icon.
 
-![Use the Link action to redirect users to a specified URL.](./data-set-view-actions/images/02.png)
+![Use the Link action to redirect users to a specified URL.](./data-set-view-actions/images/04.png)
 
 ### Modal Action
 
@@ -170,7 +186,7 @@ To create a modal action,
 
 Once configured, users are directed to the chosen URL rendered in a modal when they click the action button or icon.
 
-![Use the modal action to redirect users to a specified URL and render its content in a modal.](./data-set-view-actions/images/03.png)
+![Use the modal action to redirect users to a specified URL and render its content in a modal.](./data-set-view-actions/images/05.png)
 
 ### Side Panel Action
 
@@ -195,7 +211,7 @@ To create a side panel action,
 
 Once configured, users are directed to the chosen URL rendered in a side panel when they click the action button or icon.
 
-![Use the Side Panel action to redirect users to a specified URL and render its content in a Side Panel.](./data-set-view-actions/images/04.png)
+![Use the Side Panel action to redirect users to a specified URL and render its content in a Side Panel.](./data-set-view-actions/images/06.png)
 
 ### Setting Confirmation and Status Messages
 

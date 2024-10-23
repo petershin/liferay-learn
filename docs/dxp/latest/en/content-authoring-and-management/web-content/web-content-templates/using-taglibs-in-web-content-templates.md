@@ -7,7 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: eccdd0ca-296f-46eb-a737-fe3100650be6
 ---
-# Using Taglibs in Templates
+# Using Taglibs in Web Content Templates
 
 Liferay's taglibs are accessible when developing templates in FreeMarker. There is no need to instantiate these taglibs within your FreeMarker template; they're already provided for you automatically. You can access these taglibs by indicating the Tag Library Descriptor's (TLD) file name with underscores.
 
@@ -23,11 +23,11 @@ When you're using DXP's template editor, you can find variables on the right sid
 
 1. Click the variable name.
 
-![Access variables under the Elements tab](using-taglibs-in-templates/images/01.png)
+![Access variables under the Elements tab](using-taglibs-in-web-content-templates/images/01.png)
 
 If the variable name doesn't give you sufficient information on its functionality, hover over the information icon ( ![Information icon](../../../images/icon-information.png) ) for a more detailed description.
 
-![Hover over an information icon next to a variable for a more detailed description of the variable.](./using-taglibs-in-templates/images/02.png)
+![Hover over an information icon next to a variable for a more detailed description of the variable.](./using-taglibs-in-web-content-templates/images/02.png)
 
 The interactive template editor is available for the FreeMarker, Velocity, and XSL languages. Depending on the language you select, the variable content changes so you're always adding content in the language you've chosen. Autocomplete can be invoked by typing `*${*` which opens a menu of available variables. The editor inserts the variable into the template editor when it is chosen.
 

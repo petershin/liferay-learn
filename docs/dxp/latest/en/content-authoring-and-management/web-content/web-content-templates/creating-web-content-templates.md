@@ -59,7 +59,7 @@ While Creating a template, you can optionally determine the following Template s
 
 * **Description**: Use the Description field to provide localized descriptions of your Template.
 
-* **Cacheable**: By default, new Templates are cacheable. Uncheck this property if dynamic behavior is needed (e.g., [taglibs](./using-taglibs-in-templates.md), request handling, CMS query API).
+* **Cacheable**: By default, new Templates are cacheable. Uncheck this property if dynamic behavior is needed (e.g., [taglibs](./using-taglibs-in-web-content-templates.md), request handling, CMS query API).
 
 * **Featured Image**: Select a featured image for your Template via URL or from your device.
 

@@ -30,7 +30,9 @@ Begin by [adding an action to the data set view](#adding-actions-to-the-data-set
 
 1. Click the *Name* of the data set view to start editing it.
 
-1. Select the Actions tab, open the [*Item Actions* or the *Creation Actions*](#configuring-item-and-creation-actions) tab, and click *Add* (![Add button](../../../images/icon-add.png)); a page appears where you must configure your action before creating it.
+1. Select the Actions tab, open the [*Item Actions* or the *Creation Actions*](#configuring-item-and-creation-actions) tab, and click *Add* (![Add button](../../../images/icon-add.png)).
+
+   A page appears where you must configure your action before creating it.
 
 Under the Display Options section, you can find general settings common to all actions.
 
@@ -101,7 +103,7 @@ To create an async action,
 
     The request body must be valid JSON. No input is interpreted as `{}`.
 
-1. (Optional) Enter a *Headless Action Key* to link an action with a headless endpoint and verify if users have the required permissions for the specific action method. Ensure the key matches or is compatible with the selected method.
+1. (Optional) Enter a [*Headless Action Key*](../../../headless-delivery/consuming-apis/consuming-rest-services.md#headless-action-keys) to link an action to a headless endpoint and verify if users have the required permissions for the chosen action method. Ensure the key matches with the selected method.
 
    !!! important
        If no key is defined, the action still works, but becomes visible to all users, as there are no validations or restrictions in place.
@@ -116,7 +118,7 @@ This example async action configuration deactivates a user with a background pro
 
 ### Headless Action
 
-Headless actions are controlled via a *Headless Action Key*, which determines the specific permissions and functionalities that can be executed through the API. For example, a headless action with the key *delete* would allow an API to carry out a deletion operation on a specific resource.
+Headless actions are controlled via a [*Headless Action Key*](../../../headless-delivery/consuming-apis/consuming-rest-services.md#headless-action-keys), which determines the specific permissions and functionalities that can be executed through the API. For example, a headless action with the key *delete* would allow an API to carry out a deletion operation on a specific resource.
 
 To create a headless action,
 
@@ -151,9 +153,7 @@ To create a link action,
 !!! note
     When you set a URL in a link action, the Data Set component automatically adds `redirect` and `backURL` parameters, with the `backURL` parameter set to the URL of the Data Set's page. If you can't navigate back to the Data Set from the destination page, ensure that the destination page handles the parameters correctly.
 
-1. (Optional) Enter a *Headless Action Key*. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
-
-   For example, use `replace` to modify an entry as an item action or use `create` to add a new entry as a creation action.
+1. (Optional) Enter a [*Headless Action Key*](../../../headless-delivery/consuming-apis/consuming-rest-services.md#headless-action-keys). With the action key, administrators can connect an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
 1. (Optional) If you are using the Link action as an item type, you can [set a *Confirmation Message*](#setting-confirmation-and-status-messages) for it.
 
@@ -178,9 +178,7 @@ To create a modal action,
 
 1. Specify the URL.
 
-1. (Optional) Enter a *Headless Action Key*. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
-
-   For example, use `replace` to modify an entry as an item action or use `create` to add a new entry as a creation action.
+1. (Optional) Enter a [*Headless Action Key*](../../../headless-delivery/consuming-apis/consuming-rest-services.md#headless-action-keys). With the action key, administrators can connect an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
 1. (Optional) If you are using the Modal action as an item type, you can [set a *Confirmation Message*](#setting-confirmation-and-status-messages) for it.
 
@@ -203,9 +201,7 @@ To create a side panel action,
 
 1. Specify the URL to which the user should be taken.
 
-1. (Optional) Enter a Headless Action Key. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
-
-   For example, use `replace` to modify an entry as an item action, or use `create` to add a new entry as a creation action.
+1. (Optional) Enter a [*Headless Action Key*](../../../headless-delivery/consuming-apis/consuming-rest-services.md#headless-action-keys). With the action key, administrators can connect an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
 1. (Optional) If you are using the Side Panel action as an item type, you can [set a *Confirmation Message*](#setting-confirmation-and-status-messages) for it.
 

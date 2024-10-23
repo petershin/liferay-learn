@@ -44,6 +44,16 @@ APIs are divided into several categories. This example uses the `BlogPosting` se
 
 ![The schema browser makes it convenient to find and call the service you want. ](./consuming-rest-services/images/01.png)
 
+## Headless Action Keys
+
+Each headless endpoint's methods have *headless action keys* that identify the methods independently from the URL. These action keys are useful for connecting to these methods from other applications, such as [data set view actions](../../liferay-development/data-sets/data-set-views/data-set-view-actions.md).
+
+You can find the action keys for a specific endpoint via the [API Explorer](#identify-the-service-to-consume). For your chosen endpoint (e.g., user accounts), execute a GET method. The server response JSON includes an `actions` block in the body, including the action keys for each applicable method.
+
+For example, here is a response showing the action keys for the `/o/headless-admin-user/` endpoint (with the `/v1.0/user-accounts/{userAccountId}` GET method):
+
+![Execute a GET method for your chosen endpoint to get a response showing usable headless action keys.](./consuming-rest-services/images/02.png)
+
 ## REST Context Paths for Root Models
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
@@ -56,7 +66,7 @@ For example, the `APIApplication` root model is part of the [API Builder](../api
 
 You can find this information using [Liferay's API Explorer](#identify-the-service-to-consume). Click on *Rest Applications* (1) in the top-right corner. The REST applications appear with their corresponding paths, including prefixes if applicable (2). You can confirm the path under Servers (3).
 
-![Use Liferay's API Explorer to find the information you need. ](./consuming-rest-services/images/02.png)
+![Use Liferay's API Explorer to find the information you need. ](./consuming-rest-services/images/03.png)
 
 Example context paths:
 
@@ -116,7 +126,7 @@ Now you must find the default Site ID:
 
 1. Find the Site identifier under Site ID.
 
-   ![Identify the Site Id under the Site Settings and Site Configuration option.](./consuming-rest-services/images/03.png)
+   ![Identify the Site Id under the Site Settings and Site Configuration option.](./consuming-rest-services/images/04.png)
 
 ## Make the Service Call Using Credentials with Access to the Data
 
@@ -174,7 +184,7 @@ First, post a blog entry.
 
 You can use the schema browser to learn how to post a blog entry.
 
-![The schema for any service is published on your Liferay DXP instance.](./consuming-rest-services/images/04.png)
+![The schema for any service is published on your Liferay DXP instance.](./consuming-rest-services/images/05.png)
 
 1. Go back to your browser tab containing the schema browser. On the right side, click the `BlogPosting` entry to display its schema (see above). This shows the whole data structure for a `BlogPosting`, but there are only two required fields:
 

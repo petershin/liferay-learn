@@ -40,7 +40,7 @@ Under the Display Options section, you can find general settings common to all a
 
 1. (Optional) Choose an icon to show in your Data Set fragment.
 
-   <!-- Choose from a list of out-of-the-box icons or type in the name of an icon registered through the SVG sprite map client extension. The custom icon requires configuring the client extension. - This is to be added once the article about this client extension is on. Eric -->|
+   Choose from a list of out-of-the-box icons or type in the name of an icon registered through an [SVG sprite map client extension](../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md). The custom icon requires configuring the client extension.
 
    !!! tip
        When an item has a single action, its label appears as text inside a button component if no icon is selected. If multiple actions exist, an action menu icon (![Action Menu icon](../../../images/icon-actions.png)) appears, revealing available actions on click.

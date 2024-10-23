@@ -4,7 +4,7 @@ toc:
   - ./web-content-structures/configuring-structure-fields.md
   - ./web-content-structures/managing-structures.md
   - ./web-content-structures/mapping-repeatable-fields-to-fragments.md
-  - ./web-content-structures/assigning-permissions-to-structures-and-templates.md
+  - ./web-content-structures/assigning-permissions-to-web-content-structures-and-templates.md
   - ./web-content-structures/whats-new-with-web-content-structures-in-7-4.md
 taxonomy-category-names:
 - Content Management System

@@ -333,7 +333,7 @@ The JSON output includes the permissions under the `items` section. In this exam
 ```
 
 !!! note
-    To learn how to manage permissions, see [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-structures-and-templates.md).
+    To learn how to manage permissions, see [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-web-content-structures-and-templates.md).
 
 The REST service can also be called using the Java client.
 
@@ -460,4 +460,4 @@ public class ContentStructures_PUT_Permissions {
 - [Creating Web Content Structures](../web-content-structures/creating-structures.md)
 - [Creating Web Content Templates](../web-content-templates/creating-web-content-templates.md)
 - [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-- [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-structures-and-templates.md)
+- [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-web-content-structures-and-templates.md)

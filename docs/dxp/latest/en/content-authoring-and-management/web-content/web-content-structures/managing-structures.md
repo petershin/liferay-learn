@@ -36,7 +36,7 @@ You can perform these actions from the structure's Actions Menu (![Actions Menu]
 
 **Import and Override:** Opens an import structure modal. Select and import a JSON file to override the selected structure.
 
-**Permissions:** Opens the permissions configuration dialog for the structure. See [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-structures-and-templates.md) for more information.
+**Permissions:** Opens the permissions configuration dialog for the structure. See [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-web-content-structures-and-templates.md) for more information.
 
 **Delete:** Deletes the structure.
 
@@ -72,4 +72,4 @@ You can copy an existing structure to create a new one. From the structures page
 
 - [Creating Structures](./creating-structures.md)
 - [Configuring Structure Fields](./configuring-structure-fields.md)
-- [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-structures-and-templates.md)
+- [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-web-content-structures-and-templates.md)

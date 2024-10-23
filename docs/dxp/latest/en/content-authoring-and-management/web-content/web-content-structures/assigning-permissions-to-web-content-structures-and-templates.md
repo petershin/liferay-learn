@@ -57,7 +57,7 @@ You can disable template creation completely. Once disabled, users can no longer
 
 1. Click *Save*.
 
-![Permissions dialog for web content structures and templates](./assigning-permissions-to-structures-and-templates/images/01.png)
+![Permissions dialog for web content structures and templates](./assigning-permissions-to-web-content-structures-and-templates/images/01.png)
 
 See [Defining Role Permissions](../../../users-and-permissions/roles-and-permissions/defining-role-permissions.md) for more information on configuring permissions.
 

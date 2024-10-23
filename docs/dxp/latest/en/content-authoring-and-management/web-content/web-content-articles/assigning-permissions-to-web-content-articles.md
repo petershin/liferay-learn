@@ -96,5 +96,5 @@ All permissions and users displayed when modifying your permissions appear on th
 
 ## Related Topics
 
-- [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-structures-and-templates.md)
+- [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-web-content-structures-and-templates.md)
 - [Web Content Articles](../web-content-articles.md)

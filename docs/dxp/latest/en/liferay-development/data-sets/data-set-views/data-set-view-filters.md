@@ -32,19 +32,19 @@ While managing data set views, you can define pre-applied filters to be used in 
 
 {bdg-secondary}`Liferay DXP 2024.Q4+`
 
-For any type of filter, clicking *Select* under the *Filter By* field opens the *Select Field* pop-up, with a tree view that includes all of the selected entry type's fields. For object entry types, you can also expand parent or related entry fields (such as a [related object's fields](../../objects/creating-and-managing-objects/relationships/defining-object-relationships.md)).
+For any type of filter, clicking *Select* under the Filter By field opens the Select Field pop-up, with a tree view that includes all fields for the selected entry type. For object entry types, you can also expand parent or related entry fields (such as a [related object's fields](../../objects/creating-and-managing-objects/relationships/defining-object-relationships.md)).
 
 The chosen type of filter determines which fields in the tree are selectable:
 
-* [Client extension filter](#client-extension-filter): Any field is selectable. The client extension's implementation determines how the filter is applied.
+- [Client extension filter](#client-extension-filter): Any field is selectable. The client extension's implementation determines how the filter is applied.
 
-* [Date range filter](#date-range-filter): Only date fields are selectable. The user can change the date range from the default when selecting the filter.
+- [Date range filter](#date-range-filter): Only date fields are selectable. The user can change the date range from the default when selecting the filter.
 
-* [Selection filter](#selection filter): Only string or numeric fields are selectable.
+- [Selection filter](#selection filter): Only string or numeric fields are selectable.
 
 ![You can see all fields for the chosen entry type, as well as related entry types.](./data-set-view-filters/images/01.png)
 
-Selecting a field that belongs to a related entry can be useful for more complex filters. For example, if you have a Student object with a relationship to a School object, you can filter a Student data set view by their related School's `schoolName` field. If the user selects the name *Standford University*, this filter expression automatically applies: `filter=(studentsAtSchool/schoolName+eq+'Stanford+University')`.
+Selecting a field that belongs to a related entry can be useful for more complex filters. For example, if you have a Student object with a relationship to a School object, you can filter a Student data set view by the related School's `schoolName` field. If the user selects the name *Stanford University*, this filter expression automatically applies: `filter=(studentsAtSchool/schoolName+eq+'Stanford+University')`.
 
 !!! warning
     Only object endpoints support selecting related or parent entry fields. The automatically generated filter syntax for other kinds of endpoints (such as `/o/headless-*` endpoints) does not work for filters using related entries' fields.
@@ -89,9 +89,7 @@ Use date-type fields to pre-filter the displayed entries.
 
 Use API REST endpoints or picklist options as parameters for the filter.
 
-Start by choosing *Selection* when adding a new filter.
-
-   The Selection filter has three sections: Configuration, Filter Source, and Filter Option.
+Start by choosing *Selection* when adding a new filter. The Selection filter has three sections: Configuration, Filter Source, and Filter Option.
 
 Under Configuration,
 
@@ -105,7 +103,7 @@ Under Filter Source,
 
    - With Object Picklists, choose a picklist to associate with the filter.
 
-      ![Selecting an API REST Application as the source.](./data-set-view-filters/images/05.png)
+     ![Selecting an API REST Application as the source.](./data-set-view-filters/images/05.png)
 
    - {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` With API REST Applications, select a *REST Application*, *REST Schema*, *REST Endpoint*, *Item Key*, and *Item Label*.
 

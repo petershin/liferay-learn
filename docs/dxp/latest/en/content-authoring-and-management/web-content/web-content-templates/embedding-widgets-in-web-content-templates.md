@@ -11,35 +11,36 @@ uuid: 639e26cd-ceb4-4590-a380-56777ab455a1
 
 # Embedding Widgets in Web Content Templates
 
-You can embed widgets in web content templates: it doesn't matter whether they're core apps, custom apps, instanceable, or non-instanceable. Below is an example of embedding a Web Content widget in FreeMarker:
+You can embed core or custom widgets, instanceable or not, in web content templates. Below is an example of embedding a web content widget in FreeMarker:
 
 ```markup
 <@liferay_portlet["runtime"] portletName="com_liferay_journal_content_web_portlet_JournalContentPortlet" />
 ```
 
-To begin embedding widgets in your web content templates, follow these steps:
+To embed widgets in your web content templates,
 
-1. Navigate to your Site's (the default DXP site in this example) _Site Administration_.
-1. Click _Content & Data_ &rarr; _Web Content_.
-1. Click on the _Templates_ tab.
+1. Navigate to your site's (the default DXP site in this example) *Site Administration*.
 
-    ![The Templates tab shows the templates in your Site.](./embedding-widgets-in-web-content-templates/images/01.png)
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu-open.png)), expand *Content and Data, and go to *Web Content*.
 
-1. Click the Add (![Add Icon](../../../images/icon-add.png)) icon.
-1. Enter a name for the template (for example, _Template 1_)
-1. Click _Select_ from the _Properties_ section to choose the structure (for example, _Structure 1_).
+1. Select the *Templates* tab.
 
-    ![Select a structure.](./embedding-widgets-in-web-content-templates/images/02.png)
+   ![The Templates tab shows the templates in your site.](./embedding-widgets-in-web-content-templates/images/01.png)
+
+1. Click *New*. Enter a name for the template (for example, *Template 1*).
+
+1. Click *Select* from the *Properties* section to choose the structure (for example, *Structure 1*).
+
+   ![Select a structure for the template.](./embedding-widgets-in-web-content-templates/images/02.png)
 
 1. Paste your macro (for example, `<@liferay_portlet["runtime"] portletName="com_liferay_journal_content_web_portlet_JournalContentPortlet" />`) in the Template Editor. Depending on whether your portlet is instanceable, you may need to enter the portlet ID.
 
-    ![Enter the portlet macro.](./embedding-widgets-in-web-content-templates/images/03.png)
+   ![Enter the portlet macro.](./embedding-widgets-in-web-content-templates/images/03.png)
 
-1. Click _Save_ when finished.
+1. Click *Save* when finished.
 
-```{important}
-The `theme` variable is no longer injected into the FreeMarker context. For more information about why the theme variable was removed for DXP 7.0 and suggestions for updating your code, visit the [Taglibs Are No Longer Accessible via the theme Variable in FreeMarker](https://help.liferay.com/hc/articles/360017892092-Introduction-to-Breaking-Changes-#taglibs-are-no-longer-accessible-via-the-theme-variable-in-freemarker) breaking change entry.
-```
+!!! important
+    The `theme` variable is no longer injected into the FreeMarker context.
 
 ## Embedding Other Templates
 
@@ -53,8 +54,9 @@ Below is an example of embedding a template in FreeMarker:
 
 You can find the *Template Key* when editing a previously published template.
 
-![You can find the Template Key when view the Edit page for a template.](./embedding-widgets-in-web-content-templates/images/04.png)
+![You can find the Template Key when viewing the Edit page for a template.](./embedding-widgets-in-web-content-templates/images/04.png)
 
 ## Related Topics
 
-* [Embedding a Portlet by Portlet Name](https://help.liferay.com/hc/articles/360028746512-Embedding-a-Portlet-by-Portlet-Name)
+- [Web Content Templates](../web-content-templates.md)
+- [Page Fragments and Widgets]../../../site-building/creating-pages/page-fragments-and-widgets.md

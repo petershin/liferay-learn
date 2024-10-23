@@ -8,7 +8,7 @@ taxonomy-category-names:
 uuid: 35ccf513-05ef-4bb7-80ec-e12b8a494cf5
 ---
 
-# Managing Structures
+# Managing Web Content Structures
 
 You can manage structures from the structures page:
 

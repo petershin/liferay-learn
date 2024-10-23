@@ -7,15 +7,16 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: eccdd0ca-296f-46eb-a737-fe3100650be6
 ---
+
 # Using Taglibs in Web Content Templates
 
 Liferay's taglibs are accessible when developing templates in FreeMarker. There is no need to instantiate these taglibs within your FreeMarker template; they're already provided for you automatically. You can access these taglibs by indicating the Tag Library Descriptor's (TLD) file name with underscores.
 
 When you're using DXP's template editor, you can find variables on the right side of the template editor under the Elements tab. To place one of the variables onto the template editor,
 
-1. Open the *Site Menu*( ![Site Menu](../../../images/icon-product-menu.png) ) and select *Content & Data* &rarr; *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and select *Content & Data* &rarr; *Web Content*.
 
-1. Click the *Templates* tab and click *Add*( ![Add Fremarker(.ftl)](../../../images/icon-add.png) ).
+1. Click the *Templates* tab and click *New*.
 
 1. Select the *Elements* tab on the right side of the page.
 
@@ -25,7 +26,7 @@ When you're using DXP's template editor, you can find variables on the right sid
 
 ![Access variables under the Elements tab](using-taglibs-in-web-content-templates/images/01.png)
 
-If the variable name doesn't give you sufficient information on its functionality, hover over the information icon ( ![Information icon](../../../images/icon-information.png) ) for a more detailed description.
+If the variable name doesn't give you sufficient information on its functionality, hover over the information icon (![Information icon](../../../images/icon-information.png)) for a more detailed description.
 
 ![Hover over an information icon next to a variable for a more detailed description of the variable.](./using-taglibs-in-web-content-templates/images/02.png)
 

@@ -35,6 +35,8 @@ Web content templates use the FreeMarker Template Language (FTL) by default. Use
 
 You can disable template creation completely. Once disabled, users can no longer access creation options for web content templates. This action does not affect existing templates.
 
+To disable template creation,
+
 1. Open the *Control Panel* tab in the Global Menu.
 
 1. Go to *Configuration* &rarr; *System Settings* &rarr; *Content and Data* &rarr; *Dynamic Data Mapping*.

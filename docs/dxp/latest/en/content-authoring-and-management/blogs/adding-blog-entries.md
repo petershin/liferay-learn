@@ -113,9 +113,9 @@ When customizing friendly URLs, keep these points in mind:
 !!! note
     When you update an entry's friendly URL, Liferay stores the previous value in the entry's friendly URL history. As long as the old URL remains in the history, Liferay redirects users to the latest version of the blog entry, and you cannot use it for other blog entries in the same site. See [Managing the Friendly URL History](./displaying-blogs.md#managing-the-friendly-url-history) to learn more about managing the friendly URL history for blog entries.
 
-### Configuring How the Entry is Displayed
+### Configuring How the Entry Appears
 
-To configure the blog entry and how it is displayed, expand the *Configuration* and the *Display Page* sections and adjust the following settings,
+To configure the blog entry and how it appears, expand the *Configuration* and the *Display Page* sections and adjust the following settings,
 
 | Configuration            | Description                                                                                                                                                                                                           |
 |:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

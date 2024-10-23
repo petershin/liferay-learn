@@ -8,9 +8,9 @@ taxonomy-category-names:
 uuid: ce4f21a1-f104-4587-aaff-2d7af1b10139
 ---
 
-# Creating Structures
+# Creating Web Content Structures
 
-Create web content structures to seve as building blocks for web content articles and determine the information you can include when writing them.
+Create web content structures to serve as building blocks for web content articles and determine the information you can include when writing them.
 
 To create a web content structure,
 
@@ -28,7 +28,7 @@ To create a web content structure,
 
 1. Click *Save*.
 
-![When creating a new structure, you can drag fields from the palette and drop them on the canvas.](./creating-structures/images/01.png)
+![When creating a new structure, you can drag fields from the palette and drop them on the canvas.](./creating-web-contentstructures/images/01.png)
 
 !!! warning
     Due to import/export operations, it's possible to have both a global and a site-scoped structure with the same `structureKey`. If this happens, the site-scoped structure takes precedence, and you can't access the global structure from that site.
@@ -83,7 +83,7 @@ See [Configuring Web Content Structure Fields](./configuring-web-content-structu
 
 You can add a translation for the structure, either while creating it or later.
 
-![Manage the translations of a Web Content Structure.](./creating-structures/images/02.png)
+![Manage the translations of a Web Content Structure.](./creating-web-contentstructures/images/02.png)
 
 1. From the Add or Edit Structure screen, open the language selector by clicking the locale (e.g.,`en-us`), and then select *Manage Translations*.
 
@@ -103,4 +103,4 @@ To edit a translation, select the translation using the language selector, make 
 
 - [Web Content Structures](../web-content-structures.md)
 - [Configuring Web Content Structure Fields](./configuring-web-content-structure-fields.md)
-- [Managing Structures](./managing-structures.md)
+- [Managing Web Content Structures](./managing-web-content-structures.md)

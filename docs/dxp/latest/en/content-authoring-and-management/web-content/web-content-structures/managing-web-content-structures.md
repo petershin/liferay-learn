@@ -70,6 +70,6 @@ You can copy an existing structure to create a new one. From the structures page
 
 ## Related Topics
 
-- [Creating Structures](./creating-structures.md)
+- [Creating Web Content Structures](./creating-web-content-structures.md)
 - [Configuring Web Content Structure Fields](./configuring-web-content-structure-fields.md)
 - [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-web-content-structures-and-templates.md)

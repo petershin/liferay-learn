@@ -122,7 +122,7 @@ It is easy to add your documents or media files to other types of assets:
 
 ### Web Content
 
-1. To be able to add documents or media to your Web Content, first [create a Structure](../../web-content/web-content-structures/creating-structures.md) that contains a field for documents and media.
+1. To be able to add documents or media to your Web Content, first [create a Structure](../../web-content/web-content-structures/creating-web-content-structures.md) that contains a field for documents and media.
 
 1. Go to the Structures tab of the Web Content application to create a new Structure. Drag and drop the Documents and Media field onto the Structure.
 

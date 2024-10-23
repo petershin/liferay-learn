@@ -63,6 +63,6 @@ See [Defining Role Permissions](../../../users-and-permissions/roles-and-permiss
 
 ## Related Topics
 
-- [Creating Structures](./creating-structures.md)
+- [Creating Web Content Structures](./creating-web-content-structures.md)
 - [Configuring Web Content Structure Fields](./configuring-web-content-structure-fields.md)
-- [Managing Structures](./managing-structures.md)
+- [Managing Web Content Structures](./managing-web-content-structures.md)

@@ -26,7 +26,7 @@ If you want to map several structure field values to individual fragments, you m
 
 ## Mapping a Web Content Template to a Fragment
 
-1. [Create a web content structure](../../../content-authoring-and-management/web-content/web-content-structures/creating-structures.md) that contains the multi-value field you want to map.
+1. [Create a web content structure](../../../content-authoring-and-management/web-content/web-content-structures/creating-web-content-structures.md) that contains the multi-value field you want to map.
 
 1. [Create a web content template](../../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md) that uses the same structure with the multi-value field (A).
 

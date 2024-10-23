@@ -63,7 +63,7 @@ Then, follow these steps:
 !!! note
     You can only create structures or templates manually through the user interface.
 
-Create a basic [web content structure](../web-content-structures/creating-structures.md) and a basic [web content template](../web-content-templates/creating-web-content-templates.md) based on the structure. This tutorial uses a basic structure with a single Text field to demonstrate the `ContentStructure` service.
+Create a basic [web content structure](../web-content-structures/creating-web-content-structures.md) and a basic [web content template](../web-content-templates/creating-web-content-templates.md) based on the structure. This tutorial uses a basic structure with a single Text field to demonstrate the `ContentStructure` service.
 
 ![Basic sample web content structure using a single Text field.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/02.png)
 
@@ -457,7 +457,7 @@ public class ContentStructures_PUT_Permissions {
 
 ## Related Topics
 
-- [Creating Web Content Structures](../web-content-structures/creating-structures.md)
+- [Creating Web Content Structures](../web-content-structures/creating-web-content-structures.md)
 - [Creating Web Content Templates](../web-content-templates/creating-web-content-templates.md)
 - [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
 - [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-web-content-structures-and-templates.md)

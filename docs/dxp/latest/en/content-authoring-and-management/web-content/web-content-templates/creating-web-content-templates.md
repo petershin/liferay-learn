@@ -9,7 +9,7 @@ uuid: 4963c6cc-80ff-4e9e-886a-863578e3a24a
 ---
 # Creating Web Content Templates
 
-Web Content Templates use the FreeMarker Template Language (FTL) to determine how content fields are rendered on a Page. Each Template can be associated with a Web Content [Structure](../web-content-structures/creating-structures.md), or even [embedded in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates).
+Web Content Templates use the FreeMarker Template Language (FTL) to determine how content fields are rendered on a Page. Each Template can be associated with a Web Content [Structure](../web-content-structures/creating-web-content-structures.md), or even [embedded in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates).
 
 ```{important}
 Grant permission to Create or Edit templates in FreeMarker to trusted users only. See [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-web-content-structures-and-templates.md#security-considerations-for-web-content-templates) for information about Web Content Templates security.
@@ -65,6 +65,6 @@ While Creating a template, you can optionally determine the following Template s
 
 ## Related Topics
 
-* [Creating Structures](../web-content-structures/creating-structures.md)
+* [Creating Web Content Structures](../web-content-structures/creating-web-content-structures.md)
 * [Creating Web Content Articles](../web-content-articles/creating-web-content-articles.md)
 * [Embedding Widgets in Templates](./embedding-widgets-in-templates.md)

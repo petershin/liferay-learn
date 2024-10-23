@@ -196,7 +196,7 @@ Using a [nested field](../../../liferay-development/liferay-internals/reference/
 
 This example demonstrates adding a boost for matches to a certain DDM Structure field.
 
-1. Create a [Structure](../../../content-authoring-and-management/web-content/web-content-structures/creating-structures.md):
+1. Create a [Structure](../../../content-authoring-and-management/web-content/web-content-structures/creating-web-content-structures.md):
    - In the Site menu, go to Content & Data &rarr; Web Content.
 
    - Click the *Structures* tab, then the Add button ![Add](../../../images/icon-add.png).

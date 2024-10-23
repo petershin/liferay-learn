@@ -51,7 +51,7 @@ This example uses three different images, each with a different resolution. A `s
 
 ## Using Adapted Images in Structured Web Content
 
-To use adapted images in [structured web content](../../../web-content/web-content-structures/creating-structures.md), content creators must manually include an image field in the web content's structure. Then they can reference that image field in the matching template by selecting it on the left side of the editor. Here's an example snippet of an image field named `Imagecrrf` included in a template:
+To use adapted images in [structured web content](../../../web-content/web-content-structures/creating-web-content-structures.md), content creators must manually include an image field in the web content's structure. Then they can reference that image field in the matching template by selecting it on the left side of the editor. Here's an example snippet of an image field named `Imagecrrf` included in a template:
 
 ```html
 <#if Imagecrrf.getData()?? && Imagecrrf.getData() !="">

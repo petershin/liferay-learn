@@ -129,7 +129,7 @@ You cannot create a Web Content Structure programmatically using the REST API.
 
   ![Update the Structure fields Field Reference values.](./advanced-web-content-api/images/03.gif)
 
-For more information, see [Creating Structures](../web-content-structures/creating-structures.md).
+For more information, see [Creating Web Content Structures](../web-content-structures/creating-web-content-structures.md).
 
 ### Create the Sample Templates
 

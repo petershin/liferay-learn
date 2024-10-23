@@ -76,7 +76,7 @@ Structures in DE are represented by JSON (it was XML in DDM). Rather than editin
 
 1. Click the *Structures* tab.
 
-1. If there's no existing structure, [create one](./creating-structures.md) and save it.
+1. If there's no existing structure, [create one](./creating-web-content-structures.md) and save it.
 
 1. In the main structures list view, open the structure's *Actions* menu (![Actions menu](../../../images/icon-actions.png)) and click *Export as JSON*.
 
@@ -88,7 +88,7 @@ To overwrite an existing structure's JSON,
 
 1. Click the *Structures* tab.
 
-1. If there's no existing structure, [create one](./creating-structures.md) and save it.
+1. If there's no existing structure, [create one](./creating-web-content-structures.md) and save it.
 
 1. In the main structures list view, open the structure's *Actions* menu (![Actions menu](../../../images/icon-actions.png)) and click *Import and Override*.
 
@@ -162,4 +162,4 @@ To add a custom structure key to the [exported JSON](#structure-definition-sourc
 ## Related Topics
 
 - [Web Content Structures](../web-content-structures.md)
-- [Creating Structures](./creating-structures.md)
+- [Creating Web Content Structures](./creating-web-content-structures.md)

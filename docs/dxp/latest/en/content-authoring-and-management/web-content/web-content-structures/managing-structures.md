@@ -24,7 +24,7 @@ You can manage structures from the structures page:
 
 You can perform these actions from the structure's Actions Menu (![Actions Menu](../../../images/icon-actions.png)):
 
-**Edit:** Opens the structure so you can update it. See [Configuring Structure Fields](./configuring-structure-fields.md) for more information.
+**Edit:** Opens the structure so you can update it. See [Configuring Web Content Structure Fields](./configuring-web-content-structure-fields.md) for more information.
 
 **Edit Default Values:** Opens a form to set default values for the structure's fields. See [Editing Default Values](#editing-default-values) for more information.
 
@@ -71,5 +71,5 @@ You can copy an existing structure to create a new one. From the structures page
 ## Related Topics
 
 - [Creating Structures](./creating-structures.md)
-- [Configuring Structure Fields](./configuring-structure-fields.md)
+- [Configuring Web Content Structure Fields](./configuring-web-content-structure-fields.md)
 - [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-web-content-structures-and-templates.md)

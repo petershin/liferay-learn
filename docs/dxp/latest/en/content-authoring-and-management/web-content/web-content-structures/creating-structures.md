@@ -22,7 +22,7 @@ To create a web content structure,
 
 1. Enter the title of your new structure.
 
-1. Drag and drop the [available fields](#structure-fields) onto the structure and [configure their settings](./configuring-structure-fields.md#configurable-settings) to create the structure.
+1. Drag and drop the [available fields](#structure-fields) onto the structure and [configure their settings](./configuring-web-content-structure-fields.md#configurable-settings) to create the structure.
 
 1. Optionally, add a *Description* for your structure.
 
@@ -77,7 +77,7 @@ You can place these fields on a structure:
 
 **Web Content:** A selector to include an existing web content article.
 
-See [Configuring Structure Fields](./configuring-structure-fields.md) for more information on configuring and editing Structure fields.
+See [Configuring Web Content Structure Fields](./configuring-web-content-structure-fields.md) for more information on configuring and editing Structure fields.
 
 ## Translating a Structure
 
@@ -102,5 +102,5 @@ To edit a translation, select the translation using the language selector, make 
 ## Related Topics
 
 - [Web Content Structures](../web-content-structures.md)
-- [Configuring Structure Fields](./configuring-structure-fields.md)
+- [Configuring Web Content Structure Fields](./configuring-web-content-structure-fields.md)
 - [Managing Structures](./managing-structures.md)

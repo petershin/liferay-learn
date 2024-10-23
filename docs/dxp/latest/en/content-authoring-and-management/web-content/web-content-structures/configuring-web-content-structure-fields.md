@@ -8,7 +8,7 @@ taxonomy-category-names:
 uuid: 0d83f307-076c-4253-ad57-71ae68865a93
 ---
 
-# Configuring Structure Fields
+# Configuring Web Content Structure Fields
 
 You can edit structure fields and their properties:
 

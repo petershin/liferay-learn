@@ -64,5 +64,5 @@ See [Defining Role Permissions](../../../users-and-permissions/roles-and-permiss
 ## Related Topics
 
 - [Creating Structures](./creating-structures.md)
-- [Configuring Structure Fields](./configuring-structure-fields.md)
+- [Configuring Web Content Structure Fields](./configuring-web-content-structure-fields.md)
 - [Managing Structures](./managing-structures.md)

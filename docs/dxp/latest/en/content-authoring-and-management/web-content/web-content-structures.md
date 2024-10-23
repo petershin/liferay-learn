@@ -1,7 +1,7 @@
 ---
 toc:
   - ./web-content-structures/creating-structures.md
-  - ./web-content-structures/configuring-structure-fields.md
+  - ./web-content-structures/configuring-web-content-structure-fields.md
   - ./web-content-structures/managing-structures.md
   - ./web-content-structures/mapping-repeatable-fields-to-fragments.md
   - ./web-content-structures/assigning-permissions-to-web-content-structures-and-templates.md

@@ -67,5 +67,5 @@ When an article expires or requires review, Liferay sends a notification email t
 
 ## Related Topics
 
-* [Adding a Basic Web Content Article](./adding-a-basic-web-content-article.md)
+* [Creating Web Content Articles](./creating-web-content-articles.md)
 * [Filtering and Sorting Web Content Articles](./filtering-and-sorting-web-content-articles.md)

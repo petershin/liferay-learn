@@ -10,7 +10,7 @@ uuid: 0b40389c-023e-46ec-ac05-8d54632cbc63
 
 # Previewing Web Content Articles
 
-After [creating a web content article](./adding-a-basic-web-content-article.md), you can preview it using the selected default [template](../web-content-templates.md) or display page template before publishing, so you can make adjustments to ensure your content appears as intended to users.
+After [creating a web content article](./creating-web-content-articles.md), you can preview it using the selected default [template](../web-content-templates.md) or display page template before publishing, so you can make adjustments to ensure your content appears as intended to users.
 
 ## Previewing a Web Content Article Using a Template
 

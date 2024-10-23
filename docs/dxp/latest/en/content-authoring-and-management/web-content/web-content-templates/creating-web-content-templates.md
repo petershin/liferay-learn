@@ -45,7 +45,7 @@ Grant permission to Create or Edit templates in FreeMarker to trusted users only
 
    ![DXP automatically generates a DDM Template Key, URL, and WebDAV URL for your Template.](./creating-web-content-templates/images/03.png)
 
-Once you've created a Template, you can [use it for Web Content](../web-content-articles/adding-a-basic-web-content-article.md) created with its linked Structure or [embed it in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates), depending on its configuration. You can also edit your Template at any time.
+Once you've created a Template, you can [use it for Web Content](../web-content-articles/creating-web-content-articles.md) created with its linked Structure or [embed it in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates), depending on its configuration. You can also edit your Template at any time.
 
 ```{note}
 Changes in a Structure may require changes in associated Templates. For example, if a Structure field name referenced in a Template is renamed or removed, the Template's reference must be updated manually.
@@ -66,5 +66,5 @@ While Creating a template, you can optionally determine the following Template s
 ## Related Topics
 
 * [Creating Structures](../web-content-structures/creating-structures.md)
-* [Adding a Basic Web Content Article](../web-content-articles/adding-a-basic-web-content-article.md)
+* [Creating Web Content Articles](../web-content-articles/creating-web-content-articles.md)
 * [Embedding Widgets in Templates](./embedding-widgets-in-templates.md)

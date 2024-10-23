@@ -34,7 +34,7 @@ If you want to map several structure field values to individual fragments, you m
 
     ![Create a web content template based on the structure with the multi-value field.](./mapping-web-content-templates-to-fragments/images/03.png)
 
-1. [Create the web content](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md) based on the previous web content template.
+1. [Create the web content](../../../content-authoring-and-management/web-content/web-content-articles/creating-web-content-articles.md) based on the previous web content template.
 
     ![Create the web content based on the template with the multi-value field.](./mapping-web-content-templates-to-fragments/images/04.png)
 

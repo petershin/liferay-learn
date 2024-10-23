@@ -12,11 +12,11 @@ uuid: a7ff0bd6-553d-42f4-ad4b-ee23268f6f90
 
 With Liferay's permissions framework, you can control which users can create, view, and manage web content articles. You can set permissions for individual articles or {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` multiple articles at once. See [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for more information.
 
-1. Follow the steps to [create a web content article](./adding-a-basic-web-content-article.md).
+1. Follow the steps to [create a web content article](./creating-web-content-articles.md).
 
-1. The Permissions section appears at the bottom-right of the Properties tab (1). Click *More Options* to set permissions for Guests and Site Members. You can also set your article's [visibility](./adding-a-basic-web-content-article.md#setting-the-web-content-articles-visibility-and-permissions) by choosing a *Viewable by* option.
+1. The Permissions section appears at the bottom-right of the Properties tab (1). Click *More Options* to set permissions for Guests and Site Members. You can also set your article's [visibility](./creating-web-content-articles.md#setting-the-web-content-articles-visibility-and-permissions) by choosing a *Viewable by* option.
 
-   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Alternatively, you can set permissions before publishing web content using the *Publish With Permissions* option (2). See [Publish With Permissions and Schedule Publications](./adding-a-basic-web-content-article.md#publish-with-permissions-and-schedule-publications) to learn more.
+   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Alternatively, you can set permissions before publishing web content using the *Publish With Permissions* option (2). See [Publish With Permissions and Schedule Publications](./creating-web-content-articles.md#publish-with-permissions-and-schedule-publications) to learn more.
 
    ![Assign permissions to web content articles before publication.](./assigning-permissions-to-web-content-articles/images/01.png)
 

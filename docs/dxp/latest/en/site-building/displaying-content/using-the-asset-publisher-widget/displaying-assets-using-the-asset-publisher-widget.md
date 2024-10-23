@@ -10,7 +10,7 @@ uuid: bda599ab-3cb9-44a5-b346-7faf990a4497
 
 # Displaying Assets Using the Asset Publisher Widget
 
-As you create web content, remember that pieces of content are assets like message board entries and blog posts. The most common type of asset is the [web content](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md).
+As you create web content, remember that pieces of content are assets like message board entries and blog posts. The most common type of asset is the [web content](../../../content-authoring-and-management/web-content/web-content-articles/creating-web-content-articles.md).
 The Asset Publisher widget supports these asset types by default:
 
 - Blogs Entry

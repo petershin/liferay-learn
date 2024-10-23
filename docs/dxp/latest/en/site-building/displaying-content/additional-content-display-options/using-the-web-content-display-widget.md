@@ -10,7 +10,7 @@ uuid: a0ed0240-bce1-4e6c-97b9-bf75491b83e9
 ---
 # Using the Web Content Display Widget
 
-After you create a [web content article](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md), the quickest way to display it is the web content display widget. Once a web content article is displayed, content updates appear immediately, unless you configure a [workflow](../../../process-automation/workflow/introduction-to-workflow.md) to review and approve the updates.
+After you create a [web content article](../../../content-authoring-and-management/web-content/web-content-articles/creating-web-content-articles.md), the quickest way to display it is the web content display widget. Once a web content article is displayed, content updates appear immediately, unless you configure a [workflow](../../../process-automation/workflow/introduction-to-workflow.md) to review and approve the updates.
 
 ## Adding Web Content Display to a Page
 
@@ -144,7 +144,7 @@ If you [enable the OpenOffice / LibreOffice integration](../../../content-author
 
 ## Related Topics
 
-- [Adding a Basic Web Content Article](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+- [Creating Web Content Articles](../../../content-authoring-and-management/web-content/web-content-articles/creating-web-content-articles.md)
 - [Setting Widget Scopes](../../creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-scopes.md)
 - [Using Content Pages](../../../site-building/creating-pages/using-content-pages.md)
 - [Displaying Content on Display Pages Templates](../using-display-page-templates.md)

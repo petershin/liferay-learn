@@ -10,7 +10,7 @@ uuid: e5a69df2-30a5-4dbc-8467-e390dfc35aec
 ---
 # Web Content API Basics
 
-Using the Liferay DXP REST services, you can create and manage structured content on your Site. Structured content is [Web Content](../web-content-articles/adding-a-basic-web-content-article.md) that uses a Web Content Structure. A Structure defines the information, such as author(s), a summary, and the content included in a Web Content Article. Structures ensure that the content includes all the required information. For more information, read [Web Content Structures](../web-content-structures.md).
+Using the Liferay DXP REST services, you can create and manage structured content on your Site. Structured content is [Web Content](../web-content-articles/creating-web-content-articles.md) that uses a Web Content Structure. A Structure defines the information, such as author(s), a summary, and the content included in a Web Content Article. Structures ensure that the content includes all the required information. For more information, read [Web Content Structures](../web-content-structures.md).
 
 !!! note
    You can use a Structure with a [Web Content Template](../web-content-templates/creating-web-content-templates.md) to render the structured content, but a Template is not required to create structured content.
@@ -74,7 +74,7 @@ These examples use a basic Web Content Article with a single Text field and the 
 
    ![The Web Content Article uses a by-default Basic Web Content Structure.](./web-content-api-basics/images/02.png)
 
-For more information, see [Adding a Basic Web Content Article](../web-content-articles/adding-a-basic-web-content-article.md).
+For more information, see [Creating Web Content Articles](../web-content-articles/creating-web-content-articles.md).
 
 ## Get Web Content Articles from Site
 

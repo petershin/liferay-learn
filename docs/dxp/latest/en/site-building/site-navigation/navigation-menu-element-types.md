@@ -29,7 +29,7 @@ You can add a [blog entry](../../content-authoring-and-management/blogs/adding-b
 
 ## Web Content Articles
 
-You can add a [web content article](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md) as an independent menu element that links to the article's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a web content article without a Display Page is added, then it does not have a link, so it is hidden from users on the menu. This behavior can change if you use a different Application Display Template.
+You can add a [web content article](../../content-authoring-and-management/web-content/web-content-articles/creating-web-content-articles.md) as an independent menu element that links to the article's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a web content article without a Display Page is added, then it does not have a link, so it is hidden from users on the menu. This behavior can change if you use a different Application Display Template.
 
 ## Documents
 

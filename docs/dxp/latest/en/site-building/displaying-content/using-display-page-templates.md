@@ -33,7 +33,7 @@ Display page templates currently support the following content types:
 - [Categories](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`7.4+`
 - [Custom Objects](../../liferay-development/objects/displaying-object-entries.md) {bdg-secondary}`7.4+`
 - [Documents](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
-- [Web Content Articles](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+- [Web Content Articles](../../content-authoring-and-management/web-content/web-content-articles/creating-web-content-articles.md)
 - [Calendar Event Fields](../../collaboration-and-social/calendar/mapping-calendar-event-fields-to-display-page-templates.md)
 
 !!! tip

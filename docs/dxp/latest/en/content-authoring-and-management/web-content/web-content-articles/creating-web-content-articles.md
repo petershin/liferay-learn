@@ -8,11 +8,11 @@ taxonomy-category-names:
 uuid: 89efcf46-c68b-42f1-b33e-f41ba46002f2
 ---
 
-# Adding a Basic Web Content Article
+# Creating Web Content Articles
 
 When you have a lot of content to publish on your site, Liferay's content management system helps you with practical and essential ways to manage it. Web content articles can be displayed through [widgets](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), [fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), or [display pages](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md). See [Previewing Web Content Articles](./previewing-web-content-articles.md) to learn more.
 
-Each web content article is based on a structure that defines its available fields. Liferay includes the Basic Web Content structure out-of-the-box, but you can create your own. See [Web Content Structures](../web-content-structures.md) for more information.
+Each web content article is built upon a structure that defines its available fields. You can use the out-of-the-box Basic Web Content structure, or create a custom structure tailored to your specific needs. See [Web Content Structures](../web-content-structures.md) for more information on creating and managing structures.
 
 ## Creating a Basic Web Content Article
 
@@ -22,7 +22,7 @@ Each web content article is based on a structure that defines its available fiel
 
 1. Enter a *title* (required) for the new article and add the desired *content* to their respective fields.
 
-   ![The edit screen for a new web content article.](./adding-a-basic-web-content-article/images/01.png)
+   ![The edit screen for a new web content article.](./creating-web-content-articles/images/01.png)
 
 1. Click *Publish*.
 
@@ -56,7 +56,7 @@ While creating/editing a web content article, you can view and set the web conte
 
 1. Click *Publish*.
 
-![Set the web content article's visibility and permissions and schedule its publication before publishing/submitting it for workflow.](./adding-a-basic-web-content-article/images/02.png)
+![Set the web content article's visibility and permissions and schedule its publication before publishing/submitting it for workflow.](./creating-web-content-articles/images/02.png)
 
 To set the web content article's visibility and permissions before {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`,
 
@@ -66,7 +66,7 @@ To set the web content article's visibility and permissions before {bdg-secondar
 
 1. Set permissions for Guests and Site Members by clicking *More Options*. See [Assigning Permissions to Web Content Articles](./assigning-permissions-to-web-content-articles.md) to learn more.
 
-   ![Set permissions and visibility while creating a web content article before Liferay DXP 2024.Q2/Portal 7.4 GA120.](./adding-a-basic-web-content-article/images/03.png)
+   ![Set permissions and visibility while creating a web content article before Liferay DXP 2024.Q2/Portal 7.4 GA120.](./creating-web-content-articles/images/03.png)
 
 1. Click *Publish*.
 
@@ -78,14 +78,14 @@ Once you publish your web content article, it becomes accessible to any user wit
 
 - {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` In the Web Content application (3), select the checkbox next to the article you want to manage (or articles if you want to [assign permissions in bulk](./assigning-permissions-to-web-content-articles.md#setting-web-content-articles-permissions-in-bulk)) and click *Permissions* at the top options bar.
 
-![Set permissions in the editing page or through the web content application.](./adding-a-basic-web-content-article/images/04.png)
+![Set permissions in the editing page or through the web content application.](./creating-web-content-articles/images/04.png)
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When an article has restricted visibility, the Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../images/icon-password-policies.png)) appears next to the article's name in various situations, such as in the web content article application while in List or Table view modes, when editing the article, or when selecting an article for a web content display fragment.
 
 !!! tip
     If the Not Visible to Guest Users icon does not appear after managing the view permission for web content articles in the web content article application, try refreshing your page.
 
-![Use the Not Visible to Guest Users icon to identify which articles have restrictions to their visibility.](./adding-a-basic-web-content-article/images/05.png)
+![Use the Not Visible to Guest Users icon to identify which articles have restrictions to their visibility.](./creating-web-content-articles/images/05.png)
 
 ### Scheduling A Web Content Article's Publication for a Future Date
 
@@ -101,7 +101,7 @@ Once you publish your web content article, it becomes accessible to any user wit
 
 The web content article is now tagged as scheduled, and you can see the selected date and time by hovering over the `?` icon next to the item.
 
-![Schedule your web content article's publication.](./adding-a-basic-web-content-article/images/06.png)
+![Schedule your web content article's publication.](./creating-web-content-articles/images/06.png)
 
 Once the publication is scheduled, you can reschedule it by editing and setting a different time.
 
@@ -110,7 +110,7 @@ When you reschedule the same publication multiple times, you can view all versio
 !!! tip
     All rescheduled versions of the web content article are published. Note that versions scheduled later replace previous ones.
 
-![Schedule the same web content article multiple times.](./adding-a-basic-web-content-article/images/07.png)
+![Schedule the same web content article multiple times.](./creating-web-content-articles/images/07.png)
 
 ## Properties Tab
 

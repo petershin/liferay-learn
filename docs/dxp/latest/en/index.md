@@ -45,7 +45,7 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 :::{grid-item-card} Content Authoring and Management
 :link: ./content-authoring-and-management.md
 
-[Adding a Basic Web Content Article](./content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+[Creating Web Content Articles](./content-authoring-and-management/web-content/web-content-articles/creating-web-content-articles.md)
 [Content Dashboard](./content-authoring-and-management/content-dashboard.md)
 [About Collections and Collection Pages](./content-authoring-and-management/collections-and-collection-pages.md)
 [About the Content Performance Tool](./content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md)

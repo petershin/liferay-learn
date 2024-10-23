@@ -77,4 +77,4 @@ You can now begin working with your generated content.
 
 ## Related Topics
 
-- [Adding a Basic Web Content Article](./adding-a-basic-web-content-article.md)
+- [Creating Web Content Articles](./creating-web-content-articles.md)

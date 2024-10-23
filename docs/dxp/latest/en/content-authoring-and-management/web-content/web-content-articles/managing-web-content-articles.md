@@ -72,6 +72,6 @@ The Versions tab displays the 10 most recent versions of the selected web conten
 
 ## Related Topics
 
-- [Adding a Basic Web Content Article](./adding-a-basic-web-content-article.md)
+- [Creating Web Content Articles](./creating-web-content-articles.md)
 - [Filtering and Sorting Web Content Articles](./filtering-and-sorting-web-content-articles.md)
 - [Using Expiration and Review Dates in Web Content](./using-expiration-and-review-dates-in-web-content.md)

@@ -66,4 +66,4 @@ Products are now available as related assets.
 ## Related Topics
 
 * [Defining Content Relationships](https://learn.liferay.com/web/guest/w/dxp/site-building/displaying-content/defining-content-relationships)
-* [Adding a Basic Web Content Article](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article)
+* [Creating Web Content Articles](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-articles/creating-web-content-articles)

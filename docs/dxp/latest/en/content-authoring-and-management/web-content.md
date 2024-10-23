@@ -12,4 +12,13 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 1b4e41e3-950f-497b-911b-c058157e3c9c
 ---
+
 # Web Content
+
+With web content, you can create, manage, and publish various content types seamlessly through Liferay's robust content management system.
+
+Discover how to craft compelling [web content articles](./web-content/web-content-articles.md) tailored to your audience, define consistent [structures](./web-content/web-content-structures.md) that streamline the writing process, and create [templates](./web-content/web-content-templates.md) for enhanced design flexibility.
+
+Get started by exploring how to [create a web content article](./web-content/web-content-articles/creating-web-content-articles.md), [a web content structure](./web-content/web-content-structures/creating-web-content-structures.md), and [design a web content template](./web-content/web-content-templates/creating-web-content-templates.md) that aligns with your content strategy.
+
+![With a web content structure and template in place, you can consistently create compelling web content articles tailored to your audience.](./web-content/images/01.png)

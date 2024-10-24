@@ -101,8 +101,6 @@ Once selected, you can view each page version individually or select Split View 
 
 ### Moving Changes Between Publications
 
-{bdg-link-primary}`[Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)  LPS-171364`
-
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
 While reviewing changes, you can move them to different publications. This provides greater flexibility when managing content:

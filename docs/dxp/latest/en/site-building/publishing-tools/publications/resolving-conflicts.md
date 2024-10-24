@@ -44,9 +44,6 @@ Depending on the [conflict type](#understanding-conflict-types), Publications ma
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-!!! important
-    Currently, this feature is behind a release feature flag (LPD-11018). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
 Scheduled publications are more susceptible to conflicts and errors, because elements in the publication may have been altered by the time they are published. When that happens, conflicts or errors may arise. Liferay tries to handle some conflicts [automatically](#automatically-resolving-conflicts), but sometimes [manual](#manually-resolving-conflicts) intervention is required.
 
 Either way, when conflicts or errors arise, a notification is sent to [users involved in the publication process](./collaborating-on-publications.md) (i.e., publishers, editors, administrators, and owners), providing details about what went wrong and what needs fixing.

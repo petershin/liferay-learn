@@ -36,11 +36,6 @@ Once changes are approved, additional edits to the same entities are tracked as 
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
-!!! important
-    Currently, this feature is behind a release feature flag (LPD-10703). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
-<!-- It's still a dev ff, but LPD-28560 is supposed to change it to release. I'm skipping a step here... Eric -->
-
 An alternative to switching environments before viewing and approving changes is to use the Workflow tab while reviewing changes in publications. Within this tab, you can access information and perform actions such as assigning, approving, and rejecting tasks, similar to using the [Workflow application](../../../process-automation/workflow/using-workflows/reviewing-assets.md).
 
 To access and use the Workflow tab,

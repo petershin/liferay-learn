@@ -8,9 +8,13 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: e4700cd7-9a0b-43df-b750-22d86f7bf3a7
 ---
+
 # Blog API Basics
 
-Liferay's REST API's provide services for adding, modifying, and deleting blog posts and images. 
+Liferay's REST APIs provide services for adding, modifying, and deleting blog posts and images.
+
+!!! note
+    {bdg-secondary}`Liferay DXP 2024.Q4+` External Reference Codes (ERCs) are accessible for blog posts and images, providing a consistent way to identify and access these elements across Liferay.
 
 Start by seeing an example of adding a new blog post.
 
@@ -31,9 +35,9 @@ Then, follow these steps:
    unzip liferay-r3g4.zip
    ```
 
-1. [Find your Site's ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). You'll use this in different service calls below.
+1. [Find your site's ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). It's used in different service calls below.
 
-1. Use the cURL script to add a new blog post to your Site. On the command line, navigate to the `curl` folder. Execute the `BlogPosting_POST_ToSite.sh` script with your Site ID as a parameter.
+1. Use the cURL script to add a new blog post to your site. On the command line, navigate to the `curl` folder. Execute the `BlogPosting_POST_ToSite.sh` script with your site ID as a parameter.
 
     ```bash
     ./BlogPosting_POST_ToSite.sh 1234
@@ -74,13 +78,13 @@ Then, follow these steps:
 
     ![See that a new blog post has been added.](./blog-api-basics/images/01.png)
 
-1. The REST service can also be called with a Java class. Navigate out of the `curl` folder and into the `java` folder. Compile the source files: 
+1. The REST service can also be called with a Java class. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:
 
     ```bash
     javac -classpath .:* *.java
     ```
 
-1. Run the `BlogPosting_POST_ToSite` class. Replace the `siteId` value with your site's ID:
+1. Run the `BlogPosting_POST_ToSite` class. Replace the `siteId` value with your site ID:
 
     ```bash
     java -classpath .:* -DsiteId=1234 BlogPosting_POST_ToSite
@@ -88,7 +92,7 @@ Then, follow these steps:
 
 ## Examine the cURL Command
 
-The `BlogPosting_POST_ToSite.sh` script calls the REST service with a cURL command. 
+The `BlogPosting_POST_ToSite.sh` script calls the REST service with a cURL command.
 
 ```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPosting_POST_ToSite.sh
     :language: bash
@@ -104,9 +108,8 @@ Here are the command's arguments:
 | `-d "{\"articleBody\": \"Foo\", \"headline\": \"Able\"}"` | The data you are requesting to post |
 | `-u "test@liferay.com:learn"` | Basic authentication credentials |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
-```
+!!! note
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -120,7 +123,7 @@ The `BlogPosting_POST_ToSite.java` class adds a blog post by calling the blog po
    :lines: 9-26
 ```
 
-This class invokes the REST service using only three lines of code: 
+This class invokes the REST service using only three lines of code:
 
 | Line (abbreviated) | Description |
 | :----------------- | :---------- |
@@ -130,15 +133,13 @@ This class invokes the REST service using only three lines of code:
 
 Note that the project includes the `com.liferay.headless.delivery.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+    The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different `BlogPostingResource` methods.
 
-```{important}
-See [BlogPostingResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/BlogPostingResource.java) for service details.
-```
+!!! important
+    See [BlogPostingResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/BlogPostingResource.java) for service details.
 
 Below are examples of calling other `BlogPosting` REST services using cURL and Java.
 
@@ -164,7 +165,7 @@ Code:
 
 Command:
 
-```bash 
+```bash
 java -classpath .:* -DsiteId=1234 BlogPostings_GET_FromSite
 ```
 
@@ -176,15 +177,14 @@ Code:
    :lines: 11-23
 ```
 
-The site's `BlogPosting` objects are listed in JSON.
+The GET method returns the site's `BlogPosting` objects in JSON format.
 
 ## Get a Blog Post
 
 Get a specific blog post with the following cURL or Java command. Replace `1234` with the blog post's ID.
 
-```{tip}
-Use `BlogPostings_GET_FromSite.[java|sh]` to get `BlogPosting` IDs.
-```
+!!! tip
+    Use `BlogPostings_GET_FromSite.[java|sh]` to get `BlogPosting` IDs.
 
 ### BlogPosting_GET_ById.sh
 
@@ -202,7 +202,7 @@ Code:
 
 ### BlogPosting_GET_ById.java
 
-Command: 
+Command:
 
 ```bash
 java -classpath .:* -DblogPostingId=1234 BlogPosting_GET_ById
@@ -216,7 +216,7 @@ Code:
    :lines: 8-18
 ```
 
-The `BlogPosting` fields are listed in JSON.
+The GET method returns the `BlogPosting` fields in JSON format.
 
 ## Patch a Blog Post
 
@@ -238,11 +238,11 @@ Code:
 
 ### BlogPosting_PATCH_ById.java
 
-Command: 
+Command:
 
-```bash 
+```bash
 java -classpath .:* -DblogPostingId=1234 BlogPosting_PATCH_ById
-``` 
+```
 
 Code:
 
@@ -306,11 +306,11 @@ Code:
    :language: bash
 ```
 
-### BlogPosting_DELETE_ById.java 
+### BlogPosting_DELETE_ById.java
 
 Command
 
-```bash 
+```bash
 java -classpath .:* -DblogPostingId=1234 BlogPosting_DELETE_ById
 ```
 
@@ -334,3 +334,7 @@ The cURL commands and Java classes for blog images works in the same way as blog
 | `BlogPostingImages_GET_FromSite.[java\|sh]` | Get a list of blog post images from a site. |
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) lists all of the `BlogPosting` and `BlogPostingImage` services and schemas, and has an interface to try out each service.
+
+## Related Topics
+
+- [Sample API Tutorials](../../../headless-delivery/sample-api-tutorials.md)

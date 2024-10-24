@@ -13,6 +13,9 @@ uuid: 87084148-5102-4d8d-b55c-9efa57a7a2b4
 
 Liferay's headless delivery application provides REST services for [Documents and Media](../../documents-and-media.md) that add documents and folders, list their information, modify them, delete them, and more. You can call those services using cURL commands and Java classes.
 
+!!! note
+    {bdg-secondary}`Liferay DXP 2024.Q4+` External Reference Codes (ERCs) are accessible for document entries, folders, types, metadata sets, and shortcuts, providing a consistent way to identify and access these elements across Liferay.
+
 Start with uploading documents using an example cURL command and Java class.
 
 ## Post a Document

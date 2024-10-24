@@ -13,6 +13,9 @@ uuid: b5f5c2ee-2ab3-4a4e-a4f9-8a1d54edd4cf
 
 Liferay's headless delivery application provides REST services for [Documents and Media](../../documents-and-media.md) that add document shortcuts to sites or asset libraries, list their information, modify them, delete them, and more. You can call those services using cURL commands and Java classes.
 
+!!! note
+    {bdg-secondary}`Liferay DXP 2024.Q4+` External Reference Codes (ERCs) are accessible for document entries, folders, types, metadata sets, and shortcuts, providing a consistent way to identify and access these elements across Liferay.
+
 Start by setting up the environment and gathering the necessary information.
 
 ## Set Up The Environment

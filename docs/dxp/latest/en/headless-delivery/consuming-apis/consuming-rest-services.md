@@ -46,13 +46,13 @@ APIs are divided into several categories. This example uses the `BlogPosting` se
 
 ## Headless Action Keys
 
-Each headless endpoint's methods have *headless action keys* that identify the methods independently from the URL. These action keys are useful for connecting to these methods from other applications, such as [data set view actions](../../liferay-development/data-sets/data-set-views/data-set-view-actions.md).
+Each headless endpoint's methods have *headless action keys* that identify the methods independently from the URL. These action keys are useful for connecting to the actions from other applications, such as [data set view actions](../../liferay-development/data-sets/data-set-views/data-set-view-actions.md).
 
-You can find the action keys for a specific endpoint via the [API Explorer](#identify-the-service-to-consume). For your chosen endpoint (e.g., user accounts), execute a GET method. The server response JSON includes an `actions` block in the body, including the action keys for each applicable method.
+You can find the action keys for a specific endpoint via the [API Explorer](#identify-the-service-to-consume). For your chosen endpoint (e.g., user accounts), execute a GET action. The server response JSON includes an `actions` block in the body, including each action key.
 
-For example, here is a response showing the action keys for the `/o/headless-admin-user/` endpoint (with the `/v1.0/user-accounts/{userAccountId}` GET method):
+For example, here is a response showing the action keys for the `/o/headless-admin-user/` endpoint (with the `/v1.0/user-accounts/{userAccountId}` GET method). The action keys shown include `get-user-account-by-external-reference-code`, `put-user-account`, etc.
 
-![Execute a GET method for your chosen endpoint to get a response showing usable headless action keys.](./consuming-rest-services/images/02.png)
+![Execute a GET action for your chosen endpoint to get a response showing usable headless action keys.](./consuming-rest-services/images/02.png)
 
 ## REST Context Paths for Root Models
 

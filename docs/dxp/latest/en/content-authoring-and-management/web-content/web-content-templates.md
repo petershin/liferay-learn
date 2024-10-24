@@ -19,4 +19,4 @@ Web content templates provide a powerful way to streamline content creation and 
 
 Learn how to [create templates](./web-content-templates/creating-web-content-templates.md), [embed widgets](./web-content-templates/embedding-widgets-in-web-content-templates.md), [use tag libraries](./web-content-templates/using-taglibs-in-web-content-templates.md), and [map templates to fragments](./web-content-templates/mapping-web-content-templates-to-fragments.md).
 
-Master these concepts and enhance your ability to deliver dynamic and engaging content across your site.
+![With web content templates, you can define consistent layouts and structures, ensuring that your web content aligns with your brand and functional requirements.](./web-content-templates/images/01.png)

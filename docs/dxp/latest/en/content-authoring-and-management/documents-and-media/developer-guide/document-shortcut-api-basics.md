@@ -41,13 +41,13 @@ Then, follow these steps:
 
 1. Get the documents' IDs.
 
-   You need a document's ID to create shortcuts. To get a list of documents in a site and their IDs, execute the `Documents_GET_FromSite.sh` script in the terminal:
+   You need a document's ID to create shortcuts. To get a list of documents in a site and their IDs, execute the `Documents_GET_FromSites.sh` script in the terminal:
 
    !!! important
        Ensure the email and password specified in the `--user` option match those used in the scripts.
 
    ```bash
-   Documents_GET_FromSite.sh [site-ID]
+   Documents_GET_FromSites.sh [site-ID]
    ```
 
    In the response, find the uploaded document's `ID`. In this example, they're `32078` for `crab.jpg`, `32067` for `shrimp.jpg`, and `32054` for `betta.jpg`.
@@ -73,10 +73,10 @@ Then, follow these steps:
 
 1. Get the folders' IDs
 
-   To post the shortcut to a folder, you need the folder's ID. Get the available folders in the site and their IDs by executing the `DocumentFolder_GET_FromSite.sh` script.
+   To post the shortcut to a folder, you need the folder's ID. Get the available folders in the site and their IDs by executing the `DocumentFolders_GET_FromSites.sh` script.
 
    ```bash
-   DocumentFolder_GET_FromSite.sh [site-ID]
+   DocumentFolders_GET_FromSites.sh [site-ID]
    ```
 
    This returns a list with all folders. If you don't have any, use the "Provided by Liferay" out-of-the-box folder. In this example, the ID is `31637`.
@@ -117,13 +117,13 @@ Now you can post a document's shortcut.
 
 Post shortcuts to sites or asset libraries. You can also select specific folders or post them into the site/asset library's root folder.
 
-1. In the terminal, run the `DocumentShortcut_POST_ToSite.sh` to post the shortcut to a site. Use the `site-ID`, the `folder-ID`, and the `document-ID `as parameters.
+1. In the terminal, run the `DocumentShortcuts_POST_ToSites.sh` to post the shortcut to a site. Use the `site-ID`, the `folder-ID`, and the `document-ID `as parameters.
 
 !!! note
     The examples used here are intended for sites. Examples intended for asset libraries are included in the resource's `curl` and `java` folders. Replace the `site-ID` for the `asset-library-ID` to test them.
 
 ```bash
-DocumentShortcut_POST_ToSite.sh [site-ID] [folder-ID] [document-ID]
+DocumentShortcuts_POST_ToSites.sh [site-ID] [folder-ID] [document-ID]
 ```
 
 !!! tip
@@ -165,14 +165,14 @@ Next, use a Java class to post a shortcut.
    javac -classpath .:* *.java
    ```
 
-1. Post a shortcut to Documents and Media by running the `DocumentShortcut_POST_ToSite` class below, replacing the `siteId` system property value with your site's ID, the `folderId` with the ID for the folder where you want to place the shortcut, and the `targetDocumentId` to indicate the shortcut's target document.
+1. Post a shortcut to Documents and Media by running the `DocumentShortcuts_POST_ToSites` class below, replacing the `siteId` system property value with your site's ID, the `folderId` with the ID for the folder where you want to place the shortcut, and the `targetDocumentId` to indicate the shortcut's target document.
 
    ```bash
-   java -classpath .:* -DsiteId=1234 -DfolderId=1234 -DtargetDocumentId=1234 DocumentShortcut_POST_ToSite
+   java -classpath .:* -DsiteId=1234 -DfolderId=1234 -DtargetDocumentId=1234 DocumentShortcuts_POST_ToSites
    ```
 
    !!! note
-       If your user and password aren't `test@liferay.com` and `learn`, respectively, replace those values in the `DocumentShortcut_POST_ToSite.java` file and recompile the class before running it.
+       If your user and password aren't `test@liferay.com` and `learn`, respectively, replace those values in the `DocumentShortcuts_POST_ToSites.java` file and recompile the class before running it.
 
 The class creates a shortcut for the target document in the site's Documents and Media designated folder.
 
@@ -180,7 +180,7 @@ Read on to see how the cURL command and Java class work.
 
 ### Examine the cURL Command
 
-The `DocumentShortcut_POST_ToSite.sh` and `DocumentShortcut_POST_ToAssetLibrary.sh` scripts post shortcuts by calling a `headless-delivery` application REST service with cURL.
+The `DocumentShortcuts_POST_ToSites.sh` and `DocumentShortcuts_POST_ToAssetLibraries.sh` scripts post shortcuts by calling a `headless-delivery` application REST service with cURL.
 
 Here are the command's arguments:
 
@@ -201,7 +201,7 @@ Other cURL commands for the `DocumentShortcut` REST services use similar argumen
 
 ### Examine the Java Class
 
-The `DocumentShortcut_POST_ToSite.java` and `DocumentShortcut_POST_ToAssetLibrary.java` classes post shortcuts by calling a `headless-delivery` application REST service.
+The `DocumentShortcuts_POST_ToSites.java` and `DocumentShortcuts_POST_ToAssetLibraries.java` classes post shortcuts by calling a `headless-delivery` application REST service.
 
 | Line (abbreviated)                                                                                    | Description                                                                                                                                                                      |
 |:------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -231,7 +231,7 @@ You can list document shortcuts from a site or an asset library. You can also re
 To list document shortcuts from a site, execute the following cURL command or Java class. As above, replace `[site-ID]/[asset-library-ID]` with your site's/asset library's ID, respectively.
 
 ```bash
-./DocumentShortcuts_GET_FromSite.sh [site-ID]
+./DocumentShortcuts_GET_FromSites.sh [site-ID]
 ```
 
 The terminal shows a similar output.
@@ -265,7 +265,7 @@ The terminal shows a similar output.
 You can also execute the java class:
 
 ```bash
-java -classpath .:* -DsiteId=1234 DocumentShortcuts_GET_FromSite
+java -classpath .:* -DsiteId=1234 DocumentShortcuts_GET_FromSites
 ```
 
 You can find information about the shortcut, the site/asset library where it's stored, the document it points to, its ID, title, creation date, modification date, and other details related to the document.
@@ -278,7 +278,7 @@ You can find information about the shortcut, the site/asset library where it's s
 You can get a specific shortcut by executing the following cURL or Java command. Replace `[shortcut-ID]` with the shortcut's ID.
 
 ```bash
-./DocumentShortcut_GET_ById.sh [shortcut-ID]
+./DocumentShortcuts_GET_ById.sh [shortcut-ID]
 ```
 
 If there's no `assetLibraryKey` listed, the shortcut is in a site.
@@ -313,7 +313,7 @@ Conversely, an `assetLibraryKey` field appears in the output when the shortcut i
 You can also execute the java class:
 
 ```bash
-java -classpath .:* -DdocumentShortcutId=1234 DocumentShortcut_GET_ById
+java -classpath .:* -DdocumentShortcutId=1234 DocumentShortcuts_GET_ById
 ```
 
 ## Patch a Shortcut
@@ -322,12 +322,12 @@ PATCH services update specific fields in a shortcut. You can update a shortcut b
 
 In this exercise, use the `[shortcut-ID]` from the shortcut added to the Provided by Liferay folder. Replace the `[folder-ID]` with the folder ID and replace the `[target-document-ID]` with the `shrimp.jpg` image ID. This updates the shortcut, changing the image from `crab.jpg` to `shrimp.jgp`.
 
-### DocumentShortcut_PATCH_ById.sh
+### DocumentShortcuts_PATCH_ById.sh
 
 Command:
 
 ```bash
-./DocumentShortcut_PATCH_ById.sh [shortcut-ID] [folder-ID] [target-document-ID]
+./DocumentShortcuts_PATCH_ById.sh [shortcut-ID] [folder-ID] [target-document-ID]
 ```
 
 ```bash
@@ -348,12 +348,12 @@ Next, execute the script again and try changing the `folderId` field to `0` to m
 
 ![Update the shortcut again to move it to the site's root folder.](./document-shortcut-api-basics/images/04.png)
 
-### DocumentShortcut_PATCH_ById.java
+### DocumentShortcuts_PATCH_ById.java
 
 Command:
 
 ```bash
-java -classpath .:* -DdocumentShortcutId=1234 -DfolderId=1234 -DtargetDocumentId=1234 DocumentShortcut_PATCH_ById
+java -classpath .:* -DdocumentShortcutId=1234 -DfolderId=1234 -DtargetDocumentId=1234 DocumentShortcuts_PATCH_ById
 ```
 
 The Java class calls `DocumentShortcutResource`'s `patchDocument` method, passing in the `DocumentShortcut`'s ID, a `DocumentShortcut` object that includes a field to update.
@@ -366,24 +366,24 @@ PUT services replace the shortcut and its fields entirely. You can replace a sho
 
 In this exercise, use the `[shortcut-ID]` from the shortcut moved to the Provided by Liferay folder in the previous PATCH request. Replace the `[folder-ID]` with the Provided by Liferay folder ID and `[target-document-ID]` with the `betta.jpg` image ID. This updates the shortcut, moving it back to the Provided by Liferay folder and changing the image from `shrimp.jpg` to `betta.jgp`.
 
-### DocumentShortcut_PUT_ById.sh
+### DocumentShortcuts_PUT_ById.sh
 
 Command:
 
 ```bash
-./DocumentShortcut_PUT_ById.sh [shortcut-ID] [folder-ID] [target-document-ID]
+./DocumentShortcuts_PUT_ById.sh [shortcut-ID] [folder-ID] [target-document-ID]
 ```
 
 The shortcut is back in the Provided by Liferay folder and it refers to the `betta.jpg` image.
 
 ![Update the shortcut again to move it back to the Provided by Liferay folder.](./document-shortcut-api-basics/images/05.png)
 
-### DocumentShortcut_PUT_ById.java
+### DocumentShortcuts_PUT_ById.java
 
 Command:
 
 ```bash
-java -classpath .:* -DdocumentShortcutId=1234 -DfolderId=1234 -DtargetDocumentId=1234 DocumentShortcut_PUT_ById
+java -classpath .:* -DdocumentShortcutId=1234 -DfolderId=1234 -DtargetDocumentId=1234 DocumentShortcuts_PUT_ById
 ```
 
 The Java class calls `DocumentShortcutResource`'s `putDocument` method, passing in the `DocumentShortcut`'s ID, a `DocumentShortcut` object that includes values for the `DocumentShortcut`'s `folder` and `targetDocument` fields.
@@ -396,20 +396,20 @@ Delete a shortcut by executing the following cURL or Java command. Replace `[sho
 
 If the operation is successful, there's a code 204 response and nothing is returned.
 
-### DocumentShortcut_DELETE_ById.sh
+### DocumentShortcuts_DELETE_ById.sh
 
 Command:
 
 ```bash
-./DocumentShortcut_DELETE_ById.sh [shortcut-ID]
+./DocumentShortcuts_DELETE_ById.sh [shortcut-ID]
 ```
 
-### DocumentShortcut_DELETE_ById.java
+### DocumentShortcuts_DELETE_ById.java
 
 Command
 
 ```bash
-java -classpath .:* -DdocumentShortcutId=1234 DocumentShortcut_DELETE_ById
+java -classpath .:* -DdocumentShortcutId=1234 DocumentShortcuts_DELETE_ById
 ```
 
 The `DocumentShortcut`s are removed from Documents and Media.

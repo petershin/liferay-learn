@@ -45,14 +45,14 @@ Use a cURL script to upload a file to [Documents and Media](../../documents-and-
 	cd liferay-g9i6.zip/curl
 	```
 
-1. Upload a file by executing the `Document_POST_ToSite.sh` script with your site ID as a parameter. For example,
+1. Upload a file by executing the `Documents_POST_ToSites.sh` script with your site ID as a parameter. For example,
 
    ```bash
-   ./Document_POST_ToSite.sh 1234
+   ./Documents_POST_ToSites.sh 1234
 	```
 
    !!! note
-       If your user and password aren't `test@liferay.com` and `learn`, respectively, replace those values in the `Document_POST_ToSite.sh` script before running it.
+       If your user and password aren't `test@liferay.com` and `learn`, respectively, replace those values in the `Documents_POST_ToSites.sh` script before running it.
 
 The script uploads itself to your site's Documents and Media.
 
@@ -67,7 +67,7 @@ The command response describes the new Documents and Media file in JSON, like th
   ...
   "id": 38301,
   ...
-  "title": "Document_POST_ToSite.sh"
+  "title": "Documents_POST_ToSites.sh"
 }
 ```
 
@@ -85,16 +85,16 @@ Next, use a Java class to upload a file.
    javac -classpath .:* *.java
    ```
 
-1. Upload a file to Documents and Media by running the `Document_POST_ToSite` class below, replacing the `siteId` system property value with your site's ID.
+1. Upload a file to Documents and Media by running the `Documents_POST_ToSites` class below, replacing the `siteId` system property value with your site's ID.
 
    ```bash
-   java -classpath .:* -DsiteId=1234 Document_POST_ToSite
+   java -classpath .:* -DsiteId=1234 Documents_POST_ToSites
    ```
 
    !!! note
-       If your user and password aren't `test@liferay.com` and `test`, respectively, replace those values in the `Document_POST_ToSite.java` file and recompile the class before running it.
+       If your user and password aren't `test@liferay.com` and `test`, respectively, replace those values in the `Documents_POST_ToSites.java` file and recompile the class before running it.
 
-The class uploads its source file `Document_POST_ToSite.java` to Documents and Media.
+The class uploads its source file `Documents_POST_ToSites.java` to Documents and Media.
 
 ![The Java class uploaded the Java source file.](./document-api-basics/images/02.png)
 
@@ -102,9 +102,9 @@ Read on to see how the cURL command and Java class work.
 
 ## Examine the cURL Command
 
-The `Document_POST_ToSite.sh` script uploads a file by calling a `headless-delivery` application REST service with cURL.
+The `Documents_POST_ToSites.sh` script uploads a file by calling a `headless-delivery` application REST service with cURL.
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_POST_ToSite.sh
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_POST_ToSites.sh
    :language: bash
 ```
 
@@ -112,7 +112,7 @@ Here are the command's arguments:
 
 | Arguments                                                               | Description                                                                          |
 | :---------------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
-| `-F "file=@Document_POST_ToSite.sh"`                                    | The file to post.                                                                    |
+| `-F "file=@Documents_POST_ToSites.sh"`                                    | The file to post.                                                                    |
 | `-H "Content-Type: multipart/form-data"`                                | The media type ([MIME type](https://en.wikipedia.org/wiki/Media_type)) being posted. |
 | `-X POST`                                                               | The HTTP method to invoke at the specified endpoint.                                 |
 | `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents"` | The REST service endpoint. Your site ID parameter replaces `${1}`.                   |
@@ -127,9 +127,9 @@ Next, see how similar the Java call is.
 
 ## Examine the Java Class
 
-The `Document_POST_ToSite.java` class uploads a file by calling a `headless-delivery` application REST service.
+The `Documents_POST_ToSites.java` class uploads a file by calling a `headless-delivery` application REST service.
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_POST_ToSite.java
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Documents_POST_ToSites.java
    :dedent: 1
    :language: java
    :lines: 13-29
@@ -141,7 +141,7 @@ This class invokes the REST service using only three lines of code:
 | :------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `DocumentResource.Builder builder = ...`                                   | Gets a `Builder` for generating a `DocumentResource` service instance.                                                                                                                                                                                                                 |
 | `DocumentResource documentResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `DocumentResource` service instance.                                                                                                                                                                                                    |
-| `Document document = documentResource.postSiteDocument(...);`              | Calls the `DocumentResource.postSiteDocument` method, passing in a site ID, a `Document` object to represent the uploaded file, and a hash map that specifies the file to upload. The file is arbitrary--this example uses the local file `Document_POST_ToSite.java` for convenience. |
+| `Document document = documentResource.postSiteDocument(...);`              | Calls the `DocumentResource.postSiteDocument` method, passing in a site ID, a `Document` object to represent the uploaded file, and a hash map that specifies the file to upload. The file is arbitrary--this example uses the local file `Documents_POST_ToSites.java` for convenience. |
 
 Note that the project includes the `com.liferay.headless.delivery.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
@@ -159,37 +159,37 @@ Below are examples of calling other `Document` REST services using cURL and Java
 
 You can list a site's documents by executing the following cURL or Java command. As above, replace `1234` with your site's ID.
 
-### Documents_GET_FromSite.sh
+### Documents_GET_FromSites.sh
 
 Command:
 
 ```bash
-./Documents_GET_FromSite.sh 1234
+./Documents_GET_FromSites.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_GET_FromSite.sh
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_GET_FromSites.sh
    :language: bash
 ```
 
-### Documents_GET_FromSite.java
+### Documents_GET_FromSites.java
 
 Command:
 
 ```bash
-java -classpath .:* -DsiteId=1234 Documents_GET_FromSite
+java -classpath .:* -DsiteId=1234 Documents_GET_FromSites
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Documents_GET_FromSite.java
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Documents_GET_FromSites.java
    :dedent: 1
    :language: java
    :lines: 11-23
 ```
 
-The site's `Document` objects are listed in JSON.
+The site's `Document` objects are included in the JSON response.
 
 ```json
 {
@@ -316,59 +316,59 @@ From the response, you can extract several pieces of information such as
 You can get a `Document`'s fields by executing the following cURL or Java command. Replace `1234` with the `Document`'s ID.
 
 !!! tip
-    Use `Documents_GET_FromSite.[java|sh]` to get site `Document` IDs.
+    Use `Documents_GET_FromSites.[java|sh]` to get site `Document` IDs.
 
-### Document_GET_ById.sh
+### Documents_GET_ById.sh
 
 Command:
 
 ```bash
-./Document_GET_ById.sh 1234
+./Documents_GET_ById.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_GET_ById.sh
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_GET_ById.sh
    :language: bash
 ```
 
-### Document_GET_ById.java
+### Documents_GET_ById.java
 
 Command:
 
 ```bash
-java -classpath .:* -DdocumentId=1234 Document_GET_ById
+java -classpath .:* -DdocumentId=1234 Documents_GET_ById
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_GET_ById.java
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Documents_GET_ById.java
    :dedent: 1
    :language: java
    :lines: 8-18
 ```
 
-The `Document` fields are listed in JSON.
+The `Document` fields are included in the JSON response.
 
 ## Get Document Content
 
 `Document` content is encoded in Base64 and embedded in the `Document`'s `nestedFields`. You can get the content by executing the following cURL or Java command. Replace `1234` with the `Document`'s ID.
 
-### Document_GET_ById_ContentValue.sh
+### Documents_GET_ContentValue_ById.sh
 
 Command:
 
 ```bash
-./Document_GET_ById_ContentValue.sh 1234
+./Documents_GET_ContentValue_ById.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_GET_ById_ContentValue.sh
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_GET_ContentValue_ById.sh
    :language: bash
 ```
 
-The first argument line specifies the service endpoint and authentication credentials, respectively. The URL's `/o/headless-delivery/v1.0/documents/${1}` part is the REST service endpoint to get the `Document` by its ID. This URL is the same as the `Document_GET_ById.sh` script's URL. The `?nestedFields=contentValue` part requests the `contentValue` embedded in the `Document`'s `nestedFields`. Lastly the `&fields=contentValue` part filters on the `contentValue` field, so that the content field alone is returned. Invoking only the service, however, returns Base64-encoded content wrapped in JSON, like this:
+The first argument line specifies the service endpoint and authentication credentials, respectively. The URL's `/o/headless-delivery/v1.0/documents/${1}` part is the REST service endpoint to get the `Document` by its ID. This URL is the same as the `Documents_GET_ById.sh` script's URL. The `?nestedFields=contentValue` part requests the `contentValue` embedded in the `Document`'s `nestedFields`. Lastly the `&fields=contentValue` part filters on the `contentValue` field, so that the content field alone is returned. Invoking only the service, however, returns Base64-encoded content wrapped in JSON, like this:
 
 ```json
 {
@@ -376,31 +376,31 @@ The first argument line specifies the service endpoint and authentication creden
 }
 ```
 
-The routines following the service invocation process the encoded content. The `sed` and `awk` routines isolate the `Document` content value and the `tr` routine decodes it. Here's the decoded content returned for the `Document_POST_ToSite.sh` `Document` that you uploaded:
+The routines following the service invocation process the encoded content. The `sed` and `awk` routines isolate the `Document` content value and the `tr` routine decodes it. Here's the decoded content returned for the `Documents_POST_ToSites.sh` `Document` that you uploaded:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_GET_ById_ContentValue.sh
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_GET_ContentValue_ById.sh
    :language: bash
 ```
 
-### Document_GET_ById_ContentValue.java
+### Documents_GET_ContentValue_ById.java
 
 The Java code to get `Document` content and decode it is simpler than the previous cURL command.
 
 Command:
 
 ```bash
-java -classpath .:* -DdocumentId=1234 Document_GET_ById_ContentValue
+java -classpath .:* -DdocumentId=1234 Documents_GET_ContentValue_ById
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_GET_ById_ContentValue.java
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Documents_GET_ContentValue_ById.java
    :dedent: 1
    :language: java
    :lines: 11-27
 ```
 
-Most of the code resembles the code in `Document_POST_ToSite.java`. There are a couple key differences.
+Most of the code resembles the code in `Documents_POST_ToSites.java`. There are a couple key differences.
 
 The following line adds the `contentValue` nested field as a request parameter.
 
@@ -418,33 +418,33 @@ Base64.Decoder decoder = Base64.getDecoder();
 
 `Document`'s PATCH services update a `Document` and its fields. You can update a `Document` by executing the following cURL or Java command. Replace `1234` with the `Document`'s ID.
 
-### Document_PATCH_ById.sh
+### Documents_PATCH_ById.sh
 
 Command:
 
 ```bash
-./Document_PATCH_ById.sh 1234
+./Documents_PATCH_ById.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_PATCH_ById.sh
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_PATCH_ById.sh
    :language: bash
 ```
 
 The first form data part (following `-F`) specifies a new value for the `Document`'s `description` field. The second form data part specifies the updated file to upload. Note, both are not required. You can patch only the file or only the document's metadata.
 
-### Document_PATCH_ById.java
+### Documents_PATCH_ById.java
 
 Command:
 
 ```bash
-java -classpath .:* -DdocumentId=1234 Document_PATCH_ById
+java -classpath .:* -DdocumentId=1234 Documents_PATCH_ById
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_PATCH_ById.java
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Documents_PATCH_ById.java
    :dedent: 1
    :language: java
    :lines: 13-34
@@ -460,33 +460,33 @@ The above commands update the `Document`'s description to "Bar".
 
 `Document`'s PUT services replace the `Document` and its fields entirely. You can replace a `Document` by executing the following cURL or Java command. Replace `1234` with the `Document`'s ID.
 
-### Document_PUT_ById.sh
+### Documents_PUT_ById.sh
 
 Command:
 
 ```bash
-./Document_PUT_ById.sh 1234
+./Documents_PUT_ById.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_PUT_ById.sh
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_PUT_ById.sh
    :language: bash
 ```
 
 The first form data part sets new `description` and `title` field values. The second form data part specifies a replacement file to upload.
 
-### Document_PUT_ById.java
+### Documents_PUT_ById.java
 
 Command:
 
 ```bash
-java -classpath .:* -DdocumentId=1234 Document_PUT_ById
+java -classpath .:* -DdocumentId=1234 Documents_PUT_ById
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_PUT_ById.java
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Documents_PUT_ById.java
    :dedent: 1
    :language: java
    :lines: 13-35
@@ -494,7 +494,7 @@ Code:
 
 The Java code above calls `DocumentResource`'s `putDocument` method, passing in the `Document`'s ID, a `Document` object that includes values for the `Document`'s `description` and `title` fields, and a replacement file to upload.
 
-The above cURL command and Java class replace `Document` instances with completely new ones that have the new titles `Document_PUT_ById.sh` and `Document_PUT_ById.java`, respectively, and have the description *Goo.*
+The above cURL command and Java class replace `Document` instances with completely new ones that have the new titles `Documents_PUT_ById.sh` and `Documents_PUT_ById.java`, respectively, and have the description *Goo.*
 
 !!! warning
     Unless you want to use the current `Document`'s title, make sure to specify the `title` value you want for the replacement `Document`.
@@ -505,31 +505,31 @@ The above cURL command and Java class replace `Document` instances with complete
 
 You can delete a `Document` by executing the following cURL or Java command. Replace `1234` with the `Document`'s ID.
 
-### Document_DELETE_ById.sh
+### Documents_DELETE_ById.sh
 
 Command:
 
 ```bash
-./Document_DELETE_ById.sh 1234
+./Documents_DELETE_ById.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_DELETE_ById.sh
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_DELETE_ById.sh
    :language: bash
 ```
 
-### Document_DELETE_ById.java
+### Documents_DELETE_ById.java
 
 Command
 
 ```bash
-java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
+java -classpath .:* -DdocumentId=1234 Documents_DELETE_ById
 ```
 
 Code:
 
-```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_DELETE_ById.java
+```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Documents_DELETE_ById.java
    :dedent: 1
    :language: java
    :lines: 8-17
@@ -541,14 +541,15 @@ The `Document`s are removed from Documents and Media.
 
 The following cURL commands and Java classes demonstrate more `Document` services and `DocumentFolder` services.
 
-| Files                                       | Description                                |
-| :------------------------------------------ | :----------------------------------------- |
-| `Document_POST_ToDocumentFolder.[java\|sh]` | Posts a document to a folder.              |
-| `DocumentFolder_GET_ById.[java\|sh]`        | Lists a folder's fields.                   |
-| `DocumentFolder_PATCH_ById.[java\|sh]`      | Updates a folder and its fields.           |
-| `DocumentFolder_POST_ToSite.[java\|sh]`     | Posts a document folder to a site.         |
-| `DocumentFolder_PUT_ById.[java\|sh]`        | Replaces a folder and its fields entirely. |
-| `DocumentFolders_GET_FromSite.[java\|sh]`   | Lists a site's folders.                    |
+| Files                                         | Description                                |
+|:----------------------------------------------|:-------------------------------------------|
+| `Documents_POST_ToDocumentFolders.[java\|sh]` | Posts a document to a folder.              |
+| `DocumentFolders_GET_ById.[java\|sh]`         | Lists a folder's fields.                   |
+| `DocumentFolders_PATCH_ById.[java\|sh]`       | Updates a folder and its fields.           |
+| `DocumentFolders_POST_ToSites.[java\|sh]`     | Posts a document folder to a site.         |
+| `DocumentFolders_PUT_ById.[java\|sh]`         | Replaces a folder and its fields entirely. |
+| `DocumentFolders_DELETE_ById.[java\|sh]`      | Deletes a document folder.                 |
+| `DocumentFolders_GET_FromSites.[java\|sh]`    | Lists a site's folders.                    |
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) lists all of the `Document` and `DocumentFolder` services and schemas, and has an interface to try out each service.
 

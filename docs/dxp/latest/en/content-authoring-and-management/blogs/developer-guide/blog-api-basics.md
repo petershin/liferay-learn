@@ -37,10 +37,10 @@ Then, follow these steps:
 
 1. [Find your site's ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). It's used in different service calls below.
 
-1. Use the cURL script to add a new blog post to your site. On the command line, navigate to the `curl` folder. Execute the `BlogPosting_POST_ToSite.sh` script with your site ID as a parameter.
+1. Use the cURL script to add a new blog post to your site. On the command line, navigate to the `curl` folder. Execute the `BlogPostings_POST_ToSites.sh` script with your site ID as a parameter.
 
     ```bash
-    ./BlogPosting_POST_ToSite.sh 1234
+    ./BlogPostings_POST_ToSites.sh 1234
     ```
 
     The JSON response shows a new blog post has been added:
@@ -84,17 +84,17 @@ Then, follow these steps:
     javac -classpath .:* *.java
     ```
 
-1. Run the `BlogPosting_POST_ToSite` class. Replace the `siteId` value with your site ID:
+1. Run the `BlogPostings_POST_ToSites` class. Replace the `siteId` value with your site ID:
 
     ```bash
-    java -classpath .:* -DsiteId=1234 BlogPosting_POST_ToSite
+    java -classpath .:* -DsiteId=1234 BlogPostings_POST_ToSites
     ```
 
 ## Examine the cURL Command
 
-The `BlogPosting_POST_ToSite.sh` script calls the REST service with a cURL command.
+The `BlogPostings_POST_ToSites.sh` script calls the REST service with a cURL command.
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPosting_POST_ToSite.sh
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPostings_POST_ToSites.sh
     :language: bash
 ```
 
@@ -115,9 +115,9 @@ The other cURL commands use similar JSON arguments.
 
 ## Examine the Java Class
 
-The `BlogPosting_POST_ToSite.java` class adds a blog post by calling the blog posting related service.
+The `BlogPostings_POST_ToSites.java` class adds a blog post by calling the blog posting related service.
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPosting_POST_ToSite.java
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPostings_POST_ToSites.java
    :dedent: 1
    :language: java
    :lines: 9-26
@@ -147,31 +147,31 @@ Below are examples of calling other `BlogPosting` REST services using cURL and J
 
 You can list a site's blog posts by executing the following cURL or Java command. As above, replace `1234` with your site's ID.
 
-### BlogPostings_GET_FromSite.sh
+### BlogPostings_GET_FromSites.sh
 
 Command:
 
 ```bash
-./BlogPostings_GET_FromSite.sh 1234
+./BlogPostings_GET_FromSites.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPostings_GET_FromSite.sh
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPostings_GET_FromSites.sh
    :language: bash
 ```
 
-### BlogPostings_GET_FromSite.java
+### BlogPostings_GET_FromSites.java
 
 Command:
 
 ```bash
-java -classpath .:* -DsiteId=1234 BlogPostings_GET_FromSite
+java -classpath .:* -DsiteId=1234 BlogPostings_GET_FromSites
 ```
 
 Code:
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPostings_GET_FromSite.java
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPostings_GET_FromSites.java
    :dedent: 1
    :language: java
    :lines: 11-23
@@ -184,33 +184,33 @@ The GET method returns the site's `BlogPosting` objects in JSON format.
 Get a specific blog post with the following cURL or Java command. Replace `1234` with the blog post's ID.
 
 !!! tip
-    Use `BlogPostings_GET_FromSite.[java|sh]` to get `BlogPosting` IDs.
+    Use `BlogPostings_GET_FromSites.[java|sh]` to get `BlogPosting` IDs.
 
-### BlogPosting_GET_ById.sh
+### BlogPostings_GET_ById.sh
 
 Command:
 
 ```bash
-./BlogPosting_GET_ById.sh 1234
+./BlogPostings_GET_ById.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPosting_GET_ById.sh
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPostings_GET_ById.sh
    :language: bash
 ```
 
-### BlogPosting_GET_ById.java
+### BlogPostings_GET_ById.java
 
 Command:
 
 ```bash
-java -classpath .:* -DblogPostingId=1234 BlogPosting_GET_ById
+java -classpath .:* -DblogPostingId=1234 BlogPostings_GET_ById
 ```
 
 Code:
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPosting_GET_ById.java
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPostings_GET_ById.java
    :dedent: 1
    :language: java
    :lines: 8-18
@@ -222,31 +222,31 @@ The GET method returns the `BlogPosting` fields in JSON format.
 
 Do a partial edit of an existing blog post with the following cURL and Java commands. Note: replace `1234` with your blog post's ID.
 
-### BlogPosting_PATCH_ById.sh
+### BlogPostings_PATCH_ById.sh
 
 Command:
 
 ```bash
-./BlogPosting_PATCH_ById.sh 1234
+./BlogPostings_PATCH_ById.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPosting_PATCH_ById.sh
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPostings_PATCH_ById.sh
    :language: bash
 ```
 
-### BlogPosting_PATCH_ById.java
+### BlogPostings_PATCH_ById.java
 
 Command:
 
 ```bash
-java -classpath .:* -DblogPostingId=1234 BlogPosting_PATCH_ById
+java -classpath .:* -DblogPostingId=1234 BlogPostings_PATCH_ById
 ```
 
 Code:
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPosting_PATCH_ById.java
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPostings_PATCH_ById.java
    :dedent: 1
    :language: java
    :lines: 9-25
@@ -258,31 +258,31 @@ In this example the article body content is changed from Foo to Bar.
 
 Do a complete overwrite of an existing blog post with the following cURL and Java commands. Note, replace `1234` with your blog post's ID.
 
-### BlogPosting_PUT_ById.sh
+### BlogPostings_PUT_ById.sh
 
 Command:
 
 ```bash
-./BlogPosting_PUT_ById.sh 1234
+./BlogPostings_PUT_ById.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPosting_PUT_ById.sh
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPostings_PUT_ById.sh
    :language: bash
 ```
 
-### BlogPosting_PUT_ById.java
+### BlogPostings_PUT_ById.java
 
 Command:
 
 ```bash
-java -classpath .:* -DblogPostingId=1234 BlogPosting_PUT_ById
+java -classpath .:* -DblogPostingId=1234 BlogPostings_PUT_ById
 ```
 
 Code:
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPosting_PUT_ById.java
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPostings_PUT_ById.java
    :dedent: 1
    :language: java
    :lines: 9-26
@@ -292,31 +292,31 @@ Code:
 
 Delete an existing blog post with the following cURL and Java commands. Note, replace `1234` with your blog post's ID.
 
-### BlogPosting_DELETE_ById.sh
+### BlogPostings_DELETE_ById.sh
 
 Command:
 
 ```bash
-./BlogPosting_DELETE_ById.sh 1234
+./BlogPostings_DELETE_ById.sh 1234
 ```
 
 Code:
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPosting_DELETE_ById.sh
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPostings_DELETE_ById.sh
    :language: bash
 ```
 
-### BlogPosting_DELETE_ById.java
+### BlogPostings_DELETE_ById.java
 
 Command
 
 ```bash
-java -classpath .:* -DblogPostingId=1234 BlogPosting_DELETE_ById
+java -classpath .:* -DblogPostingId=1234 BlogPostings_DELETE_ById
 ```
 
 Code:
 
-```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPosting_DELETE_ById.java
+```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPostings_DELETE_ById.java
    :dedent: 1
    :language: java
    :lines: 8-17
@@ -328,10 +328,10 @@ The cURL commands and Java classes for blog images works in the same way as blog
 
 | Files | Description |
 | :---- | :---------- |
-| `BlogPostingImage_DELETE_ById.[java\|sh]` | Deletes a blog post image by ID. |
-| `BlogPostingImage_GET_ById.[java\|sh]` | Get a specific blog post image by ID. |
-| `BlogPostingImage_POST_ToSite.[java\|sh]` | Post a blog post image to a site. |
-| `BlogPostingImages_GET_FromSite.[java\|sh]` | Get a list of blog post images from a site. |
+| `BlogPostingImages_DELETE_ById.[java\|sh]` | Deletes a blog post image by ID. |
+| `BlogPostingImages_GET_ById.[java\|sh]` | Get a specific blog post image by ID. |
+| `BlogPostingImages_POST_ToSites.[java\|sh]` | Post a blog post image to a site. |
+| `BlogPostingImages_GET_FromSites.[java\|sh]` | Get a list of blog post images from a site. |
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) lists all of the `BlogPosting` and `BlogPostingImage` services and schemas, and has an interface to try out each service.
 

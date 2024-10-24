@@ -31,7 +31,7 @@ Your new article is created/submitted for [workflow](../../../process-automation
 !!! note
     The user who creates the first version of a web content article becomes its owner. If another user edits the content (which creates a new version), ownership isn't transferred.
 
-## Publish With Permissions and Schedule Publications
+## Publishing With Permissions and Scheduling Publications
 
 <!-- Adjust this information once this feature is released. I can merge the sections into one or I can use something like before and after 2024.Q2+. - Eric -->
 
@@ -111,6 +111,35 @@ When you reschedule the same publication multiple times, you can view all versio
     All rescheduled versions of the web content article are published. Note that versions scheduled later replace previous ones.
 
 ![Schedule the same web content article multiple times.](./creating-web-content-articles/images/07.png)
+
+## Using the Auto-Save, Undo/Redo, and History Features
+
+{bdg-secondary}`Liferay DXP 2024.Q4+`
+
+!!! important
+    Currently, this feature is behind a release feature flag (LPD-11228). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+
+!!! warning
+    {bdg-secondary}`Breaking Change` The Save as a Draft button has been removed.
+
+The auto-save feature in the Web Content application automatically saves your work after you fill in the title and required fields, so manual saving isn’t necessary.
+
+Note that auto-save applies only to the article's content, not the settings under the Properties tab.
+
+The Auto-Save indicator, Undo/Redo buttons, and History menu appear next to the Publish button.
+
+If auto-save isn't active, the icon appears as (![Auto-Save Warning icon](../../../images/icon-circle-exclamation.png)). Once auto-save is active, the icon changes to (![Auto-Save Success icon](../../../images/icon-green-check.png)).
+
+![The auto-save, undo/redo buttons, and history menu are next to the Publish button.](./creating-web-content-articles/images/08.png)
+
+You can use the Undo/Redo buttons to move through changes made during your current session. Additionally, you can use the History menu to find and apply specific changes within the same session.
+
+You can revert all changes made during the session by selection *Undo All* from the History menu.
+
+![Navigate through changes using the Undo/Redo buttons or the History menu. Revert all changes made during the session using the Undo All option.](./creating-web-content-articles/images/09.png)
+
+!!! warning
+    While auto-saved data is preserved between sessions, you can only access specific changes through the Undo/Redo buttons or History menu during the current session. Once you leave the editor or refresh the page, these features no longer track changes from previous sessions.
 
 ## Properties Tab
 

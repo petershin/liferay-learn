@@ -9,19 +9,7 @@ taxonomy-category-names:
 ---
 # LDAP Configuration Reference
 
-To access LDAP configuration settings, navigate to *Control Panel &rarr; Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *LDAP*. There are four categories on the left: Export, General, Import, and Servers.
-
-## Export
-
-**Enable Export:** Check this box to export user accounts to LDAP. A listener tracks changes made to the `User` object and pushes updates to the LDAP server whenever a `User` object is modified. Note that by default on every login, fields such as `lastLoginDate` are updated. When export is enabled, this causes a user export every time the user logs in. You can prevent updates to users' `lastLoginDate` fields from triggering LDAP user exports by setting the following property in your `portal-ext.properties` file:
-
-```properties
-users.update.last.login=false
-```
-
-**Enable Group Export:** Export groups to LDAP.
-
-![The Export tab.](./ldap-configuration-reference/images/01.png)
+To access LDAP configuration settings, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Control Panel &rarr; Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *LDAP*. There are five categories on the left: General, Servers, Connection, Export, and Import.
 
 ## General
 
@@ -35,7 +23,83 @@ users.update.last.login=false
 
 **Password Encryption Algorithm:** Choose the password encryption algorithm your LDAP server uses to encrypt passwords so they can be compared if using the Password Compare bind method. This is rarely used.
 
-![The General configuration tab.](./ldap-configuration-reference/images/02.png)
+![The General configuration tab.](./ldap-configuration-reference/images/01.png)
+
+## Servers
+
+Click *Add* to add an LDAP server.
+
+**LDAP Servers:** Liferay supports connections to multiple LDAP servers. Use the *Add* button to add LDAP servers.
+
+**Server Name:** Enter a name for your LDAP server.
+
+**Default Values:** Several common directory servers appear here. If you use one of these, select it to populate the rest of the form with default values for that directory.
+
+These settings cover the connection to LDAP.
+
+**Base Provider URL:** The link to the LDAP server. Make sure the Liferay server can communicate with the LDAP server. If there is a firewall between the two systems, make sure the appropriate ports are opened.
+
+**Base DN:** The Base Distinguished Name for your LDAP directory, usually modeled after your organization. It may look like this: `dc=companynamehere,dc=com`.
+
+**Principal:** The default LDAP administrator user ID is populated here. If your administrator ID differs, use that credential instead. You need an administrative credential because Liferay uses this ID to synchronize user accounts to and from LDAP.
+
+**Credentials:** Enter the password for the LDAP administrative user.
+
+![Adding a new LDAP server requires only a few options to be defined.](./ldap-configuration-reference/images/02.png)
+
+Once you've finished configuring LDAP, click the *Save* button.
+
+## Connection
+
+Use this section to configure properties for the server you added. 
+
+**Factory Initial:** Specifies the initial context factory to use. The default value is `com.sun.jndi.ldap.LdapCtxFactory`.
+
+**Referral:** Indicates how the service provider handles referrals. There are three possible values:
+
+* Follow - Automatically follow any referrals
+* Ignore - Ignore referrals
+* Throws - Throw a ReferralException(in the API reference documentation) for each referral
+
+**Page Size:** Specifies the page size for directory servers that support paging. This value must be 1000 or less for the Microsoft Active Directory Server.
+
+**Range Size:** Specifies the number of values to return in each query to a multi-valued attribute for directory servers that support range retrieval. The range size must be 1000 or less for Windows 2000 and 1500 or less for Windows Server 2003.
+
+**Connection Properties:** Add provider specific properties here. There are three properties with default values:
+
+* `com.sun.jndi.ldap.connect.pool=true` - Specifies that a pooled connection should be used when creating the initial context instance.
+* `com.sun.jndi.ldap.connect.timeout=500` - Specifies the timeout period in milliseconds.
+* `com.sun.jndi.ldap.read.timeout=15000` - Specifies the read timeout in milliseconds for LDAP operations.
+
+<!-- 
+Requires documentation but no information from the product team yet. Zsigmond said that it can be documented later
+
+**Error Password Age Keywords:**
+
+**Error Password Expired Keywords:**
+
+**Error Password History Keywords:**
+
+**Error Password Not Changeable Keywords:**
+
+**Error Password Syntax Keywords:**
+
+**Error Password Trivial Text Keywords:**
+
+**Error User Lockout Keywords:** 
+-->
+
+## Export
+
+**Enable Export:** Check this box to export user accounts to LDAP. A listener tracks changes made to the `User` object and pushes updates to the LDAP server whenever a `User` object is modified. Note that by default on every login, fields such as `lastLoginDate` are updated. When export is enabled, this causes a user export every time the user logs in. You can prevent updates to users' `lastLoginDate` fields from triggering LDAP user exports by setting the following property in your `portal-ext.properties` file:
+
+```properties
+users.update.last.login=false
+```
+
+**Enable Group Export:** Export groups to LDAP.
+
+![The Export tab.](./ldap-configuration-reference/images/03.png)
 
 ## Import
 
@@ -43,7 +107,7 @@ You can import user data from LDAP directories using the following options:
 
 **Enable Import:** Check this box to do a mass import from your LDAP directories. Otherwise, Users are imported as they log in.
 
-![Ziltoid and Rex have been imported because they logged in.](./ldap-configuration-reference/images/03.png)
+![Ziltoid and Rex have been imported because they logged in.](./ldap-configuration-reference/images/04.png)
 
 **Enable Import on Startup:** Check this box to do the mass import when Liferay starts. Note: this box only appears if you check **Enable Import**, described above. Definitely leave this unchecked if you have a Liferay cluster, or all your nodes will do a mass import when each of them starts up.
 
@@ -65,37 +129,14 @@ You can import user data from LDAP directories using the following options:
 
 **Create Role per Group on Import:** For every LDAP group, create a corresponding Liferay Role.
 
-![The Import screen contains the above options.](./ldap-configuration-reference/images/04.png)
-
-## Servers
-
-**LDAP Servers:** Liferay supports connections to multiple LDAP servers. Use the *Add* button to add LDAP servers.
-
-**Server Name:** Enter a name for your LDAP server.
-
-**Default Values:** Several common directory servers appear here. If you use one of these, select it to populate the rest of the form with default values for that directory.
-
-These settings cover the connection to LDAP.
-
-**Base Provider URL:** The link to the LDAP server. Make sure the Liferay server can communicate with the LDAP server. If there is a firewall between the two systems, make sure the appropriate ports are opened.
-
-**Base DN:** The Base Distinguished Name for your LDAP directory, usually modeled after your organization. It may look like this: `dc=companynamehere,dc=com`.
-
-**Principal:** The default LDAP administrator user ID is populated here. If your administrator ID differs, use that credential instead. You need an administrative credential because Liferay uses this ID to synchronize user accounts to and from LDAP.
-
-**Credentials:** Enter the password for the LDAP administrative user.
-
-![Adding a new LDAP server requires only a few options to be defined.](./ldap-configuration-reference/images/05.png)
-
-Once you've finished configuring LDAP, click the *Save* button.
+![The Import screen contains the above options.](./ldap-configuration-reference/images/05.png)
 
 ### LDAP Options Available in System Settings
 
 Although most LDAP configuration can be done from Instance Settings, there are several parameters only available in System Settings. There are also settings duplicated from the ones in Instance Settings. These change the *default* settings for new virtual instances (see note below).
 
-```{note}
-When you make a change in System Settings, it affects the current virtual instance. If after changing a setting you create a new virtual instance, that virtual instance inherits the settings of the one it was created from as defaults. For example, say you have virtual instances named A, B, and C. From A, you modify *Error password history keywords*. This change appears only in A, not in B or C. Then from A, you create virtual instance D. The change to *Error password history keywords* appears in D (not B or C), since D defaults to A's settings because you created it from A.
-```
+!!! note
+    When you make a change in System Settings, it affects the current virtual instance. If after changing a setting you create a new virtual instance, that virtual instance inherits the settings of the one it was created from as defaults. For example, say you have virtual instances named A (the default instance), B, and C. From A, you modify *Error password history keywords*. This change appears only in A, not in B or C. Then from A, you create virtual instance D. The change to *Error password history keywords* appears in D (not B or C), since D defaults to A's settings because you created it from A.
 
 If you must change any of these options, navigate to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*. Go to the *Security* section and find the entries with LDAP in the title. The only new settings here are in the *Connection* entry.
 

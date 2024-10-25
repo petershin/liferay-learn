@@ -3,7 +3,7 @@ uuid: 845f8b22-fb9a-4d64-981b-51d542224c47
 ---
 # Exploring Indexed Fields
 
-Some search features can be configured if you know how to explore the fields of search documents or inspect the field mappings of the search engine.
+Some search features can be configured if you know how to explore a search document's fields or inspect the search engine's field mappings.
 
 | Feature | Relevant Configurations | Use Case | Where to Look |
 | :--- | :--- | :--- | :--- |
@@ -15,7 +15,7 @@ Some search features can be configured if you know how to explore the fields of 
 
 ## Inspecting the Document Source
 
-By inspecting the indexed search document source, you can see exactly how content and application fields were indexed, and how the mappings were applied to each field. For example, you can see how the mappings for nested object fields end up being stored in the index. However, the document source cannot show you the type of data and it does not contain mapped sub-fields. 
+By inspecting the indexed search document source, you can see exactly how content and application fields were indexed and how the mappings were applied to each field. For example, you can see how the mappings for nested object fields end up being stored in the index. However, the document source cannot show you the type of data and it does not contain mapped sub-fields. 
 
 ### Viewing Search Results in Document Form
 
@@ -28,6 +28,7 @@ Inspecting the fields of returned documents is useful for finding indexed field 
 There are limitations to viewing the document source:
 
 1. You cannot know the field type.
+
 1. Sub-fields are not present in the document source.
 
 For these details you must view the field mappings.
@@ -46,7 +47,7 @@ Here you can access these features:
 
 - Click _View Raw Response_ to see the entire search response string. Here you can copy the response to the clipboard or download it as a JSON file. This is the same string you see in the [Search Insights](./search-insights.md) widget on the search page.
 
-- The score of each result appears to the left of the result title. Click the score to see the Score Explanation.
+- The score of each result appears to the left of the result title. Click the score to see the score explanation.
 
 [Some elements](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md) read search context attributes that you can provide or override manually. Click the gear icon (![Gear](../../images/icon-cog3.png)) to add search context attributes to the Blueprint preview search, then enter the key/value pair for the attribute and click _Done_.
 
@@ -91,7 +92,7 @@ Custom types can define their own fields, like Objects, Web Content Structure, a
 },
 ```
 
-The field mappings provide a lower level view of how each field is treated at index and search time, including its data type and any sub-fields that are available for using the field's data in different ways. For example, you can use the mappings to discover a keyword field that's indexed as a sub-field of a text field. This keyword sub-field might then be used in the Custom Facet.
+The field mappings provide a lower level view of how each field is treated at index and search time, including its data type and any sub-fields available for using the field's data in different ways. For example, you can use the mappings to discover a keyword field that's indexed as a sub-field of a text field. This keyword sub-field might then be used in the Custom Facet.
 
 ![This DDM field has a keyword sub-field that's only discoverable by looking at the field mappings.](./exploring-indexed-fields/images/04.png)
 
@@ -133,8 +134,6 @@ Here's a snippet of output from the Elasticsearch example:
 },
 ```
 
-### Working with Sub-Fields
-
 Some fields are indexed as [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html), adding sub-field mappings to the main field. Some `text` and `icu_collation_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. 
 
 To use sub-fields in the Custom Facet, use dot notation (e.g., `fieldName.sub_field_name`). Examples include `assetTagNames.raw` and `title_en_US_sortable.keyword_lowercase`. Some [nested fields](#accessing-nested-fields) are also mapped with sub-fields.
@@ -144,13 +143,13 @@ To use sub-fields in the Custom Facet, use dot notation (e.g., `fieldName.sub_fi
 
 ## Working with Custom Fields (Expando)
 
-When you create a [Custom Field](../../system-administration/configuring-liferay/adding-custom-fields.md) with the setting _Searchable_ enabled, the custom field is indexed with the backing asset (Blogs Entries, for example). After reindexing it's also applied to existing entries. If you index the field as a keyword, the field itself is a text field, named like `expando__keyword__custom_fields__Enabled` (if you named the field _Enabled_ in the Custom Fields UI), but it contains a nested field mapping for creating a separate `raw` keyword field. 
+When you create a [Custom Field](../../system-administration/configuring-liferay/adding-custom-fields.md) with the setting Searchable enabled, the custom field is indexed with the backing asset (Blogs Entries, for example). After reindexing it's also applied to existing entries. For example, if you index a field you called _Enabled_ in the Custom Fields UI as a keyword, the field itself is a text field, named like `expando__keyword__custom_fields__Enabled`, but it contains a nested field mapping for creating a separate `raw` keyword field. 
 
 To use the raw keyword field in the Custom Facet, append `.raw` to the Custom Field name in the _Aggregation Field_:
 
 `expando__keyword__custom_fields__Enabled.raw`
  
-If you've copied the field mappings locally, search the file for `expando__keyword__custom_fields__Enabled` and you can see its mapping:
+If you copied the field mappings locally, search the file for `expando__keyword__custom_fields__Enabled` and you can see its mapping:
 
 ```json
 {
@@ -178,23 +177,23 @@ If you've copied the field mappings locally, search the file for `expando__keywo
 
 To see all the raw fields, search the mappings for `raw`.
 
-Setting a custom field to searchable means that the value of the field is indexed when the entity is modified or when a reindex is triggered. Only `java.lang.String` fields can be made searchable.
+Setting a custom field to _searchable_ means that the value of the field is indexed when the entity is modified or when a reindex is triggered. Only `java.lang.String` fields can be made searchable.
 
 ## Working with Nested Fields
 
 [Object definition fields](../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md), [web content structure fields](../../content-authoring-and-management/web-content/web-content-structures/configuring-structure-fields.md), [document type fields](../../content-authoring-and-management/documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md), and [form fields](../../process-automation/forms/creating-and-managing-forms/creating-forms.md) are indexed as nested fields.
 
-You can query these nested fields in search blueprints, use them to sort results on the search page, and create custom filters or facets for these fields. 
+You can query these nested fields in search blueprints. Use them to sort results on the search page and create custom filters or facets for these fields. 
 
 ### Nested Fields in the Search Widgets
 
 You can refer to nested fields using dot notation in the custom facet, custom filter, and sort widgets. Enter these elements separated by periods:
 
-* Parent field
+- Parent field
 
-* Name of the field that holds the field name
+- Name of the field that holds the field name
 
-* Name of the field that holds the value
+- Name of the field that holds the value
 
 This example references an object field:
 
@@ -273,7 +272,7 @@ To use one of these fields in the search widgets, enter the `ddmFieldName` value
 
 ### Nested Fields in Blueprints
 
-To work with nested fields in [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md), you cannot use the dot notation described above. When constructing your query element for use with a blueprint, use the [nested query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-nested-query.html).
+To work with nested fields in [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md), you cannot use the dot notation described above. When constructing your query element for use with a blueprint, use a [nested query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-nested-query.html).
 
 Here's the Elasticsearch query syntax for a [Paste Any Elasticsearch Query](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md#paste-any-elasticsearch-query) element that searches in a web content field:
 
@@ -313,6 +312,6 @@ To change the behavior, use the _Enable Legacy Dynamic Data Mapping Index Fields
 
 ## Related Topics
 
-* [Searching for Content](../getting-started/searching-for-content.md)
-* [Search Administration](../search-administration-and-tuning/search-administration.md)
-* [Using the Custom Filter Widget](./search-results/using-the-custom-filter-widget.md)
+- [Searching for Content](../getting-started/searching-for-content.md)
+- [Search Administration](../search-administration-and-tuning/search-administration.md)
+- [Using the Custom Filter Widget](./search-results/using-the-custom-filter-widget.md)

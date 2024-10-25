@@ -90,4 +90,4 @@ When you've set all your options and tested your connection, click *Save*.
 !!! note
     If a user changes a value like a password in Liferay, that change is passed to the LDAP server, provided Liferay has enough schema access to make the change.
 
-Now you know how to connect an LDAP server to Liferay and how to configure user import behavior, export behavior, and other LDAP settings. See [Configuring LDAP](./ldap-configuration-reference.md) for more information on other configurable options.
+Now you know how to connect an LDAP server to Liferay and how to configure user import behavior, export behavior, and other LDAP settings. See [LDAP Configuration Reference](./ldap-configuration-reference.md) for more information on other configurable options.

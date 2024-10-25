@@ -18,7 +18,7 @@ To access LDAP configuration settings at the Instance level,
 
 1. Navigate to *Control Panel &rarr; Configuration* &rarr; *Instance Settings*
 
-    ![LDAP configurations are available at the instance level and at the System level.](./connecting-to-an-ldap-directory/images/01.png)
+   ![LDAP configurations are available at the instance level and at the System level.](./connecting-to-an-ldap-directory/images/01.png)
 
 1. Click *LDAP* &rarr; and click *Servers*
 1. Click the *Add* button to add an LDAP server connection.
@@ -87,20 +87,23 @@ For example, if your LDAP directory is Microsoft Active Directory on Windows Ser
 
 1. Import the certificate into the *cacerts keystore* like this:
 
-    ```bash
-    keytool -import -trustcacerts -keystore /some/path/java-8-jdk/jre/lib/security/cacerts -storepass changeit -noprompt -alias MyRootCA -file /some/path/MyRootCA.cer
-    ```
+   ```bash
+   keytool -import -trustcacerts -keystore /some/path/java-8-jdk/jre/lib/security/cacerts -storepass changeit -noprompt -alias MyRootCA -file /some/path/MyRootCA.cer
+   ```
 
-    The `keytool` utility ships as part of the Java SDK.
+   The `keytool` utility ships as part of the Java SDK.
 
 1. Go back to the LDAP page in the Control Panel.
 
 1. Modify the LDAP URL in the Base DN field to the secure version by changing the protocol to `ldaps` and the port to `636` like this:
 
-    ```
-    ldaps://myLdapServerHostname:636
-    ```
+   ```
+   ldaps://myLdapServerHostname:636
+   ```
 
 Save the changes. Communication to LDAP is now encrypted.
 
 To tune or configure how Liferay DXP matches users in LDAP for syncing, please see [configuring import and export](./configuring-user-import-and-export.md).
+
+!!! note
+    Though Liferay is still enhancing it's [SCIM](../../installation-and-upgrades/securing-liferay/system-for-cross-domain-identity-management-scim.md) offering, it is recommended to use SCIM instead of LDAP in Liferay SaaS.

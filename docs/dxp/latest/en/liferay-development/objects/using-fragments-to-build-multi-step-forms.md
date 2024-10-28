@@ -15,7 +15,7 @@ taxonomy-category-names:
 !!! important
     Currently, this feature is behind a release feature flag (LPD-10727). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
-You can [use fragments to create a sigle-step form](./using-fragments-to-build-forms.md) or create a multi-step form by [using the Stepper fragment](#using-the-stepper-fragment) or by [changing the form's Form Type configuration](#changing-the-form-type-configuration).
+You can [use fragments to create a single-step form](./using-fragments-to-build-forms.md) or create a multi-step form with the [Stepper fragment](#using-the-stepper-fragment) or by [changing the form's Form Type configuration](#changing-the-form-type-configuration).
 
 ## Adding a Form Fragment
 
@@ -28,9 +28,7 @@ You can [use fragments to create a sigle-step form](./using-fragments-to-build-f
 
 ## Using the Stepper Fragment
 
-The Stepper fragment transforms a single-step form into a multi-step form, making navigation between steps easier and clearer. Once set, you can rename the step titles, map them to fields, click on step indicators to navigate between steps, add form elements to each step, and configure how the steps look.
-
-To add a Stepper fragment to the Form Container fragment in the page editor,
+The Stepper fragment transforms a single-step form into a multi-step form, making navigation between steps easier and clearer. Once set, you can rename the step titles, map them to fields, click on step indicators to navigate between steps, add form elements to each step, and configure how the steps look. You can use the page editor to add a Stepper fragment to a Form Container fragment: 
 
 1. Locate the *Stepper* fragment in the Fragments and Widgets sidebar.
 
@@ -71,17 +69,19 @@ If you're not using a Stepper fragment (2), add form fragments to the drag-and-d
 
 Next, map the form fragment to an object field by selecting the fragment and navigating to the *General* tab in the right panel. Under Field, select the object field to map it to the fragment.
 
-   ![Map the form fragment to an object field.](./using-fragments-to-build-multi-step-forms/images/04.png)
+![Map the form fragment to an object field.](./using-fragments-to-build-multi-step-forms/images/04.png)
 
-For multi-step forms, buttons must be configured based on their position in the form. To change the button type,
+For multi-step forms, buttons must be configured based on their position in the form: 
 
 1. Select an existing *form button* or add one to the step's drag-and-drop zone.
 
 1. Navigate to the *General* tab in the right panel. Change the button *Type* based on the step:
 
-   The first step must have a Next button.
-   Steps between the first and last must have both Next and Previous buttons.
-   The last step must have both Previous and Submit buttons.
+   - The first step must have a Next button.
+   
+   - Steps between the first and last must have both Next and Previous buttons.
+   
+   - The last step must have both Previous and Submit buttons.
 
    ![Change the button type depending on the step.](./using-fragments-to-build-multi-step-forms/images/06.png)
 
@@ -117,10 +117,9 @@ To configure the Stepper fragment,
 
 1. Under Stepper options, toggle the *Show Bullets Numbers* option to display/hide the numbers in the step indicators.
 
-1. Toggle the *Show Steps Titles* option to display/hide the titles.
+1. Toggle the *Show Step Titles* option to display/hide the titles.
 
    ![You can display/hide the numbers and titles in the step indicators in the Stepper fragment.](./using-fragments-to-build-multi-step-forms/images/09.png)
-
 
 ## Related Topics
 

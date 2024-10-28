@@ -18,11 +18,11 @@ You can also create forms with multiple steps by adding form fragments to differ
 
 To build forms in content pages,
 
-* Place form fragments only in a mapped form container.
-* Map every form fragment in the form to an object field to prevent data loss.
-* Include fragments in the form container for all mandatory object fields.
-* Make mandatory form fragments visible.
-* Include a visible submit button in the form container.
+- Place form fragments only in a mapped form container.
+- Map every form fragment in the form to an object field to prevent data loss.
+- Include fragments in the form container for all mandatory object fields.
+- Make mandatory form fragments visible.
+- Include a visible submit button in the form container.
 
 !!! note
     When mapping an object to a Form Container fragment, a submit button is generated. You can map its text using [mapping settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings).
@@ -132,8 +132,8 @@ To manage object relationships within form fragments,
 
 ## Related Topics
 
-* [Using Fragments to Build Multi-Step Forms](./using-fragments-to-build-multi-step-forms.md)
-* [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components)
-* [Configuring Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)
-* [Form Fragment Options](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options)
-* [Creating Form Fragments](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md)
+- [Using Fragments to Build Multi-Step Forms](./using-fragments-to-build-multi-step-forms.md)
+- [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components)
+- [Configuring Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)
+- [Form Fragment Options](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options)
+- [Creating Form Fragments](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md)

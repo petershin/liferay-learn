@@ -106,4 +106,4 @@ Save the changes. Communication to LDAP is now encrypted.
 To tune or configure how Liferay DXP matches users in LDAP for syncing, please see [configuring import and export](./configuring-user-import-and-export.md).
 
 !!! note
-    Though Liferay is still enhancing it's [SCIM](../../installation-and-upgrades/securing-liferay/system-for-cross-domain-identity-management-scim.md) offering, it is recommended to use SCIM instead of LDAP in Liferay SaaS.
+    Though Liferay is still enhancing its [SCIM](../../installation-and-upgrades/securing-liferay/system-for-cross-domain-identity-management-scim.md) offering, you should use SCIM instead of LDAP in Liferay SaaS.

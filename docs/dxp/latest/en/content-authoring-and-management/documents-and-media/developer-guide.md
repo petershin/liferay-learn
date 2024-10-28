@@ -1,6 +1,7 @@
 ---
 toc:
   - ./developer-guide/document-api-basics.md
+  - ./developer-guide/document-shortcut-api-basics.md
   - ./developer-guide/adaptive-media-modules-reference.md
   - ./developer-guide/creating-video-shortcut-providers.md
 taxonomy-category-names:

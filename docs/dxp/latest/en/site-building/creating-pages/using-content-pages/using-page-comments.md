@@ -10,7 +10,7 @@ uuid: 919ea794-c5a8-486d-b1df-f91d13bc8e1a
 
 # Using Page Comments
 
-When building content pages, you and your team can collaborate using Liferay's page comments feature. Comments are enabled out of the box in Liferay DXP 7.3+.
+When building content pages, you and your team can collaborate using Liferay's page comments feature. Comments are enabled out-of-the-box in Liferay DXP 7.3+.
 
 ![Use page comments to collaborate with your teammates.](./using-page-comments/images/01.png)
 
@@ -20,7 +20,7 @@ When building content pages, you and your team can collaborate using Liferay's p
 
 1. Open the *Comments* panel (![Comments Icon](../../../images/icon-comments-w.png)) from the sidebar, and select fragment or widget where you'd like to add a comment.
 
-   Alternatively, you can select the desired page element and click *Comments*. This opens the Comments panel.
+   Alternatively, you can select the desired page element and click *Comments*. 
 
    ![Click the Comments icon for the page element.](./using-page-comments/images/02.png)
 
@@ -29,7 +29,7 @@ When building content pages, you and your team can collaborate using Liferay's p
 
 1. Enter your comment in the side panel and click *Comment*.
 
-Once added, you can edit or delete the comment via its *Actions* menu(![Actions menu](../../../images/icon-actions.png)). Users can also reply to comments.
+Once added, you can edit or delete the comment via its Actions menu(![Actions menu](../../../images/icon-actions.png)). Users can also reply to comments.
 
 ![Edit, delete, or reply to comments.](./using-page-comments/images/03.png)
 

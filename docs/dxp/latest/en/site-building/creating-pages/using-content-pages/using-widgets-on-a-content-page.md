@@ -12,7 +12,7 @@ uuid: d09834c8-8e44-4e27-8ee6-99e5edf91350
 
 <!--TASK: Reconsider-->
 
-The widgets section functions just like the [add menu on a widget page](../using-widget-pages/adding-widgets-to-a-page.md). You can access the full list of available widgets and add them to the page. The main difference is that only the main configuration options for widgets are available on content pages.
+The widgets section functions like the [add menu on a widget page](../using-widget-pages/adding-widgets-to-a-page.md). You can access the full list of available widgets and add them to the page. The main difference is that only the main configuration options for widgets appear on content pages.
 
 !!! note
     While widgets are rendered according to [render-weight](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/liferay-portlet-app_7_4_0.dtd.html#render-weight) on widget pages, this is not true for content pages. Instead, they are rendered in the order they appear on the page (i.e. left to right, top to bottom).

@@ -12,7 +12,7 @@ uuid: 7546c519-0350-4811-9577-635d4d1cddec
 
 {bdg-secondary}`For Liferay 7.4 U37+/GA37+`
 
-Using the content page editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in a content page. To access it, go to a content page and click *Edit* (![Edit icon](../../../images/icon-edit.png)). This opens the editing toolbar and sidebar, which provide tools and components for building content pages.
+Using the content page editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in a content page. Go to a content page and click *Edit* (![Edit icon](../../../images/icon-edit.png)). This opens the editing toolbar and sidebar, which provide tools and components for building content pages.
 
 - [Editing Toolbar](#editing-toolbar)
 
@@ -32,20 +32,20 @@ Using the Experience drop-down menu, you can create customized versions of the c
 
 ### Translations
 
-Click the language flag to access the translation drop-down menu. Here, you can view the status of active languages for a page, as well as switch between languages to view and edit translations directly. See [Configuring Site Languages](../../site-settings/site-localization.md) for more information.
+Click the language flag to access the translation drop-down menu. Here, you can view the status of active languages for a page and switch between languages to view and edit translations directly. See [Configuring Site Languages](../../site-settings/site-localization.md) for more information.
 
 If you use [experiences](../../personalizing-site-experience/experience-personalization/content-page-personalization.md), you can also manage translations for each experience. See [Managing Experience Localization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md#managing-experience-localization) for more information.
 
 ### Device Display
 
-Click the device icons to access Liferay's responsive layout editor. Here you can configure your page for different screen sizes: desktop (![Desktop](../../../images/icon-display.png)), tablet (![Tablet](../../../images/icon-tablet-portrait.png)), landscape phone (![Landscape Phone](../../../images/icon-mobile-landscape.png)), and portrait phone (![Portrait Phone](../../../images/icon-mobile-portrait.png)). You can manually resize the screen using the resize handlebar. See [Building Responsive Layouts](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) for more information.
+Click the device icons to access Liferay's responsive layout editor. Here you can configure your page for different screen sizes: desktop (![Desktop](../../../images/icon-display.png)), tablet (![Tablet](../../../images/icon-tablet-portrait.png)), landscape phone (![Landscape Phone](../../../images/icon-mobile-landscape.png)), and portrait phone (![Portrait Phone](../../../images/icon-mobile-portrait.png)). You can resize the screen using the resize handlebar manually. See [Building Responsive Layouts](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) for more information.
 
 !!! note
-    The [Fragments and Widgets](#fragments-and-widgets) and [Page Design Options](#page-design-options) panels are only available in the desktop layout.
+    The [Fragments and Widgets](#fragments-and-widgets) and [Page Design Options](#page-design-options) panels only appear in the desktop layout.
 
 ### Edit History
 
-Click *History* (![History Button](../../../images/icon-time.png)) to see changes made in your current session. You can restore or revert changes from here, or use the Undo and Redo buttons.
+Click *History* (![History Button](../../../images/icon-time.png)) to see changes made in your current session. You can restore or revert changes from here or use the Undo and Redo buttons.
 
 ![Revert your changes using the Undo, Redo, and History buttons.](./content-page-editor-ui-reference/images/03.png)
 
@@ -106,10 +106,9 @@ In the Fragments and Widgets panel (![Fragments and Widgets icon](../../../image
 Use the Browser panel (![Browser](../../../images/icon-hierarchy.png)) to view, organize, and manage all elements in the page. Elements appear in a hierarchy. In Liferay 7.4 U37/GA37+, you can drag and drop elements in the Browser panel to reorganize them or double click elements to rename them. Selecting an element opens its settings in the configuration side panel. Select a fragment's sub-elements to access additional settings. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
 !!! note
-    Header and footer elements are not displayed in the Browser panel. These can only be edited in [master page templates](../defining-headers-and-footers/
-    master-page-templates.md).
+    Header and footer elements are not displayed in the Browser panel. These can only be edited in [master page templates](../defining-headers-and-footers/master-page-templates.md).
 
-{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` In Liferay 2024.Q4+, you can select multiple elements by holding CTRL while clicking each element, or by holding SHIFT and clicking to select a range of elements. You can also copy, cut, and paste elements by clicking *Options* (![Options menu](../../../images/icon-options.png)) and choosing the desired option.
+{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` In Liferay 2024.Q4+, you can select multiple elements by holding CTRL while clicking each element, or by holding SHIFT and clicking to select a range of elements. You can also cut, copy, and paste elements by clicking *Options* (![Options menu](../../../images/icon-options.png)) and choosing the desired option.
 
 !!! note
     Press *ESC* to clear all selections or click outside the Browser side panel area.
@@ -157,25 +156,6 @@ Use the Comments panel (![Comments](../../../images/icon-message.png)) to leave 
 If [Mentions](../../../collaboration-and-social/notifications-and-requests/user-guide/mentioning-users.md) are enabled, you can tag users with page update permissions as part of your comment.
 
 To add a comment, open the *Comments* panel and select the desired page element.
-
-<!-- ### Browser
-
-{bdg-secondary}`For Liferay 7.3`
-
-In the Selection panel (![Selection](../../../images/icon-pages-tree.png)), you can view a hierarchical outline of all page elements, as well as select, configure, or remove those elements. Similarly, clicking any element on the page while in the design mode opens the Selection panel and highlights the selected page element in the hierarchy. When an element is selected, you can access its general, styles, and link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
-
-![Selection shows you a hierarchy of your page and contents.](./content-page-editor-ui-reference/images/08.png)
-
-!!! note
-    A page's header and footer are not listed in the Selection panel hierarchy, because you can only modify them in the [master page template](../defining-headers-and-footers/master-page-templates.md).
-
-### Contents
-
-{bdg-secondary}`For Liferay 7.3`
-
-In the Contents panel (![Contents](../../../images/icon-list-ul.png)), you can view, edit, and manage all web content on the page. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information. -->
-
-<!-- I'll be commenting those sections for now as they refer to 7.3 and there's not enough information (I think) to create a separate article. Do I keep it as it is, delete it, or create a new article with just this piece of information? Eric. -->
 
 ## Related Topics
 

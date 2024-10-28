@@ -10,9 +10,9 @@ uuid: 89efcf46-c68b-42f1-b33e-f41ba46002f2
 
 # Creating Web Content Articles
 
-When you have a lot of content to publish on your site, Liferay's content management system helps you with practical and essential ways to manage it. Web content articles can be displayed through [widgets](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), [fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), or [display pages](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md). See [Previewing Web Content Articles](./previewing-web-content-articles.md) to learn more.
+When you have a lot of content to publish on your site, Liferay's content management system helps you with practical and essential ways to manage it. Web content articles can be published through [widgets](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), [fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), or [display pages](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md). See [Previewing Web Content Articles](./previewing-web-content-articles.md) to learn more.
 
-Each web content article is built upon a structure that defines its available fields. You can use the out-of-the-box Basic Web Content structure, or create a custom structure tailored to your specific needs. See [Web Content Structures](../web-content-structures.md) for more information on creating and managing structures.
+Each web content article is built upon a structure that defines its available fields. You can use the out-of-the-box Basic Web Content structure or create a custom structure tailored to your specific needs. See [Web Content Structures](../web-content-structures.md) for more information on creating and managing structures.
 
 ## Creating a Basic Web Content Article
 
@@ -20,31 +20,25 @@ Each web content article is built upon a structure that defines its available fi
 
 1. Under the Web Content tab, click *New* and select *Basic Web Content*.
 
-1. Enter a *title* (required) for the new article and add the desired *content* to their respective fields.
+1. Enter a *Title* (required) for the new article and add the desired *Content* to their respective fields.
 
-   ![The edit screen for a new web content article.](./creating-web-content-articles/images/01.png)
+   ![Basic Web Content has only two fields.](./creating-web-content-articles/images/01.png)
 
 1. Click *Publish*.
 
-Your new article is created/submitted for [workflow](../../../process-automation/workflow.md)! You can now display your web content article on a page using the [Web Content Display widget](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), for example.
+Your new article is created! You can now publish your web content article on a page using the [Web Content Display widget](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), for example.
 
 !!! note
     The user who creates the first version of a web content article becomes its owner. If another user edits the content (which creates a new version), ownership isn't transferred.
 
-## Publishing With Permissions and Scheduling Publications
+While creating/editing a web content article, you can view and set the web content article's visibility, view and set its permissions, and schedule its publication for a future date before publishing/submitting it for workflow.
 
-<!-- Adjust this information once this feature is released. I can merge the sections into one or I can use something like before and after 2024.Q2+. - Eric -->
+## Setting the Web Content Article's Visibility and Permissions
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 !!! important
-    This feature is currently behind a release feature flag (LPD-15596). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
-While creating/editing a web content article, you can view and set the web content article's visibility, view and set its permissions, and schedule its publication for a future date before publishing/submitting it for workflow.
-
-### Setting the Web Content Article's Visibility and Permissions
-
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+    Currently, this feature is behind a release feature flag (LPD-15596). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 1. Follow the steps to [create a web content article](#creating-a-basic-web-content-article).
 
@@ -87,7 +81,12 @@ Once you publish your web content article, it becomes accessible to any user wit
 
 ![Use the Not Visible to Guest Users icon to identify which articles have restrictions to their visibility.](./creating-web-content-articles/images/05.png)
 
-### Scheduling A Web Content Article's Publication for a Future Date
+## Scheduling A Web Content Article's Publication for a Future Date
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+
+!!! important
+    Currently, this feature is behind a release feature flag (LPD-15596). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 1. Follow the steps to [create a web content article](#creating-a-basic-web-content-article).
 

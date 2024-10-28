@@ -22,7 +22,7 @@ uuid: 8e7e004e-c872-4b7d-af1d-0d2eec5210b1
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
 
-You can use *Publications* to develop, track, and publish changes across your DXP instance. It works by creating a database column to determine which version of your content is displayed on your live sites. With it, users create separate publications to group their changes into publishable blocks.
+You can use *Publications* to develop, track, and publish changes across your DXP instance. It works by creating a database column to determine which version of your content appears on your live sites. With it, users create separate publications to group their changes into publishable blocks.
 
 ![Group changes into publishable blocks.](./publications/images/01.png)
 
@@ -34,25 +34,28 @@ Each publication is instance-scoped and can be accessed anywhere. This means you
 
 Additionally, Publications provides a high level of process transparency, so you can more easily identify and resolve conflicts during publishing. It also maintains a complete publishing history that you can use to review and revert changes to your instance.
 
-{bdg-secondary}`Liferay 7.4 U86+/GA86+` Publications support the following pages and content types:
+Publications support the following pages and content types:
 
-| Feature                      | Publications |
-|:-----------------------------|:-------------|
-| Accounts (Contact Info Only) | &#10004;     |
-| Blogs                        | &#10004;     |
-| Commerce Entities            | &#10008;     |
-| Content Pages                | &#10004;     |
-| Custom Objects               | &#10008;     |
-| Documents and Media          | &#10004;     |
-| Forms                        | &#10004;     |
-| Knowledge Base               | &#10004;     |
-| Message Boards               | &#10004;     |
-| Organizations                | &#10004;     |
-| Page Templates               | &#10004;     |
-| Site Templates               | &#10004;     |
-| Users (Contact Info Only)    | &#10004;     |
-| Web Content                  | &#10004;     |
-| Widget Pages                 | &#10004;     |
-| Wiki                         | &#10004;     |
+| Feature                      | {bdg-secondary}`Liferay DXP 2024.Q2+` | {bdg-secondary}`Liferay DXP 2024.Q4+` |
+|:-----------------------------|:-------------------------------------:|:-------------------------------------:|
+| Accounts (Contact Info Only) |                   ✅                  |                   ❌                  |
+| Blogs                        |                   ✅                  |                   ✅                  |
+| Commerce Entities            |                   ❌                  |                   ❌                  |
+| Content Pages                |                   ✅                  |                   ✅                  |
+| Custom Objects               |                   ❌                  |                   ❌                  |
+| Documents and Media          |                   ✅                  |                   ✅                  |
+| Forms                        |                   ✅                  |                   ✅                  |
+| Knowledge Base               |                   ✅                  |                   ✅                  |
+| Message Boards               |                   ✅                  |                   ✅                  |
+| Organizations                |                   ✅                  |                   ❌                  |
+| Page Templates               |                   ✅                  |                   ✅                  |
+| Site Templates               |                   ✅                  |                   ✅                  |
+| Users (Contact Info Only)    |                   ✅                  |                   ❌                  |
+| Web Content                  |                   ✅                  |                   ✅                  |
+| Widget Pages                 |                   ✅                  |                   ✅                  |
+| Wiki                         |                   ✅                  |                   ✅                  |
+
+!!! note
+    {bdg-secondary}`Liferay DXP 2024.Q4+` Only content-related entities can be modified within Publications. Attempting to edit non-content entities, such as Users, Organizations, and Accounts, displays a "This application saves changes directly to production" message.
 
 To get started, see [Enabling Publications](./publications/enabling-publications.md).

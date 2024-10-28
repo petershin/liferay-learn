@@ -39,6 +39,16 @@ While working on a publication, changes made to supported Liferay components are
 !!! important
     When editing different sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
 
+{bdg-secondary}`Liferay DXP 2024.Q4` If you change the site context while using a publication, a warning appears to prevent unintentional changes.
+
+You can choose to *Stay in Current Publication*, *Select a Publication*, or *Work on Production*. Additionally, you can check the *Do not show this message again* option and select a duration from the list: *1 hour*, *4 hours*, *24 hours*, or *Forever*.
+
+To reactivate this warning,
+
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Publications*.
+
+1. Click *Options* (![Options icon](../../../images/icon-options.png)) at the top right corner, check the *Hide warning when changing contexts* options and click *Save*.
+
 ### Navigating to Unsupported Applications
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`

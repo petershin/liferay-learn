@@ -39,15 +39,20 @@ While working on a publication, changes made to supported Liferay components are
 !!! important
     When editing different sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
 
-{bdg-secondary}`Liferay DXP 2024.Q4` If you change the site context while using a publication, a warning appears to prevent unintentional changes.
+{bdg-secondary}`Liferay DXP 2024.Q4+`
+{bdg-secondary}`Release Feature Flag (LPD-20131)`
 
-You can choose to *Stay in Current Publication*, *Select a Publication*, or *Work on Production*. Additionally, you can check the *Do not show this message again* option and select a duration from the list: *1 hour*, *4 hours*, *24 hours*, or *Forever*.
+When you change the site context while using a publication, a warning appears to prevent unintentional changes. This safeguard enhances user safety when navigating and interacting within the Portal with Publications enabled.
 
-To reactivate this warning,
+Upon context change, you can choose to *Stay in Current Publication*, *Select a Publication*, or *Work on Production*. Additionally, you can check the *Do not show this message again* option and select a duration from the list: *1 hour*, *4 hours*, *24 hours*, or *Forever*.
+
+To reactivate the warning,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Publications*.
 
-1. Click *Options* (![Options icon](../../../images/icon-options.png)) at the top right corner, check the *Hide warning when changing contexts* options and click *Save*.
+1. Click *Options* (![Options icon](../../../images/icon-options.png)) at the top right corner, uncheck the *Hide warning when changing contexts* options, and click *Save*.
+
+![A warning appears when you change the site context within a publication to prevent unintentional changes. You can deactivate or reactivate this warning as needed.](./making-and-publishing-changes/images/02.png)
 
 ### Navigating to Unsupported Applications
 
@@ -57,11 +62,9 @@ If you navigate to an application that does not support Publications, Liferay in
 
 For some applications, you can directly edit production while in a publication.
 
-![Directly edit production while in a publication.](./making-and-publishing-changes/images/02.png)
-
 For other applications, you must switch to production before you can make changes.
 
-![Switch to production before making changes in the application.](./making-and-publishing-changes/images/03.png)
+![Directly edit production while in a publication or switch to production before making changes in the application.](./making-and-publishing-changes/images/03.png)
 
 ## Making Changes in Parallel Publications
 
@@ -87,11 +90,18 @@ When reviewing changes, all tracked changes appear in a list that you can order 
 
 By default, Publications only displays some changes, but you can view all system changes as well. Click *Actions* (![Action Button](../../../images/icon-actions.png)) for the publication and select *Show System Changes*. This displays all changes included in the publication.
 
-![Select Show System Changes to view all changes included in the publication.](./making-and-publishing-changes/images/05.png)
-
 During review, you can select a change to view more details and access additional actions (e.g., edit, discard). Available actions depend on the entity's type.
 
-![Select a change to view more details and access additional actions.](./making-and-publishing-changes/images/06.png)
+![Select a change to view more details and access additional actions.](./making-and-publishing-changes/images/05.png)
+
+{bdg-secondary}`Liferay DXP 2024.Q4+`
+{bdg-secondary}`Release Feature Flag (LPD-20131)`
+
+The Publication Overview provides a summary of changes at the top of the page, organized by system or site instances. Each component shows the number of modified entities for easy tracking across instances and components.
+
+Click on any entity to filter the changes specific to that entity and instance.
+
+![The Publication Overview summarizes changes by instance, with modified entities displayed for easy tracking.](./making-and-publishing-changes/images/06.png)
 
 ### Previewing Changes to Pages
 
@@ -99,17 +109,61 @@ During review, you can select a change to view more details and access additiona
 
 If a publication includes edits to a page, you can preview those changes alongside the original version of the page.
 
-![View page versions in the Display tab.](./making-and-publishing-changes/images/07.png)
-
 When reviewing changes to a page with alternate [user experiences](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md), you can use the Experiences drop-down menu to switch between them.
-
-![Select the desired user experience to review.](./making-and-publishing-changes/images/08.png)
 
 Once selected, you can view each page version individually or select Split View to review them side by side.
 
-![Review page versions individually or select Split View to review them side by side.](./making-and-publishing-changes/images/09.png)
+![Select the desired user experience to review and review page versions individually or select Split View to review them side by side.](./making-and-publishing-changes/images/10.png)
 
-### Moving Changes Between Publications
+### Accessing and Analyzing Change Data
+
+{bdg-secondary}`Liferay DXP 2024.Q4+`
+{bdg-secondary}`Release Feature Flag (LPD-20131)`
+
+Publication administrators can access detailed information about changes in the publication through the Data tab, which includes the following fields:
+
+| Field                       | Description                                               |
+|-----------------------------|-----------------------------------------------------------|
+| `Entity Type`               | Type of content modified (e.g., blog entry, web content). |
+| `Title`                     | Title of the modified entity for reference.               |
+| `Author`                    | Name of the user who made the changes.                    |
+| `Modification Date`         | Date of the last changes made.                            |
+| `Status`                    | Current status of the entity (e.g., approved, pending).   |
+| `Views`                     | Number of views the entity has received.                  |
+| `Status Date`               | Date and time of the last status update.                  |
+| `Small Image ID`            | ID for any small image associated with the entity.        |
+| `Small Image`               | Indicates if a small image is associated (true/false).    |
+| `Trackbacks`                | Any trackbacks linked to the entry.                       |
+| `Cover Image URL`           | URL for the cover image (if available).                   |
+| `Group ID`                  | ID of the group associated with the content.              |
+| `Description`               | Brief description of the content.                         |
+| `UUID`                      | Unique identifier for the entry.                          |
+| `External Reference Code`   | Code for external reference to the entry.                 |
+| `Entry ID`                  | Unique identifier for the content entry.                  |
+| `Last Publish Date`         | Date when the content was last published.                 |
+| `CT Collection ID`          | Collection ID linked to the content type.                 |
+| `Create Date`               | Date and time when the content was created.               |
+| `Status by User ID`         | ID of the user who set the current status.                |
+| `Allow Trackbacks`          | Indicates if trackbacks are allowed (true/false).         |
+| `Allow Pingbacks`           | Indicates if pingbacks are allowed (true/false).          |
+| `Small Image URL`           | URL for any small image (if available).                   |
+| `URL Title`                 | User-friendly URL title for the content.                  |
+| `Small Image File Entry ID` | File entry ID for the small image (if applicable).        |
+| `User Name`                 | Name of the user who created or modified the content.     |
+| `User ID`                   | Unique ID for the user linked to the content.             |
+| `Cover Image File Entry ID` | File entry ID for the cover image (if applicable).        |
+| `Company ID`                | ID of the company associated with the content.            |
+| `Cover Image Caption`       | Caption for the cover image (if applicable).              |
+| `Subtitle`                  | Subtitle for the content (if applicable).                 |
+| `Display Date`              | Date and time when the content is set to display.         |
+| `Modified Date`             | Date and time of the last content modification.           |
+| `Status by User Name`       | Name of the user who set the current status.              |
+| `MVCC Version`              | Version number for the content entry.                     |
+
+!!! important
+    Without the administrator role, users can only see the change's title, author, create date, display date, status, and views.
+
+## Moving Changes Between Publications
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
@@ -117,7 +171,7 @@ While reviewing changes, you can move them to different publications. This provi
 
 1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired change and select *Move Changes*.
 
-   ![Click the Actions button for the desired change and select Move changes.](./making-and-publishing-changes/images/10.png)
+   ![Click the Actions button for the desired change and select Move changes.](./making-and-publishing-changes/images/11.png)
 
 1. Select the desired *publication*.
 
@@ -141,8 +195,6 @@ Follow these steps to publish changes immediately:
 
 1. Click *Publish*.
 
-   ![Navigate to the desired publication and click on Publish.](./making-and-publishing-changes/images/11.png)
-
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
    ![Resolve all conflicts before publishing.](./making-and-publishing-changes/images/12.png)
@@ -161,16 +213,12 @@ Follow these steps to schedule publishing for a later time.
 
 1. Click *Schedule*.
 
-   ![Navigate to the desired publication and click on Schedule.](./making-and-publishing-changes/images/13.png)
-
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
    !!! important
        At the time of the publication, DXP performs a second conflict detection to ensure there are no new conflicting changes. The publish fails if DXP detects new conflicts that cannot be automatically resolved. If the conflicts can be resolved automatically, DXP proceeds with publishing.
 
 1. Enter a date and time to determine when the changes are published to production.
-
-   ![Set a date and time to publish your changes.](./making-and-publishing-changes/images/14.png)
 
 1. Click *Schedule* to complete the process.
 
@@ -188,7 +236,7 @@ When reviewing publication changes, file and page previews can accumulate in the
 
 1. Select *Remove DL Preview Change Tracking Store Content Data*.
 
-   ![Check the change tracking options.](./making-and-publishing-changes/images/15.png)
+   ![Check the change tracking options.](./making-and-publishing-changes/images/13.png)
 
 1. Click *Save*.
 

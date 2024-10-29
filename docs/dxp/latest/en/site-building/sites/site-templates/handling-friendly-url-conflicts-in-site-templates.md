@@ -22,27 +22,27 @@ To prevent these issues, Liferay displays warnings when a duplicate friendly URL
 
 ## Warning Messages
 
-Warning messages appear when you attempt to create a page in a site template that shares the same friendly URL as an existing page in a child site, or when creating a page in a child site that shares the same friendly URL as an existing page in the associated site template.
+Warning messages appear when in a site template you attempt to create a page that shares the same friendly URL as an existing page in a child site, or when in a child site you create a page with the same friendly URL as an existing page in the associated site template.
 
-- When you create a page with a conflicting friendly URL, a modal window appears, alerting you to the conflict. You can choose to ignore the warning and save the page, but the conflict persists.
+- When you create a page with a conflicting friendly URL, a conflict alert appears. You can choose to ignore the warning and save the page, but the conflict persists.
 
-   ![If you create a page with the same friendly URL as an existing page, a warning message pops up.](./handling-friendly-url-conflicts-in-site-templates/images/01.png)
+  ![If you create a page with the same friendly URL as an existing page, a warning message pops up.](./handling-friendly-url-conflicts-in-site-templates/images/01.png)
 
 - If you ignore the warning, a warning icon appears next to the page in the Pages application and in the site's Page Tree.
 
-   ![A warning icon appears next to the page in the Pages application and in the site's Page Tree.](./handling-friendly-url-conflicts-in-site-templates/images/02.png)
+  ![A warning icon appears next to the page in the Pages application and in the site's Page Tree.](./handling-friendly-url-conflicts-in-site-templates/images/02.png)
 
 - You can also see a warning in the page configuration where you can change the page's friendly URL. The conflict message appears in both the site template and in the child site.
 
-   If you have the appropriate permissions, you can view details about the conflicting page by accessing its configuration page; otherwise, only the page and site names are visible.
+  If you have the appropriate permissions, you can view details about the conflicting page by accessing its configuration page; otherwise, only the page and site names are visible.
 
-   ![You can also see a warning in the page configuration.](./handling-friendly-url-conflicts-in-site-templates/images/03.png)
+  ![You can also see a warning in the page configuration.](./handling-friendly-url-conflicts-in-site-templates/images/03.png)
 
-- Additionally, if you change a friendly URL to one that already exists, a warning toast appears at the bottom of the screen, notifying you that the page was saved with a conflicting friendly URL.
+- Additionally, if you change a friendly URL to one that already exists, a warning appears at the bottom of the screen, notifying you that the page was saved with a conflicting friendly URL.
 
-   ![If you change a friendly URL to one that already exists, a warning toast appears at the bottom of the screen.](./handling-friendly-url-conflicts-in-site-templates/images/04.png)
+  ![If you change a friendly URL to one that already exists, a warning toast appears at the bottom of the screen.](./handling-friendly-url-conflicts-in-site-templates/images/04.png)
 
-Liferay doesn't resolve these conflicts automatically. You must manually change the friendly URL to eliminate the warnings.
+Liferay doesn't resolve these conflicts automatically as it does with pages in the same site. You must manually change the friendly URL to eliminate the warnings.
 
 ## Related Topics
 

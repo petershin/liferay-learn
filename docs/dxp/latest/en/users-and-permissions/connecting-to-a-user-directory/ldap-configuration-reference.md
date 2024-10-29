@@ -47,29 +47,33 @@ These settings cover the connection to LDAP.
 
 ![Adding a new LDAP server requires only a few options to be defined.](./ldap-configuration-reference/images/02.png)
 
-Once you've finished configuring LDAP, click the *Save* button.
+Once you've finished configuring LDAP, click *Save*.
 
 ## Connection
 
-Use the *Connection* entry to manage error properties like *Error password age keywords* where you can set a list of phrases from error messages which can possibly be returned by the LDAP server. When a user binds to LDAP, the server returns *controls* with its response of success or failure. These controls contain a message describing the error or the information that is returned with the response. Though the controls are the same across LDAP servers, the messages can be different. The properties described here contain snippets of words from those messages and work with Red Hat's Fedora Directory Server. If you are not using that server, the word snippets may not work with your LDAP server. If they don't, you can replace the values of these properties with phrases from your server's error messages. This enables Liferay to recognize them.
+Use the Connection entry to manage error properties like *Error password age keywords* where you can set a list of phrases from error messages which can possibly be returned by the LDAP server. When a user binds to LDAP, the server returns *controls* with its response of success or failure. These controls contain a message describing the error or the information that is returned with the response. Though the controls are the same across LDAP servers, the messages can be different. The properties described here contain snippets of words from those messages and work with Red Hat's Fedora Directory Server. If you are not using that server, the word snippets may not work with your LDAP server. If they don't, you can replace the values of these properties with phrases from your server's error messages. This enables Liferay to recognize them.
 
 **Factory Initial:** Specifies the initial context factory to use. The default value is `com.sun.jndi.ldap.LdapCtxFactory`.
 
 **Referral:** Indicates how the service provider handles referrals. There are three possible values:
 
-* Follow - Automatically follow any referrals
-* Ignore - Ignore referrals
-* Throws - Throw a ReferralException(in the API reference documentation) for each referral
+1. **Follow:** Automatically follow any referrals
 
-**Page Size:** Specifies the page size for directory servers that support paging. This value must be 1000 or less for the Microsoft Active Directory Server.
+1. **Ignore:** Ignore referrals
+
+1. **Throws:** Throw a `ReferralException` (in the API reference documentation) for each referral
+
+**Page Size:** Specifies the page size for directory servers that support paging. This value must be 1000 or less for Microsoft Active Directory Server.
 
 **Range Size:** Specifies the number of values to return in each query to a multi-valued attribute for directory servers that support range retrieval. The range size must be 1000 or less for Windows 2000 and 1500 or less for Windows Server 2003.
 
-**Connection Properties:** Add provider specific properties here. There are three properties with default values:
+**Connection Properties:** Add provider-specific properties here. There are three properties with default values:
 
-* `com.sun.jndi.ldap.connect.pool=true` - Specifies that a pooled connection should be used when creating the initial context instance.
-* `com.sun.jndi.ldap.connect.timeout=500` - Specifies the timeout period in milliseconds.
-* `com.sun.jndi.ldap.read.timeout=15000` - Specifies the read timeout in milliseconds for LDAP operations.
+1. `com.sun.jndi.ldap.connect.pool=true`: Specifies that a pooled connection should be used when creating the initial context instance.
+
+1. `com.sun.jndi.ldap.connect.timeout=500`: Specifies the timeout period in milliseconds.
+
+1. `com.sun.jndi.ldap.read.timeout=15000`: Specifies the read timeout in milliseconds for LDAP operations.
 
 <!-- 
 Requires documentation but no information from the product team yet. Zsigmond said that it can be documented later
@@ -109,7 +113,7 @@ You can import user data from LDAP directories using the following options:
 
 ![Ziltoid and Rex have been imported because they logged in.](./ldap-configuration-reference/images/04.png)
 
-**Enable Import on Startup:** Check this box to do the mass import when Liferay starts. Note: this box only appears if you check **Enable Import**, described above. Definitely leave this unchecked if you have a Liferay cluster, or all your nodes will do a mass import when each of them starts up.
+**Enable Import on Startup:** Check this box to do the mass import when Liferay starts. Note: this box only appears if you check **Enable Import**, described above. Leave this unchecked if you have a Liferay cluster, or all your nodes perform a mass import when each of them starts up.
 
 **Import Interval:** When mass importing users, import users every X minutes.
 

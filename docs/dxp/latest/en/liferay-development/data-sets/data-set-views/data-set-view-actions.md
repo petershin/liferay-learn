@@ -89,19 +89,19 @@ Before creating actions for your data set, review the [General Observations](#ge
 
    Do not use `p_p_auth` values in URLs, as they are session-specific and are not valid in different contexts.
 
-### Async Action
+### Asynchronous Action
 
-Async actions operate behind the scenes, allowing complex or time-consuming operations to be carried out in the background while users continue interacting with the application.
+Asynchronous actions operate behind the scenes, allowing complex or time-consuming operations to be carried out in the background while users continue interacting with the application.
 
-To create an async action,
+To create an asynchronous action,
 
 1. Under Action Behavior, select *Async* as the Type.
 
-1. Specify the *URL* for the REST endpoint where the selected method is implemented and select the *Method*: Delete, Get, Patch, Post, or  Put.
+1. Specify the *URL* for the REST endpoint where the selected method is implemented and select the *Method*: Delete, Get, Patch, Post, or Put.
 
 1. {bdg-secondary}`Liferay DXP 2024.Q4+` Enter the *Request Body* if it applies to your chosen method. Enter all required values for your chosen endpoint (for a Patch method, only the fields you're changing).
 
-    The request body must be valid JSON. No input is interpreted as `{}`.
+   The request body must be valid JSON. No input is interpreted as `{}`.
 
 1. (Optional) Enter a [*Headless Action Key*](../../../headless-delivery/consuming-apis/consuming-rest-services.md#headless-action-keys) to link an action to a headless endpoint and verify if users have the required permissions for the chosen action method. Ensure the key matches with the selected method.
 
@@ -126,7 +126,7 @@ To create a headless action,
 
 1. {bdg-secondary}`Liferay DXP 2024.Q4+` Enter the *Request Body* if it applies to your chosen method. Enter all required values for your chosen endpoint (for a Patch method, only the fields you're changing).
 
-    The request body must be valid JSON. No input is interpreted as `{}`.
+   The request body must be valid JSON. No input is interpreted as `{}`.
 
 1. Enter a *Headless Action Key* to associate the action with a headless endpoint.
 

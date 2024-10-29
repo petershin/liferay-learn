@@ -9,6 +9,7 @@ toc:
   - ./publications/resolving-conflicts.md
   - ./publications/reverting-changes.md
   - ./publications/publications-permissions.md
+  - ./publications/using-the-publications-toolbar.md
 taxonomy-category-names:
 - Platform
 - Publications

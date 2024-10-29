@@ -113,7 +113,7 @@ When reviewing changes to a page with alternate [user experiences](../../persona
 
 Once selected, you can view each page version individually or select Split View to review them side by side.
 
-![Select the desired user experience to review and review page versions individually or select Split View to review them side by side.](./making-and-publishing-changes/images/10.png)
+![Select the desired user experience to review and review page versions individually or select Split View to review them side by side.](./making-and-publishing-changes/images/07.png)
 
 ### Accessing and Analyzing Change Data
 
@@ -171,7 +171,7 @@ While reviewing changes, you can move them to different publications. This provi
 
 1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired change and select *Move Changes*.
 
-   ![Click the Actions button for the desired change and select Move changes.](./making-and-publishing-changes/images/11.png)
+   ![Click the Actions button for the desired change and select Move changes.](./making-and-publishing-changes/images/08.png)
 
 1. Select the desired *publication*.
 
@@ -197,7 +197,7 @@ Follow these steps to publish changes immediately:
 
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
-   ![Resolve all conflicts before publishing.](./making-and-publishing-changes/images/12.png)
+   ![Resolve all conflicts before publishing.](./making-and-publishing-changes/images/09.png)
 
 1. Click *Publish*.
 
@@ -236,7 +236,7 @@ When reviewing publication changes, file and page previews can accumulate in the
 
 1. Select *Remove DL Preview Change Tracking Store Content Data*.
 
-   ![Check the change tracking options.](./making-and-publishing-changes/images/13.png)
+   ![Check the change tracking options.](./making-and-publishing-changes/images/10.png)
 
 1. Click *Save*.
 

@@ -15,6 +15,9 @@ You can learn more about creating an A/B test and configuring it for a content p
 
 Analytics Cloud tracks all results from A/B tests running in Liferay DXP. When created, tests are synced automatically with Analytics Cloud. To view your A/B tests, click *Test* in the menu on the left.
 
+!!! note
+    Metrics only start appearing in the dashboards at around 1:00AM in the Analytics Cloud workspace timezone.
+
 ![The Tests menu displays all A/B tests created and defined for a site.](a-b-testing/images/01.png)
 
 For drafted A/B tests, you can view these details:

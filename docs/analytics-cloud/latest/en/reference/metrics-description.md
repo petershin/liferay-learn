@@ -55,7 +55,7 @@ Index:
 
 ## A/B Testing - Estimated Time to Declare Winner
 
-This is the duration the A/B test needs to run to determine a winner.  Note, this is only available for a bounce rate-type A/B test. 
+This is the duration the A/B test must run to determine a winner. Note, this is only available for a bounce rate-type A/B test.
 
 ## A/B Testing - Improvement
 
@@ -65,7 +65,7 @@ This shows the relative improvement from the control. For example, a control may
 ((16 - 15) / 15) * 100 = ~6.67% improvement.
 ```
 
-This metric is also known as lift. 
+This metric is also known as lift.
 
 ## A/B Testing - Probability to Win
 
@@ -159,13 +159,13 @@ This is the total number of clicks on an A/B test, web content, or custom asset 
 
 ## Comments
 
-This is the total number of comments posted on a blog or document and media in a given time range. 
+This is the total number of comments posted on a blog or document and media in a given time range.
 
 ## Downloads
 
 This is the total number of downloads of a document and media or custom asset in a given time range.
 
-## Entrances 
+## Entrances
 
 Entrances show the most common pages that visitors view first upon entering your site and the number of entrances for each.
 
@@ -267,7 +267,7 @@ Time on page is the average time spent on that page. For a given time range, the
 
 ## Total Individuals or Unique Visitors
 
-This is the total number of individuals identified by a unique `userId` (i.e. user ID). 
+This is the total number of individuals identified by a unique `userId` (i.e. user ID).
 
 Visitors to your site are assigned a unique `userId`. When visitors log in with their email address, their analytics data continues to be associated with this `userId`. If visitors previously logged in and were already assigned a `userId`, the analytics data is associated with this previously assigned `userId` instead.
 
@@ -275,7 +275,7 @@ A new `userId` is assigned if visitors use a different browser, log in with a di
 
 ## Views
 
-Views is the total number of views of a page or asset in a given time range. 
+Views is the total number of views of a page or asset in a given time range.
 
 ## Visitors by Day and Time
 

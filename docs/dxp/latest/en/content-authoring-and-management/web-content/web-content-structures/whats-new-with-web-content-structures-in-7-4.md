@@ -127,9 +127,16 @@ In addition to columns, use field groups to lock a subset of the structure's fie
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and go to the *Control Panel* tab.
 
-1. Go to *Configuration* &rarr; *System Settings* &rarr; *Web Content* (under Content and Data).
+1. To configure at the system level, go to *Configuration* &rarr; *System Settings* &rarr; *Web Content* (under Content and Data).
+
+1. {bdg-secondary}`Liferay DXP 2024.Q4+` To configure at the instance level, go to *Configuration* &rarr; *Instance Settings* &rarr; *Web Content* (under Content and Data).
 
 1. Click *Administration*. Uncheck *Autogenerate Structure Key* and click *Update*.
+
+   For {bdg-secondary}`Liferay DXP 2024.Q4+`, click *Web Content* under Virtual Instance Scope. Uncheck *Autogenerate Structure Key* and click *Update*.
+
+   !!! tip
+       To apply the same configuration to [web content templates](../web-content-templates/creating-web-content-templates.md), uncheck *Autogenerate Templates Key*.
 
 1. Go to the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Content and Data* &rarr; *Web Content*. Open the Structures tab and add a new structure.
 

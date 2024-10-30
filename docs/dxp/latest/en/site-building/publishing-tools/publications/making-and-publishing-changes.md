@@ -40,7 +40,7 @@ While working on a publication, changes made to supported Liferay components are
     When editing different sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
 
 {bdg-secondary}`Liferay DXP 2024.Q4+`
-{bdg-secondary}`Release Feature Flag (LPD-20131)`
+{bdg-secondary}`[Release Feature Flag](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) (LPD-20131)`
 
 When you change the site context while using a publication, a warning appears to prevent unintentional changes. This safeguard enhances user safety when navigating and interacting within the Portal with Publications enabled.
 
@@ -95,7 +95,7 @@ During review, you can select a change to view more details and access additiona
 ![Select a change to view more details and access additional actions.](./making-and-publishing-changes/images/05.png)
 
 {bdg-secondary}`Liferay DXP 2024.Q4+`
-{bdg-secondary}`Release Feature Flag (LPD-20131)`
+{bdg-secondary}`[Release Feature Flag](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) (LPD-20131)`
 
 The Publication Overview provides a summary of changes at the top of the page, organized by system or site instances. Each component shows the number of modified entities for easy tracking across instances and components.
 
@@ -118,7 +118,7 @@ Once selected, you can view each page version individually or select Split View 
 ### Accessing and Analyzing Change Data
 
 {bdg-secondary}`Liferay DXP 2024.Q4+`
-{bdg-secondary}`Release Feature Flag (LPD-20131)`
+{bdg-secondary}`[Release Feature Flag](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) (LPD-20131)`
 
 Publication administrators can access detailed information about changes in the publication through the Data tab, which includes the following fields:
 

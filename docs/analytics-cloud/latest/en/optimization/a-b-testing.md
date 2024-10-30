@@ -13,29 +13,28 @@ A/B testing evaluates the effectiveness of content pages by testing a variant de
 
 You can learn more about creating an A/B test and configuring it for a content page in Liferay DXP's [A/B testing documentation](https://learn.liferay.com/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing).
 
-Analytics Cloud tracks all results from A/B tests running in Liferay DXP. When created, tests are synced automatically with Analytics Cloud. To view your A/B tests, click _Test_ in the menu on the left.
+Analytics Cloud tracks all results from A/B tests running in Liferay DXP. When created, tests are synced automatically with Analytics Cloud. To view your A/B tests, click *Test* in the menu on the left.
 
 ![The Tests menu displays all A/B tests created and defined for a site.](a-b-testing/images/01.png)
 
 For drafted A/B tests, you can view these details:
 
-* Target: the experience and user segment.
-* Metric: the goal to track (e.g., bounce rate or click).
-* Variant: the page variant for users to interact with.
+- Target: the experience and user segment.
+- Metric: the goal to track (e.g., bounce rate or click).
+- Variant: the page variant for users to interact with.
 
 ![The A/B test is configured and ready to run.](a-b-testing/images/02.png)
 
-To see the A/B test page in DXP, click _Review_. To delete the A/B test, click _Delete_.
+To see the A/B test page in DXP, click *Review*. To delete the A/B test, click *Delete*.
 
 Once your A/B test is running, Analytics Cloud offers these reports to keep you up-to-date on its progress:
 
-* [Summary](#summary)
-* [Variant Report](#variant-report)
-* [Test Sessions](#test-sessions)
+- [Summary](#summary)
+- [Variant Report](#variant-report)
+- [Test Sessions](#test-sessions)
 
-```{important}
-A/B testing is not supported if [staging](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging.md) is enabled in your Liferay instance.
-```
+!!! important
+    A/B testing is not supported if [staging](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging.md) is enabled in your Liferay instance.
 
 ## Summary
 
@@ -65,9 +64,8 @@ Below are the metrics reported:
 
 **Unique Visitors:** The number of visitors contributing to the variant. A visitor randomly assigned a variant always sees the same variant until the end of the test. Besides knowing how much traffic is hitting a page, this metric also helps in determining configuration issues with the A/B test. For example, there could be too much traffic going to one variant (typically caused by a segment misconfiguration).
 
-```{important}
-A minimum of five events (i.e. visitor interactions) per day is required for test data to be reported. Test data is not reported for any day in which this threshold is not met.
-```
+!!! important
+    A minimum of 5 successes and 5 failures per variant is required for test data to be reported.
 
 ## Test Sessions
 
@@ -75,16 +73,14 @@ The Test Sessions panel shows the number of sessions viewing your test impressio
 
 ![The Test Sessions panel shows sessions viewing your test impressions per day over time.](a-b-testing/images/05.png)
 
-Next, you'll learn about an A/B test's statuses.
-
 ## Test Status
 
 When an A/B test is started, it has one of the following statuses:
 
-* [Test is Running](#test-is-running)
-* [Winner Declared](#winner-declared)
-* [No Clear Winner](#no-clear-winner)
-* [Test Terminated](#test-terminated)
+- [Test is Running](#test-is-running)
+- [Winner Declared](#winner-declared)
+- [No Clear Winner](#no-clear-winner)
+- [Test Terminated](#test-terminated)
 
 ### Test is Running
 
@@ -96,33 +92,31 @@ When a test is running, you can terminate it by selecting *Terminate Test* from 
 
 ![Click on Terminate Test to end a running test.](a-b-testing/images/07.png)
 
-```{important}
-Lots of traffic (i.e. several thousand hits a day) is expected for an A/B test to run successfully. This makes public-facing sites well suited for testing. It may take significantly longer for a test to finish for an internal website or portal.
-```
+!!! important
+    Lots of traffic (i.e. several thousand hits a day) is expected for an A/B test to run successfully. This makes public-facing sites well suited for testing. It may take significantly longer for a test to finish for an internal website or portal.
 
 ### Winner Declared
 
 Once your A/B test finishes successfully, a winner is declared (i.e. the variant or the control won). From here, you can perform these actions:
 
-* Publish the winner as your default experience.
-* Delete the test without publishing any changes.
+- Publish the winner as your default experience.
+- Delete the test without publishing any changes.
 
 ![You can publish a winner after the completion of an A/B test.](a-b-testing/images/08.png)
 
 ### No Clear Winner
 
-Sometimes, Analytics Cloud cannot determine a winner because the variant has not significantly outperformed the control page. In this case, you can still choose to publish the variant by clicking _Publish_. Or delete the A/B test by clicking _Delete_.
+Sometimes, Analytics Cloud cannot determine a winner because the variant has not significantly outperformed the control page. In this case, you can still choose to publish the variant by clicking *Publish*. Or delete the A/B test by clicking *Delete*.
 
 ![Lack of performance by a variant can lead to an A/B test without a clear winner. ](a-b-testing/images/09.png)
 
 ### Test Terminated
 
-The test status shows as terminated if the A/B test is terminated before a winner is determined. 
+The test status shows as terminated if the A/B test is terminated before a winner is determined.
 
 ![A test that is ended early shows as a terminated test.](./a-b-testing/images/10.png)
 
-```{note}
-A terminated A/B test did not reach the specified confidence level and inherently has less reliable results.
-```
+!!! note
+    A terminated A/B test did not reach the specified confidence level and inherently has less reliable results.
 
-You can still choose to publish the variant by clicking the _Publish_ button. Or delete the A/B test by clicking _Delete_.
+You can still choose to publish the variant by clicking the *Publish* button. Or delete the A/B test by clicking *Delete*.

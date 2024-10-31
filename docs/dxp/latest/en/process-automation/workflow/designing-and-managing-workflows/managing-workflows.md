@@ -75,11 +75,11 @@ Changes to Workflow Definitions are tracked in the _Details_ and _Revision Histo
 To view the workflow definition details and the revision history:
 
 1. Click the *Information* button (![Information](../../../images/icon-information.png))
-1. Next to a previous version on the _Revision History_ tab, click the *Actions* button (![Actions](../../../images/icon-actions.png)) and select either *Preview* or *Restore*.
+1. Next to a previous version on the _Revision History_ tab, click _Restore Version_ (![Restore Version](../../../images/icon-restore-version.png)).
 
     ![View and restore prior versions of a workflow.](./managing-workflows/images/02.png)
 
-1. When you click *Restore* and see the success message, the prior version is the current version of the workflow. You can now edit the restored version of the workflow.
+   The version you selected becomes a new version in the Revision History tab. You can now edit the restored version of the workflow.
 1. If edits are necessary, edit and click *Update*. This creates another version of the workflow.
 
 ## Deleting a Workflow Definition

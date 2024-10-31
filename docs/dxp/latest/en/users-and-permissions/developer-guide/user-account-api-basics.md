@@ -208,7 +208,7 @@ Users returned by this API can be filtered, paginated, searched, and sorted. See
 * `organizationIds`
 * `roleIds`
 * `userGroupIds`
-* {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` status
+* {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` `status`
 * `alternateName`
 * `screenName`
 * `emailAddress`
@@ -216,13 +216,15 @@ Users returned by this API can be filtered, paginated, searched, and sorted. See
 * `givenName`
 * `jobTitle`
 * `name`
+* {bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA129+` `customFields`
 
-| Filter Query                     | Description                                                                                  |
-| :------------------------------- | :------------------------------------------------------------------------------------------- |
-| `status eq 0`                    | The user account status must be `Active`.                                                    |
-| `status eq 5`                    | The user account status must be `Inactive`.                                                  |
-| `roleIds in ('20100', 20104')`   | The user account must have the role of an Administrator (`20100`) or a Power User (`20104`). |
-| `jobTitle eq 'Parts Consultant'` | The user account job title must be Parts Consultant.                                         |
+| Filter Query                                                 | Description                                                                                             |
+| :----------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
+| `status eq 0`                                                | The user account status must be `Active`.                                                               |
+| `status eq 5`                                                | The user account status must be `Inactive`.                                                             |
+| `roleIds in ('20100', 20104')`                               | The user account must have the role of an Administrator (`20100`) or a Power User (`20104`).            |
+| `jobTitle eq 'Parts Consultant'`                             | The user account job title must be Parts Consultant.                                                    |
+| `customFields/githubProfileUrl eq 'www.github.com/able.foo'` | The user account has a custom field called `githubProfileUrl` with the value `www.github.com/able.foo`. |
 
 | Sort Query                            | Description                                                                                   |
 | :------------------------------------ | :-------------------------------------------------------------------------------------------- |

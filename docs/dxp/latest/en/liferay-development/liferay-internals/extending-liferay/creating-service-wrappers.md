@@ -57,14 +57,14 @@ This example prints a message to the console whenever the `authenticateByEmailAd
 
    ```{literalinclude} creating-service-wrappers/resources/liferay-j1c2.zip/j1c2-impl/src/main/java/com/acme/j1c2/internal/service/J1C2UserLocalServiceWrapper.java
        :language: java
-       :lines: 15
+       :lines: 14
    ```
 
 1. Annotate the class so Liferay knows this is a service wrapper component.
 
    ```{literalinclude} creating-service-wrappers/resources/liferay-j1c2.zip/j1c2-impl/src/main/java/com/acme/j1c2/internal/service/J1C2UserLocalServiceWrapper.java
        :language: java
-       :lines: 14
+       :lines: 13
    ```
 
 1. Choose the method you want to override and add your own implementation.
@@ -72,7 +72,7 @@ This example prints a message to the console whenever the `authenticateByEmailAd
    ```{literalinclude} creating-service-wrappers/resources/liferay-j1c2.zip/j1c2-impl/src/main/java/com/acme/j1c2/internal/service/J1C2UserLocalServiceWrapper.java
        :dedent: 1
        :language: java
-       :lines: 17-33
+       :lines: 16-32
    ```
 
 ## Overriding a Method

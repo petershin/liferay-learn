@@ -2,7 +2,6 @@
 toc:
   - ./blade-cli/generating-projects-with-blade-cli.md
   - ./blade-cli/troubleshooting-blade-cli.md
-  - ./blade-cli/converting-plugins-sdk-projects-to-workspace.md
 uuid: 5350e958-271a-4dfd-97eb-6cc2f8d452d6
 taxonomy-category-names:
 - Development and Tooling

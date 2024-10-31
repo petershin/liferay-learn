@@ -16,11 +16,11 @@ Every person who accesses a Liferay site is considered a user. Unauthenticated u
 
 Users break down into three general categories:
 
-| User                                                                        | Default Access                                                                                                              | Notes                                                                                                |
-|:----------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| [Administrator](../getting-started/introduction-to-the-admin-account.md) | Liferay Admin with full system access.                                                                                      | We *strongly* recommend that users change the password for this account promptly after installation. |
-| Guest                                                                       | Unauthenticated user with view access to publicly accessible pages as well as limited ability to create and add content.    | By default, Guest users can create an account on a Liferay site to view and interact with sites.     |
-| User                                                                        | Authenticated user able to view restricted pages and create content.                                                        | Users get defined default permissions and can be elevated to organization or site administrators.    |
+| User                                                                     | Default Access                                                                                                           | Notes                                                                                                |
+| :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| [Administrator](../getting-started/introduction-to-the-admin-account.md) | Liferay Admin with full system access.                                                                                   | We *strongly* recommend that users change the password for this account promptly after installation. |
+| Guest                                                                    | Unauthenticated user with view access to publicly accessible pages as well as limited ability to create and add content. | By default, Guest users can create an account on a Liferay site to view and interact with sites.     |
+| User                                                                     | Authenticated user able to view restricted pages and create content.                                                     | Users get defined default permissions and can be elevated to organization or site administrators.    |
 
 ## Managing Users
 
@@ -35,6 +35,8 @@ You can also filter, sort, search, and change the view layout for users using th
 When filtering users, you can select *All*, *Inactive*, or *Active* users. There's also an option to *FILTER BY DOMAIN* where you can choose between users that belong to an account or organization.
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` There's a new option under the *FILTER BY DOMAIN* section to filter *Unassociated Users*. These are users that don't belong to an account or organization.
+
+{bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA129+` Admins can now view the *Last Login Date* for all users.
 
 ## Adding Users
 

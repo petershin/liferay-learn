@@ -158,6 +158,9 @@ Once deployed, you can visit any page in the instance and look at the browser co
 console.log('Sample Global JS 3 deployed.');
 ```
 
+!!! note
+    You can only configure the scope in a workspace-based client extension. If creating a JavaScript Client Extension through the UI, you cannot set the scope or the script location; the client extension is always page scoped and is usable only on [site pages](#use-the-client-extension-on-a-page). 
+
 ## Next Steps
 
 You have successfully used a JS client extension in Liferay. Next, try deploying other client extension types.

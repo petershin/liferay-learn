@@ -1,9 +1,6 @@
 curl \
 	"http://localhost:8080/o/headless-delivery/v1.0/structured-contents/${1}" \
-	--header "Content-Type: application/json" \
-	--request "PUT" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"contentFields": [
 				{
@@ -15,8 +12,8 @@ curl \
 				{
 					"contentFieldValue": {
 						"image": {
-							"description": "This text describes Goo's image.",
-							"id": "${3}"
+							"description": "This text describes the image for Goo.",
+							"id": "'"${2}"'"
 						}
 					},
 					"name": "ImageReference"
@@ -34,7 +31,9 @@ curl \
 					"name": "SingleSelectionReference"
 				}
 			],
-			"contentStructureId": "${2}",
+			"contentStructureId": "'"${3}"'",
 			"title": "Baker"
-		}
-EOF
+		}'\
+	--header "Content-Type: application/json" \
+	--request "PUT" \
+	--user "test@liferay.com:learn"

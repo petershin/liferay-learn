@@ -12,7 +12,7 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay DXP 7.3 U30+`
 
-The steps to connect Liferay DXP 7.3 to Analytics Cloud differ slightly from [the steps to connect Liferay DXP 7.4](./connecting-liferay-dxp-to-analytics-cloud.md). Liferay DXP 7.3 requires a hotfix to be compatible with Analytics Cloud.
+The steps to connect Liferay DXP 7.3 to Analytics Cloud differ slightly from [the steps to connect Liferay DXP 7.4](../connecting-liferay-dxp-to-analytics-cloud.md). Liferay DXP 7.3 requires a hotfix to be compatible with Analytics Cloud.
 
 ## Connection Token
 
@@ -20,19 +20,19 @@ Liferay DXP and Analytics Cloud connect via a secure, encrypted token. This toke
 
 1. Log into Analytics Cloud and select your workspace. If this is your first time logging in, the onboarding guide appears. Click *Next* and copy the Analytics Cloud token.
 
-   ![You see an onboarding guide when you log in first.](./connecting-liferay-dxp-to-analytics-cloud/images/01.png)
+   ![You see an onboarding guide when you log in first.](./connecting-liferay-dxp-7-3-to-analytics-cloud/images/01.png)
 
    Alternatively, you can find the token under *Settings* &rarr; *Data Sources*. Click *Add Data Source*, select *Liferay DXP*, and copy the Analytics Cloud token.
 
 1. Log into your Liferay DXP instance.
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
 
 1. Under Platform, click *Analytics Cloud*.
 
 1. Paste the Analytics Cloud token and click *Connect*.
 
-   ![Paste the token and click Connect.](./connecting-liferay-dxp-to-analytics-cloud/images/02.png)
+   ![Paste the token and click Connect.](./connecting-liferay-dxp-7-3-to-analytics-cloud/images/02.png)
 
 1. Verify this message appears:
 
@@ -42,13 +42,13 @@ Congratulations, your Liferay instance is now connected to Analytics Cloud! The 
 
 ## Syncing Sites
 
-To sync sites, you must create properties and associate them with one or more sites. Analytics Cloud aggregates your data according to how you define your properties. This example shows a simple setup where a single site is associated with a property. To learn more about defining a property with multiple sites see [Scoping Sites and Individuals Using Properties](../workspace-settings/scoping-sites-and-individuals-using-properties.md).
+To sync sites, you must create properties and associate them with one or more sites. Analytics Cloud aggregates your data according to how you define your properties. This example shows a simple setup where a single site is associated with a property. To learn more about defining a property with multiple sites see [Scoping Sites and Individuals Using Properties](../../workspace-settings/scoping-sites-and-individuals-using-properties.md).
 
 1. In Analytics Cloud, navigate to *Settings* &rarr; *Properties*.
 
 1. Click *New Property* and enter a label (e.g. Minium Site).
 
-1. In your DXP instance, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
+1. In your DXP instance, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
 
 1. Under Platform, click *Analytics Cloud*.
 
@@ -58,7 +58,7 @@ To sync sites, you must create properties and associate them with one or more si
 
 1. Select the site you want to sync and click *Done*.
 
-   ![Select the site you want to sync.](./connecting-liferay-dxp-to-analytics-cloud/images/03.png)
+   ![Select the site you want to sync.](./connecting-liferay-dxp-7-3-to-analytics-cloud/images/03.png)
 
    Verify this message appears:
 
@@ -66,7 +66,7 @@ To sync sites, you must create properties and associate them with one or more si
 
 ## Syncing Contacts
 
-1. In your DXP instance, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
+1. In your DXP instance, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
 
 1. Under Platform, click *Analytics Cloud*.
 
@@ -81,7 +81,7 @@ To sync sites, you must create properties and associate them with one or more si
 
 1. Switch between the *Contact* tab and *User* tab to select which fields to sync. Liferay DXP stores contact data in two separate tables (Contact and User). Analytics Cloud requires some fields to be synced; these fields are grayed out.
 
-   ![Select the fields you want to sync from the list.](./connecting-liferay-dxp-to-analytics-cloud/images/04.png)
+   ![Select the fields you want to sync from the list.](./connecting-liferay-dxp-7-3-to-analytics-cloud/images/04.png)
 
 1. Click *Save*. Verify this message appears:
 

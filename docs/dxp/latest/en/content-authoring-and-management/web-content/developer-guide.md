@@ -12,8 +12,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 25f21282-93fb-4c6a-be52-36f58b4a5dba
 ---
+
 # Developer Guide
 
-- [Web Content API Basics](./developer-guide/web-content-api-basics.md)
-- [Advanced Web Content API](./developer-guide/advanced-web-content-api.md)
-- [Managing Web Content Structures and Templates by Using the REST API](./developer-guide/managing-web-content-structures-and-templates-by-using-the-rest-api.md)
+This Developer Guide serves as a comprehensive resource for understanding and leveraging Liferay’s Web Content API. It supports the integration and management of web content within applications, enhancing the overall user experience. Whether you are new to Liferay or seeking to deepen your knowledge, this guide offers essential insights into the API's capabilities for creating dynamic and engaging content-driven solutions.

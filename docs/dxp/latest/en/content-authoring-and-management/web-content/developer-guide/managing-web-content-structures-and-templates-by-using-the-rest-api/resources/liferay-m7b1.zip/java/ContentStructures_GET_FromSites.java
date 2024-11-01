@@ -1,9 +1,10 @@
+import com.liferay.headless.delivery.client.pagination.Pagination;
 import com.liferay.headless.delivery.client.resource.v1_0.ContentStructureResource;
 
-public class ContentStructures_GET_Permissions {
+public class ContentStructures_GET_FromSites {
 
 	/**
-	 * java -classpath .:* -DcontentStructureId=1234 ContentStructures_GET_Permissions
+	 * java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSites
 	 */
 	public static void main(String[] args) throws Exception {
 		ContentStructureResource.Builder builder =
@@ -15,8 +16,9 @@ public class ContentStructures_GET_Permissions {
 			).build();
 
 		System.out.println(
-			contentStructureResource.getContentStructurePermissionsPage(
-				Long.valueOf(System.getProperty("contentStructureId")), null));
+			contentStructureResource.getSiteContentStructuresPage(
+				Long.valueOf(System.getProperty("siteId")), null, null, null,
+				Pagination.of(1, 2), null));
 	}
 
 }

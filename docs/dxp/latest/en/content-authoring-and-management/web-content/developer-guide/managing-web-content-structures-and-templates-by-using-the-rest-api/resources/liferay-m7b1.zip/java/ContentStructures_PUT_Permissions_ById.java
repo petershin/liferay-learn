@@ -1,10 +1,10 @@
 import com.liferay.headless.delivery.client.permission.Permission;
 import com.liferay.headless.delivery.client.resource.v1_0.ContentStructureResource;
 
-public class ContentStructures_PUT_Permissions {
+public class ContentStructures_PUT_Permissions_ById {
 
 	/**
-	 * java -classpath .:* -DactionIds="DELETE, UPDATE" -DcontentStructureId=1234 -DroleName="Power User" ContentStructures_GET_Permissions
+	 * java -classpath .:* -DactionIds="DELETE, UPDATE" -DcontentStructureId=1234 -DroleName="Power User" ContentStructures_PUT_Permissions_ById
 	 */
 	public static void main(String[] args) throws Exception {
 		ContentStructureResource.Builder builder =

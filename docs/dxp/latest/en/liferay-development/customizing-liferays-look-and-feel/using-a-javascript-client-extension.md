@@ -134,6 +134,30 @@ Now your client extension is configured and active. On the page you configured, 
 If the alert window does not appear at first, do a hard refresh of the page to clear your browser's cache (`CTRL + SHIFT + R` for most browsers). If you change your client extension and redeploy it, you may need to remove it from the page and re-add it to see the changes.
 ```
 
+## Use the Client Extension throughout the Instance
+
+{bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA129+`
+
+You can set the `scope` property of the client extension to `instance` to apply the JavaScript Client Extension to all the pages of an instance, including the administrative pages. For example, see the `client-extension.yaml` file for the [Liferay Sample Global JS 3](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) project:
+
+```yaml
+assemble:
+    - from: build/static
+      into: static
+liferay-sample-global-js-3:
+    name: Liferay Sample Global JS 3
+    scope: instance
+    scriptLocation: head
+    type: globalJS
+    url: global.*.js
+```
+
+Once deployed, you can visit any page in the instance and look at the browser console to see the JavaScript that ran in the page head:
+
+```js
+console.log('Sample Global JS 3 deployed.');
+```
+
 ## Next Steps
 
 You have successfully used a JS client extension in Liferay. Next, try deploying other client extension types.

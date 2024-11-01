@@ -8,25 +8,19 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: ad9381e2-7fcf-4448-8028-59ed858e80c0
 ---
+
 # Managing Web Content Structures and Templates by Using the REST API
 
-Web content structures define the information included in a web content article. Structures facilitate creating and managing web content while ensuring that the content includes all the required information.
+Web content structures (or simply structures) define the information included in a web content article (or article). Structures facilitate creating and managing web content while ensuring that the content includes all the required information.
 
-You can associate a structure with a web content template. A template determines how content fields are rendered on a page. The following table summarizes the available options using the Liferay DXP REST API with web content structures and templates:
+You can associate a structure with a web content template (or template). A template determines how content fields are rendered on a page. The following table summarizes the available options using the Liferay DXP REST API with structures and templates:
 
 | Available Options                           | Unavailable Options            |
 |:--------------------------------------------|:-------------------------------|
-| Gather Structures and Templates information | Create Structures or Templates |
-| Replace Structures permissions              | Delete Structures or Templates |
+| Gather structures and templates information | Create structures or templates |
+| Replace structures permissions              | Delete structures or templates |
 
-Use a pre-built Liferay DXP Docker image with several [cURL](https://curl.haxx.se/) code samples to learn how to manage structured content:
-
-- [Setting Up Your Environment](#setting-up-your-environment)
-- [Identifying the Service to Consume](#identifying-the-service-to-consume)
-- [Getting the Web Content Structures](#getting-the-web-content-structures)
-- [Getting the Web Content Templates](#getting-the-web-content-templates)
-- [Getting the Web Content Structure Permissions](#getting-the-web-content-structure-permissions)
-- [Replacing the Web Content Structure Permissions](#replacing-the-web-content-structure-permissions)
+Use a pre-built Liferay DXP Docker image with several [cURL](https://curl.haxx.se/) and Java code samples to learn how to manage structured content:
 
 ## Setting Up Your Environment
 
@@ -50,7 +44,7 @@ Then, follow these steps:
 
 ### Identifying the Site ID
 
-1. Open the Site menu (![Site menu](../../../images/icon-menu.png)) and go to *Configuration* &rarr; *Site Settings*.
+1. Open the *Site menu* (![Site menu](../../../images/icon-menu.png)) and go to *Configuration* &rarr; *Site Settings*.
 
 1. Under the Platform section, click *Site Configuration*.
 
@@ -63,9 +57,9 @@ Then, follow these steps:
 !!! note
     You can only create structures or templates manually through the user interface.
 
-Create a basic [web content structure](../web-content-structures/creating-web-content-structures.md) and a basic [web content template](../web-content-templates/creating-web-content-templates.md) based on the structure. This tutorial uses a basic structure with a single Text field to demonstrate the `ContentStructure` service.
+Create a basic [structure](../web-content-structures/creating-web-content-structures.md) and a basic [template](../web-content-templates/creating-web-content-templates.md) based on the structure. This tutorial uses a basic structure with a single Text field to demonstrate the `ContentStructure` service.
 
-![Basic sample web content structure using a single Text field.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/02.png)
+![Basic sample structure using a single Text field.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/02.png)
 
 ### Identifying the Web Content Structure ID
 
@@ -83,16 +77,16 @@ Use the `StructuredContent` service in the Liferay DXP Headless Delivery API to 
 
 ## Getting the Web Content Structures
 
-The `ContentStructures_GET_FromSite.sh` cURL script lists the existing web content structures. This script uses the `ContentStructure` service with the `GET` HTTP method, using the site ID as the only parameter.
+The `ContentStructures_GET_FromSites.sh` cURL script lists the existing structures. This script uses the `ContentStructure` service with the `GET` HTTP method, using the site ID as the only parameter.
 
 | Method | Service            | Endpoint                                |
 |:-------|:-------------------|:----------------------------------------|
 | GET    | `ContentStructure` | /v1.0/sites/{siteId}/content-structures |
 
-In the `ContentStructures_GET_FromSite.sh` script, the `${1}` parameter refers to `siteID`. Use your site ID instead of the one in the example (20125) when running the script.
+In the `ContentStructures_GET_FromSites.sh` script, the `${1}` parameter refers to `siteID`. Use your site ID instead of the one in the example (20125) when running the script.
 
 ```bash
-./ContentStructures_GET_FromSite.sh 20125
+./ContentStructures_GET_FromSites.sh 20125
 ```
 
 The following code shows the JSON output generated by the script. The script returns all the structures in the site. In this example, you can see a single structure identified by an `id` and a `name`.
@@ -184,7 +178,7 @@ The structure has a single Text field described in the `dataType` section under 
 
 The REST service can also be called using the Java client.
 
-1. Navigate out of the `curl` folder and into the `java`.
+1. Navigate out of the `curl` folder and into the `java` folder.
 
 1. Compile the source files:
 
@@ -192,34 +186,29 @@ The REST service can also be called using the Java client.
    javac -classpath .:* *.java
    ```
 
-1. Run the `ContentStructures_GET_FromSite.java` class. Replace the `siteId` value with your site's ID:
+1. Run the `ContentStructures_GET_FromSites.java` class. Replace the `siteId` value with your site's ID:
 
    ```bash
-   java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSite
+   java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSites
    ```
 
-See the code and its comments for more information below:
+See the code for more information below:
 
 ```java
 
-public class ContentStructures_GET_FromSite {
+public class ContentStructures_GET_FromSites {
 
-   // Builds an instance of ContentStructureResource.
    public static void main(String[] args) throws Exception {
       ContentStructureResource.Builder builder =
          ContentStructureResource.builder();
 
-      // Provides authentication credentials to the ContentStructureResource and constructs the contentStructureResource object (.build()).
       ContentStructureResource contentStructureResource =
          builder.authentication(
             "test@liferay.com", "learn"
          ).build();
 
-      // System.out.println prints the returned information in one line.
       System.out.println(
-         // Calls the getSiteContentStructuresPage() method with these parameters: Long siteId, String search, List<String> aggregations, String filterString, Pagination pagination, and String sortString.
          contentStructureResource.getSiteContentStructuresPage(
-            // Long.valueOf(System.getProperty("siteId")); retrieves the value of the system property named siteId and converts it to a Long object representing the site Id.
             Long.valueOf(System.getProperty("siteId")), null, null, null,
             Pagination.of(1, 2), null));
    }
@@ -227,18 +216,20 @@ public class ContentStructures_GET_FromSite {
 }
 ```
 
+This Java class uses the `ContentStructureResource` API to retrieve content structures from a specific Liferay site. The main method builds an instance of `ContentStructureResource` with authentication credentials ("test@liferay.com" and "learn"). It then calls the `getSiteContentStructuresPage()` method, passing the site ID, to fetch a paginated list of content structures for the site. The result is printed to the console using `System.out.println()`. The pagination is set to return the first page with two items per page.
+
 ## Getting the Web Content Templates
 
-The `ContentTemplates_GET_FromSite.sh` cURL script lists the existing web content templates. This script uses the `ContentTemplate` service with the `GET` HTTP method, using the site ID as the only parameter.
+The `ContentTemplates_GET_FromSites.sh` cURL script lists the existing web content templates. This script uses the `ContentTemplate` service with the `GET` HTTP method, using the site ID as the only parameter.
 
 | Method | Service           | Endpoint                               |
 |:-------|:------------------|:---------------------------------------|
 | GET    | `ContentTemplate` | /v1.0/sites/{siteId}/content-templates |
 
-In the `ContentTemplates_GET_FromSite.sh` script, the `${1}` parameter refers to `siteID`. Use your site ID instead of the one in the example (20125) when running the script.
+In the `ContentTemplates_GET_FromSites.sh` script, the `${1}` parameter refers to `siteID`. Use your site ID instead of the one in the example (20125) when running the script.
 
 ```bash
-./ContentTemplates_GET_FromSite.sh 20125
+./ContentTemplates_GET_FromSites.sh 20125
 ```
 
 Below is the partial JSON output generated by the script. The script returns all the templates in the site. In this example, you can see a single template identified by an `id` and a `name`. The `contentStructureId` corresponds to the associated structure ID and the `templateScript` corresponds to the FreeMarker Template Language describing the template.
@@ -274,7 +265,7 @@ Below is the partial JSON output generated by the script. The script returns all
 
 The REST service can also be called using the Java client.
 
-1. Navigate out of the `curl` folder and into the `java`.
+1. Navigate out of the `curl` folder and into the `java` folder.
 
 1. Compile the source files (you don't have to repeat this step if you have already compiled the files):
 
@@ -282,26 +273,26 @@ The REST service can also be called using the Java client.
    javac -classpath .:* *.java
    ```
 
-1. Run the `ContentTemplates_GET_FromSite.java` class. Replace the `siteId` value with your site's ID:
+1. Run the `ContentTemplates_GET_FromSites.java` class. Replace the `siteId` value with your site's ID:
 
    ```bash
-   java -classpath .:* -DsiteId=1234 ContentTemplates_GET_FromSite
+   java -classpath .:* -DsiteId=1234 ContentTemplates_GET_FromSites
    ```
 
-   The `ContentTemplates_GET_FromSite.java` works similarly to the `ContentStructures_GET_FromSite.java` file. The only difference is that it builds an instance of `ContentTemplateResource`. Consequently, it needs different imports, and it uses a `getSiteContentTemplatesPage` method instead.
+   The `ContentTemplates_GET_FromSites.java` works similarly to the `ContentStructures_GET_FromSites.java` file. The only difference is that it builds an instance of `ContentTemplateResource`. Consequently, it needs different imports, and it uses a `getSiteContentTemplatesPage` method instead.
 
 ## Getting the Web Content Structure Permissions
 
-The `ContentStructure_GET_Permissions.sh` cURL script lists the web content structure's permissions. This script uses the `ContentStructure` service with the `GET` HTTP method, using the structure's ID as the only parameter.
+The `ContentStructures_GET_Permissions_ById_ById.sh` cURL script lists the web content structure's permissions. This script uses the `ContentStructure` service with the `GET` HTTP method, using the structure's ID as the only parameter.
 
 | Method | Service            | Endpoint                                                    |
 |:-------|:-------------------|:------------------------------------------------------------|
 | GET    | `ContentStructure` | `/v1.0/content-structures/{contentStructureId}/permissions` |
 
-In the `ContentStructure_GET_Permissions.sh` script, the `${1}` parameter refers to `contentStructureId`. Use your structure's ID instead of the one in the example (41837) when running the script.
+In the `ContentStructures_GET_Permissions_ById_ById.sh` script, the `${1}` parameter refers to `contentStructureId`. Use your structure's ID instead of the one in the example (41837) when running the script.
 
 ```bash
-./ContentStructure_GET_Permissions.sh 41837
+./ContentStructures_GET_Permissions_ById_ById.sh 41837
 ```
 
 The JSON output includes the permissions under the `items` section. In this example, there is only one role with permissions on the sample structure in `roleName`, with the list of permissions in `actionIds`:
@@ -337,7 +328,7 @@ The JSON output includes the permissions under the `items` section. In this exam
 
 The REST service can also be called using the Java client.
 
-1. Navigate out of the `curl` folder and into the `java`.
+1. Navigate out of the `curl` folder and into the `java` folder.
 
 1. Compile the source files (you don't have to repeat this step if you have already compiled the files):
 
@@ -345,26 +336,26 @@ The REST service can also be called using the Java client.
    javac -classpath .:* *.java
    ```
 
-1. Run the `ContentStructures_GET_Permissions.java` class. Replace the `contentStructureId` value with your web content structure's ID:
+1. Run the `ContentStructures_GET_Permissions_ById.java` class. Replace the `contentStructureId` value with your web content structure's ID:
 
    ```bash
-   java -classpath .:* -DcontentStructureId=1234 ContentStructures_GET_Permissions
+   java -classpath .:* -DcontentStructureId=1234 ContentStructures_GET_Permissions_ById
    ```
 
-   The `ContentStructures_GET_Permissions.java` works similarly to the `ContentStructures_GET_FromSite.java` file. The only difference is that the method receives a `Long contentStructureId` (instead of the `siteId`) and a `String roleNames` as parameters. `roleNames` is set as `null` to return all permissions available.
+   The `ContentStructures_GET_Permissions_ById.java` works similarly to the `ContentStructures_GET_FromSites.java` file. The only difference is that the method receives a `Long contentStructureId` (instead of the `siteId`) and a `String roleNames` as parameters. `roleNames` is set as `null` to return all permissions available.
 
 ## Replacing the Web Content Structure Permissions
 
-The `ContentStructure_PUT_Permissions.sh` cURL script uses the `PUT` HTTP method with the `ContentStructure` service to replace the original web content structure permission. This script includes the `DELETE` and `VIEW` permissions for the Power User role.
+The `ContentStructures_PUT_Permissions_ById.sh` cURL script uses the `PUT` HTTP method with the `ContentStructure` service to replace the original web content structure permission. This script includes the `DELETE` and `VIEW` permissions for the Power User role.
 
 | Method | Service            | Endpoint                                                    |
 |:-------|:-------------------|:------------------------------------------------------------|
 | PUT    | `ContentStructure` | `/v1.0/content-structures/{contentStructureId}/permissions` |
 
-In the `ContentStructure_PUT_Permissions.sh` script, the `${1}` parameter refers to `contentStructureId`. Use your structure's ID instead of the one in the example (41837) when running the script.
+In the `ContentStructures_PUT_Permissions_ById.sh` script, the `${1}` parameter refers to `contentStructureId`. Use your structure's ID instead of the one in the example (41837) when running the script.
 
 ```bash
-./ContentStructure_PUT_Permissions.sh 41837
+./ContentStructures_PUT_Permissions_ById.sh 41837
 ```
 
 The JSON output shows two entries under the `items` section, one for each role:
@@ -403,7 +394,7 @@ The Power User now has the Delete and View permissions.
 
 The REST service can also be called using the Java client.
 
-1. Navigate out of the `curl` folder and into the `java`.
+1. Navigate out of the `curl` folder and into the `java` folder.
 
 1. Compile the source files (you don't have to repeat this step if you have already compiled the files):
 
@@ -411,16 +402,16 @@ The REST service can also be called using the Java client.
    javac -classpath .:* *.java
    ```
 
-1. Run the `ContentStructures_PUT_Permissions.java` class. Replace the `contentStructureId` value with your web content structure's ID, the `actionIds` value for an action or a list of actions (separate them with commas), and the `roleName` value with the desired role for updating permissions:
+1. Run the `ContentStructures_PUT_Permissions_ById.java` class. Replace the `contentStructureId` value with your web content structure's ID, the `actionIds` value for an action or a list of actions (separate them with commas), and the `roleName` value with the desired role for updating permissions:
 
    ```bash
-   java -classpath .:* -DcontentStructureId=1234 -Dactions="DELETE, UPDATE, VIEW" -Drole="Power User" ContentStructures_GET_Permissions
+   java -classpath .:* -DcontentStructureId=1234 -Dactions="DELETE, UPDATE, VIEW" -Drole="Power User" ContentStructures_GET_Permissions_ById
    ```
 
 See the code and its comments for more information below:
 
 ```java
-public class ContentStructures_PUT_Permissions {
+public class ContentStructures_PUT_Permissions_ById {
 
    public static void main(String[] args) throws Exception {
       ContentStructureResource.Builder builder =
@@ -432,21 +423,16 @@ public class ContentStructures_PUT_Permissions {
          ).build();
 
       System.out.println(
-         // Calls the putContentStructurePermissionsPage() method with these parameters: Long contentStructureId, Permission[] permissions
          contentStructureResource.putContentStructurePermissionsPage(
             Long.valueOf(System.getProperty("contentStructureId")),
-            // An array of Permission objects is created.
             new Permission[] {
-               // This anonymous inner class instantiation sets the action IDs and the role for the permission.
                new Permission() {
                   {
-                     // Sets the action IDs by splitting and placing the actions in an array of action IDs.
                      actionIds = System.getProperty(
                         "actionIds"
                      ).split(
                         "\\s*,\\s*"
                      );
-                     // Sets the role for the permission.
                      roleName = System.getProperty("roleName");
                   }
                }
@@ -454,6 +440,8 @@ public class ContentStructures_PUT_Permissions {
    }
 }
 ```
+
+This Java class updates the permissions of a content structure using the `ContentStructureResource` API. The main method authenticates with the API using provided credentials ("test@liferay.com" and "learn") and calls the `putContentStructurePermissionsPage()` method. It passes the content structure ID and an array of Permission objects. Each Permission object is created and the role name is set based on the roleName system property. The result is printed to the console.
 
 ## Related Topics
 

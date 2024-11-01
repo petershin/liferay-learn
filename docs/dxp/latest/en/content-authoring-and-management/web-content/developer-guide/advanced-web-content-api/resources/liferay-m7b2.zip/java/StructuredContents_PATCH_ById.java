@@ -15,14 +15,14 @@ public class StructuredContents_PATCH_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		StructuredContent structuredContent = new StructuredContent();
-
-		structuredContent.setTitle("Charlie");
-
 		System.out.println(
 			structuredContentResource.patchStructuredContent(
 				Long.valueOf(System.getProperty("structuredContentId")),
-				structuredContent));
+				new StructuredContent() {
+					{
+						setTitle("Charlie");
+					}
+				}));
 	}
 
 }

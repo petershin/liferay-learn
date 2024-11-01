@@ -15,11 +15,12 @@ public class StructuredContents_GET_FromSites {
 				"test@liferay.com", "learn"
 			).build();
 
-		System.out.println(
+		Page<StructuredContent> page =
 			structuredContentResource.getSiteStructuredContentsPage(
 				Long.valueOf(System.getProperty("siteId")), null, null, null,
-				null, Pagination.of(1, 2), null
-			).getItems());
+				null, Pagination.of(1, 2), null);
+
+		System.out.println(page.getItems());
 	}
 
 }

@@ -1,18 +1,18 @@
 curl \
-	"http://localhost:8080/o/headless-delivery/v1.0/structured-contents/${1}" \
+	"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/structured-contents" \
 	--data-raw '
 		{
 			"contentFields": [
 				{
 				"contentFieldValue": {
-					"data": "<p>Goo</p>"
+					"data": "Goo"
 				},
-				"name": "content"
+				"name": "Content"
 				}
 			],
 			"contentStructureId": "'"${2}"'",
-			"title": "Baker Article"
+			"title": "Goo Article"
 		}' \
 	--header "Content-Type: application/json" \
-	--request "PUT" \
+	--request "POST" \
 	--user "test@liferay.com:learn"

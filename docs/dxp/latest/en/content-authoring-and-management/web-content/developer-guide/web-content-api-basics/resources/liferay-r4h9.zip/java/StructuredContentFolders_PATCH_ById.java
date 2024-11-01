@@ -1,10 +1,10 @@
 import com.liferay.headless.delivery.client.dto.v1_0.StructuredContentFolder;
 import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentFolderResource;
 
-public class StructuredContentFolder_POST_ToSite {
+public class StructuredContentFolders_PATCH_ById {
 
 	/**
-	 * java -classpath .:* -DsiteId=1234 StructuredContentFolder_POST_ToSite
+	 * java -classpath .:* -DstructuredContentFolderId=1234 StructuredContentFolders_PATCH_ById
 	 */
 	public static void main(String[] args) throws Exception {
 		StructuredContentFolderResource.Builder builder =
@@ -15,17 +15,14 @@ public class StructuredContentFolder_POST_ToSite {
 				"test@liferay.com", "learn"
 			).build();
 
-		StructuredContentFolder structuredContentFolder =
-			structuredContentFolderResource.postSiteStructuredContentFolder(
-				Long.valueOf(System.getProperty("siteId")),
+		System.out.println(
+			structuredContentFolderResource.patchStructuredContentFolder(
+				Long.valueOf(System.getProperty("structuredContentFolderId")),
 				new StructuredContentFolder() {
 					{
-						description = "Foo";
-						name = "Charlie Folder";
+						description = "Bar";
 					}
-				});
-
-		System.out.println(structuredContentFolder);
+				}));
 	}
 
 }

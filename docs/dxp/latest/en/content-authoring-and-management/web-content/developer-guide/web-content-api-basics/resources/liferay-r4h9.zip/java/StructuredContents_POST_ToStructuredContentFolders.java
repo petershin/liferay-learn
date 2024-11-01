@@ -3,10 +3,10 @@ import com.liferay.headless.delivery.client.dto.v1_0.ContentFieldValue;
 import com.liferay.headless.delivery.client.dto.v1_0.StructuredContent;
 import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentResource;
 
-public class StructuredContent_POST_ToStructuredContentFolder {
+public class StructuredContents_POST_ToStructuredContentFolders {
 
 	/**
-	 * java -classpath .:* -DcontentStructureId=1234 -DstructuredContentFolder=5678 StructuredContent_POST_ToStructuredContentFolder
+	 * java -classpath .:* -DcontentStructureId=1234 -DstructuredContentFolder=5678 StructuredContents_POST_ToStructuredContentFolders
 	 */
 	public static void main(String[] args) throws Exception {
 		StructuredContentResource.Builder builder =
@@ -17,7 +17,7 @@ public class StructuredContent_POST_ToStructuredContentFolder {
 				"test@liferay.com", "learn"
 			).build();
 
-		StructuredContent structuredContent =
+		System.out.println(
 			structuredContentResource.
 				postStructuredContentFolderStructuredContent(
 					Long.valueOf(System.getProperty("structuredContentFolder")),
@@ -40,9 +40,7 @@ public class StructuredContent_POST_ToStructuredContentFolder {
 								System.getProperty("contentStructureId"));
 							title = "Easy Article";
 						}
-					});
-
-		System.out.println(structuredContent);
+					}));
 	}
 
 }

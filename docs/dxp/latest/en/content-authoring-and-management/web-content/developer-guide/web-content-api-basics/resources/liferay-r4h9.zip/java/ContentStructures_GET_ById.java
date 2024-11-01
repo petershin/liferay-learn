@@ -1,9 +1,9 @@
 import com.liferay.headless.delivery.client.resource.v1_0.ContentStructureResource;
 
-public class ContentStructure_GET_ById {
+public class ContentStructures_GET_ById {
 
 	/**
-	 * java -classpath .:* -DcontentStructureId=1234 ContentStructure_GET_ById
+	 * java -classpath .:* -DcontentStructureId=1234 ContentStructures_GET_ById
 	 */
 	public static void main(String[] args) throws Exception {
 		ContentStructureResource.Builder builder =

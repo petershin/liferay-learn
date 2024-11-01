@@ -3,10 +3,10 @@ import com.liferay.headless.delivery.client.dto.v1_0.ContentFieldValue;
 import com.liferay.headless.delivery.client.dto.v1_0.StructuredContent;
 import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentResource;
 
-public class StructuredContent_PATCH_ById {
+public class StructuredContents_PUT_ById {
 
 	/**
-	 * java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 StructuredContent_PATCH_ById
+	 * java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 StructuredContents_PUT_ById
 	 */
 	public static void main(String[] args) throws Exception {
 		StructuredContentResource.Builder builder =
@@ -17,8 +17,8 @@ public class StructuredContent_PATCH_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		StructuredContent structuredContent =
-			structuredContentResource.patchStructuredContent(
+		System.out.println(
+			structuredContentResource.putStructuredContent(
 				Long.valueOf(System.getProperty("structuredContentId")),
 				new StructuredContent() {
 					{
@@ -28,19 +28,18 @@ public class StructuredContent_PATCH_ById {
 									contentFieldValue =
 										new ContentFieldValue() {
 											{
-												data = "<p>Bar</p>";
+												data = "Bar";
 											}
 										};
-									name = "content";
+									name = "Content";
 								}
 							}
 						};
 						contentStructureId = Long.valueOf(
 							System.getProperty("contentStructureId"));
+						title = "Bar Article";
 					}
-				});
-
-		System.out.println(structuredContent);
+				}));
 	}
 
 }

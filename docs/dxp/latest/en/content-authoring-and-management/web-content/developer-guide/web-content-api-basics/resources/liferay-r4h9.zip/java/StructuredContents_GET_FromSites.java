@@ -1,9 +1,10 @@
+import com.liferay.headless.delivery.client.pagination.Pagination;
 import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentResource;
 
-public class StructuredContent_GET_ById {
+public class StructuredContents_GET_FromSites {
 
 	/**
-	 * java -classpath .:* -DstructuredContentId=1234 StructuredContent_GET_ById
+	 * java -classpath .:* -DsiteId=1234 StructuredContents_GET_FromSites
 	 */
 	public static void main(String[] args) throws Exception {
 		StructuredContentResource.Builder builder =
@@ -15,8 +16,10 @@ public class StructuredContent_GET_ById {
 			).build();
 
 		System.out.println(
-			structuredContentResource.getStructuredContent(
-				Long.valueOf(System.getProperty("structuredContentId"))));
+			structuredContentResource.getSiteStructuredContentsPage(
+				Long.valueOf(System.getProperty("siteId")), null, null, null,
+				null, Pagination.of(1, 2), null
+			).getItems());
 	}
 
 }

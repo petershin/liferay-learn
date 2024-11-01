@@ -1,9 +1,9 @@
 import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentFolderResource;
 
-public class StructuredContentFolder_GET_ById {
+public class StructuredContentFolders_DELETE_ById {
 
 	/**
-	 * java -classpath .:* -DstructuredContentFolderId=1234 StructuredContentFolder_GET_ById
+	 * java -classpath .:* -DstructuredContentFolderId=1234 StructuredContentFolders_DELETE_ById
 	 */
 	public static void main(String[] args) throws Exception {
 		StructuredContentFolderResource.Builder builder =
@@ -14,9 +14,8 @@ public class StructuredContentFolder_GET_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		System.out.println(
-			structuredContentFolderResource.getStructuredContentFolder(
-				Long.valueOf(System.getProperty("structuredContentFolderId"))));
+		structuredContentFolderResource.deleteStructuredContentFolder(
+			Long.valueOf(System.getProperty("structuredContentFolderId")));
 	}
 
 }

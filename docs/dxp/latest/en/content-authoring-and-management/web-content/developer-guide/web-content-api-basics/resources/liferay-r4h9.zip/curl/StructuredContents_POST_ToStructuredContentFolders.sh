@@ -1,17 +1,17 @@
 curl \
-	"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/structured-contents" \
+	"http://localhost:8080/o/headless-delivery/v1.0/structured-content-folders/${1}/structured-contents" \
 	--data-raw '
 		{
 			"contentFields": [
 				{
 				"contentFieldValue": {
-					"data": "<p>Foo</p>"
+					"data": "Foo"
 				},
-				"name": "content"
+				"name": "Content"
 				}
 			],
 			"contentStructureId": "'"${2}"'",
-			"title": "Able Article"
+			"title": "Charlie Article"
 		}' \
 	--header "Content-Type: application/json" \
 	--request "POST" \

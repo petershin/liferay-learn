@@ -5,9 +5,9 @@ curl \
 			"contentFields": [
 				{
 				"contentFieldValue": {
-					"data": "<p>Bar</p>"
+					"data": "Foo"
 				},
-				"name": "content"
+				"name": "Content"
 				}
 			]
 		}' \

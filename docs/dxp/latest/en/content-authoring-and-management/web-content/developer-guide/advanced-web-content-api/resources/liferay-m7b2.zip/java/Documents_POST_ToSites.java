@@ -8,7 +8,7 @@ import java.util.HashMap;
 public class Documents_POST_ToSites {
 
 	/**
-	 * java -classpath .:* -DsiteId=1234 -DfilePath=5678 Documents_POST_ToSites
+	 * java -classpath .:* -DfilePath=1234 -DsiteId=5678 Documents_POST_ToSites
 	 */
 	public static void main(String[] args) throws Exception {
 		DocumentResource.Builder builder = DocumentResource.builder();

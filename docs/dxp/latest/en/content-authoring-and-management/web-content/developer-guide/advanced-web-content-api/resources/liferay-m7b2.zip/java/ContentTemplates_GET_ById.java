@@ -3,7 +3,7 @@ import com.liferay.headless.delivery.client.resource.v1_0.ContentTemplateResourc
 public class ContentTemplates_GET_ById {
 
 	/**
-	 * java -classpath .:* -DsiteId=1234 -DcontentTemplateId=5678 ContentTemplates_GET_ById
+	 * java -classpath .:* -DcontentTemplateId=1234 -DsiteId=5678 ContentTemplates_GET_ById
 	 */
 	public static void main(String[] args) throws Exception {
 		ContentTemplateResource.Builder builder =

@@ -7,7 +7,7 @@ import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentResou
 public class StructuredContents_PUT_ById {
 
 	/**
-	 * java -classpath .:* -DcontentStructureId=1234 -DsiteId=5678 -DimageId=91011 StructuredContents_PUT_ById
+	 * java -classpath .:* -DcontentStructureId=1234 -DimageId=5678 -DsiteId=91011 StructuredContents_PUT_ById
 	 */
 	public static void main(String[] args) throws Exception {
 		StructuredContentResource.Builder builder =

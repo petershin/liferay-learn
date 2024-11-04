@@ -3,7 +3,7 @@ import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentResou
 public class StructureContents_GET_RenderedContent_ById {
 
 	/**
-	 * java -classpath .:* -DstructuredContentId=1234 -DcontentTemplateId=5678 StructureContents_GET_RenderedContent_ById
+	 * java -classpath .:* -DcontentTemplateId=1234 -DstructuredContentId=5678 StructureContents_GET_RenderedContent_ById
 	 */
 	public static void main(String[] args) throws Exception {
 		StructuredContentResource.Builder builder =

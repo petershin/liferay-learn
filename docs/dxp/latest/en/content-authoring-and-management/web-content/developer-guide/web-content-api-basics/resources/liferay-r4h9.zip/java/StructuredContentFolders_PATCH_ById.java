@@ -20,7 +20,7 @@ public class StructuredContentFolders_PATCH_ById {
 				Long.valueOf(System.getProperty("structuredContentFolderId")),
 				new StructuredContentFolder() {
 					{
-						description = "Bar";
+						setDescription("Bar");
 					}
 				}));
 	}

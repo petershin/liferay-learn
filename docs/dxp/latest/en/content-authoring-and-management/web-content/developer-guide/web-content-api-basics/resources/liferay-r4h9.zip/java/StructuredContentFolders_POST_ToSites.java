@@ -20,8 +20,8 @@ public class StructuredContentFolders_POST_ToSites {
 				Long.valueOf(System.getProperty("siteId")),
 				new StructuredContentFolder() {
 					{
-						description = "Foo";
-						name = "Charlie Folder";
+						setDescription("Foo");
+						setName("Charlie Folder");
 					}
 				}));
 	}

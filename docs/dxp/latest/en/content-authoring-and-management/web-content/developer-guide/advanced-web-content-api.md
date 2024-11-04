@@ -13,7 +13,7 @@ uuid: 0e4115ae-4688-439d-a40f-e9399f0f167d
 
 # Advanced Web Content API
 
-Using the Liferay DXP REST services, you can create and manage your site's structured content. Structured content is [web content articles](../web-content-articles/creating-web-content-articles.md) (or simply articles) that uses a web content structure (or structure). A structure defines the information, such as author(s), a summary, and the content included in an article. Structures ensure that the article includes all the required information. For more information on structures, read [Web Content Structures](../web-content-structures.md).
+Using the Liferay DXP REST services, you can create and manage your site's structured content. Structured content is [web content articles](../web-content-articles/creating-web-content-articles.md) (or articles) that uses a web content structure (or structure). A structure defines the information, such as author(s), a summary, and the content included in an article. Structures ensure that the article includes all the required information. For more information on structures, read [Web Content Structures](../web-content-structures.md).
 
 Use a pre-built Liferay DXP Docker image with several [cURL](https://curl.haxx.se/) and Java code samples to learn more about structures and structured content.
 
@@ -75,18 +75,18 @@ curl \
 
 This example posts the `foo.png` image, using the site ID (`{1}`) and the relative image file path (`{2}`) as parameters:
 
-| Method | Service | Endpoint |
+| Method | Service    | Endpoint                     |
 |:-------|:-----------|:-----------------------------|
-| GET | `Document` | `/v1.0/sites/${1}/documents` |
+| GET    | `Document` | `/v1.0/sites/${1}/documents` |
 
 ```bash
 ./Documents_POST_ToSites.sh "../images/foo.png" 20125
 ```
 
-| Parameter # | Description |
+| Parameter # | Description           |
 |:------------|:----------------------|
-| $1 | `siteId` |
-| $2 | Relative path to file |
+| $1          | `siteId`              |
+| $2          | Relative path to file |
 
 The JSON output includes the image identifier in the `id` field:
 
@@ -113,7 +113,7 @@ javac -classpath .:* *.java
 Run the `Documents_POST_ToSites` class. Replace the `siteId` value with your site ID and the `filePath` value with the path to the `foo.png` image:
 
 ```bash
-java -classpath .:* -DsiteId=1234 -DfilePath=5678 Documents_POST_ToSites
+java -classpath .:* -DfilePath=1234 -DsiteId=5678 Documents_POST_ToSites
 ```
 
 ### Create the Sample Structure
@@ -141,11 +141,11 @@ java -classpath .:* -DsiteId=1234 -DfilePath=5678 Documents_POST_ToSites
 
 1. Click *Save*.
 
-  | Field | New Field Reference value |
+  | Field     | New Field Reference value  |
   |:----------|:---------------------------|
-  | Text | `TextReference` |
-  | Image | `ImageReference` |
-  | Date | `DateReference` |
+  | Text      | `TextReference`            |
+  | Image     | `ImageReference`           |
+  | Date      | `DateReference`            |
   | Selection | `SingleSelectionReference` |
 
   ![Update the Field Reference values.](./advanced-web-content-api/images/03.gif)
@@ -155,7 +155,7 @@ For more information, see [Creating Web Content Structures](../web-content-struc
 ### Create the Sample Templates
 
 !!! note
-    You cannot create a web content template (or template) programmatically using the REST API.
+    You cannot create a web content template programmatically using the REST API.
 
 Create a template including the structure's `image` field:
 
@@ -205,9 +205,9 @@ Create a second template without the structure's `image` field:
 
 To retrieve all existing structures in a specified site, use the `ContentStructures_GET_FromSites.sh` script. This script uses the `ContentStructure` service with a `GET` HTTP method and the [site ID](#identify-the-site-id) parameter.
 
-| Method | Service | Endpoint |
+| Method | Service            | Endpoint                              |
 |:-------|:-------------------|:--------------------------------------|
-| GET | `ContentStructure` | `/v1.0/sites/${1}/content-structures` |
+| GET    | `ContentStructure` | `/v1.0/sites/${1}/content-structures` |
 
 ```bash
 ./ContentStructures_GET_FromSites.sh 20125
@@ -215,7 +215,7 @@ To retrieve all existing structures in a specified site, use the `ContentStructu
 
 | Parameter # | Description |
 |:------------|:------------|
-| $1 | `siteId` |
+| $1          | `siteId`    |
 
 In the JSON response, identify the structure `id` (`"id" : 43563`) and `name` (`"name" : "Foo"`). The `contentStructureFields` section describes the structure fields. This structure contains four different fields named `TextReference`, `ImageReference`, `DateReference`, and `SingleSelectionReference`.
 
@@ -314,9 +314,9 @@ java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSites
 
 To obtain the IDs of [previously posted images](#adding-the-images-to-liferay-dxp), use the `Documents_GET_FromSites.sh` script. This script uses the `Document` service with a `GET` HTTP method and the [site ID](#identify-the-site-id) as parameter.
 
-| Method | Service | Endpoint |
+| Method | Service    | Endpoint                     |
 |:-------|:-----------|:-----------------------------|
-| GET | `Document` | `/v1.0/sites/${1}/documents` |
+| GET    | `Document` | `/v1.0/sites/${1}/documents` |
 
 ```bash
 ./Documents_GET_FromSites.sh 20125
@@ -324,7 +324,7 @@ To obtain the IDs of [previously posted images](#adding-the-images-to-liferay-dx
 
 | Parameter # | Description |
 |:------------|:------------|
-| $1 | `siteId` |
+| $1          | `siteId`    |
 
 Alternatively, run the `Documents_GET_FromSites` Java class:
 
@@ -336,9 +336,9 @@ java -classpath .:* -DsiteId=1234 Documents_GET_FromSites
 
 Use the `ContentTemplates_GET_FromSites` script to obtain all the site's templates. This script uses the `ContentTemplate` service with a `GET` HTTP method and the [site ID](#identify-the-site-id) as parameter.
 
-| Method | Service | Endpoint |
+| Method | Service           | Endpoint                             |
 |:-------|:------------------|:-------------------------------------|
-| GET | `ContentTemplate` | `/v1.0/sites/${1}/content-templates` |
+| GET    | `ContentTemplate` | `/v1.0/sites/${1}/content-templates` |
 
 ```bash
 ./ContentTemplates_GET_FromSites.sh 20125
@@ -346,11 +346,11 @@ Use the `ContentTemplates_GET_FromSites` script to obtain all the site's templat
 
 | Parameter # | Description |
 |:------------|:------------|
-| $1 | `siteId` |
+| $1          | `siteId`    |
 
-The JSON response contains the following information:
+The JSON response contains:
 
-- Two templates are present: `"name": "Foo"` and `"name": "Goo"`.
+- Two templates: `"name": "Foo"` and `"name": "Goo"`.
 
 - The `contentStructureId` field indicates the structure linked to the template.
 
@@ -435,32 +435,32 @@ java -classpath .:* -DsiteId=1234 ContentTemplates_GET_FromSites
 
 To retrieve information about a specific template, use the `ContentTemplates_GET_ById.sh` cURL script, which requires the site and template IDs.
 
-| Method | Service | Endpoint |
+| Method | Service           | Endpoint                                  |
 |:-------|:------------------|:------------------------------------------|
-| GET | `ContentTemplate` | `/v1.0/sites/${1}/content-templates/${2}` |
+| GET    | `ContentTemplate` | `/v1.0/sites/${1}/content-templates/${2}` |
 
 ```bash
 ./ContentTemplates_GET_ById.sh 20125 43823
 ```
 
-| Parameter # | Description |
-|:------------|:--------------|
-| $1 | `siteId` |
-| $2 | `contentTemplateId` |
+| Parameter # | Description         |
+|:------------|:--------------------|
+| $1          | `siteId`            |
+| $2          | `contentTemplateId` |
 
 Alternatively, run the `ContentTemplates_GET_ById` Java class. Replace the values with your site and template IDs:
 
 ```bash
-java -classpath .:* -DsiteId=1234 -DcontentTemplateId=5678 ContentTemplates_GET_ById
+java -classpath .:* -DcontentTemplateId=1234 -DsiteId=5678 ContentTemplates_GET_ById
 ```
 
 ## Post the Web Content Article
 
 Use the `StructuredContents_POST_ToSites.sh` cURL script to create a new article using the `POST` HTTP method, using the [sample structure you created](#create-the-sample-structure). The script requires the [site ID](#identifying-the-site-id), structure ID, and the [image ID](#getting-the-images-ids) for `foo.png` as parameters.
 
-| Method | Service | Endpoint |
+| Method | Service             | Endpoint                                   |
 |:-------|:--------------------|:-------------------------------------------|
-| PUT | `StructuredContent` | `/v1.0/sites/{siteId}/structured-contents` |
+| PUT    | `StructuredContent` | `/v1.0/sites/{siteId}/structured-contents` |
 
 ```bash
 ./StructuredContents_POST_ToSites.sh 20125 43563 43795
@@ -468,11 +468,11 @@ Use the `StructuredContents_POST_ToSites.sh` cURL script to create a new article
 
 cURL script parameters:
 
-| Parameter # | Description |
+| Parameter # | Description          |
 |:------------|:---------------------|
-| $1 | `siteId` |
-| $2 | `imageId` |
-| $3 | `contentStructureId` |
+| $1          | `siteId`             |
+| $2          | `imageId`            |
+| $3          | `contentStructureId` |
 
 To find your new article in Liferay DXP, open the *Site Menu* (![Site menu](../../../images/icon-menu.png)) &rarr; *Content & Data* &rarr; *Web Content*.
 
@@ -596,9 +596,9 @@ An article is not linked to a particular template. The template defines how the 
 
 Use the `./StructureContents_GET_RenderedContent_ById.sh` script to render the article using the chosen article and template. This script uses the `GET` HTTP method in the `StructuredContent` service.
 
-| Method | Service | Endpoint |
+| Method | Service             | Endpoint                                               |
 |:-------|:--------------------|:-------------------------------------------------------|
-| PUT | `StructuredContent` | `/v1.0/structured-contents/${1}/rendered-content/${2}` |
+| PUT    | `StructuredContent` | `/v1.0/structured-contents/${1}/rendered-content/${2}` |
 
 ```bash
 ./StructureContents_GET_RenderedContent_ById.sh 43849 43868
@@ -622,24 +622,24 @@ Foo30 Aug 2021 - 00:00:00Option13142925
 
 cURL scripts parameters:
 
-| Parameter # | Description |
+| Parameter # | Description           |
 |:------------|:----------------------|
-| $1 | `structuredContentId` |
-| $2 | `contentTemplateId` |
+| $1          | `structuredContentId` |
+| $2          | `contentTemplateId`   |
 
 Alternatively, run the `StructureContents_GET_RenderedContent_ById` Java class. Replace the values with your article and template IDs:
 
 ```bash
-java -classpath .:* -DstructuredContentId=1234 -DcontentTemplateId=5678 StructureContents_GET_RenderedContent_ById
+java -classpath .:* -DcontentTemplateId=1234 -DstructuredContentId=5678 StructureContents_GET_RenderedContent_ById
 ```
 
 ## Patch the Web Content Article
 
 Use the `PATCH` HTTP method with the `StructuredContent` service to partially update the original article information. The `StructuredContents_PATCH_ById` script uses the article and structure identifiers to replace the article's title with `Charlie`.
 
-| Method | Service | Endpoint |
+| Method | Service             | Endpoint                                          |
 |:-------|:--------------------|:--------------------------------------------------|
-| PATCH | `StructuredContent` | `/v1.0/structured-contents/{structuredContentId}` |
+| PATCH  | `StructuredContent` | `/v1.0/structured-contents/{structuredContentId}` |
 
 ```bash
 ./StructuredContents_PATCH_ById.sh 43849 43563
@@ -647,10 +647,10 @@ Use the `PATCH` HTTP method with the `StructuredContent` service to partially up
 
 cURL script parameters:
 
-| Parameter # | Description |
+| Parameter # | Description           |
 |:------------|:----------------------|
-| $1 | `structuredContentId` |
-| $2 | `contentStructureId` |
+| $1          | `structuredContentId` |
+| $2          | `contentStructureId`  |
 
 Alternatively, run the `StructuredContents_PATCH_ById` Java class. Replace the value with your article ID:
 
@@ -662,9 +662,9 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContents_PATCH_ById
 
 Use the `PUT` HTTP method with the `StructuredContent` service to replace the original article information. The `StructuredContents_PUT_ById` script uses the article and structure identifiers to replace the article's name with `Baker` and the article's content from `Bar` to `Goo`.
 
-| Method | Service | Endpoint |
+| Method | Service             | Endpoint                                          |
 |:-------|:--------------------|:--------------------------------------------------|
-| PUT | `StructuredContent` | `/v1.0/structured-contents/{structuredContentId}` |
+| PUT    | `StructuredContent` | `/v1.0/structured-contents/{structuredContentId}` |
 
 ```bash
 ./StructuredContents_PUT_ById.sh 43849 43563 43805
@@ -672,16 +672,16 @@ Use the `PUT` HTTP method with the `StructuredContent` service to replace the or
 
 cURL script parameters:
 
-| Parameter # | Description |
+| Parameter # | Description           |
 |:------------|:----------------------|
-| $1 | `structuredContentId` |
-| $2 | `imageId` |
-| $3 | `contentStructureId` |
+| $1          | `structuredContentId` |
+| $2          | `imageId`             |
+| $3          | `contentStructureId`  |
 
 Alternatively, run the `StructuredContents_PUT_ById` Java class. Replace the values with your article, image, and structure IDs:
 
 ```bash
-java -classpath .:* -DstructuredContentId=1234 -DimageId=5678 -DcontentStructureId=91011 StructuredContents_PUT_ById
+java -classpath .:* -DcontentStructureId=1234 -DimageId=5678 -DstructuredContentId=91011 StructuredContents_PUT_ById
 ```
 
 ## Related Topics

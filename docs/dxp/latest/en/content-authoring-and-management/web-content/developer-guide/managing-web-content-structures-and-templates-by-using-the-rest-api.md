@@ -11,7 +11,7 @@ uuid: ad9381e2-7fcf-4448-8028-59ed858e80c0
 
 # Managing Web Content Structures and Templates by Using the REST API
 
-Web content structures (or simply structures) define the information included in a web content article (or article). Structures facilitate creating and managing web content while ensuring that the content includes all the required information.
+Web content structures (or structures) define the information included in a web content article (or article). Structures facilitate creating and managing web content while ensuring that the content includes all the required information.
 
 You can associate a structure with a web content template (or template). A template determines how content fields are rendered on a page. The following table summarizes the available options using the Liferay DXP REST API with structures and templates:
 
@@ -69,7 +69,7 @@ Create a basic [structure](../web-content-structures/creating-web-content-struct
 
 1. Under the ID column, identify the ID for your structure.
 
-   ![In the Structures tab, identify the ID for your web content structure under the ID column.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/01.png)
+   ![In the Structures tab, identify the ID for your structure under the ID column.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/01.png)
 
 ## Identifying the Service to Consume
 
@@ -220,7 +220,7 @@ This Java class uses the `ContentStructureResource` API to retrieve content stru
 
 ## Getting the Web Content Templates
 
-The `ContentTemplates_GET_FromSites.sh` cURL script lists the existing web content templates. This script uses the `ContentTemplate` service with the `GET` HTTP method, using the site ID as the only parameter.
+The `ContentTemplates_GET_FromSites.sh` cURL script lists the existing templates. This script uses the `ContentTemplate` service with the `GET` HTTP method, using the site ID as the only parameter.
 
 | Method | Service           | Endpoint                               |
 |:-------|:------------------|:---------------------------------------|
@@ -267,7 +267,7 @@ The REST service can also be called using the Java client.
 
 1. Navigate out of the `curl` folder and into the `java` folder.
 
-1. Compile the source files (you don't have to repeat this step if you have already compiled the files):
+1. Compile the source files (if you haven't already compiled them):
 
    ```bash
    javac -classpath .:* *.java
@@ -330,13 +330,13 @@ The REST service can also be called using the Java client.
 
 1. Navigate out of the `curl` folder and into the `java` folder.
 
-1. Compile the source files (you don't have to repeat this step if you have already compiled the files):
+1. Compile the source files (if you haven't already compiled them):
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. Run the `ContentStructures_GET_Permissions_ById.java` class. Replace the `contentStructureId` value with your web content structure's ID:
+1. Run the `ContentStructures_GET_Permissions_ById.java` class. Replace the `contentStructureId` value with your structure's ID:
 
    ```bash
    java -classpath .:* -DcontentStructureId=1234 ContentStructures_GET_Permissions_ById
@@ -346,7 +346,7 @@ The REST service can also be called using the Java client.
 
 ## Replacing the Web Content Structure Permissions
 
-The `ContentStructures_PUT_Permissions_ById.sh` cURL script uses the `PUT` HTTP method with the `ContentStructure` service to replace the original web content structure permission. This script includes the `DELETE` and `VIEW` permissions for the Power User role.
+The `ContentStructures_PUT_Permissions_ById.sh` cURL script uses the `PUT` HTTP method with the `ContentStructure` service to replace the original structure permission. This script includes the `DELETE` and `VIEW` permissions for the Power User role.
 
 | Method | Service            | Endpoint                                                    |
 |:-------|:-------------------|:------------------------------------------------------------|
@@ -396,16 +396,16 @@ The REST service can also be called using the Java client.
 
 1. Navigate out of the `curl` folder and into the `java` folder.
 
-1. Compile the source files (you don't have to repeat this step if you have already compiled the files):
+1. Compile the source files (if you haven't already compiled them):
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. Run the `ContentStructures_PUT_Permissions_ById.java` class. Replace the `contentStructureId` value with your web content structure's ID, the `actionIds` value for an action or a list of actions (separate them with commas), and the `roleName` value with the desired role for updating permissions:
+1. Run the `ContentStructures_PUT_Permissions_ById.java` class. Replace the `contentStructureId` value with your structure's ID, the `actionIds` value for an action or a list of actions (separate them with commas), and the `roleName` value with the desired role for updating permissions:
 
    ```bash
-   java -classpath .:* -DcontentStructureId=1234 -Dactions="DELETE, UPDATE, VIEW" -Drole="Power User" ContentStructures_GET_Permissions_ById
+   java -classpath .:* -Dactions="DELETE, UPDATE, VIEW" -DcontentStructureId=1234 -Drole="Power User" ContentStructures_GET_Permissions_ById
    ```
 
 See the code and its comments for more information below:
@@ -441,7 +441,7 @@ public class ContentStructures_PUT_Permissions_ById {
 }
 ```
 
-This Java class updates the permissions of a content structure using the `ContentStructureResource` API. The main method authenticates with the API using provided credentials ("test@liferay.com" and "learn") and calls the `putContentStructurePermissionsPage()` method. It passes the content structure ID and an array of Permission objects. Each Permission object is created and the role name is set based on the roleName system property. The result is printed to the console.
+This Java class updates the permissions of a content structure using the `ContentStructureResource` API. The main method authenticates with the API using provided credentials ("test@liferay.com" and "learn") and calls the `putContentStructurePermissionsPage()` method. It passes the content structure ID and an array of Permission objects. Each Permission object is created and the role name is set based on the `roleName` system property. The result is printed to the console.
 
 ## Related Topics
 

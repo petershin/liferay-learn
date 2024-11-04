@@ -11,7 +11,7 @@ uuid: e5a69df2-30a5-4dbc-8467-e390dfc35aec
 
 # Web Content API Basics
 
-Using Liferay DXP's REST and GraphQL services, you can create and manage structured content on your site. Structured content refers to [web content articles](../web-content-articles/creating-web-content-articles.md) (or simply articles) that use a [web content structure](../web-content-structures.md) (or structures) to enforce a consistent format and organization by defining the specific fields and information required for each article, such as author, summaries, and other relevant content elements.
+Using Liferay DXP's REST and GraphQL services, you can create and manage structured content on your site. Structured content refers to [web content articles](../web-content-articles/creating-web-content-articles.md) (or articles) that use a [web content structure](../web-content-structures.md) (or structures) to enforce a consistent format and organization by defining the specific fields and information required for each article, such as author, summaries, and other relevant content elements.
 
 !!! note
     While you can use a structure with a [web content template](../web-content-templates/creating-web-content-templates.md) to render structured content, a template is not required for creating structured content.
@@ -47,11 +47,11 @@ Then, follow these steps:
 
 ### Identify the Services to Consume
 
-Use the following services in the Liferay DXP Headless Delivery API to manage Web Content:
+Use the following services in the Liferay DXP Headless Delivery API to manage web content:
 
-- `StructuredContent` for Web Content Articles.
-- `ContentStructure` for Web Content Structures.
-- `ContentTemplate` for Web Content Templates.
+- `StructuredContent` for articles.
+- `ContentStructure` for structures.
+- `ContentTemplate` for templates.
 
 To view detailed information on these APIs, use your browser and access Liferay's API Explorer at `[server]:[port]/o/api` (e.g. http://localhost:8080/o/api). For more information, read [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
 
@@ -61,10 +61,10 @@ When signed in, [retrieve the site ID](../../../headless-delivery/consuming-apis
 
 ### Create a Web Content Structure in the User Interface
 
-To create an article, you need a web content structure. When you create articles in the user interface without declaring a structure, Liferay DXP uses a default Basic Web Content structure.
+To create an article, you need a structure. When you create articles in the user interface without declaring a structure, Liferay DXP uses a default Basic Web Content structure.
 
 !!! note
-    The Basic Web Content Structure is not visible in the Liferay DXP user interface.
+    The Basic Web Content structure is not visible in the Liferay DXP user interface.
 
 Instead of using the Basic Web Content structure, create a new one:
 
@@ -90,7 +90,7 @@ Now you can create an article based on the Foo Structure:
 
 1. Under the *Web Content* tab, click *New* and choose *Foo Structure*.
 
-1. Enter *Foo Article* as the new web content name and click *Publish*.
+1. Enter *Foo Article* as the new name and click *Publish*.
 
    ![The article uses the new Foo Structure.](./web-content-api-basics/images/01.png)
 
@@ -761,7 +761,7 @@ Use GraphQL services to update an article. Access the Liferay API Explorer to pe
 
 ## Put Web Content Article
 
-Use the `PUT` method with the `StructuredContent` service to replace the original article's information. The `StructuredContents_PUT_ById.[java|sh]` script/class uses the web content article and structure identifiers to replace the article's name and the article's content from `Foo` to `Bar`.
+Use the `PUT` method with the `StructuredContent` service to replace the original article's information. The `StructuredContents_PUT_ById.[java|sh]` script/class uses the article and structure identifiers to replace the article's name and the article's content from `Foo` to `Bar`.
 
 Commands:
 
@@ -836,7 +836,7 @@ Use GraphQL services to replace the original article's information. Access the L
 Use the `DELETE` method with the `StructuredContent` service to delete an article. The `StructuredContents_DELETE_ById.[java|sh]` script/class example uses the article's `id` to delete it.
 
 !!! important
-   When you delete web content articles using the REST API, it's deleted permanently, without using the [Liferay DXP Recycle Bin](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md).
+   When you delete articles using the REST API, it's deleted permanently, without using the [Liferay DXP Recycle Bin](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md).
 
 Commands:
 
@@ -862,7 +862,7 @@ Use GraphQL services to delete an article. Access the Liferay API Explorer to pe
    }
    ```
 
-1. Click *Execute Query*. The response should return a boolean indicating the deletion status:
+1. Click *Execute Query*. The response should return a value indicating the deletion status:
 
    ```json
    {

@@ -3,6 +3,7 @@ toc:
   - ./marketplace/become-a-publisher.md
   - ./marketplace/publishing-apps-in-marketplace.md
   - ./marketplace/publishing-solutions-in-marketplace.md
+  - ./marketplace/provisioning-dxp-apps.md
 uuid: 1a9e675b-cec5-484f-822d-6e7d67012b47
 taxonomy-category-names:
 - Platform

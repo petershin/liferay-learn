@@ -163,6 +163,9 @@ lcp log -p <project>-<environment> -s <service> --since "<start_time>" --until "
 
 Use `lcp scale` commands to individually scale environment services. These examples include some common commands, though you can see available command options by running `lcp scale --help`.
 
+!!! warning
+    This command is deprecated. Instead, you can scale instances manually in the dashboard. See [Scaling the Liferay Service](../manage-and-optimize/scaling-the-liferay-service.md) for more information on manual scaling.
+
 View all services and their instances for a project environment, and then select a service to scale:
 
 ```bash

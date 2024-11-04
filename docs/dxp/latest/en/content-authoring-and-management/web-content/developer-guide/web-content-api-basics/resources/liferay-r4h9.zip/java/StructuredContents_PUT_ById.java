@@ -17,27 +17,30 @@ public class StructuredContents_PUT_ById {
 				"test@liferay.com", "learn"
 			).build();
 
+		ContentField[] contentFields = {
+			new ContentField() {
+				{
+					setName("Content");
+					setContentFieldValue(
+						new ContentFieldValue() {
+							{
+								setData("Bar");
+							}
+						});
+				}
+			}
+		};
+
 		System.out.println(
 			structuredContentResource.putStructuredContent(
 				Long.valueOf(System.getProperty("structuredContentId")),
 				new StructuredContent() {
 					{
-						contentFields = new ContentField[] {
-							new ContentField() {
-								{
-									contentFieldValue =
-										new ContentFieldValue() {
-											{
-												data = "Bar";
-											}
-										};
-									name = "Content";
-								}
-							}
-						};
-						contentStructureId = Long.valueOf(
-							System.getProperty("contentStructureId"));
-						title = "Bar Article";
+						setContentFields(contentFields);
+						setContentStructureId(
+							Long.valueOf(
+								System.getProperty("contentStructureId")));
+						setTitle("Bar Article");
 					}
 				}));
 	}

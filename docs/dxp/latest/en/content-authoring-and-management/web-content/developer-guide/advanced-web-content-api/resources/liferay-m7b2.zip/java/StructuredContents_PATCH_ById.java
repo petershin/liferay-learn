@@ -20,7 +20,7 @@ public class StructuredContents_PATCH_ById {
 				Long.valueOf(System.getProperty("structuredContentId")),
 				new StructuredContent() {
 					{
-						setTitle("Charlie");
+						title = "Charlie";
 					}
 				}));
 	}

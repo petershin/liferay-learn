@@ -20,54 +20,50 @@ public class StructuredContents_POST_ToSites {
 
 		ContentDocument contentDocument = new ContentDocument() {
 			{
-				setDescription("This text describes Foo's image.");
-				setId(Long.valueOf(System.getProperty("imageId")));
+				description = "This text describes Foo's image.";
+				id = Long.valueOf(System.getProperty("imageId"));
 			}
 		};
 
 		ContentField[] contentFields = {
 			new ContentField() {
 				{
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setData("This text describes Foo.");
-							}
-						});
-					setName("TextReference");
+					contentFieldValue = new ContentFieldValue() {
+						{
+							data = "This text describes Foo.";
+						}
+					};
+					name = "TextReference";
 				}
 			},
 			new ContentField() {
 				{
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setImage(contentDocument);
-							}
-						});
-					setName("ImageReference");
+					contentFieldValue = new ContentFieldValue() {
+						{
+							image = contentDocument;
+						}
+					};
+					name = "ImageReference";
 				}
 			},
 			new ContentField() {
 				{
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setData("2021-08-30T00:00:00Z");
-							}
-						});
-					setName("DateReference");
+					contentFieldValue = new ContentFieldValue() {
+						{
+							data = "2021-08-30T00:00:00Z";
+						}
+					};
+					name = "DateReference";
 				}
 			},
 			new ContentField() {
 				{
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setData("Foo");
-							}
-						});
-					setName("SingleSelectionReference");
+					contentFieldValue = new ContentFieldValue() {
+						{
+							data = "Foo";
+						}
+					};
+					name = "SingleSelectionReference";
 				}
 			}
 		};
@@ -77,11 +73,10 @@ public class StructuredContents_POST_ToSites {
 				Long.valueOf(System.getProperty("siteId")),
 				new StructuredContent() {
 					{
-						setContentFields(contentFields);
-						setContentStructureId(
-							Long.valueOf(
-								System.getProperty("contentStructureId")));
-						setTitle("Able");
+						contentFields = contentFields;
+						contentStructureId = Long.valueOf(
+							System.getProperty("contentStructureId"));
+						title = "Able";
 					}
 				}));
 	}

@@ -7,7 +7,7 @@ import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentResou
 public class StructuredContents_PUT_ById {
 
 	/**
-	 * java -classpath .:* -DcontentStructureId=1234 -DimageId=5678 -DsiteId=91011 StructuredContents_PUT_ById
+	 * java -classpath .:* -DcontentStructureId=1234 -DimageId=5678 -DstructuredContentId=91011 StructuredContents_PUT_ById
 	 */
 	public static void main(String[] args) throws Exception {
 		StructuredContentResource.Builder builder =
@@ -20,68 +20,63 @@ public class StructuredContents_PUT_ById {
 
 		ContentDocument contentDocument = new ContentDocument() {
 			{
-				setDescription("This text describes Goo's image.");
-				setId(Long.valueOf(System.getProperty("imageId")));
+				description = "This text describes Goo's image.";
+				id = Long.valueOf(System.getProperty("imageId"));
 			}
 		};
 
 		ContentField[] contentFields = {
 			new ContentField() {
 				{
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setData("This text describes Goo.");
-							}
-						});
-					setName("TextReference");
+					contentFieldValue = new ContentFieldValue() {
+						{
+							data = "This text describes Goo.";
+						}
+					};
+					name = "TextReference";
 				}
 			},
 			new ContentField() {
 				{
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setImage(contentDocument);
-							}
-						});
-					setName("ImageReference");
+					contentFieldValue = new ContentFieldValue() {
+						{
+							image = contentDocument;
+						}
+					};
+					name = "ImageReference";
 				}
 			},
 			new ContentField() {
 				{
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setData("2021-08-30T00:00:00Z");
-							}
-						});
-					setName("DateReference");
+					contentFieldValue = new ContentFieldValue() {
+						{
+							data = "2021-08-30T00:00:00Z";
+						}
+					};
+					name = "DateReference";
 				}
 			},
 			new ContentField() {
 				{
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setData("Goo");
-							}
-						});
-					setName("SingleSelectionReference");
+					contentFieldValue = new ContentFieldValue() {
+						{
+							data = "Goo";
+						}
+					};
+					name = "SingleSelectionReference";
 				}
 			}
 		};
 
 		System.out.println(
-			structuredContentResource.postSiteStructuredContent(
-				Long.valueOf(System.getProperty("siteId")),
+			structuredContentResource.putStructuredContent(
+				Long.valueOf(System.getProperty("structuredContentId")),
 				new StructuredContent() {
 					{
-						setContentFields(contentFields);
-						setContentStructureId(
-							Long.valueOf(
-								System.getProperty("contentStructureId")));
-						setTitle("Baker");
+						contentFields = contentFields;
+						contentStructureId = Long.valueOf(
+							System.getProperty("contentStructureId"));
+						title = "Baker";
 					}
 				}));
 	}

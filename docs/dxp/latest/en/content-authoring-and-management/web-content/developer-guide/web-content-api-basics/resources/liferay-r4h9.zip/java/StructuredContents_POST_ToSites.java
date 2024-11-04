@@ -20,13 +20,12 @@ public class StructuredContents_POST_ToSites {
 		ContentField[] contentFields = {
 			new ContentField() {
 				{
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setData("Goo");
-							}
-						});
-					setName("Content");
+					contentFieldValue = new ContentFieldValue() {
+						{
+							data = "Goo";
+						}
+					};
+					name = "Content";
 				}
 			}
 		};
@@ -36,11 +35,10 @@ public class StructuredContents_POST_ToSites {
 				Long.valueOf(System.getProperty("siteId")),
 				new StructuredContent() {
 					{
-						setContentFields(contentFields);
-						setContentStructureId(
-							Long.valueOf(
-								System.getProperty("contentStructureId")));
-						setTitle("Goo Article Java");
+						contentFields = contentFields;
+						contentStructureId = Long.valueOf(
+							System.getProperty("contentStructureId"));
+						title = "Goo Article Java";
 					}
 				}));
 	}

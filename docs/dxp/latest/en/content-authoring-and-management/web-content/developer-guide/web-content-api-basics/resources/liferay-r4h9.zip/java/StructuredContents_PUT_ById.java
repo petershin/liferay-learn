@@ -20,13 +20,12 @@ public class StructuredContents_PUT_ById {
 		ContentField[] contentFields = {
 			new ContentField() {
 				{
-					setName("Content");
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setData("Bar");
-							}
-						});
+					name = "Content";
+					contentFieldValue = new ContentFieldValue() {
+						{
+							data = "Bar";
+						}
+					};
 				}
 			}
 		};
@@ -36,11 +35,10 @@ public class StructuredContents_PUT_ById {
 				Long.valueOf(System.getProperty("structuredContentId")),
 				new StructuredContent() {
 					{
-						setContentFields(contentFields);
-						setContentStructureId(
-							Long.valueOf(
-								System.getProperty("contentStructureId")));
-						setTitle("Bar Article");
+						contentFields = contentFields;
+						contentStructureId = Long.valueOf(
+							System.getProperty("contentStructureId"));
+						title = "Bar Article";
 					}
 				}));
 	}

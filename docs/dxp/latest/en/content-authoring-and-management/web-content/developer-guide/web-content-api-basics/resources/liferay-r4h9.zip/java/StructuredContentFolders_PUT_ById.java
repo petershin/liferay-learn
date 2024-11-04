@@ -20,8 +20,8 @@ public class StructuredContentFolders_PUT_ById {
 				Long.valueOf(System.getProperty("structuredContentFolderId")),
 				new StructuredContentFolder() {
 					{
-						setDescription("Goo");
-						setName("Dog Folder");
+						description = "Goo";
+						name = "Dog Folder";
 					}
 				}));
 	}

@@ -20,13 +20,12 @@ public class StructuredContents_PATCH_ById {
 		ContentField[] contentFields = {
 			new ContentField() {
 				{
-					setName("Content");
-					setContentFieldValue(
-						new ContentFieldValue() {
-							{
-								setData("Foo");
-							}
-						});
+					name = "Content";
+					contentFieldValue = new ContentFieldValue() {
+						{
+							data = "Foo";
+						}
+					};
 				}
 			}
 		};
@@ -36,10 +35,9 @@ public class StructuredContents_PATCH_ById {
 				Long.valueOf(System.getProperty("structuredContentId")),
 				new StructuredContent() {
 					{
-						setContentFields(contentFields);
-						setContentStructureId(
-							Long.valueOf(
-								System.getProperty("contentStructureId")));
+						contentFields = contentFields;
+						contentStructureId = Long.valueOf(
+							System.getProperty("contentStructureId"));
 					}
 				}));
 	}

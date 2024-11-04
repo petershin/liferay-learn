@@ -10,7 +10,10 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
-To ensure user session data is synchronized across all instances in the cluster, Liferay supports session replication. That way, if one instance fails, user sessions are not lost as they are replicated to other nodes in the cluster. If you are using a DXP cluster on Tomcat, you can use Liferay's implementation of `DeltaManager` for improved performance.
+To ensure user session data is synchronized across all instances in the cluster, Liferay supports session replication. That way, if one instance fails, user sessions are not lost as they are replicated to other nodes in the cluster. If you are using a DXP cluster on Tomcat, you can use Liferay's implementation of `DeltaManager` for improved performance. This is recommended for clusters of 5 or fewer nodes.
+
+!!! warning
+    Liferay's Delta Manager relies on Tomcat's session replication, so only Multicast is supported.
 
 ## Setting Up Session Replication
 

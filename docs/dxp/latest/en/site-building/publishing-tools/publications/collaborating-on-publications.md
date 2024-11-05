@@ -24,28 +24,69 @@ Once users are invited to a publication, you can use the integrated comments fea
 
 1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired publication and select *Invite Users*.
 
-   ![Click the publication's Actions button and select Invite Users.](./collaborating-on-publications/images/01.png)
-
    Alternatively, begin reviewing the publication's changes and click *Invite Users* (![Invite Users](../../../images/icon-plus.png)).
 
-   ![In publication Changes page, click the Invite Users button.](./collaborating-on-publications/images/02.png)
+   ![Click the publication's Actions button and select Invite Users. Or, in publication Changes page, click the Invite Users button.](./collaborating-on-publications/images/01.png)
 
    !!! note
        This is the only way to invite users to a published publication.
 
 1. Use the drop-down menu to grant *view*, *edit*, *publish*, and *invite* permissions.
 
-   ![Use the drop-down menu to determine the users permissions for the publication.](./collaborating-on-publications/images/03.png)
-
 1. Search for and select the desired *users*.
 
    Each user is assigned the selected permissions, though you can edit their permissions before and after sending invitations.
 
-   ![Search for and select the desired users.](./collaborating-on-publications/images/04.png)
+   ![Use the drop-down menu to determine the users permissions for the publication. You can also search for and select the desired users.](./collaborating-on-publications/images/02.png)
 
 1. Click *Send* to add the users to the publication.
 
 Invited users are notified and can begin collaborating on the publication.
+
+### Configuring Email Notifications
+
+!!! important
+    Currently, this feature is behind a release feature flag (LPD-11212). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+
+As a sender, you can customize the email template sent when a user is assigned to a publication.
+
+<!-- Is it something that can be enabled/disabled? I don't think so. Eric -->
+
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
+
+1. Under Platform, select *Publications*. In the Publications Email Notifications menu, configure the email template.
+
+1. Add the sender's email address and name.
+
+   If left empty, the sender's email address and name are used.
+
+1. Add the email subject and body.
+
+   Use placeholders like `[$PORTAL_URL$]`, `[$TO_NAME$]`, and `[$FROM_ADDRESS$]` to dynamically insert values such as the portal URL, the recipient's name, and the sender's email address. See [Email Settings](../../../system-administration/configuring-liferay/virtual-instances/email-settings.md) for additional examples.
+
+   ![Configure the email template sent to users assigned to publications.](./collaborating-on-publications/images/03.png)
+
+1. (Optional) To localize the email subject and body, click the flag icon, select a language, and add text to the field. When you save the template or switch to another language, the localized values are saved.
+
+   To view a translated value, click the flag icon and select a `Translated` language.
+
+1. Click *Save*.
+
+When users are invited to collaborate on a publication, they receive an email based on this template.
+
+As a recipient, you can enable/disable publication invitation notifications:
+
+1. Click your *User Profile Menu* in the top right and select *Notifications*.
+
+1. In the Notifications application/widget, click *Options* and select *Configuration*.
+
+   ![Access the notification application/widget configuration to enable/disable email notifications.](./collaborating-on-publications/images/04.png)
+
+1. Find and expand *Publications*. Select/Deselect the `Invites you to work on a publication` email option to enable/disable the email notifications.
+
+1. Click *Save*.
+
+After saving your notification settings, you receive notifications according to your preferences whenever you are invited to collaborate on a publication.
 
 ## Commenting on a Publication
 
@@ -83,11 +124,9 @@ If you must share publication changes with people who are not site users, you ca
 
 1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired publication, select *Invite Users*, and go to the *Share Link* tab.
 
-   ![Select Invite Users and go to the Share Link tab.](./collaborating-on-publications/images/07.png)
-
    Alternatively, begin reviewing the publication's changes and click *Share* (![Share Button](../../../images/icon-link.png)).
 
-   ![Click the Share button.](./collaborating-on-publications/images/08.png)
+   ![Select Invite Users and go to the Share Link tab or click the Share button while reviewing the publication's changes.](./collaborating-on-publications/images/08.png)
 
 1. Toggle the switch to enable sharing.
 

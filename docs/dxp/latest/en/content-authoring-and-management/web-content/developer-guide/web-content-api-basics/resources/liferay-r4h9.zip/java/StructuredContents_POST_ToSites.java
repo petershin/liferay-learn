@@ -17,7 +17,21 @@ public class StructuredContents_POST_ToSites {
 				"test@liferay.com", "learn"
 			).build();
 
-		ContentField[] contentFields = {
+		System.out.println(
+			structuredContentResource.postSiteStructuredContent(
+				Long.valueOf(System.getProperty("siteId")),
+				new StructuredContent() {
+					{
+						contentFields = _getContentFields();
+						contentStructureId = Long.valueOf(
+							System.getProperty("contentStructureId"));
+						title = "Goo Article Java";
+					}
+				}));
+	}
+
+	private static ContentField[] _getContentFields() {
+		return new ContentField[] {
 			new ContentField() {
 				{
 					contentFieldValue = new ContentFieldValue() {
@@ -29,18 +43,6 @@ public class StructuredContents_POST_ToSites {
 				}
 			}
 		};
-
-		System.out.println(
-			structuredContentResource.postSiteStructuredContent(
-				Long.valueOf(System.getProperty("siteId")),
-				new StructuredContent() {
-					{
-						contentFields = contentFields;
-						contentStructureId = Long.valueOf(
-							System.getProperty("contentStructureId"));
-						title = "Goo Article Java";
-					}
-				}));
 	}
 
 }

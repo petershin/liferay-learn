@@ -17,31 +17,33 @@ public class StructuredContents_POST_ToStructuredContentFolders {
 				"test@liferay.com", "learn"
 			).build();
 
-		ContentField[] contentFields = {
-			new ContentField() {
-				{
-					name = "content";
-					contentFieldValue = new ContentFieldValue() {
-						{
-							data = "<p>Foo</p>";
-						}
-					};
-				}
-			}
-		};
-
 		System.out.println(
 			structuredContentResource.
 				postStructuredContentFolderStructuredContent(
 					Long.valueOf(System.getProperty("structuredContentFolder")),
 					new StructuredContent() {
 						{
-							contentFields = contentFields;
+							contentFields = _getContentFields();
 							contentStructureId = Long.valueOf(
 								System.getProperty("contentStructureId"));
 							title = "Easy Article";
 						}
 					}));
+	}
+
+	private static ContentField[] _getContentFields() {
+		return new ContentField[] {
+			new ContentField() {
+				{
+					name = "Content";
+					contentFieldValue = new ContentFieldValue() {
+						{
+							data = "Foo";
+						}
+					};
+				}
+			}
+		};
 	}
 
 }

@@ -18,14 +18,28 @@ public class StructuredContents_PUT_ById {
 				"test@liferay.com", "learn"
 			).build();
 
+		System.out.println(
+			structuredContentResource.putStructuredContent(
+				Long.valueOf(System.getProperty("structuredContentId")),
+				new StructuredContent() {
+					{
+						contentFields = _getContentFields();
+						contentStructureId = Long.valueOf(
+							System.getProperty("contentStructureId"));
+						title = "Baker";
+					}
+				}));
+	}
+
+	private static ContentField[] _getContentFields() {
 		ContentDocument contentDocument = new ContentDocument() {
 			{
-				description = "This text describes Goo's image.";
+				description = "This text describes the image.";
 				id = Long.valueOf(System.getProperty("imageId"));
 			}
 		};
 
-		ContentField[] contentFields = {
+		return new ContentField[] {
 			new ContentField() {
 				{
 					contentFieldValue = new ContentFieldValue() {
@@ -67,18 +81,6 @@ public class StructuredContents_PUT_ById {
 				}
 			}
 		};
-
-		System.out.println(
-			structuredContentResource.putStructuredContent(
-				Long.valueOf(System.getProperty("structuredContentId")),
-				new StructuredContent() {
-					{
-						contentFields = contentFields;
-						contentStructureId = Long.valueOf(
-							System.getProperty("contentStructureId"));
-						title = "Baker";
-					}
-				}));
 	}
 
 }

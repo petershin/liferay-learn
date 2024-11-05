@@ -21,9 +21,8 @@ With Liferay Objects, you can extend supported system services. Currently, only 
 * Postal Address
 * User
 
-```{note}
-The Postal Address object stores account addresses. For this reason, you can only relate it to custom objects that are related to the Accounts object. See [Using System Accounts with Custom Objects](./using-system-objects-with-custom-objects.md) for more information.
-```
+!!! note
+    The Postal Address object stores account addresses. For this reason, you can only relate it to custom objects that are related to the Accounts object. See [Using System Accounts with Custom Objects](./using-system-objects-with-custom-objects.md) for more information.
 
 ![Extend system services integrated with the Objects Framework.](./extending-system-objects/images/01.png)
 
@@ -42,17 +41,17 @@ When extending system objects, you can add [fields](#adding-fields), [relationsh
 
 You can add fields to system objects. The additional database columns are added to a separate database table that uses the service's original table name with `_x` appended to it (e.g., `AccountEntry_x`). System objects support all available [field types](./fields.md). Since system objects do not support custom layouts or views, you can only access these custom fields via Headless APIs. See [Adding Fields to Objects](./fields/adding-fields-to-objects.md) for more information.
 
-```{note}
-Liferay's [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) application is for adding fields to most Liferay system applications using the [Expando](../../building-applications/data-frameworks/expando-framework/accessing-custom-fields-with-expando.md) framework. Objects does not support the Expando-based custom fields, so you cannot use them with Objects features (e.g., [relationships](#adding-relationships), [actions](#adding-actions), and [validations](#adding-validations)).
-```
+When adding fields to a system object, like `Commerce Order Item`, the fields may appear in the sample JSON in the Liferay API Explorer. However, they only show in the actual API response if they contain values. To ensure a field appears in the response, create or update the object entry using the updated schema, assigning a value to the custom field.
+
+!!! note
+    Liferay's [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) application is for adding fields to most Liferay system applications using the [Expando](../../building-applications/data-frameworks/expando-framework/accessing-custom-fields-with-expando.md) framework. Objects does not support the Expando-based custom fields, so you cannot use them with Objects features (e.g., [relationships](#adding-relationships), [actions](#adding-actions), and [validations](#adding-validations)).
 
 ## Adding Relationships
 
 You can add relationships between system and custom objects to link their entities. System objects support both one-to-many and many-to-many relationships. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information.
 
-```{important}
-Since system objects don't support custom [layouts](./layouts/designing-object-layouts.md) and [views](./views/designing-object-views.md), you cannot add relationships to the UI for system objects. You can only interact with them via headless APIs. 
-```
+!!! important
+    Since system objects don't support custom [layouts](./layouts/designing-object-layouts.md) and [views](./views/designing-object-views.md), you cannot add relationships to the UI for system objects. You can only interact with them via headless APIs.
 
 ### Relationship APIs
 
@@ -66,7 +65,7 @@ See [Using Relationships REST APIs](../understanding-object-integrations/using-c
 
 ## Adding Actions
 
-You can add actions to system objects, triggered on events like adding, updating, or removing entries. The table below shows actions supported by system objects: 
+You can add actions to system objects, triggered on events like adding, updating, or removing entries. The table below shows actions supported by system objects:
 
 | Action Type                                                                        | Supported in System Objects? |
 |:-----------------------------------------------------------------------------------|:-----------------------------|

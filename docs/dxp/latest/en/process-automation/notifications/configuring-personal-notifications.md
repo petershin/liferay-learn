@@ -92,9 +92,13 @@ Customization options include the following application triggers.
 
 ## Publications
 
-| Trigger                              | Email | Website  |
-|:-------------------------------------|:------|:---------|
-| Invites you to work on a publication |       | &#10004; |
+| Trigger                              | Email    | Website  |
+|:-------------------------------------|:---------|:---------|
+| Invites you to work on a publication | &#10004; | &#10004; |
+| Scheduled publication fails.         |          | &#10004; |
+
+!!! note
+    Email notifications are behind a release feature flag (LPD-11212). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 ## Segments Experiment
 

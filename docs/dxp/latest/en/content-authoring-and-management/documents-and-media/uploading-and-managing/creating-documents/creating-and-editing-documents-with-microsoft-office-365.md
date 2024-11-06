@@ -10,17 +10,20 @@ uuid: 14155784-a114-48f6-b28a-6efc9bf094c4
 
 # Creating and Editing Documents with Microsoft Office 365
 
-You can use Office 365&trade; to create and edit text documents, spreadsheets, or presentations for storage in the Documents and Media library. When you finish your Office 365&trade; editing session, you must check in the document to save the changes in the Documents and Media library.
+Use Office 365&trade; to create and edit text documents, spreadsheets, or presentations for storage in the Documents and Media library. After completing your Office 365&trade; editing session, check in the document to save changes in the Documents and Media library.
 
-Before starting, you must first [connect your DXP installation with Microsoft Office 365&trade;.](../../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)
+Before you begin, [connect your DXP installation with Microsoft Office 365&trade;.](../../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)
 
 ## Authentication
 
-The first time you create or edit a Documents and Media file via Office 365&trade;, you must authenticate with your Microsoft account. This links OneDrive&trade; to your DXP account, so you only do this once.
+The first time you create or edit a Documents and Media file via Office 365&trade;, you must authenticate with your Microsoft account, which links OneDrive&trade; to your DXP account.
 
-To unlink your account,
+!!! important
+    If you update your Microsoft account credentials, you must unlink your OneDrive&trade; account from DXP and re-link it to trigger the login prompt again.
 
-1. Click on *your profile* &rarr; *Account Settings*.
+### Unlinking the Account
+
+1. Click on your *User Profile* icon &rarr; *Account Settings*.
 
 1. On the *General* tab, click *Apps*.
 
@@ -67,6 +70,9 @@ You can use Office 365&trade; to edit the following types of Documents and Media
 - Text files (`.doc`, `.docx`, `.docm`, `.dot`, `.dotx`, `.dotm`, `.html`, `.txt`, `.rtf`, `.odt`)
 - Presentation files (`.ppt`, `.pptx`, `.pptm`, `.pps`, `.ppsx`, `.ppsm`, `.pot`, `.potx`, `.potm`)
 - Spreadsheet files (`.xls`, `.xlsx`, `.xlsm`, `.xlt`, `.xltx`, `.xltm`, `.ods`, `.csv`, `.tsv`, `.txt`, `.tab`)
+
+!!! note
+    To edit documents in Office 365&trade; within Liferay, ensure your files are in the current Microsoft Office&trade; formats (`.docx`, `.xlsx`, and .`pptx`). Convert older formats (e.g., `.doc`, `.xls`, and `.ppt`) to these formats for compatibility with Office 365&trade; editing.
 
 To edit a Documents and Media file in Office 365&trade;,
 

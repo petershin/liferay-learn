@@ -29,45 +29,34 @@ For more information about permissions, see [Microsoft's documentation](https://
 
 ## Configuring DXP
 
-Now you must connect your DXP installation with your Microsoft identity platform&trade; application. You can do this at two scopes:
+Connect your DXP installation to your Microsoft identity platform&trade; application. This can be done this in two ways:
 
 - Globally, for all instances in your DXP installation.
-- At the instance scope, for one or more instances in your DXP installation.
 
-You can override the global configuration for one or more instances by configuring those instances separately. Similarly, you can configure only the instances you want to connect to your application and leave the global configuration empty.
+   Navigate to *Control Panel* &rarr; *System Settings* &rarr; *Documents and Media* under Content and Data.
 
-### Global Level Configuration
+- At the instance level, for specific instances in your DXP installation.
 
-1. Navigate to *Control Panel* &rarr; *System Settings* &rarr; *Documents and Media*.
+   Navigate to the *Control Panel* &rarr; *Instance Settings* &rarr; *Documents and Media* under Content and Data.
+
+To override the global configuration, configure the desired instances individually. You may also leave the global configuration blank if only certain instances must connect to your application.
+
+To configure,
 
 1. Click *OneDrive* in the left menu.
 
    ![Enter your Client ID, Client Secret, and Tenant.](./enabling-document-creation-and-editing-with-microsoft-office-365/images/01.png)
 
-1. Enter your application's OAuth 2 client ID and client secret in the *Client ID* and *Client Secret* fields, respectively.
+1. Enter your application's OAuth 2 *Client ID* and *Client Secret*.
 
-1. Enter your tenant ID in the *Tenant* field. To find your tenant ID, see [Microsoft's documentation](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
-
-1. Click *Save*.
-
-Access has been granted at the global level.
-
-### Instance Level Configuration
-
-1. Navigate to the *Control Panel* &rarr; *Instance Settings* &rarr; *Content and Data &rarr; *Documents and Media*.
-
-1. Click *OneDrive* in the left navigation menu.
-
-   ![Enter your credentials in the corresponding fields at the instance level.](./enabling-document-creation-and-editing-with-microsoft-office-365/images/02.png)
-
-1. Enter your application's OAuth 2 client ID and client secret in the *Client ID* and *Client Secret* fields, respectively.
-
-1. Enter your tenant ID in the *Tenant* field. To find your tenant ID, see [Microsoft's documentation](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
+1. Enter your *Tenant ID*. To locate it, see [Microsoft's documentation](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
 
 1. Click *Save*.
+
+Access is now granted at the specified level.
 
 !!! note
-    Once enabled, you can disable this feature by deleting the client ID, client secret, and tenant values from the form.
+    To disable this feature, delete the Client ID, Client Secret, and Tenant ID from the form.
 
 ## Related Topics
 

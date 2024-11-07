@@ -121,6 +121,9 @@ Use the mini cart fragment to obtain a detailed overview of your cart. You can u
 
 ## Featured Content
 
+!!! note
+    The Featured Content fragment set is [deprecated](../../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of Liferay 2024.Q4+ and is scheduled for removal in a future release.
+
 Featured content fragments are complex page elements composed of multiple components. To preview a fragment's layout, switch to *Card View* (![Card View](../../../../images/icon-cards2.png)) in the Fragments and Widgets panel. Liferay includes the following featured content fragments.
 
 !!! note

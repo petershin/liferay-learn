@@ -52,7 +52,7 @@ Here are the features deprecated in 7.4:
 | Dynamic Data Lists | Bundled | Deprecated in 7.3. Replaced by [Liferay Objects](../../../process-automation/forms/dynamic-data-lists/migrating-to-liferay-objects.md). |
 | Export/Import Resource Importer | Removed | This importer was originally created to allow themes to provide additional Liferay assets during deployment. It was deprecated in earlier versions of 7.4 and was removed in 7.4 U74 / 7.4 GA74. We recommend leveraging our new approaches such as site initializers or [client extensions](../../../liferay-development/client-extensions.md). |
 | EXT Plugins support | Removed | Replaced by configuration settings and standard extension points. |
-| Fragment Sets: Featured Content | Bundled | Deprecated in 2024.Q4. No direct replacement. |
+| Featured Content (Fragment Set) | Bundled | Deprecated in 2024.Q4. No direct replacement. |
 | Google Login/SSO | Archived | Deprecated in 7.2. Replaced by other solutions, including SAML, OpenID Connect, and Token-based SSO. |
 | Group Statistics Widget | Bundled | Deprecated in 2024.Q4. No direct replacement. |
 | Image Editor (Soy-based) | Removed | Replaced by a React-based image editor. |

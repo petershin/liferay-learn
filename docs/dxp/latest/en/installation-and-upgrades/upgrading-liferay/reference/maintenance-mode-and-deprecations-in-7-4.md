@@ -49,7 +49,6 @@ Here are the features deprecated in 7.4:
 | Commerce Category Content widget | Bundled | Replaced by [Display Page Templates](../../../site-building/displaying-content/using-display-page-templates.md). |
 | Custom User Attribute (in the Asset Publisher widget) | Bundled | Replaced by [Collections and Experiences](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md#displaying-content-dinamically-using-experiences). |
 | Digest Authentication | Bundled | Digest Authentication requires weak password hash storage, which is a vulnerability. |
-| Directory Widget | Bundled | Deprecated in 2024.Q4. No direct replacement. |
 | Dynamic Data Lists | Bundled | Deprecated in 7.3. Replaced by [Liferay Objects](../../../process-automation/forms/dynamic-data-lists/migrating-to-liferay-objects.md). |
 | Export/Import Resource Importer | Removed | This importer was originally created to allow themes to provide additional Liferay assets during deployment. It was deprecated in earlier versions of 7.4 and was removed in 7.4 U74 / 7.4 GA74. We recommend leveraging our new approaches such as site initializers or [client extensions](../../../liferay-development/client-extensions.md). |
 | EXT Plugins support | Removed | Replaced by configuration settings and standard extension points. |
@@ -74,6 +73,7 @@ Here are the features deprecated in 7.4:
 | Polls | Removed | Replaced by [Forms/Forms Reports](../../../process-automation/forms/sharing-forms-and-managing-submissions/form-reports.md). |
 | Search widget (classic) | Bundled | Deprecated in 7.1. Replaced by the [Search widgets](../../../using-search/search-pages-and-widgets/search-results/search-results.md). |
 | Shared With Me Widget | Bundled | Deprecated in 2024.Q4. No direct replacement. |
+| Sites Directory Widget | Bundled | Deprecated in 2024.Q4. No direct replacement. |
 | SOAP Web Services | Bundled (disabled by default) | Replaced by JSON web services, REST services, and GraphQL services. |
 | Social Networking Plugin | Bundled | Deprecated in 2024.Q4. No direct replacement. |
 | Staging Relationship Modules | Bundled | These modules are obsolete and are no longer being used. They were deprecated in the 2023.Q3 release. |

@@ -58,7 +58,7 @@ Collaboration widgets build sites and communities that foster collaboration and 
 | Dynamic Data Lists Display | Adds a widget to display a dynamic data list. Dynamic Data Lists is deprecated as of Liferay DXP 7.3. It is replaced by [Objects](../../../../liferay-development/objects.md).              |
 | Form                       | Adds a [Form widget](../../../../process-automation/forms/sharing-forms-and-managing-submissions.md) to display a specific form.                                                            |
 | Invite Members             | {bdg-secondary}`Deprecated in Liferay 2024.Q4` Adds an [Invite Members widget](../../../sites/site-membership/inviting-members-to-your-site.md) to invite users to join a site.                                                            |
-| Message Boards             | Adds a [Message Boards widget](../../../../collaboration-and-social/message-boards.md) to add the Message Boards application to a page.      |
+| Message Boards             | {bdg-secondary}`Deprecated in Liferay 2024.Q4` Adds a [Message Boards widget](../../../../collaboration-and-social/message-boards.md) to add the Message Boards application to a page.      |
 | Questions                  | Adds a [Questions widget](../../../../collaboration-and-social/questions-application/using-the-questions-app.md) to display messages from the Message Boards in question and answer format. |
 | Recent Bloggers            | Adds a [Recent Bloggers widget](../../../../content-authoring-and-management/blogs/highlighting-recent-bloggers.md) to display the most recent blog authors.                                |
 
@@ -157,7 +157,7 @@ Social widgets create a social media experience on user sites.
 
 | Widget          | Description                                                                                                                                                        |
 | :-------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Activities      | Adds an [Activities widget](../../../../collaboration-and-social/social-tools/using-the-activities-widget.md) to track user activities on a site.                  |
+| Activities      | {bdg-secondary}`Deprecated in Liferay 2024.Q4` Adds an [Activities widget](../../../../collaboration-and-social/social-tools/using-the-activities-widget.md) to track user activities on a site.                  |
 | Contacts Center | Adds a [Contacts Center widget](../../../../collaboration-and-social/social-tools/using-the-contacts-center-widget.md) to form connections and follow other users. |
 | Members         | Adds a Members widget to show site members.                                                                                                                        |
 | My Contacts     | Adds a My Contacts widget to show users' connections. This widget can only be added to your profile page.                                                          |
@@ -178,6 +178,9 @@ Tool widgets provide widgets to tailor a user's experience.
 | {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Sign In         | Adds a Sign-In widget with fields to enter an email address and password for users to sign in.                     |
 
 ## Wiki
+
+!!! note
+    Wiki is [deprecated](../../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of Liferay 2024.Q4+. For data continuity, consider transitioning to alternative content management solutions like [Liferay Objects](../../../../liferay-development/objects.md) or [Web Content](../../../../content-authoring-and-management/web-content.md).
 
 Wiki widgets present the Wiki application and display wiki pages.
 

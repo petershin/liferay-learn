@@ -13,50 +13,53 @@ uuid: c938bebd-e338-4173-9be3-cf1d6dc90f17
 
 Liferay makes it easy to publish and showcase documents and other types of media files. As you begin [uploading media files](../uploading-and-managing/uploading-files.md), you probably want to start sharing them on your site.
 
-The available widgets can highlight your documents and media files: *Media Gallery*, *Documents and Media*, and *Asset Publisher*. You can choose an appropriate widget based on your use case. 
+The available widgets can highlight your documents and media files: *Media Gallery*, *Documents and Media*, and *Asset Publisher*. You can choose an appropriate widget based on your use case.
 
 You can embed and display Documents and Media files on other assets such as Web Content, Blogs, or Wiki pages.
 
 ## Using the Media Gallery Widget
 
-This widget publishes your media in a simple gallery-like style. It shows a large thumbnail of each file, offers file downloads, and has slideshow capabilities. A common way to use the Media Gallery is to have a separate page for displaying media and add a Media Gallery widget to it. The widget displays only audio or video files. 
+!!! note
+    The Media Gallery widget is [deprecated](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of Liferay 2024.Q4+ and is scheduled for removal in a future release.
+
+This widget publishes your media in a simple gallery-like style. It shows a large thumbnail of each file, offers file downloads, and has slideshow capabilities. A common way to use the Media Gallery is to have a separate page for displaying media and add a Media Gallery widget to it. The widget displays only audio or video files.
 
 To use the Media Gallery widget,
 
-1. From the Content Management category of widgets, add the Media Gallery widget to a page. 
+1. From the Content Management category of widgets, add the Media Gallery widget to a page.
 
-    ![Locate the Media Gallery widget listed under the Content Management section of widgets.](publishing-documents-on-a-dxp-site/images/01.png)
+   ![Locate the Media Gallery widget listed under the Content Management section of widgets.](publishing-documents-on-a-dxp-site/images/01.png)
 
 1. Once the widget appears, any media files previously uploaded should already be visible. If you wish to [add additional media files](../uploading-and-managing/uploading-files.md), they can be uploaded from Documents and Media.
 
-The Media Gallery widget has several options you can configure by clicking *Options* (![Options icon](../../../images/icon-options.png)) &rarr; _Configuration_: 
+The Media Gallery widget has several options you can configure by clicking *Options* (![Options icon](../../../images/icon-options.png)) &rarr; *Configuration*:
 
 ![The configuration window has four different tabs.](publishing-documents-on-a-dxp-site/images/02.png)
 
 **Display Settings:** Show each file's actions, filter the media types to display, and choose a display template for your media.
 
-**Folders Listing:** Select a Document Library folder to serve as the root folder from which to display files. This folder becomes the highest-level folder the widget can access. 
+**Folders Listing:** Select a Document Library folder to serve as the root folder from which to display files. This folder becomes the highest-level folder the widget can access.
 
 In the widget, clicking on any media file automatically starts a slideshow of all the files.
 
-![Clicking on a media file will start a slideshow](publishing-documents-on-a-dxp-site/images/03.png)
+![Clicking on a media file starts a slideshow](publishing-documents-on-a-dxp-site/images/03.png)
 
-On each file is an *Options* (![Options icon](../../../images/icon-options.png)) icon: 
+On each file is an *Options* (![Options icon](../../../images/icon-options.png)) icon:
 
 ![You have different options when you click on the Options icon.](publishing-documents-on-a-dxp-site/images/04.png)
 
- * Download
- * Edit
- * Permissions
- * Delete
+- Download
+- Edit
+- Permissions
+- Delete
 
-## Using the Documents and Media Widget 
+## Using the Documents and Media Widget
 
 This widget provides a way to publish all types of files. Unlike the Media Gallery widget, you can publish documents and other types of media.
 
 1. From the Content Management section, add the *Documents and Media* widget to a page.
 
-    ![Locate the Documents and Media widget listed under the Content Management section of widgets.](publishing-documents-on-a-dxp-site/images/05.png)
+   ![Locate the Documents and Media widget listed under the Content Management section of widgets.](publishing-documents-on-a-dxp-site/images/05.png)
 
 1. If you wish to [add additional media files](../uploading-and-managing/uploading-files.md), they can be uploaded from the Documents and Media application.
 
@@ -66,13 +69,13 @@ You can configure Documents and Media via its *Options* button (![Options button
 
 **Display Settings:** Show each file's actions, show the search bar, show related assets, set maximum number of files per page, and enable different view options.
 
-**Folders Listing:** Select a Document Library folder to serve as the root folder from which to display files. This folder becomes the highest-level folder the widget can access. 
+**Folders Listing:** Select a Document Library folder to serve as the root folder from which to display files. This folder becomes the highest-level folder the widget can access.
 
 **Entries listing for table display style:** Set what type of file information to display when the user selects Table view.
 
 **Ratings:** Enable or disable the [ratings system](../../../collaboration-and-social/social-tools/using-the-ratings-system.md).
 
-The toolbar at the top of Documents and Media provides these functions: 
+The toolbar at the top of Documents and Media provides these functions:
 
 ![Access different tools from the toolbar at the top of the widget](publishing-documents-on-a-dxp-site/images/07.png)
 
@@ -82,13 +85,13 @@ The toolbar at the top of Documents and Media provides these functions:
 
 ![Click on filter and order to choose different ways to organize and sort your files.](publishing-documents-on-a-dxp-site/images/08.png)
 
-**Reverse:** The *Reverse* icon (![Reverse icon](../../../images/icon-sort.png)) reverses the direction of the sorting. 
+**Reverse:** The *Reverse* icon (![Reverse icon](../../../images/icon-sort.png)) reverses the direction of the sorting.
 
 **Search:** Search through your media files by keyword.
 
 **Information:** The *Information* icon (![Click on the information icon to display file info.](../../../images/icon-information.png)) provides details about the media files within the folder.
 
-**Display Style:** The *Display Style* icon (![Click on the display style icon to choose your display option.](../../../images/icon-view-type-cards.png)) switches between three display types: Cards, List and Table view. 
+**Display Style:** The *Display Style* icon (![Click on the display style icon to choose your display option.](../../../images/icon-view-type-cards.png)) switches between three display types: Cards, List and Table view.
 
 ![Choose between cards, list, or table view to display your files.](publishing-documents-on-a-dxp-site/images/09.png)
 
@@ -110,15 +113,15 @@ Selecting a file reveals several options:
 
 **Delete:** Click the *Trash* icon (![Trash icon](../../../images/icon-trash.png)) to delete a file.
 
-**Actions:** The *Actions* icon (![Actions icon](../../../images/icon-actions.png)) has options, including *Checkin* and *Checkout*. See [Google Drive Integration](../devops/google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md), [Office 365 Integration](../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md), and [LibreOffice Integration](../devops/enabling-openoffice-libreoffice-integration.md). 
+**Actions:** The *Actions* icon (![Actions icon](../../../images/icon-actions.png)) has options, including *Checkin* and *Checkout*. See [Google Drive Integration](../devops/google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md), [Office 365 Integration](../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md), and [LibreOffice Integration](../devops/enabling-openoffice-libreoffice-integration.md).
 
 ## Using the Asset Publisher Widget
 
-The [Asset Publisher](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) widget can publish different assets and collections based on criteria. You can use it to display content from your Documents and Media library. 
+The [Asset Publisher](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) widget can publish different assets and collections based on criteria. You can use it to display content from your Documents and Media library.
 
 ## Using Documents in Other Assets
 
-It is easy to add your documents or media files to other types of assets: 
+It is easy to add your documents or media files to other types of assets:
 
 ### Web Content
 
@@ -126,11 +129,11 @@ It is easy to add your documents or media files to other types of assets:
 
 1. Go to the Structures tab of the Web Content application to create a new Structure. Drag and drop the Documents and Media field onto the Structure.
 
-    ![Drag and drop the Documents and Media field onto the Structure.](publishing-documents-on-a-dxp-site/images/15.png)
+   ![Drag and drop the Documents and Media field onto the Structure.](publishing-documents-on-a-dxp-site/images/15.png)
 
-1. Under the Web Content tab, click on the Add icon (![Add icon](../../../images/icon-add.png)) to create new Web Content. Select the Structure you just created as your template.
+1. Under the Web Content tab, click on the Add icon (![Add icon](../../../images/icon-add.png)) to create new Web Content. Select the Structure you created as your template.
 
-    ![Select the new Structure you just created](publishing-documents-on-a-dxp-site/images/16.png)
+   ![Select the new Structure you created](publishing-documents-on-a-dxp-site/images/16.png)
 
 1. You can now select documents or media files and add them to your Web Content.
 
@@ -138,7 +141,7 @@ It is easy to add your documents or media files to other types of assets:
 
 1. To add documents and media to your blog, first navigate to the Blog application.
 
-1. Click the Add icon (![Add icon](../../../images/icon-add.png)) to add a new blog entry. 
+1. Click the Add icon (![Add icon](../../../images/icon-add.png)) to add a new blog entry.
 
 1. Under Related Assets, click the *Select* button to select your documents and media to be added to your blog post.
 
@@ -151,3 +154,10 @@ It is easy to add your documents or media files to other types of assets:
 1. Under Related Assets, click on the *Select* button and to select your documents and media to be added to your Wiki page.
 
    ![Under Related Assets, click on the select button to add your documents or media files.](publishing-documents-on-a-dxp-site/images/17.png)
+
+## Related Topics
+
+- [Displaying Assets Using the Asset Publisher Widget](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md)
+- [Web Content](../../web-content.md)
+- [Blogs](../../blogs.md)
+- [Wiki](../../../collaboration-and-social/wiki.md)

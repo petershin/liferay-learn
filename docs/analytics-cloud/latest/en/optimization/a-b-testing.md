@@ -68,7 +68,7 @@ Below are the metrics reported:
 **Unique Visitors:** The number of visitors contributing to the variant. A visitor randomly assigned a variant always sees the same variant until the end of the test. Besides knowing how much traffic is hitting a page, this metric also helps in determining configuration issues with the A/B test. For example, there could be too much traffic going to one variant (typically caused by a segment misconfiguration).
 
 !!! important
-    A minimum of 5 successes and 5 failures per variant is required for test data to be reported. Test data is not reported when this threshold is not met.
+    A minimum of five successes and five failures per variant is required for test data to be reported. Test data is not reported when this threshold is not met.
 
 ## Test Sessions
 

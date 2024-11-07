@@ -31,7 +31,9 @@ function generate_zip_files {
 		local output_dir_name=$(dirname "${output_dir_name}")
 
 		mkdir -p "/${output_dir_name}"
+		mkdir -p ${_REPOSITORY_DIR}/site/examples
 
+		cp "${zip_dir_name}"/"${zip_file_name}" ${_REPOSITORY_DIR}/site/examples
 		mv "${zip_dir_name}"/"${zip_file_name}" "${output_dir_name}"
 
 		echo "Generated zip: ${zip_dir_name}"
@@ -47,15 +49,17 @@ function get_reference_docs {
 	# liferay-ce-portal-doc-*.zip
 	#
 
-	curl -L https://github.com/liferay/liferay-portal/releases/download/"${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}"/"${LIFERAY_LEARN_PORTAL_DOC_FILE_NAME}" > liferay-ce-portal-doc.zip
+	echo https://github.com/liferay/liferay-portal/releases/download/"${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}"/"${LIFERAY_LEARN_PORTAL_DOC_FILE_NAME}"
+
+	curl -L https://github.com/liferay/liferay-portal/releases/download/"${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}"/"${LIFERAY_LEARN_PORTAL_DOC_FILE_NAME}" > liferay-ce-portal-doc.zip
 
 	7z x -aoa liferay-ce-portal-doc.zip
 
 	mkdir -p "${_REPOSITORY_DIR}/site/reference/latest/en/dxp"
 
-	cp -R liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/* "${_REPOSITORY_DIR}/site/reference/latest/en/dxp"
+	cp -R liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}/* "${_REPOSITORY_DIR}/site/reference/latest/en/dxp"
 
-	rm -fr liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}
+	rm -fr liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}
 
 	rm -f liferay-ce-portal-doc.zip
 
@@ -158,6 +162,7 @@ function run_learn_markdown_converter {
 
 function set_up_environment {
 	source ./_common.sh
+	source ./learn-markdown-converter/src/main/resources/com/liferay/learn/markdown/converter/dependencies/token.properties
 
 	init_diffs
 

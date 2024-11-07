@@ -20,37 +20,34 @@ taxonomy-category-names:
 
 # Wiki
 
-## Getting Started with Wikis
+!!! note
+    Wiki is [deprecated](../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of Liferay 2024.Q4+. For data continuity, consider transitioning to alternative content management solutions like [Liferay Objects](../liferay-development/objects.md) or [Web Content](../content-authoring-and-management/web-content.md).
 
-The _Wiki_ application includes a rich-text WYSIWYG editor, version tracking, and the ability to create multiple wiki nodes. Wikis are integrated with Liferay's users and permissions.
+The Wiki application includes a rich-text WYSIWYG editor, version tracking, and the ability to create multiple wiki nodes. Wikis are integrated with Liferay's users and permissions.
 
 ## Adding a Wiki Widget to a Site
 
-The fastest way to begin using the _Wiki_ widget is deploying it on a [Site Page](../site-building/creating-pages/understanding-pages.md).
+The fastest way to begin using the Wiki widget is deploying it on a [site page](../site-building/creating-pages/understanding-pages.md).
 
-1. Navigate to the site page where the wiki will be created (for example, the DXP _Guest_ site's _Wiki page_).
-1. Click the _Add_ button.
-1. Click _Widgets_ then _Wiki_ to expand the menu.
+1. Navigate to the site page where you want to add the Wiki widget (for example, the DXP Guest site's Wiki page) and start editing it.
+
+1. In the Fragments and Widgets sidebar, look for the *Wiki* widget. Drag and drop it into the page and publish the page.
 
    ![Select a Wiki widget from the Widgets menu](./wiki/images/01.png)
 
-1. Drag and drop the _Wiki_ widget to the desired location on the page.
-
-   ![The widget is now on the site page.](./wiki/images/02.png)
-
-Site members are now able to create and edit wiki pages. Note that there can be only one _Wiki_ widget per page.
+Site members are now able to create and edit wiki pages. Note that there can be only one *Wiki* widget per page.
 
 ## Complementary Wiki Widgets
 
-Liferay DXP offers three additional widgets to be used in conjunction with the _Wiki_ widget which makes it easier to navigate to and view the other wiki pages on the same DXP instance. This is because the _Wiki_ widget displays only the _FrontPage_.
+Liferay DXP offers three additional widgets to be used in conjunction with the *Wiki* widget which makes it easier to navigate to and view the other wiki pages on the same DXP instance. This is because the *Wiki* widget displays only the *FrontPage*.
 
-- [Page Menu](wiki/using-the-page-menu-widget.md)
-- [Tree Menu](wiki/using-the-tree-menu-widget.md)
-- [Wiki Display](wiki/using-the-wiki-display-widget.md)
+- [Page Menu](./wiki/using-the-page-menu-widget.md)
+- [Tree Menu](./wiki/using-the-tree-menu-widget.md)
+- [Wiki Display](./wiki/using-the-wiki-display-widget.md)
 
 ## What's Next
 
-Learn about the features in the _Wiki_ widget:
+Learn about the features in the *Wiki* widget:
 
 - [Creating Wiki Pages](wiki/creating-wiki-pages.md)
 - [Creating a Wiki Node](wiki/creating-a-node.md)

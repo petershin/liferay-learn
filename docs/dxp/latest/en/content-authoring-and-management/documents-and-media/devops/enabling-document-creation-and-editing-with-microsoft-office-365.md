@@ -16,32 +16,26 @@ Before you can use Office 365&trade; to create and edit Documents and Media file
 
 ## Register an Application with the Microsoft Identity Platform
 
-First, configure your application with the Microsoft identity platform&trade;. To do so, follow the steps described in [Microsoft's documentation](https://docs.microsoft.com/en-gb/graph/auth-register-app-v2).
+Begin by configuring an application in the Microsoft identity platform&trade;. Follow the steps in [Microsoft's documentation](https://docs.microsoft.com/en-gb/graph/auth-register-app-v2).
 
-To construct a URL for the *Redirect URI* parameter, follow this pattern: `https://[hostname]/o/document_library/onedrive/oauth2`
+In the platform, register the redirect URI for the application. Use the following format for the Redirect URI: `https://[hostname]/o/document_library/onedrive/oauth2` (e.g., `https://localhost:8080/o/document_library/onedrive/oauth2`).
 
-Here's the minimum permission set needed to use Office 365&trade; integration:
+Locate the `Application (client) ID` and the `Directory (tenant) ID` in your app registration. These identifiers are used while [configuring DXP](#configuring-dxp).
 
-- `Files.Read.All`
-- `Files.ReadWrite.All`
-
-For more information about permissions, see [Microsoft's documentation](https://docs.microsoft.com/graph/permissions-reference).
+!!! important
+    You need the `Files.Read.All` and `Files.ReadWrite.All` permissions for Office 365&trade; integration. For more information about permissions, see [Microsoft's documentation](https://docs.microsoft.com/graph/permissions-reference).
 
 ## Configuring DXP
 
-Connect your DXP installation to your Microsoft identity platform&trade; application. This can be done this in two ways:
+Connect your DXP installation to the Microsoft identity platform&trade; application. Configuration can be set at either the global level (for all instances) or per-instance level.
 
-- Globally, for all instances in your DXP installation.
+You can configure instances individually to override global settings, or leave the global configuration blank if only specific instances require access.
 
-   Navigate to *Control Panel* &rarr; *System Settings* &rarr; *Documents and Media* under Content and Data.
+To access the global configuration, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings* &rarr; *Documents and Media* under Content and Data.
 
-- At the instance level, for specific instances in your DXP installation.
+To access the instance-level configuration, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to the *Control Panel* &rarr; *Instance Settings* &rarr; *Documents and Media* under Content and Data.
 
-   Navigate to the *Control Panel* &rarr; *Instance Settings* &rarr; *Documents and Media* under Content and Data.
-
-To override the global configuration, configure the desired instances individually. You may also leave the global configuration blank if only certain instances must connect to your application.
-
-To configure,
+To complete the configuration,
 
 1. Click *OneDrive* in the left menu.
 
@@ -53,10 +47,10 @@ To configure,
 
 1. Click *Save*.
 
-Access is now granted at the specified level.
+The integration is now enabled at the specified level.
 
 !!! note
-    To disable this feature, delete the Client ID, Client Secret, and Tenant ID from the form.
+    To disable this feature, delete the *Client ID*, *Client Secret*, and *Tenant ID* from the form.
 
 ## Related Topics
 

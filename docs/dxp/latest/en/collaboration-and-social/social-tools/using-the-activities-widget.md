@@ -10,6 +10,9 @@ taxonomy-category-names:
 
 # Using the Activities Widget
 
+!!! note
+    The Activities widget is [deprecated](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of Liferay 2024.Q4+ and is scheduled for removal in a future release.
+
 The *Activities* widget is used to track user activities on a site.
 
 ![The activities card shows information about the activity.](./using-the-activities-widget/images/01.png)

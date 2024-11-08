@@ -15,7 +15,7 @@ uuid: f8e95a71-2583-4bc4-8774-233c960c325d
 With Information Templates, you can create [FreeMarker](https://freemarker.apache.org/) templates for any item type that implements the Info Framework. Supported item types include web contents, documents, assets, blogs, categories, and objects. Once created, you can map fragment fields to your template to determine how an item is rendered in content and display Pages. This can help you implement a consistent style for your site.
 
 !!! important
-    Information templates are only available in fragments and are not available in widgets. If you want to design FreeMarker templates for web content that's displayed in widgets, use [web content templates](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md).
+    Information templates are only available in fragments, not in widgets. To design FreeMarker templates for web content displayed in widgets, use [web content templates](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md). Read [Choosing a Template](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md#choosing-a-template) to learn more about the differences between templates.
 
 ## Creating Information Templates
 
@@ -83,22 +83,6 @@ Here you can also [export](#exporting-templates) and [import](#importing-templat
 
 !!! note
     By default, Info template exports include Widget templates. However, you can configure which templates are included in the LAR file.
-
-## Choosing a Template
-
-In Liferay, both [web content templates](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md) and information templates are used to structure and display content with FreeMarker, but they have different use cases and scopes of application.
-
-When deciding which template to use, consider the following key differences to ensure compatibility with your content type and intended functionality:
-
-| Feature                 | Information Templates                                                                                                                                            | Web Content Templates                                                                                 |
-|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Supported Content Types | Supports multiple types (e.g., Web Content, Collections, and other assets)                                                                                       | Only supports Web Content                                                                             |
-| Use Case                | Suitable for displaying multiple content types within a unified template                                                                                         | Primarily used for custom Web Content structures                                                      |
-| Field Availability      | Limited to common fields supported by the Information Framework (e.g., single selection, multiple selection, date, link to layout, numeric, text, and rich text) | All structure fields are available, including complex types like grids, geolocation, and field groups |
-| Template Language       | Both support FreeMarker with similar syntax                                                                                                                      | Both support FreeMarker with similar syntax                                                           |
-| Ideal for Collections   | Yes, works well with collections of assets                                                                                                                       | Not suitable for collections                                                                          |
-| Compatibility           | Can be applied to most items via the Info Framework                                                                                                              | Exclusive to web content structures                                                                   |
-
 
 ## Related Topics
 

@@ -191,9 +191,8 @@ Here are the command's arguments:
 | `-d "{\"accountId\": ${1}, \"channelId\": ${2}, \"currencyCode\": \"${3}\"}"` | Enter the data to post.                                  |
 | `-u "test@liferay.com:learn"`                                                 | Enter basic authentication credentials.                  |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application using OAuth2.
-```
+!!! note
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application using OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -292,7 +291,7 @@ To filter by `orderStatus`, you must use its associated integer value. The table
 | Processing        | 10            |
 | Shipped           | 15            |
 | Completed         | 0             |
-| Cancelled         | 8             |
+| Canceled          | 8             |
 | Partially Shipped | 14            |
 | On Hold           | 20            |
 
@@ -411,6 +410,9 @@ Code:
 ```
 
 The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) shows the `Order` services and schemas and has an interface to test each service.
+
+!!! note
+    Starting Liferay DXP 2024.Q4+/GA129+, you can use external reference codes to `GET/PUT/PATCH/DELETE` orders.
 
 ## Related Topics
 

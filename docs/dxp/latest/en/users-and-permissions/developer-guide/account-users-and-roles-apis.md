@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Account Users and Roles APIs
 
-You can manage [Account Users](../accounts/account-users.md) and [Account Roles](../accounts/account-roles.md) from the Applications menu, but you can also use Liferay's REST APIs. Call these services to create and manage Account Users and Roles.
+You can manage [Account Users](../accounts/account-users.md) and [Account Roles](../accounts/account-roles.md) from the Applications menu, but you can also use Liferay's REST APIs. Call these services to create and manage account users and roles.
 
 ## Adding an Account User
 
@@ -93,7 +93,7 @@ Then, follow these steps:
    }
    ```
 
-1. Navigate to *Global Menu* &rarr; *Applications* &rarr; *Accounts*. Click the account you created a User for. Click the *Users* tab and see the new User that was created.
+1. Navigate to *Global Menu* &rarr; *Applications* &rarr; *Accounts*. Click the account you created a user for. Click the *Users* tab and see the new user that was created.
 
   ![See that a new account user has been added.](./account-users-and-roles-apis/images/01.png)
 
@@ -119,13 +119,13 @@ The `AccountUser_POST_ToAccount.sh` script calls the REST service with a cURL co
 
 Here are the command's arguments:
 
-| Arguments                                                                                                                    | Description |
-| :--------------------------------------------------------------------------------------------------------------------------- | :---------- |
-| `-H "Content-Type: application/json"`                                                                                        | Indicates that the request body format is JSON. |
+| Arguments                                                                                                                    | Description                                         |
+| :--------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| `-H "Content-Type: application/json"`                                                                                        | Indicates that the request body format is JSON.     |
 | `-X POST`                                                                                                                    | The HTTP method to invoke at the specified endpoint |
-| `"http://localhost:8080/o/headless-admin-user/v1.0/accounts/${1}/user-accounts"`                                             | The REST service endpoint |
-| `-d "{\"alternateName\": \"Dog\", \"emailAddress\": \"dog@liferay.com\", \"familyName\": \"Easy\", \"givenName\": \"Dog\"}"` | The data you are requesting to post |
-| `-u "test@liferay.com:learn"`                                                                                                | Basic authentication credentials |
+| `"http://localhost:8080/o/headless-admin-user/v1.0/accounts/${1}/user-accounts"`                                             | The REST service endpoint                           |
+| `-d "{\"alternateName\": \"Dog\", \"emailAddress\": \"dog@liferay.com\", \"familyName\": \"Easy\", \"givenName\": \"Dog\"}"` | The data you are requesting to post                 |
+| `-u "test@liferay.com:learn"`                                                                                                | Basic authentication credentials                    |
 
 !!! note
    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
@@ -144,10 +144,10 @@ The `Account_POST_ToInstance.java` class adds an Account User by calling the rel
 
 This class invokes the REST service using only three lines of code:
 
-| Line (abbreviated)                                                               | Description |
-| :------------------------------------------------------------------------------- | :---------- |
-| `UserAccountResource.Builder builder = ...`                                      | Gets a `Builder` for generating a `UserAccountResource` service instance. |
-| `UserAccountResource userAccountResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `UserAccountResource` service instance. |
+| Line (abbreviated)                                                               | Description                                                                                |
+| :------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------- |
+| `UserAccountResource.Builder builder = ...`                                      | Gets a `Builder` for generating a `UserAccountResource` service instance.                  |
+| `UserAccountResource userAccountResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `UserAccountResource` service instance.     |
 | `UserAccount userAccount = userAccountResource.postAccountUserAccount(...);`     | Calls the `userAccountResource.postAccountUserAccount` method and passes the data to post. |
 
 Note that the project includes the `com.liferay.headless.admin.user.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
@@ -196,11 +196,11 @@ Code:
    :lines: 11-23
 ```
 
-The Account's `UserAccount` objects appear in JSON.
+The account's `UserAccount` objects appear in JSON.
 
 ## Post an Account Role
 
-Create a new Account Role for a specific account. Note, replace `1234` with your account's ID.
+Create a new account role for a specific account. Note, replace `1234` with your account's ID.
 
 ### AccountRole_POST_ToAccount.sh
 
@@ -234,7 +234,7 @@ Code:
 
 ## Associate a User to an Account Role
 
-You can associate a User with a specific Account Role. Replace `1234` with your Account's ID. Replace `5678` with your Account Role's ID. Replace `9012` with your Account User's ID.
+You can associate a user with a specific account role. Replace `1234` with your account's ID. Replace `5678` with your account role's ID. Replace `9012` with your account user's ID.
 
 ### AccountRole_POST_UserAssociation.sh
 
@@ -268,7 +268,7 @@ Code:
 
 ## Get Account Roles from an Account
 
-You can list an Account's Account Roles by executing the following cURL or Java command. Replace `1234` with your Account's ID.
+You can list an account's account roles by executing the following cURL or Java command. Replace `1234` with your account's ID.
 
 ### AccountRoles_GET_FromAccount.sh
 
@@ -300,11 +300,11 @@ Code:
    :lines: 11-23
 ```
 
-The Account's `AccountRole` objects appear in JSON.
+The account's `AccountRole` objects appear in JSON.
 
 ## Remove Account Role User Association
 
-Remove an Account Role association from a specific Account User. Replace `1234` with your Account's ID. Replace `5678` with your Account Role's ID. Replace `9012` with your Account User's ID.
+Remove an account role association from a specific account user. Replace `1234` with your account's ID. Replace `5678` with your account role's ID. Replace `9012` with your account user's ID.
 
 ### AccountRole_DELETE_UserAssociation.sh
 
@@ -337,6 +337,9 @@ Code:
 ```
 
 The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `Account` services and schemas and has an interface to try out each service.
+
+!!! note
+    Starting Liferay DXP 2024.Q4+/GA129+, you can use external reference codes to `GET/PUT/PATCH/DELETE` account roles.
 
 ## Related Topics
 

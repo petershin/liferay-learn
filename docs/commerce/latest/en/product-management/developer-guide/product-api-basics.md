@@ -31,7 +31,10 @@ Then follow these steps:
 
 1. A product is scoped to a catalog and the catalog ID is one of the required parameters. To get this, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the catalog where you'll add products and note down the ID present next to its name.
 
-   ![Note down the ID of the Catalog present next to its name.](./product-api-basics/images/01.png)
+   ![Note down the ID of the catalog present next to its name.](./product-api-basics/images/01.png)
+
+   !!! note
+       Starting Liferay DXP 2024.Q4+/GA129+, you can use the catalog's external reference code when adding a product.
 
 1. Use the cURL script to add a new product to the catalog. On the command line, navigate to the `curl` folder. Execute the `Product_POST_ToCatalog.sh` script with your catalog ID as a parameter.
 

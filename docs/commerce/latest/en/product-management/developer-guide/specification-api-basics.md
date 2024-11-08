@@ -55,9 +55,8 @@ Once Liferay is running,
 
    ![Confirm that a new specification was added.](./specification-api-basics/images/01.png)
 
-   ```{note}
-   Currently, the API cannot add a specification label to a specification group or create a specification group. You must instead use the Specifications UI. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Specifications*. See [Specification Groups](../creating-and-managing-products/products/specifications.md#specification-groups) for more information.
-   ```
+   !!! note
+       Currently, the API cannot add a specification label to a specification group or create a specification group. You must instead use the Specifications UI. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Specifications*. See [Specification Groups](../creating-and-managing-products/products/specifications.md#specification-groups) for more information.
 
 1. Alternatively, call the REST service using the Java client. Navigate into the `java` folder and compile the source files:
 
@@ -89,9 +88,8 @@ Here are the command's arguments:
 | `-d "{\"key\": \"foo\", \"title\": {\"en_US\": \"Foo\"}}"`                      | Enter the data to post.                                  |
 | `-u "test@liferay.com:learn"`                                                   | Enter basic authentication credentials.                  |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application using OAuth2.
-```
+!!! note
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application using OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -115,15 +113,13 @@ This class invokes the REST service using only three lines of code:
 
 The project includes the `com.liferay.headless.commerce.admin.catalog.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API Explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+    The `main` method's comment demonstrates running the class.
 
 The remaining example Java classes call different `SpecificationResource` methods.
 
-```{important}
-See [SpecificationResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/SpecificationResource.java) for service details.
-```
+!!! important
+    See [SpecificationResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/SpecificationResource.java) for service details.
 
 Below are examples of calling other `Specification` REST services using cURL and Java.
 
@@ -186,9 +182,8 @@ Read [API Query Parameters](https://learn.liferay.com/w/dxp/headless-delivery/co
 
 Get a specific specification with cURL or Java `get` commands. Replace `1234` with the specification's ID.
 
-```{tip}
-Use `Specifications_GET_FromInstance.[java|sh]` to get a list of all specifications, and note the `id` of the specification you want specifically.
-```
+!!! tip
+    Use `Specifications_GET_FromInstance.[java|sh]` to get a list of all specifications, and note the `id` of the specification you want specifically.
 
 ### Specification_GET_ById.sh
 
@@ -291,3 +286,6 @@ Code:
 ```
 
 The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) shows the `Specification` services and schemas and has an interface to test each service.
+
+!!! note
+    Starting Liferay DXP 2024.Q4+/GA129+, you can use external reference codes to `GET/PUT/PATCH/DELETE` specifications.

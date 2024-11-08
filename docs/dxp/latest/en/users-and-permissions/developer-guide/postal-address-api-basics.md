@@ -82,13 +82,13 @@ The `PostalAddress_POST_ToAccount.sh` script calls the REST service with a cURL 
 
 Here are the command's arguments:
 
-| Arguments | Description |
-| :-------- | :---------- |
-| `-H "Content-Type: application/json"` | Indicates that the request body format is JSON. |
-| `-X POST` | The HTTP method to invoke at the specified endpoint |
-| `"http://localhost:8080/o/headless-admin-user/v1.0/accounts/${1}/postal-addresses"` | The REST service endpoint |
-| `-d "{\"addressCountry\": \"United States\", \"addressLocality\": \"Diamond Bar\", \"addressRegion\": \"California\", \"addressType\": \"shipping\", \"name\": \"Able Address\", \"postalCode\": \"12345\", \"primary\": false, \"streetAddressLine1\": \"123 Foo St\", \"streetAddressLine2\": \"\", \"streetAddressLine3\": \"\"}"` | The data you are requesting to post |
-| `-u "test@liferay.com:learn"` | Basic authentication credentials |
+| Arguments                                                                                                                                                                                                                                                                                                                             | Description                                         |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
+| `-H "Content-Type: application/json"`                                                                                                                                                                                                                                                                                                 | Indicates that the request body format is JSON.     |
+| `-X POST`                                                                                                                                                                                                                                                                                                                             | The HTTP method to invoke at the specified endpoint |
+| `"http://localhost:8080/o/headless-admin-user/v1.0/accounts/${1}/postal-addresses"`                                                                                                                                                                                                                                                   | The REST service endpoint                           |
+| `-d "{\"addressCountry\": \"United States\", \"addressLocality\": \"Diamond Bar\", \"addressRegion\": \"California\", \"addressType\": \"shipping\", \"name\": \"Able Address\", \"postalCode\": \"12345\", \"primary\": false, \"streetAddressLine1\": \"123 Foo St\", \"streetAddressLine2\": \"\", \"streetAddressLine3\": \"\"}"` | The data you are requesting to post                 |
+| `-u "test@liferay.com:learn"`                                                                                                                                                                                                                                                                                                         | Basic authentication credentials                    |
 
 !!! note
    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
@@ -107,10 +107,10 @@ The `PostalAddress_POST_ToAccount.java` class adds a postal address by calling t
 
 This class invokes the REST service using only three lines of code:
 
-| Line (abbreviated)                                                                   | Description |
-| :----------------------------------------------------------------------------------- | :---------- |
-| `PostalAddress.Builder builder = ...`                                                | Gets a `Builder` for generating a `PostalAddressResource` service instance. |
-| `PostalAddressResource postalAddressResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `PostalAddressResource` service instance. |
+| Line (abbreviated)                                                                   | Description                                                                                    |
+| :----------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| `PostalAddress.Builder builder = ...`                                                | Gets a `Builder` for generating a `PostalAddressResource` service instance.                    |
+| `PostalAddressResource postalAddressResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `PostalAddressResource` service instance.       |
 | `PostalAddress postalAddress = postalAddressResource.postAccountPostalAddress(...);` | Calls the `postalAddressResource.postAccountPostalAddress` method and passes the data to post. |
 
 Note that the project includes the `com.liferay.headless.admin.user.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
@@ -142,7 +142,6 @@ Code:
 ```{literalinclude} ./postal-address-api-basics/resources/liferay-n8y7.zip/curl/PostalAddresses_GET_FromAccount.sh
    :language: bash
 ```
-
 
 ### PostalAddresses_GET_FromAccount.java
 
@@ -380,6 +379,9 @@ Code:
 ```
 
 The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `PostalAddress` services and schemas and has an interface to try out each service.
+
+!!! note
+    Starting Liferay DXP 2024.Q4+/GA129+, you can use external reference codes to `GET/PUT/PATCH/DELETE` postal addresses.
 
 ## Related Topics
 

@@ -22,7 +22,7 @@ taxonomy-category-names:
 # Message Boards
 
 !!! note
-    Message Boards is [deprecated](../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of Liferay 2024.Q4+. For data continuity, consider transitioning to alternative content management solutions like [Liferay Objects](../liferay-development/objects.md) or [Web Content](../content-authoring-and-management/web-content.md).
+    Message Boards is [deprecated](../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of Liferay 2024.Q4+. For data continuity, consider transitioning to the [Questions application](./questions-application.md).
 
 Liferay's Message Boards application is a forum application that can be added to site pages.
 

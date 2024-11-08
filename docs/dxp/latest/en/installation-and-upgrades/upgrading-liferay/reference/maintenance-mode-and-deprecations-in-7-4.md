@@ -63,8 +63,8 @@ Here are the features deprecated in 7.4:
 | Liferay Screens | Removed. Final version released in 7.3. | No direct replacement; however, the mobile SDK and headless APIs support mobile application development. |
 | Liferay Sync Connector and Sync Client | Archived | Deprecated in 7.3. No direct replacement. |
 | Live Users | Bundled | Deprecated in 7.2. Replaced by [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index) |
-| Media Galery Widget | Bundled | Deprecated in 2024.Q4. No direct replacement. |
-| Message Boards | Bundled | Deprecated in 2024.Q4. For data continuity, consider transitioning to alternative content management solutions like [Liferay Objects](../../../liferay-development/objects.md) or [Web Content](../../../content-authoring-and-management/web-content.md). |
+| Media Gallery Widget | Bundled | Deprecated in 2024.Q4. No direct replacement. |
+| Message Boards | Bundled | Deprecated in 2024.Q4. For data continuity, consider transitioning to the [Questions application](../../../collaboration-and-social/questions-application.md). |
 | Microblogs | Bundled | Deprecated in 2024.Q4. No direct replacement. |
 | Mobile SDK | Removed | Replaced by [Headless Delivery](../../../headless-delivery/using-liferay-as-a-headless-platform.md). |
 | My Subscription Widget | Bundled | Deprecated in 2024.Q4. No direct replacement. |
@@ -79,8 +79,8 @@ Here are the features deprecated in 7.4:
 | Staging Relationship Modules | Bundled | These modules are obsolete and are no longer being used. They were deprecated in the 2023.Q3 release. |
 | Subscription Manager Widget | Bundled | Deprecated in 2024.Q4. No direct replacement. |
 | Theme: Hello World | Archived | Deprecated in 7.3. No direct replacement. |
-| Web Content Display Configuration: Portlet Mode View | Bundled | Deprecated in 2024.Q4. No direct replacement. |
 | Web Content Display Configuration: Sharing | Bundled | Deprecated in 2024.Q4. No direct replacement. |
+| Web Content Display Configuration: Supported Clients | Bundled | Deprecated in 2024.Q4. No direct replacement. |
 | Web Content Search widget | Archived |  |
 | Wiki | Bundled | Deprecated in 2024.Q4. For data continuity, consider transitioning to alternative content management solutions like [Liferay Objects](../../../liferay-development/objects.md) or [Web Content](../../../content-authoring-and-management/web-content.md). |
 | XSL Content Widget | Bundled | Deprecated in 2024.Q4. No direct replacement. |

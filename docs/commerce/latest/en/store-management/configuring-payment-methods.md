@@ -6,6 +6,7 @@ toc:
   - ./configuring-payment-methods/mercanet.md
   - ./configuring-payment-methods/money-orders.md
   - ./configuring-payment-methods/paypal.md
+  - ./configuring-payment-methods/liferay-commerce-connector-to-paypal-sdk.md
   - ./configuring-payment-methods/stripe.md
 uuid: aa6382a0-494f-44f7-b444-5f01acd39f7e
 taxonomy-category-names:

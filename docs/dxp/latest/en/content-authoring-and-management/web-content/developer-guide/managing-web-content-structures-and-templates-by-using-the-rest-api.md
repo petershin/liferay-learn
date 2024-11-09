@@ -11,9 +11,9 @@ uuid: ad9381e2-7fcf-4448-8028-59ed858e80c0
 
 # Managing Web Content Structures and Templates by Using the REST API
 
-Web content structures (or structures) define the information included in a web content article (or article). Structures facilitate creating and managing web content while ensuring that the content includes all the required information.
+Web content structures define the information included in a web content article. Structures facilitate creating and managing web content while ensuring that the content includes all the required information.
 
-You can associate a structure with a web content template (or template). A template determines how content fields are rendered on a page. The following table summarizes the available options using the Liferay DXP REST API with structures and templates:
+You can associate a structure with a web content template. A template determines how content fields are rendered on a page. The table below summarizes the available options using the Liferay DXP REST API with structures and templates:
 
 | Available Options                           | Unavailable Options            |
 |:--------------------------------------------|:-------------------------------|
@@ -216,7 +216,7 @@ public class ContentStructures_GET_FromSites {
 }
 ```
 
-This Java class uses the `ContentStructureResource` API to retrieve content structures from a specific Liferay site. The main method builds an instance of `ContentStructureResource` with authentication credentials ("test@liferay.com" and "learn"). It then calls the `getSiteContentStructuresPage()` method, passing the site ID, to fetch a paginated list of content structures for the site. The result is printed to the console using `System.out.println()`. The pagination is set to return the first page with two items per page.
+This Java class uses the `ContentStructureResource` API to retrieve content structures from a specific Liferay site. The main method builds an instance of `ContentStructureResource` with authentication credentials (`test@liferay.com` and `learn`). It then passes the site ID into the `getSiteContentStructuresPage()` method to fetch a paginated list of content structures for the site. The result is printed to the console using `System.out.println()`. The pagination is set to return the first page with two items per page.
 
 ## Getting the Web Content Templates
 
@@ -267,7 +267,7 @@ The REST service can also be called using the Java client.
 
 1. Navigate out of the `curl` folder and into the `java` folder.
 
-1. Compile the source files (if you haven't already compiled them):
+1. Compile the source files (if you haven't already):
 
    ```bash
    javac -classpath .:* *.java
@@ -330,7 +330,7 @@ The REST service can also be called using the Java client.
 
 1. Navigate out of the `curl` folder and into the `java` folder.
 
-1. Compile the source files (if you haven't already compiled them):
+1. Compile the source files (if you haven't already):
 
    ```bash
    javac -classpath .:* *.java
@@ -396,7 +396,7 @@ The REST service can also be called using the Java client.
 
 1. Navigate out of the `curl` folder and into the `java` folder.
 
-1. Compile the source files (if you haven't already compiled them):
+1. Compile the source files (if you haven't already):
 
    ```bash
    javac -classpath .:* *.java
@@ -441,7 +441,7 @@ public class ContentStructures_PUT_Permissions_ById {
 }
 ```
 
-This Java class updates the permissions of a content structure using the `ContentStructureResource` API. The main method authenticates with the API using provided credentials ("test@liferay.com" and "learn") and calls the `putContentStructurePermissionsPage()` method. It passes the content structure ID and an array of Permission objects. Each Permission object is created and the role name is set based on the `roleName` system property. The result is printed to the console.
+This Java class updates the permissions of a content structure using the `ContentStructureResource` API. The main method authenticates with the API using provided credentials (`test@liferay.com` and `learn`) and passes the content structure ID and an array of `Permission` objects into the `putContentStructurePermissionsPage()` method. Each `Permission` object is created and the role name is set based on the `roleName` system property. The result is printed to the console.
 
 ## Related Topics
 

@@ -11,12 +11,12 @@ uuid: e5a69df2-30a5-4dbc-8467-e390dfc35aec
 
 # Web Content API Basics
 
-Using Liferay DXP's REST and GraphQL services, you can create and manage structured content on your site. Structured content refers to [web content articles](../web-content-articles/creating-web-content-articles.md) (or articles) that use a [web content structure](../web-content-structures.md) (or structures) to enforce a consistent format and organization by defining the specific fields and information required for each article, such as author, summaries, and other relevant content elements.
+Using Liferay DXP's REST and GraphQL services, you can create and manage structured content on your site. Structured content refers to [web content articles](../web-content-articles/creating-web-content-articles.md) that use a [web content structure](../web-content-structures.md) to enforce a consistent format and organization by defining the specific fields and information required for each article, such as author, summaries, and other relevant content elements.
 
 !!! note
     While you can use a structure with a [web content template](../web-content-templates/creating-web-content-templates.md) to render structured content, a template is not required for creating structured content.
 
-See the cURL scripts and Java classes samples for structures and articles below. For more advanced examples of managing structured content, see [Advanced Web Content API](./advanced-web-content-api.md). For an overview of using the REST API in Liferay DXP, see [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
+See the cURL and Java samples for structures and articles below. For more advanced examples of managing structured content, see [Advanced Web Content API](./advanced-web-content-api.md). For an overview of using the REST API in Liferay DXP, see [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
 
 ## Setting Up Your Environment
 
@@ -96,7 +96,7 @@ Now you can create an article based on the Foo Structure:
 
 For more information, see [Creating Web Content Articles](../web-content-articles/creating-web-content-articles.md).
 
-## Get Web Content Articles from Site
+## Get Web Content Articles from the Site
 
 Use the REST API to retrieve a list of the site's articles by executing the following cURL script or Java class. Replace `1234` with your site's ID.
 
@@ -219,7 +219,7 @@ The other example Java classes are similar to this one, but call different `Stru
 !!! important
     See [StructuredContentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/StructuredContentResource.java) for service details.
 
-### Use GraphQL Services
+### Using GraphQL Services
 
 Use GraphQL services to retrieve a list of the site's articles. Access the Liferay API Explorer to perform this action. Read [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) to learn more about GraphQL queries and mutations.
 
@@ -239,7 +239,7 @@ Use GraphQL services to retrieve a list of the site's articles. Access the Lifer
    }
    ```
 
-1. Click *Execute Query*. The response should include a list of article items with the queried information under each item:
+1. Click *Execute Query*. The response includes a list of article items with the queried information under each item:
 
    ```json
    {
@@ -342,7 +342,7 @@ The site's `ContentStructures` appear in JSON. As the Basic Web Content structur
 
 You can see details about the `creator` of the structure, its `id`, `name`, and `contentStructureFields` where you can find information about the fields used in the structure.
 
-### Use GraphQL Services
+### Using GraphQL Services
 
 Use GraphQL services to retrieve a list of the site's structures. Access the Liferay API Explorer to perform this action.
 
@@ -391,7 +391,7 @@ Use GraphQL services to retrieve a list of the site's structures. Access the Lif
    }
    ```
 
-1. Click *Execute Query*. The response should include a list of structure items with the queried information under each item:
+1. Click *Execute Query*. The response includes a list of structure items with the queried information under each item:
 
    ```json
    {
@@ -490,7 +490,7 @@ java -classpath .:* -DcontentStructureId=1234 ContentStructures_GET_ById
 
 The `ContentStructure` description appears in JSON.
 
-### Use GraphQL Services
+### Using GraphQL Services
 
 Use GraphQL services to retrieve a structure. Access the Liferay API Explorer to perform this action.
 
@@ -517,7 +517,7 @@ Use GraphQL services to retrieve a structure. Access the Liferay API Explorer to
    }
    ```
 
-1. Click *Execute Query*. The response should include the structure item's queried information:
+1. Click *Execute Query*. The response includes the structure item's queried information:
 
    ```json
    {
@@ -631,7 +631,7 @@ java -classpath .:* -DcontentStructureId=1234 -DsiteId=5678 StructuredContents_P
 
 The `StructuredContent` fields appear in JSON.
 
-### Use GraphQL Services
+### Using GraphQL Services
 
 Use GraphQL services to post an article. Access the Liferay API Explorer to perform this action.
 
@@ -666,7 +666,7 @@ Use GraphQL services to post an article. Access the Liferay API Explorer to perf
    }
    ```
 
-1. Click *Execute Query*. The response should return what was informed in the mutation:
+1. Click *Execute Query*. The response returns what was informed in the mutation:
 
    ```json
    {
@@ -703,7 +703,7 @@ Replace the values in `-DcontentStructureId=1234` and `-DstructuredContentId=567
 java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 StructuredContents_PATCH_ById
 ```
 
-### Use GraphQL Services
+### Using GraphQL Services
 
 Use GraphQL services to update an article. Access the Liferay API Explorer to perform this action.
 
@@ -738,7 +738,7 @@ Use GraphQL services to update an article. Access the Liferay API Explorer to pe
    }
    ```
 
-1. Click *Execute Query*. The response should return what was informed in the mutation:
+1. Click *Execute Query*. The response returns what was informed in the mutation:
 
    ```json
    {
@@ -775,7 +775,7 @@ Replace the values in `-DcontentStructureId=1234` and `-DstructuredContentId=567
 java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 StructuredContents_PUT_ById
 ```
 
-### Use GraphQL Services
+### Using GraphQL Services
 
 Use GraphQL services to replace the original article's information. Access the Liferay API Explorer to perform this action.
 
@@ -810,7 +810,7 @@ Use GraphQL services to replace the original article's information. Access the L
    }
    ```
 
-1. Click *Execute Query*. The response should return what was informed in the mutation:
+1. Click *Execute Query*. The response returns what was informed in the mutation:
 
    ```json
    {
@@ -850,7 +850,7 @@ Replace the value in `-DstructuredContentId=1234` with the article's ID.
 java -classpath .:* -DstructuredContentId=1234 StructuredContents_DELETE_ById
 ```
 
-### Use GraphQL Services
+### Using GraphQL Services
 
 Use GraphQL services to delete an article. Access the Liferay API Explorer to perform this action.
 
@@ -862,7 +862,7 @@ Use GraphQL services to delete an article. Access the Liferay API Explorer to pe
    }
    ```
 
-1. Click *Execute Query*. The response should return a value indicating the deletion status:
+1. Click *Execute Query*. The response returns a value indicating the deletion status:
 
    ```json
    {
@@ -889,7 +889,7 @@ The other cURL commands and Java classes demonstrate more `StructuredContent` an
 !!! important
     When you delete a Web Content Folder using the REST API, the folder and its content are deleted permanently, without using the [Liferay DXP Recycle Bin](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md).
 
-## Related Information
+## Related Topics
 
 - [Advanced Web Content API](./advanced-web-content-api.md)
 - [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

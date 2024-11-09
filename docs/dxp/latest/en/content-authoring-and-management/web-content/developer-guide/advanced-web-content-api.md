@@ -13,7 +13,7 @@ uuid: 0e4115ae-4688-439d-a40f-e9399f0f167d
 
 # Advanced Web Content API
 
-Using the Liferay DXP REST services, you can create and manage your site's structured content. Structured content is [web content articles](../web-content-articles/creating-web-content-articles.md) (or articles) that uses a web content structure (or structure). A structure defines the information, such as author(s), a summary, and the content included in an article. Structures ensure that the article includes all the required information. For more information on structures, read [Web Content Structures](../web-content-structures.md).
+Using the Liferay DXP REST services, you can create and manage your site's structured content. Structured content is [web content](../web-content-articles/creating-web-content-articles.md) that uses a web content structure (or structure). A structure defines the information, such as author(s), a summary, and the content included in an article. Structures ensure that the article includes all the required information. For more information on structures, read [Web Content Structures](../web-content-structures.md).
 
 Use a pre-built Liferay DXP Docker image with several [cURL](https://curl.haxx.se/) and Java code samples to learn more about structures and structured content.
 
@@ -121,7 +121,7 @@ java -classpath .:* -DfilePath=1234 -DsiteId=5678 Documents_POST_ToSites
 !!! note
     You cannot create a structure programmatically using the REST API.
 
-1. Open the Site menu (![Site menu](../../../images/icon-menu.png)), expand *Content & Data*, and go to *Web Content*.
+1. Open the *Site* menu (![Site menu](../../../images/icon-menu.png)), expand *Content & Data*, and go to *Web Content*.
 
 1. Select the *Structures* tab and click *New*.
 
@@ -159,7 +159,7 @@ For more information, see [Creating Web Content Structures](../web-content-struc
 
 Create a template including the structure's `image` field:
 
-1. Open the Site menu (![Site menu](../../../images/icon-menu.png)), expand *Content & Data*, and go to *Web Content*.
+1. Open the *Site* menu (![Site menu](../../../images/icon-menu.png)), expand *Content & Data*, and go to *Web Content*.
 
 1. Select the *Templates* tab and click *New*.
 
@@ -348,11 +348,11 @@ Use the `ContentTemplates_GET_FromSites` script to obtain all the site's templat
 |:------------|:------------|
 | $1          | `siteId`    |
 
-The JSON response contains:
+The JSON response contains
 
 - Two templates: `"name": "Foo"` and `"name": "Goo"`.
 
-- The `contentStructureId` field indicates the structure linked to the template.
+- The `contentStructureId` that links the structure to the template.
 
 - The `templateScript` includes the script written in the specified `programmingLanguage`. In this example, FreeMarker is used.
 
@@ -476,7 +476,7 @@ cURL script parameters:
 
 To find your new article in Liferay DXP, open the *Site Menu* (![Site menu](../../../images/icon-menu.png)) &rarr; *Content & Data* &rarr; *Web Content*.
 
-![The article from the POST HTTP method.](./advanced-web-content-api/images/08.png)
+![The article from the POST HTTP method appears in the UI.](./advanced-web-content-api/images/08.png)
 
 The script posts a new article with the following attributes:
 
@@ -610,7 +610,7 @@ Here is the script output using the template with the `image` field:
 Foo<picture data-fileentryid="43795"><source media="(max-width:300px)" srcset="http://localhost:8080/o/adaptive-media/image/43795/Thumbnail-300x300/foo.png?t=1629897455431, /o/adaptive-media/image/43795/Preview-1000x0/foo.png?t=1629897455431 2x" /><source media="(max-width:600px) and (min-width:300px)" srcset="http://localhost:8080/o/adaptive-media/image/43795/Preview-1000x0/foo.png?t=1629897455431" /><img alt="Foo alt-image description" data-fileentryid="43795" src="http://localhost:8080/documents/20125/0/foo.png/50956e56-9571-8f73-ae6e-9fca20fe0e3a?t=1629897455431" /></picture>30 Aug 2021 - 00:00:00Option1314292
 ```
 
-If you specify the template without the `image` field instead, the `<picture></picture>` information doesn't render in the output. Here is the script output when using the template without the `image` field:
+If you specify the template without the `image` field, the `<picture></picture>` information doesn't render in the output. Here is the script output when using the template without the `image` field:
 
 ```bash
 ./StructureContents_GET_RenderedContent_ById.sh 43849 43823
@@ -635,7 +635,7 @@ java -classpath .:* -DcontentTemplateId=1234 -DstructuredContentId=5678 Structur
 
 ## Patch the Web Content Article
 
-Use the `PATCH` HTTP method with the `StructuredContent` service to partially update the original article information. The `StructuredContents_PATCH_ById` script uses the article and structure identifiers to replace the article's title with `Charlie`.
+Use the `PATCH` HTTP method with the `StructuredContent` service to update the original article information partially. The `StructuredContents_PATCH_ById` script uses the article and structure identifiers to replace the article's title with `Charlie`.
 
 | Method | Service             | Endpoint                                          |
 |:-------|:--------------------|:--------------------------------------------------|

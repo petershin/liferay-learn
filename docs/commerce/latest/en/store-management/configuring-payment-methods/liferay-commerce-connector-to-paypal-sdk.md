@@ -1,5 +1,5 @@
 ---
-uuid: 20cb9df9-03c9-4d4c-9e47-9c92abef6d6a
+uuid: 46f9a243-3dfd-4ca7-854c-1c3ac3d4f707
 taxonomy-category-names:
 - Commerce
 - Storefronts
@@ -66,7 +66,7 @@ To use this client extension, you must have a merchant ID and also generate a Pa
 
 1. Click *Save*.
 
-   Liferay Commerce Connector to PayPal SDK is now enabled for your store.
+   PayPal is now enabled for your store.
 
 1. Open your site and use the account selector to create a new account.
 

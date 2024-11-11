@@ -63,23 +63,23 @@ While creating a template, you can optionally determine the following template s
 
 ## Choosing a Template
 
-In Liferay, both web content templates and [information templates](../../../site-building/displaying-content/using-information-templates.md) use FreeMarker as the templating language to structure and display content. However, they have different use cases and apply to different content types.
+Web content templates and [information templates](../../../site-building/displaying-content/using-information-templates.md) both use FreeMarker as the templating language to structure and display content. However, they have different use cases and apply to different content types.
 
-Consider these key differences to choose the template best suited to your content type and functionality:
+Consider these key differences to choose the template best suited to your content type and functionality.
 
 ### Information templates
 
 Information templates are versatile and support multiple asset types, including web content, collections, documents, and custom assets. However, each information template is limited to a single type or subtype, so a template designed for one type/subtype cannot be applied to another.
 
-For example, an information template created for a web content structure cannot be used with document types. However, a general information template created for assets can be applied to both web content structures and documents, as both are considered assets.
+For example, an information template created for a web content structure cannot be used with document types. However, you can apply a general information template created for assets to both web content structures and documents, as both are considered assets.
 
-In this case, you can only access fields common to both assets, not specific fields for the types. Additionally, information templates are limited to common fields supported by the Information Framework (e.g., `checkbox` (simple and multiple), `date`, `link to layout`, `numeric`, `text`, and `rich text`).
+In this case, you can access only fields common to both assets, not specific fields for the types. Additionally, information templates are limited to common fields supported by the Information Framework (e.g., `checkbox` (simple and multiple), `date`, `link to layout`, `numeric`, `text`, and `rich text`).
 
 Information templates can be used with collection items, but they apply to each item individually, so you can't style the entire collection with a single template.
 
 ### Web Content templates
 
-Web content templates are specifically designed to work with web content items. They support custom web content structures and are tailored for displaying content with complex structures.
+Web content templates work specifically with web content items. They support custom web content structures and are tailored for displaying content with complex structures.
 
 Unlike information templates, which are limited to common fields and fields supported by the Information Framework, web content templates provide access to all structure fields, including advanced types like `grids`, `geolocation`, and `field groups`.
 

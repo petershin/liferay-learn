@@ -48,22 +48,22 @@ function get_reference_docs {
 	pushd "${_REPOSITORY_DIR}/site" > /dev/null
 
 	#
-	# liferay-ce-portal-doc-*.zip
+	# liferay-portal-doc-*.zip
 	#
 
 	echo https://github.com/liferay/liferay-portal/releases/download/"${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}"/"${LIFERAY_LEARN_PORTAL_DOC_FILE_NAME}"
 
-	curl -L https://github.com/liferay/liferay-portal/releases/download/"${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}"/"${LIFERAY_LEARN_PORTAL_DOC_FILE_NAME}" > liferay-ce-portal-doc.zip
+	curl -L https://github.com/liferay/liferay-portal/releases/download/"${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}"/"${LIFERAY_LEARN_PORTAL_DOC_FILE_NAME}" > liferay-portal-doc.zip
 
-	7z x -aoa liferay-ce-portal-doc.zip
+	7z x -aoa liferay-portal-doc.zip
 
 	mkdir -p "${_REPOSITORY_DIR}/site/reference/latest/en/dxp"
 
-	cp -R liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}/* "${_REPOSITORY_DIR}/site/reference/latest/en/dxp"
+	cp -R liferay-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}/* "${_REPOSITORY_DIR}/site/reference/latest/en/dxp"
 
-	rm -fr liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}
+	rm -fr liferay-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN_VALUE}
 
-	rm -f liferay-ce-portal-doc.zip
+	rm -f liferay-portal-doc.zip
 
 	local apps_markdown_file_name="${_REPOSITORY_DIR}/docs/reference/latest/en/dxp/apps.md"
 

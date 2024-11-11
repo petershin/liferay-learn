@@ -70,17 +70,17 @@ You can customize the look and feel of the Forgot Password page as you would for
 
 The Cookie Policy utility page displays a list of all cookies your application uses. It aids in attaining [GDPR compliance](../../../users-and-permissions/managing-user-data/enabling-gdpr-compliance-for-cookies.md) by showing the user data that's tracked to your sites' visitors. To access the Cookie Policy page, click *Visit our Privacy Policy* in the cookie banner.
 
-![Click Visit our Privacy Policy in the cookie banner](./types-of-utility-pages/05.png)
+![Click Visit our Privacy Policy in the cookie banner](./types-of-utility-pages/images/05.png)
 
 It consists of four sections:
 
-**Strictly Necessary Cookies:** These cookies are necessary for the website to function and cannot be disabled. They do not store information that could lead to identification of users.
+**Strictly Necessary Cookies:** necessary for the website to function and cannot be disabled. They do not store information that could lead to identification of users.
 
-**Functional Cookies (Preferences):** These cookies enable the website to provide enhanced functionality and personalization. They may be set by Liferay or by third-parties for integrated services. If disabled, some services may not function properly.
+**Functional Cookies (Preferences):** enable the website to provide enhanced functionality and personalization. They may be set by Liferay or by third-parties for integrated services. If disabled, some services may not function properly.
 
-**Performance Cookies (Statistics):** These cookies provide data for [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index). All information these cookies collect is aggregated and therefore anonymous.
+**Performance Cookies (Statistics):** provide data for [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index). All information these cookies collect is aggregated and therefore anonymous.
 
-**Personalization Cookies (Marketing):** These cookies may be set by Liferay's advertising partners. If they are turned off, users experience less targeted advertising.
+**Personalization Cookies (Marketing):** may be set by Liferay's advertising partners. If they are turned off, users experience less targeted advertising.
 
 ![The Cookie Policy page displays a list of cookies.](./types-of-utility-pages/images/06.png)
 

@@ -412,7 +412,7 @@ Code:
 The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) shows the `Order` services and schemas and has an interface to test each service.
 
 !!! note
-    Starting Liferay DXP 2024.Q4+/GA129+, you can use external reference codes to `GET/PUT/PATCH/DELETE` orders.
+    On Liferay DXP 2024.Q4+/GA129+, you can use external reference codes to `GET/PUT/PATCH/DELETE` orders.
 
 ## Related Topics
 

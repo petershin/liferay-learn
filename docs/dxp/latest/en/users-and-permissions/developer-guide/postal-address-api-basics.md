@@ -381,7 +381,7 @@ Code:
 The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `PostalAddress` services and schemas and has an interface to try out each service.
 
 !!! note
-    Starting Liferay DXP 2024.Q4+/GA129+, you can use external reference codes to `GET/PUT/PATCH/DELETE` postal addresses.
+    On Liferay DXP 2024.Q4+/GA129+, you can use external reference codes to `GET/PUT/PATCH/DELETE` postal addresses.
 
 ## Related Topics
 

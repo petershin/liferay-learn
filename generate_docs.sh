@@ -26,14 +26,16 @@ function generate_zip_files {
 
 		popd
 
+		mkdir -p ${_REPOSITORY_DIR}/site/examples
+
+		cp "${zip_dir_name}"/"${zip_file_name}" ${_REPOSITORY_DIR}/site/examples
+
 		local output_dir_name=$(dirname "${_REPOSITORY_DIR}/site/${zip_dir_name}")
 		local output_dir_name=$(dirname "${output_dir_name}")
 		local output_dir_name=$(dirname "${output_dir_name}")
 
 		mkdir -p "/${output_dir_name}"
-		mkdir -p ${_REPOSITORY_DIR}/site/examples
 
-		cp "${zip_dir_name}"/"${zip_file_name}" ${_REPOSITORY_DIR}/site/examples
 		mv "${zip_dir_name}"/"${zip_file_name}" "${output_dir_name}"
 
 		echo "Generated zip: ${zip_dir_name}"

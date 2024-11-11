@@ -208,7 +208,7 @@ Users returned by this API can be filtered, paginated, searched, and sorted. See
 * `organizationIds`
 * `roleIds`
 * `userGroupIds`
-* {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` `status`
+* `status` {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 * `alternateName`
 * `screenName`
 * `emailAddress`
@@ -216,7 +216,7 @@ Users returned by this API can be filtered, paginated, searched, and sorted. See
 * `givenName`
 * `jobTitle`
 * `name`
-* {bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA129+` `customFields`
+* `customFields` {bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA129+`
 
 | Filter Query                                                 | Description                                                                                             |
 | :----------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |

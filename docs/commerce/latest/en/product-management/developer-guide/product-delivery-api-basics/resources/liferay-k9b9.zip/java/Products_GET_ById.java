@@ -14,7 +14,8 @@ public class Products_GET_ById {
 
 		System.out.println(
 			productResource.getChannelProduct(
-				Long.valueOf(System.getProperty("channelId")), Long.valueOf(System.getProperty("productId")), null));
+				Long.valueOf(System.getProperty("channelId")),
+				Long.valueOf(System.getProperty("productId")), null));
 	}
 
 }

@@ -8,8 +8,7 @@ public class Products_GET_FromChannels {
 	/**
 	 * java -classpath .:* -DchannelId=1234 Products_GET_FromChannels
 	 */
-
-   	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 		ProductResource.Builder builder = ProductResource.builder();
 
 		ProductResource productResource = builder.authentication(
@@ -17,7 +16,8 @@ public class Products_GET_FromChannels {
 		).build();
 
 		Page<Product> page = productResource.getChannelProductsPage(
-			Long.valueOf(System.getProperty("channelId")), null, null, null, Pagination.of(1, 2), null);
+			Long.valueOf(System.getProperty("channelId")), null, null, null,
+			Pagination.of(1, 2), null);
 
 		System.out.println(page);
 	}

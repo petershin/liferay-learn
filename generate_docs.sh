@@ -34,7 +34,7 @@ function generate_zip_files {
 		local output_dir_name=$(dirname "${output_dir_name}")
 		local output_dir_name=$(dirname "${output_dir_name}")
 
-		mkdir -p "/${output_dir_name}"
+		mkdir -p "${output_dir_name}"
 
 		mv "${zip_dir_name}"/"${zip_file_name}" "${output_dir_name}"
 

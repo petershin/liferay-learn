@@ -18,7 +18,7 @@ Before you can use Office 365&trade; to create and edit Documents and Media file
 
 Begin by configuring an application in the Microsoft identity platform&trade;. Follow the steps in [Microsoft's documentation](https://docs.microsoft.com/en-gb/graph/auth-register-app-v2).
 
-In the platform, register the redirect URI for the application. Use the following format for the Redirect URI: `https://[hostname]/o/document_library/onedrive/oauth2` (e.g., `https://localhost:8080/o/document_library/onedrive/oauth2`).
+In the platform, register the redirect URI for the application. Use this pattern for the Redirect URI: `https://[hostname]/o/document_library/onedrive/oauth2` (e.g., `https://localhost:8080/o/document_library/onedrive/oauth2`).
 
 Locate the `Application (client) ID` and the `Directory (tenant) ID` in your app registration. These identifiers are used while [configuring DXP](#configuring-dxp).
 

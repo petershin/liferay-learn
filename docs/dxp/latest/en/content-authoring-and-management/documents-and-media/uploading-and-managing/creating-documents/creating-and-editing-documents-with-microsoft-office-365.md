@@ -12,7 +12,7 @@ uuid: 14155784-a114-48f6-b28a-6efc9bf094c4
 
 Use Office 365&trade; to create and edit text documents, spreadsheets, or presentations for storage in the Documents and Media library. After completing your Office 365&trade; editing session, check in the document to save changes in the Documents and Media library.
 
-Before you begin, [connect your DXP installation with Microsoft Office 365&trade;.](../../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)
+To begin, [connect your DXP installation with Microsoft Office 365&trade;.](../../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)
 
 ## Authentication
 
@@ -23,7 +23,7 @@ The first time you create or edit a Documents and Media file via Office 365&trad
 
 ### Unlinking the Account
 
-1. Click on your *User Profile* icon &rarr; *Account Settings*.
+1. Click your *User Profile* icon &rarr; *Account Settings*.
 
 1. On the *General* tab, click *Apps*.
 

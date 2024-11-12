@@ -9,6 +9,7 @@ toc:
   - ./consuming-apis/making-unauthenticated-requests.md
   - ./consuming-apis/using-external-reference-codes.md
   - ./consuming-apis/api-headers-reference.md
+  - ./consuming-apis/configuring-json-web-services.md
 uuid: 31e2f6fc-5394-4d53-bc3d-d098eda6adb5
 taxonomy-category-names:
 - Platform

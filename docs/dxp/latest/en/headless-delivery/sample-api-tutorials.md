@@ -44,6 +44,7 @@ Follow the links below for sample API tutorials that include example requests an
 * [Document Shortcut API Basics](../content-authoring-and-management/documents-and-media/developer-guide/document-shortcut-api-basics.md)
 * [Tags API Basics](../content-authoring-and-management/tags-and-categories/developer-guide/tags-api-basics.md)
 * [Web Content API Basics](../content-authoring-and-management/web-content/developer-guide/web-content-api-basics.md)
+* [Web Content API Basics Using GraphQL](../content-authoring-and-management/web-content/developer-guide/web-content-api-basics/web-content-api-basics-using-graphql.md)
 * [Web Content API Advanced](../content-authoring-and-management/web-content/developer-guide/advanced-web-content-api.md)
 * [Web Content Structures and Templates API Basics](../content-authoring-and-management/web-content/developer-guide/managing-web-content-structures-and-templates-by-using-the-rest-api.md)
 

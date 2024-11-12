@@ -18,7 +18,7 @@ Use Liferay DXP GraphQL services to manage web content by creating, retrieving, 
 
 For more advanced examples, refer to [Advanced Web Content API](../advanced-web-content-api.md). To get started with GraphQL in Liferay DXP, see [Consuming GraphQL APIs](../../../../headless-delivery/consuming-apis/consuming-graphql-apis.md).
 
-## Setting Up Your Environment
+## Set Up Your Environment
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -53,9 +53,9 @@ Use the following services in the Liferay DXP Headless Delivery API to manage we
 - `ContentStructure` for structures.
 - `ContentTemplate` for templates.
 
-To view detailed information on these APIs, use your browser and access Liferay's API Explorer at `[server]:[port]/o/api` (e.g. http://localhost:8080/o/api). For more information, read [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
+To view detailed information on these APIs, use your browser and access Liferay API Explorer at `[server]:[port]/o/api` (e.g. `http://localhost:8080/o/api`). For more information, read [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
 
-### Identify the Site Id
+### Identify the Site ID
 
 When signed in, [retrieve the site ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). Use this ID in several service calls. In this example, the ID is `20117`.
 
@@ -94,7 +94,7 @@ For more information, see [Creating Web Content Articles](../web-content-article
 
 ## Get Web Content Articles from the Site
 
-Use GraphQL services to retrieve a list of the site's articles. Access the Liferay API Explorer to perform this action.
+Use GraphQL services to retrieve a list of the site's articles. Access Liferay API Explorer to perform this action.
 
 1. Navigate to Liferay API Explorer at `http://[host]:[port]/o/api`.
 
@@ -179,7 +179,101 @@ While the script in [the previous step](#get-web-content-articles-from-site) ret
    }
    ```
 
-## Post a Basic Web Content Article
+## Get Web Content Structures From the Site
+
+Use the `contentStructures` query to retrieve a list of the site's structures.
+
+1. Click *GraphQL* in the top right corner, add the following query to the left column, and replace `siteKey` with the site ID:
+
+   ```graphql
+   query{
+      headlessDelivery_v1_0 {
+         contentStructures(siteKey: "20117") {
+            items {
+            id
+            name
+            contentStructureFields {
+               name
+               label
+               dataType
+            }
+            }
+         }
+      }
+   }
+   ```
+
+1. Click *Execute Query*. The response returns what was informed in the query:
+
+   ```json
+   {
+      "data": {
+         "headlessDelivery_v1_0": {
+            "contentStructures": {
+            "items": [
+               {
+                  "id": 32122,
+                  "name": "Foo",
+                  "contentStructureFields": [
+                  {
+                     "name": "Content",
+                     "label": "Text",
+                     "dataType": "string"
+                  }
+                  ]
+               }
+            ]
+            }
+         }
+      }
+   }
+   ```
+
+## Get a Web Content Structure
+
+Use the `contentStructure` query to retrieve the description of a specific structure by providing its ID as a parameter.
+
+1. Click *GraphQL* in the top right corner, add the following mutation to the left column, and replace `siteKey` with the site ID and `contentStructureId` with the ID of the structure you want to use:
+
+   ```graphql
+   query{
+      headlessDelivery_v1_0{
+         contentStructure(contentStructureId: 32122){
+            id
+            name
+            contentStructureFields{
+               name
+               label
+               dataType
+            }
+         }
+      }
+   }
+   ```
+
+1. Click *Execute Query*. The response returns what was informed in the query:
+
+   ```json
+   {
+      "data": {
+         "headlessDelivery_v1_0": {
+            "contentStructure": {
+            "id": 32122,
+            "name": "Foo"
+            "contentStructureFields": [
+               {
+                  "name": "Content",
+                  "label": "Text",
+                  "dataType": "string"
+               }
+            ]
+            }
+         }
+      }
+   }
+   ```
+
+## Post a Web Content Article
 
 Use the `createSiteStructuredContent` mutation to create a new article using the Foo Structure.
 
@@ -237,7 +331,7 @@ Use the `createSiteStructuredContent` mutation to create a new article using the
    }
    ```
 
-## Patch Web Content Article
+## Patch a Web Content Article
 
 Use the `patchStructuredContent` mutation to update the article. It uses the structured content `id` to update the article's content from 'Goo' to 'Foo'.
 
@@ -295,7 +389,7 @@ Use the `patchStructuredContent` mutation to update the article. It uses the str
    }
    ```
 
-## Put Web Content Article
+## Put a Web Content Article
 
 Use the `updateStructuredContent` mutation to replace the original article's information. It uses the article and structure identifiers to replace the article's name and the article's content from `Foo` to `Bar`.
 
@@ -353,7 +447,7 @@ Use the `updateStructuredContent` mutation to replace the original article's inf
    }
    ```
 
-## Delete Web Content Article
+## Delete a Web Content Article
 
 Use the `deleteStructuredContent` mutation to delete an article. It uses the article's `id` to delete it.
 
@@ -457,7 +551,7 @@ To use these endpoints,
    }
    ```
 
-   ![Use Liferay's GraphiQL browser to explore, create, and execute GraphQL queries/mutations.](./web-content-api-basics-using-graphql/images/02.png)
+   ![Use the GraphiQL browser to explore, create, and execute GraphQL queries/mutations.](./web-content-api-basics-using-graphql/images/02.png)
 
 ## Related Topics
 

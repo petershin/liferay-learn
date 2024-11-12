@@ -20,7 +20,7 @@ Use a pre-built Liferay DXP Docker image with several [cURL](https://curl.haxx.s
 !!! note
     See [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md) for an overview of using the REST API in Liferay DXP and [Web Content API Basics](./web-content-api-basics.md) for an introduction to the web content API.
 
-## Setting Up Your Environment
+## Set Up Your Environment
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
@@ -50,7 +50,7 @@ unzip liferay-m7b2.zip
 
    ![Identify the site Id under the Site Settings and Site Configuration option.](./advanced-web-content-api/images/01.png)
 
-### Adding the Images to Liferay DXP
+### Add the Images to Liferay DXP
 
 Start with an article containing different content fields, including images. To add these images to the article,
 
@@ -197,7 +197,7 @@ Create a second template without the structure's `image` field:
 
  For more information, see [Creating Web Content Templates](../web-content-templates/creating-web-content-templates.md).
 
-## Get the Web Content Structure Id
+## Get Web Content Structures From the Site
 
 To retrieve all existing structures in a specified site, use the `ContentStructures_GET_FromSites.sh` script. This script uses the `ContentStructure` service with a `GET` HTTP method and the [site ID](#identify-the-site-id) parameter.
 
@@ -328,7 +328,7 @@ Alternatively, run the `Documents_GET_FromSites` Java class:
 java -classpath .:* -DsiteId=1234 Documents_GET_FromSites
 ```
 
-## Get the Web Content Templates
+## Get Web Content Templates From the Site
 
 Use the `ContentTemplates_GET_FromSites` script to obtain all the site's templates. This script uses the `ContentTemplate` service with a `GET` HTTP method and the [site ID](#identify-the-site-id) as parameter.
 
@@ -427,7 +427,7 @@ Alternatively, run the `ContentTemplates_GET_FromSites` Java class:
 java -classpath .:* -DsiteId=1234 ContentTemplates_GET_FromSites
 ```
 
-### Get a Web Content Template by Id
+## Get a Web Content Template
 
 To retrieve information about a specific template, use the `ContentTemplates_GET_ById.sh` cURL script, which requires the site and template IDs.
 
@@ -450,7 +450,7 @@ Alternatively, run the `ContentTemplates_GET_ById` Java class. Replace the value
 java -classpath .:* -DcontentTemplateId=1234 -DsiteId=5678 ContentTemplates_GET_ById
 ```
 
-## Post the Web Content Article
+## Post a Web Content Article
 
 Use the `StructuredContents_POST_ToSites.sh` cURL script to create a new article using the `POST` HTTP method, using the [sample structure you created](#create-the-sample-structure). The script requires the [site ID](#identifying-the-site-id), structure ID, and the [image ID](#getting-the-images-ids) for `foo.png` as parameters.
 
@@ -583,7 +583,7 @@ Alternatively, run the `StructuredContents_POST_ToSites` Java class. Replace the
 java -classpath .:* -DcontentStructureId=1234 -DimageId=5678 -DsiteId=91011 StructuredContents_POST_ToSites
 ```
 
-## Get the Web Content Article Rendered with a Particular Template
+## Get a Web Content Article Rendered with a Particular Template
 
 An article is not linked to a particular template. The template defines how the article renders. You can use different templates for the same article. For more information, read [Web Content Structures](../web-content-structures.md).
 
@@ -629,7 +629,7 @@ Alternatively, run the `StructureContents_GET_RenderedContent_ById` Java class. 
 java -classpath .:* -DcontentTemplateId=1234 -DstructuredContentId=5678 StructureContents_GET_RenderedContent_ById
 ```
 
-## Patch the Web Content Article
+## Patch a Web Content Article
 
 Use the `PATCH` HTTP method with the `StructuredContent` service to update the original article information partially. The `StructuredContents_PATCH_ById` script uses the article and structure identifiers to replace the article's title with `Charlie`.
 
@@ -654,7 +654,7 @@ Alternatively, run the `StructuredContents_PATCH_ById` Java class. Replace the v
 java -classpath .:* -DstructuredContentId=1234 StructuredContents_PATCH_ById
 ```
 
-## Put the Web Content Article
+## Put a Web Content Article
 
 Use the `PUT` HTTP method with the `StructuredContent` service to replace the original article information. The `StructuredContents_PUT_ById` script uses the article and structure identifiers to replace the article's name with `Baker` and the article's content from `Bar` to `Goo`.
 

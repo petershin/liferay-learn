@@ -69,8 +69,6 @@ Create a basic [structure](../web-content-structures/creating-web-content-struct
 
 1. Under the ID column, identify the ID for your structure.
 
-   ![In the Structures tab, identify the ID for your structure under the ID column.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/01.png)
-
 ## Identifying the Service to Consume
 
 Use the `StructuredContent` service in the Liferay DXP Headless Delivery API to manage web content. To identify this service and all the different HTTP methods, use the Liferay API Explorer. For more information, see [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).

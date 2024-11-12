@@ -48,7 +48,7 @@ unzip liferay-m7b2.zip
 
 1. Find the site identifier under Site ID.
 
-   ![Identify the site Id under the Site Settings and Site Configuration option.](./advanced-web-content-api/images/05.png)
+   ![Identify the site Id under the Site Settings and Site Configuration option.](./advanced-web-content-api/images/01.png)
 
 ### Adding the Images to Liferay DXP
 
@@ -135,7 +135,7 @@ java -classpath .:* -DfilePath=1234 -DsiteId=5678 Documents_POST_ToSites
    - First option value: `Foo`
    - Second option value: `Goo`
 
-   ![Create a new structure in the user interface.](./advanced-web-content-api/images/01.png)
+   ![Create a new structure in the user interface.](./advanced-web-content-api/images/02.png)
 
 1. Click each structure field and update its Field Reference value (see table below). You can find the Field Reference values on the sidebar, under the Advanced section.
 
@@ -167,7 +167,7 @@ Create a template including the structure's `image` field:
 
 1. From the Properties side panel, click *Add* (![Add](../../../images/icon-plus.png)) next to the structure field.
 
-   ![Click Add next to the structure field to link your template to the structure.](./advanced-web-content-api/images/06.png)
+   ![Click Add next to the structure field to link your template to the structure.](./advanced-web-content-api/images/04.png)
 
 1. Select the *Foo* structure from the [previous section](#create-the-structure-sample).
 
@@ -177,7 +177,7 @@ Create a template including the structure's `image` field:
 
 1. Under the Fields group, click the *Text*, *Image*, *Date*, and *Single Selection* fields to add them to your template. Ensure each field starts with a new line in the FreeMarker editor.
 
-   ![Edit the template fields in the FreeMarker editor.](./advanced-web-content-api/images/07.gif)
+   ![Edit the template fields in the FreeMarker editor.](./advanced-web-content-api/images/05.gif)
 
 1. Click *Save*.
 
@@ -185,17 +185,13 @@ Create a second template without the structure's `image` field:
 
 1. Under the Templates tab, click *Actions* (![Actions](../../../images/icon-actions.png)) and select *Copy*.
 
-   ![Copy the first template using the *Actions* menu.](./advanced-web-content-api/images/10.png)
+   ![Copy the first template using the *Actions* menu.](./advanced-web-content-api/images/06.png)
 
 1. Update the template's name to *Goo* and click *Copy*.
-
-   ![Update the template's name to "Goo".](./advanced-web-content-api/images/09.png)
 
 1. Under the Templates tab, click the new *Goo* template.
 
 1. In the template editor, remove the image information `<#if (ImageReference.getData())></#if>` from the FreeMarker script.
-
-   ![Remove the image information from the template.](./advanced-web-content-api/images/11.gif)
 
 1. Click *Save*.
 
@@ -476,7 +472,7 @@ cURL script parameters:
 
 To find your new article in Liferay DXP, open the *Site Menu* (![Site menu](../../../images/icon-menu.png)) &rarr; *Content & Data* &rarr; *Web Content*.
 
-![The article from the POST HTTP method appears in the UI.](./advanced-web-content-api/images/08.png)
+![The article from the POST HTTP method appears in the UI.](./advanced-web-content-api/images/07.png)
 
 The script posts a new article with the following attributes:
 

@@ -12,6 +12,11 @@ taxonomy-category-names:
 
 When you publish an Object, Liferay automatically generates REST APIs for it. These APIs differ for Company and Site scoped Objects, but they all use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/timeoffrequests`). You can use these APIs to create, access, update, and remove Object entries.
 
+!!! note
+    {bdg-secondary}`Liferay DXP 2024.Q4+` External Reference Codes (ERCs) are accessible for the Objects Framework, providing a consistent way to identify and access these elements across Liferay.
+
+    In particular, the Objects Framework uses ERCs to link attachments to object entries, enabling consistent references across environments. When object entries are imported, their attachments are recognized automatically if present, or placeholders are created for later resolution. Additionally, for attachments uploaded directly by users and hidden from Documents and Media, the content can be included in exported data in Base64 format to facilitate availability upon import.
+
 Here you'll use cURL commands to perform basic CRUD operations for a custom Object. Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay DXP/Portal 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code.
 
 !!! tip

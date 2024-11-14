@@ -77,9 +77,6 @@ When a file expires or requires review, a notification email is sent to the file
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
-!!! important
-    Currently, this feature is behind a release feature flag (LPD-10701). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
 Digital assets are published as soon as they are created. However, you can set a future publication date and time for single or multiple files if you don't want to publish them right away.
 
 Also, if there's a [workflow](../publishing-and-sharing/using-workflow-with-documents-and-media.md) in place, the asset isn't published until the scheduled publication date and time is reached.

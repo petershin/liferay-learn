@@ -99,6 +99,9 @@ The other fields on the form are for specific configuration generated with the p
    | **OpenID Connect Client ID**                 | Provide the OAuth 2.0 Client ID you received from your provider.                                                                                                                                                                                                                                  |
    | **OpenID Connect Client Secret**             | Provide the OAuth 2.0 Client Secret you received from your provider.                                                                                                                                                                                                                              |
 
+   !!! important
+       Liferay doesn't support encrypted ID tokens (JWE) for OpenID Connect as it's optional according to the [OpenID Specification](https://openid.net/specs/openid-connect-core-1_0.html#IDToken). However, it does support the mandatory signed ID tokens (JWS).
+
 1. Click *Save*. Now you're ready to enable OpenID Connect authentication.
 
 This configuration can be exported by clicking the connection's *Actions* (![Actions](../../../images/icon-actions.png)) button and clicking *Export*. An exported configuration results in a System Settings configuration file with a unique `[name]` field.

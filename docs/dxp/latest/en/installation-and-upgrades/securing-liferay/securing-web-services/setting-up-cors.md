@@ -10,19 +10,25 @@ taxonomy-category-names:
 
 CORS stands for Cross-Origin Resource Sharing. An Origin is a web server at a different domain, and a Resource is some asset stored on the server, like an image, PDF, or HTML file. Sometimes you must request resources stored on another origin. This is called a cross-origin request, and web servers have policies to allow or deny such requests.
 
-For example, browsers themselves don't allow cross-origin AJAX-style requests from scripts to help mitigate [cross-site scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks. These APIs follow a *same origin* policy. But for certain resources, it can be convenient to allow Liferay DXP to serve them to different origins.
+For example, browsers themselves don't allow cross-origin AJAX-style requests from scripts to help mitigate [cross-site scripting (XSS)](https://owasp.org/www-community/attacks/xss/) attacks. These APIs follow a *same origin* policy. But for certain resources, it can be convenient to allow Liferay DXP to serve them to different origins.
 
-For example, if you manage images in Docs & Media, you may want to allow cross-origin requests for them. You can enable CORS for matching URLs in Liferay Portal or for JAX-RS application resources.
+For example, if you manage images in Documents & Media, you may want to allow cross-origin requests for them. You can enable CORS for matching URLs in Liferay DXP or for JAX-RS application resources.
 
 ## Enabling CORS for Liferay DXP Services
 
-The settings are in *Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *Security Tools* &rarr; *Portal Cross Resource Origin Sharing (CORS)*:
+To access these settings,
+
+1. Open the *Global Menu* (![Applications Menu icon](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Instance Settings*.
+
+1. Go to *Security* &rarr; *Security Tools* &rarr; *Portal Cross-Origin Sharing (CORS)*:
 
 1. Click *Add* to create a configuration entry.
 
-1. Fill out the fields on the form. When finished, click *Save*.
+1. Fill out the fields on the form.
 
-    ![Figure 1: The CORS system settings provide a way to configure CORS headers for Liferay services.](./setting-up-cors/images/01.png)
+1. Click *Save*.
+
+![The CORS system settings provide a way to configure CORS headers for Liferay services.](./setting-up-cors/images/01.png)
 
 ### Portal CORS Configuration Reference
 
@@ -35,15 +41,22 @@ The settings are in *Configuration* &rarr; *Instance Settings* &rarr; *Security*
 
 You can also use a configuration file <!-- future link required --> to configure CORS.
 
+!!! note
+    There's also a Portal Cross-Origin Resource Sharing (CORS) entry under the Virtual Instance Scope in System Settings. This contains the Default Portal CORS Configuration that's already enabled for virtual instances.
+
 ## Enabling CORS for JAX-RS Applications
 
-The settings are in *Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *Security Tools* &rarr; *Web Contexts Resource Origin Sharing (CORS)*:
+To access these settings,
+
+1. Open the *Global Menu* (![Applications Menu icon](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings*.
+
+1. Go to *Security* &rarr; *Security Tools* &rarr; *Web Contexts Cross Resource Origin Sharing (CORS)*:
 
 1. Click *Add* to create a configuration entry.
 
 1. Fill out the fields on the form. When finished, click *Save*.
 
-    ![Figure 2: There's a separate system settings category for CORS web contexts.](./setting-up-cors/images/02.png)
+   ![There's a separate system settings category for CORS web contexts.](./setting-up-cors/images/02.png)
 
 ### JAX-RS CORS Configuration Reference
 

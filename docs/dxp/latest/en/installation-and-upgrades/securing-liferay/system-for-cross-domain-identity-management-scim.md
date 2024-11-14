@@ -12,7 +12,7 @@ taxonomy-category-names:
 # System for Cross-domain Identity Management (SCIM)
 
 {bdg-secondary}`Liferay DXP 2024.Q1+`
-{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Release Feature](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
 
 System for Cross-domain Identity Management or SCIM, is an open standard that automates user provisioning. In other words, it's a standard way to create, update, and deactivate user identities. SCIM provides a unified, RFC-compliant way to keep user/group data in sync between different applications. It consists of
 
@@ -20,7 +20,7 @@ System for Cross-domain Identity Management or SCIM, is an open standard that au
 * A RESTful API to run CRUD operations on those users and groups to keep them in sync. See [SCIM User API Basics](./developer-guide/scim-user-api-basics.md) and [SCIM Group API Basics](./developer-guide/scim-group-api-basics.md) for more information.
 
 !!! important
-    This feature is currently behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags).
+    SCIM was released behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) in Liferay DXP 2024.Q1. Starting Liferay DXP 2024.Q4, it is available under a [release feature flag](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) (LPS-96845).
 
 Using SCIM, you can automate the exchange of user identity information between your company's applications and service providers like Liferay securely. This is useful if your company uses multiple applications and wants to keep user data in sync without custom implementations.
 

@@ -18,7 +18,7 @@ You can now use [picklists](https://learn.liferay.com/w/dxp/liferay-development/
 - In the Specifications application
 
 !!! important
-    Currently, this feature is behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+    This feature was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 2024.Q3/Portal 7.4 GA125. It was made Generally Available (GA) in 2024.Q4/GA129.
 
 ## Creating a Picklist in the Specifications Application
 

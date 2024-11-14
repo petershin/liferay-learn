@@ -33,7 +33,7 @@ There are two ways to set up these notifications.
 
 After creating a notification template, you must assign it as an object action on the Commerce Order object. See [Defining Object Actions](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/actions/defining-object-actions) for more information.
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` A new notification template called Commerce Order Notification is available out-of-the-box. It is an object action on the Commerce Order object that sends an email to the order creator when the order status changes to *Pending*. It is currently behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) (LPD-24498).
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` A new notification template called Commerce Order Notification is available out-of-the-box. It is an object action on the Commerce Order object that sends an email to the order creator when the order status changes to *Pending*. It was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) (LPD-24498) in Liferay DXP 2024.Q3/Portal 7.4 GA125 and was made Generally Available (GA) in 2024.Q4/GA129.
 
 ### Notification Queue
 

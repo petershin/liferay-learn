@@ -107,11 +107,11 @@ Here are the command's arguments:
 | `-u "test@liferay.com:learn"`                                                                                   | Basic authentication credentials                    |
 
 !!! note
-   Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application that utilizes OAuth2.
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application that utilizes OAuth2.
 
 ## Examine the Java Class
 
-The `Products_GET_ById.java` class retrieves a product from a channel by calling the product related service.
+The `Products_GET_ById.java` class retrieves a product from a channel by calling the product-related service.
 
 ```{literalinclude} ./product-delivery-api-basics/resources/liferay-k9b9.zip/java/Products_GET_ById.java
    :dedent: 1
@@ -130,18 +130,18 @@ This class invokes the REST service using only three lines of code:
 Note that the project includes the `com.liferay.headless.commerce.delivery.catalog.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
 !!! note
-   The `main` method's comment demonstrates running the class.
+    The `main` method's comment demonstrates running the class.
 
 The other example Java class is similar to this one, but calls a different `ProductResource` method.
 
 !!! important
-   See [ProductResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-delivery-catalog-client/src/main/java/com/liferay/headless/commerce/delivery/catalog/client/resource/v1_0/ProductResource.java) for service details.
+    See [ProductResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-delivery-catalog-client/src/main/java/com/liferay/headless/commerce/delivery/catalog/client/resource/v1_0/ProductResource.java) for service details.
 
 Below is another example of calling a `Product` REST service using cURL and Java.
 
 ## Get all Products from a Channel
 
-You can list all products from a channel by executing the following cURL or Java command.
+You can retrieve all products from a channel by executing the following cURL or Java command.
 
 ### Products_GET_FromChannels.sh
 
@@ -173,32 +173,32 @@ Code:
    :lines: 11-23
 ```
 
-The `Product` objects of the channel are listed in JSON.
+The `Product` channel objects' output is JSON.
 
 This API also accepts parameters to filter, paginate, search, and sort the products. See the [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-delivery-catalog-client/src/main/java/com/liferay/headless/commerce/delivery/catalog/client/resource/v1_0/ProductResource.java#L37-L40) method for more information. You can use the following Product fields in your queries to filter, search, and sort the results.
 
-- catalogId
-- categoryIds
-- categoryNames
-- createDate
-- customFields {bdg-secondary}`Liferay DXP 2024.Q4+/GA129+`
-- modifiedDate
-- name
-- productType
-- statusCode
-- tags
+- `catalogId`
+- `categoryIds`
+- `categoryNames`
+- `createDate`
+- `customFields` {bdg-secondary}`Liferay DXP 2024.Q4+/GA129+`
+- `modifiedDate`
+- `name`
+- `productType`
+- `statusCode`
+- `tags`
 
 | Filter Query                         | Description                              |
 | :----------------------------------- | :--------------------------------------- |
 | `productType eq 'simple'`            | Product type equals simple               |
 | `contains(name, 'Bar')`              | Product name contains Bar                |
-| `customFields/sampleSize eq '100.0'` | Custom field named sampleSize equals 100 |
+| `customFields/sampleSize eq '100.0'` | Custom field named `sampleSize` equals 100 |
 
-| Sort Query                  | Description                                                                            |
-| :-------------------------- | :------------------------------------------------------------------------------------- |
-| `createDate:desc`           | Sort by createDate in the descending order                                             |
-| `name:asc`                  | Sort by name in the ascending order                                                    |
-| `createDate:desc,name:desc` | Sort by createDate in the descending order first, then by name in the descending order |
+| Sort Query                  | Description                                                                              |
+|:----------------------------|:-----------------------------------------------------------------------------------------|
+| `createDate:desc`           | Sort by `createDate` in the descending order                                             |
+| `name:asc`                  | Sort by `name` in the ascending order                                                    |
+| `createDate:desc,name:desc` | Sort by `createDate` in the descending order first, then by name in the descending order |
 
 Read [API Query Parameters](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) for more information.
 

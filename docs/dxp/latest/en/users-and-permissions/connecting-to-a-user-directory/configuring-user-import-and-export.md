@@ -73,6 +73,9 @@ Enter the LDAP group attributes you want retrieved for this mapping. The followi
 
 **Test LDAP Groups:** Click the *Test LDAP Groups* button to display a list of the groups returned by your search filter.
 
+!!! important
+    While syncing LDAP groups, only the ones missing from Liferay are added based on the membership data retrieved from the LDAP server. You must manually delete groups in Liferay even if you've removed all the members. When you rename a group on the LDAP server, Liferay creates a new group and transfers the users' membership to it. It also removes users from the group with the old name.
+
 ## Export
 
 This section contains settings for exporting Liferay user data to LDAP.

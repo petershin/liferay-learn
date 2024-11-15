@@ -55,15 +55,15 @@ Liferay web services have a multi-layered and configurable approach to security 
 
 See [Introduction to Securing Web Services](./securing-liferay/securing-web-services.md) to learn more.
 
-### Security Headers not Added by Liferay
+## Security Headers not Added by Liferay
 
 Liferay does not add certain security headers in the HTTP request and response.
 
-* `X-XSS-Protection` header: This header has been deprecated starting from Liferay DXP 7.4 and above. See the recommendations from [OWASP](https://owasp.org/www-project-secure-headers/#x-xss-protection) and [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection).
-* `Strict-Transport-Security` header: You must configure this in your application server and not on Liferay.
-* `Cross-origin resource sharing (CORS)` header: Starting from Liferay 7.2 and above, you can set up CORS within Liferay. See [Setting up CORS](./securing-liferay/securing-web-services/setting-up-cors.md) for more information.
-* `Public-Key-Pins` header: You must configure this in your web server.
-* `Content-Security-Policy` header: This is available as a beta feature and appears in the request if configured. See [Configuring Content Security Policy Headers](./securing-liferay/securing-web-services/configuring-content-security-policy-headers.md) for more information.
+* `X-XSS-Protection`: This header has been deprecated starting from Liferay DXP 7.4 and above. See the recommendations from [OWASP](https://owasp.org/www-project-secure-headers/#x-xss-protection) and [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection).
+* `Strict-Transport-Security`: You must configure this in your application server and not on Liferay.
+* `Cross-origin resource sharing (CORS)`: Starting from Liferay 7.2 and above, you can set up CORS within Liferay. See [Setting up CORS](./securing-liferay/securing-web-services/setting-up-cors.md) for more information.
+* `Public-Key-Pins`: You must configure this in your web server.
+* `Content-Security-Policy`: This is available as a beta feature and appears in the request if configured. See [Configuring Content Security Policy Headers](./securing-liferay/securing-web-services/configuring-content-security-policy-headers.md) for more information.
 
 ## Fine-Tuning Security
 

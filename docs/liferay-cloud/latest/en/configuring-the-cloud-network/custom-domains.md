@@ -46,7 +46,41 @@ Once a domain is ready, you can add it to your environment's services via the Li
 !!! important
     A maximum of 50 custom domains can be added to an environment's services.
 
-Follow these steps to add custom domains to environment services via the Liferay Cloud console:
+You can replace the domains that an environment's service uses by adding the `customDomains` property to its `LCP.json` file. Add the property within an `environments` attribute for the specific environment:
+
+```json
+{
+  "id": "webserver",
+  "environments":
+  {
+    "uat":
+    {
+      "loadBalancer": {
+        "certs": [
+          {
+            "customDomains": ["acme.com", "www.acme.com"]
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+!!! important
+    You must define a specific environment for each added custom domain. You cannot use the same custom domain for multiple environments (except for [Disaster Recovery environments](../support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md) in different regions). This is necessary for Liferay Cloud to generate certificates properly and route users to the correct domain.
+
+Once a custom domain is added to your service and your changes are deployed, Liferay Cloud handles the routing.
+
+!!! note
+    The number of custom domains can be capped by the quotas set during the provisioning process. Liferay Cloud restricts its own load balancer to 50 custom domains.
+
+### Adding a Custom Domain in the Console
+
+!!! warning
+    This method of adding custom domains will be removed in a future release.
+
+Alternatively, follow these steps to add custom domains to environment services via the Liferay Cloud console:
 
 1. Navigate to the desired environment.
 
@@ -63,39 +97,12 @@ Follow these steps to add custom domains to environment services via the Liferay
 !!! note
     Adding custom domains via the Liferay Cloud console automatically uses a certificate provided by [Let's Encrypt](https://letsencrypt.org/) for each one. If you have [custom SSL certificates](./load-balancer.md#custom-ssl) for your domains, you must add them via the web server's `LCP.json` file instead.
 
-### Adding a Custom Domain via LCP.json
-
-Alternatively, you can replace the domains that an environment's service uses by adding the `customDomains` property to its `LCP.json` file. Add the property within an `environments` attribute for the specific environment:
-
-```json
-{
-  "id": "webserver",
-  "environments":
-  {
-    "uat":
-    {
-      "loadBalancer":
-      {
-        "customDomains": ["acme.com", "www.acme.com"]
-      }
-    }
-  }
-}
-```
-
-!!! important
-    You must define a specific environment for each added custom domain. You cannot use the same custom domain for multiple environments (except for [Disaster Recovery environments](../support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md) in different regions). This is necessary for Liferay Cloud to generate certificates properly and route users to the correct domain.
-
-Once a custom domain is added to your service and your changes are deployed, Liferay Cloud handles the routing.
-
-!!! note
-    The number of custom domains can be capped by the quotas set during the provisioning process. Liferay Cloud restricts its own load balancer to 50 custom domains.
-
 ## Verifying the Status of a Custom Domain
 
 You can verify the status of your custom domain in two ways:
 
 - Open a browser and enter the custom domain. When the endpoint is ready, it no longer returns a `default backend - 404` error or security warnings.
+
 - Check the status of the service's domain via the Liferay Cloud console by navigating to the environment's *Network* page.
 
 ![View all your endpoints and custom domains on the Network page.](./custom-domains/images/04.png)

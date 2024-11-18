@@ -188,9 +188,9 @@ To encode the contents of these files and use them, perform the following steps:
    openssl base64 -A -in originalcertfile.crt -out base64certfile.crt
    ```
 
-1. Copy all of the contents from the new, encoded `key` file (in this example, `base64keyfile.key`) and paste them into the `key` variable in your `webserver` service's `LCP.json` file.
+1. Copy all of the contents from the new, encoded `key` and `cert` files (in this example, `base64keyfile.key` and `base64certfile.crt`) and add two [secret variables](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) to store them in your chosen environment.
 
-1. Copy all of the contents from the new, encoded `cert` file (in this example, `base64certfile.crt`) and paste them into the `crt` variable in your `webserver` service's `LCP.json` file.
+1. In your project repository's `webserver/LCP.json` file, [reference the keys for the secrets you added](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json) in the `key` and `crt` variables.
 
 The `key` and `cert` values are now encoded and usable in your web server configuration.
 

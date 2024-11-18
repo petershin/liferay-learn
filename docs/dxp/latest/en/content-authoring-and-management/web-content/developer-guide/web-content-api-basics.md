@@ -20,7 +20,7 @@ Using Liferay DXP REST services, you can create and manage structured content on
 
 See the cURL and Java samples for structures and articles below. For more advanced examples of managing structured content, see [Advanced Web Content API](./advanced-web-content-api.md). For an overview of using the REST API in Liferay DXP, see [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
 
-## Set Up Your Environment
+## Setting Up Your Environment
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -57,7 +57,7 @@ Use the following services in the Liferay DXP Headless Delivery API to manage we
 
 To view detailed information on these APIs, use your browser and access Liferay's API Explorer at `[server]:[port]/o/api` (e.g. http://localhost:8080/o/api). For more information, read [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
 
-### Identify the Site ID
+### Identifying the Site ID
 
 When signed in, [retrieve the site ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). Use this ID in several service calls. In this example, the ID is `20117`.
 
@@ -96,7 +96,7 @@ Now you can create an article based on the Foo Structure:
 
 For more information, see [Creating Web Content Articles](../web-content-articles/creating-web-content-articles.md).
 
-## Get Web Content Articles From the Site
+## Getting Web Content Articles from the Site
 
 Use the REST API to retrieve a list of the site's articles by executing the following cURL script or Java class. Replace `1234` with your site's ID.
 
@@ -237,7 +237,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContents_GET_ById
 
 The `StructuredContent` fields appear in JSON.
 
-## Get Web Content Structures From the Site
+## Getting Web Content Structures from the Site
 
 Use the REST API to retrieve a list of the site's structures by executing the following cURL script or Java class. Replace `[siteId]` and the value in `-DsiteId=1234` with the site ID.
 
@@ -362,7 +362,7 @@ java -classpath .:* -DcontentStructureId=1234 ContentStructures_GET_ById
 
 The `ContentStructure` description appears in JSON.
 
-## Post a Web Content Article
+## Posting a Web Content Article
 
 Use the `StructuredContents_POST_ToSite[java|sh]` script/class to create a new article using the Foo Structure.
 
@@ -465,7 +465,7 @@ Replace the values in `-DcontentStructureId=1234` and `-DstructuredContentId=567
 java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 StructuredContents_PATCH_ById
 ```
 
-## Put a Web Content Article
+## Putting a Web Content Article
 
 Use the `PUT` method with the `StructuredContent` service to replace the original article's information. The `StructuredContents_PUT_ById.[java|sh]` script/class uses the article and structure identifiers to replace the article's name and the article's content from `Foo` to `Bar`.
 
@@ -481,7 +481,7 @@ Replace the values in `-DcontentStructureId=1234` and `-DstructuredContentId=567
 java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 StructuredContents_PUT_ById
 ```
 
-## Delete a Web Content Article
+## Deleting a Web Content Article
 
 Use the `DELETE` method with the `StructuredContent` service to delete an article. The `StructuredContents_DELETE_ById.[java|sh]` script/class example uses the article's `id` to delete it.
 

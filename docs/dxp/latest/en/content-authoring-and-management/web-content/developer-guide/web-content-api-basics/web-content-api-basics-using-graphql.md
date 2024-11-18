@@ -18,7 +18,7 @@ Use Liferay DXP GraphQL services to manage web content by creating, retrieving, 
 
 For more advanced examples, refer to [Advanced Web Content API](../advanced-web-content-api.md). To get started with GraphQL in Liferay DXP, see [Consuming GraphQL APIs](../../../../headless-delivery/consuming-apis/consuming-graphql-apis.md).
 
-## Set Up Your Environment
+## Setting Up Your Environment
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -45,7 +45,7 @@ Then, follow these steps:
    1. [Create a Structure in the User Interface](#create-a-web-content-structure-in-the-user-interface)
    1. [Create an Article in the User Interface](#create-a-web-content-article-in-the-user-interface)
 
-### Identify the Services to Consume
+### Identifying the Services to Consume
 
 Use the following services in the Liferay DXP Headless Delivery API to manage web content:
 
@@ -55,11 +55,11 @@ Use the following services in the Liferay DXP Headless Delivery API to manage we
 
 To view detailed information on these APIs, use your browser and access Liferay API Explorer at `[server]:[port]/o/api` (e.g. `http://localhost:8080/o/api`). For more information, read [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
 
-### Identify the Site ID
+### Identifying the Site ID
 
 When signed in, [retrieve the site ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). Use this ID in several service calls. In this example, the ID is `20117`.
 
-### Create a Web Content Structure in the User Interface
+### Creating a Web Content Structure in the User Interface
 
 To create an article, you need a structure. When you create articles in the user interface without declaring a structure, Liferay DXP uses a default Basic Web Content structure.
 
@@ -80,7 +80,7 @@ Instead of using the Basic Web Content structure, create a new one:
 
 For more information, see [Creating Structures](../web-content-structures/creating-structures.md).
 
-### Create a Web Content Article in the User Interface
+### Creating a Web Content Article in the User Interface
 
 Now you can create an article based on the Foo Structure:
 
@@ -92,7 +92,7 @@ Now you can create an article based on the Foo Structure:
 
 For more information, see [Creating Web Content Articles](../web-content-articles/creating-web-content-articles.md).
 
-## Get Web Content Articles from the Site
+## Getting Web Content Articles from the Site
 
 Use GraphQL services to retrieve a list of the site's articles. Access Liferay API Explorer to perform this action.
 
@@ -145,7 +145,7 @@ Use GraphQL services to retrieve a list of the site's articles. Access Liferay A
 
 Below are examples of calling other GraphQL services.
 
-## Get a Web Content Article
+## Getting a Web Content Article
 
 While the script in [the previous step](#get-web-content-articles-from-site) returns all the site's articles, you can get a specific article by using the `structuredContent(structuredContentId)` query and specifying the article's ID.
 
@@ -179,7 +179,7 @@ While the script in [the previous step](#get-web-content-articles-from-site) ret
    }
    ```
 
-## Get Web Content Structures From the Site
+## Getting Web Content Structures from the Site
 
 Use the `contentStructures` query to retrieve a list of the site's structures.
 
@@ -229,7 +229,7 @@ Use the `contentStructures` query to retrieve a list of the site's structures.
    }
    ```
 
-## Get a Web Content Structure
+## Getting a Web Content Structure
 
 Use the `contentStructure` query to retrieve the description of a specific structure by providing its ID as a parameter.
 
@@ -273,7 +273,7 @@ Use the `contentStructure` query to retrieve the description of a specific struc
    }
    ```
 
-## Post a Web Content Article
+## Posting a Web Content Article
 
 Use the `createSiteStructuredContent` mutation to create a new article using the Foo Structure.
 
@@ -331,7 +331,7 @@ Use the `createSiteStructuredContent` mutation to create a new article using the
    }
    ```
 
-## Patch a Web Content Article
+## Patching a Web Content Article
 
 Use the `patchStructuredContent` mutation to update the article. It uses the structured content `id` to update the article's content from 'Goo' to 'Foo'.
 
@@ -389,7 +389,7 @@ Use the `patchStructuredContent` mutation to update the article. It uses the str
    }
    ```
 
-## Put a Web Content Article
+## Putting a Web Content Article
 
 Use the `updateStructuredContent` mutation to replace the original article's information. It uses the article and structure identifiers to replace the article's name and the article's content from `Foo` to `Bar`.
 
@@ -447,7 +447,7 @@ Use the `updateStructuredContent` mutation to replace the original article's inf
    }
    ```
 
-## Delete a Web Content Article
+## Deleting a Web Content Article
 
 Use the `deleteStructuredContent` mutation to delete an article. It uses the article's `id` to delete it.
 

@@ -22,7 +22,7 @@ You can associate a structure with a web content template. A template determines
 
 Use a pre-built Liferay DXP Docker image with several [cURL](https://curl.haxx.se/) and Java code samples to learn how to manage structured content:
 
-## Set Up Your Environment
+## Setting Up Your Environment
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
@@ -69,11 +69,11 @@ Create a basic [structure](../web-content-structures/creating-web-content-struct
 
 1. Under the ID column, identify the ID for your structure.
 
-## Identify the Service to Consume
+## Identifying the Service to Consume
 
 Use the `StructuredContent` service in the Liferay DXP Headless Delivery API to manage web content. To identify this service and all the different HTTP methods, use the Liferay API Explorer. For more information, see [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
 
-## Get Web Content Structures From the Site
+## Getting Web Content Structures From the Site
 
 The `ContentStructures_GET_FromSites.sh` cURL script lists the existing structures. This script uses the `ContentStructure` service with the `GET` HTTP method, using the site ID as the only parameter.
 
@@ -342,7 +342,7 @@ The REST service can also be called using the Java client.
 
    The `ContentStructures_GET_Permissions_ById.java` works similarly to the `ContentStructures_GET_FromSites.java` file. The only difference is that the method receives a `Long contentStructureId` (instead of the `siteId`) and a `String roleNames` as parameters. `roleNames` is set as `null` to return all permissions available.
 
-## Replace Web Content Structure Permissions
+## Replacing the Web Content Structure Permissions
 
 The `ContentStructures_PUT_Permissions_ById.sh` cURL script uses the `PUT` HTTP method with the `ContentStructure` service to replace the original structure permission. This script includes the `DELETE` and `VIEW` permissions for the Power User role.
 

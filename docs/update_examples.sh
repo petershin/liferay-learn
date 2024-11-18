@@ -3,6 +3,7 @@
 readonly CURRENT_DIR_NAME=$(dirname "${0}")
 
 source ../_common.sh
+source ../learn-markdown-converter/src/main/resources/com/liferay/learn/markdown/converter/dependencies/token.properties
 
 function copy_template {
 	local zip_dir_name_pattern="liferay-*.zip"

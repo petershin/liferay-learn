@@ -138,7 +138,7 @@ If the alert window does not appear at first, do a hard refresh of the page to c
 
 {bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA129+`
 
-You can set the `scope` property of the client extension to `instance` to apply the JavaScript Client Extension to all the pages of an instance, including the administrative pages. For example, see the `client-extension.yaml` file for the [Liferay Sample Global JS 3](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) project:
+You can set the `scope` property of the client extension to `company` to apply the JavaScript Client Extension to all the pages of an instance, including the administrative pages. For example, see the `client-extension.yaml` file for the [Liferay Sample Global JS 3](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) project:
 
 ```yaml
 assemble:
@@ -159,7 +159,7 @@ console.log('Sample Global JS 3 deployed.');
 ```
 
 !!! note
-    You can only configure the scope in a workspace-based client extension. If creating a JavaScript Client Extension through the UI, you cannot set the scope or the script location; the client extension is always page scoped and is usable only on [site pages](#use-the-client-extension-on-a-page). 
+    You can only configure the scope of the JavaScript in a workspace-based client extension. If creating a JavaScript Client Extension through the UI, you cannot set the scope or the script location; the client extension is always page scoped and is usable only on [site pages](#use-the-client-extension-on-a-page). 
 
 ## Next Steps
 

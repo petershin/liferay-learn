@@ -18,7 +18,7 @@ Liferay also provides PayPal as a payment method out-of-the-box. This redirects 
 !!! note
     Currently, the PayPal SDK client extension is only compatible with Liferay SaaS.
 
-To use this client extension, you must have a merchant ID and also generate a PayPal client ID and client secret. Visit the [PayPal Developer Dashboard](https://developer.paypal.com/developer/applications/create) for more information.
+To use this client extension, you must have a merchant ID and also generate a PayPal client ID and client secret. Visit the [PayPal Developer Dashboard](https://developer.paypal.com) for more information.
 
 ## Install and Deploy the PayPal SDK Client Extension
 
@@ -52,7 +52,7 @@ To use this client extension, you must have a merchant ID and also generate a Pa
 
    You can go to the Eligibility tab to select specific order types or payment terms to be eligible for the payment integration. By default, it is eligible for all order types and payment terms.
 
-   The configuration tab contains an input field that accepts key-value pairs that you can find from your [PayPal Developer Dashboard](https://ca-test.adyen.com/).
+   The configuration tab contains an input field that accepts key-value pairs that you can find from your [PayPal Developer Dashboard](https://developer.paypal.com).
 
    ![Enter the key-value pairs from your PayPal dashboard to complete the integration.](./liferay-commerce-connector-to-paypal-sdk/images/01.png)
 

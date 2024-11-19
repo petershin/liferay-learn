@@ -20,11 +20,13 @@ Having a dedicated load balancer provides a myriad of enhanced features, such as
   "loadBalancer": {
     "cdn": true,
     "targetPort": 80,
-    "customDomains": ["acme.liferay.cloud"],
-    "ssl": {
-      "key": "...",
-      "crt": "..."
-    }
+    "certs": [
+        {
+            "customDomains": ["acme.liferay.cloud"],
+            "key": "...",
+            "crt": "..."
+        }
+    ]
   }
 }
 ```
@@ -96,35 +98,14 @@ For all custom domains added through the console or `LCP.json`, Liferay Cloud re
 
 You can also add your own SSL certificate to cover any custom domains you create. You can either use the SSL certificate provided by Let's Encrypt (for any custom domains added through the Liferay Cloud console), or you can define one or more custom certificates by referencing secret values in your `webserver` service's `LCP.json` file. If certificates exist in both places, then any custom certificates defined in the `LCP.json` file take precedent.
 
-When creating custom certificates, note that Liferay Cloud only accepts keys and certificates that are in the proper PEM format with [Base64](https://tools.ietf.org/html/rfc4648#section-4) encoding, which must include encapsulation boundaries.
+!!! note
+    Mapping multiple SSL certificates to your custom domains requires adding the `certs` property to the `webserver` service's `LCP.json` file. Adding custom domains through the Liferay Cloud console instead maps all of the custom domains to a single certificate.
 
-To add a single SSL certificate to the `LCP.json` file:
+When creating custom certificates, note that Liferay Cloud only accepts keys and certificates that are in the proper PEM format with [Base64](https://tools.ietf.org/html/rfc4648#section-4) encoding, which must include encapsulation boundaries.
 
 1. Add [secret variables](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) to your chosen environment for the certificate's `key` and `crt` values.
 
-1. In your project repository's `webserver/LCP.json` file, add an `ssl` object inside of the `loadbalancer` object, with `key` and `crt` values that [reference the keys for the secrets you added](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json):
-
-```json
-{
-    "loadbalancer": {
-        "ssl": {
-            "key": "@ssl-key-secret",
-            "crt": "@ssl-crt-secret"
-        }
-    }
-}
-```
-
-Using the `ssl` object in your `LCP.json` file creates a single custom SSL certificate that maps to all custom domains used in this environment.
-
-!!! note
-    When adding or updating an SSL certificate for custom domains, deploy a build to the web server service and restart it.
-
-### Mapping Multiple SSL Certificates to Custom Domains
-
-You can also map different SSL certificates to multiple custom domains by using the `certs` property instead of the `ssl` object.
-
-Use the `certs` property in your web server's `LCP.json` file to create a list of certificates that you can use. Group the `key` and `crt` values for each certificate together with the custom domains they map to:
+1. In your project repository's `webserver/LCP.json` file, use the `certs` property in the `loadbalancer` object to create a list of certificates that you can use. Add an object in the `certs` array with `key` and `crt` values that [reference the keys for the secrets you added](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json). Group the `key` and `crt` values for each certificate together with the custom domains they map to:
 
 ```json
 {
@@ -132,13 +113,13 @@ Use the `certs` property in your web server's `LCP.json` file to create a list o
         "certs": [
             {
                 "customDomains": ["acme.liferay.cloud"],
-                "key": "...",
-                "crt": "..."
+                "key": "@ssl-key-secret",
+                "crt": "@ssl-crt-secret"
             },
             {
-                "customDomains": ["acme2.liferay.cloud"],
-                "key": "...",
-                "crt": "..."
+                "customDomains": ["acme2.liferay.cloud", "acme3.liferay.cloud"],
+                "key": "@ssl-key-secret-2",
+                "crt": "@ssl-crt-secret-2"
             }
         ]
     }
@@ -146,7 +127,7 @@ Use the `certs` property in your web server's `LCP.json` file to create a list o
 ```
 
 !!! note
-    Mapping multiple SSL certificates to your custom domains requires adding the `certs` property to the `webserver` service's `LCP.json` file. Adding custom domains through the Liferay Cloud console instead maps all of the custom domains to a single certificate.
+    When adding or updating an SSL certificate for custom domains, deploy a build to the web server service and restart it.
 
 ### Generating an SSL Certificate
 

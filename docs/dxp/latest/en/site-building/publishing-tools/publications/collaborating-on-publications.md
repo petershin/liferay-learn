@@ -26,7 +26,7 @@ Once users are invited to a publication, you can use the integrated comments fea
 
    Alternatively, begin reviewing the publication's changes and click *Invite Users* (![Invite Users](../../../images/icon-plus.png)).
 
-   ![Click the publication's Actions button and select Invite Users. Or, in publication Changes page, click the Invite Users button.](./collaborating-on-publications/images/01.png)
+   ![Click the publication's Actions button and select Invite Users. Or in publication Changes page, click the Invite Users button.](./collaborating-on-publications/images/01.png)
 
    !!! note
        This is the only way to invite users to a published publication.
@@ -50,7 +50,7 @@ Invited users are notified and can begin collaborating on the publication.
 
 As a sender, you can customize the email template sent when a user is assigned to a publication.
 
-<!-- Is it something that can be enabled/disabled? I don't think so. Eric -->
+<!-- TODO: Is it something that can be enabled/disabled? I don't think so. Eric -->
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
 
@@ -58,17 +58,17 @@ As a sender, you can customize the email template sent when a user is assigned t
 
 1. Add the sender's email address and name.
 
-   If left empty, the sender's email address and name are used.
+   If left empty, the current user's email address and name are used.
 
 1. Add the email subject and body.
 
-   Use placeholders like `[$PORTAL_URL$]`, `[$TO_NAME$]`, and `[$FROM_ADDRESS$]` to dynamically insert values such as the portal URL, the recipient's name, and the sender's email address. See [Email Settings](../../../system-administration/configuring-liferay/virtual-instances/email-settings.md) for additional examples.
+   Use placeholders like `[$PORTAL_URL$]`, `[$TO_NAME$]`, and `[$FROM_ADDRESS$]` to insert values dynamically such as the portal URL, the recipient's name, and the sender's email address. See [Email Settings](../../../system-administration/configuring-liferay/virtual-instances/email-settings.md) for additional examples.
 
    ![Configure the email template sent to users assigned to publications.](./collaborating-on-publications/images/03.png)
 
-1. (Optional) To localize the email subject and body, click the flag icon, select a language, and add text to the field. When you save the template or switch to another language, the localized values are saved.
+1. (Optional) To localize the email subject and body, click the *flag* icon, select a language, and add text to the field. When you save the template or switch to another language, the localized values are saved.
 
-   To view a translated value, click the flag icon and select a `Translated` language.
+   To view a translated value, click the *flag* icon and select a *Translated* language.
 
 1. Click *Save*.
 
@@ -82,7 +82,7 @@ As a recipient, you can enable/disable publication invitation notifications:
 
    ![Access the notification application/widget configuration to enable/disable email notifications.](./collaborating-on-publications/images/04.png)
 
-1. Find and expand *Publications*. Select/Deselect the `Invites you to work on a publication` email option to enable/disable the email notifications.
+1. Find and expand *Publications*. Select/Deselect the *Invites you to work on a publication* email option to enable/disable the email notifications.
 
 1. Click *Save*.
 

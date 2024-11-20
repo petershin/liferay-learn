@@ -20,7 +20,7 @@ The `nestedFields` parameter causes Liferay to return multiple levels of related
 To proceed, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then [run the scripts](#creating-and-querying-related-object-entries) to create related entries and query them using the `nestedFields` parameter.
 
 !!! note
-    Currently, access to nested fields or relationships is unavailable when using a custom object on the "many" side of a one-to-many relationship with a system object. Keep this in mind when planning how to retrieve your data.
+    Currently, access to nested fields or relationships is unavailable when using a custom object on the *many* side of a one-to-many relationship with a system object. Keep this in mind when planning how to retrieve your data.
 
 ## Setting Up a Liferay Instance
 

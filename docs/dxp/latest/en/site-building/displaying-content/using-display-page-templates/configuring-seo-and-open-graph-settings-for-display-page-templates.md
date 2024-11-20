@@ -35,7 +35,7 @@ To configure SEO and Open Graph settings for a display page template,
    !!! important
        Unsaved changes are lost when navigating between the SEO and Open Graph tabs.
 
-When configuring SEO and Open Graph settings, you can enter values directly and use field mapping to add values dynamically. Available mapping options depend on the template's content type and subtype. To map a field, click on the *field selector* button (![Mapping button](../../../images/icon-map.png)) and select from available fields. As of Liferay DXP 7.4 U1 and Portal 7.4 GA5, fields added this way are represented as `${}` placeholders with two parts: a field reference ID and field label (`${fieldReferenceID:Field Label}`).
+When configuring SEO and Open Graph settings, you can enter values directly and use field mapping to add values dynamically. Available mapping options depend on the template's content type and subtype. To map a field, click *field selector* (![Mapping button](../../../images/icon-map.png)) and select from available fields. As of Liferay DXP 7.4 U1 and Portal 7.4 GA5, fields added this way are represented as `${}` placeholders with two parts: a field reference ID and field label (`${fieldReferenceID:Field Label}`).
 
 For earlier versions, mapping placeholders only include the field reference ID (e.g., `${title}`, `${authorName}`, `${Text84981642}`).
 
@@ -61,7 +61,7 @@ The recommended length for an *HTML title* is under 60 characters.
 
 ### Description
 
-The Description field defines a display page's description `<meta>` tag. This description is used by search engines to rank your page and appears in search engine results as a preview of your page. By default, display page templates map this field to `${description}`. You can edit this value directly and use the field selector to include additional mappings (e.g., `${description} - ${authorName:Author Name}`).
+The Description field defines a display page's description `<meta>` tag. Search engines use this description to rank your page, and it appears in search engine results as a preview of your page. By default, display page templates map this field to `${description}`. You can edit this value directly and use the field selector to include additional mappings (e.g., `${description} - ${authorName:Author Name}`).
 
 The recommended length for a page's description is under 155 characters.
 
@@ -86,7 +86,7 @@ You can also localize this field using the Language Flag.
 
 ### Sitemap
 
-Determine whether to include a display page in your `sitemap.xml` file, as well as set its Priority and Change Frequency fields. They inform search engines whether to crawl and index the display page, how it should be prioritized relative to other site pages, and how frequently it is updated.
+Determine whether to include a display page in your `sitemap.xml` file and set its Priority and Change Frequency fields. They inform search engines whether to crawl and index the display page, how it should be prioritized relative to other site pages, and how frequently it is updated.
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Enable/disable indexing child pages on XML maps by checking/unchecking the Include Child Page URLs in the XML Sitemap box. Read [Configuring XML Sitemaps](../../site-settings/managing-site-urls/configuring-xml-sitemaps.md) to learn more.
 

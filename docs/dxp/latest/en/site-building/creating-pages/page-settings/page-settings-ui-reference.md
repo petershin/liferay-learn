@@ -58,7 +58,7 @@ Use *Query String* to set default parameters for a page when no other parameters
 
 ### Page Layout
 
-Layout templates dictate where widgets can be placed on a widget page. For basic widget pages created using either a global template or custom page template, the user can determine whether the page *Inherits Changes* made to the chosen template. If the page does not inherit changes, select a custom layout to define row and column containers for its widgets.
+Layout templates dictate where widgets can be placed on a widget page. For basic widget pages created using either a global template or custom page template, users can determine whether the page *Inherits Changes* made to the chosen template. If the page does not inherit changes, select a custom layout to define row and column containers for its widgets.
 
 ![Select a layout template to define row and column containers for widgets.](./page-settings-ui-reference/images/04.png)
 
@@ -86,7 +86,7 @@ Here you can use the page set's theme settings or define a custom theme for your
 
 ### Basic Settings
 
-Here you can quickly and easily change some areas of your page's design system and styling.
+Here you can change some areas of your page's design system and styling.
 
 **Favicon**: Change the default favicon applied from the theme.
 
@@ -185,7 +185,7 @@ You can also localize this field using the Language Flag.
 
 ### Sitemap
 
-Determine whether to include a display page in your `sitemap.xml` file, as well as set its Priority and Change Frequency fields. They inform search engines whether to crawl and index the display page, how it should be prioritized relative to other site pages, and how frequently it is updated.
+Determine whether to include a display page in your `sitemap.xml` file and set its Priority and Change Frequency fields. They inform search engines whether to crawl and index the display page, how it should be prioritized relative to other site pages, and how frequently it is updated.
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Enable/disable indexing child pages on XML maps by checking/unchecking the Include Child Page URLs in the XML Sitemap box. Read [Configuring XML Sitemaps](../../site-settings/managing-site-urls/configuring-xml-sitemaps.md) to learn more.
 

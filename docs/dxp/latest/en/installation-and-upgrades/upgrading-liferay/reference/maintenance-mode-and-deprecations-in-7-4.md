@@ -43,10 +43,15 @@ Here are the features deprecated in 7.4:
 | App Builder, App Builder Workflow | Removed | Replaced by [Liferay Objects](../../../liferay-development/objects.md). |
 | Bootstrap 3 & Bootstrap 4 compatibility layer | Removed | Opt in to adding a compatibility layer during [Theme upgrade](../../../liferay-development/customizing-liferays-look-and-feel/themes/upgrading-a-theme.md) or manually add the layer.  |
 | Central Authentication Service (CAS) | Archived | Deprecated in 7.2. Replaced by other solutions, including SAML, OpenID Connect, and Token-based SSO. |
+| Commerce Accounts | Bundled | Deprecated in 2024.Q4. Replaced by DXP/Portal Accounts |
 | Commerce Account Widget | Removed | Replaced by the DXP/Portal Accounts Widget |
+| Commerce Addresses | Bundled | Deprecated in 2024.Q4. Replaced by DXP/Portal Addresses |
 | Commerce Bill of Materials (BOM) | Removed | Replaced by [Shop By Diagram](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram). |
 | Commerce Categories Navigation widget | Bundled | Replaced by [Display Page Templates](../../../site-building/displaying-content/using-display-page-templates.md) [Menu Display](../../../site-building/site-navigation/configuring-menu-displays.md) support. |
 | Commerce Category Content widget | Bundled | Replaced by [Display Page Templates](../../../site-building/displaying-content/using-display-page-templates.md). |
+| Commerce Modals | Bundled | Deprecated in 2024.Q4. Replaced by DXP/Portal Modals |
+| Commerce Notifications | Bundled | Deprecated in 2024.Q4. Replaced by DXP/Portal Notifications |
+| Contact Center Widget | Bundled | Deprecated in 2024.Q4. No direct replacement |
 | Custom User Attribute (in the Asset Publisher widget) | Bundled | Replaced by [Collections and Experiences](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md#displaying-content-dinamically-using-experiences). |
 | Digest Authentication | Bundled | Digest Authentication requires weak password hash storage, which is a vulnerability. |
 | Dynamic Data Lists | Bundled | Deprecated in 7.3. Replaced by [Liferay Objects](../../../process-automation/forms/dynamic-data-lists/migrating-to-liferay-objects.md). |

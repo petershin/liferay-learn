@@ -40,9 +40,10 @@ While working on a publication, changes made to supported Liferay components are
     When editing different sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
 
 {bdg-secondary}`Liferay DXP 2024.Q4+`
+
 {bdg-secondary}`[Release Feature Flag](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) (LPD-20131)`
 
-When you change the site context while using a publication, a warning appears to prevent unintentional changes. This safeguard enhances user safety when navigating and interacting within the Portal with Publications enabled.
+When you change the site context while using a publication, a warning appears to prevent unintentional changes. This safeguard enhances user safety when navigating and interacting within the site with Publications enabled.
 
 Upon context change, you can choose to *Stay in Current Publication*, *Select a Publication*, or *Work on Production*. Additionally, you can check the *Do not show this message again* option and select a duration from the list: *1 hour*, *4 hours*, *24 hours*, or *Forever*.
 

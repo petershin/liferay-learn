@@ -130,15 +130,14 @@ Now your client extension is configured and active. On the page you configured, 
 
 ![This example client extension creates an alert message pop-up when the page is loaded.](./using-a-javascript-client-extension/images/03.png)
 
-```{tip}
-If the alert window does not appear at first, do a hard refresh of the page to clear your browser's cache (`CTRL + SHIFT + R` for most browsers). If you change your client extension and redeploy it, you may need to remove it from the page and re-add it to see the changes.
-```
+!!! tip
+    If the alert window does not appear at first, do a hard refresh of the page to clear your browser's cache (`CTRL + SHIFT + R` for most browsers). If you change your client extension and redeploy it, you may need to remove it from the page and re-add it to see the changes.
 
 ## Use the Client Extension throughout the Instance
 
 {bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA129+`
 
-You can set the `scope` property of the client extension to `company` to apply the JavaScript Client Extension to all the pages of an instance, including the administrative pages. For example, see the `client-extension.yaml` file for the [Liferay Sample Global JS 3](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) project:
+You can set the client extension's `scope` property to `company` to apply the JavaScript Client Extension to all the pages of an instance, including the administrative pages. For example, see the `client-extension.yaml` file for the [Liferay Sample Global JS 3](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) project:
 
 ```yaml
 assemble:
@@ -154,12 +153,12 @@ liferay-sample-global-js-3:
 
 Once deployed, you can visit any page in the instance and look at the browser console to see the JavaScript that ran in the page head:
 
-```js
+```javascript
 console.log('Sample Global JS 3 deployed.');
 ```
 
 !!! note
-    You can only configure the scope of the JavaScript in a workspace-based client extension. If creating a JavaScript Client Extension through the UI, you cannot set the scope or the script location; the client extension is always page scoped and is usable only on [site pages](#use-the-client-extension-on-a-page). 
+    You can only configure the scope of the JavaScript in a workspace-based client extension. If creating a JavaScript Client Extension through the UI, you cannot set the scope or the script location; the client extension is always page-scoped and is usable only on [site pages](#use-the-client-extension-on-a-page). 
 
 ## Next Steps
 

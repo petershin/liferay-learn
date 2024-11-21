@@ -132,8 +132,6 @@ If you must share publication changes with people who are not site users, you ca
 
 1. Copy the link.
 
-   ![Enable sharing and copy the link.](./collaborating-on-publications/images/09.png)
-
 Anyone with the link can view the publication's changes.
 
 ## Related Topics

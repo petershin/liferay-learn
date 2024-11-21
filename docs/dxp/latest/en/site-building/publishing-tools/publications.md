@@ -37,24 +37,24 @@ Additionally, Publications provides a high level of process transparency, so you
 
 Publications support the following pages and content types:
 
-| Feature                      | {bdg-secondary}`Liferay DXP 2024.Q2+` | {bdg-secondary}`Liferay DXP 2024.Q4+` |
-|:-----------------------------|:-------------------------------------:|:-------------------------------------:|
-| Accounts (Contact Info Only) |                   ✅                  |                   ❌                  |
-| Blogs                        |                   ✅                  |                   ✅                  |
-| Commerce Entities            |                   ❌                  |                   ❌                  |
-| Content Pages                |                   ✅                  |                   ✅                  |
-| Custom Objects               |                   ❌                  |                   ❌                  |
-| Documents and Media          |                   ✅                  |                   ✅                  |
-| Forms                        |                   ✅                  |                   ✅                  |
-| Knowledge Base               |                   ✅                  |                   ✅                  |
-| Message Boards               |                   ✅                  |                   ✅                  |
-| Organizations                |                   ✅                  |                   ❌                  |
-| Page Templates               |                   ✅                  |                   ✅                  |
-| Site Templates               |                   ✅                  |                   ✅                  |
-| Users (Contact Info Only)    |                   ✅                  |                   ❌                  |
-| Web Content                  |                   ✅                  |                   ✅                  |
-| Widget Pages                 |                   ✅                  |                   ✅                  |
-| Wiki                         |                   ✅                  |                   ✅                  |
+| Feature                      | Liferay DXP 2024.Q2+ | Liferay DXP 2024.Q4+ |
+|:-----------------------------|:--------------------:|:--------------------:|
+| Accounts (Contact Info Only) |          ✅          |          ❌          |
+| Blogs                        |          ✅          |          ✅          |
+| Commerce Entities            |          ❌          |          ❌          |
+| Content Pages                |          ✅          |          ✅          |
+| Custom Objects               |          ❌          |          ❌          |
+| Documents and Media          |          ✅          |          ✅          |
+| Forms                        |          ✅          |          ✅          |
+| Knowledge Base               |          ✅          |          ✅          |
+| Message Boards               |          ✅          |          ✅          |
+| Organizations                |          ✅          |          ❌          |
+| Page Templates               |          ✅          |          ✅          |
+| Site Templates               |          ✅          |          ✅          |
+| Users (Contact Info Only)    |          ✅          |          ❌          |
+| Web Content                  |          ✅          |          ✅          |
+| Widget Pages                 |          ✅          |          ✅          |
+| Wiki                         |          ✅          |          ✅          |
 
 !!! note
     {bdg-secondary}`Liferay DXP 2024.Q4+` Only content-related entities can be modified within Publications. Attempting to edit non-content entities, such as Users, Organizations, and Accounts, displays a "This application saves changes directly to production" message.

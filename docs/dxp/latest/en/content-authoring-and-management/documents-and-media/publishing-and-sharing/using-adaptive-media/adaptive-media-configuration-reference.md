@@ -74,6 +74,25 @@ Configure Adaptive Media's asynchronous processing. Modify these values to impro
 !!! warning
     Larger values for Max Processes and Core Processes can consume large amounts of memory and result in out of memory errors. Out of memory errors can also occur if source images are large. You should run performance tests to optimize these settings for the amount of memory available on your system.
 
+## Backwards Compatibility HTML Content Transformer
+
+{bdg-secondary}`Liferay DXP 2024.Q4+`
+
+**Breaking Change**: The Adaptive Media Backwards Compatibility HTML Content Transformer is now disabled by default.
+
+To enable the configuration,
+
+1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
+
+1. Click *Adaptive Media* under Content and Data.
+
+1. Select *Enabled* and click *Save*.
+
+   ![Re-enable the Adaptive Media Backwards Compatibility HTML Content Transformer in Instance Settings.](./adaptive-media-configuration-reference/images/04.png)
+
+!!! important
+    Enabling this option can impact your site's performance.
+
 ## Related Topics
 
 - [Adding Image Resolutions](./adding-image-resolutions.md)

@@ -38,11 +38,11 @@ The JVM's memory comprises heap and non-heap spaces. The heap contains a space f
 | `-XX:InitialCodeCacheSize=64m`  | Initial space for JIT-compiled code. Too small a code cache (`48m` is the default) reduces performance, as the JIT isn't able to optimize high frequency methods. |
 | `-XX:ReservedCodeCacheSize=96m` | Maximum space for JIT-compiled code.                                                                                                                              |
 
-!!! note
-	  Set the minimum (`-Xms`) and maximum (`-Xmx`) heap size to the same value to prevent the JVM from making dynamic adjustments.
+!!! tip
+	 For Liferay Self-Hosted, set the minimum (`-Xms`) and maximum (`-Xmx`) heap size to the same value to prevent the JVM from making dynamic adjustments. For Liferay PaaS, see [JVM Memory Configuration](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/scaling-the-liferay-service#jvm-memory-configuration).
 
 !!! warning
-	  Avoid allocating more than 32g to your JVM heap. Your heap size should be commensurate with the speed and quantity of available CPU resources.
+	 Avoid allocating more than 32g to your JVM heap. Your heap size should be commensurate with the speed and quantity of available CPU resources.
 
 ## Set Survivor Space
 
@@ -156,9 +156,16 @@ If you're using Liferay PaaS, add the JVM option below to [export fragments](../
 
 ***JVM Options Example**
 
+```
+--add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED
+```
+
 **JVM Options Explained**
 | JVM Option Setting                                | Explanation                                                                                  |
 | `--add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED` | Enables `zipfs` in the JVM, which is necessary for exporting fragment sets as `.zip` files |
+
+!!! tip
+	 See [JVM Memory Configuration](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/scaling-the-liferay-service#jvm-memory-configuration) for more information on JVM Options for Liferay PaaS.
 
 ## Conclusion
 

@@ -19,7 +19,7 @@ You can either upload the document and provide its ID or external reference code
 Alternatively, you can post object entries with attachments in one step by making a POST request and including a Base64-encoded file in the request body.
 
 !!! note
-    {bdg-secondary}`Liferay DXP 2024.Q4+` External Reference Codes (ERCs) are accessible for the Objects Framework, providing a consistent way to identify and access these elements across Liferay.
+    {bdg-secondary}`Liferay DXP 2024.Q4+` The Objects framework supports External Reference Codes (ERCs) to give you a way to identify external resources across systems.
 
     In particular, the Objects Framework uses ERCs to link attachments to object entries, enabling consistent references across environments. When object entries are imported, their attachments are recognized automatically if present, or placeholders are created for later resolution. Additionally, for attachments uploaded directly by users and hidden from Documents and Media, the content can be included in exported data in Base64 format to facilitate availability upon import.
 

@@ -185,53 +185,12 @@ function set_up_environment {
 	fi
 }
 
-function update_example {
-	if ! is_diff "${1}"
-	then
-		continue;
-	fi
-
-	pushd "$(dirname "${1}")" > /dev/null
-
-	./$(basename "${1}") 2> "${_REPOSITORY_DIR}/site/logs/$(basename ${1%/*/*}).err"
-
-	popd > /dev/null
-
-	echo "Updated example: ${1}"
-}
-
 function update_examples {
-	mkdir -p "${_REPOSITORY_DIR}/site/logs"
-
 	pushd "${_REPOSITORY_DIR}/docs"
 
-	for update_example_script_name in $(find . -name "update_example.sh" -type f)
-	do
-		if [ "${_RUN_PARALLEL}" == "true" ]
-		then
-			update_example "${update_example_script_name}" &
-		else
-			update_example "${update_example_script_name}"
-		fi
-	done
-
-	wait
+	./update_examples.sh
 
 	popd
-
-	local exit_code=$?
-
-	for file_name in $(find ${_REPOSITORY_DIR}/site/logs -name "*.err" -type f)
-	do
-		if [ -s "${file_name}" ]
-		then
-			echo "Errors from: $(basename ${file_name})"
-
-			cat "${file_name}"
-		fi
-	done
-
-	generate_zip_files
 }
 
 function update_permissions {

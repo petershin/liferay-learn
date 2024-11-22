@@ -68,8 +68,8 @@ Here's a list of warnings:
 
 | Component                   | Warning                                                                                                                                                                   | Possible Solution                                                              |
 |:----------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
-| Collection Display Fragment | Pagination is disabled. This setting can affect page performance severely if the number of collection items is above 200. We strongly recommend using pagination instead. | Enable pagination for your collection display.                                 |
-| Image Fragment              | Big image file size used. Please, consider configuring adaptive media, lazy loading, or reducing the image size.                                                          | Configure adaptive media, enable lazy loading, or upload a smaller image file. |
+| Collection Display Fragment | Pagination is disabled. This setting can affect page performance severely if the number of collection items is above 200. We strongly recommend using pagination instead. | Enable pagination for your collection display                                 |
+| Image Fragment              | Big image file size used. Please, consider configuring adaptive media, lazy loading, or reducing the image size.                                                          | Configure adaptive media, enable lazy loading, or upload a smaller image file |
 
 ### Basic Information
 
@@ -80,10 +80,10 @@ The component card displays basic information about the component. Here's a list
 
 | Detail             | Description                                                                                        |
 |:-------------------|:---------------------------------------------------------------------------------------------------|
-| Server Render Time | The render time in milliseconds.                                                                   |
-| Component Type     | The component type: Fragment, Widget, or Collection.                                               |
-| Origin             | The origin of the component (e.g. This Page if it originates from the same page where it appears). |
-| Cache Status       | The component's cache status: Cached or Not Cached.                                                |
+| Server Render Time | The render time in milliseconds                                                                   |
+| Component Type     | The component type: Fragment, Widget, or Collection                                               |
+| Origin             | The origin of the component (e.g. this page if it originates from the same page where it appears) |
+| Cache Status       | The component's cache status: Cached or Not Cached                                                |
 
 ## Related Topics
 

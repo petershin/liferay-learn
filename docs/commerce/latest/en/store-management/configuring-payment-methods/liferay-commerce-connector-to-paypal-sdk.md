@@ -11,9 +11,9 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay DXP 2024.Q4+/Portal 7.4 GA129+`
 
-Liferay now provides a client extension that integrates with the [PayPal JavaScript SDK](https://developer.paypal.com/sdk/js/reference/) to provide more payment options like Google Pay, Apple Pay, Venmo, Pay Later, etc. during checkout. This uses the payment integration client extension as a base.
+Liferay provides a client extension that integrates with the [PayPal JavaScript SDK](https://developer.paypal.com/sdk/js/reference/) to provide more payment options like Google Pay, Apple Pay, Venmo, Pay Later, etc. during checkout. This uses the payment integration client extension as a base.
 
-Liferay also provides PayPal as a payment method out-of-the-box. This redirects the user to PayPal to complete payment whereas the new SDK processes the payment without the user having to navigate away from Liferay. See [Configuring Payment Methods](../configuring-payment-methods.md) to read more about the payment methods available out-of-the-box with Liferay.
+Liferay also provides PayPal as a payment method out-of-the-box. This directs the user to PayPal to complete payment, whereas this SDK processes the payment without the user having to navigate away from Liferay. See [Configuring Payment Methods](../configuring-payment-methods.md) to read more about the payment methods available out-of-the-box with Liferay.
 
 !!! note
     Currently, the PayPal SDK client extension is only compatible with Liferay SaaS.
@@ -22,7 +22,7 @@ To use this client extension, you must have a merchant ID and also generate a Pa
 
 ## Install and Deploy the PayPal SDK Client Extension
 
-1. Go to the [Liferay Marketplace](https://marketplace.liferay.com) and search for `Liferay Commerce Connector to PayPal SDK`.
+1. Go to [Liferay Marketplace](https://marketplace.liferay.com) and search for `Liferay Commerce Connector to PayPal SDK`.
 
 1. Click *Get App*, select your account or create one, and accept the end user license agreement and terms of service.
 
@@ -50,9 +50,9 @@ To use this client extension, you must have a merchant ID and also generate a Pa
 
 1. Use the *Active* toggle to activate the payment method and click *Save*. Two new tabs for Eligibility and Configuration appear.
 
-   You can go to the Eligibility tab to select specific order types or payment terms to be eligible for the payment integration. By default, it is eligible for all order types and payment terms.
+   Click the Eligibility tab to select specific order types or payment terms to be eligible for the payment integration. By default, it is eligible for all order types and payment terms.
 
-   The configuration tab contains an input field that accepts key-value pairs that you can find from your [PayPal Developer Dashboard](https://developer.paypal.com).
+   The Configuration tab contains can accept key-value pairs from your [PayPal Developer Dashboard](https://developer.paypal.com).
 
    ![Enter the key-value pairs from your PayPal dashboard to complete the integration.](./liferay-commerce-connector-to-paypal-sdk/images/01.png)
 

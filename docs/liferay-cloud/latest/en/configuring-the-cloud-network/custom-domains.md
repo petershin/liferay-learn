@@ -78,7 +78,7 @@ Once a custom domain is added to your service and your changes are deployed, Lif
 ### Adding a Custom Domain in the Console
 
 !!! warning
-    This method of adding custom domains will be removed in a future release.
+    This method of adding custom domains is deprecated.
 
 Alternatively, follow these steps to add custom domains to environment services via the Liferay Cloud console:
 
@@ -90,12 +90,12 @@ Alternatively, follow these steps to add custom domains to environment services 
 
 1. Enter any custom domains registered with your environment into the *Domain Names* field.
 
-    ![Use the service's Custom Domains tab to add the domains.](./custom-domains/images/03.png)
+   ![Use the service's Custom Domains tab to add the domains.](./custom-domains/images/03.png)
 
 1. Click *Update Custom Domains* to finalize the addition.
 
 !!! note
-    Adding custom domains via the Liferay Cloud console automatically uses a certificate provided by [Let's Encrypt](https://letsencrypt.org/) for each one. If you have [custom SSL certificates](./load-balancer.md#custom-ssl) for your domains, you must add them via the web server's `LCP.json` file instead.
+    Adding custom domains via the Liferay Cloud console uses a certificate provided by [Let's Encrypt](https://letsencrypt.org/) by default. If you have [custom SSL certificates](./load-balancer.md#custom-ssl) for your domains, you must add them via the web server's `LCP.json` file instead.
 
 ## Verifying the Status of a Custom Domain
 

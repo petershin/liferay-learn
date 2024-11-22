@@ -101,7 +101,7 @@ You can also add your own SSL certificate to cover any custom domains you create
 !!! note
     Mapping multiple SSL certificates to your custom domains requires adding the `certs` property to the `webserver` service's `LCP.json` file. Adding custom domains through the Liferay Cloud console instead maps all of the custom domains to a single certificate.
 
-When creating custom certificates, note that Liferay Cloud only accepts keys and certificates that are in the proper PEM format with [Base64](https://tools.ietf.org/html/rfc4648#section-4) encoding, which must include encapsulation boundaries.
+When creating custom certificates, note that Liferay Cloud only accepts keys and certificates in the proper PEM format with [Base64](https://tools.ietf.org/html/rfc4648#section-4) encoding, which must include encapsulation boundaries.
 
 1. Add [secret variables](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) to your chosen environment for the certificate's `key` and `crt` values.
 

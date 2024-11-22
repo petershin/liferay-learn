@@ -8,7 +8,7 @@ uuid: f1cec033-e3ec-4ead-b0ea-948c3039e704
 When you perform upgrades, it is important to know the changes made and any issues that occurred.
 
 !!! note
-    The upgrade status returns combined results for core upgrades, module upgrades, verify process exceptions, and unsatisfied components. A `Success` is when all four have passed. A `Failure` is when one of the first three fails. And `Unresolved` is when unsatisfied components status fails.
+    The upgrade status returns combined results for core upgrades, module upgrades, verify process exceptions, and unsatisfied components. A `Success` is when all four have passed. A `Failure` is when one of the first three fails. And `Unresolved` is when a component dependency check fails.
 
 The upgrade report is available through the [upgrade tool](../upgrade-basics/using-the-database-upgrade-tool.md) or at startup with a portal property.
 
@@ -21,7 +21,7 @@ As of {bdg-secondary}`Liferay DXP 2024.Q4+`, upgrade information is reported in 
 - `upgrade_report.txt`
   - Execution date and time
   - Total execution time of the upgrade
-  - Result of the release manager OSGi check command. This lists any pending upgrades that have not been applied.
+  - Result of the release manager OSGi check command. This list shows pending upgrades that have not been applied.
   - Upgrade status (Success, Failure, or Unresolved)
   - Upgrade type (`major`, `minor`, `micro`, or `no upgrade`)
   - Initial, expected, and final DXP/Portal schema versions and build numbers
@@ -46,10 +46,10 @@ As of {bdg-secondary}`Liferay DXP 2024.Q4+`, upgrade information is reported in 
 !!! tip
     If you have a large document library, you can speed up the upgrade report by disabling it from reporting the document library storage size. To do this, set the `upgrade.report.dl.storage.size.timeout` property to `0` or to an empty string:
 
-	```properties
-	upgrade.report.dl.storage.size.timeout=0
-  upgrade.report.dl.storage.size.timeout=
-	```
+      ```properties
+      upgrade.report.dl.storage.size.timeout=0
+      upgrade.report.dl.storage.size.timeout=
+      ```
 
 !!! note
     In earlier versions, the upgrade information is reported in an `upgrade_report.info` file. Different Liferay versions might not include the same information.
@@ -77,7 +77,7 @@ upgrade.database.auto.run=true
 upgrade.report.enabled=true
 ```
 
-Optionally, define an output directory for the upgrade report by setting the `upgrade.report.dir={your_directory}` property. If none is set, the report is generated in the `{liferay-home}/reports` folder.
+Optionally, define an output directory for the upgrade report by setting the `upgrade.report.dir=[your_directory]` property. If none is set, the report is generated in the `[liferay-home]/reports` folder.
 
 ## Additional Information
 

@@ -143,6 +143,8 @@ function main {
 
 	update_examples
 
+	generate_zip_files
+
 	get_reference_docs
 
 	run_learn_markdown_converter
